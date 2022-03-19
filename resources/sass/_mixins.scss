@@ -1,0 +1,115 @@
+@mixin bgimg($filename,$position:center,$repeat: no-repeat,$size: contain) {
+    $imagedir:'/assets/images/';
+    background: transparent url('#{$imagedir}#{$filename}') $repeat $position;
+    background-size: $size;
+}
+
+@mixin position-absolute($position:center) {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if ($position == center) {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    } @else if ($position == left) {
+        left: 0;
+        top: 0;
+        bottom: 0;
+    } @else if ($position == right) {
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@mixin bp-desktop($bp:">=1200") {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin bp-netbook($bp:">=1025") {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin bp-phone-xl-reverse($bp:">=640") {
+    @media only screen and (min-width: 640px) {
+        @content;
+    }
+}
+
+//max width
+
+@mixin bp-page-content($bp:"<=1440") {
+    @media only screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin bp-macbook-13($bp:"<=1300") {
+    @media only screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet($bp:"<=1124") {
+    @media only screen and (max-width: 1124px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-big($bp:"<=900") {
+    @media only screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-medium($bp:"<=820") {
+    @media only screen and (max-width: 820px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-portrait($bp:"<=768") {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-only($bp:"766-1024") {
+    @media only screen and (min-width: 766px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-phone-xl($bp:"<=640") {
+    @media only screen and (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin bp-phone-large($bp:"<=570") {
+    @media only screen and (max-width: 570px) {
+        @content;
+    }
+}
+
+@mixin bp-phone($bp:"<=480") {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin bp-phone-small($bp:"<=360") {
+    @media only screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+
