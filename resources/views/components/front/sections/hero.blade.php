@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                     <div class="hero-content">
-                        <h1 class="hero-title">Awesome App for Your Financial. </h1>
-                        <p class="hero-desc">This should be used to tell a story and let your users know a little more about app and it’s use, How can benefit them.</p>
-                        <div class="hero-action"><a class="btn btn--primary scroll-to" href="#download">download App</a></div>
+                        <h1 class="hero-title">{{__("front.hero_title")}}</h1>
+                        <p class="hero-desc">{{__("front.hero_subtitle")}}</p>
+                        <div class="hero-action"><a class="btn btn--primary scroll-to" href="#download">{{__("front.start_quiz")}}</a></div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">

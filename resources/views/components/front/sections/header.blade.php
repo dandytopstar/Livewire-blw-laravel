@@ -8,17 +8,17 @@
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#screenshots">screenshots</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#hero">{{__("front.home")}}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#processes">{{__("front.how_it_works")}}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">{{__("front.personalized_plan")}}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-white">{{__("front.baby_led_weaning")}}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing </a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>
                 </ul>
                 <div class="module-container">
                     <!--module-btn-->
-                    <div class="module module-cta"><a class="btn scroll-to" href="#download"> <span>free trial</span></a></div>
+                    <div class="module module-cta"><a class="btn scroll-to" href="#download"> <span>{{__("front.start_quiz")}}</span></a></div>
                 </div>
                 <!-- End Module Container  -->
             </div>
