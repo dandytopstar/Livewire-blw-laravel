@@ -14,7 +14,7 @@
                         </ol>
                     </div>
                 </div>
-                <div class="about-action"><a class="btn btn--primary" href="javascript:void(0)">{{__("front.start_quiz")}}</a></div>
+                <div class="about-action"><a class="btn btn--primary" href="{{route('quiz')}}">{{__("front.start_quiz")}}</a></div>
             </div>
             <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
                 <img class="img-fluid mb-5" src="{{'front/assets/images/screenshots/about.png'}}" alt="App screenshot"/>

@@ -18,7 +18,7 @@
                 </ul>
                 <div class="module-container">
                     <!--module-btn-->
-                    <div class="module module-cta"><a class="btn scroll-to" href="#download"> <span>{{__("front.start_quiz")}}</span></a></div>
+                    <div class="module module-cta"><a class="btn scroll-to" href="{{route('quiz')}}"> <span>{{__("front.start_quiz")}}</span></a></div>
                 </div>
                 <!-- End Module Container  -->
             </div>

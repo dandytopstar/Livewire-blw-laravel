@@ -2,8 +2,8 @@
      data-question="q{{$quizNum}}" data-answertype="multipleanswer" data-answersamount="11">
     <div class="c-questionslide-inner">
         <div class="c-questionslide-header">
-            <a href="__" class="e-btn--arrow"></a>
-            <img class="e-logo" src="__" alt="">
+            <a href="/" class="e-btn--arrow"></a>
+            <img class="e-logo" src="" alt="">
         </div>
         <div class="c-questionslide-content">
             <div class="c-progress-bar">

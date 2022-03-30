@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <x-quiz.questioner :gender="$gender"/>
+        <x-quiz.questioner/>
     </div>
 
 @endsection

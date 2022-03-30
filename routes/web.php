@@ -22,7 +22,7 @@ Route::get('old', function () {
     return view('index');
 });
 
-Route::get('quiz/{gender}', [ClientController::class, 'quiz'])->name('quiz');
+Route::get('quiz', [ClientController::class, 'quiz'])->name('quiz');
 Route::get('join/{code}', [ClientController::class, 'join'])->name('result');
 Route::get('get-plan/{code}', [ClientController::class, 'getPlan'])->name('get-plan');
 

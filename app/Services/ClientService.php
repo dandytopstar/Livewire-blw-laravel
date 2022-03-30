@@ -17,6 +17,7 @@ class ClientService
         if (!empty($frontendData['data'])) {
             $clientData = $request->client;
             $selected_values = $frontendData['data'];
+            $selected_values['gender'] = $selected_values['q1'][0];
 
             $clientData['country'] = trans('front.country');
             $clientData['unit_system'] = 'imperial';
@@ -26,6 +27,7 @@ class ClientService
             $clientData['weight'] = 200;
             $clientData['target_weight'] = 150;
             $clientData['gender'] = $selected_values['gender'];
+            $clientData['name'] = $selected_values['name'];
             $clientData['code'] = Str::uuid();
 
             $client = Client::create($clientData);

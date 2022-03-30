@@ -1,7 +1,7 @@
 <div
     class="c-questionslide @if(isset($firstSlide) && $firstSlide) m-first @endif"
     data-type="@if(isset($firstSlide) && $firstSlide) introslide @else generalslide @endif"
-    data-question="q{{$quizNum}}"
+    data-question="{{$quizNum}}"
     data-answertype="singleanswer"
     data-answersamount=""
 >

@@ -3,17 +3,12 @@
         <h2 class="text-center">{{ __('quiz.tell_us_more') }}</h2>
         <div class="c-progress-bar"><span class="c-progress-bar--process"></span></div>
 
-        <input type="hidden" name="gender" id="gender" value="{{$gender}}">
+        <input type="hidden" name="gender" id="gender" value="">
         <!-- q1 -->
-{{--        <x-quiz.slide :firstSlide="true" :quizNum="1">--}}
-{{--            <button class="e-btn m-next m-questioner is-active" data-value="1">{{ __('quiz.q1a1') }}</button>--}}
-{{--            <button class="e-btn m-next m-questioner is-active" data-value="2">{{ __('quiz.q1a2') }}</button>--}}
-{{--        </x-quiz.slide>--}}
-
-        <x-quiz.question-slide :firstSlide="true" :quizNum="1" :question="'gender'">
-            <button class="e-btn m-next m-questioner is-active" data-value="boy">{{ __('quiz.boy') }}</button>
-            <button class="e-btn m-next m-questioner is-active" data-value="girl">{{ __('quiz.girl') }}</button>
-        </x-quiz.question-slide>
+        <x-quiz.slide :firstSlide="true" :quizNum="1">
+            <button class="e-btn m-next m-questioner is-active" data-value="boy">{{ __('quiz.q1a1') }}</button>
+            <button class="e-btn m-next m-questioner is-active" data-value="girl">{{ __('quiz.q1a2') }}</button>
+        </x-quiz.slide>
 
         <!-- q2 -->
         <x-quiz.slide :quizNum="2">

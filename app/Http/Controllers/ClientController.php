@@ -17,9 +17,9 @@ class ClientController extends Controller
         $this->clientService = $clientService;
     }
 
-    public function quiz(Request $request, $gender)
+    public function quiz()
     {
-        return view('quiz', ['gender' => $gender]);
+        return view('quiz');
     }
 
     public function saveQuiz(Request $request)

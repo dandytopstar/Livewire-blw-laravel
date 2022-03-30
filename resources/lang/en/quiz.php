@@ -6,9 +6,9 @@ return [
     'select_multiple_options' => 'You can select multiple options.',
 
     //Question 1
-    'gender' => 'Select your baby’s gender',
-    'boy' => "Boy",
-    'girl' => "Girl",
+    'q1' => 'Select your baby’s gender',
+    'q1a1' => "Boy",
+    'q1a2' => "Girl",
 
     //Question 2
     'q2' => '2.	How familiar are you with BLW? ',
