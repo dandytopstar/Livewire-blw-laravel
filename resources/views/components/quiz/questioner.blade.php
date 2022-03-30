@@ -5,11 +5,15 @@
 
         <input type="hidden" name="gender" id="gender" value="{{$gender}}">
         <!-- q1 -->
-        <x-quiz.slide :firstSlide="true" :quizNum="1">
-            <button class="e-btn m-next m-questioner is-active" data-value="1">{{ __('quiz.q1a1') }}</button>
-            <button class="e-btn m-next m-questioner is-active" data-value="2">{{ __('quiz.q1a2') }}</button>
-            <button class="e-btn m-next m-questioner is-active" data-value="3">{{ __('quiz.q1a3') }}</button>
-        </x-quiz.slide>
+{{--        <x-quiz.slide :firstSlide="true" :quizNum="1">--}}
+{{--            <button class="e-btn m-next m-questioner is-active" data-value="1">{{ __('quiz.q1a1') }}</button>--}}
+{{--            <button class="e-btn m-next m-questioner is-active" data-value="2">{{ __('quiz.q1a2') }}</button>--}}
+{{--        </x-quiz.slide>--}}
+
+        <x-quiz.question-slide :firstSlide="true" :quizNum="1" :question="'gender'">
+            <button class="e-btn m-next m-questioner is-active" data-value="boy">{{ __('quiz.boy') }}</button>
+            <button class="e-btn m-next m-questioner is-active" data-value="girl">{{ __('quiz.girl') }}</button>
+        </x-quiz.question-slide>
 
         <!-- q2 -->
         <x-quiz.slide :quizNum="2">
@@ -64,49 +68,20 @@
         <x-quiz.slide :quizNum="9">
             <button class="e-btn m-next m-questioner  is-active" data-value="1">{{ __('quiz.q9a1') }}</button>
             <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q9a2') }}</button>
-            <button class="e-btn m-next m-questioner  is-active" data-value="3">{{ __('quiz.q9a3') }}</button>
         </x-quiz.slide>
 
-        <!-- q10 -->
-        <div class="c-questionslide" data-type="generalslide"
-             data-question="q10" data-answertype="multipleanswer" data-answersamount="10">
-            <div class="c-questionslide-inner">
-                <div class="c-questionslide-header">
-                    <a href="__" class="e-btn--arrow"></a>
-                    <img class="e-logo" src="__" alt="">
-                </div>
-                <div class="c-questionslide-content">
-                    <div class="c-progress-bar">
-                        <div class="c-progress-bar--inner"></div>
-                    </div>
-                    <div class="b-top">
-                        <p class="e-subtitle">{{ __('quiz.tell_us_more') }}</p>
-                        <h1 class="e-title">{{ __('quiz.q10') }}</h1>
-                    </div>
-                    <div class="b-questions">
-                        <p class="e-subtitle">{{ __('quiz.select_multiple_options') }}</p>
-                        <button class="e-btn m-questioner" data-value="1">{{ __('quiz.q10a1') }}</button>
-                        <button class="e-btn m-questioner" data-value="2">{{ __('quiz.q10a2') }}</button>
-                        <button class="e-btn m-questioner" data-value="3">{{ __('quiz.q10a3') }}</button>
-                    </div>
-                </div>
-                <div class="c-questionslide-footer">
-                    <p class="e-btn m-next m-oposite">{{ __('quiz.next') }}</p>
-                </div>
-            </div>
-        </div>
-
-{{--        <x-quiz.slide-multi :quizNum="10">--}}
-{{--            <button class="e-btn m-questioner" data-value="1">{{ __('quiz.q10a1') }}</button>--}}
-{{--            <button class="e-btn m-questioner" data-value="2">{{ __('quiz.q10a2') }}</button>--}}
-{{--            <button class="e-btn m-questioner" data-value="3">{{ __('quiz.q10a3') }}</button>--}}
-{{--        </x-quiz.slide-multi>--}}
-
-        <!-- q11 -->
-        <x-quiz.slide :quizNum="11">
-            <button class="e-btn m-next m-questioner  is-active" data-value="1">{{ __('quiz.q11a1') }}</button>
-            <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q11a2') }}</button>
+        <!-- q9 -->
+        <x-quiz.slide :quizNum="10">
+            <button class="e-btn m-next m-questioner  is-active" data-value="1">{{ __('quiz.q10a1') }}</button>
+            <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q10a2') }}</button>
+            <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q10a3') }}</button>
         </x-quiz.slide>
+
+        <x-quiz.slide-multi :quizNum="11">
+            <button class="e-btn m-questioner" data-value="1">{{ __('quiz.q11a1') }}</button>
+            <button class="e-btn m-questioner" data-value="2">{{ __('quiz.q11a2') }}</button>
+            <button class="e-btn m-questioner" data-value="3">{{ __('quiz.q11a3') }}</button>
+        </x-quiz.slide-multi>
 
         <!-- q12 -->
         <x-quiz.slide :quizNum="12">
@@ -114,15 +89,21 @@
             <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q12a2') }}</button>
         </x-quiz.slide>
 
+        <!-- q13 -->
+        <x-quiz.slide :quizNum="13">
+            <button class="e-btn m-next m-questioner  is-active" data-value="1">{{ __('quiz.q13a1') }}</button>
+            <button class="e-btn m-next m-questioner  is-active" data-value="2">{{ __('quiz.q13a2') }}</button>
+        </x-quiz.slide>
+
         <!-- years / name -->
-        <div class="c-questionslide" data-type="measurements" data-question="q13">
+        <div class="c-questionslide" data-type="measurements" data-question="q14">
             <div class="c-questionslide-inner">
                 <div class="c-questionslide-content">
                     <div class="c-progress-bar">
                         <div class="c-progress-bar--inner"></div>
                     </div>
                     <div class="b-top">
-                        <p class="e-subtitle">{{ __('quiz.tell_us_more') }}</p>
+                        <p class="e-subtitle"> </p>
                         <h1 class="e-title">{{ __('quiz.enter_information') }}</h1>
                     </div>
                     <div class="b-form b-profiledetails animated fadeIn">
