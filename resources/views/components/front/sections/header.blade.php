@@ -1,9 +1,9 @@
 <header class="header header-transparent header-sticky">
     <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
         <div class="container">
-            <a class="logo navbar-brand" href="index.html">
-                <img class="logo logo-dark" src="{{'front/assets/images/logo/logo.png'}}" alt="Appzy Logo"/>
-                <img class="logo logo-light" src="{{'front/assets/images/logo/logo.png'}}" alt="Appzy Logo"/>
+            <a class="logo navbar-brand" href="/">
+                <img class="logo logo-dark" src="{{'front/assets/images/logo/logo_blw.png'}}" alt="Appzy Logo" style="width: 350px"/>
+                <img class="logo logo-light" src="{{'front/assets/images/logo/logo_blw.png'}}" alt="Appzy Logo" style="width: 350px"/>
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarContent">
