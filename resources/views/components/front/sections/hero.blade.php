@@ -6,7 +6,11 @@
                     <div class="hero-content">
                         <h1 class="hero-title">{{__("front.hero_title")}}</h1>
                         <p class="hero-desc">{{__("front.hero_subtitle")}}</p>
-                        <div class="hero-action"><a class="btn btn--primary scroll-to" href="{{route('quiz')}}">{{__("front.start_quiz")}}</a></div>
+                        <div class="hero-action">
+                            <a class="btn btn--primary btn-new-green scroll-to" href="{{route('quiz')}}">
+                                {{__("front.start_quiz")}}
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
