@@ -1,9 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('content')
-
-    <div class="container">
-        <x-quiz.questioner/>
-    </div>
-
+    quiz
 @endsection

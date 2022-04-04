@@ -15,7 +15,7 @@
     <!--  Stylesheets-->
     <link href="{{asset('front/assets/css/vendor.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('front/assets/css/style.css')}}" rel="stylesheet"/>
-    <link href="{{asset('front/css/app.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
 </head>
 <body class="body-scroll">
 <!-- Document Wrapper-->
@@ -29,6 +29,6 @@
 <script src="{{asset('front/assets/js/vendor/jquery-3.4.1.min.js')}}"></script>
 <script src="{{asset('front/assets/js/vendor.min.js')}}"></script>
 <script src="{{asset('front/assets/js/functions.js')}}"></script>
-<script src="{{asset('front/js/app.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

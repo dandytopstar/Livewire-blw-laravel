@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,14 +17,6 @@ Route::get('/', function () {
     return view('front');
 });
 
-Route::get('old', function () {
-    return view('index');
-});
-
-Route::get('quiz', [ClientController::class, 'quiz'])->name('quiz');
-Route::get('join/{code}', [ClientController::class, 'join'])->name('result');
-Route::get('get-plan/{code}', [ClientController::class, 'getPlan'])->name('get-plan');
-
-Route::post('save-quiz', [ClientController::class, 'saveQuiz'])->name('save-quiz');
-
-
+Route::get('quiz', function () {
+    return view('quiz');
+})->name('quiz');
