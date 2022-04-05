@@ -40,10 +40,14 @@ return [
     //About section
     'about_title' => 'Personalized plan',
     'about_subtitle' => 'What will you get?',
+    'about_list_item_1_title' => 'Guide',
     'about_list_item_1' => 'A step-by-step guide on how to prepare your baby for solid foods.',
-    'about_list_item_2' => 'An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safelly introduce solid foods to your baby.',
+    'about_list_item_2_title' => 'E-Book',
+    'about_list_item_2' => 'An E-Book that includes absolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your baby.',
+    'about_list_item_3_title' => 'Meal Plan',
     'about_list_item_3' => 'Personalized baby-led weaning meal based on your answers from the quiz.',
-    'about_list_item_4' => '70+ healthy recipes for your baby.',
+    'about_list_item_4_title' => '45+ healthy recipes',
+    'about_list_item_4' => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning.',
 
     //About white section
     'about_white_title' => 'Baby-led weaning',

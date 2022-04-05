@@ -21,7 +21,7 @@
 {{--    <x-front.sections.features/>--}}
 
     <!-- Screenshots Section -->
-    <x-front.sections.screenshots/>
+{{--    <x-front.sections.screenshots/>--}}
 
     <!-- Video Section -->
 {{--    <x-front.sections.video/>--}}
