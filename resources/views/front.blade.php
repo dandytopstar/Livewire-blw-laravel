@@ -43,4 +43,6 @@
 
     <!-- Footer -->
     <x-front.sections.footer/>
+
+    @livewire('quiz')
 @endsection
