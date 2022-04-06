@@ -17,7 +17,7 @@
 {{--                            <li class="heading-desc">{{__("front.about_list_item_4")}}</li>--}}
 {{--                        </ol>--}}
 {{--                    </div>--}}
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col-12 col-md-6">
                             <img class="mb-3" height="50" src="{{asset('front/assets/images/icons/a_guide.png')}}" alt="">
                             <h6>{{__("front.about_list_item_1_title")}}</h6>
