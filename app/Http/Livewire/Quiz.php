@@ -33,7 +33,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => true, 'continue_button' => false, 'has_answers' => true,
             ],
             '2' => [
                 'question_key' => 'familiar_with_blw',
@@ -55,7 +55,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '3' => [
                 'question_key' => 'text_section',
@@ -66,10 +66,10 @@ class Quiz extends Component
                         'image'  => '',
                     ]
                 ],
-                'section_text' => 'Here we will show what is baby led weaning, we will add text here',
+                'section_text' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 'section_image' => 'front/assets/images/quiz/can_your_baby_sit.png',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true, 'has_answers' => false,
             ],
             '4' => [
                 'question_key' => 'age',
@@ -91,7 +91,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '5' => [
                 'question_key' => 'can_sit',
@@ -109,7 +109,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '6' => [
                 'question_key' => 'can_grab',
@@ -127,7 +127,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '7' => [
                 'question_key' => 'can_put_things',
@@ -145,7 +145,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '8' => [
                 'question_key' => 'can_put_food',
@@ -163,7 +163,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '9' => [
                 'question_key' => 'can_chew',
@@ -185,7 +185,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '10' => [
                 'question_key' => 'gagging',
@@ -203,7 +203,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '11' => [
                 'question_key' => 'allergies',
@@ -221,7 +221,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '12' => [
                 'question_key' => 'foods_prefer',
@@ -243,7 +243,7 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => true, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => true, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '13' => [
                 'question_key' => 'vegetarian',
@@ -261,13 +261,24 @@ class Quiz extends Component
                 'section_text' => '',
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
         ];
 
         $this->countQuestions = count($this->quizQuestions);
 
         $this->currentQuestionNum = 1;
+
+        $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+    }
+
+    public function nextSlide()
+    {
+        $this->currentQuestionNum++;
+
+        if($this->currentQuestionNum > $this->countQuestions) {
+            $this->currentQuestionNum = $this->countQuestions;
+        }
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }

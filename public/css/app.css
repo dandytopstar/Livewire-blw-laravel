@@ -6768,3 +6768,12 @@
   font-size: 30px;
   color: #FF7D3B;
 }
+
+.quiz-question-card {
+  border: 2px solid #FAF8FB;
+  border-radius: 10px;
+}
+
+.quiz-question-card:hover {
+  border: 2px solid #22BF8E;
+}

@@ -16,7 +16,9 @@
     <link href="{{asset('front/assets/css/vendor.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('front/assets/css/style.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
+
     @livewireStyles
+
 </head>
 <body class="body-scroll">
 <!-- Document Wrapper-->
