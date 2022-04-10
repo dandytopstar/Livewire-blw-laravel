@@ -4,7 +4,7 @@
             <div class="row">
 
                 <div class="col-4">
-                    <i class="bi bi-arrow-left-circle quiz-top-bar-icon"></i>
+                    <i class="bi bi-arrow-left-circle quiz-top-bar-icon" wire:click="prevSlide"></i>
                 </div>
 
                 <div class="col-4">
@@ -27,17 +27,30 @@
                 <h2 class="text-center">{{$currentQuestion['question']}}</h2>
             @endif
 
-            @if($currentQuestion['has_answers'])
+            @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
 
                 @foreach($currentQuestion['answers'] as $answer)
 
-                    <div class="card my-3 quiz-question-card" wire:click="nextSlide">
+                    <div class="card my-3 quiz-question-card" wire:click="nextSlide" style="cursor: pointer">
                         <div class="card-body text-center">
                             {{$answer['text']}}
                         </div>
                     </div>
 
                 @endforeach
+
+            @endif
+
+            @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
+                <div class="row text-center">
+                    @foreach($currentQuestion['answers'] as $answer)
+
+                        <div class="col-12 col-md-6">
+                            <img src="{{$answer['image']}}" class="img-thumbnail" wire:click="nextSlide" style="height: 300px; border-radius: 15px; cursor: pointer">
+                        </div>
+
+                    @endforeach
+                </div>
 
             @endif
 

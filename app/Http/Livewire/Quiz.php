@@ -283,6 +283,17 @@ class Quiz extends Component
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }
 
+    public function prevSlide()
+    {
+        $this->currentQuestionNum--;
+
+        if(!$this->currentQuestionNum) {
+            $this->currentQuestionNum = 1;
+        }
+
+        $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+    }
+
     public function render()
     {
         return view('livewire.quiz');
