@@ -53,4 +53,100 @@ return [
     'about_white_title' => 'Baby-led weaning',
     'about_white_subtitle' => 'What is Baby-Led weaning?',
     'about_white_description' => 'Baby led weaning (BLW) is a way of introducing solid foods to your baby from around 4 - 6 months old. BLW skips the puree stage due to the ability of babies from 4 - 6 months onwards to naturally handle finger foods.',
+
+    //questions
+
+    //question 1
+    "question_1" => 'Select your baby’s gender.',
+    "answer_1_1" => 'Boy',
+    "answer_1_2" => 'Girl',
+    "section_text_1" => '',
+    "continue_button_text_1" => 'continue',
+
+    //question 2
+    "question_2" => 'How familiar are you with BLW?',
+    "answer_2_1" => 'What is it?',
+    "answer_2_2" => 'I’ve heard a thing or two.',
+    "answer_2_3" => 'I know everything!',
+    "section_text_2" => '',
+    "continue_button_text_2" => 'continue',
+
+    //question 3
+    "question_3" => '',
+    "answer_3_1" => '',
+    "section_text_3" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "continue_button_text_3" => 'continue',
+
+    //question 4
+    "question_4" => 'How old is your baby?',
+    "answer_4_1" => 'Younger than 4 months',
+    "answer_4_2" => '4-6 months',
+    "answer_4_3" => '6 months or older',
+    "section_text_4" => '',
+    "continue_button_text_4" => 'continue',
+
+    //question 5
+    "question_5" => 'Can your baby sit without any support?',
+    "answer_5_1" => 'yes',
+    "answer_5_2" => 'no',
+    "section_text_5" => '',
+    "continue_button_text_5" => 'continue',
+
+    //question 6
+    "question_6" => 'Can your baby grab things by himself?',
+    "answer_6_1" => 'yes',
+    "answer_6_2" => 'no',
+    "section_text_6" => '',
+    "continue_button_text_6" => 'continue',
+
+    //question 7
+    "question_7" => 'Is you baby putting things in his mouth instinctively?',
+    "answer_7_1" => 'yes',
+    "answer_7_2" => 'no',
+    "section_text_7" => '',
+    "continue_button_text_7" => 'continue',
+
+    //question 8
+    "question_8" => 'Is you baby putting food in his mouth instinctively?',
+    "answer_8_1" => 'yes',
+    "answer_8_2" => 'no',
+    "section_text_8" => '',
+    "continue_button_text_8" => 'continue',
+
+    //question 9
+    "question_9" => 'Is you baby performing chewing movements with for ex. toys?',
+    "answer_9_1" => 'yes',
+    "answer_9_2" => 'no',
+    "answer_9_3" => 'not sure',
+    "section_text_9" => '',
+    "continue_button_text_9" => 'continue',
+
+    //question 10
+    "question_10" => 'Is your baby gagging anytime?',
+    "answer_10_1" => 'yes',
+    "answer_10_2" => 'no',
+    "section_text_10" => '',
+    "continue_button_text_10" => 'continue',
+
+    //question 11
+    "question_11" => 'Does your baby have any allergies?',
+    "answer_11_1" => 'yes',
+    "answer_11_2" => 'no',
+    "section_text_11" => '',
+    "continue_button_text_11" => 'continue',
+
+    //question 12
+    "question_12" => 'Do you prefer not to eat any of these foods?',
+    "answer_12_1" => 'carrots',
+    "answer_12_2" => 'apples',
+    "answer_12_3" => 'bananas',
+    "section_text_12" => '',
+    "continue_button_text_12" => 'continue',
+
+    //question 12
+    "question_13" => 'Are you a vegetarian?',
+    "answer_13_1" => 'yes',
+    "answer_13_2" => 'no',
+    "section_text_13" => '',
+    "continue_button_text_13" => 'continue',
 ];

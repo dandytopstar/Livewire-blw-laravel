@@ -19,248 +19,248 @@ class Quiz extends Component
         $this->quizQuestions = [
             '1' => [
                 'question_key' => 'gender',
-                'question' => 'Select your baby’s gender.',
+                'question' => trans('front.question_1'),
                 'answers' => [
                     [
-                        'text' => 'Boy',
+                        'text' => trans('front.answer_1_1'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ],
                     [
-                        'text' => 'Girl',
+                        'text' => trans('front.answer_1_1'),
                         'image'  => 'front/assets/images/quiz/girl.png',
                     ],
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_1'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_1'),
                 'multiple' => false, 'answer_with_image' => true, 'continue_button' => false, 'has_answers' => true,
             ],
             '2' => [
                 'question_key' => 'familiar_with_blw',
-                'question' => 'How familiar are you with BLW?',
+                'question' => trans('front.question_2'),
                 'answers' => [
                     [
-                        'text' => 'What is it?',
+                        'text' => trans('front.answer_2_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'I’ve heard a thing or two.',
+                        'text' => trans('front.answer_2_2'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'I know everything!',
+                        'text' => trans('front.answer_2_3'),
                         'image'  => '',
                     ],
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_2'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_2'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '3' => [
                 'question_key' => 'text_section',
-                'question' => '',
+                'question' => trans('front.question_3'),
                 'answers' => [
                     [
-                        'text' => '',
+                        'text' => trans('front.answer_3_1'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                'section_text' => trans('front.section_text_3'),
                 'section_image' => 'front/assets/images/quiz/can_your_baby_sit.png',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_3'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true, 'has_answers' => false,
             ],
             '4' => [
                 'question_key' => 'age',
-                'question' => 'How old is your baby?',
+                'question' => trans('front.question_4'),
                 'answers' => [
                     [
-                        'text' => 'Younger than 4 months',
+                        'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => '4-6 months',
+                        'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => '6 months or older',
+                        'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_4'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_4'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '5' => [
                 'question_key' => 'can_sit',
-                'question' => 'Can your baby sit without any support?',
+                'question' => trans('front.question_5'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_5_1'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_5_2'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_5'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_5'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '6' => [
                 'question_key' => 'can_grab',
-                'question' => 'Can your baby grab things by himself? ',
+                'question' => trans('front.question_6'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_6_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_6_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_6'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_6'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '7' => [
                 'question_key' => 'can_put_things',
-                'question' => 'Is you baby putting things in his mouth instinctively?',
+                'question' => trans('front.question_7'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_7_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_7_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_7'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_7'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '8' => [
                 'question_key' => 'can_put_food',
-                'question' => '⦁Is you baby putting food in his mouth instinctively?',
+                'question' => trans('front.question_8'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_8_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_8_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_8'),
                 'section_image' => '',
                 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '9' => [
                 'question_key' => 'can_chew',
-                'question' => 'Is you baby performing chewing movements with for ex. toys ? ',
+                'question' => trans('front.question_9'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_9_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_9_2'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'not sure',
+                        'text' => trans('front.answer_9_3'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_9'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_9'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '10' => [
                 'question_key' => 'gagging',
-                'question' => 'Is your baby gagging anytime?',
+                'question' => trans('front.question_10'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_10_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_10_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_10'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_10'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '11' => [
                 'question_key' => 'allergies',
-                'question' => 'Does your baby have any allergies?',
+                'question' => trans('front.question_11'),
                 'answers' => [
                     [
-                        'text' => 'yes',
+                        'text' => trans('front.answer_11_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'no',
+                        'text' => trans('front.answer_11_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_11'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_11'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '12' => [
                 'question_key' => 'foods_prefer',
-                'question' => 'Do you prefer not to eat any of these foods? ',
+                'question' => trans('front.question_12'),
                 'answers' => [
                     [
-                        'text' => 'carrots',
+                        'text' => trans('front.answer_12_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'apples',
+                        'text' => trans('front.answer_12_2'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'bananas',
+                        'text' => trans('front.answer_12_3'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_12'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_12'),
                 'multiple' => true, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
             '13' => [
                 'question_key' => 'vegetarian',
-                'question' => 'Are you a vegetarian?',
+                'question' => trans('front.question_13'),
                 'answers' => [
                     [
-                        'text' => 'carrots',
+                        'text' => trans('front.answer_13_1'),
                         'image'  => '',
                     ],
                     [
-                        'text' => 'apples',
+                        'text' => trans('front.answer_13_2'),
                         'image'  => '',
                     ]
                 ],
-                'section_text' => '',
+                'section_text' => trans('front.section_text_13'),
                 'section_image' => '',
-                'continue_button_text' => 'continue',
+                'continue_button_text' => trans('front.continue_button_text_13'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
             ],
         ];
