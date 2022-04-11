@@ -12,7 +12,9 @@ class Quiz extends Component
 
     public int $currentQuestionNum;
 
-    public array $currentQuestion;
+    public array $currentQuestion = [];
+
+    public array $resultAnswers = [];
 
     public function mount()
     {
@@ -21,12 +23,12 @@ class Quiz extends Component
                 'question_key' => 'gender',
                 'question' => trans('front.question_1'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_1_1'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ],
-                    [
-                        'text' => trans('front.answer_1_1'),
+                    '2' => [
+                        'text' => trans('front.answer_1_2'),
                         'image'  => 'front/assets/images/quiz/girl.png',
                     ],
                 ],
@@ -39,15 +41,15 @@ class Quiz extends Component
                 'question_key' => 'familiar_with_blw',
                 'question' => trans('front.question_2'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_2_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_2_2'),
                         'image'  => '',
                     ],
-                    [
+                    '3' => [
                         'text' => trans('front.answer_2_3'),
                         'image'  => '',
                     ],
@@ -61,7 +63,7 @@ class Quiz extends Component
                 'question_key' => 'text_section',
                 'question' => trans('front.question_3'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_3_1'),
                         'image'  => '',
                     ]
@@ -75,15 +77,15 @@ class Quiz extends Component
                 'question_key' => 'age',
                 'question' => trans('front.question_4'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
-                    [
+                    '3' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
                     ],
@@ -97,11 +99,11 @@ class Quiz extends Component
                 'question_key' => 'can_sit',
                 'question' => trans('front.question_5'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_5_1'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_5_2'),
                         'image'  => 'front/assets/images/quiz/boy.png',
                     ]
@@ -115,11 +117,11 @@ class Quiz extends Component
                 'question_key' => 'can_grab',
                 'question' => trans('front.question_6'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_6_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_6_2'),
                         'image'  => '',
                     ]
@@ -133,11 +135,11 @@ class Quiz extends Component
                 'question_key' => 'can_put_things',
                 'question' => trans('front.question_7'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_7_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_7_2'),
                         'image'  => '',
                     ]
@@ -151,11 +153,11 @@ class Quiz extends Component
                 'question_key' => 'can_put_food',
                 'question' => trans('front.question_8'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_8_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_8_2'),
                         'image'  => '',
                     ]
@@ -169,15 +171,15 @@ class Quiz extends Component
                 'question_key' => 'can_chew',
                 'question' => trans('front.question_9'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_9_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_9_2'),
                         'image'  => '',
                     ],
-                    [
+                    '3' => [
                         'text' => trans('front.answer_9_3'),
                         'image'  => '',
                     ]
@@ -191,11 +193,11 @@ class Quiz extends Component
                 'question_key' => 'gagging',
                 'question' => trans('front.question_10'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_10_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_10_2'),
                         'image'  => '',
                     ]
@@ -209,11 +211,11 @@ class Quiz extends Component
                 'question_key' => 'allergies',
                 'question' => trans('front.question_11'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_11_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_11_2'),
                         'image'  => '',
                     ]
@@ -227,15 +229,15 @@ class Quiz extends Component
                 'question_key' => 'foods_prefer',
                 'question' => trans('front.question_12'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_12_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_12_2'),
                         'image'  => '',
                     ],
-                    [
+                    '3' => [
                         'text' => trans('front.answer_12_3'),
                         'image'  => '',
                     ]
@@ -243,17 +245,17 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_12'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_12'),
-                'multiple' => true, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => true, 'answer_with_image' => false, 'continue_button' => true, 'has_answers' => true,
             ],
             '13' => [
                 'question_key' => 'vegetarian',
                 'question' => trans('front.question_13'),
                 'answers' => [
-                    [
+                    '1' => [
                         'text' => trans('front.answer_13_1'),
                         'image'  => '',
                     ],
-                    [
+                    '2' => [
                         'text' => trans('front.answer_13_2'),
                         'image'  => '',
                     ]
@@ -272,13 +274,13 @@ class Quiz extends Component
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }
 
-    public function nextSlide()
+    public function nextSlide($answer = null)
     {
+        $this->setQuestionAnswer($answer);
+
         $this->currentQuestionNum++;
 
-        if($this->currentQuestionNum > $this->countQuestions) {
-            $this->currentQuestionNum = $this->countQuestions;
-        }
+        $this->checkSlideNumber();
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }
@@ -287,11 +289,61 @@ class Quiz extends Component
     {
         $this->currentQuestionNum--;
 
+        $this->checkSlideNumber();
+
+        $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+    }
+
+    public function nextSlideMultiple($answer = null)
+    {
+        if($answer) {
+
+            $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
+            $text = $currentAnswer['answers'][$answer]['text'];
+
+            if(isset($this->resultAnswers[$this->currentQuestionNum])) {
+                if(empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer])) {
+                    $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
+                } else {
+                    $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
+                }
+            } else {
+                $this->resultAnswers[$this->currentQuestionNum] = [
+                    'number' => $this->currentQuestionNum,
+                    'key' => $currentAnswer['question_key'],
+                    'answers' => []
+                ];
+
+                $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
+            }
+
+        }
+    }
+
+    public function setQuestionAnswer($answer)
+    {
+        if($answer) {
+
+            $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
+            $text = $currentAnswer['answers'][$answer]['text'];
+
+            $this->resultAnswers[$this->currentQuestionNum] = [
+                'number' => $this->currentQuestionNum,
+                'key' => $currentAnswer['question_key'],
+                'answer' => $text
+            ];
+        }
+    }
+
+    public function checkSlideNumber()
+    {
+        if($this->currentQuestionNum > $this->countQuestions) {
+            $this->currentQuestionNum = $this->countQuestions;
+        }
+
         if(!$this->currentQuestionNum) {
             $this->currentQuestionNum = 1;
         }
-
-        $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }
 
     public function render()

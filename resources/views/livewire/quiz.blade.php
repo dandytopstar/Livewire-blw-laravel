@@ -27,11 +27,34 @@
                 <h2 class="text-center">{{$currentQuestion['question']}}</h2>
             @endif
 
-            @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
+            @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
 
-                @foreach($currentQuestion['answers'] as $answer)
+                @foreach($currentQuestion['answers'] as $key => $answer)
 
-                    <div class="card my-3 quiz-question-card" wire:click="nextSlide" style="cursor: pointer">
+                    <div wire:click="nextSlide({{$key}})"
+                         class="card my-3 quiz-question-card"
+                         style="cursor: pointer"
+                         id="{{$currentQuestion['question_key'].'-'.$key}}"
+                    >
+                        <div class="card-body text-center">
+                            {{$answer['text']}}
+                        </div>
+                    </div>
+
+                @endforeach
+
+            @endif
+
+
+            @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && $currentQuestion['multiple'])
+
+                @foreach($currentQuestion['answers'] as $key => $answer)
+
+                    <div wire:click="nextSlideMultiple({{$key}})"
+                         class="card my-3 quiz-question-card"
+                         style="cursor: pointer"
+                         id="{{$currentQuestion['question_key'].'-'.$key}}"
+                    >
                         <div class="card-body text-center">
                             {{$answer['text']}}
                         </div>
@@ -43,10 +66,14 @@
 
             @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
                 <div class="row text-center">
-                    @foreach($currentQuestion['answers'] as $answer)
+                    @foreach($currentQuestion['answers'] as $key => $answer)
 
                         <div class="col-12 col-md-6">
-                            <img src="{{$answer['image']}}" class="img-thumbnail" wire:click="nextSlide" style="height: 300px; border-radius: 15px; cursor: pointer">
+                            <img wire:click="nextSlide({{$key}})"
+                                 src="{{$answer['image']}}"
+                                 class="img-thumbnail"
+                                 style="height: 300px; border-radius: 15px; cursor: pointer"
+                            >
                         </div>
 
                     @endforeach
@@ -69,6 +96,24 @@
                     {{$currentQuestion['continue_button_text']}}
                 </button>
             @endif
+
+
+            @foreach($resultAnswers as $answer)
+
+                <div>
+                    {{$answer['number']}} => {{$answer['key']}} =>
+                    @if(isset($answer['answer']))
+                        {{$answer['answer']}}
+                    @endif
+
+                    @if(isset($answer['answers']))
+                        @foreach($answer['answers'] as $item)
+                            {{$item}}
+                        @endforeach
+                    @endif
+
+                </div>
+            @endforeach
 
         </div>
     </div>
