@@ -37,7 +37,12 @@
                          id="{{$currentQuestion['question_key'].'-'.$key}}"
                     >
                         <div class="card-body text-center">
-                            {{$answer['text']}}
+                            @if($currentQuestion['image_before'])
+                                <i class="bi bi-arrow-right-circle-fill align-content-start"></i>
+                            @endif
+                            <span class="text-center">
+                                {{$answer['text']}}
+                            </span>
                         </div>
                     </div>
 
@@ -56,6 +61,9 @@
                          id="{{$currentQuestion['question_key'].'-'.$key}}"
                     >
                         <div class="card-body text-center">
+                            @if($currentQuestion['image_before'])
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                            @endif
                             {{$answer['text']}}
                         </div>
                     </div>

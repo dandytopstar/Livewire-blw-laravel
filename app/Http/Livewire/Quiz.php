@@ -10,7 +10,7 @@ class Quiz extends Component
 
     public int $countQuestions;
 
-    public int $currentQuestionNum;
+    public int $currentQuestionNum = 1;
 
     public array $currentQuestion = [];
 
@@ -25,17 +25,18 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_1_1'),
-                        'image'  => 'front/assets/images/quiz/boy.png',
+                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
                     ],
                     '2' => [
                         'text' => trans('front.answer_1_2'),
-                        'image'  => 'front/assets/images/quiz/girl.png',
+                        'image'  => 'front/assets/images/quiz/quiz_girl.png',
                     ],
                 ],
                 'section_text' => trans('front.section_text_1'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_1'),
-                'multiple' => false, 'answer_with_image' => true, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '2' => [
                 'question_key' => 'familiar_with_blw',
@@ -57,7 +58,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_2'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_2'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '3' => [
                 'question_key' => 'text_section',
@@ -69,9 +71,10 @@ class Quiz extends Component
                     ]
                 ],
                 'section_text' => trans('front.section_text_3'),
-                'section_image' => 'front/assets/images/quiz/can_your_baby_sit.png',
+                'section_image' => 'front/assets/images/quiz/quiz_can_your_baby_sit.png',
                 'continue_button_text' => trans('front.continue_button_text_3'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true, 'has_answers' => false,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
+                'has_answers' => false, 'image_before' => false,
             ],
             '4' => [
                 'question_key' => 'age',
@@ -93,7 +96,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_4'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_4'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true,  'image_before' => false,
             ],
             '5' => [
                 'question_key' => 'can_sit',
@@ -101,17 +105,18 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_5_1'),
-                        'image'  => 'front/assets/images/quiz/boy.png',
+                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
                     ],
                     '2' => [
                         'text' => trans('front.answer_5_2'),
-                        'image'  => 'front/assets/images/quiz/boy.png',
+                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
                     ]
                 ],
                 'section_text' => trans('front.section_text_5'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_5'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => true,
             ],
             '6' => [
                 'question_key' => 'can_grab',
@@ -129,7 +134,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_6'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_6'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '7' => [
                 'question_key' => 'can_put_things',
@@ -147,7 +153,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_7'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_7'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '8' => [
                 'question_key' => 'can_put_food',
@@ -165,7 +172,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_8'),
                 'section_image' => '',
                 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '9' => [
                 'question_key' => 'can_chew',
@@ -187,7 +195,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_9'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_9'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '10' => [
                 'question_key' => 'gagging',
@@ -205,7 +214,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_10'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_10'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '11' => [
                 'question_key' => 'allergies',
@@ -223,7 +233,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_11'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_11'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
             '12' => [
                 'question_key' => 'foods_prefer',
@@ -245,7 +256,8 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_12'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_12'),
-                'multiple' => true, 'answer_with_image' => false, 'continue_button' => true, 'has_answers' => true,
+                'multiple' => true, 'answer_with_image' => false, 'continue_button' => true,
+                'has_answers' => true, 'image_before' => false,
             ],
             '13' => [
                 'question_key' => 'vegetarian',
@@ -263,13 +275,12 @@ class Quiz extends Component
                 'section_text' => trans('front.section_text_13'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_13'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false, 'has_answers' => true,
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false,
             ],
         ];
 
         $this->countQuestions = count($this->quizQuestions);
-
-        $this->currentQuestionNum = 1;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
     }
