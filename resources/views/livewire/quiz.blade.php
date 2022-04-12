@@ -140,13 +140,13 @@
                             <form class="contactForm" method="post" action="assets/php/contact.php">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <input class="form-control" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
+                                        <input wire:model="clientRegistrationData.name" class="form-control" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <input class="form-control" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
+                                        <input wire:model="clientRegistrationData.email" class="form-control" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control" id="additional-infos" placeholder="request details" name="client-additional-infos" cols="30" rows="10"></textarea>
+                                        <textarea wire:model="clientRegistrationData.additional_infos" class="form-control" id="additional-infos" placeholder="request details" name="client-additional-infos" cols="30" rows="10"></textarea>
                                     </div>
                                     <div class="col-12 text-center">
                                         <button class="btn btn--secondary">{{__('front.client_registration_button_text')}}</button>
@@ -157,11 +157,8 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- End .col-12-->
                     </div>
-                    <!-- End .row-->
                 </div>
-                <!-- End .container-->
             </section>
 
         @endif
