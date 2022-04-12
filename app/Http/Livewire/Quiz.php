@@ -2,6 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Client;
+use App\Models\QuizAnswers;
+use Illuminate\Support\Str;
 use Livewire\Component;
 
 class Quiz extends Component
@@ -285,15 +288,14 @@ class Quiz extends Component
         ];
 
         $this->clientRegistrationData = [
-            'name' => 'test',
-            'email' => 'teste',
-            'age' => '11',
-            'additional_infos' => 'sgdfgsdf',
+            'name' => '',
+            'email' => '',
+            'additional_infos' => '',
         ];
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 13;
+        $this->currentQuestionNum = 1;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -381,6 +383,50 @@ class Quiz extends Component
         if(!$this->currentQuestionNum) {
             $this->currentQuestionNum = 1;
         }
+    }
+
+    public function createClient()
+    {
+        $client = Client::create([
+            'name' => $this->clientRegistrationData['name'],
+            'email' => $this->clientRegistrationData['email'],
+            'country' => '',
+            'code' => Str::uuid(),
+            'payment_method' => '',
+            'status' => 'free',
+            'unit_system' => 'metric',
+            'additional_infos' => $this->clientRegistrationData['additional_infos'],
+        ]);
+
+        foreach ($this->resultAnswers as $answer) {
+
+            if(empty($answer['answers'])) {
+                $data = [
+                    'client_id' => $client->id,
+                    'number' => $answer['number'],
+                    'key' => $answer['key'],
+                    'answer' => $answer['answer'],
+                    'answer_num' => $answer['answer_num'],
+                ];
+
+                QuizAnswers::create($data);
+            } else {
+                $data = [
+                    'client_id' => $client->id,
+                    'number' => $answer['number'],
+                    'key' => $answer['key'],
+                ];
+
+                foreach ($answer['answers'] as $key => $value) {
+                    $data['answer'] = $value;
+                    $data['answer_num'] = $key;
+                    QuizAnswers::create($data);
+                }
+            }
+        }
+
+
+        $this->redirect('/'.$client->code);
     }
 
     public function render()

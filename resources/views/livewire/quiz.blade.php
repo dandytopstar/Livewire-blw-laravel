@@ -137,25 +137,27 @@
 {{--                                <p class="heading-subtitle">Have a questation</p>--}}
                                 <h2 class="heading-title">{{__('front.client_registration_title')}}</h2>
                             </div>
-                            <form class="contactForm" method="post" action="assets/php/contact.php">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <input wire:model="clientRegistrationData.name" class="form-control" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <input wire:model="clientRegistrationData.email" class="form-control" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea wire:model="clientRegistrationData.additional_infos" class="form-control" id="additional-infos" placeholder="request details" name="client-additional-infos" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn--secondary">{{__('front.client_registration_button_text')}}</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="contact-result"></div>
-                                    </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <input wire:model="clientRegistrationData.name" class="form-control" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
                                 </div>
-                            </form>
+                                <div class="col-12 col-md-6">
+                                    <input wire:model="clientRegistrationData.email" class="form-control" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
+                                </div>
+                                <div class="col-12">
+                                    <textarea wire:model="clientRegistrationData.additional_infos" class="form-control" id="additional-infos" placeholder="request details" name="client-additional-infos" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button wire:click="createClient" class="btn btn--secondary">
+                                        {{__('front.client_registration_button_text')}}
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="contact-result"></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
