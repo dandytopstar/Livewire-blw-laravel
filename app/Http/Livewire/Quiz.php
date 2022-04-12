@@ -12,6 +12,8 @@ class Quiz extends Component
 
     public int $currentQuestionNum = 1;
 
+    public int $registrationStepNum;
+
     public array $currentQuestion = [];
 
     public array $resultAnswers = [];
@@ -283,6 +285,8 @@ class Quiz extends Component
         $this->countQuestions = count($this->quizQuestions);
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+
+        $this->registrationStepNum = $this->countQuestions + 1;
     }
 
     public function nextSlide($answer = null)
@@ -348,6 +352,10 @@ class Quiz extends Component
 
     public function checkSlideNumber()
     {
+        if($this->currentQuestionNum == $this->registrationStepNum) {
+            return true;
+        }
+
         if($this->currentQuestionNum > $this->countQuestions) {
             $this->currentQuestionNum = $this->countQuestions;
         }

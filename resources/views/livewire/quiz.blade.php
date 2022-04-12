@@ -22,7 +22,8 @@
     </div>
 
     <div class="container mt-150">
-        <div class="mx-auto w-50">
+        @if(!$registrationStepNum)
+            <div class="mx-auto w-50">
             @if(!empty($currentQuestion['question']))
                 <h2 class="text-center">{{$currentQuestion['question']}}</h2>
             @endif
@@ -32,7 +33,7 @@
                 @foreach($currentQuestion['answers'] as $key => $answer)
 
                     <div wire:click="nextSlide({{$key}})"
-                         class="card my-3 quiz-question-card"
+                         class="card my-3 quiz-question-card quiz-active-answer"
                          style="cursor: pointer"
                          id="{{$currentQuestion['question_key'].'-'.$key}}"
                     >
@@ -124,5 +125,15 @@
             @endforeach
 
         </div>
+        @else
+            <div class="card">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 </div>
