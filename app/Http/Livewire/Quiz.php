@@ -10,7 +10,7 @@ class Quiz extends Component
 
     public int $countQuestions;
 
-    public int $currentQuestionNum = 1;
+    public int $currentQuestionNum;
 
     public int $registrationStepNum;
 
@@ -284,6 +284,8 @@ class Quiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
+        $this->currentQuestionNum = 1;
+
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
         $this->registrationStepNum = $this->countQuestions + 1;
@@ -291,13 +293,18 @@ class Quiz extends Component
 
     public function nextSlide($answer = null)
     {
+        if($this->currentQuestionNum == $this->registrationStepNum) {
+            return true;
+        }
+
         $this->setQuestionAnswer($answer);
 
         $this->currentQuestionNum++;
 
         $this->checkSlideNumber();
-
-        $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+        if($this->currentQuestionNum !== $this->registrationStepNum) {
+            $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+        }
     }
 
     public function prevSlide()
@@ -345,7 +352,8 @@ class Quiz extends Component
             $this->resultAnswers[$this->currentQuestionNum] = [
                 'number' => $this->currentQuestionNum,
                 'key' => $currentAnswer['question_key'],
-                'answer' => $text
+                'answer' => $text,
+                'answer_num' => $answer,
             ];
         }
     }

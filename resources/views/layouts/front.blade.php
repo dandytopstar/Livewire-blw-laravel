@@ -21,18 +21,17 @@
 
 </head>
 <body class="body-scroll">
-<!-- Document Wrapper-->
-<div class="wrapper clearfix" id="wrapperParallax">
+    <!-- Document Wrapper-->
+    <div class="wrapper clearfix" id="wrapperParallax">
 
-    @yield('content')
+        @yield('content')
 
+    </div>
+    <!--  Footer Scripts -->
     @livewireScripts
-</div>
-<!--  Footer Scripts==
--->
-<script src="{{asset('front/assets/js/vendor/jquery-3.4.1.min.js')}}"></script>
-<script src="{{asset('front/assets/js/vendor.min.js')}}"></script>
-<script src="{{asset('front/assets/js/functions.js')}}"></script>
-<script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('front/assets/js/vendor/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{asset('front/assets/js/vendor.min.js')}}"></script>
+    <script src="{{asset('front/assets/js/functions.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>
