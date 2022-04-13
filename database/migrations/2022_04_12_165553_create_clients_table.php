@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('payment_method')->nullable()->default(null);
             $table->string('status');
             $table->string('unit_system');
-            $table->string('additional_infos');
+            $table->string('additional_infos')->nullable();
             $table->timestamps();
         });
     }

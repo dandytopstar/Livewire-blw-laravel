@@ -6777,3 +6777,9 @@
 .quiz-question-card:hover {
   border: 2px solid #22BF8E;
 }
+
+.quiz-active-answer {
+  background-color: #22BF8E;
+  border: #22BF8E;
+  color: #FFFFFF;
+}

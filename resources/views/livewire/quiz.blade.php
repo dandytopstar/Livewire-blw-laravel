@@ -34,7 +34,7 @@
                     @foreach($currentQuestion['answers'] as $key => $answer)
 
                         <div wire:click="nextSlide({{$key}})"
-                             class="card my-3 quiz-question-card quiz-active-answer"
+                             class="card my-3 quiz-question-card"
                              style="cursor: pointer"
                              id="{{$currentQuestion['question_key'].'-'.$key}}"
                         >
@@ -106,7 +106,6 @@
                         {{$currentQuestion['continue_button_text']}}
                     </button>
                 @endif
-
 
                 @foreach($resultAnswers as $answer)
 

@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 
+use App\Enums\PaymentStatus;
+use App\Enums\UnitSystem;
 use App\Models\Client;
 use App\Models\QuizAnswers;
 use Illuminate\Support\Str;
@@ -393,8 +395,8 @@ class Quiz extends Component
             'country' => '',
             'code' => Str::uuid(),
             'payment_method' => '',
-            'status' => 'free',
-            'unit_system' => 'metric',
+            'status' => PaymentStatus::FREE,
+            'unit_system' => UnitSystem::METRIC,
             'additional_infos' => $this->clientRegistrationData['additional_infos'],
         ]);
 
@@ -403,30 +405,34 @@ class Quiz extends Component
             if(empty($answer['answers'])) {
                 $data = [
                     'client_id' => $client->id,
-                    'number' => $answer['number'],
+                    'question_number' => $answer['number'],
                     'key' => $answer['key'],
                     'answer' => $answer['answer'],
-                    'answer_num' => $answer['answer_num'],
+                    'answer_number' => $answer['answer_num'],
                 ];
 
                 QuizAnswers::create($data);
+
             } else {
                 $data = [
                     'client_id' => $client->id,
-                    'number' => $answer['number'],
+                    'question_number' => $answer['number'],
                     'key' => $answer['key'],
                 ];
 
                 foreach ($answer['answers'] as $key => $value) {
-                    $data['answer'] = $value;
-                    $data['answer_num'] = $key;
-                    QuizAnswers::create($data);
+                    if($value) {
+                        $data['answer'] = $value;
+                        $data['answer_number'] = $key;
+
+                        QuizAnswers::create($data);
+                    }
                 }
             }
         }
 
 
-        $this->redirect('/'.$client->code);
+        $this->redirect('/quiz-result/'.$client->code);
     }
 
     public function render()

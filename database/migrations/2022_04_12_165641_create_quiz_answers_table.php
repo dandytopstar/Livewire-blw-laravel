@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('quiz_answers', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('client_id');
-            $table->tinyInteger('number');
-            $table->tinyInteger('answer_num');
+            $table->tinyInteger('question_number');
+            $table->tinyInteger('answer_number');
             $table->string('key');
             $table->string('answer');
             $table->timestamps();

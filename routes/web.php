@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuizController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,6 @@ Route::get('/', function () {
 Route::get('quiz', function () {
     return view('quiz');
 })->name('quiz');
+
+Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 

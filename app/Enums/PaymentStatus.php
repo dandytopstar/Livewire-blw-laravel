@@ -2,6 +2,8 @@
 
 namespace App\Enums;
 
-class PaymentStatus
+enum PaymentStatus:string
 {
+    case FREE = 'free';
+    case PAID = 'paid';
 }
