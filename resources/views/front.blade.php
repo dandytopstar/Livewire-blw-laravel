@@ -17,26 +17,8 @@
     <!-- About Section -->
     <x-front.sections.about-white/>
 
-    <!-- Featured Section -->
-{{--    <x-front.sections.features/>--}}
-
-    <!-- Screenshots Section -->
-{{--    <x-front.sections.screenshots/>--}}
-
-    <!-- Video Section -->
-{{--    <x-front.sections.video/>--}}
-
     <!-- Testimonials Section -->
     <x-front.sections.testimonials/>
-
-    <!-- Pricing Table Section -->
-{{--    <x-front.sections.pricing/>--}}
-
-    <!-- Blog Section -->
-{{--    <x-front.sections.blog/>--}}
-
-    <!-- Download Section -->
-{{--    <x-front.sections.download/>--}}
 
     <!-- CTA Section -->
     <x-front.sections.cta/>

@@ -21,9 +21,9 @@
         </div>
     </div>
 
-    <div class="container mt-150">
-        @if($this->currentQuestionNum !== $this->registrationStepNum)
+    @if($this->currentQuestionNum !== $this->registrationStepNum)
 
+        <div class="container mt-100">
             <div class="mx-auto w-50">
                 @if(!empty($currentQuestion['question']))
                     <h2 class="text-center">{{$currentQuestion['question']}}</h2>
@@ -40,11 +40,11 @@
                         >
                             <div class="card-body text-center">
                                 @if($currentQuestion['image_before'])
-                                    <i class="bi bi-arrow-right-circle-fill align-content-start"></i>
+
                                 @endif
                                 <span class="text-center">
-                                    {{$answer['text']}}
-                                </span>
+                                {{$answer['text']}}
+                            </span>
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@
                     <div class="row text-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
 
-                            <div class="col-12 col-md-6" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlide({{$key}})" style="cursor: pointer">
+                            <div class="col-12 col-md-6 my-3" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlide({{$key}})" style="cursor: pointer">
                                 <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
                                     <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
                                     <div class="card-body">
@@ -87,8 +87,6 @@
                                 </div>
                             </div>
 
-
-
                         @endforeach
                     </div>
 
@@ -96,7 +94,7 @@
 
                 @if(!empty($currentQuestion['section_image']))
                     <div class="text-center">
-                        <img src="{{$currentQuestion['section_image']}}" style="height: 400px">
+                        <img src="{{$currentQuestion['section_image']}}" style="height: 200px">
                     </div>
                 @endif
 
@@ -126,19 +124,21 @@
 
                     </div>
                 @endforeach
-                    {{$currentQuestionNum}}
-                    <pre>{{print_r($checkCurrentAnswer)}}</pre>
+                {{$currentQuestionNum}}
+                <pre>{{print_r($checkCurrentAnswer)}}</pre>
 
             </div>
+        </div>
 
-        @else
+    @else
 
+        <div class="container">
             <section class="cta" id="action">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-8 offset-lg-2">
                             <div class="heading text-center">
-{{--                                <p class="heading-subtitle">Have a questation</p>--}}
+                                {{--                                <p class="heading-subtitle">Have a questation</p>--}}
                                 <h2 class="heading-title">{{__('front.client_registration_title')}}</h2>
                             </div>
 
@@ -166,7 +166,12 @@
                     </div>
                 </div>
             </section>
+        </div>
 
-        @endif
-    </div>
+    @endif
+
+
+
+
+
 </div>
