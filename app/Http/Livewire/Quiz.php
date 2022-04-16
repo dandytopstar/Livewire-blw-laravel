@@ -25,6 +25,8 @@ class Quiz extends Component
 
     public array $clientRegistrationData;
 
+    public array $checkCurrentAnswer = [];
+
     public function mount()
     {
         $this->quizQuestions = [
@@ -302,6 +304,15 @@ class Quiz extends Component
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
         $this->registrationStepNum = $this->countQuestions + 1;
+    }
+
+    public function dehydrate()
+    {
+
+        if(!empty($this->resultAnswers[$this->currentQuestionNum])) {
+            $this->checkCurrentAnswer = $this->resultAnswers[$this->currentQuestionNum];
+        }
+
     }
 
     public function nextSlide($answer = null)

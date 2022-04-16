@@ -12,7 +12,6 @@
                     <li class="nav-item"><a class="nav-link" href="#processes">{{__("front.how_it_works")}}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">{{__("front.personalized_plan")}}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about-white">{{__("front.baby_led_weaning")}}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
 {{--                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing </a></li>--}}
 {{--                    <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>--}}
                 </ul>

@@ -78,13 +78,16 @@
                     <div class="row text-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
 
-                            <div class="col-12 col-md-6">
-                                <img wire:click="nextSlide({{$key}})"
-                                     src="{{$answer['image']}}"
-                                     class="img-thumbnail"
-                                     style="height: 300px; border-radius: 15px; cursor: pointer"
-                                >
+                            <div class="col-12 col-md-6" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlide({{$key}})" style="cursor: pointer">
+                                <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
+                                    <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
+                                    <div class="card-body">
+                                        <p class="card-text">{{$answer['text']}}</p>
+                                    </div>
+                                </div>
                             </div>
+
+
 
                         @endforeach
                     </div>
@@ -123,6 +126,8 @@
 
                     </div>
                 @endforeach
+                    {{$currentQuestionNum}}
+                    <pre>{{print_r($checkCurrentAnswer)}}</pre>
 
             </div>
 

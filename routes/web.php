@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
 
@@ -22,5 +23,16 @@ Route::get('quiz', function () {
     return view('quiz');
 })->name('quiz');
 
+Route::get('terms', function () {
+    return view('pages.terms');
+})->name('terms');
+
+Route::get('policy', function () {
+    return view('pages.policy');
+})->name('policy');
+
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
+
+Route::get('page/{slug}', [PageController::class, 'showPageBySlug'])->name('show-page-by-slug');
+
 

@@ -9,6 +9,8 @@ return [
     'how_it_works' => 'How It Works',
     'personalized_plan' => 'Personalized Plan',
     'baby_led_weaning' => 'Baby-Led Weaning',
+    'terms_and_conditions' => 'Terms and conditions',
+    'privacy_policy' => 'Privacy Policy',
 
     //Select gender
     'indexFirstTitle' => 'Get Baby-Led Weaning plan',
@@ -17,7 +19,9 @@ return [
 
     //Footer
     'youAgree' => 'By continuing you agree to our',
-    'allRightsReserved' => ':year © All Rights Reserved.',
+    'allRightsReserved' => '2022 © <a href="http://Babyledweaning.me">Babyledweaning.me</a> All rights reserved.',
+    'about_app' => 'About App',
+    'about_app_text' => 'About Babyledweaning.me',
 
     //Site
     'country' => 'us',

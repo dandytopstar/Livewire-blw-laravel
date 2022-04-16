@@ -33,7 +33,7 @@
 {{--    <x-front.sections.pricing/>--}}
 
     <!-- Blog Section -->
-    <x-front.sections.blog/>
+{{--    <x-front.sections.blog/>--}}
 
     <!-- Download Section -->
 {{--    <x-front.sections.download/>--}}

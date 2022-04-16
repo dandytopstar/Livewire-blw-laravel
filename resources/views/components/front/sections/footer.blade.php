@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget widget-about">
-                        <h4 class="widget-title">About App</h4>
-                        <p>This should be used to tell a story and include any testimonials you might have about your product or service for your clients</p>
+                        <h4 class="widget-title">{{__('front.about_app')}}</h4>
+                        <p>{{__('front.about_app_text')}}</p>
                         <div class="footer-social"><span>follow us</span>
                             <ul class="list-unstyled">
                                 <li> <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
@@ -21,28 +21,28 @@
                     <div class="footer-widget widget-links">
                         <h4 class="widget-title">quick links </h4>
                         <ul class="list-unstyled">
-                            <li> <a href="javascript:void(0)">home</a></li>
-                            <li> <a href="javascript:void(0)">features</a></li>
-                            <li> <a href="javascript:void(0)">how to work</a></li>
-                            <li> <a href="javascript:void(0)">screenshots</a></li>
-                            <li> <a href="javascript:void(0)">pricing</a></li>
-                            <li> <a href="javascript:void(0)">blog</a></li>
+                            <li><a href="#hero">{{__("front.home")}}</a></li>
+                            <li><a href="#processes">{{__("front.how_it_works")}}</a></li>
+                            <li><a href="#about">{{__("front.personalized_plan")}}</a></li>
+                            <li><a href="#about-white">{{__("front.baby_led_weaning")}}</a></li>
+                            <li><a href="{{route('terms')}}">{{__("front.terms_and_conditions")}}</a></li>
+                            <li><a href="{{route('policy')}}">{{__("front.privacy_policy")}}</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="footer-widget widget-links">
-                        <h4 class="widget-title">help</h4>
-                        <ul class="list-unstyled">
-                            <li> <a href="javascript:void(0)">about us</a></li>
-                            <li> <a href="javascript:void(0)">partners</a></li>
-                            <li> <a href="javascript:void(0)">career</a></li>
-                            <li> <a href="javascript:void(0)">reviews</a></li>
-                            <li> <a href="javascript:void(0)">terms & conditions</a></li>
-                            <li> <a href="javascript:void(0)">help</a></li>
-                        </ul>
-                    </div>
-                </div>
+{{--                <div class="col-6 col-md-6 col-lg-2">--}}
+{{--                    <div class="footer-widget widget-links">--}}
+{{--                        <h4 class="widget-title">help</h4>--}}
+{{--                        <ul class="list-unstyled">--}}
+{{--                            <li> <a href="javascript:void(0)">about us</a></li>--}}
+{{--                            <li> <a href="javascript:void(0)">partners</a></li>--}}
+{{--                            <li> <a href="javascript:void(0)">career</a></li>--}}
+{{--                            <li> <a href="javascript:void(0)">reviews</a></li>--}}
+{{--                            <li> <a href="javascript:void(0)">terms & conditions</a></li>--}}
+{{--                            <li> <a href="javascript:void(0)">help</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget widget-newsletter">
                         <h4 class="widget-title">Newsletter</h4>
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="footer-copyright"><span>2021 &copy; <a href="http://themeforest.net/user/zytheme/portfolio?ref=zytheme">zytheme</a>. All rights reserved.</span></div>
+                    <div class="footer-copyright"><span>{!! __('front.allRightsReserved') !!}</span></div>
                 </div>
             </div>
         </div>
