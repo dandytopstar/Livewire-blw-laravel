@@ -1,5 +1,4 @@
 <div>
-    !!!!
     <div class="quiz-top-bar">
         <div class="container">
             <div class="row">
