@@ -124,8 +124,8 @@
 
                     </div>
                 @endforeach
-                {{$currentQuestionNum}}
-                <pre>{{print_r($checkCurrentAnswer)}}</pre>
+{{--                {{$currentQuestionNum}}--}}
+{{--                <pre>{{print_r($checkCurrentAnswer)}}</pre>--}}
 
             </div>
         </div>
