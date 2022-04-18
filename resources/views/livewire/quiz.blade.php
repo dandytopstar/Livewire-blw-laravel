@@ -26,7 +26,7 @@
         <div class="container mt-100">
             <div class="mx-auto w-50">
                 @if(!empty($currentQuestion['question']))
-                    <h2 class="text-center">{{$currentQuestion['question']}}</h2>
+                    <h4 class="text-center">{{$currentQuestion['question']}}</h4>
                 @endif
 
                 @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
@@ -74,11 +74,31 @@
 
                 @endif
 
-                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
+                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
+
                     <div class="row text-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
 
                             <div class="col-12 col-md-6 my-3" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlide({{$key}})" style="cursor: pointer">
+                                <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
+                                    <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
+                                    <div class="card-body">
+                                        <p class="card-text">{{$answer['text']}}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        @endforeach
+                    </div>
+
+                @endif
+
+                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'] && $currentQuestion['multiple'])
+
+                    <div class="row text-center">
+                        @foreach($currentQuestion['answers'] as $key => $answer)
+
+                            <div class="col-12 col-md-6 my-3" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlideMultiple({{$key}})" style="cursor: pointer">
                                 <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
                                     <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
                                     <div class="card-body">

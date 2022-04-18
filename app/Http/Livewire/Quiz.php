@@ -253,21 +253,33 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_12_1'),
-                        'image'  => '',
+                        'image'  => 'front/assets/images/quiz/fish.png',
                     ],
                     '2' => [
                         'text' => trans('front.answer_12_2'),
-                        'image'  => '',
+                        'image'  => 'front/assets/images/quiz/dairy_products.png',
                     ],
                     '3' => [
                         'text' => trans('front.answer_12_3'),
-                        'image'  => '',
+                        'image'  => 'front/assets/images/quiz/eggs.png',
+                    ],
+                    '4' => [
+                        'text' => trans('front.answer_12_4'),
+                        'image'  => 'front/assets/images/quiz/poultry.png',
+                    ],
+                    '5' => [
+                        'text' => trans('front.answer_12_5'),
+                        'image'  => 'front/assets/images/quiz/beef.png',
+                    ],
+                    '6' => [
+                        'text' => trans('front.answer_12_6'),
+                        'image'  => 'front/assets/images/quiz/pork.png',
                     ]
                 ],
                 'section_text' => trans('front.section_text_12'),
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_12'),
-                'multiple' => true, 'answer_with_image' => false, 'continue_button' => true,
+                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
                 'has_answers' => true, 'image_before' => false,
             ],
             '13' => [

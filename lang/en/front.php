@@ -141,9 +141,12 @@ return [
 
     //question 12
     'question_12'             => 'Do you prefer not to eat any of these foods?',
-    'answer_12_1'             => 'carrots',
-    'answer_12_2'             => 'apples',
-    'answer_12_3'             => 'bananas',
+    'answer_12_1'             => 'fish',
+    'answer_12_2'             => 'dairy products',
+    'answer_12_3'             => 'eggs',
+    'answer_12_4'             => 'poultry',
+    'answer_12_5'             => 'beef',
+    'answer_12_6'             => 'pork',
     'section_text_12'         => '',
     'continue_button_text_12' => 'continue',
 
