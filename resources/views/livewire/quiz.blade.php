@@ -26,7 +26,7 @@
         <div class="container mt-100">
             <div class="mx-auto w-50">
                 @if(!empty($currentQuestion['question']))
-                    <h4 class="text-center">{{$currentQuestion['question']}}</h4>
+                    <h5 class="text-center">{{$currentQuestion['question']}}</h5>
                 @endif
 
                 @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
@@ -34,7 +34,7 @@
                     @foreach($currentQuestion['answers'] as $key => $answer)
 
                         <div wire:click="nextSlide({{$key}})"
-                             class="card my-3 quiz-question-card"
+                             class="card my-3 quiz-question-card @if($answer['selected']) quiz-active-answer @endif"
                              style="cursor: pointer"
                              id="{{$currentQuestion['question_key'].'-'.$key}}"
                         >
@@ -58,7 +58,7 @@
                     @foreach($currentQuestion['answers'] as $key => $answer)
 
                         <div wire:click="nextSlideMultiple({{$key}})"
-                             class="card my-3 quiz-question-card"
+                             class="card my-3 quiz-question-card @if($answer['selected']) quiz-active-answer @endif"
                              style="cursor: pointer"
                              id="{{$currentQuestion['question_key'].'-'.$key}}"
                         >
@@ -79,8 +79,11 @@
                     <div class="row text-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
 
-                            <div class="col-12 col-md-6 my-3" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlide({{$key}})" style="cursor: pointer">
-                                <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
+                            <div class="col-12 col-md-6 my-3" wire:click="nextSlide({{$key}})" style="cursor: pointer">
+                                <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
+                                     style="width: 18rem;"
+                                     id="{{$currentQuestion['question_key'].'-'.$key}}"
+                                >
                                     <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
                                     <div class="card-body">
                                         <p class="card-text">{{$answer['text']}}</p>
@@ -98,8 +101,11 @@
                     <div class="row text-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
 
-                            <div class="col-12 col-md-6 my-3" id="{{$currentQuestion['question_key'].'-'.$key}}" wire:click="nextSlideMultiple({{$key}})" style="cursor: pointer">
-                                <div class="card quiz-question-card  text-center mx-auto" style="width: 18rem;">
+                            <div class="col-12 col-md-6 my-3" wire:click="nextSlideMultiple({{$key}})" style="cursor: pointer">
+                                <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
+                                     style="width: 18rem;"
+                                     id="{{$currentQuestion['question_key'].'-'.$key}}"
+                                >
                                     <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
                                     <div class="card-body">
                                         <p class="card-text">{{$answer['text']}}</p>
@@ -132,6 +138,7 @@
 
                     <div>
                         {{$answer['number']}} => {{$answer['key']}} =>
+
                         @if(isset($answer['answer']))
                             {{$answer['answer']}}
                         @endif
@@ -144,8 +151,6 @@
 
                     </div>
                 @endforeach
-{{--                {{$currentQuestionNum}}--}}
-{{--                <pre>{{print_r($checkCurrentAnswer)}}</pre>--}}
 
             </div>
         </div>

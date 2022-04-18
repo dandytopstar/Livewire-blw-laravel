@@ -37,10 +37,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_1_1'),
                         'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_1_2'),
                         'image'  => 'front/assets/images/quiz/quiz_girl.png',
+                        'selected'  => false,
                     ],
                 ],
                 'section_text' => trans('front.section_text_1'),
@@ -56,14 +58,17 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_2_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_2_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '3' => [
                         'text' => trans('front.answer_2_3'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                 ],
                 'section_text' => trans('front.section_text_2'),
@@ -79,6 +84,7 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_3_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_3'),
@@ -94,14 +100,17 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '3' => [
                         'text' => trans('front.answer_4_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                 ],
                 'section_text' => trans('front.section_text_4'),
@@ -117,10 +126,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_5_1'),
                         'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_5_2'),
                         'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_5'),
@@ -136,10 +147,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_6_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_6_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_6'),
@@ -155,10 +168,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_7_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_7_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_7'),
@@ -174,10 +189,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_8_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_8_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_8'),
@@ -193,14 +210,17 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_9_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_9_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '3' => [
                         'text' => trans('front.answer_9_3'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_9'),
@@ -216,10 +236,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_10_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_10_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_10'),
@@ -235,10 +257,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_11_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_11_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_11'),
@@ -254,26 +278,32 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_12_1'),
                         'image'  => 'front/assets/images/quiz/fish.png',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_12_2'),
                         'image'  => 'front/assets/images/quiz/dairy_products.png',
+                        'selected'  => false,
                     ],
                     '3' => [
                         'text' => trans('front.answer_12_3'),
                         'image'  => 'front/assets/images/quiz/eggs.png',
+                        'selected'  => false,
                     ],
                     '4' => [
                         'text' => trans('front.answer_12_4'),
                         'image'  => 'front/assets/images/quiz/poultry.png',
+                        'selected'  => false,
                     ],
                     '5' => [
                         'text' => trans('front.answer_12_5'),
                         'image'  => 'front/assets/images/quiz/beef.png',
+                        'selected'  => false,
                     ],
                     '6' => [
                         'text' => trans('front.answer_12_6'),
                         'image'  => 'front/assets/images/quiz/pork.png',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_12'),
@@ -289,10 +319,12 @@ class Quiz extends Component
                     '1' => [
                         'text' => trans('front.answer_13_1'),
                         'image'  => '',
+                        'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_13_2'),
                         'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_13'),
@@ -311,7 +343,7 @@ class Quiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 11;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -323,6 +355,7 @@ class Quiz extends Component
 
         if(!empty($this->resultAnswers[$this->currentQuestionNum])) {
             $this->checkCurrentAnswer = $this->resultAnswers[$this->currentQuestionNum];
+//            dd($this->checkCurrentAnswer);
         }
 
     }
@@ -361,12 +394,15 @@ class Quiz extends Component
             $text = $currentAnswer['answers'][$answer]['text'];
 
             if(isset($this->resultAnswers[$this->currentQuestionNum])) {
+
                 if(empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer])) {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
                 } else {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
                 }
+
             } else {
+
                 $this->resultAnswers[$this->currentQuestionNum] = [
                     'number' => $this->currentQuestionNum,
                     'key' => $currentAnswer['question_key'],
@@ -375,6 +411,10 @@ class Quiz extends Component
 
                 $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
             }
+
+            $checkSelected =$this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
+
+            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
 
         }
     }
@@ -392,6 +432,12 @@ class Quiz extends Component
                 'answer' => $text,
                 'answer_num' => $answer,
             ];
+
+            foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+            }
+
+            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
         }
     }
 
