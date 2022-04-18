@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container my-3">
         <div>
             <h4 class="text-center">TERMS AND CONDITIONS OF USE</h4>
             <p>
