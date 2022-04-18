@@ -343,7 +343,7 @@ class Quiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 11;
+        $this->currentQuestionNum = 1;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
