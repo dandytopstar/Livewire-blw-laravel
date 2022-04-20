@@ -15,21 +15,10 @@ use App\Http\Controllers\QuizController;
 |
 */
 
-Route::get('/', function () {
-    return view('front');
-});
-
-Route::get('quiz', function () {
-    return view('quiz');
-})->name('quiz');
-
-Route::get('terms', function () {
-    return view('pages.terms');
-})->name('terms');
-
-Route::get('policy', function () {
-    return view('pages.policy');
-})->name('policy');
+Route::view('/', 'front');
+Route::view('quiz', 'quiz')->name('quiz');
+Route::view('terms', 'terms')->name('terms');
+Route::view('policy', 'policy')->name('policy');;
 
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 

@@ -30,5 +30,16 @@
 .quiz-active-answer {
     background-color: #22BF8E;
     border: #22BF8E;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
+}
+
+.quiz-active-answer p {
+    color: #FFFFFF!important;
+}
+
+
+.quiz-image-card {
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
 }

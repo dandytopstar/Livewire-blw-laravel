@@ -26,7 +26,7 @@
         <div class="container mt-100">
             <div class="mx-auto w-50">
                 @if(!empty($currentQuestion['question']))
-                    <h5 class="text-center">{{$currentQuestion['question']}}</h5>
+                    <h5 class="text-center mx-auto">{{$currentQuestion['question']}}</h5>
                 @endif
 
                 @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
@@ -51,7 +51,6 @@
                     @endforeach
 
                 @endif
-
 
                 @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && $currentQuestion['multiple'])
 
@@ -81,10 +80,9 @@
 
                             <div class="col-12 col-md-6 my-3" wire:click="nextSlide({{$key}})" style="cursor: pointer">
                                 <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
-                                     style="width: 18rem;"
                                      id="{{$currentQuestion['question_key'].'-'.$key}}"
                                 >
-                                    <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
+                                    <img src="{{$answer['image']}}" class="mx-auto quiz-image-card">
                                     <div class="card-body">
                                         <p class="card-text">{{$answer['text']}}</p>
                                     </div>
@@ -103,10 +101,9 @@
 
                             <div class="col-12 col-md-6 my-3" wire:click="nextSlideMultiple({{$key}})" style="cursor: pointer">
                                 <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
-                                     style="width: 18rem;"
                                      id="{{$currentQuestion['question_key'].'-'.$key}}"
                                 >
-                                    <img src="{{$answer['image']}}" class="mx-auto" style="width: 200px; border-radius: 15px; cursor: pointer">
+                                    <img src="{{$answer['image']}}" class="mx-auto quiz-image-card" >
                                     <div class="card-body">
                                         <p class="card-text">{{$answer['text']}}</p>
                                     </div>
@@ -120,7 +117,7 @@
 
                 @if(!empty($currentQuestion['section_image']))
                     <div class="text-center">
-                        <img src="{{$currentQuestion['section_image']}}" style="height: 200px">
+                        <img src="{{$currentQuestion['section_image']}}" class="quiz-image-card">
                     </div>
                 @endif
 
@@ -194,9 +191,5 @@
         </div>
 
     @endif
-
-
-
-
 
 </div>
