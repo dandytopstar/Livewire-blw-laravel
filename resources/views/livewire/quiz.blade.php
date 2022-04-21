@@ -118,24 +118,6 @@
                     </button>
                 @endif
 
-{{--                @foreach($resultAnswers as $answer)--}}
-
-{{--                    <div>--}}
-{{--                        {{$answer['number']}} => {{$answer['key']}} =>--}}
-
-{{--                        @if(isset($answer['answer']))--}}
-{{--                            {{$answer['answer']}}--}}
-{{--                        @endif--}}
-
-{{--                        @if(isset($answer['answers']))--}}
-{{--                            @foreach($answer['answers'] as $item)--}}
-{{--                                {{$item}}--}}
-{{--                            @endforeach--}}
-{{--                        @endif--}}
-
-{{--                    </div>--}}
-{{--                @endforeach--}}
-
             </div>
         </div>
 
@@ -147,7 +129,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-8 offset-lg-2">
                             <div class="heading text-center">
-                                {{--                                <p class="heading-subtitle">Have a questation</p>--}}
+
                                 <h2 class="heading-title">{{__('front.client_registration_title')}}</h2>
                             </div>
 
