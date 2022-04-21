@@ -25,8 +25,6 @@ class Quiz extends Component
 
     public array $clientRegistrationData;
 
-    public array $checkCurrentAnswer = [];
-
     public function mount()
     {
         $this->quizQuestions = [
@@ -353,11 +351,6 @@ class Quiz extends Component
     public function dehydrate()
     {
 
-        if(!empty($this->resultAnswers[$this->currentQuestionNum])) {
-            $this->checkCurrentAnswer = $this->resultAnswers[$this->currentQuestionNum];
-//            dd($this->checkCurrentAnswer);
-        }
-
     }
 
     public function nextSlide($answer = null)
@@ -415,6 +408,12 @@ class Quiz extends Component
             $checkSelected =$this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
 
             $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
+
+            $this->dispatchBrowserEvent('answer-selected', [
+                'number' => $answer,
+                'key' => $currentAnswer['question_key'],
+                'answers' => $this->quizQuestions[$this->currentQuestionNum]['answers']
+            ]);
 
         }
     }

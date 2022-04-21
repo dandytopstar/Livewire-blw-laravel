@@ -3,17 +3,33 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-4">
+                {{--       Desktop         --}}
+                <div class="col-4 d-none d-md-block">
                     <i class="bi bi-arrow-left-circle quiz-top-bar-icon" wire:click="prevSlide"></i>
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 d-none d-md-block text-center">
                     <a href="/">
                         <img class="quiz-logo" src="{{'front/assets/images/logo/logo_blw.png'}}" alt="Appzy Logo"/>
                     </a>
                 </div>
 
-                <div class="col-4 pt-3 text--right">
+                <div class="col-4 pt-3 text--right d-none d-md-block">
+                    <b>{{$currentQuestionNum}}</b> of {{$countQuestions}}
+                </div>
+
+                {{--       Mobile         --}}
+                <div class="col-12 d-md-none d-sm-block text-center">
+                    <a href="/">
+                        <img class="quiz-logo img-fluid" src="{{'front/assets/images/logo/logo_blw.png'}}"  alt="Appzy Logo"/>
+                    </a>
+                </div>
+
+                <div class="col-6 d-md-none d-sm-block text-center">
+                    <i class="bi bi-arrow-left-circle quiz-top-bar-icon" wire:click="prevSlide"></i>
+                </div>
+
+                <div class="col-6 pt-3 d-md-none d-sm-block text-center">
                     <b>{{$currentQuestionNum}}</b> of {{$countQuestions}}
                 </div>
 
@@ -29,14 +45,19 @@
                     <h5 class="text-center mx-auto">{{$currentQuestion['question']}}</h5>
                 @endif
 
-                @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
+                @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
 
                     @foreach($currentQuestion['answers'] as $key => $answer)
 
-                        <div wire:click="nextSlide({{$key}})"
-                             class="card my-3 quiz-question-card @if($answer['selected']) quiz-active-answer @endif"
+                        <div class="card my-3 quiz-question-card @if($answer['selected']) quiz-active-answer @endif"
                              style="cursor: pointer"
                              id="{{$currentQuestion['question_key'].'-'.$key}}"
+
+                             @if($currentQuestion['multiple'])
+                                 wire:click="nextSlideMultiple({{$key}})"
+                             @else
+                                 wire:click="nextSlide({{$key}})"
+                                @endif
                         >
                             <div class="card-body text-center">
                                 @if($currentQuestion['image_before'])
@@ -52,64 +73,30 @@
 
                 @endif
 
-                @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'] && $currentQuestion['multiple'])
+                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
 
-                    @foreach($currentQuestion['answers'] as $key => $answer)
-
-                        <div wire:click="nextSlideMultiple({{$key}})"
-                             class="card my-3 quiz-question-card @if($answer['selected']) quiz-active-answer @endif"
-                             style="cursor: pointer"
-                             id="{{$currentQuestion['question_key'].'-'.$key}}"
-                        >
-                            <div class="card-body text-center">
-                                @if($currentQuestion['image_before'])
-                                    <i class="bi bi-arrow-right-circle-fill"></i>
-                                @endif
-                                {{$answer['text']}}
-                            </div>
-                        </div>
-
-                    @endforeach
-
-                @endif
-
-                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'] && !$currentQuestion['multiple'])
-
-                    <div class="row text-center">
+                    <div class="d-flex flex-wrap justify-content-center">
                         @foreach($currentQuestion['answers'] as $key => $answer)
+                            <div class="p-3 text-center" style="width: 215px; cursor: pointer;"
 
-                            <div class="col-12 col-md-6 my-3" wire:click="nextSlide({{$key}})" style="cursor: pointer">
+                                 @if($currentQuestion['multiple'])
+                                     wire:click="nextSlideMultiple({{$key}})"
+                                 @else
+                                     wire:click="nextSlide({{$key}})"
+                                 @endif
+                            >
                                 <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
                                      id="{{$currentQuestion['question_key'].'-'.$key}}"
                                 >
-                                    <img src="{{$answer['image']}}" class="mx-auto quiz-image-card">
-                                    <div class="card-body">
-                                        <p class="card-text">{{$answer['text']}}</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                        @endforeach
-                    </div>
-
-                @endif
-
-                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'] && $currentQuestion['multiple'])
-
-                    <div class="row text-center">
-                        @foreach($currentQuestion['answers'] as $key => $answer)
-
-                            <div class="col-12 col-md-6 my-3" wire:click="nextSlideMultiple({{$key}})" style="cursor: pointer">
-                                <div class="card quiz-question-card text-center mx-auto @if($answer['selected']) quiz-active-answer @endif"
-                                     id="{{$currentQuestion['question_key'].'-'.$key}}"
-                                >
                                     <img src="{{$answer['image']}}" class="mx-auto quiz-image-card" >
+
                                     <div class="card-body">
                                         <p class="card-text">{{$answer['text']}}</p>
                                     </div>
+
                                 </div>
                             </div>
-
                         @endforeach
                     </div>
 
@@ -131,23 +118,23 @@
                     </button>
                 @endif
 
-                @foreach($resultAnswers as $answer)
+{{--                @foreach($resultAnswers as $answer)--}}
 
-                    <div>
-                        {{$answer['number']}} => {{$answer['key']}} =>
+{{--                    <div>--}}
+{{--                        {{$answer['number']}} => {{$answer['key']}} =>--}}
 
-                        @if(isset($answer['answer']))
-                            {{$answer['answer']}}
-                        @endif
+{{--                        @if(isset($answer['answer']))--}}
+{{--                            {{$answer['answer']}}--}}
+{{--                        @endif--}}
 
-                        @if(isset($answer['answers']))
-                            @foreach($answer['answers'] as $item)
-                                {{$item}}
-                            @endforeach
-                        @endif
+{{--                        @if(isset($answer['answers']))--}}
+{{--                            @foreach($answer['answers'] as $item)--}}
+{{--                                {{$item}}--}}
+{{--                            @endforeach--}}
+{{--                        @endif--}}
 
-                    </div>
-                @endforeach
+{{--                    </div>--}}
+{{--                @endforeach--}}
 
             </div>
         </div>
@@ -193,3 +180,26 @@
     @endif
 
 </div>
+
+<script>
+    window.addEventListener('answer-selected', event => {
+
+        if(event.detail.answers) {
+
+            let questionKey = event.detail.key;
+            let answers = event.detail.answers;
+
+            for (let key in answers) {
+                let selectedAnswer = document.querySelector("#"+questionKey+"-"+key);
+
+                if(answers[key].selected) {
+                    selectedAnswer.classList.add('quiz-active-answer');
+                } else {
+                    selectedAnswer.classList.remove('quiz-active-answer');
+                }
+            }
+
+        }
+
+    })
+</script>
