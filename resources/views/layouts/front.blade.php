@@ -46,7 +46,7 @@
                 </div>
 
             </nav>
-            <div class="collapse show" id="navbarToggleExternalContent">
+            <div class="collapse" id="navbarToggleExternalContent">
                 <div class="wrap_menu">
                     <ul>
                         <li> <a href="" class="active">Home</a></li>
