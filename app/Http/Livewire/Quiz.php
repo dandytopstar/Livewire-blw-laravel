@@ -25,6 +25,8 @@ class Quiz extends Component
 
     public array $clientRegistrationData;
 
+    public array $countQuestionsDots;
+
     public function mount()
     {
         $this->quizQuestions = [
@@ -34,12 +36,12 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_1_1'),
-                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'image'  => 'images/boy_queshions.png',
                         'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_1_2'),
-                        'image'  => 'front/assets/images/quiz/quiz_girl.png',
+                        'image'  => 'images/girl_queshions.png',
                         'selected'  => false,
                     ],
                 ],
@@ -86,7 +88,7 @@ class Quiz extends Component
                     ]
                 ],
                 'section_text' => trans('front.section_text_3'),
-                'section_image' => 'front/assets/images/quiz/quiz_can_your_baby_sit.png',
+                'section_image' => 'images/girl_queshions.png',
                 'continue_button_text' => trans('front.continue_button_text_3'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
                 'has_answers' => false, 'image_before' => false,
@@ -275,32 +277,32 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_12_1'),
-                        'image'  => 'front/assets/images/quiz/fish.png',
+                        'image'  => 'images/foods_fish.png',
                         'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_12_2'),
-                        'image'  => 'front/assets/images/quiz/dairy_products.png',
+                        'image'  => 'images/foods_dairy.png',
                         'selected'  => false,
                     ],
                     '3' => [
                         'text' => trans('front.answer_12_3'),
-                        'image'  => 'front/assets/images/quiz/eggs.png',
+                        'image'  => 'images/foods_eggs.png',
                         'selected'  => false,
                     ],
                     '4' => [
                         'text' => trans('front.answer_12_4'),
-                        'image'  => 'front/assets/images/quiz/poultry.png',
+                        'image'  => 'images/foods_poultry.png',
                         'selected'  => false,
                     ],
                     '5' => [
                         'text' => trans('front.answer_12_5'),
-                        'image'  => 'front/assets/images/quiz/beef.png',
+                        'image'  => 'images/foods_beef.png',
                         'selected'  => false,
                     ],
                     '6' => [
                         'text' => trans('front.answer_12_6'),
-                        'image'  => 'front/assets/images/quiz/pork.png',
+                        'image'  => 'images/foods_pork.png',
                         'selected'  => false,
                     ]
                 ],
@@ -346,6 +348,8 @@ class Quiz extends Component
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
         $this->registrationStepNum = $this->countQuestions + 1;
+        
+        $this->countQuestionsDots = range(1, $this->countQuestions);
     }
 
     public function dehydrate()

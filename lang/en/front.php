@@ -7,6 +7,8 @@ return [
     'phone' => 'Phone',
     'company' => 'Company',
     'send_message' => 'Send Message',
+    'your_answers' => 'Your answers',
+    'hello' => 'Hello',
 
     //Top Menu
     'faq' => 'FAQ',
@@ -70,6 +72,8 @@ return [
     'contact_form_main_subtitle' => 'Get In Touch',
 
     //questions
+    'choose_your_option'    => 'Choose your option',
+    'prepared_weaning_meal' => 'We’ve prepared a personalized Baby-led weaning meal plan for your son/daughter',
 
     //question 1
     'question_1'              => 'Select your baby’s gender.',
@@ -87,7 +91,7 @@ return [
     'continue_button_text_2'  => 'continue',
 
     //question 3
-    'question_3'             => '',
+    'question_3'             => 'About BLW',
     'answer_3_1'             => '',
     'section_text_3'         => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     'continue_button_text_3' => 'continue',
