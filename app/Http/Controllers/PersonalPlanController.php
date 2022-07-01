@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\Foundation\Application;
 
-class QuizController extends Controller
+class PersonalPlanController extends Controller
 {
     private QuizService $quizService;
 
@@ -17,17 +17,17 @@ class QuizController extends Controller
         $this->quizService = $quizService;
     }
 
-    public function result(Request $request, $code): Factory|View|Application
-    {
-        $client = $this->quizService->getClientAnswersByCode($code);
-
-        return view('quiz-result', compact('code', 'client'));
-    }
-
-    public function summary(Request $request, $code): Factory|View|Application
+    public function personalPlan(Request $request, $code): Factory|View|Application
     {
         $client = $this->quizService->getClientByCode($code);
 
-        return view('summary', compact('code', 'client'));
+        return view('personal-plan', compact('code', 'client'));
+    }
+
+    public function checkout(Request $request, $code): Factory|View|Application
+    {
+        $client = $this->quizService->getClientByCode($code);
+
+        return view('checkout', compact('code', 'client'));
     }
 }

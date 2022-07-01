@@ -32,4 +32,9 @@ class QuizService
 
         return $client;
     }
+
+    public function getClientByCode($code)
+    {
+        return $this->clientModel::where('code', $code)->first();
+    }
 }

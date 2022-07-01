@@ -9,6 +9,8 @@ return [
     'send_message' => 'Send Message',
     'your_answers' => 'Your answers',
     'hello' => 'Hello',
+    'go_to_summary_page' => 'Go to Summary Page',
+    'get_your_plan' => 'Get Your Plan',
 
     //Top Menu
     'faq' => 'FAQ',

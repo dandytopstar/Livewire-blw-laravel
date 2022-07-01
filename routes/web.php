@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PersonalPlanController;
 use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,5 +25,7 @@ Route::view('quiz', 'quiz')->name('quiz');
 //Route::view('policy', 'policy')->name('policy');;
 
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
+Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
+Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 //
 //Route::get('page/{slug}', [PageController::class, 'showPageBySlug'])->name('show-page-by-slug');

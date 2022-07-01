@@ -31,7 +31,9 @@
                         @endforeach
 
                         <div  class="wrap__next-form ">
-                            <a href="#" class="next-form next-form_2 go_to_summary_page">Go to Summary Page</a>
+                            <a href="{{route('summary', $code)}}" class="next-form next-form_2 go_to_summary_page">
+                                {{__('front.go_to_summary_page')}}
+                            </a>
                         </div>
                     </div>
                 </div>
