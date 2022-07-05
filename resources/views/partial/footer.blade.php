@@ -30,7 +30,9 @@
                 </div>
             </div>
             <div class="col-6">
-                <a href="#" class="start_quiz">Start Quiz</a>
+                <div class="wrapfooter_logo_mob">
+                    <a href="#" class="start_quiz">Start Quiz</a>
+                </div>
             </div>
             <div class="col-12">
                 <ul class="navigation-top">

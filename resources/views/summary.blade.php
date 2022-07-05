@@ -32,9 +32,13 @@
                         </div>
                     </div>
                     <div class="col-7">
-                        <a href="{{route('checkout', $code)}}" class="start_quiz">
-                            {{__('front.get_your_plan')}}
-                        </a>
+                        
+                        <div class="logo-home-template_right">
+                            <a href="{{route('checkout', $code)}}" class="start_quiz">
+                                {{__('front.get_your_plan')}}
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
