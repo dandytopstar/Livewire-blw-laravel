@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @includeIf('partial.head')
-    <body>
+    <body class="quiz-block">
 
         @yield('content')
 

@@ -294,6 +294,7 @@
         </div>
     </section>
 
+
     <section class="have_a_questation">
         <div class="container">
             <div class="row">
@@ -305,31 +306,32 @@
                         {{__('front.contact_form_main_subtitle')}}
                     </div>
                     <div class="questation">
-                        <form class="row g-3">
+                        <form class="row g-3" action="{{route('send.home-question-form')}}">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="{{__('front.name')}}" required>
+                                <input type="text" class="form-control" name="name" placeholder="{{__('front.name')}}" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="{{__('front.email')}}">
+                                <input type="email" class="form-control" name="email" placeholder="{{__('front.email')}}">
                             </div>
                             <div class="col-md-6">
-                                <input type="number" class="form-control" placeholder="{{__('front.phone')}}">
+                                <input type="phone" class="form-control" name="phone" placeholder="{{__('front.phone')}}">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="{{__('front.company')}}">
+                                <input type="text" class="form-control" name="company" placeholder="{{__('front.company')}}">
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" rows="3" placeholder="Request Details"></textarea>
+                                <textarea class="form-control" rows="3" name="details" placeholder="Request Details"></textarea>
                             </div>
 
                             <div class="col-12 wrap_btn-questation">
-                                <button type="submit" class="btn btn-questation">
+                                <button type="submit" class="btn btn-questation" type="submit">
                                     {{__('front.send_message')}}
                                 </button>
                             </div>
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>

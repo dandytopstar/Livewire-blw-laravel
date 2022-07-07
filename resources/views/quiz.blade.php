@@ -1,4 +1,4 @@
-@extends('layouts.front')
+@extends('layouts.quiz-layout')
 
 @section('content')
 

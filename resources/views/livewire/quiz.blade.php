@@ -1,4 +1,4 @@
-<div>
+<div class="quiz-block">
     <section class="nothing_choose">
         <div class="container">
             <div class="row">
