@@ -24,6 +24,8 @@ class StripeController extends Controller
             'cvv' => 'required',
         ]);
 
+        dd($request->all());
+
         $stripe = Stripe::setApiKey(env('STRIPE_SECRET'));
 
         try {

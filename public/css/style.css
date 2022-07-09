@@ -1566,6 +1566,7 @@ button.navbar-toggler {
     text-align: center;
     min-width: 183px;
     padding: 15px;
+    cursor: pointer;
 }
 .nothing_choose_details {
     background: #FFFFFF;

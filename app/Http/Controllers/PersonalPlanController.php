@@ -30,4 +30,9 @@ class PersonalPlanController extends Controller
 
         return view('checkout', compact('code', 'client'));
     }
+
+    public function payment(Request $request)
+    {
+        $request->dd();
+    }
 }

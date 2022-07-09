@@ -5,24 +5,24 @@
 
     <div  class="personalized_plan_checkout_plan">
         <div class="plan-title">3 {{__('front.month_plan')}}</div>
-        <div class="plan-prise-old">$ 7.50</div>
-        <div class="plan-prise-sale">$ 5.00</div>
+        <div class="plan-prise-old">$7.50</div>
+        <div class="plan-prise-sale">$5.00</div>
         <div class="plan-descriptions">per week</div>
         <div class="plan-per-week">
-            <span class="plan-per-week-old-prise">$ 85.97</span>
-            <span class="plan-per-week-prise-sale">$ 59.97</span>
+            <span class="plan-per-week-old-prise">$85.97</span>
+            <span class="plan-per-week-prise-sale">$59.97</span>
         </div>
         <div class="plan-prise-desc">{{__('front.billed_every_period_months', ['period' => 3])}}</div>
     </div>
 
     <div  class="personalized_plan_checkout_plan check">
         <div class="plan-title">6 month Plan</div>
-        <div class="plan-prise-old">$ 7.50</div>
-        <div class="plan-prise-sale">$ 3.75</div>
+        <div class="plan-prise-old">$7.50</div>
+        <div class="plan-prise-sale">$3.75</div>
         <div class="plan-descriptions">per week</div>
         <div class="plan-per-week">
-            <span class="plan-per-week-old-prise">$ 179.94</span>
-            <span class="plan-per-week-prise-sale">$ 89.97</span>
+            <span class="plan-per-week-old-prise">$179.94</span>
+            <span class="plan-per-week-prise-sale">$89.97</span>
         </div>
         <div class="plan-prise-desc">Billed every 6 months</div>
     </div>
@@ -30,31 +30,38 @@
     <div  class="personalized_plan_checkout_plan">
         <div class="plan-title">1 month Plan</div>
         <div class="plan-prise-old"> </div>
-        <div class="plan-prise-sale">$ 7.50</div>
+        <div class="plan-prise-sale">$7.50</div>
         <div class="plan-descriptions">per week</div>
-        <div class="plan-per-week-prise-normal">$ 29.99</div>
+        <div class="plan-per-week-prise-normal">$29.99</div>
         <div class="plan-prise-desc">Billed every 3 months</div>
     </div>
 
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
+        <input class="form-check-input" type="checkbox" value="" id="privacy-check">
+        <label class="form-check-label" for="privacy-check">
             By choosing a payment method you agree to the <span class="red"> Privacy Policy</span>
         </label>
     </div>
 
     <div class="get_your_plan">
-        <button type="submit" class="btn btn-questation"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Get Your Plan
+        <button type="submit"
+                id="getYourPlanBtn"
+                class="btn btn-questation"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#paymentModal"
+                disabled="true"
+        >
+            {{__('front.get_your_plan')}}
         </button>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="paymentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content payment_custom_modal">
                 <div class="modal-body">
-                    <form  action="{{route('stripe.post')}}" method="post">
+                    <form  action="{{route('payment')}}" method="post">
                         @csrf
                         <div class="nothing_choose_wrap payment_modal_bg">
                             <div class="nothing_choose_navigation nothing_choose_navigation_card_mob">
@@ -63,10 +70,10 @@
                                 </div>
                                 <div class="nothing_choose_navigation_right">
                                     <div class="nothing_choose_navigation_right__wrap">
-                                        <div class="nothing_choose_navigation_right__card active">
+                                        <div class="nothing_choose_navigation_right__card active" data-method="stripe">
                                             <img src="/images/cards_1.png" alt="">
                                         </div>
-                                        <div class="nothing_choose_navigation_right__card">
+                                        <div class="nothing_choose_navigation_right__card" data-method="paypal">
                                             <img src="/images/cards_2.png" alt="">
                                         </div>
                                     </div>
@@ -76,28 +83,32 @@
                                 <div class="nothing_choose_details  nothing_choose_wrap_rel">
                                     <div class="wrap_details_info">
                                         <div class="wrap_details_info_params_one">12-month running plan</div>
-                                        <div class="wrap_details_info_params_two">$ 85.97</div>
+                                        <div class="wrap_details_info_params_two">$85.97</div>
                                     </div>
                                     <div class="wrap_details_info">
                                         <div class="wrap_details_info_params_one">Discount</div>
                                         <div class="wrap_details_info_params_two">15%</div>
                                     </div>
                                     <div class="wrap_details_info">
-                                        <div class="wrap_details_info_params_one">Total<span class="bolder_text">$ 59.97</span></div>
+                                        <div class="wrap_details_info_params_one">
+                                            Total <span class="bolder_text" id="modalPrice">$59.97</span>
+                                        </div>
                                         <div class="wrap_details_info_params_two"><img src="/images/visa_card.png" alt=""></div>
                                     </div>
                                     <div class="wrap_details_info_card">
                                         <label for="exampleInputEmail1" class="form-label__card">Card Number</label>
-                                        <input type="number"  name="card_no" class="form-control__card card_number" placeholder="1111 2222 3333 4444">
+                                        <input
+                                                type="text"
+                                                name="card_no"
+                                                class="form-control__card card_number"
+                                                placeholder="1234 1234 1234 1234"
+                                                inputmode="numeric"
+                                        >
                                     </div>
                                     <div class="wrap_details_info_card_cvc_expiration">
                                         <div class="wrap_details_info_left">
-                                            <label for="exampleInputEmail1" class="form-label__card">Expiration Month</label>
+                                            <label for="exampleInputEmail1" class="form-label__card">Expiration</label>
                                             <input type="text" name="expiry_month" class="form-control__card expiration" placeholder="MM / YY">
-                                        </div>
-                                        <div class="wrap_details_info_left">
-                                            <label for="exampleInputEmail1" class="form-label__card">Expiration Year</label>
-                                            <input type="text" name="expiry_year" class="form-control__card expiration" placeholder="2022">
                                         </div>
                                         <div class="wrap_details_info_right">
                                             <div class="info_right">
@@ -124,5 +135,63 @@
             </div>
         </div>
     </div>
+    @push('custom-scripts')
+        <script>
+                $( document ).ready(function() {
+                    const paymentData = {}
+
+                    selectPaymentPlan();
+
+                    checkPrivacy();
+
+                    SelectPaymentMethod()
+
+                    function selectPaymentPlan() {
+                        if(!paymentData.length) {
+                            let selectedBlock = document.querySelector('.personalized_plan_checkout_plan.check');
+                            getDataFromBlock(selectedBlock)
+                        }
+
+                        $('.personalized_plan_checkout_plan').on('click', (event) => {
+                            document.querySelector('.personalized_plan_checkout_plan.check').classList.remove('check');
+                            let selectedBlock = event.currentTarget;
+                            selectedBlock.classList.add('check');
+                            getDataFromBlock(selectedBlock);
+                        })
+                    }
+
+                    function checkPrivacy() {
+                        $('#privacy-check').on('change', (event) => {
+                            let isChecked = event.currentTarget.checked;
+                            $('#getYourPlanBtn').attr('disabled', false);
+                        })
+                    }
+
+                    function getDataFromBlock(selectedBlock) {
+                        let priceText = selectedBlock.querySelector('.plan-prise-sale').innerText;
+                        let price = priceText.replace('$', '');
+                        let plan = selectedBlock.querySelector('.plan-title').innerText;
+                        paymentData.price = price;
+                        paymentData.plan = plan;
+                        $('#modalPrice').text(priceText);
+                    }
+
+                    function SelectPaymentMethod() {
+                        if(!paymentData.method) {
+                            let selectedMethod = document.querySelector('.nothing_choose_navigation_right__card.active');
+                            let method = selectedMethod.getAttribute('data-method');
+                            paymentData.method = method;
+                        }
+                        $('.nothing_choose_navigation_right__card ').on('click', (event) => {
+                            document.querySelector('.nothing_choose_navigation_right__card.active').classList.remove('active');
+                            let selectedMethod = event.currentTarget;
+                            selectedMethod.classList.add('active');
+                            let method = selectedMethod.getAttribute('data-method');
+                            paymentData.method = method;
+                        })
+                    }
+                });
+        </script>
+    @endpush
 
 </div>

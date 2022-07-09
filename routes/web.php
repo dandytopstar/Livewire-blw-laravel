@@ -29,6 +29,7 @@ Route::view('quiz', 'quiz')->name('quiz');
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
+Route::post('payment', [PersonalPlanController::class, 'payment'])->name('payment');
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');

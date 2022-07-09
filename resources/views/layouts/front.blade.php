@@ -8,6 +8,6 @@
         @livewireScripts
 
         <script src="{{asset('js/app.js')}}"></script>
-
+        @stack('custom-scripts')
     </body>
 </html>

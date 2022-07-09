@@ -170,7 +170,7 @@
                     <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.
                     </div>
                     <div  class="info_block_buttom">
-                        <button type="submit" class="btn btn-questation">Get Your Plan</button>
+                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -195,7 +195,7 @@
                     <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.
                     </div>
                     <div  class="info_block_buttom">
-                        <button type="submit" class="btn btn-questation">Get Your Plan</button>
+                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>
                     </div>
                 </div>
             </div>
