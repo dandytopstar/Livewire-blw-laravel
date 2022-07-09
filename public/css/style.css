@@ -404,12 +404,13 @@ section.your_baby_summary {
 section.personalized_plan_checkout {
     padding: 90px 0;
 }
-.personalized_plan_checkout_plan_one {
+.personalized_plan_checkout_plan {
     padding: 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
     border-radius: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .plan-title {
     font-weight: 700;
@@ -490,13 +491,14 @@ span.plan-per-week-prise-sale {
     text-align: center;
     margin-top: 17px;
 }
-.personalized_plan_checkout_plan_two {
+.personalized_plan_checkout_plan_active {
     background: #FFF2F0;
     border: 1px solid #FF735C;
     box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 30px;
+    cursor: pointer;
 }
 .plan-per-week-prise-normal {
     font-style: normal;
@@ -741,6 +743,15 @@ section.people_often_ask_us {
 
 
 /*---------------------------- Nothing Choose Template --------------------------    */
+.payment_modal_bg {
+    background-image: url('../images/pop_up_bg.png') !important;
+    margin: 0px auto !important;
+}
+
+.payment_custom_modal {
+    background-color: unset;
+    border: none;
+}
 
 
 .nothing_choose_wrap {
@@ -1396,20 +1407,20 @@ input.form-control-choose.error {
     max-width: 455px;
     margin: 16px auto;
 }
-.components_wrap .personalized_plan_checkout_plan_one {
+.components_wrap .personalized_plan_checkout_plan {
     max-width: 372px;
     margin: 0px auto;
 }
 .components_wrap {
     margin-top: 20px;
 }
-.personalized_plan_checkout_plan_one.click {
-    background: #FFFFFF;
+.personalized_plan_checkout_plan.click {
+    background: #FFF2F0;
     border: 1px solid #FF735C;
     box-shadow: 0px 4px 10px rgb(255 114 94 / 20%);
     border-radius: 20px;
 }
-.personalized_plan_checkout_plan_one.check {
+.personalized_plan_checkout_plan.check {
     background: #FFF2F0;
     border: 1px solid #FF735C;
     box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
@@ -2672,10 +2683,3 @@ section.our_promise.mob {
     }
 
 }
-
-
-
-
-
-
-

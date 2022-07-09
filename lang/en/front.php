@@ -180,4 +180,10 @@ return [
     'age' => 'Age',
     'client_registration_title' => 'Please enter your information',
     'client_registration_button_text' => 'Registration',
+
+    //Checkout page
+    'personalized_plan_title' => 'Personalized Plan',
+    'month_plan' => 'month plan',
+    'billed_every_period_months' => 'Billed every :period months',
+
 ];

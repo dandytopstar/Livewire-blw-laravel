@@ -31,47 +31,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div  class="personalized_plan_checkout_title">Personalized Plan</div>
-                    <div  class="personalized_plan_checkout_plan_one">
-                        <div class="plan-title">3 month Plan</div>
-                        <div class="plan-prise-old">$ 7.50</div>
-                        <div class="plan-prise-sale">$ 5.00</div>
-                        <div class="plan-descriptions">per week</div>
-                        <div class="plan-per-week">
-                            <span class="plan-per-week-old-prise">$ 85.97</span>
-                            <span class="plan-per-week-prise-sale">$ 59.97</span>
-                        </div>
-                        <div class="plan-prise-desc">Billed every 3 months</div>
-                    </div>
-                    <div  class="personalized_plan_checkout_plan_two">
-                        <div class="plan-title">6 month Plan</div>
-                        <div class="plan-prise-old">$ 7.50</div>
-                        <div class="plan-prise-sale">$ 3.75</div>
-                        <div class="plan-descriptions">per week</div>
-                        <div class="plan-per-week">
-                            <span class="plan-per-week-old-prise">$ 179.94</span>
-                            <span class="plan-per-week-prise-sale">$ 89.97</span>
-                        </div>
-                        <div class="plan-prise-desc">Billed every 6 months</div>
-                    </div>
-                    <div  class="personalized_plan_checkout_plan_one">
-                        <div class="plan-title">1 month Plan</div>
-                        <div class="plan-prise-old"> </div>
-                        <div class="plan-prise-sale">$ 7.50</div>
-                        <div class="plan-descriptions">per week</div>
-                        <div class="plan-per-week-prise-normal">$ 29.99</div>
-                        <div class="plan-prise-desc">Billed every 3 months</div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            By choosing a payment method you agree to the <span class="red"> Privacy Policy</span>
-                        </label>
-                    </div>
-                    <div class="get_your_plan">
-                        <button type="submit" class="btn btn-questation">Get Your Plan</button>
-                    </div>
+                    <x-personalized-plan-blocks/>
                 </div>
+
                 <div class="col-lg-6">
                     <div  class="personalized_plan_checkout_title">Each Plan Has </div>
                     <div  class="personalized_plan_checkout_content_wrap desc">
@@ -436,5 +398,9 @@
     </section>
 
     @includeIf('partial.footer')
+
+    <script>
+
+    </script>
 
 @endsection
