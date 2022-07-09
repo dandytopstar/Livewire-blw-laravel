@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\MailController;
-use App\Http\Controllers\PersonalPlanController;
-use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\StripeController;
+use App\Http\Controllers\PersonalPlanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,10 @@ Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
+
+Route::get('stripe', [StripeController::class, 'stripe']);
+Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
+
 
 //
 //Route::get('page/{slug}', [PageController::class, 'showPageBySlug'])->name('show-page-by-slug');
