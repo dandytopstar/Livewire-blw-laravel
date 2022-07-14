@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('client_id')->nullable();
+            $table->string('client_code')->nullable();
+            $table->string('card_no')->nullable();
+            $table->string('card_name')->nullable();
+            $table->string('price')->nullable();
+            $table->string('plan')->nullable();
+            $table->string('method')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

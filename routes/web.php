@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\QuizController;
@@ -29,14 +30,9 @@ Route::view('quiz', 'quiz')->name('quiz');
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
-Route::post('payment', [PersonalPlanController::class, 'payment'])->name('payment');
+Route::post('payment', [PaymentController::class, 'payment'])->name('payment');
+Route::get('payment-result/{id}/{code}', [PaymentController::class, 'paymentResult'])->name('payment-result');
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
 
-Route::get('stripe', [StripeController::class, 'stripe']);
-Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
-
-
-//
-//Route::get('page/{slug}', [PageController::class, 'showPageBySlug'])->name('show-page-by-slug');

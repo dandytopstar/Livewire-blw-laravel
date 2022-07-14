@@ -11,6 +11,7 @@ return [
     'hello' => 'Hello',
     'go_to_summary_page' => 'Go to Summary Page',
     'get_your_plan' => 'Get Your Plan',
+    'back_to_main_screen' => 'Back to Main Screen',
 
     //Top Menu
     'faq' => 'FAQ',
@@ -185,5 +186,9 @@ return [
     'personalized_plan_title' => 'Personalized Plan',
     'month_plan' => 'month plan',
     'billed_every_period_months' => 'Billed every :period months',
+    'complete_order' => 'Complete Order',
+    'payment_success' => 'Payment Success',
+    'payment_unsuccessful' => 'Payment Unsuccessful',
+    'try_again' => 'Try Again',
 
 ];

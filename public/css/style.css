@@ -753,7 +753,6 @@ section.people_often_ask_us {
     border: none;
 }
 
-
 .nothing_choose_wrap {
     background: #FAFBFE;
     box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
@@ -1620,7 +1619,7 @@ input.form-control__card {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     color: #1C1C1C;
     padding: 5px 10px;
 }
@@ -1635,7 +1634,7 @@ input.form-control__card.cvc {
     max-width: 46px;
 }
 input.form-control__card.expiration {
-    max-width: 85px;
+    max-width: 90px;
 }
 .wrap_details_info_right label.form-label__card {
     width: 100%;
@@ -2256,6 +2255,11 @@ div .accordion-button:focus {
     .nothing_choose_wrap {
         padding: 20px 25px 160px 25px;
     }
+
+    .payment_modal_bg {
+        padding: 15px !important;
+    }
+
     input.form-control-choose {
         width: 100%;
     }
@@ -2683,4 +2687,11 @@ section.our_promise.mob {
         background-image: url('../images/mobile_summary_bg_4.png');
     }
 
+}
+
+@media screen and (max-width: 360px) {
+    a.next-form.next-form_2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }

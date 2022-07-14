@@ -1,3 +1,4 @@
+@props(['code' => ''])
 <div>
     <div  class="personalized_plan_checkout_title">
         {{__('front.personalized_plan_title')}}
@@ -61,7 +62,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content payment_custom_modal">
                 <div class="modal-body">
-                    <form  action="{{route('payment')}}" method="post">
+                    <form  action="{{route('payment')}}" method="post" id="paymentForm">
                         @csrf
                         <div class="nothing_choose_wrap payment_modal_bg">
                             <div class="nothing_choose_navigation nothing_choose_navigation_card_mob">
@@ -96,34 +97,56 @@
                                         <div class="wrap_details_info_params_two"><img src="/images/visa_card.png" alt=""></div>
                                     </div>
                                     <div class="wrap_details_info_card">
-                                        <label for="exampleInputEmail1" class="form-label__card">Card Number</label>
+                                        <label for="card-number" class="form-label__card">Card Number</label>
                                         <input
                                                 type="text"
                                                 name="card_no"
                                                 class="form-control__card card_number"
                                                 placeholder="1234 1234 1234 1234"
                                                 inputmode="numeric"
+                                                id="card-number"
+                                                required
                                         >
                                     </div>
                                     <div class="wrap_details_info_card_cvc_expiration">
                                         <div class="wrap_details_info_left">
-                                            <label for="exampleInputEmail1" class="form-label__card">Expiration</label>
-                                            <input type="text" name="expiry_month" class="form-control__card expiration" placeholder="MM / YY">
+                                            <label for="expiry" class="form-label__card">Expiration</label>
+                                            <input
+                                                    type="text"
+                                                    id="expiry"
+                                                    name="expiry"
+                                                    class="form-control__card expiration"
+                                                    placeholder="MM / YY"
+                                                    required
+                                            >
                                         </div>
                                         <div class="wrap_details_info_right">
                                             <div class="info_right">
-                                                <label for="exampleInputEmail1" class="form-label__card">CVC</label>
+                                                <label for="cvc" class="form-label__card">CVC</label>
                                             </div>
-                                            <input type="text" name="cvv" class="form-control__card cvc" placeholder="123">
+                                            <input
+                                                    type="text"
+                                                    id="cvc"
+                                                    name="cvv"
+                                                    class="form-control__card cvc"
+                                                    placeholder="123"
+                                                    required
+                                            >
                                         </div>
                                     </div>
                                     <div class="wrap_details_info_card">
-                                        <label for="exampleInputEmail1" class="form-label__card">Name</label>
-                                        <input type="text" class="form-control__card name" placeholder="Name">
+                                        <label for="cardName" class="form-label__card">Name</label>
+                                        <input type="text" id="cardName" name="card_name" class="form-control__card name" placeholder="Name">
                                     </div>
+
+                                    <input type="hidden" id="paymentPrice" name="price">
+                                    <input type="hidden" id="paymentPlan" name="plan">
+                                    <input type="hidden" id="paymentMethod" name="method">
+                                    <input type="hidden" id="clientCode" name="client_code" value="{{$code}}">
+
                                     <div class="wrap__next-form mob_complite">
-                                        <a href="#" class="next-form next-form_2" class="btn-close" data-bs-dismiss="modal">
-                                            Complete Order
+                                        <a href="#" id="sendPaymentData" class="next-form next-form_2">
+                                            {{__('front.complete_order')}}
                                         </a>
                                     </div>
                                 </div>
@@ -144,7 +167,9 @@
 
                     checkPrivacy();
 
-                    SelectPaymentMethod()
+                    selectPaymentMethod();
+
+                    sendPaymentData();
 
                     function selectPaymentPlan() {
                         if(!paymentData.length) {
@@ -176,7 +201,7 @@
                         $('#modalPrice').text(priceText);
                     }
 
-                    function SelectPaymentMethod() {
+                    function selectPaymentMethod() {
                         if(!paymentData.method) {
                             let selectedMethod = document.querySelector('.nothing_choose_navigation_right__card.active');
                             let method = selectedMethod.getAttribute('data-method');
@@ -188,6 +213,34 @@
                             selectedMethod.classList.add('active');
                             let method = selectedMethod.getAttribute('data-method');
                             paymentData.method = method;
+                        })
+                    }
+
+                    function validatePaymentForm() {
+                        let cardNumber = $("#card-number").val();
+                        let expiry = $("#expiry").val();
+                        let cvc = $("#cvc").val();
+
+                        if(cardNumber && expiry && cvc) {
+                            return true;
+                        }
+
+                        return false;
+                    }
+
+                    function sendPaymentData() {
+
+                        $("#sendPaymentData").on('click', (event) => {
+                            $("#paymentPrice").val(paymentData.price);
+                            $("#paymentPlan").val(paymentData.plan);
+                            $("#paymentMethod").val(paymentData.method);
+
+                            let validated = validatePaymentForm();
+
+                            if(validated) {
+                                let form = $('#paymentForm');
+                                form.submit()
+                            }
                         })
                     }
                 });

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\PaymentMethods;
+use App\Services\PersonalPlanService;
 use Illuminate\Http\Request;
 use App\Services\QuizService;
 use Illuminate\Contracts\View\View;
@@ -12,9 +14,12 @@ class PersonalPlanController extends Controller
 {
     private QuizService $quizService;
 
-    public function __construct(QuizService $quizService)
+    private PersonalPlanService $personalPlanService;
+
+    public function __construct(QuizService $quizService, PersonalPlanService $personalPlanService)
     {
         $this->quizService = $quizService;
+        $this->personalPlanService = $personalPlanService;
     }
 
     public function personalPlan(Request $request, $code): Factory|View|Application
@@ -29,10 +34,5 @@ class PersonalPlanController extends Controller
         $client = $this->quizService->getClientByCode($code);
 
         return view('checkout', compact('code', 'client'));
-    }
-
-    public function payment(Request $request)
-    {
-        $request->dd();
     }
 }

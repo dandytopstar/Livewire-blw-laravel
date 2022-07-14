@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <x-personalized-plan-blocks/>
+                    <x-personalized-plan-block :code="$code"/>
                 </div>
 
                 <div class="col-lg-6">
