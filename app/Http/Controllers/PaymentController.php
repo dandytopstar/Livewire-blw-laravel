@@ -25,7 +25,7 @@ class PaymentController extends Controller
 
             $result = $this->paymentService->stripePayment($preparedData);
 
-            return redirect()->route('payment-result', $result['id'], $result['user_code']);
+            return redirect()->route('payment-result', [$result['id'], $result['client_code']]);
         }
 
         return back();
