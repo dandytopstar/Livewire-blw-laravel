@@ -31,7 +31,7 @@ class PaymentService
                 ]
             ]);
 
-            if (isset($token['id'])) {
+            if (!isset($token['id'])) {
                 $paymentData['status'] = 'wrong';
                 $result =  $this->saveTransaction($paymentData);
                 return $result->toArray();
@@ -51,7 +51,6 @@ class PaymentService
             return $result->toArray();
         }
         catch (Exception $e) {
-            dd($e->getMessage());
             return $e->getMessage();
         }
     }
