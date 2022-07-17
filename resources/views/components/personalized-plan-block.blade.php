@@ -130,6 +130,7 @@
                                                     name="cvv"
                                                     class="form-control__card cvc"
                                                     placeholder="123"
+                                                    maxlength="3"
                                                     required
                                             >
                                         </div>
