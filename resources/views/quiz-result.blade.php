@@ -21,11 +21,20 @@
                                     {{__('front.'.$answerData['question_translation_key'])}}
                                 </div>
 
-                                @foreach($answerData['answers'] as $answer)
+                                @if(empty($answerData['answers']))
                                     <div  class="wrap__input__answer">
-                                        {{__('front.'.$answer['answer_translation_key'])}}
+                                        {{$answerData['result']}} {{__('front.range_name_'.$answerData['question_number'])}}
                                     </div>
-                                @endforeach
+                                @endif
+
+                                @if(!empty($answerData['answers']))
+                                    @foreach($answerData['answers'] as $answer)
+                                        <div  class="wrap__input__answer">
+                                            {{__('front.'.$answer['answer_translation_key'])}}
+                                        </div>
+                                    @endforeach
+                                @endif
+
                             </div>
 
                         @endforeach

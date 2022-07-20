@@ -1987,6 +1987,7 @@ div .accordion-button:focus {
     }
     .each_plan_has-wrap {
         max-width: 100%;
+        margin-bottom: 10px;
     }
     .wrap_each_plan_has_descriptions_text.descriptions_text__two.hide {
         display: none;
@@ -2082,7 +2083,7 @@ div .accordion-button:focus {
         padding: 20px 8px;
     }
     .based_on_your_title {
-        margin-top: 60px;
+        margin-top: 20px;
         font-size: 26px;
         line-height: 32px;
         text-align: center;
@@ -2694,4 +2695,68 @@ section.our_promise.mob {
         font-size: 12px;
         line-height: 15px;
     }
+}
+
+@media screen and (max-width: 567px) {
+
+    div .based_on_your_right {
+        width: 80%;
+        margin: 30px auto 0;
+    }
+    div .mob .based_on_your_right_wrap_bottum_two.based_on_your_right_wrap_bottum_two_left {
+        width: 80%;
+        margin: 10px auto;
+    }
+    div .based_on_your_right_wrap_bottum_two_title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    div .what_will_your_baby_learn_wrap {
+        width: 80%;
+        margin: 10px auto;
+    }
+    div .what_will_your_baby_learn_wrap_title {
+        font-size: 14px;
+    }
+    div .what_will_your_baby_learn_wrap_desc {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 10px;
+    }
+
+}
+
+
+.value-range {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 40px auto;
+}
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #e74c3c;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+ input[type="range"]::-webkit-slider-thumb:hover {
+     background-color: white;
+     border: 2px solid #e74c3c;
+ }
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.6);
 }

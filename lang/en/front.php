@@ -100,12 +100,12 @@ return [
     'continue_button_text_3' => 'continue',
 
     //question 4
-    'question_4'             => 'How old is your baby?',
-    'answer_4_1'             => 'Younger than 4 months',
-    'answer_4_2'             => '4-6 months',
-    'answer_4_3'             => '6 months or older',
-    'section_text_4'         => '',
-    'continue_button_text_4' => 'continue',
+    'question_4'              => 'How old is your baby?',
+    'min_4'                   => '1',
+    'max_4'                   => '36',
+    'range_name_4'            => 'Months',
+    'section_text_14'         => '',
+    'continue_button_text_14' => 'continue',
 
     //question 5
     'question_5'             => 'Can your baby sit without any support?',
@@ -168,12 +168,20 @@ return [
     'section_text_12'         => '',
     'continue_button_text_12' => 'continue',
 
-    //question 12
+    //question 13
     'question_13'             => 'Are you a vegetarian?',
     'answer_13_1'             => 'yes',
     'answer_13_2'             => 'no',
     'section_text_13'         => '',
     'continue_button_text_13' => 'continue',
+
+    //question 14
+    'question_14'             => 'What is the weight of your baby?',
+    'min_14'                  => '1',
+    'max_14'                  => '123',
+    'range_name_14'           => 'lbs',
+    'section_text_14'         => '',
+    'continue_button_text_14' => 'continue',
 
     //client registration
     'name' => 'Name',

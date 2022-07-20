@@ -27,6 +27,8 @@ class Quiz extends Component
 
     public array $countQuestionsDots;
 
+    public int $rangeData = 1;
+
     public function mount()
     {
         $this->quizQuestions = [
@@ -49,7 +51,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_1'),
                 'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '2' => [
                 'question_key' => 'familiar_with_blw',
@@ -75,7 +77,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_2'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '3' => [
                 'question_key' => 'text_section',
@@ -91,33 +93,19 @@ class Quiz extends Component
                 'section_image' => 'images/girl_queshions.png',
                 'continue_button_text' => trans('front.continue_button_text_3'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false,
+                'has_answers' => false, 'image_before' => false, 'range_slider' => false
             ],
             '4' => [
                 'question_key' => 'age',
                 'question' => trans('front.question_4'),
-                'answers' => [
-                    '1' => [
-                        'text' => trans('front.answer_4_1'),
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => trans('front.answer_4_1'),
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => trans('front.answer_4_1'),
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                ],
-                'section_text' => trans('front.section_text_4'),
+                'answers' => [],
+                'min' => trans('front.min_4'),
+                'max' => trans('front.max_4'),
+                'range_name' => trans('front.range_name_4'),
                 'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_4'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true,  'image_before' => false,
+                'continue_button_text' => trans('front.continue_button_text_14'),
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
+                'has_answers' => false, 'image_before' => false, 'range_slider' => true
             ],
             '5' => [
                 'question_key' => 'can_sit',
@@ -159,7 +147,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_6'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '7' => [
                 'question_key' => 'can_put_things',
@@ -180,7 +168,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_7'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '8' => [
                 'question_key' => 'can_put_food',
@@ -201,7 +189,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '9' => [
                 'question_key' => 'can_chew',
@@ -227,7 +215,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_9'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '10' => [
                 'question_key' => 'gagging',
@@ -248,7 +236,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_10'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '11' => [
                 'question_key' => 'allergies',
@@ -269,7 +257,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_11'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '12' => [
                 'question_key' => 'foods_prefer',
@@ -310,7 +298,7 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_12'),
                 'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
             ],
             '13' => [
                 'question_key' => 'vegetarian',
@@ -331,7 +319,20 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_13'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+            ],
+            '14' => [
+                'question_key' => 'weight',
+                'question' => trans('front.question_14'),
+                'answers' => [],
+                'min' => trans('front.min_14'),
+                'max' => trans('front.max_14'),
+                'range_name' => trans('front.range_name_14'),
+                'section_text' => trans('front.section_text_14'),
+                'section_image' => '',
+                'continue_button_text' => trans('front.continue_button_text_14'),
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
+                'has_answers' => false, 'image_before' => false, 'range_slider' => true
             ],
         ];
 
@@ -371,6 +372,13 @@ class Quiz extends Component
 
         if($this->currentQuestionNum !== $this->registrationStepNum && !empty($this->quizQuestions[$this->currentQuestionNum])) {
             $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+        }
+    }
+
+    public function nextSlideRange()
+    {
+        if($this->currentQuestionNum == $this->registrationStepNum) {
+            return false;
         }
     }
 
@@ -427,20 +435,32 @@ class Quiz extends Component
         if($answer) {
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
-            $text = $currentAnswer['answers'][$answer]['text'];
+
+            if(!empty($currentAnswer['range_slider'])) {
+                $text = $answer;
+                $answer_num = 0;
+                $this->rangeData = 1;
+            } else {
+                $text = $currentAnswer['answers'][$answer]['text'];
+                $answer_num = $answer;
+            }
 
             $this->resultAnswers[$this->currentQuestionNum] = [
                 'number' => $this->currentQuestionNum,
                 'key' => $currentAnswer['question_key'],
                 'answer' => $text,
-                'answer_num' => $answer,
+                'answer_num' => $answer_num,
             ];
 
-            foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
-                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
-            }
+            if(!empty($currentAnswer['range_slider'])) {
+                $this->quizQuestions[$this->currentQuestionNum]['result'] = $text;
+            } else {
+                foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
+                    $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+                }
 
-            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
+            }
         }
     }
 

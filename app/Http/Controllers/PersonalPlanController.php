@@ -31,8 +31,8 @@ class PersonalPlanController extends Controller
 
     public function checkout(Request $request, $code): Factory|View|Application
     {
-        $client = $this->quizService->getClientByCode($code);
+        $clientData = $this->quizService->getBabySummary($code);
 
-        return view('checkout', compact('code', 'client'));
+        return view('checkout', $clientData);
     }
 }
