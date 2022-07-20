@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d519a422d7d47121550c57c73f4cea26",
+    "content-hash": "3bca6f545896cd981b1d9d7a42df9c13",
     "packages": [
         {
             "name": "brick/math",
@@ -892,6 +892,61 @@
                 }
             ],
             "time": "2022-06-20T21:43:11+00:00"
+        },
+        {
+            "name": "klaviyo/sdk",
+            "version": "1.0.3.20220329",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/klaviyo/klaviyo-php-sdk.git",
+                "reference": "f277387007c7a84765e4b12802de6c18c7865fa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/klaviyo/klaviyo-php-sdk/zipball/f277387007c7a84765e4b12802de6c18c7865fa5",
+                "reference": "f277387007c7a84765e4b12802de6c18c7865fa5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Klaviyo\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Klaviyo",
+                    "homepage": "https://developers.klaviyo.com/en"
+                }
+            ],
+            "description": "Empowering creators to own their destiny",
+            "homepage": "https://developers.klaviyo.com/en",
+            "keywords": [
+                "api",
+                "email",
+                "klaviyo",
+                "php",
+                "rest",
+                "sdk",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/klaviyo/klaviyo-php-sdk/issues",
+                "source": "https://github.com/klaviyo/klaviyo-php-sdk/tree/1.0.3.20220329"
+            },
+            "time": "2022-07-19T05:28:19+00:00"
         },
         {
             "name": "laravel/framework",
