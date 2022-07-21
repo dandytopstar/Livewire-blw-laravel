@@ -8,11 +8,14 @@ class KlaviyoService
 {
     private Client $client;
 
-    private string $publicKey;
+    /**
+     * @var \Illuminate\Config\Repository|\Illuminate\Contracts\Foundation\Application|mixed
+     */
+    private mixed $publicKey;
 
     public function __construct()
     {
-        $this->publicKey = env('KLAVIYO_PUBLIC_KEY');
+        $this->publicKey = config('klaviyo.public_key');
 
         $this->client = new Client(
             $this->publicKey,
