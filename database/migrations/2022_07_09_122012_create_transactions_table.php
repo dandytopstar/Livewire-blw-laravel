@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('plan')->nullable();
             $table->string('method')->nullable();
             $table->string('status')->nullable();
+            $table->text('payment_data')->nullable();
             $table->timestamps();
         });
     }

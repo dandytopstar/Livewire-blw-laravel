@@ -746,6 +746,7 @@ section.people_often_ask_us {
 .payment_modal_bg {
     background-image: url('../images/pop_up_bg.png') !important;
     margin: 0px auto !important;
+    height: auto !important;
 }
 
 .payment_custom_modal {

@@ -94,9 +94,11 @@
                                         <div class="wrap_details_info_params_one">
                                             Total <span class="bolder_text" id="modalPrice">$59.97</span>
                                         </div>
-                                        <div class="wrap_details_info_params_two"><img src="/images/visa_card.png" alt=""></div>
+                                        <div class="wrap_details_info_params_two stripe-field"><img src="/images/visa_card.png" alt=""></div>
                                     </div>
-                                    <div class="wrap_details_info_card">
+
+
+                                    <div class="wrap_details_info_card stripe-field">
                                         <label for="card-number" class="form-label__card">Card Number</label>
                                         <input
                                                 type="text"
@@ -108,7 +110,8 @@
                                                 required
                                         >
                                     </div>
-                                    <div class="wrap_details_info_card_cvc_expiration">
+
+                                    <div class="wrap_details_info_card_cvc_expiration stripe-field">
                                         <div class="wrap_details_info_left">
                                             <label for="expiry" class="form-label__card">Expiration</label>
                                             <input
@@ -135,7 +138,8 @@
                                             >
                                         </div>
                                     </div>
-                                    <div class="wrap_details_info_card">
+
+                                    <div class="wrap_details_info_card stripe-field">
                                         <label for="cardName" class="form-label__card">Name</label>
                                         <input type="text" id="cardName" name="card_name" class="form-control__card name" placeholder="Name">
                                     </div>
@@ -207,14 +211,37 @@
                             let selectedMethod = document.querySelector('.nothing_choose_navigation_right__card.active');
                             let method = selectedMethod.getAttribute('data-method');
                             paymentData.method = method;
+                            hideShowFields()
                         }
+
                         $('.nothing_choose_navigation_right__card ').on('click', (event) => {
                             document.querySelector('.nothing_choose_navigation_right__card.active').classList.remove('active');
                             let selectedMethod = event.currentTarget;
                             selectedMethod.classList.add('active');
                             let method = selectedMethod.getAttribute('data-method');
                             paymentData.method = method;
+                            hideShowFields()
                         })
+
+                        console.log(paymentData.method);
+
+                        // if(method == 'stripe') {
+                        //     $('.stripe-field').show();
+                        // }
+                        //
+                        // if(paymentData.method == 'paypal') {
+                        //     $('.stripe-field').hide()
+                        // }
+                    }
+
+                    function hideShowFields() {
+                        if(paymentData.method == 'stripe') {
+                            $('.stripe-field').show();
+                        }
+
+                        if(paymentData.method == 'paypal') {
+                            $('.stripe-field').hide()
+                        }
                     }
 
                     function validatePaymentForm() {
@@ -235,8 +262,11 @@
                             $("#paymentPrice").val(paymentData.price);
                             $("#paymentPlan").val(paymentData.plan);
                             $("#paymentMethod").val(paymentData.method);
+                            let validated = true;
 
-                            let validated = validatePaymentForm();
+                            if(paymentData.method == 'stripe') {
+                                let validated = validatePaymentForm();
+                            }
 
                             if(validated) {
                                 let form = $('#paymentForm');

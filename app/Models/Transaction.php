@@ -18,5 +18,10 @@ class Transaction extends Model
         'plan',
         'method',
         'status',
+        'payment_data',
+    ];
+
+    protected $casts = [
+        'payment_data' => 'array'
     ];
 }

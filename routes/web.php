@@ -32,6 +32,9 @@ Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary'
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 Route::post('payment', [PaymentController::class, 'payment'])->name('payment');
 Route::get('payment-result/{id}/{code}', [PaymentController::class, 'paymentResult'])->name('payment-result');
+Route::get('paypal-success/{id}', [PaymentController::class, 'payPalSuccess'])->name('paypal-success');
+Route::get('paypal-error/{id}', [PaymentController::class, 'payPalError'])->name('paypal-error');
+
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
