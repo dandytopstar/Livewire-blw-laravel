@@ -78,7 +78,8 @@ class PaymentService
 
         $data['plan'] = $paymentData['plan'];
 
-        if($paymentData['method'] == PaymentMethods::STRIPE) {
+        if($paymentData['method'] == PaymentMethods::STRIPE->value) {
+
             $expiry = explode(' / ', $paymentData['expiry']);
 
             $data['card_no'] = str_replace(' ', '', $paymentData['card_no']);
@@ -90,6 +91,7 @@ class PaymentService
             $data['expiry_year'] = $expiry[1];
 
             $data['cvv'] = $paymentData['cvv'];
+
         }
 
         return $data;
