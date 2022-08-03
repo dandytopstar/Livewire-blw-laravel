@@ -29,7 +29,7 @@ class QuizService
                 $answers[$answer->question_number]['result'] = $answer['answer'];
                 continue;
             }
-
+            $answers[$answer->question_number]['last_answer_number'] = $answer['answer_number'];
             $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer_number'] = $answer['answer_number'];
             $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer'] = $answer['answer'];
             $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer_translation_key'] = 'answer_'.$answer->question_number.'_'.$answer['answer_number'];
@@ -47,13 +47,13 @@ class QuizService
 
         $code = $client->code;
 
-        $answers = collect($client['answers']);
+            $answers = collect($client['answers']);
 
         $age    = $answers->where('key', 'age')->first();
         $gender = $answers->where('key', 'gender')->first();
         $weight = $answers->where('key', 'weight')->first();
 
-        $gender =  trans('front.'.$gender['answers'][$gender['question_number']]['answer_translation_key']);
+        $gender =  trans('front.'.$gender['answers'][$gender['last_answer_number']]['answer_translation_key']);
         $age = $age['result'].' months';
         $weight = $weight['result'].' lbs';
 

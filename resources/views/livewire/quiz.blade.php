@@ -113,12 +113,12 @@
                             @if(!$currentQuestion['has_answers'] && $currentQuestion['range_slider'])
                                 <div class="nothing_choose_form">
                                     <div class="wrap__about_blw">
-                                        <div> <span class="value-range">{{$rangeData}} {{$currentQuestion['range_name']}}</span>   </div>
+                                        <div class="my-5"> <span class="value-range">{{$rangeData}} {{$currentQuestion['range_name']}}</span>   </div>
                                         <input type="range" min="1" max="36" step="1" value="1" wire:model="rangeData">
                                     </div>
                                 </div>
 
-                                <div  class="wrap__next-form" style="margin: 50px">
+                                <div  class="wrap__next-form" style="margin: 65px 50px 50px 0">
                                     <a href="#" class="next-form next-form_2" wire:click="nextSlide({{$rangeData}})">
                                         {{$currentQuestion['continue_button_text']}}
                                     </a>

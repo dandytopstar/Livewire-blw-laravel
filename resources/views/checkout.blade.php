@@ -7,7 +7,7 @@
             <div class="row flex-alignn">
                 <div class="col-lg-12">
                     <div class="logo-home-template logo-home-template-checkout">
-                        Logo
+                        <img src="{{asset('images/orange_blw_logo.png')}}" alt="">
                     </div>
                 </div>
             </div>

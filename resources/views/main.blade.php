@@ -5,17 +5,17 @@
     <header class="header desc">
         <div class="container">
             <div class="row flex-alignn">
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <div class="logo-home-template">
-                        Logo
+                        <img src="{{asset('images/orange_blw_logo.png')}}">
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <ul class="navigation-top">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">How It Works</a></li>
-                        <li><a href="#">Personalized Plan</a></li>
-                        <li><a href="#">Baby-Led Weaning</a></li>
+                        <li><a href="#home_section" class="active">Home</a></li>
+                        <li><a href="#how_it_work_section">How It Works</a></li>
+                        <li><a href="#personalized_plan_section">Personalized Plan</a></li>
+                        <li><a href="#baby-led_weaning_section">Baby-Led Weaning</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2">
@@ -43,10 +43,10 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="wrap_menu">
                     <ul>
-                        <li> <a href="" class="active">Home</a></li>
-                        <li> <a href="" class="">How It Works</a></li>
-                        <li> <a href="" class="">Personalized Plan</a></li>
-                        <li> <a href="" class="">Baby-Led Weaning</a></li>
+                        <li><a href="#home_section" class="active">Home</a></li>
+                        <li><a href="#how_it_work_section">How It Works</a></li>
+                        <li><a href="#personalized_plan_section">Personalized Plan</a></li>
+                        <li><a href="#baby-led_weaning_section">Baby-Led Weaning</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,7 +106,7 @@
     </section>
 
     <!-- processes -->
-    <section class="how_it_work">
+    <section class="how_it_work" id="how_it_work_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -170,7 +170,7 @@
     </section>
 
     <!-- about -->
-    <section class="personalized_plan">
+    <section class="personalized_plan" id="personalized_plan_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -241,7 +241,7 @@
     </section>
 
     <!-- about -->
-    <section class="baby-led_weaning">
+    <section class="baby-led_weaning" id="baby-led_weaning_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

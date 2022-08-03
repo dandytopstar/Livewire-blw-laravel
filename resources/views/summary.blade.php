@@ -7,7 +7,7 @@
             <div class="row flex-alignn">
                 <div class="col-lg-2">
                     <div class="logo-home-template">
-                        Logo
+                        <img src="{{asset('images/orange_blw_logo.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -26,20 +26,17 @@
         <div  class="menu_wrap menu_wrap_summary">
             <div class="container">
                 <div class="row flex-alignn">
-                    <div class="col-5">
-                        <div class="logo-home-template">
-                            Logo
-                        </div>
-                    </div>
-                    <div class="col-7">
 
-                        <div class="logo-home-template_right">
-                            <a href="{{route('checkout', $code)}}" class="start_quiz">
-                                {{__('front.get_your_plan')}}
-                            </a>
-                        </div>
-
+                    <div class="logo-home-template mb-3" style="text-align: center;">
+                        <img src="{{asset('images/orange_blw_logo.png')}}" alt="">
                     </div>
+
+                    <div class="logo-home-template_right" style="text-align: center;">
+                        <a href="{{route('checkout', $code)}}" class="start_quiz">
+                            {{__('front.get_your_plan')}}
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
