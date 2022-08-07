@@ -70,20 +70,21 @@
                 <div class="col-lg-7">
                     <div  class="based_on_your_right">
                         <div class="result__wrap">
-                            <div class="result__number">10</div>
-                            <div class="result__number">20</div>
-                            <div class="result__number">30</div>
-                            <div class="result__number result">40</div>
-                            <div class="result__number">50</div>
-                            <div class="result__number">60</div>
-                            <div class="result__number">67</div>
+                            <div class="result__number">{{$randomDays[0]}}</div>
+                            <div class="result__number">{{$randomDays[1]}}</div>
+                            <div class="result__number">{{$randomDays[2]}}</div>
+                            <div class="result__number result">{{$randomDays[3]}}</div>
+                            <div class="result__number">{{$randomDays[4]}}</div>
+                            <div class="result__number">{{$randomDays[5]}}</div>
+                            <div class="result__number">{{$randomDays[6]}}</div>
                         </div>
-                        <div class="result__text">Lorem Ipsum</div>
+                        <div class="result__text">Days</div>
                         <div  class="based_on_your_right_wrap">
                             <img src="{{asset('/images/based_on_your_4.png')}}" alt="" />
-                            <div  class="based_on_your_right_title">Your baby will eat dependently in 67</div>
+                            <div  class="based_on_your_right_title">Your baby will eat dependently in {{$randomDays[3]}}</div>
                         </div>
                     </div>
+
                     <div class="based_on_your_right_wrap_bottum desc">
                         <div class="based_on_your_right_wrap_bottum_two based_on_your_right_wrap_bottum_two_left">
                             <div class="based_on_your_right_wrap_bottum_two_top">Your babys weight</div>
@@ -99,6 +100,7 @@
                             <img src="{{asset('images/based_on_your_3.png')}}" alt="" />
                         </div>
                     </div>
+
                     <div class="based_on_your_right_wrap_bottum mob">
                         <div class="based_on_your_right_wrap_bottum_two based_on_your_right_wrap_bottum_two_left">
                             <div class="wrap_normal_img">

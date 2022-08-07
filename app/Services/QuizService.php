@@ -56,12 +56,29 @@ class QuizService
         $gender =  trans('front.'.$gender['answers'][$gender['last_answer_number']]['answer_translation_key']);
         $age = $age['result'].' months';
         $weight = $weight['result'].' lbs';
+        $randomDays = $this->randomDays();
 
-        return  compact('gender', 'age', 'weight', 'code', 'client');
+        return  compact('gender', 'age', 'weight', 'code', 'client', 'randomDays');
     }
 
     public function getClientByCode($code)
     {
         return $this->clientModel::where('code', $code)->with('quizAnswers')->first();
+    }
+
+    public function randomDays(): array
+    {
+        $randomDay = rand(60, 100);
+        $floorDay = floor($randomDay/10)*10;
+
+        return [
+            $floorDay - 30,
+            $floorDay - 20,
+            $floorDay - 10,
+            $randomDay,
+            $floorDay + 10,
+            $floorDay + 20,
+            $floorDay + 30,
+        ];
     }
 }

@@ -1291,6 +1291,7 @@ section.our_promise {
     line-height: 20px;
     text-align: center;
     color: #FF735C;
+    margin-right: 17px;
 }
 .based_on_your_right_wrap_bottum.mob {
     display: none;
@@ -2115,6 +2116,7 @@ div .accordion-button:focus {
         line-height: 15px;
         text-align: center;
         color: #FF735C;
+        margin-right: 18px;
     }
     .based_on_your_right_title {
         font-size: 12px;
