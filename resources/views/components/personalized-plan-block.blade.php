@@ -7,7 +7,7 @@
     <div  class="personalized_plan_checkout_plan">
         <div class="plan-title">3 {{__('front.month_plan')}}</div>
         <div class="plan-prise-old">$7.50</div>
-        <div class="plan-prise-sale">$5.00</div>
+        <div class="plan-prise-sale">$1.00</div>
         <div class="plan-descriptions">per week</div>
         <div class="plan-per-week">
             <span class="plan-per-week-old-prise">$85.97</span>
