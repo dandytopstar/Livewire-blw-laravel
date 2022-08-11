@@ -83,7 +83,7 @@
                             <div class="nothing_choose_details__wrap">
                                 <div class="nothing_choose_details  nothing_choose_wrap_rel">
                                     <div class="wrap_details_info">
-                                        <div class="wrap_details_info_params_one">12-month running plan</div>
+                                        <div class="wrap_details_info_params_one">Personalized Baby-led Weaning plan</div>
                                         <div class="wrap_details_info_params_two">$85.97</div>
                                     </div>
                                     <div class="wrap_details_info">

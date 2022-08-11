@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div  class="based_on_your_title">Based on your answers, your baby is <span class="based_on_your_title_color">ready for solid food</span>!</div>
-                    <div  class="based_on_your_description">We’ve prepared a personalized Baby-led weaning meal plan for your son</div>
+                    <div  class="based_on_your_description">We’ve prepared a personalized Baby-led weaning meal plan for your {{$gender}}</div>
                     <div class="based_on_your_botton">
                         <a href="{{route('checkout', $code)}}" class="start_quiz">
                             {{__('front.get_your_plan')}}
@@ -81,7 +81,7 @@
                         <div class="result__text">Days</div>
                         <div  class="based_on_your_right_wrap">
                             <img src="{{asset('/images/based_on_your_4.png')}}" alt="" />
-                            <div  class="based_on_your_right_title">Your baby will eat dependently in {{$randomDays[3]}}</div>
+                            <div  class="based_on_your_right_title">YOUR BABY WILL EAT INDEPENDENTLY IN ABOUT {{$randomDays[3]}} DAYS</div>
                         </div>
                     </div>
 
@@ -137,51 +137,51 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div  class="what_will_your_baby_learn_wrap">
-                        <div  class="what_will_your_baby_learn_wrap_top">in 11 days</div>
+                        <div  class="what_will_your_baby_learn_wrap_top">in {{$randomDays[3]}} days</div>
                         <img src="{{asset('images/in_days_1.png')}}" alt="" />
-                        <div  class="what_will_your_baby_learn_wrap_title"> to eat independently</div>
-                        <div  class="what_will_your_baby_learn_wrap_desc"> Baby learns to eat independently and is in total control</div>
+                        <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_1')}}</div>
+                        <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_1')}}</div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in 21 days</div>
                         <img src="{{asset('images/in_days_2.png')}}" alt="" />
-                        <div  class="what_will_your_baby_learn_wrap_title"> to control his apetite</div>
-                        <div  class="what_will_your_baby_learn_wrap_desc"> Baby learns to eat independently and is in total control</div>
+                        <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_2')}}</div>
+                        <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_2')}}</div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in 67 days</div>
                         <img src="{{asset('images/in_days_3.png')}}" alt="" />
-                        <div  class="what_will_your_baby_learn_wrap_title"> critical oral and motor skils</div>
-                        <div  class="what_will_your_baby_learn_wrap_desc"> Baby learns to eat independently and is in total control</div>
+                        <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_3')}}</div>
+                        <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_3')}}</div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3">
                     <div  class="what_will_your_baby_learn_wrap_for">
-                        <div  class="what_will_your_baby_learn_wrap_for_top">-55%</div>
+                        <div  class="what_will_your_baby_learn_wrap_for_top">-97%</div>
                         <div  class="what_will_your_baby_learn_wrap_for_title">Fusiness around food</div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div  class="what_will_your_baby_learn_wrap_for">
-                        <div  class="what_will_your_baby_learn_wrap_for_top">-35% </div>
+                        <div  class="what_will_your_baby_learn_wrap_for_top">-89% </div>
                         <div  class="what_will_your_baby_learn_wrap_for_title">Excess weight gain</div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div  class="what_will_your_baby_learn_wrap_for">
-                        <div  class="what_will_your_baby_learn_wrap_for_top">-47%</div>
+                        <div  class="what_will_your_baby_learn_wrap_for_top">-93%</div>
                         <div  class="what_will_your_baby_learn_wrap_for_title">Risk of allergies</div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div  class="what_will_your_baby_learn_wrap_for">
-                        <div  class="what_will_your_baby_learn_wrap_for_top">-38%</div>
+                        <div  class="what_will_your_baby_learn_wrap_for_top">-46%</div>
                         <div  class="what_will_your_baby_learn_wrap_for_title">Cheeper food</div>
                     </div>
                 </div>
@@ -202,14 +202,17 @@
                     <div class="wrap_personalized_plan">
                         <div class="personalized_plan_img"><img src="{{asset('images/footstep_1.png')}}" alt="" /></div>
                         <div class="personalized_plan_text">Guide</div>
-                        <div class="personalized_plan">A step-by-step guide on how to prepare your baby for solid foods</div>
+                        <div class="personalized_plan">
+                            {{__('front.personalized_plan_block_1')}}
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="wrap_personalized_plan">
                         <div class="personalized_plan_img"><img src="{{asset('images/footstep_2.png')}}" alt="" /></div>
                         <div class="personalized_plan_text">E-Book</div>
-                        <div class="personalized_plan">An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your baby
+                        <div class="personalized_plan">
+                            {{__('front.personalized_plan_block_2')}}
                         </div>
                     </div>
                 </div>
@@ -217,14 +220,18 @@
                     <div class="wrap_personalized_plan">
                         <div class="personalized_plan_img"><img src="{{asset('images/footstep_3.png')}}" alt="" /></div>
                         <div class="personalized_plan_text">Meal Plan</div>
-                        <div class="personalized_plan">Personalized baby-led weaning meal based on your answers from the quiz</div>
+                        <div class="personalized_plan">
+                            {{__('front.personalized_plan_block_3')}}
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="wrap_personalized_plan">
                         <div class="personalized_plan_img"><img src="{{asset('images/footstep_4.png')}}" alt="" /></div>
                         <div class="personalized_plan_text">45+ healthy recipes</div>
-                        <div class="personalized_plan">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</div>
+                        <div class="personalized_plan">
+                            {{__('front.personalized_plan_block_4')}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,9 +270,9 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div  class="our_promise_title">Our Promise</div>
-                    <div  class="our_promise_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus tellus ullamcorper id urna mauris egestas praesent consectetur. Curabitur quis id nunc leo adipiscing semper sodales enim mi. Odio faucibus a lectus et feugiat cursus. Vestibulum at molestie a, id odio consectetur erat interdum. Morbi odio senectus sit tincidunt. Ipsum felis egestas molestie placerat. Tellus malesuada eget posuere eget purus sem fusce lorem arcu. Elit faucibus egestas diam et quam ante turpis vitae nulla. In ante est quisque morbi sed. Sit a orci semper diam sit gravida. Tincidunt tincidunt non congue magna enim, urna luctus amet. Non urna, consequat dui tellus duis neque urna, interdum. Ut consectetur ultricies eros, vehicula egestas sapien tincidunt donec.
-                        Purus imperdiet orci leo mattis. At dignissim viverra bibendum tempor. Enim, leo interdum pharetra nisl, malesuada. Quis bibendum elit id.
+                    <div  class="our_promise_title">{{__('front.our_promise_title')}}</div>
+                    <div  class="our_promise_description">
+                        {{__('front.our_promise_text')}}
 
                         <div  class="personalized_plan_bottom">
                             <a href="{{route('checkout', $code)}}" class="start_quiz">

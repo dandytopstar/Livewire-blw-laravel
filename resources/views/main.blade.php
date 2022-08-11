@@ -270,27 +270,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div  class="how_it_work_tiitle">User Review</div>
-                    <div  class="how_it_work_tiitle_bottom how_it_work_tiitle_bottom_user_review">What Clients Say About Our App After Use It</div>
+                    <div  class="how_it_work_tiitle">{{__('front.user_review_title')}}</div>
+                    <div  class="how_it_work_tiitle_bottom how_it_work_tiitle_bottom_user_review">{{__('front.user_review_subtitle')}}</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="wrap_user_review">
-                        <div class="user_review_img"><img src="images/ellipse_1.png" alt="" /></div>
-                        <div class="user_review_text">
-                            “The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”
-                        </div>
-                        <div class="user_review_user_info">Helen Moris, 27</div>
-                    </div>
-                    <div class="navigation_user_review">
-                        <img src="images/ellipse_2.png" alt="" />
-                        <img src="images/ellipse_3.png" alt="" />
-                        <img src="images/ellipse_3.png" alt="" />
-                        <img src="images/ellipse_3.png" alt="" class="margin-right-non" />
-                    </div>
-                </div>
-            </div>
+            @livewire('feedback-slider')
         </div>
     </section>
 

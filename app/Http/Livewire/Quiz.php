@@ -251,6 +251,11 @@ class Quiz extends Component
                         'text' => trans('front.answer_11_2'),
                         'image'  => '',
                         'selected'  => false,
+                    ],
+                    '3' => [
+                        'text' => trans('front.answer_11_3'),
+                        'image'  => '',
+                        'selected'  => false,
                     ]
                 ],
                 'section_text' => trans('front.section_text_11'),

@@ -292,6 +292,8 @@ section.baby-led_weaning {
 }
 .user_review_img img {
     margin-top: -67px;
+    width: 150px;
+    border-radius: 50%
 }
 .navigation_user_review {
     text-align: center;

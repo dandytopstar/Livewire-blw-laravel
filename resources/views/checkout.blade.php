@@ -262,7 +262,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div  class="people_often_ask_us_title">People often ask us </div>
+                    <div  class="people_often_ask_us_title">{{__('front.accordion_block_title')}}</div>
                 </div>
                 <div class="col-lg-12">
                     <!--<div  class="ask_title"> <span class="ask_title-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span> </div>
@@ -272,36 +272,50 @@
                         <div class="accordion-item">
                             <h2 class="" id="headingOne">
                                 <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    {{__('front.accordion_title_1')}}
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.
+                                    {{__('front.accordion_text_1')}}
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    {{__('front.accordion_title_2')}}
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.
+                                    {{__('front.accordion_text_2')}}
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h2 class="" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    {{__('front.accordion_title_3')}}
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.
+                                    {{__('front.accordion_text_3')}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    {{__('front.accordion_title_4')}}
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    {{__('front.accordion_text_4')}}
                                 </div>
                             </div>
                         </div>

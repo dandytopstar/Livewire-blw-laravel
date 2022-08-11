@@ -68,7 +68,19 @@ return [
     //About white section
     'about_white_title'       => 'Baby-led weaning',
     'about_white_subtitle'    => 'What is Baby-Led weaning?',
-    'about_white_description' => 'Baby led weaning (BLW) is a way of introducing solid foods to your baby from around 4 - 6 months old. BLW skips the puree stage due to the ability of babies from 4 - 6 months onwards to naturally handle finger foods.',
+    'about_white_description' => 'Baby-led weaning is a method of introducing solid food to 4 – 6 months old babies whereby purées and spoon-feeding are skipped entirely in favor of finger foods that a baby self-feeds.  Baby-led weaning offers parents a way to bypass the idea of baby food entirely. Growing in popularity, baby-led weaning is particularly popular with parents who want to avoid raising picky eaters, as well as parents who subscribe to Montessori-type philosophies of child-rearing where children are encouraged to be self-sufficient.',
+
+    //USER REVIEW
+    'user_review_title'              => 'User Review',
+    'user_review_subtitle'           => 'What clients say about us',
+    'feedback_slider_text_1'         => "It’s definitely worth your time. Very well and professional made meal plan and easy to follow routine. It made our life a lot easier! Can't thank you enough :)))",
+    'feedback_slider_text_author_1'  => 'Mary Pullen, 27',
+    'feedback_slider_text_2'         => 'That was a total time and money saver for us! We ate pretty much the same food with our girl and it was marvelous seeing her trying something new every day! :D',
+    'feedback_slider_text_author_2'  => 'Cynthia Parrot, 31',
+    'feedback_slider_text_3'         => 'Started introducing solids to our boy when he was 5 months old. Many thanks for making this process easygoing and enjoyable at the same time J',
+    'feedback_slider_text_author_3'  => 'Thelma Calderon, 34',
+    'feedback_slider_text_4'         => 'I’m so glad that I’ve found you! Been using this service for over 8months and I cannot imagine being happier about it!',
+    'feedback_slider_text_author_4'  => 'Kristen Porter, 30',
 
     //Contact Form Main
     'contact_form_main_title'    => 'Have A Questation',
@@ -76,7 +88,7 @@ return [
 
     //questions
     'choose_your_option'    => 'Choose your option',
-    'prepared_weaning_meal' => 'We’ve prepared a personalized Baby-led weaning meal plan for your son/daughter',
+    'prepared_weaning_meal' => '',
 
     //question 1
     'question_1'              => 'Select your baby’s gender.',
@@ -96,7 +108,7 @@ return [
     //question 3
     'question_3'             => 'About BLW',
     'answer_3_1'             => '',
-    'section_text_3'         => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    'section_text_3'         => "Baby-led weaning is a method of introducing solid food to 4 – 6 months old babies whereby purées and spoon-feeding are skipped entirely in favor of finger foods that a baby self-feeds. Baby-led weaning offers parents a way to bypass the idea of baby food entirely. Growing in popularity, baby-led weaning is particularly popular with parents who want to avoid raising picky eaters, as well as parents who subscribe to Montessori-type philosophies of child-rearing where children are encouraged to be self-sufficient.inter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     'continue_button_text_3' => 'continue',
 
     //question 4
@@ -154,6 +166,7 @@ return [
     'question_11'             => 'Does your baby have any allergies?',
     'answer_11_1'             => 'yes',
     'answer_11_2'             => 'no',
+    'answer_11_3'             => "I don't know",
     'section_text_11'         => '',
     'continue_button_text_11' => 'continue',
 
@@ -198,5 +211,29 @@ return [
     'payment_success' => 'Payment Success',
     'payment_unsuccessful' => 'Payment Unsuccessful',
     'try_again' => 'Try Again',
+    'accordion_block_title' => 'People often ask us',
+    'accordion_title_1' => 'Is Baby-Led Weaning safe?',
+    'accordion_text_1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+    'accordion_title_2' => 'What happens after I order?',
+    'accordion_text_2' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+    'accordion_title_3' => 'How can I cancel my subscription?',
+    'accordion_text_3' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+    'accordion_title_4' => 'Who will prepare my plan?',
+    'accordion_text_4' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+
+
+    //Summary page
+    'personalized_plan_block_1' => 'A step-by-step guide on how to prepare your baby for solid foods',
+    'personalized_plan_block_2' => 'An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your baby',
+    'personalized_plan_block_3' => 'Personalized baby-led weaning meal plan based on your answers from the quiz.',
+    'personalized_plan_block_4' => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning',
+    'baby_learn_block_text_title_1' => 'TO EAT INDEPENDENTLY',
+    'baby_learn_block_text_1' => 'Baby learns to eat independently and is in total control',
+    'baby_learn_block_text_title_2' => 'TO CONTROL HIS APETITE',
+    'baby_learn_block_text_2' => 'Baby is in charge of how much to eat and learns to stop when full.',
+    'baby_learn_block_text_title_3' => 'CRITICAL ORAL AND MOTOR SKILS',
+    'baby_learn_block_text_3' => '(VARIETY OF FOOD)  Baby can eat a variety of textures and flavors, which may reduce picky eating later on.',
+    'our_promise_title' => 'Our Promise',
+    'our_promise_text' => "Individuals are somewhat skeptical about new ideas as it poses a challenge, or better put, a cloud of doubt on one's existing thoughts and awareness. In this case of baby-led weaning, there's the usual fear of the babies choking or the case of the pediatricians/nutritionists not being well-informed/trained about BLW. Therefore, our coaches and nutritionists are working incessantly to offer you a suitable meal plan and personalized routine for your babies while helping them gain confidence at an early age and reach their potential through extensive practice that includes but isn’t limited to dexterity, hand-eye coordination, etc. This is not far-fetched as this process is done at the babies’ pace, whereby they are in control of what they eat and the quantity of the new meal(s) being incorporated into their diet.",
 
 ];
