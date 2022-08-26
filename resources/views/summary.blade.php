@@ -134,7 +134,7 @@
                     <div  class="what_will_your_baby_learn_title">What will your baby learn?</div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-4">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in {{$randomDays[3]}} days</div>
@@ -151,14 +151,14 @@
                         <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_2')}}</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div  class="what_will_your_baby_learn_wrap">
-                        <div  class="what_will_your_baby_learn_wrap_top">in 67 days</div>
-                        <img src="{{asset('images/in_days_3.png')}}" alt="" />
-                        <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_3')}}</div>
-                        <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_3')}}</div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-4">--}}
+{{--                    <div  class="what_will_your_baby_learn_wrap">--}}
+{{--                        <div  class="what_will_your_baby_learn_wrap_top">in 67 days</div>--}}
+{{--                        <img src="{{asset('images/in_days_3.png')}}" alt="" />--}}
+{{--                        <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_3')}}</div>--}}
+{{--                        <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_3')}}</div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
             <div class="row">
                 <div class="col-lg-3">

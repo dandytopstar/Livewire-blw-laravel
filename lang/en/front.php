@@ -81,6 +81,10 @@ return [
     'feedback_slider_text_author_3'  => 'Thelma Calderon, 34',
     'feedback_slider_text_4'         => 'I’m so glad that I’ve found you! Been using this service for over 8months and I cannot imagine being happier about it!',
     'feedback_slider_text_author_4'  => 'Kristen Porter, 30',
+    'feedback_slider_text_5'         => 'I’m so glad that I’ve found you! Been using this service for over 8months and I cannot imagine being happier about it!',
+    'feedback_slider_text_author_5'  => 'Cynthia Parrot, 32',
+    'feedback_slider_text_6'         => 'I’m so glad that I’ve found you! Been using this service for over 8months and I cannot imagine being happier about it!',
+    'feedback_slider_text_author_6'  => 'Mary Pullen, 33',
 
     //Contact Form Main
     'contact_form_main_title'    => 'Have A Questation',
@@ -108,7 +112,7 @@ return [
     //question 3
     'question_3'             => 'About BLW',
     'answer_3_1'             => '',
-    'section_text_3'         => "Baby-led weaning is a method of introducing solid food to 4 – 6 months old babies whereby purées and spoon-feeding are skipped entirely in favor of finger foods that a baby self-feeds. Baby-led weaning offers parents a way to bypass the idea of baby food entirely. Growing in popularity, baby-led weaning is particularly popular with parents who want to avoid raising picky eaters, as well as parents who subscribe to Montessori-type philosophies of child-rearing where children are encouraged to be self-sufficient.inter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    'section_text_3'         => "Baby-led weaning is a method of introducing solid food to 4 – 6 months old babies whereby purées and spoon-feeding are skipped entirely in favor of finger foods that a baby self-feeds. Baby-led weaning offers parents a way to bypass the idea of baby food entirely. Growing in popularity, baby-led weaning is particularly popular with parents who want to avoid raising picky eaters, as well as parents who subscribe to Montessori-type philosophies of child-rearing where children are encouraged to be self-sufficient.",
     'continue_button_text_3' => 'continue',
 
     //question 4
@@ -191,7 +195,7 @@ return [
     //question 14
     'question_14'             => 'What is the weight of your baby?',
     'min_14'                  => '1',
-    'max_14'                  => '123',
+    'max_14'                  => '92',
     'range_name_14'           => 'lbs',
     'section_text_14'         => '',
     'continue_button_text_14' => 'continue',
@@ -220,6 +224,22 @@ return [
     'accordion_text_3' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
     'accordion_title_4' => 'Who will prepare my plan?',
     'accordion_text_4' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+
+    //People stories section
+    'people_stories_title' => 'People stories',
+    'people_stories_block_text_1' => "The first feeding of a child with solid food always seemed to me a scary and unfamiliar stage. I didn't know where and when to start, what food to choose, how to react when a child chokes or refuses to eat. Fortunately for me, friends recommended this platform and now we have been eating without problems for 8 months, we have tried many different products and our little one is completely able to feed himself",
+    'people_stories_block_author_1' => 'Meghan Buck, 29',
+    'people_stories_block_text_2' => 'This is the best Baby-Led Weaning plan ever. Before the birth of the child, I read several books on this topic, I consulted with other mothers, however I did not get the answers I wanted. But with this personalized plan everything was very clearly shown from A to Z. Now I can say that Baby-Led Weaning is easy!',
+    'people_stories_block_author_2' => 'Olivia Mitchell, 27',
+    'people_stories_block_text_3' => "I have always wanted to use Baby-Led Weaning for my children, but I had absolutely no knowledge. After visiting this site, I received a personalized plan, guide, and tons of recipes. I couldn't imagine raising my child without this detailed plan. I am extremely grateful for such a wonderful service.",
+    'people_stories_block_author_3' => 'Robin Cole, 30',
+    'people_stories_block_text_4' => 'The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!',
+    'people_stories_block_author_4' => 'Helen Moris, 27',
+
+    //Liked comments
+    'liked_comment_1' => "The best nutrition plan for baby. I'm glad to have found you! Thank you a hundred times!",
+    'liked_comment_2' => 'I recommend this plan to everyone. Really solved all the problems related to feeding my baby.',
+    'liked_comment_3' => 'This is better than any baby led weaning book. Very simple and understandable methods for feeding a child. We are extremely happy!',
 
 
     //Summary page

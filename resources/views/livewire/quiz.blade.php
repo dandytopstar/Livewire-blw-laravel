@@ -114,7 +114,13 @@
                                 <div class="nothing_choose_form">
                                     <div class="wrap__about_blw">
                                         <div class="my-5"> <span class="value-range">{{$rangeData}} {{$currentQuestion['range_name']}}</span>   </div>
-                                        <input type="range" min="1" max="36" step="1" value="1" wire:model="rangeData">
+                                        <input
+                                                type="range"
+                                                min="{{$currentQuestion['min']}}"
+                                                max="{{$currentQuestion['max']}}"
+                                                step="1" value="1"
+                                                wire:model="rangeData"
+                                        >
                                     </div>
                                 </div>
 

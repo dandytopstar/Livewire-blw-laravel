@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <section class="you_can_pay_with_section">
+    <section class="you_can_pay_with_section mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -162,51 +162,51 @@
         </div>
     </section>
 
-    <section class="info_block desc">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div  class="info_block_title">Get a baby-led program that will change your babys life completely</div>
-                    <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.
-                    </div>
-                    <div  class="info_block_buttom">
-                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div  class="info_block_right">
-                        <img src="{{asset('images/tel_3.png')}}" alt="" class="info_block_right_img" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="info_block desc">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <div  class="info_block_title">Get a baby-led program that will change your babys life completely</div>--}}
+{{--                    <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.--}}
+{{--                    </div>--}}
+{{--                    <div  class="info_block_buttom">--}}
+{{--                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <div  class="info_block_right">--}}
+{{--                        <img src="{{asset('images/tel_3.png')}}" alt="" class="info_block_right_img" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
-    <section class="info_block mob">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div  class="info_block_right">
-                        <img src="{{asset('images/tel_3.png')}}" alt="" class="info_block_right_img" />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div  class="info_block_title">Get a baby-led program that will change your babys life completely</div>
-                    <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.
-                    </div>
-                    <div  class="info_block_buttom">
-                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="info_block mob">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <div  class="info_block_right">--}}
+{{--                        <img src="{{asset('images/tel_3.png')}}" alt="" class="info_block_right_img" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <div  class="info_block_title">Get a baby-led program that will change your babys life completely</div>--}}
+{{--                    <div  class="info_block_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet.--}}
+{{--                    </div>--}}
+{{--                    <div  class="info_block_buttom">--}}
+{{--                        <button type="submit" class="btn btn-questation">{{__('front.get_your_plan')}}</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="people_stories">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div  class="people_stories_title">People stories</div>
+                    <div  class="people_stories_title">{{__('front.people_stories_title')}}</div>
                 </div>
             </div>
             <div class="row">
@@ -216,9 +216,11 @@
                             <img src="{{asset('images/people_stories_1.png')}}" alt="" />
                         </div>
                         <div  class="people_stories_wrap-description">
-                            “The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”
+                            {{__('front.people_stories_block_text_1')}}
                         </div>
-                        <div  class="people_stories_wrap-info">Helen Moris, 27</div>
+                        <div  class="people_stories_wrap-info">
+                            {{__('front.people_stories_block_author_1')}}
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -227,9 +229,11 @@
                             <img src="{{asset('images/people_stories_2.png')}}" alt="" />
                         </div>
                         <div  class="people_stories_wrap-description">
-                            “The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”
+                            {{__('front.people_stories_block_text_2')}}
                         </div>
-                        <div  class="people_stories_wrap-info">Helen Moris, 27</div>
+                        <div  class="people_stories_wrap-info">
+                            {{__('front.people_stories_block_author_2')}}
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -238,9 +242,11 @@
                             <img src="{{asset('images/people_stories_3.png')}}" alt="" />
                         </div>
                         <div  class="people_stories_wrap-description">
-                            “The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”
+                            {{__('front.people_stories_block_text_3')}}
                         </div>
-                        <div  class="people_stories_wrap-info">Helen Moris, 27</div>
+                        <div  class="people_stories_wrap-info">
+                            {{__('front.people_stories_block_author_3')}}
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -249,9 +255,11 @@
                             <img src="{{asset('images/people_stories_4.png')}}" alt="" />
                         </div>
                         <div  class="people_stories_wrap-description">
-                            “The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”
+                            {{__('front.people_stories_block_text_4')}}
                         </div>
-                        <div  class="people_stories_wrap-info">Helen Moris, 27</div>
+                        <div  class="people_stories_wrap-info">
+                            {{__('front.people_stories_block_author_4')}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -330,7 +338,9 @@
                                 <img src="{{asset('images/user__1.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
-                                <div class="three-block_descriptions_text">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! </div>
+                                <div class="three-block_descriptions_text">
+                                    {{__('front.liked_comment_1')}}
+                                </div>
                             </div>
                         </div>
                         <div class="three-block_like">
@@ -339,14 +349,6 @@
                                 <span class="count_like">104</span>
                                 <img src="{{asset('images/diselike.png')}}" alt="" />
                                 <span class="count_like">2</span>
-                            </div>
-                            <div class="three-block_like_wrap_right">
-                                <div class="wrap__like wrap__like__left">
-                                    <img src="{{asset('images/like.png')}}" alt="" />
-                                </div>
-                                <div class="wrap__like">
-                                    <img src="{{asset('images/diselike.png')}}" alt="" />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,7 +360,9 @@
                                 <img src="{{asset('images/user__1.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
-                                <div class="three-block_descriptions_text">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! </div>
+                                <div class="three-block_descriptions_text">
+                                    {{__('front.liked_comment_2')}}
+                                </div>
                             </div>
                         </div>
                         <div class="three-block_like">
@@ -367,14 +371,6 @@
                                 <span class="count_like">104</span>
                                 <img src="{{asset('images/diselike.png')}}" alt="" />
                                 <span class="count_like">2</span>
-                            </div>
-                            <div class="three-block_like_wrap_right">
-                                <div class="wrap__like wrap__like__left">
-                                    <img src="{{asset('images/like.png')}}" alt="" />
-                                </div>
-                                <div class="wrap__like">
-                                    <img src="{{asset('images/diselike.png')}}" alt="" />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -386,7 +382,9 @@
                                 <img src="{{asset('images/user__1.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
-                                <div class="three-block_descriptions_text">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! </div>
+                                <div class="three-block_descriptions_text">
+                                    {{__('front.liked_comment_3')}}
+                                </div>
                             </div>
                         </div>
                         <div class="three-block_like">
@@ -395,14 +393,6 @@
                                 <span class="count_like">104</span>
                                 <img src="{{asset('images/diselike.png')}}" alt="" />
                                 <span class="count_like">2</span>
-                            </div>
-                            <div class="three-block_like_wrap_right">
-                                <div class="wrap__like wrap__like__left">
-                                    <img src="{{asset('images/like.png')}}" alt="" />
-                                </div>
-                                <div class="wrap__like">
-                                    <img src="{{asset('images/diselike.png')}}" alt="" />
-                                </div>
                             </div>
                         </div>
                     </div>

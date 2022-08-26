@@ -8,7 +8,7 @@ class FeedbackSlider extends Component
 {
     public int $currentSlider = 1;
 
-    public array $sliders = [1,2,3,4];
+    public array $sliders = [1,2,3,4, 5, 6];
 
     public function slideSwitcher($slideNumber)
     {
