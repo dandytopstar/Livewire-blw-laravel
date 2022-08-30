@@ -251,8 +251,8 @@ return [
     'baby_learn_block_text_1' => 'Baby learns to eat independently and is in total control',
     'baby_learn_block_text_title_2' => 'TO CONTROL HIS APETITE',
     'baby_learn_block_text_2' => 'Baby is in charge of how much to eat and learns to stop when full.',
-    'baby_learn_block_text_title_3' => 'CRITICAL ORAL AND MOTOR SKILS',
-    'baby_learn_block_text_3' => '(VARIETY OF FOOD)  Baby can eat a variety of textures and flavors, which may reduce picky eating later on.',
+    'baby_learn_block_text_title_3' => 'VARIETY OF FOOD',
+    'baby_learn_block_text_3' => 'Baby can eat a variety of textures and flavors, which may reduce picky eating later on.',
     'our_promise_title' => 'Our Promise',
     'our_promise_text' => "Individuals are somewhat skeptical about new ideas as it poses a challenge, or better put, a cloud of doubt on one's existing thoughts and awareness. In this case of baby-led weaning, there's the usual fear of the babies choking or the case of the pediatricians/nutritionists not being well-informed/trained about BLW. Therefore, our coaches and nutritionists are working incessantly to offer you a suitable meal plan and personalized routine for your babies while helping them gain confidence at an early age and reach their potential through extensive practice that includes but isn’t limited to dexterity, hand-eye coordination, etc. This is not far-fetched as this process is done at the babies’ pace, whereby they are in control of what they eat and the quantity of the new meal(s) being incorporated into their diet.",
 
