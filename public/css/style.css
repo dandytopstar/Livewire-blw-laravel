@@ -1166,7 +1166,9 @@ section.based_on_your {
     border-radius: 20px;
     text-align: center;
     padding-bottom: 50px;
+    height: 100%;
 }
+
 .what_will_your_baby_learn_wrap_top {
     background: #FF735C;
     border-radius: 20px;

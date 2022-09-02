@@ -6,9 +6,9 @@ use Livewire\Component;
 
 class FeedbackSlider extends Component
 {
-    public int $currentSlider = 1;
+    public int $currentSlider = 5;
 
-    public array $sliders = [1,2,3,4, 5, 6];
+    public array $sliders = [5, 6];
 
     public function slideSwitcher($slideNumber)
     {

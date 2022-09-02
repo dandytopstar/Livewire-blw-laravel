@@ -3,9 +3,9 @@
 @section('content')
 
     <header class="header desc">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row flex-alignn">
-                <div class="col-lg-3">
+                <div class="col-lg-3 text-center">
                     <div class="logo-home-template">
                         <img src="{{asset('images/orange_blw_logo.png')}}">
                     </div>

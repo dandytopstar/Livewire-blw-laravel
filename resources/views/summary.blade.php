@@ -134,8 +134,8 @@
                     <div  class="what_will_your_baby_learn_title">What will your baby learn?</div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4">
+            <div class="row">
+                <div class="col-md-4 mb-sm-3">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in {{$randomDays[3]}} days</div>
                         <img src="{{asset('images/in_days_1.png')}}" alt="" />
@@ -143,7 +143,7 @@
                         <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_1')}}</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4 mb-sm-3">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in 21 days</div>
                         <img src="{{asset('images/in_days_2.png')}}" alt="" />
@@ -151,7 +151,7 @@
                         <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_2')}}</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4 mb-sm-3">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in 67 days</div>
                         <img src="{{asset('images/in_days_3.png')}}" alt="" />
