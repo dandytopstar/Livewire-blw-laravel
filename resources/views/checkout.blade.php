@@ -335,7 +335,7 @@
                     <div  class="three-block">
                         <div  class="three-block__wrap">
                             <div class="wrap_each_plan_has_img">
-                                <img src="{{asset('images/user__1.png')}}" alt="" />
+                                <img src="{{asset('images/01_comment.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
                                 <div class="three-block_descriptions_text">
@@ -357,7 +357,7 @@
                     <div  class="three-block">
                         <div  class="three-block__wrap">
                             <div class="wrap_each_plan_has_img">
-                                <img src="{{asset('images/user__1.png')}}" alt="" />
+                                <img src="{{asset('images/02_comment.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
                                 <div class="three-block_descriptions_text">
@@ -379,7 +379,7 @@
                     <div  class="three-block">
                         <div  class="three-block__wrap">
                             <div class="wrap_each_plan_has_img">
-                                <img src="{{asset('images/user__1.png')}}" alt="" />
+                                <img src="{{asset('images/03_comment.png')}}" alt="" />
                             </div>
                             <div class="three-block_descriptions">
                                 <div class="three-block_descriptions_text">

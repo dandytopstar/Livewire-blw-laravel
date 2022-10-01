@@ -138,7 +138,7 @@
                 <div class="col-md-4 mb-sm-3">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in {{$randomDays[3]}} days</div>
-                        <img src="{{asset('images/in_days_1.png')}}" alt="" />
+                        <img src="{{asset('images/to_eat_independently.jpg')}}" alt="" />
                         <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_1')}}</div>
                         <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_1')}}</div>
                     </div>
@@ -154,7 +154,7 @@
                 <div class="col-md-4 mb-sm-3">
                     <div  class="what_will_your_baby_learn_wrap">
                         <div  class="what_will_your_baby_learn_wrap_top">in 67 days</div>
-                        <img src="{{asset('images/in_days_3.png')}}" alt="" />
+                        <img src="{{asset('images/variety_of_food.png')}}" alt="" />
                         <div  class="what_will_your_baby_learn_wrap_title">{{__('front.baby_learn_block_text_title_3')}}</div>
                         <div  class="what_will_your_baby_learn_wrap_desc"> {{__('front.baby_learn_block_text_3')}}</div>
                     </div>
