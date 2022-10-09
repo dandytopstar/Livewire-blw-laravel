@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\StripeController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PersonalPlanController;
+use App\Http\Controllers\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,12 @@ use App\Http\Controllers\PersonalPlanController;
 Route::view('/', 'main');
 
 Route::view('quiz', 'quiz')->name('quiz');
+
+Route::view('subscription', 'subscription')->name('subscription');
+
+Route::post('subscription-send', [SubscriptionController::class, 'subscriptionSend'])->name('subscription-send');
+
+Route::view('subscription-email-sent', 'subscription-email-sent')->name('subscription-email-sent');
 
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 

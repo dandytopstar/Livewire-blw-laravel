@@ -285,7 +285,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    {{__('front.accordion_text_1')}}
+                                    {!! __('front.accordion_text_1') !!}
                                 </div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    {{__('front.accordion_text_2')}}
+                                    {!!  __('front.accordion_text_2') !!}
                                 </div>
                             </div>
                         </div>

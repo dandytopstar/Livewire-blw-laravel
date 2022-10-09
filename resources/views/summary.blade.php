@@ -73,12 +73,15 @@
                             <div class="result__number">{{$randomDays[0]}}</div>
                             <div class="result__number">{{$randomDays[1]}}</div>
                             <div class="result__number">{{$randomDays[2]}}</div>
-                            <div class="result__number result">{{$randomDays[3]}}</div>
+                            <div class="result__number result">
+                                {{$randomDays[3]}}
+                                <div class="result__text">Days</div>
+                            </div>
                             <div class="result__number">{{$randomDays[4]}}</div>
                             <div class="result__number">{{$randomDays[5]}}</div>
                             <div class="result__number">{{$randomDays[6]}}</div>
                         </div>
-                        <div class="result__text">Days</div>
+
                         <div  class="based_on_your_right_wrap">
                             <img src="{{asset('/images/based_on_your_4.png')}}" alt="" />
                             <div  class="based_on_your_right_title">YOUR BABY WILL EAT INDEPENDENTLY IN ABOUT {{$randomDays[3]}} DAYS</div>

@@ -1301,7 +1301,7 @@ section.our_promise {
     line-height: 20px;
     text-align: center;
     color: #FF735C;
-    margin-right: 17px;
+    /*margin-right: 17px;*/
 }
 .based_on_your_right_wrap_bottum.mob {
     display: none;
@@ -2126,7 +2126,7 @@ div .accordion-button:focus {
         line-height: 15px;
         text-align: center;
         color: #FF735C;
-        margin-right: 18px;
+        /*margin-right: 18px;*/
     }
     .based_on_your_right_title {
         font-size: 12px;
@@ -2771,4 +2771,13 @@ input[type="range"]::-webkit-slider-thumb {
  }
 input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.6);
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+.form-control-choose:disabled, .form-control-choose[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
 }

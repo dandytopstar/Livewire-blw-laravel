@@ -16,6 +16,7 @@
                         <li><a href="#how_it_work_section">How It Works</a></li>
                         <li><a href="#personalized_plan_section">Personalized Plan</a></li>
                         <li><a href="#baby-led_weaning_section">Baby-Led Weaning</a></li>
+                        <li><a href="{{route('subscription')}}">Subscription</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2">

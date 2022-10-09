@@ -217,13 +217,58 @@ return [
     'try_again' => 'Try Again',
     'accordion_block_title' => 'People often ask us',
     'accordion_title_1' => 'Is Baby-Led Weaning safe?',
-    'accordion_text_1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
-    'accordion_title_2' => 'What happens after I order?',
-    'accordion_text_2' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
-    'accordion_title_3' => 'How can I cancel my subscription?',
-    'accordion_text_3' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
-    'accordion_title_4' => 'Who will prepare my plan?',
-    'accordion_text_4' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus lectus mattis volutpat amet, cras turpis. Mattis suspendisse neque id ultrices interdum leo. Eleifend interdum feugiat eu quam auctor nunc augue magna mauris.',
+    'accordion_text_1' => "
+        <p>Baby-Led weaning is very safe for your baby, as long as you provide safe foods and abide by basic safety feeding guidelines, some of which are:</p>
+        <ul>
+            <li>Feed meals and snacks to babies only while they are sitting upright. Avoid letting them crawl, walk or play around while eating.</li>
+            <li>
+                Do not leave your baby unattended to during meals.
+            </li>
+            <li>
+                Avoid serving foods that are choking hazards. These include popcorn, whole nuts, uncooked apple slices, uncooked dried fruits, fish that contains bones, crunchy snacks, etc. Some others, such as grapes or cherries, may be cut into smaller pieces that are safer for the child to chew.
+            </li>
+            <li>
+                Educate everyone who takes care of your child on baby-led weaning. It is essential that the caregivers also maintain the same safety precautions as you do.
+            </li>
+            <li>
+                Observe for any allergic reactions in your babies. These may include sneezing, wheezing, stomach pain with or without diarrhea, vomiting, and swellings. It is advised that you consult your pediatrician to be sure of when to introduce allergens such as eggs, peanuts, and even seafood into your baby’s meals.
+            </li>
+        </ul>
+    ",
+    'accordion_title_2' => 'What are the benefits of Baby-Led Weaning?',
+    'accordion_text_2' => "
+        <p>
+            <b>Independence:</b> Baby learns to eat independently and is in total control.
+        </p>
+        <p>
+            <b>Development:</b> Baby practices critical motor and oral skills.
+        </p>
+        <p>
+            <b>Appetite Co ntrol:</b> Baby is in charge of how much to eat and learns to stop when full.
+        </p>
+        <p>
+            <b>Ease:</b> Baby (mostly) eats what you eat. Less special meals.
+        </p>
+        <p>
+            <b>Variety:</b> Baby can eat a variety of textures and flavors, which may reduce picky eating later on.
+        </p>
+        <p>
+            <b>Less Expensive:</b> Baby eats real food. No pricey jars, pouches or blenders required.
+        </p>
+        <p>
+            <b>Family Meals:</b> Baby is part of your family meal, eating with you.
+        </p>
+        <p>
+            <b>Dining Out:</b> It’s easier to eat in restaurants as baby can eat whole food.
+        </p>
+        <p>
+            <b>Fun!</b> Babies enjoy touching, inspecting, and tasting a different flavors and textures.
+        </p>
+    ",
+    'accordion_title_3' => 'What happens after I order?',
+    'accordion_text_3' => "After you place your order, our nutritionists will personalize the program using the answers you have provided in the quiz. We will send a personalized meal plan, guide, e-book and recipes to your email. ",
+    'accordion_title_4' => 'How can I cancel my subscription?',
+    'accordion_text_4' => "If you decide to cancel your subscription, you can manage it from the “Manage Subscription” page on our website. You can also drop an email to hello@babyledweaning.me",
 
     //People stories section
     'people_stories_title' => 'People stories',
