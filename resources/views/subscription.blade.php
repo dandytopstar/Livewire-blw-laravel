@@ -5,7 +5,7 @@
     <section class="nothing_choose">
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="col-sm-12">
+                <div class="col-12">
                     <div  class="nothing_choose_wrap text-center" style="min-height: auto">
 
                         <h1>My Subscription</h1>

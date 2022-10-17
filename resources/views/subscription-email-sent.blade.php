@@ -5,7 +5,7 @@
     <section class="nothing_choose">
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="col-8">
+                <div class="col-12">
                     <div  class="nothing_choose_wrap text-center bg-white" style="min-height: auto">
 
                         <div class="my-3">
