@@ -9,7 +9,7 @@
                     <div  class="nothing_choose_wrap text-center bg-white" style="min-height: auto">
 
                         <div class="my-3">
-                            <img src="{{asset('images/email-sent.png')}}" alt="">
+                            <img src="{{asset('images/email-sent.png')}}" class="img-fluid" alt="">
                         </div>
 
                         <h1>Link sent</h1>
