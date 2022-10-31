@@ -193,7 +193,7 @@
                     function checkPrivacy() {
                         $('#privacy-check').on('change', (event) => {
                             let isChecked = event.currentTarget.checked;
-                            $('#getYourPlanBtn').attr('disabled', false);
+                            $('#getYourPlanBtn').attr('disabled', !isChecked);
                         })
                     }
 
@@ -222,8 +222,6 @@
                             paymentData.method = method;
                             hideShowFields()
                         })
-
-                        console.log(paymentData.method);
 
                         // if(method == 'stripe') {
                         //     $('.stripe-field').show();
