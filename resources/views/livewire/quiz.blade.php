@@ -136,18 +136,24 @@
                             <div class="nothing_choose_title_top">Enter Info</div>
                             <div class="nothing_choose_title">{{__('front.client_registration_title')}}</div>
                             <div class="nothing_choose_form">
+
                                 <div class="wrap__input wrap__input_enter_info mob">
                                     <input wire:model="clientRegistrationData.name" class="form-control-choose" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
                                     <input wire:model="clientRegistrationData.email" class="form-control-choose" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
                                 </div>
+
                                 <div class="wrap__input">
                                     <textarea wire:model="clientRegistrationData.additional_infos" class="form-control-choose" id="exampleFormControlTextarea1" rows="3" placeholder="Request Details"></textarea>
                                 </div>
-                                <div class="wrap__next-form">
-                                    <button wire:click="createClient" class="form-control-choose active">
-                                        {{__('front.client_registration_button_text')}}
-                                    </button>
-                                </div>
+
+
+                                @if(!empty($clientRegistrationData['name']) && !empty($clientRegistrationData['email']))
+                                    <div class="wrap__next-form">
+                                        <button wire:click="createClient" class="form-control-choose active">
+                                            {{__('front.client_registration_button_text')}}
+                                        </button>
+                                    </div>
+                                @endif
 
                             </div>
 

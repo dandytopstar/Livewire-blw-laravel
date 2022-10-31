@@ -18,12 +18,12 @@ use App\Http\Controllers\SubscriptionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('welcome', 'welcome');
+//Route::view('welcome', 'welcome');
 
 //Route::view('terms', 'terms')->name('terms');
 //Route::view('policy', 'policy')->name('policy');;
 
-Route::view('/', 'main');
+Route::view('/', 'main')->name('main');
 
 Route::view('quiz', 'quiz')->name('quiz');
 
@@ -49,4 +49,8 @@ Route::get('paypal-error/{id}', [PaymentController::class, 'payPalError'])->name
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
+
+Route::fallback(function () {
+    return redirect()->route('main');
+});
 
