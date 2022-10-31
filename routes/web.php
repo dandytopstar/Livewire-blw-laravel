@@ -18,10 +18,8 @@ use App\Http\Controllers\SubscriptionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('welcome', 'welcome');
 
-//Route::get('/welcome', function () {
-//    return view('welcome');
-//});
 //Route::view('terms', 'terms')->name('terms');
 //Route::view('policy', 'policy')->name('policy');;
 

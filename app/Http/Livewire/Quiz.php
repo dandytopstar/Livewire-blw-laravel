@@ -89,7 +89,7 @@ class Quiz extends Component
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => trans('front.section_text_3'). '!!',
+                'section_text' => trans('front.section_text_3'),
                 'section_image' => 'images/girl_queshions.png',
                 'continue_button_text' => trans('front.continue_button_text_3'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
