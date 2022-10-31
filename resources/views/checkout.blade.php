@@ -138,22 +138,22 @@
                 </div>
                 <div class="col-lg-12">
                     <div  class="d-flex flex-wrap justify-content-center">
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_1.png')}}" alt="" />
                         </div>
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_2.png')}}" alt="" />
                         </div>
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_3.png')}}" alt="" />
                         </div>
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_1.png')}}" alt="" />
                         </div>
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_2.png')}}" alt="" />
                         </div>
-                        <div  class="you_can_pay_with_card-img">
+                        <div  class="you_can_pay_with_card-img text-center">
                             <img src="{{asset('images/cart_3.png')}}" alt="" />
                         </div>
                     </div>

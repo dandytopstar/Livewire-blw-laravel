@@ -580,7 +580,7 @@ label.form-check-label {
     box-shadow: 0px 4px 20px rgb(0 0 0 / 6%);
     border-radius: 30px;
     margin-right: 10px;
-    padding: 16px 36px;
+    padding: 16px 0 10px 0;
     min-width: 136px;
     width: 12.5%;
 }
