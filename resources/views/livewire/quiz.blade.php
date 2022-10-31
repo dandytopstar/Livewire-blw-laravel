@@ -95,8 +95,8 @@
 
                                 @if(!empty($currentQuestion['section_text']))
                                     <div class="nothing_choose_form">
-                                        <div class="wrap__about_blw">
-                                            {{$currentQuestion['section_text']}}
+                                        <div class="wrap__about_blw text-start">
+                                            {!! $currentQuestion['section_text']!!}
                                         </div>
                                     </div>
                                 @endif

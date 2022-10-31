@@ -112,7 +112,11 @@ return [
     //question 3
     'question_3'             => 'About BLW',
     'answer_3_1'             => '',
-    'section_text_3'         => "Baby-led weaning is a method of introducing solid food to 4 – 6 months old babies whereby purées and spoon-feeding are skipped entirely in favor of finger foods that a baby self-feeds. Baby-led weaning offers parents a way to bypass the idea of baby food entirely. Growing in popularity, baby-led weaning is particularly popular with parents who want to avoid raising picky eaters, as well as parents who subscribe to Montessori-type philosophies of child-rearing where children are encouraged to be self-sufficient.",
+    'section_text_3'         => "
+        <p>Baby-led weaning (BLW) involves introducing solid/finger foods to babies and they are allowed to feed themselves.</p>
+        <p>BLW offers parents a way to bypass baby food entirely. It is popular with parents who want to avoid raising picky eaters, or encourage them to be self-sufficient.</p>
+        <p>BLW majorly emphasizes independence of the baby. Parents wait for their baby to show signs of readiness for eating and follow accordingly. Babies introduced to solids through BLW also continue breastmilk and determine when it stops.</p>
+    ",
     'continue_button_text_3' => 'continue',
 
     //question 4
