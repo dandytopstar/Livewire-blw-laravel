@@ -18,12 +18,17 @@ use App\Http\Controllers\SubscriptionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::view('welcome', 'welcome');
+Route::view('welcome', 'welcome');
 
 //Route::view('terms', 'terms')->name('terms');
-//Route::view('policy', 'policy')->name('policy');;
+//Route::view('policy', 'policy')-
+
+//redesign
+Route::view('/new', 'main-new')->name('new');
+//-----------------
 
 Route::view('/', 'main')->name('main');
+
 
 Route::view('quiz', 'quiz')->name('quiz');
 
