@@ -45,7 +45,7 @@ return [
 
     //Processes section
     'processes_title'           => 'How It Works',
-    'processes_subtitle'        => 'Start baby-led weaning with a personalized meal plan',
+    'processes_subtitle'        => 'Start Baby-Led Weaning With A Personalized Meal Plan',
     'processes_step_title_1'    => 'Take a quiz',
     'processes_step_subtitle_1' => 'Pick answers carefully so we can prepare a guide personalized exactly to your baby.',
     'processes_step_title_2'    => 'Get a personalized guide and meal plan',

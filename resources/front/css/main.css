@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -124px;
+}
+
+.container-box {
+    height: 100vh;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.font-white-600 {
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.font-white-400 {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.font-grey-300 {
+    color: var(--grey-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.font-grey-10-300 {
+    color: var(--grey-color);
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 300;
+    opacity: .65;
+}
+
+.font-grey-color-700 {
+    color: var(--grey-color);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.font-grey-color-400 {
+    color: var(--grey-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.font-grey-32-700 {
+    color: var(--grey-color);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.font-grey-18-700 {
+    color: var(--grey-color);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.font-grey-16-700 {
+    color: var(--grey-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.font-grey-500 {
+    color: var(--light-grey-color);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.font-accent-600 {
+    color: var(--acent-color-green);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.font-accent-18-700 {
+    color: var(--acent-color-green);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.btn-green-squre, .btn-green-squre:hover {
+    padding: 12px 43px;
+    border-radius: 10px;
+    background-color: var(--acent-color-green);
+    color: white;
+}
+
+.btn-white-squre, .btn-white-squre:hover {
+    padding: 12px 43px;
+    border-radius: 10px;
+    background-color: white;
+    max-height: 44px;
+    color: var(--acent-color-green)
+}
+
+.btn-green-circle, .btn-green-circle:hover {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--acent-color-green);
+    color: white;
+}
+
+/* header footer */
+
+.header, footer {
+    padding: 35px 0;
+}
+
+footer .navbar-nav {
+    flex-direction: row;
+}
+
+footer .navbar-container {
+    align-items: center;
+}
+
+.header .adaptive-header {
+    display: none;
+}
+
+.header ul li:not(:last-child), footer ul li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.header .navbar {
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-menu, footer .nav-menu {
+    margin-left: 90px;
+}
+
+.header .nav-menu .nav-link.active {
+    position: relative;
+}
+
+.header .nav-menu .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 17px;
+    border-radius: 6px;
+    background-color: var(--acent-color-green);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--grey-color);
+}
+
+footer {
+    background-color: var(--acent-color-green);
+    padding: 40px 0;
+}
+
+/* sections */
+
+.section.first-section {
+    margin-top: 70px;
+}
+
+.section.last-section {
+    margin-bottom: 110px;
+}
+
+.section {
+    margin-top: 90px;
+    padding: 80px 0;
+}
+
+.section .title-box > p {
+    margin-bottom: 12px;
+}
+
+.section .title-box > h2 {
+    margin-bottom: 40px;
+}
+
+.section .title-box > h2.mb-20 {
+    margin-bottom: 20px;
+}
+
+.section .title-box .description {
+    margin-bottom: 20px;
+}
+
+.accent-section {
+    background-color: rgba(0,189,144, .1);
+}
+
+.section .white-shadow-box-radius-10 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.section .bg-image.top-right {
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bg-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+
+
+

@@ -24,7 +24,6 @@ Route::view('welcome', 'welcome');
 //Route::view('policy', 'policy')-
 
 //redesign
-Route::view('/new', 'main-new')->name('new');
 //-----------------
 
 Route::view('/', 'main')->name('main');
