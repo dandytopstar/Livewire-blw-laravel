@@ -118,6 +118,10 @@ section.main-page .bg-image-absolute img{
     max-width: 370px;
 }
 
+.section .clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section .clients-item p{
     margin: 0;
 }
@@ -149,11 +153,15 @@ section.main-page .bg-image-absolute img{
     margin-right: 6px;
 }
 
-.section .navigation {
-    margin-top: 20px;
+.section .carousel-indicators {
+    position: relative;
 }
 
-.section .navigation .dot {
+.section .carousel-inner {
+    padding: 20px 0;
+}
+
+.section .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -161,21 +169,46 @@ section.main-page .bg-image-absolute img{
     cursor: pointer;
 }
 
-.section .navigation .dot:not(:last-child) {
+.section.clients .dot:not(:last-child) {
     margin-right: 40px;
 }
 
-.section .navigation .dot.active {
+.section .dot.active {
     border-color: transparent;
     background-color: var(--acent-color-green);
 }
 
-.section .navigation .arrow-right {
+.section .arrow-right {
     transform: rotate(180deg);
 }
 
-.section .navigation .arrow-right,.section .navigation .arrow-left {
+.section .arrow-right,.section .arrow-left {
     cursor: pointer;
+}
+
+.carousel-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-navigation .carousel-indicators {
+    margin-bottom: 0;
+}
+
+.carousel-navigation .carousel-control-prev {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.carousel-navigation .carousel-control-next {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel.adaptive {
+    display: none;
 }
 
 

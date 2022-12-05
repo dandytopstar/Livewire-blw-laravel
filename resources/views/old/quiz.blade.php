@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.quiz-layout')
 
 @section('content')
 

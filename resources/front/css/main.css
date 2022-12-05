@@ -108,6 +108,13 @@ body {
     font-weight: 600;
 }
 
+.font-accent-700 {
+    color: var(--acent-color-green);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
 .font-accent-18-700 {
     color: var(--acent-color-green);
     font-size: 18px;
@@ -255,6 +262,11 @@ footer {
     right: 0;
     z-index: -1;
 }
+
+.lg-hide-bg-image, .bg-bottom-center-adaptive {
+    display: none;
+}
+
 
 
 

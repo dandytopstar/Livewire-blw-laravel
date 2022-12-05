@@ -1,5 +1,3 @@
-@media (max-width: 576px) {  }
-
 @media (max-width: 768px) {
     .font-white-600, .font-accent-600 {
         font-size: 12px;
@@ -31,8 +29,8 @@
     .font-accent-700 {
         font-size: 14px;
         line-height: 17px;
-        color: var(--acent-color-green);
-        font-weight: 700;
+        /*color: var(--acent-color-green);*/
+        /*font-weight: 700;*/
     }
 
     .font-grey-32-700 {
@@ -93,6 +91,40 @@
 }
 
 @media (max-width: 992px) {
+    .quizz-navigation-adaptive {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .quizz-navigation-adaptive .arrow-left {
+        margin-right: 20px;
+    }
+
+    .quizz-navigation-adaptive .arrow-right img {
+        transform: rotate(180deg);
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    .close-button.adaptive {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 17px;
+        align-items: center;
+    }
+
+    .close-button.adaptive img{
+        margin-right: 10px;
+    }
+
+    .container-box {
+        padding: 67px 17px 87px;
+        flex-direction: column;
+    }
+
     .btn-green-squre, .btn-white-squre {
         padding: 12px 30px;
     }
@@ -191,6 +223,30 @@
         align-items: flex-start;
     }
 
+    .bg-bottom-right, .bg-bottom-left {
+        display: none;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .carousel.adaptive {
+        display: block;
+    }
+
+    .adaptive-display-none {
+        display: none;
+    }
+
+    .height-auto-adaptive {
+        height: auto !important;
+    }
+
+    .section.quizz-box .content-box .option {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -283,6 +339,50 @@
         display: block;
     }
 
+    .section.quizz-box .content-box .option img {
+        max-width: 100%;
+    }
+
 }
 @media (max-width: 1400px) {
+}
+
+@media (max-width: 576px) {
+    .options-body {
+        flex-direction: column;
+    }
+
+    .options-body .option:first-child {
+        margin-bottom: 20px;
+    }
+
+    .container-box {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .section.quizz-box .content-box {
+        margin: 0;
+    }
+
+    .section.quizz-box .content-box .option:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .container-box .bg-image-adaptive-top-left {
+        position: absolute;
+        top: 0;
+        left: 17px;
+    }
+
+    .bg-bottom-center-adaptive {
+        max-width: 200px;
+        align-self: center;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .btn.exit-btn {
+        display: none;
+    }
 }

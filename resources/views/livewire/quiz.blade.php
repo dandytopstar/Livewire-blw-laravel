@@ -1,169 +1,157 @@
-<div class="quiz-block">
-    <section class="nothing_choose">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div  class="nothing_choose_wrap">
+<div class="container-box position-relative">
 
-                        @if($currentQuestionNum !== $registrationStepNum)
+    @if($currentQuestionNum !== $registrationStepNum)
 
-                            <div class="nothing_choose_navigation">
-                                <div class="nothing_choose_navigation_left" wire:click="prevSlide">
-                                    <img src="images/arrow_back.png" alt="" />
-                                    <span>Back</span>
-                                </div>
-                                <div class="nothing_choose_navigation_right">
-                                    <ul class="navigation_right">
-                                        @foreach($countQuestionsDots as $item)
-                                            <li>
-                                                <a class="@if($currentQuestionNum == $item) navigation_active @endif">
-                                                    {{$item}}
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
+        <div class="section quizz-box white-shadow-box-radius-10">
+            <div class="section-wrapper">
+
+                <div class="navigation-box">
+                    <div class="dots-box">
+
+                        @foreach($countQuestionsDots as $item)
+                            <div class="dot-item @if($currentQuestionNum == $item) active @endif">
+                                <div class="dot"></div>
+                                <span class="font-grey-10-300">{{$item}}</span>
                             </div>
+                        @endforeach
 
-                            <div  class="nothing_choose_title_top">{{__('front.choose_your_option')}}</div>
+                    </div>
+                </div>
 
-                            @if(!empty($currentQuestion['question']))
-                                <div  class="nothing_choose_title">{{$currentQuestion['question']}}</div>
-                            @endif
-
+                <div class="content-box">
+                    <div class="title-box @if(!empty($currentQuestion['section_text'])) full-width @endif">
+                        <p class="font-accent-700">{{__('front.choose_your_option')}}</p>
+                        @if(!empty($currentQuestion['question']))
+                            <h2 class="font-grey-32-700">{{$currentQuestion['question']}}</h2>
                             @if($currentQuestionNum == 1)
-                                <div  class="nothing_choose_descriptions">
-                                    {{__('front.prepared_weaning_meal')}}
-                                </div>
+                                <p class="description font-grey-color-400"> {{__('front.prepared_weaning_meal')}}</p>
                             @endif
-
-                            <div  class="nothing_choose_form__queshions">
-
-                                @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
-
-                                    <div class="d-flex flex-wrap justify-content-center">
-                                        @foreach($currentQuestion['answers'] as $key => $answer)
-                                            <div class="wrap__img__queshions @if($answer['selected']) click @endif"
-                                                 style="cursor: pointer;"
-
-                                                 id="{{$currentQuestion['question_key'].'-'.$key}}"
-
-                                                 @if($currentQuestion['multiple'])
-                                                     wire:click="nextSlideMultiple({{$key}})"
-                                                 @else
-                                                     wire:click="nextSlide({{$key}})"
-                                                 @endif
-                                            >
-                                                <img src="{{$answer['image']}}">
-
-                                                <div class="queshions_title">{{$answer['text']}}</div>
-                                            </div>
-                                        @endforeach
-                                    </div>
-
-                                @endif
-
-                                @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
-                                    <div class="nothing_choose_form">
-
-                                        @foreach($currentQuestion['answers'] as $key => $answer)
-                                            <div class="wrap__input">
-                                                <button class="form-control-choose @if($answer['selected']) active @endif"
-                                                    id="{{$currentQuestion['question_key'].'-'.$key}}"
-
-                                                    @if($currentQuestion['multiple'])
-                                                        wire:click="nextSlideMultiple({{$key}})"
-                                                    @else
-                                                        wire:click="nextSlide({{$key}})"
-                                                    @endif
-                                                >
-                                                    {{$answer['text']}}
-                                                </button>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                @endif
-
-                            </div>
-
-                            <div>
-                                @if(!empty($currentQuestion['section_image']))
-                                    <div class="text-center">
-                                        <img src="{{$currentQuestion['section_image']}}" class="quiz-image-card">
-                                    </div>
-                                @endif
-
-                                @if(!empty($currentQuestion['section_text']))
-                                    <div class="nothing_choose_form">
-                                        <div class="wrap__about_blw text-start">
-                                            {!! $currentQuestion['section_text']!!}
-                                        </div>
-                                    </div>
-                                @endif
-
-                                @if(!empty($currentQuestion['continue_button']) && !$currentQuestion['range_slider'])
-                                    <div  class="wrap__next-form">
-                                        <a href="#" class="next-form next-form_2" wire:click="nextSlide">
-                                            {{$currentQuestion['continue_button_text']}}
-                                        </a>
-                                    </div>
-                                @endif
-                            </div>
-
-                            @if(!$currentQuestion['has_answers'] && $currentQuestion['range_slider'])
-                                <div class="nothing_choose_form">
-                                    <div class="wrap__about_blw">
-                                        <div class="my-5"> <span class="value-range">{{$rangeData}} {{$currentQuestion['range_name']}}</span>   </div>
-                                        <input
-                                                type="range"
-                                                min="{{$currentQuestion['min']}}"
-                                                max="{{$currentQuestion['max']}}"
-                                                step="1" value="1"
-                                                wire:model="rangeData"
-                                        >
-                                    </div>
-                                </div>
-
-                                <div  class="wrap__next-form" style="margin: 65px 50px 50px 0">
-                                    <a href="#" class="next-form next-form_2" wire:click="nextSlide({{$rangeData}})">
-                                        {{$currentQuestion['continue_button_text']}}
-                                    </a>
-                                </div>
+                            @if(!empty($currentQuestion['section_text']))
+                                <p class="description font-grey-color-400">
+                                    {!! $currentQuestion['section_text']!!}
+                                </p>
                             @endif
-
-                        @else
-
-                            <div class="nothing_choose_title_top">Enter Info</div>
-                            <div class="nothing_choose_title">{{__('front.client_registration_title')}}</div>
-                            <div class="nothing_choose_form">
-
-                                <div class="wrap__input wrap__input_enter_info mob">
-                                    <input wire:model="clientRegistrationData.name" class="form-control-choose" type="text" id="name" name="client-name" placeholder="{{__('front.name')}}" required=""/>
-                                    <input wire:model="clientRegistrationData.email" class="form-control-choose" type="email" id="email" name="client-email" placeholder="{{__('front.email')}}" required=""/>
-                                </div>
-
-                                <div class="wrap__input">
-                                    <textarea wire:model="clientRegistrationData.additional_infos" class="form-control-choose" id="exampleFormControlTextarea1" rows="3" placeholder="Request Details"></textarea>
-                                </div>
-
-
-                                @if(!empty($clientRegistrationData['name']) && !empty($clientRegistrationData['email']))
-                                    <div class="wrap__next-form">
-                                        <button wire:click="createClient" class="form-control-choose active">
-                                            {{__('front.client_registration_button_text')}}
-                                        </button>
-                                    </div>
-                                @endif
-
-                            </div>
-
                         @endif
+                    </div>
 
+
+                    @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
+
+                        <div class="action-box d-flex flex-wrap justify-content-center">
+                            <div style="width: fit-content" class="d-flex d-flex flex-wrap justify-content-center">
+                                @foreach($currentQuestion['answers'] as $key => $answer)
+                                    <div class="option @if($answer['selected']) click @endif"
+                                            id="{{$currentQuestion['question_key'].'-'.$key}}"
+                                            @if($currentQuestion['multiple'])
+                                                wire:click="nextSlideMultiple({{$key}})"
+                                            @else
+                                                wire:click="nextSlide({{$key}})"
+                                            @endif
+                                    >
+                                        <div class="img-box">
+                                            <img src="{{$answer['image']}}" alt="">
+                                        </div>
+                                        <p class="font-accent-700">{{$answer['text']}}</p>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+
+                    @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
+
+                        <div class="action-box">
+                            @foreach($currentQuestion['answers'] as $key => $answer)
+                                <button type="button"
+                                        class="btn quizz-btn font-grey-color-400 answer-btn @if($answer['selected']) active @endif"
+                                        id="{{$currentQuestion['question_key'].'-'.$key}}"
+                                        @if($currentQuestion['multiple'])
+                                            wire:click="nextSlideMultiple({{$key}})"
+                                        @else
+                                            wire:click="nextSlide({{$key}})"
+                                        @endif
+                                >
+                                    {{$answer['text']}}
+                                </button>
+                            @endforeach
+
+                        </div>
+                    @endif
+
+                    @if(!empty($currentQuestion['input']))
+                        <div class="action-box full-width">
+                            <div class="form-container d-flex flex-column align-items-center">
+                                <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
+                                    <input class="w-100" type="number"
+                                        min="{{$currentQuestion['min']}}"
+                                        max="{{$currentQuestion['max']}}"
+                                        step="1" value="1"
+                                        wire:model="rangeData"
+                                    >
+                                    <span class="p-3 text-dark">{{$currentQuestion['range_name']}}</span>
+
+                                </div>
+                                <button type="button" class="btn font-white-600 btn-green-squre" wire:click="nextSlide({{$rangeData}})">
+                                    {{$currentQuestion['continue_button_text']}}
+                                </button>
+                            </div>
+
+                        </div>
+                    @endif
+
+                    @if(!empty($currentQuestion['continue_button']) && empty($currentQuestion['input']))
+                        <button type="button" class="btn font-white-600 btn-green-squre" wire:click="nextSlide">
+                            {{$currentQuestion['continue_button_text']}}
+                        </button>
+                    @endif
+                </div>
+            </div>
+
+            <button type="button" class="btn exit-btn" wire:click="prevSlide">
+                <img src="{{asset('assets/icons/back-arrow.png')}}">
+            </button>
+
+            <img class="bg-bottom-center-adaptive" src="{{asset('assets/bg-images/bg-image-adaptive-2.png')}}" alt="" style="max-width: 200px">
+
+        </div>
+
+        <div class="quizz-navigation-adaptive">
+            <div class="arrow-left" wire:click="prevSlide">
+                <img src="{{asset('assets/icons/arrow.png')}}" alt="">
+            </div>
+        </div>
+    @else
+        <div class="section quizz-box white-shadow-box-radius-10">
+            <div class="section-wrapper">
+                <div class="content-box">
+                    <div class="title-box full-width">
+                        <p class="font-accent-700">Enter Info</p>
+                        <h2 class="font-grey-32-700">Please Enter Your Email</h2>
+                    </div>
+                    <div class="action-box full-width">
+                        <div class="form-container d-flex flex-column align-items-center">
+                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
+                                <input class="w-100" type="text" placeholder="Email" wire:model="clientRegistrationData.email">
+                            </div>
+                            <button wire:click="createClient" type="button" class="btn font-white-600 btn-green-squre">
+                                Registration
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    @endif
+
+    @if(!empty($currentQuestion['bottom_image']) && $currentQuestion['bottom_image'])
+        @if($currentQuestion['bottom_image_position'] == 'left')
+            <img class="bg-bottom-left" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">
+        @endif
+
+        @if($currentQuestion['bottom_image_position'] == 'right')
+                <img class="bg-bottom-right" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">
+        @endif
+    @endif
 
 </div>
 

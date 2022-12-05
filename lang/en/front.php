@@ -92,7 +92,7 @@ return [
 
     //questions
     'choose_your_option'    => 'Choose your option',
-    'prepared_weaning_meal' => '',
+    'prepared_weaning_meal' => 'We’ve prepared a personalized Baby-led weaning meal plan for your son/daughter',
 
     //question 1
     'question_1'              => 'Select your baby’s gender.',
@@ -120,10 +120,16 @@ return [
     'continue_button_text_3' => 'continue',
 
     //question 4
+//    'question_4'              => 'How old is your baby?',
+//    'min_4'                   => '1',
+//    'max_4'                   => '36',
+//    'range_name_4'            => 'Months',
+//    'section_text_14'         => '',
+//    'continue_button_text_14' => 'continue',
+
     'question_4'              => 'How old is your baby?',
-    'min_4'                   => '1',
-    'max_4'                   => '36',
-    'range_name_4'            => 'Months',
+    'answer_4_1'             => 'Younger than 4 months',
+    'answer_4_2'             => 'Older than 4 months',
     'section_text_14'         => '',
     'continue_button_text_14' => 'continue',
 

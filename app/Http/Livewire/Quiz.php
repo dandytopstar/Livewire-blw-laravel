@@ -51,7 +51,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_1'),
                 'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-1.png'
             ],
             '2' => [
                 'question_key' => 'familiar_with_blw',
@@ -77,7 +79,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_2'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
             '3' => [
                 'question_key' => 'text_section',
@@ -93,19 +97,31 @@ class Quiz extends Component
                 'section_image' => 'images/girl_queshions.png',
                 'continue_button_text' => trans('front.continue_button_text_3'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false, 'range_slider' => false
+                'has_answers' => false, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
             '4' => [
                 'question_key' => 'age',
                 'question' => trans('front.question_4'),
-                'answers' => [],
-                'min' => trans('front.min_4'),
-                'max' => trans('front.max_4'),
-                'range_name' => trans('front.range_name_4'),
+                'answers' => [
+                    '1' => [
+                        'text' => trans('front.answer_4_1'),
+                        'image'  => '',
+                        'selected'  => false,
+                    ],
+                    '2' => [
+                        'text' => trans('front.answer_4_2'),
+                        'image'  => '',
+                        'selected'  => false,
+                    ]
+                ],
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_14'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false, 'range_slider' => true
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
             '5' => [
                 'question_key' => 'can_sit',
@@ -127,6 +143,8 @@ class Quiz extends Component
                 'continue_button_text' => trans('front.continue_button_text_5'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
                 'has_answers' => true, 'image_before' => true,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-3.png'
             ],
             '6' => [
                 'question_key' => 'can_grab',
@@ -147,7 +165,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_6'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-4.png'
             ],
             '7' => [
                 'question_key' => 'can_put_things',
@@ -168,7 +188,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_7'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-5.png'
             ],
             '8' => [
                 'question_key' => 'can_put_food',
@@ -189,7 +211,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-6.png'
             ],
             '9' => [
                 'question_key' => 'can_chew',
@@ -215,7 +239,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_9'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-6.png'
             ],
             '10' => [
                 'question_key' => 'gagging',
@@ -236,7 +262,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_10'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
             '11' => [
                 'question_key' => 'allergies',
@@ -262,7 +290,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_11'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-4.png'
             ],
             '12' => [
                 'question_key' => 'foods_prefer',
@@ -303,7 +333,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_12'),
                 'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
             '13' => [
                 'question_key' => 'vegetarian',
@@ -324,7 +356,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_13'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-4.png'
             ],
             '14' => [
                 'question_key' => 'weight',
@@ -337,7 +371,9 @@ class Quiz extends Component
                 'section_image' => '',
                 'continue_button_text' => trans('front.continue_button_text_14'),
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false, 'range_slider' => true
+                'has_answers' => false, 'image_before' => false, 'range_slider' => true, 'input' => true,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png'
             ],
         ];
 
