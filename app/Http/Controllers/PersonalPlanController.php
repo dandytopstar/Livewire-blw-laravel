@@ -22,11 +22,11 @@ class PersonalPlanController extends Controller
         $this->personalPlanService = $personalPlanService;
     }
 
-    public function personalPlan(Request $request, $code): Factory|View|Application
+    public function index(Request $request, $code): Factory|View|Application
     {
-        $client = $this->quizService->getClientByCode($code);
+        $clientData = $this->quizService->getBabySummary($code);
 
-        return view('personal-plan', compact('code', 'client'));
+        return view('personal-plan', $clientData);
     }
 
     public function checkout(Request $request, $code): Factory|View|Application

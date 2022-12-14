@@ -18,7 +18,7 @@
                         <p class="font-grey-color-400">Lorem ipsum dolor sit amet, consectetur scing elit. Curabitur lectus tellus</p>
                     </div>
                 </div>
-                <a href="{{route('checkout', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
             </div>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="content-box">
-                <a href="{{route('checkout', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
                 <div class="notice-box d-flex w-100 justify-content-between align-items-center">
@@ -219,7 +219,7 @@
                         {{__('front.personalized_plan_block_4')}}
                     </p>
                 </div>
-                <a href="{{route('checkout', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
             </div>
@@ -358,7 +358,7 @@
                     <p class="font-grey-color-400">
                         {{__('front.our_promise_text')}}
                     </p>
-                    <a href="{{route('checkout', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>

@@ -41,6 +41,8 @@ Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-
 
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
 
+Route::get('personal-plan/{code}', [PersonalPlanController::class, 'index'])->name('personal-plan');
+
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 
 Route::post('payment', [PaymentController::class, 'payment'])->name('payment');
