@@ -40,7 +40,6 @@ Route::view('subscription-email-sent', 'subscription-email-sent')->name('subscri
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
-Route::get('summary-new/{code}', [QuizController::class, 'summary']);
 
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 

@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="actions">
-                    <a href="{{route('checkout', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    <a href="{{route('checkout', $code)}}" type="button" class="btn font-accent-600 btn-white-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>
