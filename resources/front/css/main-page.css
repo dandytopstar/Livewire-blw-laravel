@@ -161,7 +161,7 @@ section.main-page .bg-image-absolute img{
     padding: 20px 0;
 }
 
-.section .dot {
+.section .dot, .active-users .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -169,7 +169,7 @@ section.main-page .bg-image-absolute img{
     cursor: pointer;
 }
 
-.section.clients .dot:not(:last-child) {
+.section.clients .dot:not(:last-child), .active-users .dot:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -210,6 +210,3 @@ section.main-page .bg-image-absolute img{
 .carousel.adaptive {
     display: none;
 }
-
-
-

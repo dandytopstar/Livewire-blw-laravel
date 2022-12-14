@@ -298,10 +298,10 @@ return [
 
 
     //Summary page
-    'personalized_plan_block_1' => 'A step-by-step guide on how to prepare your baby for solid foods',
-    'personalized_plan_block_2' => 'An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your baby',
-    'personalized_plan_block_3' => 'Personalized baby-led weaning meal plan based on your answers from the quiz.',
-    'personalized_plan_block_4' => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning',
+    'personalized_plan_block_1' => 'A step-by-step guide on how to prepare your baby for solid foods.',
+    'personalized_plan_block_2' => 'A step-by-An E-Book that includes absolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your babystep guide on how to prepare your baby for solid foods.',
+    'personalized_plan_block_3' => 'Personalized baby-led weaning meal based on your answers from the quiz.',
+    'personalized_plan_block_4' => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning.',
     'baby_learn_block_text_title_1' => 'TO EAT INDEPENDENTLY',
     'baby_learn_block_text_1' => 'Baby learns to eat independently and is in total control',
     'baby_learn_block_text_title_2' => 'TO CONTROL HIS APETITE',

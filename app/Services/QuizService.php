@@ -47,14 +47,14 @@ class QuizService
 
         $code = $client->code;
 
-            $answers = collect($client['answers']);
+        $answers = collect($client['answers']);
 
         $age    = $answers->where('key', 'age')->first();
         $gender = $answers->where('key', 'gender')->first();
         $weight = $answers->where('key', 'weight')->first();
 
         $gender =  trans('front.'.$gender['answers'][$gender['last_answer_number']]['answer_translation_key']);
-        $age = $age['result'].' months';
+        $age = $age['answers'][$age['last_answer_number']]['answer'];
         $weight = $weight['result'].' lbs';
         $randomDays = $this->randomDays();
 

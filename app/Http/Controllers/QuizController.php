@@ -35,6 +35,6 @@ class QuizController extends Controller
     {
         $clientData = $this->quizService->getBabySummary($code);
 
-        return view('summary', $clientData);
+        return view('new-summary', $clientData);
     }
 }
