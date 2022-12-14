@@ -28,7 +28,6 @@ Route::view('welcome', 'welcome');
 
 Route::view('/', 'main')->name('main');
 
-
 Route::view('quiz', 'quiz')->name('quiz');
 
 Route::view('subscription', 'subscription')->name('subscription');
