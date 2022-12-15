@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <nav class="navbar navbar-expand-lg fullscreen-header">
                 <div class="d-flex p-0 w-100 header-box">
@@ -15,16 +15,16 @@
                     <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 active p-0" aria-current="page" href="#">Home</a>
+                                <a class="nav-link font-grey-300 active p-0" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">How It Works</a>
+                                <a class="nav-link font-grey-300 p-0" href="#how-it-works">How It Works</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">Personalized Plan</a>
+                                <a class="nav-link font-grey-300 p-0" href="#personal-plan">Personalized Plan</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">Baby-Led Weaning</a>
+                                <a class="nav-link font-grey-300 p-0" href="#baby-led-weaning">Baby-Led Weaning</a>
                             </li>
                         </ul>
                     </div>
@@ -47,13 +47,13 @@
                                 <a class="nav-link font-grey-300 active p-0" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">How It Works</a>
+                                <a class="nav-link font-grey-300 p-0" href="#how-it-works">How It Works</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">Personalized Plan</a>
+                                <a class="nav-link font-grey-300 p-0" href="#personal-plan">Personalized Plan</a>
                             </li>
                             <li class="nav-item list-unstyled list-unstyled">
-                                <a class="nav-link font-grey-300 p-0" href="#">Baby-Led Weaning</a>
+                                <a class="nav-link font-grey-300 p-0" href="#baby-led-weaning">Baby-Led Weaning</a>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    <section class="section accent-section">
+    <section class="section accent-section" id="how-it-works">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="section p-0 plans">
+    <section class="section p-0 plans" id="personal-plan">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">Personalized Plan</p>
@@ -156,11 +156,11 @@
         </div>
     </section>
 
-    <section class="section get-section p-0">
+    <section class="section get-section p-0" id="baby-led-weaning">
         <div class="container">
             <div class="box white-shadow-box-radius-10 d-flex">
                 <div class="title-box">
-                    <p class="font-accent-700">Personalized Plan</p>
+                    <p class="font-accent-700">{{__("front.baby_led_weaning")}}</p>
                     <h2 class="font-grey-32-700 mb-20">What Will You Get?</h2>
                     <p class="description font-grey-color-400">
                         Baby led weaning (BLW) is a way of introducing solid foods to your baby from around 4 - 6 months old. BLW skips the puree stage due to the ability of babies from 4 - 6 months onwards to naturally handle finger foods.
@@ -182,331 +182,8 @@
             </div>
             <div class="clients-box">
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-between">
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
+                @livewire('feedback-slider')
 
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-navigation">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
-                            <span class="visually-hidden">Previous</span>
-                            <div class="arrow-left">
-                                <img src="../../assets/icons/arrow.png" alt="">
-                            </div>
-                        </button>
-                        <div class="carousel-indicators dots-box d-flex align-items-center">
-                            <div class="dot active" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></div>
-                        </div>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
-                            <span class="visually-hidden">Next</span>
-                            <div class="arrow-right">
-                                <img src="../../assets/icons/arrow.png" alt="">
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-between">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-navigation">
-                        <div class="carousel-indicators dots-box d-flex align-items-center">
-                            <div class="dot active" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="4" aria-label="Slide 5"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="5" aria-label="Slide 6"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

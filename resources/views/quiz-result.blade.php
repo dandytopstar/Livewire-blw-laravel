@@ -1,53 +1,44 @@
-@extends('layouts.quiz-layout')
+@extends('layouts.main')
 
 @section('content')
 
-    <section class="nothing_choose">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div  class="nothing_choose_wrap">
-                        <div  class="nothing_choose_title_top">
-                            {{__('front.your_answers')}}
-                        </div>
-                        <div  class="nothing_choose_title">
-                            {{__('front.hello')}} {{$client->name}}
-                        </div>
+    <div class="section quizz-box white-shadow-box-radius-10">
+        <div class="section-wrapper">
 
-                        @foreach($client->answers as $answerData)
-
-                            <div  class="nothing_choose_form" id="{{$answerData['key']}}">
-                                <div  class="wrap__input__question">
-                                    {{__('front.'.$answerData['question_translation_key'])}}
-                                </div>
-
-                                @if(empty($answerData['answers']))
-                                    <div  class="wrap__input__answer">
-                                        {{$answerData['result']}} {{__('front.range_name_'.$answerData['question_number'])}}
-                                    </div>
-                                @endif
-
-                                @if(!empty($answerData['answers']))
-                                    @foreach($answerData['answers'] as $answer)
-                                        <div  class="wrap__input__answer">
-                                            {{__('front.'.$answer['answer_translation_key'])}}
-                                        </div>
-                                    @endforeach
-                                @endif
-
-                            </div>
-
-                        @endforeach
-
-                        <div  class="wrap__next-form ">
-                            <a href="{{route('summary', $code)}}" class="next-form next-form_2 go_to_summary_page">
-                                {{__('front.go_to_summary_page')}}
-                            </a>
-                        </div>
-                    </div>
+            <div class="content-box">
+                <div class="title-box">
+                    <h2 class="font-grey-32-700">{{__('front.your_answers')}}</h2>
                 </div>
+                <div class="action-box">
+                    @foreach($client->answers as $answerData)
+                        <div class="w-100 text-center  my-3">
+                            <p class="font-accent-18-700">{{__('front.'.$answerData['question_translation_key'])}}</p>
+                            @if(empty($answerData['answers']))
+                                <p>
+                                    <b>{{$answerData['result']}} {{__('front.range_name_'.$answerData['question_number'])}}</b>
+                                </p>
+                            @endif
+
+                            @if(!empty($answerData['answers']))
+                                @foreach($answerData['answers'] as $answer)
+                                    <p>
+                                        <b>{{__('front.'.$answer['answer_translation_key'])}}</b>
+                                    </p>
+                                @endforeach
+                            @endif
+                        </div>
+                    @endforeach
+                </div>
+
+                <a href="{{route('summary', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    {{__('front.go_to_summary_page')}}
+                </a>
             </div>
         </div>
-    </section>
+
+        <img class="bg-bottom-center-adaptive" src="{{asset('assets/bg-images/bg-image-adaptive-2.png')}}" alt="" style="max-width: 200px">
+    </div>
+
+    <img class="bg-bottom-right" src="{{asset('assets/bg-images/bg-quizz-2.png')}}" alt="">
 
 @endsection

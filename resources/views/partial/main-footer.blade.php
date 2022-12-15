@@ -9,22 +9,24 @@
                     <div class="nav-menu">
                         <ul class="navbar-nav d-flex">
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" aria-current="page" href="#">Home</a>
+                                <a class="nav-link font-white-400 p-0" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">How It Works</a>
+                                <a class="nav-link font-white-400 p-0" href="#how-it-works">How It Works</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">Personalized Plan</a>
+                                <a class="nav-link font-white-400 p-0" href="#personal-plan">Personalized Plan</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">Baby-Led Weaning</a>
+                                <a class="nav-link font-white-400 p-0" href="#baby-led-weaning">Baby-Led Weaning</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="actions">
-                    <button type="button" class="btn font-accent-600 btn-white-squre">Start Quiz</button>
+                    <a href="{{route('quiz')}}" type="button" class="btn font-accent-600 btn-white-squre">
+                        {{__("front.start_quiz")}}
+                    </a>
                 </div>
 
             </div>
