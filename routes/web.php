@@ -44,6 +44,8 @@ Route::get('personal-plan/{code}', [PersonalPlanController::class, 'index'])->na
 
 Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 
+Route::get('payment/{code}/{personalPlan}', [PaymentController::class, 'index'])->name('payment');
+
 Route::post('payment', [PaymentController::class, 'payment'])->name('payment');
 
 Route::get('payment-result/{id}/{code}', [PaymentController::class, 'paymentResult'])->name('payment-result');

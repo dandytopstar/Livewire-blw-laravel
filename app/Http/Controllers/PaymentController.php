@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\ClientSteps;
+use App\Models\PersonalPlan;
 use App\Models\Transaction;
 use App\Services\KlaviyoService;
 use App\Services\PaymentService;
@@ -23,6 +24,14 @@ class PaymentController extends Controller
         $this->paymentService = $paymentService;
         $this->klaviyoService = $klaviyoService;
         $this->quizService = $quizService;
+    }
+
+    public function index(Request $request, $code, $personalPlan)
+    {
+        $clientData = $this->quizService->getBabySummary($code);
+        $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
+
+        return view('payment', $clientData);
     }
 
     public function payment(Request $request)

@@ -26,6 +26,34 @@
         </div>
     </section>
 
+    <section class="stepper">
+        <div class="container">
+            <div class="stepper-box">
+                <div class="point-item-box">
+                    <div class="point-item">
+                        <p class="font-white-26-700">1</p>
+                    </div>
+                    <p class="font-accent-18-700 name">Selected Plan</p>
+                </div>
+                <div class="line disabled"></div>
+                <div class="point-item-box disabled">
+                    <div class="point-item">
+                        <p class="font-white-26-700">2</p>
+                    </div>
+                    <p class="font-accent-18-700 name">Payment</p>
+                </div>
+                <div class="line disabled"></div>
+                <div class="point-item-box disabled">
+                    <div class="point-item">
+                        <p class="font-white-26-700">3</p>
+                    </div>
+                    <p class="font-accent-18-700 name">Summary</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="plan-selection">
         <div class="container">
             <div class="title-box text-center main">
@@ -37,61 +65,53 @@
                         <h2 class="font-grey-color-32-700">Personalized Plann</h2>
                     </div>
                     <div class="plans-box">
-                        <div class="plan">
-                            <div class="row-inf">
-                                <p class="title font-accent-18-700">3 month Babyfood Plan</p>
-                                <p class="old-price font-grey-color-400 canceled-text">$ 7.50</p>
-                            </div>
-                            <div class="row-inf">
-                                <div class="sales-box d-flex">
-                                    <p class="font-grey-16-500 canceled-text">USD 85.97</p>
-                                    <p class="font-grey-color-400">USD 59.97</p>
-                                </div>
-                                <p class="font-accent-40-700">$ 5.00</p>
-                            </div>
-                            <div class="row-inf">
-                                <p class="font-grey-500">Billed every 3 months</p>
-                                <p class="font-grey-color-400">per week</p>
-                            </div>
-                        </div>
-                        <div class="plan active">
-                            <div class="row-inf">
-                                <p class="title font-accent-18-700">6 month Babyfood Plan</p>
-                                <p class="old-price font-grey-color-400 canceled-text">$ 7.50</p>
-                            </div>
-                            <div class="row-inf">
-                                <div class="sales-box d-flex">
-                                    <p class="font-grey-16-500 canceled-text">USD 179.94</p>
-                                    <p class="font-grey-color-400">USD 89.97</p>
-                                </div>
-                                <p class="font-accent-40-700">$ 3.75</p>
-                            </div>
-                            <div class="row-inf">
-                                <p class="font-grey-500">Billed every 6 months</p>
-                                <p class="font-grey-color-400">per week</p>
-                            </div>
-                        </div>
 
-                        <div class="plan">
-                            <div class="row-inf">
-                                <p class="title font-accent-18-700">1 month Babyfood Plan</p>
-                                <p class="font-accent-40-700">$ 7.50</p>
+                        @foreach($personalPlans as $key => $plan)
+                            <div class="plan personal-plan @if($key == 1) active @endif" id="plan-id-{{$plan->id}}" data-id="{{$plan->id}}">
+                                <div class="row-inf">
+                                    <p class="title font-accent-18-700">{{$plan->name}}</p>
+                                    @if($plan->payment_price_old)
+                                        <p class="old-price font-grey-color-400 canceled-text">${{$plan->payment_price_old}}</p>
+                                    @endif
+                                </div>
+
+                                    <div class="row-inf">
+
+                                            <div class="sales-box d-flex">
+                                                @if($plan->billed_price_old || $plan->billed_price)
+                                                    @if($plan->billed_price_old)
+                                                        <p class="font-grey-16-500 canceled-text">USD{{$plan->billed_price_old}}</p>
+                                                    @endif
+
+                                                    @if($plan->billed_price)
+                                                        <p class="font-grey-color-400">USD{{$plan->billed_price}}</p>
+                                                    @endif
+                                                @endif
+                                            </div>
+
+                                        <p class="font-accent-40-700">${{$plan->payment_price}}</p>
+                                    </div>
+
+                                <div class="row-inf">
+                                    <p class="font-grey-500">{{$plan->billed_period}}</p>
+                                    <p class="font-grey-color-400">{{$plan->payment_period}}</p>
+                                </div>
                             </div>
-                            <div class="row-inf">
-                                <p class="font-grey-500">Billed every month</p>
-                                <p class="font-grey-color-400">per week</p>
-                            </div>
-                        </div>
+                        @endforeach
+
                         <div class="checkbox-box">
-                            <input name="agreemnt1" id="agreemnt1" class="styled-checkbox" type="checkbox" value="">
-                            <label class="font-grey-color-400" for="agreemnt1">
+                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="">
+                            <label class="font-grey-color-400" for="plan-checkbox">
                                 <div class="custom-checkbox"></div>
                                 <span>
                                 By choosing a payment method you agree to the <a href="#" class="font-accent-color-400">Privacy Policy</a>
                             </span>
                             </label>
                         </div>
-                        <button type="button" class="btn font-white-600 btn-green-squre w-100 block">Get Your Plan</button>
+
+                        <button type="button" class="btn font-white-600 btn-green-squre w-100 block" disabled id="get-your-plan">
+                            {{__('front.get_your_plan')}}
+                        </button>
                     </div>
                 </div>
                 <div class="plan_includes w-100">
@@ -204,7 +224,7 @@
             <div class="content-box">
                 <h3 class="font-grey-700">Get a baby-led program that will change your babys life completely</h3>
                 <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
-                <button class="btn font-white-600 btn-green-squre">Get Your Plan</button>
+                <button class="btn font-white-600 btn-green-squre">{{__('front.get_your_plan')}}</button>
             </div>
             <div class="img-box">
                 <img src="" alt="">
@@ -599,3 +619,40 @@
     @includeIf('partial.main-summary-footer')
 
 @endsection
+
+@push('custom-scripts')
+
+    <script>
+
+        let selectedPersonalPlainId = $(".personal-plan.active").attr('data-id');
+
+        $(".personal-plan").on('click', (event) => {
+
+            $(".personal-plan.active").each((i) => {
+                $(".personal-plan.active")[i].classList.remove('active');
+            })
+
+            event.currentTarget.classList.add('active');
+
+            selectedPersonalPlainId = event.currentTarget.getAttribute('data-id');
+
+        });
+
+        $("#plan-checkbox").on('click', (event) => {
+
+            let checked = event.currentTarget.checked;
+
+            const button = $("#get-your-plan");
+
+            button.attr('disabled', !checked)
+
+        })
+
+        $("#get-your-plan").on('click', () => {
+            window.location.href = '/payment/{{$code}}/'+selectedPersonalPlainId
+        })
+
+        
+    </script>
+
+@endpush

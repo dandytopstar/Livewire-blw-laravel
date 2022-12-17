@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\PaymentMethods;
+use App\Models\PersonalPlan;
 use App\Services\PersonalPlanService;
 use Illuminate\Http\Request;
 use App\Services\QuizService;
@@ -25,6 +26,7 @@ class PersonalPlanController extends Controller
     public function index(Request $request, $code): Factory|View|Application
     {
         $clientData = $this->quizService->getBabySummary($code);
+        $clientData['personalPlans'] = PersonalPlan::query()->get();
 
         return view('personal-plan', $clientData);
     }

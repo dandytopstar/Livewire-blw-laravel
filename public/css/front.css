@@ -4,6 +4,7 @@
     --grey-color: #1C1C1C;
     --light-grey-color: #C5C5C5;
     --light-red-color: #FF735C;
+    --dark-font-color: #2E2E2E;
 }
 
 * {
@@ -38,6 +39,14 @@ body {
     margin: 0 auto;
 }
 
+.font-dark-opacity-500 {
+    color: var(--dark-font-color);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    opacity: .5;
+}
+
 .font-white-600 {
     color: white;
     font-size: 14px;
@@ -56,6 +65,20 @@ body {
     color: white;
     font-size: 32px;
     line-height: 46px;
+    font-weight: 700;
+}
+
+.font-white-26-700 {
+    color: white;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.font-white-16-700 {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
 }
 
@@ -111,6 +134,13 @@ body {
 
 .font-grey-500 {
     color: var(--light-grey-color);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.font-dark-grey-500 {
+    color: var(--grey-color);
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
@@ -563,6 +593,32 @@ footer {
     background-position-y: 6px;
 }
 
+.checkbox-box label .custom-checkbox.circle {
+    border-radius: 50%;
+    position: relative;
+}
+
+.checkbox-box input:checked + label .custom-checkbox.circle {
+    background: none;
+}
+
+.checkbox-box input:checked + label .custom-checkbox.circle .circle {
+    display: block;
+    background: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--light-grey-color);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.checkbox-box .custom-checkbox.circle .circle {
+    display: none;
+}
+
 .plans-box button{
     margin-top: 20px;
 }
@@ -757,7 +813,180 @@ header.summary img.adaptive {
     display: none;
 }
 
+section .stepper-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
 
+.point-item-box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 20px;
+}
+
+.point-item-box p {
+    margin: 0;
+    display: block;
+}
+
+.point-item-box p.name {
+    position: absolute;
+    bottom: -20px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.point-item-box.disabled p.name {
+    color: var(--light-grey-color);
+}
+
+.point-item-box.disabled .point-item, .stepper-box .line.disabled {
+    background-color: var(--light-grey-color);
+}
+
+.point-item {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--acent-color-green);
+    margin-bottom: 20px;
+}
+
+.stepper-box .line {
+    width: 100%;
+    height: 5px;
+    background-color: var(--acent-color-green);
+    margin-bottom: 20px;
+}
+
+.payment-box {
+    min-width: 545px;
+    width: 545px;
+    margin-right: 100px;
+}
+
+.payment-section .content-box {
+    display: flex;
+}
+
+.payment-box .accordion-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.payment-box .accordion-button::after {
+    display: none;
+}
+
+.payment-box .accordion-button label {
+    padding: 20px;
+}
+
+.payment-box .accordion-button:not(.collapsed) {
+    background-color: white;
+    box-shadow: none;
+}
+
+.payment-box .accordion-button label .icon img:not(:last-child) {
+    margin-right: 10px;
+}
+
+.payment-box .row-item p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.payment-box .yellow-payment-btn {
+    width: 100%;
+    background: #FFC339;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.payment-section .inf-box .item:first-child {
+    margin-bottom: 40px;
+}
+
+.payment-section .inf-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment-section .inf-box .item img {
+    margin-right: 30px;
+}
+
+.payment-section .inf-box .item p {
+    margin: 0;
+}
+
+.payment-box .accordion-button label {
+    position: relative;
+}
+
+.payment-box .accordion-button[aria-expanded='true'] label:after, .payment-box .row-item.line-after:after {
+    content:'';
+    display: block;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: var(--light-grey-color);
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.payment-box .row-item.line-after:after {
+    bottom: -20px;
+    width: 100%;
+    left: 0;
+}
+
+.payment-box .row-item.line-after {
+    margin-bottom: 50px;
+}
+
+.payment-box .form .form-row input {
+    border: 1px solid rgba(28, 28, 28, .5);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.payment-box .green-payment-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--acent-color-green);
+    border-right: 10px;
+    margin-top: 30px;
+}
+
+.payment-box .accordion-body {
+    padding: 0 20px 20px 20px;
+}
 section.main-page .inf-box {
     max-width: 500px;
     height: 540px;
