@@ -222,6 +222,12 @@ body {
     padding: 35px 0;
 }
 
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 footer .navbar-nav {
     flex-direction: row;
 }
@@ -967,3 +973,12 @@ section .stepper-box {
 .payment-box .accordion-body {
     padding: 0 20px 20px 20px;
 }
+
+.back-block {
+    margin-top: 30px;
+}
+
+.back-block img {
+    margin-right: 20px;
+}
+

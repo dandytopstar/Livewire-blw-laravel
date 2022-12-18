@@ -62,7 +62,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content payment_custom_modal">
                 <div class="modal-body">
-                    <form  action="{{route('payment')}}" method="post" id="paymentForm">
+                        <form  action="{{route('payment')}}" method="post" id="paymentForm">
                         @csrf
                         <div class="nothing_choose_wrap payment_modal_bg">
                             <div class="nothing_choose_navigation nothing_choose_navigation_card_mob">

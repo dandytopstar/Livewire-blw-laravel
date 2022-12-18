@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\ClientSteps;
+use App\Models\Client;
 use App\Models\PersonalPlan;
 use App\Models\Transaction;
 use App\Services\KlaviyoService;
@@ -10,6 +11,7 @@ use App\Services\PaymentService;
 use App\Services\QuizService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Stripe\PaymentIntent;
 
 class PaymentController extends Controller
 {
@@ -31,6 +33,16 @@ class PaymentController extends Controller
         $clientData = $this->quizService->getBabySummary($code);
         $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
 
+        \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
+
+        $intent = PaymentIntent::create([
+            'amount' => round($clientData['personalPlan']->payment_price * 100),
+            'currency' => 'usd',
+            'metadata' => ['integration_check' => 'accept_a_payment'],
+        ]);
+
+        $clientData['intent'] = $intent;
+
         return view('payment', $clientData);
     }
 
@@ -42,16 +54,17 @@ class PaymentController extends Controller
 
         if($preparedData['method'] == 'stripe') {
 
-            $result = $this->paymentService->stripePayment($preparedData);
+            $result = $this->paymentService->saveTransaction($preparedData);
 
-            $client = $this->quizService->getClientByCode($result['client_code']);
+            $client = Client::query()->where('id', $preparedData['client_id'])->first();
 
-            $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $result);
+            $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $preparedData);
 
-            return redirect()->route('payment-result', [$result['id'], $result['client_code']]);
+            return redirect()->route('payment-result', [$result->id, $client->code]);
         }
 
         if($preparedData['method'] == 'paypal') {
+
             $preparedData['result'] = 'wrong';
             $transaction = $this->paymentService->saveTransaction($preparedData);
             $this->paymentService->payPal($preparedData, $transaction);
@@ -63,9 +76,16 @@ class PaymentController extends Controller
 
     public function paymentResult(Request $request, $id)
     {
-        $data = $this->paymentService->getTransactionById($id);
 
-        return view('payment-result', compact('id', 'data'));
+        $transaction = $this->paymentService->getTransactionById($id);
+
+        $transaction = $transaction->load('client');
+
+        $clientData = $this->quizService->getBabySummary($transaction->client->code);
+
+        $clientData['status'] = $transaction->status;
+
+        return view('payment-result', $clientData);
     }
 
     public function payPalSuccess(Request $request, $id)

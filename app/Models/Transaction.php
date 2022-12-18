@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Transaction extends Model
@@ -11,11 +12,8 @@ class Transaction extends Model
 
     protected $fillable = [
         'client_id',
-        'client_code',
-        'card_no',
-        'card_name',
+        'personal_plan_id',
         'price',
-        'plan',
         'method',
         'status',
         'payment_data',
@@ -24,4 +22,14 @@ class Transaction extends Model
     protected $casts = [
         'payment_data' => 'array'
     ];
+
+    public function personalPlan(): BelongsTo
+    {
+        return $this->belongsTo(PersonalPlan::class);
+    }
+
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
 }

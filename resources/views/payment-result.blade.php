@@ -1,45 +1,63 @@
-@extends('layouts.quiz-layout')
+@extends('layouts.main')
 
 @section('content')
 
-    @if (!empty($data) && $data['status'] == 'succeeded'))
-        <div class="components_wrap">
-            <div class="nothing_choose_wrap payment_success_main">
-                <div class="nothing_choose_navigation payment_success_back">
+    <div class="container-box-general">
+
+        @includeIf('partial.main-personal-plan-header')
+
+        <section class="stepper">
+
+            <div class="container">
+
+                <div class="stepper-box">
+                    <div class="point-item-box">
+                        <div class="point-item">
+                            <p class="font-white-26-700">1</p>
+                        </div>
+                        <p class="font-accent-18-700 name">Selected Plan</p>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="point-item-box">
+                        <div class="point-item">
+                            <p class="font-white-26-700">2</p>
+                        </div>
+                        <p class="font-accent-18-700 name">Payment</p>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="point-item-box">
+                        <div class="point-item">
+                            <p class="font-white-26-700">3</p>
+                        </div>
+                        <p class="font-accent-18-700 name">Summary</p>
+                    </div>
 
                 </div>
-                <div class="payment_success_img">
-                    <img src="{{asset('images/payment_success.png')}}" alt="">
-                </div>
-                <div class="payment_success">
-                    {{__('front.payment_success')}}
-                </div>
-                <div class="payment_success_btn">
 
-                    <a href="{{route('checkout', $data['client_code'])}}" class="next-form next-form_2">
-                        Back to Main Screen
-                    </a>
+            </div>
 
+        </section>
+
+        <div class="section quizz-box" style="box-shadow: none">
+            <div class="section-wrapper">
+
+                <div class="content-box">
+                    <div class="title-box">
+                        <p class="font-accent-700">
+                            <img src="{{asset("assets/icons/payment-success.png")}}" alt="">
+                        </p>
+                        <h2 class="font-accent-700">Payment Success!</h2>
+                    </div>
+                    <div class="action-box">
+                        <button type="button" class="btn quizz-btn font-grey-color-400">Go to Plan</button>
+                    </div>
                 </div>
             </div>
         </div>
-    @endif
 
-    @if (!empty($data) && $data['status'] == 'wrong'))
-        <div class="components_wrap">
-            <div class="nothing_choose_wrap payment_success_main">
-                <div class="nothing_choose_navigation payment_success_back">
-
-                </div>
-                <div class="payment_success_img">
-                    <img src="{{asset('images/payment_unsuccess.png')}}" alt="">
-                </div>
-                <div class="payment_success payment_success_img_boy">{{__('front.payment_unsuccessful')}}</div>
-                <div class="payment_success_btn">
-                    <a href="{{route('checkout', $data['client_code'])}}" class="next-form next-form_2">{{__('front.try_again')}}</a>
-                </div>
-            </div>
-        </div>
-    @endif
+        @includeIf('partial.main-payment-footer', ['fixed' => true])
+    </div>
 
 @endsection

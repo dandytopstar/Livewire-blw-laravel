@@ -2,61 +2,19 @@
 
 namespace App\Services;
 
-use App\Enums\PaymentMethods;
 use Exception;
-use Omnipay\Omnipay;
+use Stripe\Token;
 use Stripe\Charge;
 use Stripe\Stripe;
-use Stripe\Token;
+use Omnipay\Omnipay;
 use App\Models\Client;
 use App\Models\Transaction;
+use App\Models\PersonalPlan;
+use App\Enums\PaymentMethods;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Http;
 
 class PaymentService
 {
-    /**
-     * @param array $paymentData
-     * @return array|string|RedirectResponse
-     */
-    public function stripePayment(array $paymentData): array|string|RedirectResponse
-    {
-        $stripe = Stripe::setApiKey(config('payment.stripe_secret'));
-
-        try {
-
-            $token = Token::create([
-                "card" => [
-                    "number"    => $paymentData['card_no'],
-                    "exp_month" => $paymentData['expiry_month'],
-                    "exp_year"  => $paymentData['expiry_year'],
-                    "cvc"       => $paymentData['cvv']
-                ]
-            ]);
-
-            if (!isset($token['id'])) {
-                $paymentData['status'] = 'wrong';
-                $result = $this->saveTransaction($paymentData);
-                return $result->toArray();
-            }
-
-            $charge = Charge::create([
-                'card' => $token['id'],
-                'currency' => 'USD',
-                'amount' =>  $paymentData['price'] * 100,
-                'description' => 'wallet',
-            ]);
-
-            $paymentData['status'] = $charge['status'];
-
-            $result = $this->saveTransaction($paymentData);
-
-            return $result->toArray();
-        }
-        catch (Exception $e) {
-            return $e->getMessage();
-        }
-    }
 
     /**
      * @param array $paymentData
@@ -64,37 +22,11 @@ class PaymentService
      */
     public function preparePaymentData(array $paymentData): array
     {
-        $data = [];
+        $personalPlan = PersonalPlan::query()->where('id', $paymentData['personal_plan_id'])->first();
 
-        $data['price'] = $paymentData['price'];
+        $paymentData['price'] = $personalPlan->payment_price;
 
-        $data['method'] = $paymentData['method'];
-
-        $data['client_code'] = $paymentData['client_code'];
-
-        $client = Client::query()->where('code', $data['client_code'])->first();
-
-        $data['client_id'] = $client->id;
-
-        $data['plan'] = $paymentData['plan'];
-
-        if($paymentData['method'] == PaymentMethods::STRIPE->value) {
-
-            $expiry = explode(' / ', $paymentData['expiry']);
-
-            $data['card_no'] = str_replace(' ', '', $paymentData['card_no']);
-
-            $data['card_name'] = $paymentData['card_name'];
-
-            $data['expiry_month'] = $expiry[0];
-
-            $data['expiry_year'] = $expiry[1];
-
-            $data['cvv'] = $paymentData['cvv'];
-
-        }
-
-        return $data;
+        return $paymentData;
     }
 
     public function saveTransaction(array $paymentData)

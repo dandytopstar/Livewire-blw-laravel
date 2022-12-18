@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('billed_period')->nullable();
-            $table->float('billed_price')->nullable();
-            $table->float('billed_price_old')->nullable();
+            $table->decimal('billed_price',9,2)->nullable();
+            $table->decimal('billed_price_old',9,2)->nullable();
             $table->string('payment_period')->nullable();
-            $table->float('payment_price')->nullable();
-            $table->float('payment_price_old')->nullable();
+            $table->decimal('payment_price',9,2)->nullable();
+            $table->decimal('payment_price_old',9,2)->nullable();
             $table->boolean('enabled')->default(true);
             $table->timestamps();
         });

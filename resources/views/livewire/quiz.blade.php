@@ -131,7 +131,10 @@
                     <div class="action-box full-width">
                         <div class="form-container d-flex flex-column align-items-center">
                             <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
-                                <input class="w-100" type="text" placeholder="Email" wire:model="clientRegistrationData.email">
+                                <input class="w-100" type="email" placeholder="Email" wire:model="clientRegistrationData.email">
+                            </div>
+                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
+                                <input class="w-100" type="text" placeholder="Name" wire:model="clientRegistrationData.name">
                             </div>
                             <button wire:click="createClient" type="button" class="btn font-white-600 btn-green-squre">
                                 Registration
