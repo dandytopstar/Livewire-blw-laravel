@@ -121,29 +121,30 @@
             </div>
         </div>
     @else
-        <div class="section quizz-box white-shadow-box-radius-10">
-            <div class="section-wrapper">
-                <div class="content-box">
-                    <div class="title-box full-width">
-                        <p class="font-accent-700">Enter Info</p>
-                        <h2 class="font-grey-32-700">Please Enter Your Email</h2>
-                    </div>
-                    <div class="action-box full-width">
-                        <div class="form-container d-flex flex-column align-items-center">
-                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
-                                <input class="w-100" type="email" placeholder="Email" wire:model="clientRegistrationData.email">
-                            </div>
-                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
-                                <input class="w-100" type="text" placeholder="Name" wire:model="clientRegistrationData.name">
-                            </div>
-                            <button wire:click="createClient" type="button" class="btn font-white-600 btn-green-squre">
-                                Registration
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="section quizz-box white-shadow-box-radius-10">--}}
+{{--            <div class="section-wrapper">--}}
+{{--                <div class="content-box">--}}
+{{--                    <div class="title-box full-width">--}}
+{{--                        <p class="font-accent-700">Enter Info</p>--}}
+{{--                        <h2 class="font-grey-32-700">Please Enter Your Email</h2>--}}
+{{--                    </div>--}}
+{{--                    <div class="action-box full-width">--}}
+{{--                        <div class="form-container d-flex flex-column align-items-center">--}}
+{{--                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">--}}
+{{--                                <input class="w-100" type="email" placeholder="Email" wire:model="clientRegistrationData.email">--}}
+{{--                            </div>--}}
+{{--                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">--}}
+{{--                                <input class="w-100" type="text" placeholder="Name" wire:model="clientRegistrationData.name">--}}
+{{--                            </div>--}}
+{{--                            <button wire:click="createClient" type="button" class="btn font-white-600 btn-green-squre">--}}
+{{--                                Registration--}}
+{{--                            </button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
     @endif
 
     @if(!empty($currentQuestion['bottom_image']) && $currentQuestion['bottom_image'])

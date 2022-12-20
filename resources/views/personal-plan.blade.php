@@ -62,7 +62,7 @@
             <div class="content-wrapper">
                 <div class="plans w-100">
                     <div class="title-box">
-                        <h2 class="font-grey-color-32-700">Personalized Plann</h2>
+                        <h2 class="font-grey-32-700">Personalized Plann</h2>
                     </div>
                     <div class="plans-box">
 
@@ -116,7 +116,7 @@
                 </div>
                 <div class="plan_includes w-100">
                     <div class="title-box">
-                        <h2 class="font-grey-color-32-700">All plans include</h2>
+                        <h2 class="font-grey-32-700">All plans include</h2>
                     </div>
                     <div class="plans-include-wrapper">
                         <div class="checkbox-box">
@@ -146,7 +146,7 @@
                             </span>
                             </label>
                         </div>
-                        <div class="checkbox-box">
+                        <div class="checkbox-box adaptive">
                             <input name="agreemnt5" id="agreemnt5" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="agreemnt5">
                                 <div class="custom-checkbox"></div>
@@ -155,6 +155,10 @@
                             </span>
                             </label>
                         </div>
+                    </div>
+                    <div class="readmore">
+                        <p class="m-0 font-accent-700">Read More</p>
+                        <img src="../../assets/icons/back-green-arrow.png" alt="" style="transform: rotate(180deg)">
                     </div>
                 </div>
             </div>
@@ -219,15 +223,16 @@
         </div>
     </section>
 
-    <section class="section program">
+    <section class="program">
         <div class="container">
             <div class="content-box">
-                <h3 class="font-grey-700">Get a baby-led program that will change your babys life completely</h3>
+                <h3 class="font-grey-32-700">Get a baby-led program that will change your babys life completely</h3>
                 <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
-                <button class="btn font-white-600 btn-green-squre">{{__('front.get_your_plan')}}</button>
+                <button class="btn font-white-600 btn-green-squre">Get Your Plan</button>
             </div>
             <div class="img-box">
-                <img src="" alt="">
+                <img src="../../assets/bg-images/phones.png" alt="">
+                <img class="adaptive" src="../../assets/bg-images/phones_xs.png" alt="">
             </div>
         </div>
 

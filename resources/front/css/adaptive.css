@@ -105,9 +105,51 @@
     header.summary img.adaptive {
         display: block;
     }
+
+    .font-light-grey-700 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .font-dark-grey-700 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .diagram-box .diagram .inf-box {
+        max-width: 220px;
+        white-space: normal;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .diagram-box .diagram img.adaptive {
+        display: block;
+    }
+
+    .diagram-box .diagram {
+        max-width: 340px;
+    }
+
+    .diagram-box .diagram .days-container {
+        height: 26%;
+    }
+
+    .diagram-box .diagram img {
+        display: none;
+    }
+
+    .diagram-box .diagram .today-box {
+        bottom: 75px;
+    }
 }
 
 @media (max-width: 992px) {
+
+    .diagram-box .diagram .days-box {
+        padding: 20px;
+    }
 
     .active-users .users-block {
         display: none;
@@ -412,6 +454,15 @@
     .payment-section .inf-box .item:first-child {
         margin-bottom: 20px;
     }
+
+    .program .img-box img.adaptive {
+        display: block;
+    }
+
+    .program .img-box img {
+        display: none;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -510,7 +561,33 @@
     }
 
     .plan-selection .content-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .plan-selection .content-wrapper .plan_includes {
+        margin-bottom: 40px;
+    }
+
+    .plan-selection .content-wrapper .readmore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan-selection .content-wrapper .readmore p {
+        margin-bottom: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .plan-selection .content-wrapper .readmore img {
+        margin-left: 10px;
+    }
+
+
+    .plan-selection .plans-include-wrapper .checkbox-box.adaptive {
+        display: none;
     }
 
     .plan-selection .content-wrapper .plans {
@@ -555,6 +632,7 @@
 
     .summary-conclusion.adaptive .diagram {
         width: 100%!important;
+        margin: 0 auto;
     }
 
     .summary-days .days-box-container, .summary-days .benefits-box {
@@ -598,6 +676,19 @@
 
     .stepper-box .line {
         height: 2px;
+    }
+
+    .program .container {
+        flex-direction: column-reverse;
+    }
+
+    .program .content-box {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
 }

@@ -18,16 +18,30 @@
                         <p class="font-grey-color-400">Lorem ipsum dolor sit amet, consectetur scing elit. Curabitur lectus tellus</p>
                     </div>
                 </div>
-                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
             </div>
             <div class="diagram-box">
-                <div class="diagram" style="width: 600px; height: 355px; background: #FFFFFF;
-                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-                border-radius: 10px;
-                ">
-
+                <div class="diagram">
+                    <div class="days-container">
+                        <div class="days-box">
+                            <p class="font-light-grey-700">{{$randomDays[0]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[1]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[2]}}</p>
+                            <p class="current font-dark-grey-700">{{$randomDays[3]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[4]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[5]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[6]}}</p>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="../../assets/bg-images/summary_bg.png" alt="">
+                        <div class="inf-box font-grey-color-400">Your baby will eat
+                            independently in <span class="font-accent-18-700">{{$randomDays[3]}} days</span></div>
+                        <div class="today-box font-grey-16-700">Today</div>
+                        <div class="days-amount-box font-grey-16-700">Day {{$randomDays[3]}}</div>
+                    </div>
                 </div>
                 <div class="data-box">
                     <div class="data d-flex w-100 align-items-center">
@@ -75,7 +89,7 @@
                 </div>
             </div>
             <div class="content-box">
-                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
                 <div class="notice-box d-flex w-100 justify-content-between align-items-center">
@@ -219,7 +233,7 @@
                         {{__('front.personalized_plan_block_4')}}
                     </p>
                 </div>
-                <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>
             </div>
@@ -358,7 +372,7 @@
                     <p class="font-grey-color-400">
                         {{__('front.our_promise_text')}}
                     </p>
-                    <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>

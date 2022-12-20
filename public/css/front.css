@@ -139,11 +139,25 @@ body {
     font-weight: 500;
 }
 
+.font-light-grey-700 {
+    color: var(--light-grey-color);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
 .font-dark-grey-500 {
     color: var(--grey-color);
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
+}
+
+.font-dark-grey-700 {
+    color: var(--grey-color);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
 }
 
 .font-accent-color-400 {
@@ -589,7 +603,7 @@ footer {
 
 .checkbox-box input:checked + label .custom-checkbox {
     content: '';
-    background: url(/assets/icons/check.png);
+    background: url('/assets/icons/check.png');
     left: 0;
     top: 0;
     width: 24px;
@@ -1002,7 +1016,93 @@ section .stepper-box {
     margin-right: 20px;
 }
 
+.diagram-box .diagram {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 600px;
+    height: 355px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
 
+.diagram-box .diagram .days-container {
+    height: 41%;
+}
+
+.diagram-box .diagram img {
+    max-width: 100%;
+}
+
+.diagram-box .diagram img.adaptive {
+    display: none;
+}
+
+.diagram-box .diagram .img-box {
+    position: relative;
+}
+
+.diagram-box .diagram .inf-box, .diagram-box .diagram .today-box, .diagram-box .diagram .days-amount-box {
+    position: absolute;
+}
+
+.diagram-box .diagram .today-box {
+    bottom: 50px;
+    left: 10px;
+}
+
+.diagram-box .diagram .days-amount-box {
+    top: -25px;
+    right: 10px;
+}
+
+.diagram-box .diagram .inf-box {
+    bottom: 15px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline;
+    white-space: nowrap;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.diagram-box .diagram .days-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+section.program {
+    margin: 100px 0;
+}
+
+.program .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program .content-box {
+    width: 100%;
+    max-width: 470px;
+}
+
+.program .img-box img.adaptive {
+    display: none;
+}
+
+.program .readmore {
+    display: none;
+}
 section.main-page .inf-box {
     max-width: 500px;
     height: 540px;
@@ -1538,9 +1638,51 @@ section.main-page .bg-image-absolute img{
     header.summary img.adaptive {
         display: block;
     }
+
+    .font-light-grey-700 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .font-dark-grey-700 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .diagram-box .diagram .inf-box {
+        max-width: 220px;
+        white-space: normal;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .diagram-box .diagram img.adaptive {
+        display: block;
+    }
+
+    .diagram-box .diagram {
+        max-width: 340px;
+    }
+
+    .diagram-box .diagram .days-container {
+        height: 26%;
+    }
+
+    .diagram-box .diagram img {
+        display: none;
+    }
+
+    .diagram-box .diagram .today-box {
+        bottom: 75px;
+    }
 }
 
 @media (max-width: 992px) {
+
+    .diagram-box .diagram .days-box {
+        padding: 20px;
+    }
 
     .active-users .users-block {
         display: none;
@@ -1845,6 +1987,15 @@ section.main-page .bg-image-absolute img{
     .payment-section .inf-box .item:first-child {
         margin-bottom: 20px;
     }
+
+    .program .img-box img.adaptive {
+        display: block;
+    }
+
+    .program .img-box img {
+        display: none;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -1943,7 +2094,33 @@ section.main-page .bg-image-absolute img{
     }
 
     .plan-selection .content-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .plan-selection .content-wrapper .plan_includes {
+        margin-bottom: 40px;
+    }
+
+    .plan-selection .content-wrapper .readmore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan-selection .content-wrapper .readmore p {
+        margin-bottom: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .plan-selection .content-wrapper .readmore img {
+        margin-left: 10px;
+    }
+
+
+    .plan-selection .plans-include-wrapper .checkbox-box.adaptive {
+        display: none;
     }
 
     .plan-selection .content-wrapper .plans {
@@ -1988,6 +2165,7 @@ section.main-page .bg-image-absolute img{
 
     .summary-conclusion.adaptive .diagram {
         width: 100%!important;
+        margin: 0 auto;
     }
 
     .summary-days .days-box-container, .summary-days .benefits-box {
@@ -2031,6 +2209,19 @@ section.main-page .bg-image-absolute img{
 
     .stepper-box .line {
         height: 2px;
+    }
+
+    .program .container {
+        flex-direction: column-reverse;
+    }
+
+    .program .content-box {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
 }
@@ -2104,5 +2295,4 @@ section.main-page .bg-image-absolute img{
     }
 
 }
-
 

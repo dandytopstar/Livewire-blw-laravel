@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\QuizController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\StripeController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PersonalPlanController;
@@ -39,6 +40,10 @@ Route::view('subscription-email-sent', 'subscription-email-sent')->name('subscri
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
+
+Route::get('registration/{code}', [ClientController::class, 'registration'])->name('registration');
+
+Route::post('create-client', [ClientController::class, 'createClient'])->name('create-client');
 
 Route::get('personal-plan/{code}', [PersonalPlanController::class, 'index'])->name('personal-plan');
 

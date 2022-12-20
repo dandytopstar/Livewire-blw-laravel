@@ -508,6 +508,7 @@ class Quiz extends Component
     public function checkSlideNumber()
     {
         if($this->currentQuestionNum == $this->registrationStepNum) {
+            $this->createClient();
             return false;
         }
 

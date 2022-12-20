@@ -130,11 +130,25 @@ body {
     font-weight: 500;
 }
 
+.font-light-grey-700 {
+    color: var(--light-grey-color);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
 .font-dark-grey-500 {
     color: var(--grey-color);
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
+}
+
+.font-dark-grey-700 {
+    color: var(--grey-color);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
 }
 
 .font-accent-color-400 {
@@ -577,7 +591,7 @@ footer {
 
 .checkbox-box input:checked + label .custom-checkbox {
     content: '';
-    background: url(/assets/icons/check.png);
+    background: url('/assets/icons/check.png');
     left: 0;
     top: 0;
     width: 24px;
@@ -982,3 +996,86 @@ section .stepper-box {
     margin-right: 20px;
 }
 
+.diagram-box .diagram {
+    width: fit-content;
+    max-width: 600px;
+    height: 355px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.diagram-box .diagram .days-container {
+    height: 41%;
+}
+
+.diagram-box .diagram img {
+    max-width: 100%;
+}
+
+.diagram-box .diagram img.adaptive {
+    display: none;
+}
+
+.diagram-box .diagram .img-box {
+    position: relative;
+}
+
+.diagram-box .diagram .inf-box, .diagram-box .diagram .today-box, .diagram-box .diagram .days-amount-box {
+    position: absolute;
+}
+
+.diagram-box .diagram .today-box {
+    bottom: 50px;
+    left: 10px;
+}
+
+.diagram-box .diagram .days-amount-box {
+    top: -25px;
+    right: 10px;
+}
+
+.diagram-box .diagram .inf-box {
+    bottom: 15px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: fit-content;
+    display: inline;
+    white-space: nowrap;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.diagram-box .diagram .days-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+section.program {
+    margin: 100px 0;
+}
+
+.program .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program .content-box {
+    width: 100%;
+    max-width: 470px;
+}
+
+.program .img-box img.adaptive {
+    display: none;
+}
+
+.program .readmore {
+    display: none;
+}
