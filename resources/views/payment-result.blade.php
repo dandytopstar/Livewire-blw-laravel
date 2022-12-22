@@ -44,15 +44,31 @@
             <div class="section-wrapper">
 
                 <div class="content-box">
-                    <div class="title-box">
-                        <p class="font-accent-700">
-                            <img src="{{asset("assets/icons/payment-success.png")}}" alt="">
-                        </p>
-                        <h2 class="font-accent-700">Payment Success!</h2>
-                    </div>
-                    <div class="action-box">
-                        <button type="button" class="btn quizz-btn font-grey-color-400">Go to Plan</button>
-                    </div>
+                    @if($status === 'succeeded')
+                        <div class="title-box">
+                            <p class="font-accent-700">
+                                <img src="{{asset("assets/payment/payment-success.png")}}" alt="">
+                            </p>
+                            <h2 class="font-accent-700">Payment Success!</h2>
+                        </div>
+                        <div class="action-box">
+                            <button type="button" class="btn quizz-btn font-grey-color-400">Go to Plan</button>
+                        </div>
+                    @endif
+
+                    @if($status !== 'succeeded')
+                        <div class="title-box">
+                            <p class="font-accent-700">
+                                <img src="{{asset("assets/payment/payment-fail.png")}}" alt="">
+                            </p>
+                            <h2 class="font-accent-700 text-danger">Payment Fail!</h2>
+                        </div>
+                        <div class="action-box">
+                            <a href="{{route('personal-plan', $code)}}" type="button" class="btn quizz-btn bg-danger">
+                                Back to Plans
+                            </a>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

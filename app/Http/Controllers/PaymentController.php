@@ -97,13 +97,11 @@ class PaymentController extends Controller
             'payment_data' => $payPalResult
         ]);
 
-        $result = $this->paymentService->getTransactionById($id)->toArray();
+        $result = $this->paymentService->getTransactionById($id);
 
-        $client = $this->quizService->getClientByCode($result['client_code']);
+        $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN, $result->toArray());
 
-        $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $result);
-
-        return redirect()->route('payment-result', [$result['id'], $result['client_code']]);
+        return redirect()->route('payment-result', [$result->id, $result->client->code]);
     }
 
     public function payPalError(Request $request, $id)
@@ -114,12 +112,10 @@ class PaymentController extends Controller
             'payment_data' => $payPalResult
         ]);
 
-        $result = $this->paymentService->getTransactionById($id)->toArray();
+        $result = $this->paymentService->getTransactionById($id);
 
-        $client = $this->quizService->getClientByCode($result['client_code']);
+        $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN, $result->toArray());
 
-        $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $result);
-
-        return redirect()->route('payment-result', [$result['id'], $result['client_code']]);
+        return redirect()->route('payment-result', [$result->id, $result->client->code]);
     }
 }
