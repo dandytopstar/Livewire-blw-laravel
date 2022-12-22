@@ -81,17 +81,30 @@
                 </div>
             </div>
             <div class="diagram-box">
-                <div class="diagram" style="width: 600px; height: 355px; background: #FFFFFF;
-                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-                border-radius: 10px;
-                ">
-
+                <div class="diagram">
+                    <div class="days-container">
+                        <div class="days-box">
+                            <p class="font-light-grey-700">{{$randomDays[0]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[1]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[2]}}</p>
+                            <p class="current font-dark-grey-700">{{$randomDays[3]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[4]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[5]}}</p>
+                            <p class="font-light-grey-700">{{$randomDays[6]}}</p>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="{{asset('assets/bg-images/summary_bg.png')}}" alt="">
+                        <img class="adaptive" src="{{asset('assets/bg-images/summary_bg_xs.png')}}" alt="">
+                        <div class="inf-box font-grey-color-400">Your baby will eat
+                            independently in <span class="font-accent-18-700">{{$randomDays[3]}} days</span></div>
+                        <div class="today-box font-grey-16-700">Today</div>
+                        <div class="days-amount-box font-grey-16-700">Day {{$randomDays[3]}}</div>
+                    </div>
                 </div>
             </div>
             <div class="content-box">
-                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
-                    {{__('front.get_your_plan')}}
-                </a>
+                <button class="btn font-white-600 btn-green-squre">Get Your Plan</button>
                 <div class="notice-box d-flex w-100 justify-content-between align-items-center">
                     <img src="../../assets/icons/book.png" alt="">
                     <div class="content">
@@ -131,7 +144,6 @@
 
         </div>
     </section>
-
 
     <section class="summary-days">
         <div class="container">
@@ -190,7 +202,28 @@
         </div>
     </section>
 
-    <section class="section p-0 plans">
+    <section class="graphic">
+        <div class="container">
+            <div class="block">
+                <div>
+                    <h2 class="font-grey-18-700">Daily Macronutrients</h2>
+                    <p class="font-grey-color-400">Most important nutrients in a baby’s diet</p>
+                </div>
+                <img src="../../assets/bg-images/nutrients.png" alt="">
+                <img class="adaptive" src="../../assets/bg-images/nutrients-adaptive.png" alt="">
+            </div>
+            <div class="block">
+                <div>
+                    <h2 class="font-grey-18-700">Calorie Intake</h2>
+                    <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
+                </div>
+                <img class="remove-paddings" src="../../assets/bg-images/calories.png" alt="">
+                <img class="adaptive" src="../../assets/bg-images/calories-adaptive.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section plans accent-section">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">Personalized Plan</p>
@@ -202,40 +235,30 @@
                         <img src="../../assets/icons/guide.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">Guide</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.personalized_plan_block_1')}}
-                    </p>
+                    <p class="description font-grey-color-400">A step-by-step guide on how to prepare your baby for solid foods</p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="../../assets/icons/book.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">E-Book</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.personalized_plan_block_2')}}
-                    </p>
+                    <p class="description font-grey-color-400">A step-by-An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your babystep guide on how to prepare your baby for solid foods</p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="../../assets/icons/note.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">Meal Plan</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.personalized_plan_block_3')}}
-                    </p>
+                    <p class="description font-grey-color-400">Personalized baby-led weaning meal based on your answers from the quiz</p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="../../assets/icons/apple.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">45+ healthy recipes</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.personalized_plan_block_4')}}
-                    </p>
+                    <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
                 </div>
-                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
-                    {{__('front.get_your_plan')}}
-                </a>
+                <button type="button" class="btn font-white-600 btn-green-squre">Start Quiz</button>
             </div>
         </div>
     </section>

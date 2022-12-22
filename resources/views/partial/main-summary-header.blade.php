@@ -3,7 +3,7 @@
         <div class="d-flex justify-content-between">
             <img src="{{asset('assets/logo/logo-green-xl.png')}}" alt="">
             <img class="adaptive" src="{{asset('assets/logo/logo-xs.png')}}" alt="">
-            <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+            <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                 {{__('front.get_your_plan')}}
             </a>
         </div>

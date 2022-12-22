@@ -1,4 +1,4 @@
-<footer class="@isset($fixed)fixed @endisset">
+<footer>
     <div class="container">
         <nav class="navbar w-100 p-0 m-0">
             <div class="d-flex p-0 w-100 justify-content-between navbar-container">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="actions">
-                    <a href="{{route('personal-plan', $code)}}" type="button" class="btn font-accent-600 btn-white-squre">
+                    <a href="{{route('registration', $code)}}" type="button" class="btn font-accent-600 btn-white-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>

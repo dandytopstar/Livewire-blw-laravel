@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section class="plan-selection">
+    <section class="plan-selection" id="personal-plan-section">
         <div class="container">
             <div class="title-box text-center main">
                 <h2 class="font-grey-color-700">Select Plan</h2>
@@ -119,47 +119,97 @@
                         <h2 class="font-grey-32-700">All plans include</h2>
                     </div>
                     <div class="plans-include-wrapper">
-                        <div class="checkbox-box">
+
+                        <div class="checkbox-box check-plan">
                             <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="agreemnt2">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                Professional nutritionist analysis
-                            </span>
+                                    Professional nutritionist analysis
+                                </span>
                             </label>
                         </div>
-                        <div class="checkbox-box">
+
+                        <div class="checkbox-box check-plan">
                             <input name="agreemnt3" id="agreemnt3" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="agreemnt3">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                A personalized, customizable meal plan
-                            </span>
+                                    A personalized, customizable meal plan
+                                </span>
                             </label>
                         </div>
-                        <div class="checkbox-box">
+
+                        <div class="checkbox-box check-plan">
                             <input name="agreemnt4" id="agreemnt4" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="agreemnt4">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                A downloadable and printable meal plan that you can access with any device
-                            </span>
+                                    Lots of meal and ingredient substitutions
+                                </span>
                             </label>
                         </div>
-                        <div class="checkbox-box adaptive">
+
+                        <div class="readmore more">
+                            <p class="m-0 font-accent-700">Read More</p>
+                            <img src="{{asset('assets/icons/back-green-arrow.png')}}" alt="" style="transform: rotate(180deg)">
+                        </div>
+
+                        <div class="checkbox-box check-plan adaptive">
                             <input name="agreemnt5" id="agreemnt5" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="agreemnt5">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                Full assistance when calculating carbs, sugar, cholesterol and other metrics
-                            </span>
+                                    A pocket-friendly grocery list
+                                </span>
                             </label>
                         </div>
+
+                        <div class="checkbox-box check-plan adaptive">
+                            <input name="agreemnt6" id="agreemnt6" class="styled-checkbox" type="checkbox" value="" checked>
+                            <label class="font-grey-color-400" for="agreemnt6">
+                                <div class="custom-checkbox"></div>
+                                <span>
+                                    24/7 nutritionist support
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-box check-plan adaptive">
+                            <input name="agreemnt7" id="agreemnt7" class="styled-checkbox" type="checkbox" value="" checked>
+                            <label class="font-grey-color-400" for="agreemnt7">
+                                <div class="custom-checkbox"></div>
+                                <span>
+                                    Easy access to the Klinio web platform and app
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-box check-plan adaptive">
+                            <input name="agreemnt8" id="agreemnt8" class="styled-checkbox" type="checkbox" value="" checked>
+                            <label class="font-grey-color-400" for="agreemnt8">
+                                <div class="custom-checkbox"></div>
+                                <span>
+                                    A downloadable and printable meal plan that you can access with any device
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-box check-plan adaptive">
+                            <input name="agreemnt9" id="agreemnt9" class="styled-checkbox" type="checkbox" value="" checked>
+                            <label class="font-grey-color-400" for="agreemnt9">
+                                <div class="custom-checkbox"></div>
+                                <span>
+                                    Full assistance when calculating carbs, sugar, cholesterol and other metrics
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="readmore hide">
+                            <p class="m-0 font-accent-700">Hide</p>
+                        </div>
                     </div>
-                    <div class="readmore">
-                        <p class="m-0 font-accent-700">Read More</p>
-                        <img src="../../assets/icons/back-green-arrow.png" alt="" style="transform: rotate(180deg)">
-                    </div>
+
                 </div>
             </div>
 
@@ -183,7 +233,7 @@
         </div>
     </section>
 
-    <section class="section p-0 plans">
+    <section class="section accent-section plans">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">Personalized Plan</p>
@@ -218,7 +268,9 @@
                     <p class="title font-accent-18-700">45+ healthy recipes</p>
                     <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
                 </div>
-                <button type="button" class="btn font-white-600 btn-green-squre">Start Quiz</button>
+                <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
+                    Get Your Plan
+                </a>
             </div>
         </div>
     </section>
@@ -228,7 +280,9 @@
             <div class="content-box">
                 <h3 class="font-grey-32-700">Get a baby-led program that will change your babys life completely</h3>
                 <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
-                <button class="btn font-white-600 btn-green-squre">Get Your Plan</button>
+                <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
+                    Get Your Plan
+                </a>
             </div>
             <div class="img-box">
                 <img src="../../assets/bg-images/phones.png" alt="">
@@ -629,35 +683,59 @@
 
     <script>
 
-        let selectedPersonalPlainId = $(".personal-plan.active").attr('data-id');
+        personalPlanSelection();
 
-        $(".personal-plan").on('click', (event) => {
+        redMoreButton()
 
-            $(".personal-plan.active").each((i) => {
-                $(".personal-plan.active")[i].classList.remove('active');
+        function personalPlanSelection() {
+            let selectedPersonalPlainId = $(".personal-plan.active").attr('data-id');
+
+            $(".personal-plan").on('click', (event) => {
+
+                $(".personal-plan.active").each((i) => {
+                    $(".personal-plan.active")[i].classList.remove('active');
+                })
+
+                event.currentTarget.classList.add('active');
+
+                selectedPersonalPlainId = event.currentTarget.getAttribute('data-id');
+
+            });
+
+            $("#plan-checkbox").on('click', (event) => {
+
+                let checked = event.currentTarget.checked;
+
+                const button = $("#get-your-plan");
+
+                button.attr('disabled', !checked)
+
             })
 
-            event.currentTarget.classList.add('active');
+            $("#get-your-plan").on('click', () => {
+                window.location.href = '/payment/{{$code}}/'+selectedPersonalPlainId
+            })
+        }
 
-            selectedPersonalPlainId = event.currentTarget.getAttribute('data-id');
+        function redMoreButton() {
+            const hiddenCheckPlans = $(".check-plan.adaptive")
+            const readMoreButton = $(".readmore.more");
+            const readMoreHideButton = $(".readmore.hide");
+            readMoreHideButton.hide();
 
-        });
+            readMoreButton.on('click', () => {
+                readMoreButton.hide();
+                readMoreHideButton.show();
+                hiddenCheckPlans.show()
+            })
 
-        $("#plan-checkbox").on('click', (event) => {
+            readMoreHideButton.on('click', () => {
+                readMoreButton.show();
+                readMoreHideButton.hide();
+                hiddenCheckPlans.hide()
+            })
+        }
 
-            let checked = event.currentTarget.checked;
-
-            const button = $("#get-your-plan");
-
-            button.attr('disabled', !checked)
-
-        })
-
-        $("#get-your-plan").on('click', () => {
-            window.location.href = '/payment/{{$code}}/'+selectedPersonalPlainId
-        })
-
-        
     </script>
 
 @endpush

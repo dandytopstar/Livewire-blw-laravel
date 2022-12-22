@@ -77,13 +77,13 @@
                                                 <p class="font-grey-16-700 d-block">{{$personalPlan->payment_price}}</p>
                                             </div>
 
-                                            <form  action="{{route('payment')}}" method="post">
+                                            <form  action="{{route('payment')}}" method="post" id="paypal-payment-form">
 
                                                 @csrf
 
-                                                <input type="hidden" name="plan" value="{{$personalPlan->id}}">
+                                                <input type="hidden" name="personal_plan_id" value="{{$personalPlan->id}}">
 
-                                                <input type="hidden" name="client_code" value="{{$code}}">
+                                                <input type="hidden" name="client_id" value="{{$client->id}}">
 
                                                 <input type="hidden" name="method" value="{{\App\Enums\PaymentMethods::PAYPAL}}">
 
@@ -129,7 +129,7 @@
                                                 <p class="font-grey-16-700 d-block">{{$personalPlan->payment_price}}</p>
                                             </div>
                                             <div class="form">
-                                                <form  action="{{route('payment')}}" method="post" id="payment-form">
+                                                <form  action="{{route('payment')}}" method="post" id="stripe-payment-form">
 
                                                     @csrf
 
@@ -182,73 +182,83 @@
     <script src="https://js.stripe.com/v3/"></script>
 
     <script>
-        let stripe = Stripe('{{config('services.stripe.public')}}');
+        stripePayment();
 
-        const appearance = {
-            theme: 'stripe'
-        };
+        payPalPayment();
 
-        let clientSecret = '{{$intent->client_secret}}';
+        function stripePayment() {
+            let stripe = Stripe('{{config('services.stripe.public')}}');
 
-        const elements = stripe.elements({clientSecret, appearance});
+            const appearance = {
+                theme: 'stripe'
+            };
 
-        let cardElement = elements.create('card', {
-            style: {
-                base: {
-                    iconColor: '#00BD90',
-                    color: '#000',
-                    fontWeight: '500',
-                    fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
-                    fontSize: '16px',
-                    fontSmoothing: 'antialiased',
-                    ':-webkit-autofill': {
-                        color: '#00BD90',
+            let clientSecret = '{{$intent->client_secret}}';
+
+            const elements = stripe.elements({clientSecret, appearance});
+
+            let cardElement = elements.create('card', {
+                style: {
+                    base: {
+                        iconColor: '#00BD90',
+                        color: '#000',
+                        fontWeight: '500',
+                        fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
+                        fontSize: '16px',
+                        fontSmoothing: 'antialiased',
+                        ':-webkit-autofill': {
+                            color: '#00BD90',
+                        },
+                        '::placeholder': {
+                            color: '#00BD90',
+                        },
                     },
-                    '::placeholder': {
-                        color: '#00BD90',
+                    invalid: {
+                        iconColor: '#FF735C',
+                        color: '#FF735C',
                     },
                 },
-                invalid: {
-                    iconColor: '#FF735C',
-                    color: '#FF735C',
-                },
-            },
-        });
+            });
 
-        cardElement.mount('#card-element');
+            cardElement.mount('#card-element');
 
-        cardElement.on('change', ({error}) => {
-            let displayError = document.getElementById('card-errors');
-            if (error) {
-                displayError.textContent = error.message;
-            } else {
-                displayError.textContent = '';
-            }
-        });
-
-        const form = document.getElementById('payment-form');
-
-        form.addEventListener('click', function(ev) {
-            ev.preventDefault();
-            stripe.confirmCardPayment(clientSecret, {
-                payment_method: {
-                    card: cardElement,
-                    billing_details: {
-                        name: '{{$client->name}}'
-                    }
-                }
-            }).then(function(result) {
-                if (result.error) {
-                    console.log(result.error.message);
+            cardElement.on('change', ({error}) => {
+                let displayError = document.getElementById('card-errors');
+                if (error) {
+                    displayError.textContent = error.message;
                 } else {
-                    if (result.paymentIntent.status === 'succeeded') {
-                        $("#stripe_payment_data").val(JSON.stringify(result));
-                        $("#stripe_payment_status").val(result.paymentIntent.status);
-                        form.submit();
-                    }
+                    displayError.textContent = '';
                 }
             });
-        });
+
+            const stripeForm = document.getElementById('stripe-payment-form');
+
+            stripeForm.addEventListener('click', function(ev) {
+                ev.preventDefault();
+                stripe.confirmCardPayment(clientSecret, {
+                    payment_method: {
+                        card: cardElement,
+                        billing_details: {
+                            name: '{{$client->email}}'
+                        }
+                    }
+                }).then(function(result) {
+                    if (result.error) {
+                        console.log(result.error.message);
+                    } else {
+                        if (result.paymentIntent.status === 'succeeded') {
+                            $("#stripe_payment_data").val(JSON.stringify(result));
+                            $("#stripe_payment_status").val(result.paymentIntent.status);
+                            stripeForm.submit();
+                        }
+                    }
+                });
+            });
+        }
+
+        function payPalPayment() {
+            const payPalForm = document.getElementById('paypal-payment-form');
+        }
     </script>
 
 @endpush

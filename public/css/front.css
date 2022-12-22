@@ -582,9 +582,9 @@ footer {
 }
 
 .checkbox-box label {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
+     position: relative;
+     cursor: pointer;
+     padding: 0;
 }
 
 .checkbox-box .custom-checkbox {
@@ -643,35 +643,35 @@ footer {
     margin-top: 20px;
 }
 
-.plans-include-wrapper .checkbox-box:not(:last-child) {
+ .plans-include-wrapper .checkbox-box:not(:last-child) {
     margin-bottom: 30px;
 }
 
-section.summary p {
-    margin: 0;
-}
+ section.summary p {
+     margin: 0;
+ }
 
-.summary-conclusion {
-    margin-top: 55px;
-}
+ .summary-conclusion {
+     margin-top: 55px;
+ }
 
-.summary-conclusion .content-box {
-    max-width: 500px;
-}
+ .summary-conclusion .content-box {
+     max-width: 500px;
+ }
 
-.summary-conclusion .content-box .title p:last-child {
-    margin: 30px 0;
-    display: block;
-    max-width: 320px;
-}
+ .summary-conclusion .content-box .title p:last-child {
+     margin: 30px 0;
+     display: block;
+     max-width: 320px;
+ }
 
-.summary-conclusion .notice-box {
-    padding: 20px 30px;
-    border: 1px solid var(--acent-color-green);
-    background-color: rgba(0,189,144, .1);
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
+ .summary-conclusion .notice-box {
+     padding: 20px 30px;
+     border: 1px solid var(--acent-color-green);
+     background-color: rgba(0,189,144, .1);
+     border-radius: 10px;
+     margin-bottom: 30px;
+ }
 
 .summary-conclusion .notice-box img {
     max-width: 43px;
@@ -765,7 +765,7 @@ section.summary p {
 }
 
 .summary-days .benefits-box {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .active-users {
@@ -1103,6 +1103,49 @@ section.program {
 .program .readmore {
     display: none;
 }
+
+.graphic .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graphic .container .block {
+    width: 100%;
+    max-width: 560px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+}
+
+.graphic .container img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.graphic .container img.remove-paddings {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 -30px -30px -30px;
+}
+
+.graphic .container img.adaptive {
+    display: none;
+}
+
+
+
+
+
+
+
 section.main-page .inf-box {
     max-width: 500px;
     height: 540px;
@@ -1996,7 +2039,7 @@ section.main-page .bg-image-absolute img{
         display: none;
     }
 
-}
+    }
 
 @media (max-width: 1200px) {
     section.main-page .container, .get-section .box {
@@ -2224,11 +2267,37 @@ section.main-page .bg-image-absolute img{
         margin-top: 20px;
     }
 
+    .graphic .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .graphic .container .block {
+        /*max-width: 100%;*/
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
 }
 @media (max-width: 1400px) {
 }
 
 @media (max-width: 576px) {
+
+    .graphic .container .block {
+        max-width: 100%;
+    }
+
+    .graphic .container img {
+        display: none;
+    }
+
+    .graphic .container img.adaptive {
+        display: block;
+    }
+
+
     .options-body {
         flex-direction: column;
     }
@@ -2294,5 +2363,10 @@ section.main-page .bg-image-absolute img{
         padding-right: 20px;
     }
 
+    }
+
+
+.readmore {
+    display: none;
 }
 
