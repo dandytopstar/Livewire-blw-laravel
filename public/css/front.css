@@ -1422,7 +1422,7 @@ section.main-page .bg-image-absolute img{
 }
 
 .section.quizz-box .dots-box {
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1473,7 +1473,7 @@ section.main-page .bg-image-absolute img{
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     max-width: 175px;
     text-align: center;
     text-transform: uppercase;
@@ -1926,7 +1926,7 @@ section.main-page .bg-image-absolute img{
     }
 
     .section.quizz-box .content-box .option {
-        max-width: 30%;
+        max-width: 100%;
     }
 
     .time-section {

@@ -4,27 +4,7 @@
 
     @includeIf('partial.main-personal-plan-header')
 
-    <section class="mt-40">
-        <div class="container dark-accent border-radius-10 p-y-25 p-x-30 font-white-700 d-flex time-section">
-            <p>The offer expires in:</p>
-            <div class="d-flex">
-                <div class="text-center">
-                    <span>00</span>
-                    <span class="font-light-accent-700">hours</span>
-                </div>
-                <p class="dots">:</p>
-                <div class="text-center">
-                    <span>14</span>
-                    <span class="font-light-accent-700">Minutes</span>
-                </div>
-                <p class="dots">:</p>
-                <div class="text-center">
-                    <span>37</span>
-                    <span class="font-light-accent-700">Secunds</span>
-                </div>
-            </div>
-        </div>
-    </section>
+   <x-count-down-timer/>
 
     <section class="stepper">
         <div class="container">
@@ -631,42 +611,42 @@
     <section class="accordion-box last-section section">
         <div class="container">
             <div class="title-box">
-                <h2 class="font-grey-32-700">People often ask us</h2>
+                <h2 class="font-grey-32-700">{{__('front.accordion_block_title')}}</h2>
             </div>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed font-grey-16-700 p-y-25 p-x-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {{__('front.accordion_title_1')}}
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body font-grey-color-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {!! __('front.accordion_text_1') !!}
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed font-grey-16-700 p-y-25 p-x-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {{__('front.accordion_title_2')}}
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body font-grey-color-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {!! __('front.accordion_text_2') !!}
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed font-grey-16-700 p-y-25 p-x-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {{__('front.accordion_title_3')}}
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body font-grey-color-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {!! __('front.accordion_text_3') !!}
                         </div>
                     </div>
                 </div>
@@ -685,7 +665,7 @@
 
         personalPlanSelection();
 
-        redMoreButton()
+        redMoreButton();
 
         function personalPlanSelection() {
             let selectedPersonalPlainId = $(".personal-plan.active").attr('data-id');

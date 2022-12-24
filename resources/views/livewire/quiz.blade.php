@@ -111,7 +111,14 @@
                 <img src="{{asset('assets/icons/back-arrow.png')}}">
             </button>
 
-            <img class="bg-bottom-center-adaptive" src="{{asset('assets/bg-images/bg-image-adaptive-2.png')}}" alt="" style="max-width: 200px">
+            @if(!empty($currentQuestion['bottom_image_adaptive']))
+                <img
+                        class="bg-bottom-center-adaptive"
+                        src="{{asset($currentQuestion['bottom_image_adaptive'])}}"
+                        alt="" style="max-width: 200px"
+                >
+            @endif
+
 
         </div>
 

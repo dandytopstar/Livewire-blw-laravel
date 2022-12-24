@@ -350,7 +350,7 @@
     }
 
     .section.quizz-box .content-box .option {
-        max-width: 30%;
+        max-width: 100%;
     }
 
     .time-section {

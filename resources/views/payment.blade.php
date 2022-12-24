@@ -12,6 +12,8 @@
                 </div>
             </div>
 
+            <x-count-down-timer/>
+
             <section class="stepper">
                 <div class="container">
                     <div class="stepper-box">

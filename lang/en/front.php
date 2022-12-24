@@ -155,60 +155,53 @@ return [
     'continue_button_text_7' => 'continue',
 
     //question 8
-    'question_8'             => 'Is you baby putting food in his mouth instinctively?',
+    'question_8'             => 'Is you baby performing chewing movements with for ex. toys?',
     'answer_8_1'             => 'yes',
     'answer_8_2'             => 'no',
-    'section_text_8'         => '',
-    'continue_button_text_8' => 'continue',
+    'answer_8_3'             => 'not sure',
+    'section_text_8' => '',
+    'continue_button_text_8'  => 'continue',
 
     //question 9
-    'question_9'             => 'Is you baby performing chewing movements with for ex. toys?',
+    'question_9'             => 'Is your baby gagging anytime?',
     'answer_9_1'             => 'yes',
     'answer_9_2'             => 'no',
-    'answer_9_3'             => 'not sure',
-    'section_text_9' => '',
-    'continue_button_text_9'  => 'continue',
+    'section_text_9'         => '',
+    'continue_button_text_9' => 'continue',
 
     //question 10
-    'question_10'             => 'Is your baby gagging anytime?',
+    'question_10'             => 'Does your baby have any allergies?',
     'answer_10_1'             => 'yes',
     'answer_10_2'             => 'no',
+    'answer_10_3'             => "I don't know",
     'section_text_10'         => '',
     'continue_button_text_10' => 'continue',
 
     //question 11
-    'question_11'             => 'Does your baby have any allergies?',
-    'answer_11_1'             => 'yes',
-    'answer_11_2'             => 'no',
-    'answer_11_3'             => "I don't know",
+    'question_11'             => 'Do you prefer not to eat any of these foods?',
+    'answer_11_1'             => 'fish',
+    'answer_11_2'             => 'dairy products',
+    'answer_11_3'             => 'eggs',
+    'answer_11_4'             => 'poultry',
+    'answer_11_5'             => 'beef',
+    'answer_11_6'             => 'pork',
     'section_text_11'         => '',
     'continue_button_text_11' => 'continue',
 
     //question 12
-    'question_12'             => 'Do you prefer not to eat any of these foods?',
-    'answer_12_1'             => 'fish',
-    'answer_12_2'             => 'dairy products',
-    'answer_12_3'             => 'eggs',
-    'answer_12_4'             => 'poultry',
-    'answer_12_5'             => 'beef',
-    'answer_12_6'             => 'pork',
+    'question_12'             => 'Are you a vegetarian?',
+    'answer_12_1'             => 'yes',
+    'answer_12_2'             => 'no',
     'section_text_12'         => '',
     'continue_button_text_12' => 'continue',
 
     //question 13
-    'question_13'             => 'Are you a vegetarian?',
-    'answer_13_1'             => 'yes',
-    'answer_13_2'             => 'no',
+    'question_13'             => 'What is the weight of your baby?',
+    'min_13'                  => '1',
+    'max_13'                  => '92',
+    'range_name_13'           => 'lbs',
     'section_text_13'         => '',
     'continue_button_text_13' => 'continue',
-
-    //question 14
-    'question_14'             => 'What is the weight of your baby?',
-    'min_14'                  => '1',
-    'max_14'                  => '92',
-    'range_name_14'           => 'lbs',
-    'section_text_14'         => '',
-    'continue_button_text_14' => 'continue',
 
     //client registration
     'name' => 'Name',
