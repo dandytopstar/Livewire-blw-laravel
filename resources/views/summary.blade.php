@@ -258,7 +258,9 @@
                     <p class="title font-accent-18-700">45+ healthy recipes</p>
                     <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
                 </div>
-                <button type="button" class="btn font-white-600 btn-green-squre">Start Quiz</button>
+                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    {{__('front.get_your_plan')}}
+                </a>
             </div>
         </div>
     </section>
