@@ -2406,7 +2406,7 @@ section.main-page .bg-image-absolute img{
     }
 }
 
-.section.quizz-box .content-box .option {
+.section.quizz-box .content-box .option.q-cols {
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
     border-radius: 20px;

@@ -63,7 +63,7 @@
                         <div class="action-box d-flex flex-column align-items-center" style="max-width: 565px">
                             <div class="option-box d-flex flex-wrap justify-content-between mb-20">
                                 @foreach($currentQuestion['answers'] as $key => $answer)
-                                    <div class="option col-4 me-0 mb-20 @if($answer['selected']) click @endif"
+                                    <div class="option q-cols col-4 me-0 mb-20 @if($answer['selected']) click @endif"
                                          id="{{$currentQuestion['question_key'].'-'.$key}}"
                                          @if($currentQuestion['multiple'])
                                              wire:click="nextSlideMultiple({{$key}})"
