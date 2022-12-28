@@ -90,7 +90,6 @@
                 </p>
                 <h2 class="font-grey-32-700">
                     {{__('front.processes_subtitle')}}
-                    Start Baby-Led Weaning With A Personalized Meal Plan
                 </h2>
             </div>
             <div class="box-container d-flex justify-content-between">
