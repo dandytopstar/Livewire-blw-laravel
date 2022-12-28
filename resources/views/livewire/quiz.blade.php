@@ -35,7 +35,7 @@
                     </div>
 
 
-                    @if($currentQuestion['has_answers'] && $currentQuestion['answer_with_image'])
+                    @if($currentQuestion['has_answers'] && count($currentQuestion['answers']) < 3 && $currentQuestion['answer_with_image'])
 
                         <div class="action-box d-flex flex-wrap justify-content-center">
                             <div style="width: fit-content" class="d-flex d-flex flex-wrap justify-content-center">
@@ -56,6 +56,51 @@
                                 @endforeach
                             </div>
                         </div>
+                    @endif
+
+                    @if($currentQuestion['has_answers'] && count($currentQuestion['answers']) > 3 && $currentQuestion['answer_with_image'])
+                        
+{{--                        <div class="row text-center option-box">--}}
+{{--                            <div class="option col-4">--}}
+{{--                                <div class="img-box w-100">--}}
+{{--                                    <img src="../../assets/quiz/meal-1.png" alt="" class="w-100">--}}
+{{--                                </div>--}}
+{{--                                <p class="font-accent-700">Fish</p>--}}
+{{--                            </div>--}}
+{{--                            <div class="option col-4">--}}
+{{--                                <div class="img-box w-100">--}}
+{{--                                    <img src="../../assets/quiz/meal-1.png" alt="" class="w-100">--}}
+{{--                                </div>--}}
+{{--                                <p class="font-accent-700">Fish</p>--}}
+{{--                            </div>--}}
+{{--                            <div class="option col-4">--}}
+{{--                                <div class="img-box w-100">--}}
+{{--                                    <img src="../../assets/quiz/meal-1.png" alt="" class="w-100">--}}
+{{--                                </div>--}}
+{{--                                <p class="font-accent-700">Fish</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+                        <div class="action-box d-flex flex-column align-items-center" style="max-width: 565px">
+                            <div class="option-box d-flex flex-wrap justify-content-between mb-20">
+                                @foreach($currentQuestion['answers'] as $key => $answer)
+                                    <div class="option col-4 col-sm-6 me-0 mb-20 @if($answer['selected']) click @endif"
+                                         id="{{$currentQuestion['question_key'].'-'.$key}}"
+                                         @if($currentQuestion['multiple'])
+                                             wire:click="nextSlideMultiple({{$key}})"
+                                         @else
+                                             wire:click="nextSlide({{$key}})"
+                                            @endif
+                                    >
+                                        <div class="img-box">
+                                            <img src="{{$answer['image']}}" alt="">
+                                        </div>
+                                        <p class="font-accent-700">{{$answer['text']}}</p>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
                     @endif
 
                     @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])

@@ -213,6 +213,23 @@
         </div>
     </section>
 
+    <section class="program adaptive">
+        <div class="container">
+            <div class="content-box">
+                <h3 class="font-grey-32-700">Get a baby-led program that will change your babys life completely</h3>
+                <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
+                <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
+                    Get Your Plan
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="../../assets/bg-images/phones.png" alt="">
+                <img class="adaptive" src="../../assets/bg-images/phones_xs.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
     <section class="section accent-section plans">
         <div class="container">
             <div class="title-box">
@@ -248,8 +265,10 @@
                     <p class="title font-accent-18-700">45+ healthy recipes</p>
                     <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
                 </div>
-                <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
-                    Get Your Plan
+                <a href="#personal-plan-section" class="text-decoration-none">
+                    <button type="button" class="btn font-white-600 btn-green-squre">
+                        Get Your Plan
+                    </button>
                 </a>
             </div>
         </div>

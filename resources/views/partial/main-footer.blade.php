@@ -4,7 +4,7 @@
             <div class="d-flex p-0 w-100 justify-content-between navbar-container">
                 <div class="d-flex logo-box">
                     <div class="logo-container">
-                        <img src="../../assets/logo/logo-white.png" alt="">
+                        <img src="{{asset('assets/logo/blw-logo-white-small.png')}}" alt="">
                     </div>
                     <div class="nav-menu">
                         <ul class="navbar-nav d-flex">

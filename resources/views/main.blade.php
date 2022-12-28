@@ -7,7 +7,7 @@
             <nav class="navbar navbar-expand-lg fullscreen-header">
                 <div class="d-flex p-0 w-100 header-box">
                     <div class="logo-container d-flex align-items-center">
-                        <img src="{{asset('assets/logo/logo.png')}}" alt="">
+                        <img src="{{asset('assets/logo/logo-green-xl.png')}}" alt="">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -150,7 +150,11 @@
                     <p class="title font-accent-18-700">45+ healthy recipes</p>
                     <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
                 </div>
-                <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>
+                <a href="{{route('quiz')}}" class="text-decoration-none">
+                    <button type="button" class="btn font-white-600 btn-green-squre">
+                        {{__("front.start_quiz")}}
+                    </button>
+                </a>
             </div>
         </div>
     </section>

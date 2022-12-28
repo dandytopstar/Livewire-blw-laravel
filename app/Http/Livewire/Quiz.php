@@ -377,7 +377,7 @@ class Quiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 11;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -558,7 +558,7 @@ class Quiz extends Component
         }
 
 
-        $this->redirect('/quiz-result/'.$client->code);
+        $this->redirect('/summary/'.$client->code);
     }
 
     public function render()

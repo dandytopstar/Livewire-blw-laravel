@@ -180,7 +180,7 @@ return [
     //question 11
     'question_11'             => 'Do you prefer not to eat any of these foods?',
     'answer_11_1'             => 'fish',
-    'answer_11_2'             => 'dairy products',
+    'answer_11_2'             => 'dairy',
     'answer_11_3'             => 'eggs',
     'answer_11_4'             => 'poultry',
     'answer_11_5'             => 'beef',
