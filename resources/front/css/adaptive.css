@@ -80,8 +80,9 @@
     }
 
     .section .clients-item .avatar-box {
-        width: 60px;
-        height: 60px;
+        width: 72px;
+        height: 72px;
+        border-radius: 16px;
     }
 
     .font-grey-16-700 {

@@ -305,9 +305,9 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -329,9 +329,9 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -353,9 +353,9 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -380,9 +380,9 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -404,9 +404,9 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -454,9 +454,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -481,9 +481,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -508,9 +508,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -535,9 +535,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -562,9 +562,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
@@ -589,9 +589,9 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-example.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.png" alt="">
                                         </div>
-                                        <div class="author-inf d-flex justify-content-between w-100">
+                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
                                                 <p class="font-grey-16-700 name">Helen Moris, 27</p>
                                                 <div class="star-box d-flex">
