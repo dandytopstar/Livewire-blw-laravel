@@ -305,7 +305,7 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -329,7 +329,7 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -353,7 +353,7 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -380,7 +380,7 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -404,7 +404,7 @@
                                 <div class="clients-item white-shadow-box-radius-10">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -454,7 +454,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -481,7 +481,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -508,7 +508,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -535,7 +535,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -562,7 +562,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
@@ -589,7 +589,7 @@
                                 <div class="clients-item white-shadow-box-radius-10 w-100">
                                     <div class="clients-inf d-flex">
                                         <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.png" alt="">
+                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
                                         </div>
                                         <div class="author-inf d-flex justify-content-between w-100 pt-3">
                                             <div>
