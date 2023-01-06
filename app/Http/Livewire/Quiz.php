@@ -38,12 +38,12 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => trans('front.answer_1_1'),
-                        'image'  => 'assets/quiz/boy.png',
+                        'image'  => 'assets/quiz/boy.jpg',
                         'selected'  => false,
                     ],
                     '2' => [
                         'text' => trans('front.answer_1_2'),
-                        'image'  => 'assets/quiz/girl.png',
+                        'image'  => 'assets/quiz/girl.jpg',
                         'selected'  => false,
                     ],
                 ],

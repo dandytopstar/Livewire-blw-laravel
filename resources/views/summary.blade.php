@@ -170,14 +170,14 @@
                     <h2 class="font-grey-18-700">Daily Macronutrients</h2>
                     <p class="font-grey-color-400">Most important nutrients in a baby’s diet</p>
                 </div>
-                <img class="adaptive" src="../../assets/bg-images/nutrients-adaptive.png" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/nutrients-adaptive.jpg')}}" alt="">
             </div>
             <div class="block">
                 <div>
                     <h2 class="font-grey-18-700">Calorie Intake</h2>
                     <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
                 </div>
-                <img class="adaptive" src="../../assets/bg-images/calories-adaptive.png" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.jpg')}}" alt="">
             </div>
         </div>
     </section>
@@ -218,6 +218,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="title-box text-center">
+                <h2 class="font-grey-32-700">Your baby will experience such benefits</h2>
+            </div>
+
             <div class="benefits-box">
                 <div class="benefit text-center">
                     <p class="font-accent-30-700">-55%</p>
@@ -247,7 +252,7 @@
                     <p class="font-grey-color-400">Most important nutrients in a baby’s diet</p>
                 </div>
                 <img src="../../assets/bg-images/nutrients.png" alt="">
-                <img class="adaptive" src="../../assets/bg-images/nutrients-adaptive.png" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/nutrients-adaptive.jpg')}}" alt="">
             </div>
             <div class="block">
                 <div>
@@ -255,7 +260,7 @@
                     <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
                 </div>
                 <img class="remove-paddings" src="../../assets/bg-images/calories.png" alt="">
-                <img class="adaptive" src="../../assets/bg-images/calories-adaptive.png" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.jpg')}}" alt="">
             </div>
         </div>
     </section>

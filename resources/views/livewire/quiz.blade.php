@@ -49,7 +49,7 @@
                                             @endif
                                     >
                                         <div class="img-box">
-                                            <img src="{{$answer['image']}}" alt="">
+                                            <img src="{{$answer['image']}}" alt="" width="140px">
                                         </div>
                                         <p class="font-accent-700">{{$answer['text']}}</p>
                                     </div>
