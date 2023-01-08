@@ -134,7 +134,9 @@
                         <img src="{{asset('assets/icons/book.svg')}}"></img>
                     </div>
                     <p class="title font-accent-18-700">E-Book</p>
-                    <p class="description font-grey-color-400">A step-by-An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your babystep guide on how to prepare your baby for solid foods</p>
+                    <p class="description font-grey-color-400">
+                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
