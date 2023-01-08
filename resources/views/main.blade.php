@@ -164,9 +164,15 @@
             <div class="box white-shadow-box-radius-10 d-flex">
                 <div class="title-box">
                     <p class="font-accent-700">{{__("front.baby_led_weaning")}}</p>
-                    <h2 class="font-grey-32-700 mb-20">What Will You Get?</h2>
+                    <h2 class="font-grey-32-700 mb-20">What is Baby-led weaning?</h2>
                     <p class="description font-grey-color-400">
-                        Baby led weaning (BLW) is a way of introducing solid foods to your baby from around 4 - 6 months old. BLW skips the puree stage due to the ability of babies from 4 - 6 months onwards to naturally handle finger foods.
+                        Baby-led weaning is a method of introducing solid food to babies, where spoon-feeding is replaced with finger foods that a baby self-feeds.
+                    </p>
+                    <p class="description font-grey-color-400">
+                        Coined by Gill Rapley, a former public health nurse in the U.K., baby-led weaning offers parents a way to bypass baby food entirely. It is  popular with parents who want to avoid raising picky eaters, or those who subscribe to Montessori-type philosophies where children are encouraged to be self-sufficient.
+                    </p>
+                    <p class="description font-grey-color-400">
+                        Baby-led weaning majorly emphasizes independence of the baby. Parents wait for their baby to show signs of readiness for eating and follows the baby’s cues in introducing solid food. Babies join the table for family meals, are encouraged to pick up food with their own fingers, and trusted to eat their desired quantity. Babies introduced to solids with baby-led weaning also continue breastmilk and determine when  milk feeds should be reduced.
                     </p>
                     <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>
                 </div>
@@ -181,7 +187,7 @@
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">User Reviews</p>
-                <h2 class="font-grey-32-700">What Clients Say About Our App After Use It</h2>
+                <h2 class="font-grey-32-700">What clients say about us</h2>
             </div>
             <div class="clients-box">
 

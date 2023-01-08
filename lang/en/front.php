@@ -162,47 +162,6 @@ return [
     'section_text_8' => '',
     'continue_button_text_8'  => 'continue',
 
-    //question 9
-    'question_9'             => 'Is your baby gagging anytime?',
-    'answer_9_1'             => 'yes',
-    'answer_9_2'             => 'no',
-    'section_text_9'         => '',
-    'continue_button_text_9' => 'continue',
-
-    //question 10
-    'question_10'             => 'Does your baby have any allergies?',
-    'answer_10_1'             => 'yes',
-    'answer_10_2'             => 'no',
-    'answer_10_3'             => "I don't know",
-    'section_text_10'         => '',
-    'continue_button_text_10' => 'continue',
-
-    //question 11
-    'question_11'             => 'Do you prefer not to eat any of these foods?',
-    'answer_11_1'             => 'fish',
-    'answer_11_2'             => 'dairy',
-    'answer_11_3'             => 'eggs',
-    'answer_11_4'             => 'poultry',
-    'answer_11_5'             => 'beef',
-    'answer_11_6'             => 'pork',
-    'section_text_11'         => '',
-    'continue_button_text_11' => 'continue',
-
-    //question 12
-    'question_12'             => 'Are you a vegetarian?',
-    'answer_12_1'             => 'yes',
-    'answer_12_2'             => 'no',
-    'section_text_12'         => '',
-    'continue_button_text_12' => 'continue',
-
-    //question 13
-    'question_13'             => 'What is the weight of your baby?',
-    'min_13'                  => '1',
-    'max_13'                  => '92',
-    'range_name_13'           => 'lbs',
-    'section_text_13'         => '',
-    'continue_button_text_13' => 'continue',
-
     //client registration
     'name' => 'Name',
     'email' => 'Email',
@@ -297,10 +256,10 @@ return [
     'personalized_plan_block_4' => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning.',
     'baby_learn_block_text_title_1' => 'TO EAT INDEPENDENTLY',
     'baby_learn_block_text_1' => 'Baby learns to eat independently and is in total control',
-    'baby_learn_block_text_title_2' => 'TO CONTROL HIS APETITE',
-    'baby_learn_block_text_2' => 'Baby is in charge of how much to eat and learns to stop when full.',
-    'baby_learn_block_text_title_3' => 'VARIETY OF FOOD',
-    'baby_learn_block_text_3' => 'Baby can eat a variety of textures and flavors, which may reduce picky eating later on.',
+    'baby_learn_block_text_title_2' => 'TO CONTROL APETITE',
+    'baby_learn_block_text_2' => 'Spoon feeding increases risk of overfeeding and excess weight gain, while with BLW baby is in charge of how much to eat and learns to stop when full.',
+    'baby_learn_block_text_title_3' => '100 FOODS IN 100 DAYS',
+    'baby_learn_block_text_3' => 'Your baby will taste 100 new foods in 100 days',
     'our_promise_title' => 'Our Promise',
     'our_promise_text' => "Individuals are somewhat skeptical about new ideas as it poses a challenge, or better put, a cloud of doubt on one's existing thoughts and awareness. In this case of baby-led weaning, there's the usual fear of the babies choking or the case of the pediatricians/nutritionists not being well-informed/trained about BLW. Therefore, our coaches and nutritionists are working incessantly to offer you a suitable meal plan and personalized routine for your babies while helping them gain confidence at an early age and reach their potential through extensive practice that includes but isn’t limited to dexterity, hand-eye coordination, etc. This is not far-fetched as this process is done at the babies’ pace, whereby they are in control of what they eat and the quantity of the new meal(s) being incorporated into their diet.",
 

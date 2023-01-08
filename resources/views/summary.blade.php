@@ -15,7 +15,9 @@
                     <img src="../../assets/icons/book.png" alt="">
                     <div class="content">
                         <p class="font-grey-500">Facts</p>
-                        <p class="font-grey-color-400">Lorem ipsum dolor sit amet, consectetur scing elit. Curabitur lectus tellus</p>
+                        <p class="font-grey-color-400">
+                            Research has shown that babies who experience BLW are less likely to choke on food as compared to those babies who are being spoon-fed.
+                        </p>
                     </div>
                 </div>
                 <a href="{{route('registration', $code)}}" class="text-decoration-none">
@@ -177,7 +179,7 @@
                     <h2 class="font-grey-18-700">Calorie Intake</h2>
                     <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
                 </div>
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.jpg')}}" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.png')}}" alt="">
             </div>
         </div>
     </section>
@@ -229,16 +231,16 @@
                     <p class="m-0 font-grey-18-700">Fusiness around food</p>
                 </div>
                 <div class="benefit text-center">
-                    <p class="font-accent-30-700">-35%</p>
-                    <p class="m-0 font-grey-18-700">Excess weight gain</p>
+                    <p class="font-accent-30-700">-89%</p>
+                    <p class="m-0 font-grey-18-700">Risk of excess weight gain</p>
                 </div>
                 <div class="benefit text-center">
                     <p class="font-accent-30-700">-47%</p>
                     <p class="m-0 font-grey-18-700">Risk of allergies</p>
                 </div>
                 <div class="benefit text-center">
-                    <p class="font-accent-30-700">-38%</p>
-                    <p class="m-0 font-grey-18-700">Cheeper food</p>
+                    <p class="font-accent-30-700">100%</p>
+                    <p class="m-0 font-grey-18-700">Healthier food</p>
                 </div>
             </div>
         </div>
@@ -260,7 +262,7 @@
                     <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
                 </div>
                 <img class="remove-paddings" src="../../assets/bg-images/calories.png" alt="">
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.jpg')}}" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.png')}}" alt="">
             </div>
         </div>
     </section>
@@ -284,7 +286,9 @@
                         <img src="../../assets/icons/book.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">E-Book</p>
-                    <p class="description font-grey-color-400">A step-by-An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your babystep guide on how to prepare your baby for solid foods</p>
+                    <p class="description font-grey-color-400">
+                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
@@ -312,8 +316,10 @@
     <section class="active-users">
         <div class="container">
             <div class="title-box">
-                <h2 class="font-grey-32-700">1000 000+ active users</h2>
-                <p class="font-grey-color-400">This is how many parents are using our plans to feed their kids. Read their stories</p>
+                <h2 class="font-grey-32-700">125 000+ active users</h2>
+                <p class="font-grey-color-400">
+                    This is how many parents are using our plans to feed their infants. Read their stories.
+                </p>
             </div>
 
             <div class="users-block">

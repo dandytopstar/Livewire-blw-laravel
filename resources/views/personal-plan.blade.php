@@ -204,10 +204,11 @@
                     <img src="../../assets/bg-images/bg-image-plans-1.png" alt="">
                 </div>
                 <div class="content-box">
-                    <p class="font-grey-16-700">Kristine Swone</p>
-                    <p class="font-grey-color-400">Diabetes Educator</p>
-                    <p class="font-grey-color-400" style="opacity: .5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus tellus ullamcorper id urna mauris egestas praesent consectetur. Curabitur quis id nunc leo adipiscing semper sodales enim mi. Odio faucibus a lectus et feugiat cursus. Vestibulum at molestie a, id odio consectetur erat interdum.</p>
-                    <button class="btn font-white-600 btn-green-squre">Sign up for a consultation</button>
+                    <p class="font-grey-16-700">Kristine Palmer</p>
+                    <p class="font-grey-color-400">Baby-led weaning specialist</p>
+                    <p class="font-grey-color-400" style="opacity: .5;">
+                        An Expert in Baby-led weaning. Barchelor’s and a Master’s degree in Infants Nutrition and Dietetics.
+                    </p>
                 </div>
             </div>
         </div>
@@ -249,7 +250,9 @@
                         <img src="../../assets/icons/book.svg"></img>
                     </div>
                     <p class="title font-accent-18-700">E-Book</p>
-                    <p class="description font-grey-color-400">A step-by-An E-Book that includes abolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your babystep guide on how to prepare your baby for solid foods</p>
+                    <p class="description font-grey-color-400">
+                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
@@ -657,6 +660,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed font-grey-16-700 p-y-25 p-x-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -666,6 +670,19 @@
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body font-grey-color-400">
                             {!! __('front.accordion_text_3') !!}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headive">
+                        <button class="accordion-button collapsed font-grey-16-700 p-y-25 p-x-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            {{__('front.accordion_title_4')}}
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body font-grey-color-400">
+                            {!! __('front.accordion_text_4') !!}
                         </div>
                     </div>
                 </div>

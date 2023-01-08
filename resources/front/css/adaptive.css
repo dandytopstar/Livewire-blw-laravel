@@ -562,7 +562,7 @@
     }
 
     .plan-selection .content-wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .plan-selection .content-wrapper .plan_includes {
