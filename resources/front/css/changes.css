@@ -76,3 +76,8 @@
     font-weight: 700;
 }
 
+
+#carouselAdaptive .dot.active{
+    border-color: transparent;
+    background-color: var(--acent-color-green);
+}

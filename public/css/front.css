@@ -2445,4 +2445,9 @@ section.main-page .bg-image-absolute img{
 }
 
 
+#carouselAdaptive .dot.active{
+    border-color: transparent;
+    background-color: var(--acent-color-green);
+}
+
 
