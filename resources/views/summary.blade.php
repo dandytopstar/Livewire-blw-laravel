@@ -129,7 +129,9 @@
                     <img src="../../assets/icons/book.png" alt="">
                     <div class="content">
                         <p class="font-grey-500">Facts</p>
-                        <p class="font-grey-color-400">Lorem ipsum dolor sit amet, consectetur scing elit. Curabitur lectus tellus</p>
+                        <p class="font-grey-color-400">
+                            Research has shown that babies who experience BLW are less likely to choke on food as compared to those babies who are being spoon-fed.
+                        </p>
                     </div>
                 </div>
             </div>
