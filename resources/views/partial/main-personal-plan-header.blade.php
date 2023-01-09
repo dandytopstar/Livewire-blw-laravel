@@ -1,4 +1,4 @@
-<header class="header py-4">
+<header class="header  py-sm-3 py-md-4">
     <div class="container ">
         <img class="img-center" src="{{asset('assets/logo/logo-green-xl.png')}}" alt="">
     </div>
