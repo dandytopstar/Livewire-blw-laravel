@@ -287,17 +287,19 @@
                     <div class="icon-box">
                         <img src="../../assets/icons/book.svg"></img>
                     </div>
-                    <p class="title font-accent-18-700">E-Book</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_2_title')}}</p>
                     <p class="description font-grey-color-400">
-                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                        {{__('front.about_list_item_2')}}
                     </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="../../assets/icons/note.svg"></img>
                     </div>
-                    <p class="title font-accent-18-700">Meal Plan</p>
-                    <p class="description font-grey-color-400">Personalized baby-led weaning meal based on your answers from the quiz</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_3_title')}}</p>
+                    <p class="description font-grey-color-400">
+                        {{__('front.about_list_item_3')}}
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
@@ -325,98 +327,134 @@
             </div>
 
             <div class="users-block">
+
                 <div class="user">
                     <div class="img-box">
-                        <img src="../../assets/avatar/avatar-rectangle.png" alt="">
+                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">Helen Moris, 27</p>
-                        <p class="font-grey-color-400 text-center">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”</p>
+                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_1')}}</p>
+                        <p class="font-grey-color-400 text-center">
+                            {{__('front.summary_user_story_text_1')}}
+                        </p>
                     </div>
                     <button class="btn font-accent-700">Read More</button>
                 </div>
+
                 <div class="user">
                     <div class="img-box">
-                        <img src="../../assets/avatar/avatar-rectangle.png" alt="">
+                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">Helen Moris, 27</p>
-                        <p class="font-grey-color-400 text-center">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”</p>
+                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_2')}}</p>
+                        <p class="font-grey-color-400 text-center">
+                            {{__('front.summary_user_story_text_2')}}
+                        </p>
                     </div>
                     <button class="btn font-accent-700">Read More</button>
                 </div>
+
                 <div class="user">
                     <div class="img-box">
-                        <img src="../../assets/avatar/avatar-rectangle.png" alt="">
+                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">Helen Moris, 27</p>
-                        <p class="font-grey-color-400 text-center">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”</p>
-                    </div>
-                    <button class="btn font-accent-700">Read More</button>
-                </div>
-                <div class="user">
-                    <div class="img-box">
-                        <img src="../../assets/avatar/avatar-rectangle.png" alt="">
-                    </div>
-                    <div class="star-box d-flex">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                        <img src="../../assets/icons/star.svg" alt="">
-                    </div>
-                    <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">Helen Moris, 27</p>
-                        <p class="font-grey-color-400 text-center">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”</p>
+                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_3')}}</p>
+                        <p class="font-grey-color-400 text-center">
+                            {{__('front.summary_user_story_text_3')}}
+                        </p>
                     </div>
                     <button class="btn font-accent-700">Read More</button>
                 </div>
             </div>
 
-            <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel">
+            <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel" x-data="{ open: false, slider: 1 }">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-between">
                             <div class="clients-item white-shadow-box-radius-10 w-100">
-                                <div class="user">
+
+                                <div class="user" x-show="slider == 1">
                                     <div class="img-box">
-                                        <img src="../../assets/avatar/avatar-rectangle.png" alt="">
+                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
                                     </div>
                                     <div class="star-box d-flex">
-                                        <img src="../../assets/icons/star.svg" alt="">
-                                        <img src="../../assets/icons/star.svg" alt="">
-                                        <img src="../../assets/icons/star.svg" alt="">
-                                        <img src="../../assets/icons/star.svg" alt="">
-                                        <img src="../../assets/icons/star.svg" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     </div>
                                     <div class="comment-box">
-                                        <p class="font-grey-16-700 text-center">Helen Moris, 27</p>
-                                        <p class="font-grey-color-400 text-center">“The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!”</p>
+                                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_1')}}</p>
+                                        <p class="font-grey-color-400 text-center">
+                                            {{__('front.summary_user_story_text_1')}}
+                                        </p>
                                     </div>
                                     <button class="btn font-accent-700">Read More</button>
                                 </div>
+
+                                <div class="user" x-show="slider == 2">
+                                    <div class="img-box">
+                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                                    </div>
+                                    <div class="star-box d-flex">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    </div>
+                                    <div class="comment-box">
+                                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_2')}}</p>
+                                        <p class="font-grey-color-400 text-center">
+                                            {{__('front.summary_user_story_text_2')}}
+                                        </p>
+                                    </div>
+                                    <button class="btn font-accent-700">Read More</button>
+                                </div>
+
+                                <div class="user" x-show="slider == 3">
+                                    <div class="img-box">
+                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                                    </div>
+                                    <div class="star-box d-flex">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    </div>
+                                    <div class="comment-box">
+                                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_3')}}</p>
+                                        <p class="font-grey-color-400 text-center">
+                                            {{__('front.summary_user_story_text_3')}}
+                                        </p>
+                                    </div>
+                                    <button class="btn font-accent-700">Read More</button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -424,12 +462,9 @@
                 </div>
                 <div class="carousel-navigation">
                     <div class="carousel-indicators dots-box d-flex align-items-center">
-                        <div class="dot active" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
-                        <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
-                        <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
-                        <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4"></div>
-                        <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="4" aria-label="Slide 5"></div>
-                        <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="5" aria-label="Slide 6"></div>
+                        <div class="dot" type="button" x-on:click="slider = 1" x-bind:class="slider == 1 ? 'active' : ''"></div>
+                        <div class="dot" type="button" x-on:click="slider = 2" x-bind:class="slider == 2 ? 'active' : ''"></div>
+                        <div class="dot" type="button" x-on:click="slider = 3" x-bind:class="slider == 3 ? 'active' : ''"></div>
                     </div>
                 </div>
             </div>

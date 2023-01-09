@@ -95,20 +95,20 @@
             <div class="box-container d-flex justify-content-between">
                 <div class="box-item d-flex flex-column justify-content-center">
                     <div class="justify-content-center">
-                        <p class="title font-grey-18-700 text-center">Take A Quiz</p>
-                        <p class="description font-grey-color-400 m-0 text-center">Pick answers carefully so we can prepare a guide personalized exactly to your baby.</p>
+                        <p class="title font-grey-18-700 text-center">{{__('front.processes_step_title_1')}}</p>
+                        <p class="description font-grey-color-400 m-0 text-center">{{__('front.processes_step_subtitle_1')}}</p>
                     </div>
                 </div>
                 <div class="box-item d-flex flex-column justify-content-center">
                     <div class="justify-content-center">
-                        <p class="title font-grey-18-700 text-center">Get A Personalized Guide And Meal Plan</p>
-                        <p class="description font-grey-color-400 m-0 text-center">After completing the quiz, we will set up everything for your baby and deliver it to you.</p>
+                        <p class="title font-grey-18-700 text-center">{{__('front.processes_step_title_2')}}</p>
+                        <p class="description font-grey-color-400 m-0 text-center">{{__('front.processes_step_subtitle_2')}}</p>
                     </div>
                 </div>
                 <div class="box-item d-flex flex-column justify-content-center">
                     <div class="justify-content-center">
-                        <p class="title font-grey-18-700 text-center">Baby-Led Weaning Time!</p>
-                        <p class="description font-grey-color-400 m-0 text-center">Start solids by following a plan we preapared and share family mealtimes with the emphasis on conversations and quality time at the table.</p>
+                        <p class="title font-grey-18-700 text-center">{{__('front.processes_step_title_3')}}</p>
+                        <p class="description font-grey-color-400 m-0 text-center">{{__('front.processes_step_subtitle_3')}}</p>
                     </div>
                 </div>
             </div>
@@ -133,17 +133,19 @@
                     <div class="icon-box">
                         <img src="{{asset('assets/icons/book.svg')}}"></img>
                     </div>
-                    <p class="title font-accent-18-700">E-Book</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_2_title')}}</p>
                     <p class="description font-grey-color-400">
-                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                        {{__('front.about_list_item_2')}}
                     </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="{{asset('assets/icons/note.svg')}}"></img>
                     </div>
-                    <p class="title font-accent-18-700">Meal Plan</p>
-                    <p class="description font-grey-color-400">Personalized baby-led weaning meal based on your answers from the quiz</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_3_title')}}</p>
+                    <p class="description font-grey-color-400">
+                        {{__('front.about_list_item_3')}}
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">

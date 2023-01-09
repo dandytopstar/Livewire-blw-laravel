@@ -762,7 +762,8 @@ footer {
 .active-users .users-block {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25px;
 }
 
 .active-users .user {

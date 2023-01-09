@@ -229,17 +229,19 @@
                     <div class="icon-box">
                         <img src="../../assets/icons/book.svg"></img>
                     </div>
-                    <p class="title font-accent-18-700">E-Book</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_2_title')}}</p>
                     <p class="description font-grey-color-400">
-                        An E-Book that includes everything you need to know about Baby-Led Weaning.
+                        {{__('front.about_list_item_2')}}
                     </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">
                         <img src="../../assets/icons/note.svg"></img>
                     </div>
-                    <p class="title font-accent-18-700">Meal Plan</p>
-                    <p class="description font-grey-color-400">Personalized baby-led weaning meal based on your answers from the quiz</p>
+                    <p class="title font-accent-18-700">{{__('front.about_list_item_3_title')}}</p>
+                    <p class="description font-grey-color-400">
+                        {{__('front.about_list_item_3')}}
+                    </p>
                 </div>
                 <div class="plan">
                     <div class="icon-box">

@@ -40,18 +40,18 @@ return [
 
     //Hero section
     'hero_title' => 'Willing to know if your baby ir ready for baby-led weaning?',
-    'hero_subtitle' => 'Find out if your baby is ready to start solids, and get a complete step-by-step guide on starting it with a personalized baby-led weaning meal plan according to your babys age, habits, allergies, body language and parents needs!',
+    'hero_subtitle' => "Find out if your baby is ready to start solids. Get a complete step-by-step guide with a personalized baby-led weaning meal plan according to your baby's age, habits, allergies, body language, and even your needs!",
     'start_quiz' => 'Start quiz',
 
     //Processes section
     'processes_title'           => 'How It Works',
     'processes_subtitle'        => 'Start Baby-Led Weaning With A Personalized Meal Plan',
-    'processes_step_title_1'    => 'Take a quiz',
-    'processes_step_subtitle_1' => 'Pick answers carefully so we can prepare a guide personalized exactly to your baby.',
-    'processes_step_title_2'    => 'Get a personalized guide and meal plan',
+    'processes_step_title_1'    => 'Take A Quiz',
+    'processes_step_subtitle_1' => 'Pick answers carefully so we can prepare a personalized guide tailored for your baby.',
+    'processes_step_title_2'    => 'Get A Personalized Baby-led weaning plan',
     'processes_step_subtitle_2' => 'After completing the quiz, we will set up everything for your baby and deliver it to you.',
-    'processes_step_title_3'    => 'Baby-led weaning time!',
-    'processes_step_subtitle_3' => 'Start solids by following a plan we preapared and share family mealtimes with the emphasis on conversations and quality time at the table.',
+    'processes_step_title_3'    => 'Baby-Led Weaning Time!',
+    'processes_step_subtitle_3' => 'Start solids by following the plan we prepared and share family mealtimes that emphasize conversations and quality time at the table.',
 
     //About section
     'about_title'               => 'Personalized plan',
@@ -59,9 +59,9 @@ return [
     'about_list_item_1_title'   => 'Guide',
     'about_list_item_1'         => 'A step-by-step guide on how to prepare your baby for solid foods.',
     'about_list_item_2_title'   => 'E-Book',
-    'about_list_item_2'         => 'An E-Book that includes absolutely everything you need to know: how to start with baby-led weaning, how to deal with allergies, choking hazards, read babys body language and many tips on how safely introduce solid foods to your baby.',
+    'about_list_item_2'         => 'Unique E-book that includes everything you need to know about Baby-led Weaning',
     'about_list_item_3_title'   => 'Meal Plan',
-    'about_list_item_3'         => 'Personalized baby-led weaning meal based on your answers from the quiz.',
+    'about_list_item_3'         => 'A personalized baby-led weaning meal plan based on your answers from the quiz',
     'about_list_item_4_title'   => '45+ healthy recipes',
     'about_list_item_4'         => 'Nutritious, delicious and healthy recipes ideal for baby-led weaning.',
 
@@ -112,11 +112,7 @@ return [
     //question 3
     'question_3'             => 'About BLW',
     'answer_3_1'             => '',
-    'section_text_3'         => "
-        <p>Baby-led weaning (BLW) involves introducing solid/finger foods to babies and they are allowed to feed themselves.</p>
-        <p>BLW offers parents a way to bypass baby food entirely. It is popular with parents who want to avoid raising picky eaters, or encourage them to be self-sufficient.</p>
-        <p>BLW majorly emphasizes independence of the baby. Parents wait for their baby to show signs of readiness for eating and follow accordingly. Babies introduced to solids through BLW also continue breastmilk and determine when it stops.</p>
-    ",
+    'section_text_3'         => "Baby-led weaning (BLW) allows infants to transition to eating solid foods by feeding themselves. With BLW, you skip over the spoon-feeding stage altogether. This helps children be more independent and encourages them to be more adventurous eaters. BLW stresses the self-sufficiency of babies and encourages parents to follow their baby's cues. Parents can introduce solids when their baby indicates they are ready while continuing to supply breastmilk. Let your baby's signals guide you!",
     'continue_button_text_3' => 'continue',
 
     //question 4
@@ -257,10 +253,28 @@ return [
     'baby_learn_block_text_title_1' => 'TO EAT INDEPENDENTLY',
     'baby_learn_block_text_1' => 'Baby learns to eat independently and is in total control',
     'baby_learn_block_text_title_2' => 'TO CONTROL APETITE',
-    'baby_learn_block_text_2' => 'Spoon feeding increases risk of overfeeding and excess weight gain, while with BLW baby is in charge of how much to eat and learns to stop when full.',
+    'baby_learn_block_text_2' => 'Spoon feeding increases the risk of overfeeding and excess weight gain. With BLW, your baby is in charge of how much to eat and learns to stop when they are full.',
     'baby_learn_block_text_title_3' => '100 FOODS IN 100 DAYS',
     'baby_learn_block_text_3' => 'Your baby will taste 100 new foods in 100 days',
     'our_promise_title' => 'Our Promise',
     'our_promise_text' => "Individuals are somewhat skeptical about new ideas as it poses a challenge, or better put, a cloud of doubt on one's existing thoughts and awareness. In this case of baby-led weaning, there's the usual fear of the babies choking or the case of the pediatricians/nutritionists not being well-informed/trained about BLW. Therefore, our coaches and nutritionists are working incessantly to offer you a suitable meal plan and personalized routine for your babies while helping them gain confidence at an early age and reach their potential through extensive practice that includes but isn’t limited to dexterity, hand-eye coordination, etc. This is not far-fetched as this process is done at the babies’ pace, whereby they are in control of what they eat and the quantity of the new meal(s) being incorporated into their diet.",
+
+    'summary_user_story_author_1' => 'Patricia Allison, 34',
+    'summary_user_story_text_1' => "The first feeding of a child with solid food always seemed to be a scary and
+                            unfamiliar stage. I didn't know where and when to start, what food to choose, or
+                            how to react when a child choked or refused to eat. Fortunately for me, some
+                            friends recommended this platform, and now we have been eating without
+                            problems for 8 months. We have tried many different products, and our little one is
+                            completely able to feed himself.",
+    'summary_user_story_author_2' => 'Leslee Miller, 32',
+    'summary_user_story_text_2' => 'This is the best Baby-Led Weaning plan ever. Before the birth of my child, I read
+                            several books on this topic and consulted with other mothers, but I did not get the
+                            answers I wanted. However, with this personalized plan, everything was very clearly
+                            shown from A to Z. Now I can say that Baby-Led Weaning is easy!',
+    'summary_user_story_author_3' => 'Kelli Harper, 30',
+    'summary_user_story_text_3' => "I have always wanted to use Baby-Led Weaning for my children, but I had absolutely
+                            no knowledge. After visiting this site, I received a personalized plan, guide, and tons
+                            of recipes. I couldn't imagine raising my children without this detailed plan. I am
+                            extremely grateful for such a wonderful service.",
 
 ];

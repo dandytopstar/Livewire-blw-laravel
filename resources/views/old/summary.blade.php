@@ -213,7 +213,7 @@
                 <div class="col-lg-3">
                     <div class="wrap_personalized_plan">
                         <div class="personalized_plan_img"><img src="{{asset('images/footstep_2.png')}}" alt="" /></div>
-                        <div class="personalized_plan_text">E-Book</div>
+                        <div class="personalized_plan_text">{{__('front.about_list_item_2_title')}}</div>
                         <div class="personalized_plan">
                             {{__('front.personalized_plan_block_2')}}
                         </div>
