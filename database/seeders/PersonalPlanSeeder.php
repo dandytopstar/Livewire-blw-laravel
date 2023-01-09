@@ -16,7 +16,7 @@ class PersonalPlanSeeder extends Seeder
     public function run()
     {
         PersonalPlan::query()->create([
-            'name' => '3 month Babyfood Plan',
+            'name' => '3-month BLW Plan',
             'billed_period' => 'Billed every 3 months',
             'billed_price' => 59.97,
             'billed_price_old' => 85.97,
@@ -26,7 +26,7 @@ class PersonalPlanSeeder extends Seeder
         ]);
 
         PersonalPlan::query()->create([
-            'name' => '6 month Babyfood Plan',
+            'name' => '6-month BLW Plan',
             'billed_period' => 'Billed every 6 months',
             'billed_price' => 89.97,
             'billed_price_old' => 179.94,
@@ -36,7 +36,7 @@ class PersonalPlanSeeder extends Seeder
         ]);
 
         PersonalPlan::query()->create([
-            'name' => '1 month Babyfood Plan',
+            'name' => '1-month BLW Plan',
             'billed_period' => 'Billed every month',
             'payment_period' => 'per week',
             'payment_price' => 7.50,
