@@ -42,7 +42,7 @@
                 </div>
             </section>
 
-            <section class="last-section payment-section">
+            <section class="last-section payment-section mt-5">
                 <div class="container">
                     <h2 class="font-grey-32-700">Select a secure payment method</h2>
                     <div class="content-box">

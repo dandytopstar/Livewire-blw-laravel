@@ -36,13 +36,13 @@
 
     <section class="plan-selection" id="personal-plan-section">
         <div class="container">
-            <div class="title-box text-center main">
+            <div class="title-box text-center mb-3">
                 <h2 class="font-grey-color-700">Select Plan</h2>
             </div>
             <div class="content-wrapper">
                 <div class="plans w-100">
                     <div class="title-box">
-                        <h2 class="font-grey-32-700">Personalized Plann</h2>
+                        <h2 class="font-grey-24-700">Personalized Plann</h2>
                     </div>
                     <div class="plans-box">
 
@@ -96,7 +96,7 @@
                 </div>
                 <div class="plan_includes w-100">
                     <div class="title-box">
-                        <h2 class="font-grey-32-700">All plans include</h2>
+                        <h2 class="font-grey-24-700">All plans include</h2>
                     </div>
                     <div class="plans-include-wrapper">
 
@@ -105,7 +105,7 @@
                             <label class="font-grey-color-400" for="agreemnt2">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    Professional nutritionist analysis
+                                    Customized BLW Meal plan, that renews every month
                                 </span>
                             </label>
                         </div>
@@ -115,7 +115,7 @@
                             <label class="font-grey-color-400" for="agreemnt3">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    A personalized, customizable meal plan
+                                    Complete Guide to BLW
                                 </span>
                             </label>
                         </div>
@@ -125,7 +125,7 @@
                             <label class="font-grey-color-400" for="agreemnt4">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    Lots of meal and ingredient substitutions
+                                    E-Book with all the most important information
                                 </span>
                             </label>
                         </div>
@@ -140,7 +140,7 @@
                             <label class="font-grey-color-400" for="agreemnt5">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    A pocket-friendly grocery list
+                                    30+ New Recipes every month
                                 </span>
                             </label>
                         </div>
@@ -150,7 +150,7 @@
                             <label class="font-grey-color-400" for="agreemnt6">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    24/7 nutritionist support
+                                    24/7 Support
                                 </span>
                             </label>
                         </div>
@@ -160,27 +160,7 @@
                             <label class="font-grey-color-400" for="agreemnt7">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                    Easy access to the Klinio web platform and app
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt8" id="agreemnt8" class="styled-checkbox" type="checkbox" value="" checked>
-                            <label class="font-grey-color-400" for="agreemnt8">
-                                <div class="custom-checkbox"></div>
-                                <span>
                                     A downloadable and printable meal plan that you can access with any device
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt9" id="agreemnt9" class="styled-checkbox" type="checkbox" value="" checked>
-                            <label class="font-grey-color-400" for="agreemnt9">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    Full assistance when calculating carbs, sugar, cholesterol and other metrics
                                 </span>
                             </label>
                         </div>

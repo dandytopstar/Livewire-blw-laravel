@@ -1,5 +1,5 @@
-<section class="mt-40">
-    <div class="container dark-accent border-radius-10 p-y-25 p-x-30 font-white-700 d-flex time-section">
+<section class="my-3">
+    <div class="container dark-accent border-radius-10 py-3 font-white-700-22 d-flex time-section">
         <p>The offer expires in:</p>
         <div class="d-flex">
             <div class="text-center">
