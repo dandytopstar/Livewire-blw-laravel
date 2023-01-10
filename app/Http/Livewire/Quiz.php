@@ -27,7 +27,7 @@ class Quiz extends Component
 
     public array $countQuestionsDots;
 
-    public int $rangeData = 1;
+    public string $rangeData = '1';
 
     public function mount()
     {

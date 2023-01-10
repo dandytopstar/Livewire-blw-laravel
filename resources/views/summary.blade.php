@@ -181,7 +181,7 @@
                     <h2 class="font-grey-18-700">Calorie Intake</h2>
                     <p class="font-grey-color-400">Recommended daily calorie intake for 6 - 12 months old babies</p>
                 </div>
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.png')}}" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/calories-adaptive.png')}}" alt="" style="max-width: 250px;">
             </div>
         </div>
     </section>
@@ -330,7 +330,7 @@
 
                 <div class="user">
                     <div class="img-box">
-                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                        <img src="{{asset('assets/avatar/avatar_lesli.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -345,12 +345,12 @@
                             {{__('front.summary_user_story_text_1')}}
                         </p>
                     </div>
-                    <button class="btn font-accent-700">Read More</button>
+                    
                 </div>
 
                 <div class="user">
                     <div class="img-box">
-                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                        <img src="{{asset('assets/avatar/avatar_patricia.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -365,12 +365,12 @@
                             {{__('front.summary_user_story_text_2')}}
                         </p>
                     </div>
-                    <button class="btn font-accent-700">Read More</button>
+                    
                 </div>
 
                 <div class="user">
                     <div class="img-box">
-                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                        <img src="{{asset('assets/avatar/avatar_kelli.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -385,7 +385,7 @@
                             {{__('front.summary_user_story_text_3')}}
                         </p>
                     </div>
-                    <button class="btn font-accent-700">Read More</button>
+                    
                 </div>
             </div>
 
@@ -397,7 +397,7 @@
 
                                 <div class="user" x-show="slider == 1">
                                     <div class="img-box">
-                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                                        <img src="{{asset('assets/avatar/avatar_lesli.jpg')}}" alt="">
                                     </div>
                                     <div class="star-box d-flex">
                                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -412,12 +412,12 @@
                                             {{__('front.summary_user_story_text_1')}}
                                         </p>
                                     </div>
-                                    <button class="btn font-accent-700">Read More</button>
+                                    
                                 </div>
 
                                 <div class="user" x-show="slider == 2">
                                     <div class="img-box">
-                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                                        <img src="{{asset('assets/avatar/avatar_patricia.jpg')}}" alt="">
                                     </div>
                                     <div class="star-box d-flex">
                                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -432,12 +432,12 @@
                                             {{__('front.summary_user_story_text_2')}}
                                         </p>
                                     </div>
-                                    <button class="btn font-accent-700">Read More</button>
+                                    
                                 </div>
 
                                 <div class="user" x-show="slider == 3">
                                     <div class="img-box">
-                                        <img src="{{asset('assets/avatar/avatar-rectangle.png')}}" alt="">
+                                        <img src="{{asset('assets/avatar/avatar_kelli.jpg')}}" alt="">
                                     </div>
                                     <div class="star-box d-flex">
                                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -452,7 +452,7 @@
                                             {{__('front.summary_user_story_text_3')}}
                                         </p>
                                     </div>
-                                    <button class="btn font-accent-700">Read More</button>
+                                    
                                 </div>
 
                             </div>

@@ -80,7 +80,7 @@
                         @endforeach
 
                         <div class="checkbox-box">
-                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="">
+                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="" disabled>
                             <label class="font-grey-color-400" for="plan-checkbox">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -101,7 +101,7 @@
                     <div class="plans-include-wrapper">
 
                         <div class="checkbox-box check-plan">
-                            <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt2">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -111,7 +111,7 @@
                         </div>
 
                         <div class="checkbox-box check-plan">
-                            <input name="agreemnt3" id="agreemnt3" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt3" id="agreemnt3" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt3">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -121,7 +121,7 @@
                         </div>
 
                         <div class="checkbox-box check-plan">
-                            <input name="agreemnt4" id="agreemnt4" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt4" id="agreemnt4" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt4">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -136,7 +136,7 @@
                         </div>
 
                         <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt5" id="agreemnt5" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt5" id="agreemnt5" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt5">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -146,7 +146,7 @@
                         </div>
 
                         <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt6" id="agreemnt6" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt6" id="agreemnt6" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt6">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -156,7 +156,7 @@
                         </div>
 
                         <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt7" id="agreemnt7" class="styled-checkbox" type="checkbox" value="" checked>
+                            <input name="agreemnt7" id="agreemnt7" class="styled-checkbox" type="checkbox" value="" checked disabled>
                             <label class="font-grey-color-400" for="agreemnt7">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -197,8 +197,40 @@
     <section class="program adaptive">
         <div class="container">
             <div class="content-box">
-                <h3 class="font-grey-32-700">Get a baby-led program that will change your babys life completely</h3>
-                <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
+                <h3 class="font-grey-32-700 text-center">Get Baby-led Weaning program that will change your baby’s life completely</h3>
+                <div class="w-100 my-3 p-1">
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                Customized BLW meal plans for babies
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                100+ delicious and healthy recipes
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                Professional guide to Baby-led Weaning
+                            </span>
+                        </label>
+                    </div>
+
+                </div>
                 <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
                     Get Your Plan
                 </a>
@@ -262,8 +294,42 @@
     <section class="program">
         <div class="container">
             <div class="content-box">
-                <h3 class="font-grey-32-700">Get a baby-led program that will change your babys life completely</h3>
-                <p class="font-grey-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus pulvinar eu arcu vivamus odio bibendum aliquet. </p>
+                <h3 class="font-grey-32-700">Get Baby-led Weaning program that will change your baby’s life completely</h3>
+
+                <div class="my-5">
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                Customized BLW meal plans for babies
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                100+ delicious and healthy recipes
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-box check-plan my-3">
+                        <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
+                        <label class="font-grey-color-400" for="agreemnt2">
+                            <div class="custom-checkbox"></div>
+                            <span>
+                                Professional guide to Baby-led Weaning
+                            </span>
+                        </label>
+                    </div>
+
+                </div>
+
                 <a href="#personal-plan-section" type="button" class="btn font-white-600 btn-green-squre">
                     Get Your Plan
                 </a>
@@ -287,128 +353,49 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-between">
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
+
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/1.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/2.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/3.png')}}" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
+{{--                                <div class="clients-item white-shadow-box-radius-10">--}}
+{{--                                    <div class="clients-inf d-flex">--}}
+{{--                                        <div class="avatar-box">--}}
+{{--                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">--}}
+{{--                                            <div>--}}
+{{--                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>--}}
+{{--                                                <div class="star-box d-flex">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <p class="date font-grey-500">15 Mar, 2022</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="clients-comment">--}}
+{{--                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </div>
@@ -434,168 +421,52 @@
 
                 <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel">
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
-                            <div class="d-flex justify-content-between">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="{{asset('assets/stories/1.png')}}" class="img-fluid" alt="">
                         </div>
+
                         <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="{{asset('assets/stories/2.png')}}" class="img-fluid" alt="">
                         </div>
+
                         <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="{{asset('assets/stories/3.png')}}" class="img-fluid" alt="">
                         </div>
+
                         <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                         </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 w-100">
-                                    <div class="clients-inf d-flex">
-                                        <div class="avatar-box">
-                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">
-                                        </div>
-                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">
-                                            <div>
-                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>
-                                                <div class="star-box d-flex">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                    <img src="../../assets/icons/star.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p class="date font-grey-500">15 Mar, 2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="clients-comment">
-                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+{{--                        <div class="carousel-item">--}}
+{{--                            <div class="d-flex">--}}
+{{--                                <div class="clients-item white-shadow-box-radius-10 w-100">--}}
+{{--                                    <div class="clients-inf d-flex">--}}
+{{--                                        <div class="avatar-box">--}}
+{{--                                            <img src="../../assets/avatar/avatar-100.jpg" alt="">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="author-inf d-flex justify-content-between w-100 pt-3">--}}
+{{--                                            <div>--}}
+{{--                                                <p class="font-grey-16-700 name">Helen Moris, 27</p>--}}
+{{--                                                <div class="star-box d-flex">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                    <img src="../../assets/icons/star.svg" alt="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <p class="date font-grey-500">15 Mar, 2022</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="clients-comment">--}}
+{{--                                        <p class="font-grey-color-400">The best food for my baby for this time. It made my life easier and I am really  gratefull for this!! Recomend for everyone!</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                     <div class="carousel-navigation">
                         <div class="carousel-indicators dots-box d-flex align-items-center">
@@ -603,8 +474,6 @@
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="4" aria-label="Slide 5"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="5" aria-label="Slide 6"></div>
                         </div>
                     </div>
                 </div>
