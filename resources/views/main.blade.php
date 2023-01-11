@@ -7,7 +7,7 @@
             <nav class="navbar navbar-expand-lg fullscreen-header">
                 <div class="d-flex p-0 w-100 header-box">
                     <div class="logo-container d-flex align-items-center">
-                        <img src="{{asset('assets/logo/logo-green-xl.png')}}" alt="">
+                        <img src="{{asset('assets/logo/main-logo.png')}}" alt="">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

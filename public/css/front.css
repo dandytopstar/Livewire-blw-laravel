@@ -2474,4 +2474,16 @@ section.main-page .bg-image-absolute img{
     margin-right: 5px;
 }
 
+.desktop-logo {
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    header.summary img {
+        display: none;
+        width: 272px;
+    }
+}
+
+
 
