@@ -80,7 +80,7 @@
                         @endforeach
 
                         <div class="checkbox-box">
-                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="" disabled>
+                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="">
                             <label class="font-grey-color-400" for="plan-checkbox">
                                 <div class="custom-checkbox"></div>
                                 <span>
