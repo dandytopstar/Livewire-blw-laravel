@@ -2450,4 +2450,28 @@ section.main-page .bg-image-absolute img{
     background-color: var(--acent-color-green);
 }
 
+.first-graphic {
+    background: url('/assets/bg-images/bg-curious-baby.png') no-repeat !important;
+    background-position: bottom 0px right 0px !important;
+}
+
+.first-graphic span{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 10px;
+}
+
+.first-graphic-adaptive {
+    background: url('/assets/bg-images/bg-curious-baby-adaptive.png') no-repeat !important;
+    background-position: bottom 0px right 0px !important;
+}
+
+.first-graphic-adaptive span{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 5px;
+}
+
 

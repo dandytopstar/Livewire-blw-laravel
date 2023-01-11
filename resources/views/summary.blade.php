@@ -169,12 +169,43 @@
 
     <section class="graphic adaptive">
         <div class="container">
-            <div class="block">
+            <div class="block first-graphic-adaptive">
                 <div>
                     <h2 class="font-grey-18-700">Daily Macronutrients</h2>
-                    <p class="font-grey-color-400">Most important nutrients in a baby’s diet</p>
+                    <p class="font-grey-color-400">Recommended nutrients for your baby</p>
+
+                    <div class="row text-start" style="font-size: 14px">
+                        <div class="col-6">
+                            <p class="my-4">
+                                <span style="color: #10FF28;">1 —</span> Protein
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #00A17B;">2 —</span> Calcium
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #1BC7C7;">1 —</span> Carbs
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #AFE21C;">2 —</span> Vitamins
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="my-4">
+                                <span style="color: #04FBC0;">5 —</span> Fats
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #EBEF3C;">6 —</span> Iron
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #FCBD82;">7 —</span> Omega-3
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #FFE600;">8 —</span> Fluids
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/nutrients-adaptive.jpg')}}" alt="">
+{{--                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/nutrients-adaptive.jpg')}}" alt="">--}}
             </div>
             <div class="block">
                 <div>
@@ -250,13 +281,42 @@
 
     <section class="graphic">
         <div class="container">
-            <div class="block">
+            <div class="block first-graphic">
                 <div>
                     <h2 class="font-grey-18-700">Daily Macronutrients</h2>
-                    <p class="font-grey-color-400">Most important nutrients in a baby’s diet</p>
+                    <p class="font-grey-color-400">ecommended nutrients for your baby</p>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="my-4">
+                                <span style="color: #10FF28;">1 —</span> Protein
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #00A17B;">2 —</span> Calcium
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #1BC7C7;">1 —</span> Carbs
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #AFE21C;">2 —</span> Vitamins
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="my-4">
+                                <span style="color: #04FBC0;">5 —</span> Fats
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #EBEF3C;">6 —</span> Iron
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #FCBD82;">7 —</span> Omega-3
+                            </p>
+                            <p class="my-4">
+                                <span style="color: #FFE600;">8 —</span> Fluids
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img src="../../assets/bg-images/nutrients.png" alt="">
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/nutrients-adaptive.jpg')}}" alt="">
             </div>
             <div class="block">
                 <div>
