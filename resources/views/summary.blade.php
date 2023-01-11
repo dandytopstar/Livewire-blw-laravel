@@ -183,10 +183,10 @@
                                 <span style="color: #00A17B;">2 —</span> Calcium
                             </p>
                             <p class="my-4">
-                                <span style="color: #1BC7C7;">1 —</span> Carbs
+                                <span style="color: #1BC7C7;">3 —</span> Carbs
                             </p>
                             <p class="my-4">
-                                <span style="color: #AFE21C;">2 —</span> Vitamins
+                                <span style="color: #AFE21C;">4 —</span> Vitamins
                             </p>
                         </div>
                         <div class="col-6">
