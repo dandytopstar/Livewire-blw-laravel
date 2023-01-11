@@ -373,6 +373,14 @@
                                     <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                                 </div>
 
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/5.png')}}" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                    <img src="{{asset('assets/stories/6.png')}}" class="img-fluid" alt="">
+                                </div>
+
 {{--                                <div class="clients-item white-shadow-box-radius-10">--}}
 {{--                                    <div class="clients-inf d-flex">--}}
 {{--                                        <div class="avatar-box">--}}
@@ -438,6 +446,14 @@
                             <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                         </div>
 
+                        <div class="carousel-item">
+                            <img src="{{asset('assets/stories/5.png')}}" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{{asset('assets/stories/6.png')}}" class="img-fluid" alt="">
+                        </div>
+
 
 
 {{--                        <div class="carousel-item">--}}
@@ -474,6 +490,8 @@
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4"></div>
+                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="4" aria-label="Slide 5"></div>
+                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="5" aria-label="Slide 6"></div>
                         </div>
                     </div>
                 </div>
