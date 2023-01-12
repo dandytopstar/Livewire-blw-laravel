@@ -203,7 +203,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 Customized BLW meal plans for babies
                             </span>
@@ -213,7 +213,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 100+ delicious and healthy recipes
                             </span>
@@ -223,7 +223,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 Professional guide to Baby-led Weaning
                             </span>
@@ -301,7 +301,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 Customized BLW meal plans for babies
                             </span>
@@ -311,7 +311,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 100+ delicious and healthy recipes
                             </span>
@@ -321,7 +321,7 @@
                     <div class="checkbox-box check-plan my-3">
                         <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
                         <label class="font-grey-color-400" for="agreemnt2">
-                            <div class="custom-checkbox"></div>
+                            <div class="custom-checkbox-circle"></div>
                             <span>
                                 Professional guide to Baby-led Weaning
                             </span>
@@ -355,7 +355,7 @@
                             <div class="d-flex justify-content-between">
 
                                 <div class="clients-item white-shadow-box-radius-10 p-1">
-                                    <img src="{{asset('assets/stories/1.png')}}" class="img-fluid" alt="">
+                                    <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                                 </div>
 
                                 <div class="clients-item white-shadow-box-radius-10 p-1">
@@ -370,7 +370,7 @@
                         <div class="carousel-item">
                             <div class="d-flex">
                                 <div class="clients-item white-shadow-box-radius-10 p-1">
-                                    <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
+                                    <img src="{{asset('assets/stories/1.png')}}" class="img-fluid" alt="">
                                 </div>
 
                                 <div class="clients-item white-shadow-box-radius-10 p-1">

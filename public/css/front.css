@@ -2485,5 +2485,20 @@ section.main-page .bg-image-absolute img{
     }
 }
 
+.checkbox-box input:checked + label .custom-checkbox-circle {
+    content: '';
+    background: url(/assets/icons/check_white.png);
+    left: 0;
+    top: 0;
+    width: 24px;
+    background-repeat: no-repeat;
+    height: 24px;
+    background-position-x: center;
+    background-position-y: 6px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: rgba(0, 189, 144, 0.6);
+}
+
 
 
