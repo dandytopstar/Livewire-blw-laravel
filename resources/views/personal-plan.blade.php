@@ -354,30 +354,30 @@
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-between">
 
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/4.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/2.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/3.png')}}" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="d-flex">
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/1.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/5.png')}}" class="img-fluid" alt="">
                                 </div>
 
-                                <div class="clients-item white-shadow-box-radius-10 p-1">
+                                <div class="clients-item p-1">
                                     <img src="{{asset('assets/stories/6.png')}}" class="img-fluid" alt="">
                                 </div>
 
