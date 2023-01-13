@@ -6,7 +6,7 @@
                 <img class="adaptive" src="{{asset('assets/logo/main-logo.png')}}" alt="">
             </div>
 
-            <div>
+            <div class="summary-header-btn">
                 <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                     {{__('front.get_your_plan')}}
                 </a>

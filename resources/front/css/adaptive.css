@@ -814,5 +814,9 @@
         height: 36px;
         margin-top: 7px;
     }
+
+    .summary-header-btn {
+        display: none;
+    }
 }
 
