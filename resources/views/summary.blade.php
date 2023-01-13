@@ -245,7 +245,7 @@
 
                 <div class="day">
                     <div class="header font-accent-30-700 text-center">
-                        in 67 days
+                        in 100 days
                     </div>
                     <div class="description text-center">
                         <p class="font-grey-18-700">{{__('front.baby_learn_block_text_title_3')}}</p>
