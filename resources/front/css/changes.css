@@ -10,33 +10,7 @@
     width: 100%;
 }
 
-.graphic.adaptive,
-.program.adaptive {
-    display: none;
-}
 
-.graphic,
-.program {
-    display: block;
-}
-
-@media (max-width: 576px) {
-    .header.summary img {
-        width: 170px;
-        height: 25px;
-        margin-top: 7px;
-    }
-
-    .graphic,
-    .program {
-        display: none;
-    }
-
-    .graphic.adaptive,
-    .program.adaptive {
-        display: block;
-    }
-}
 
 .section.quizz-box .content-box .option.q-cols {
     background: #FFFFFF;
@@ -108,13 +82,6 @@
 
 .desktop-logo {
     max-width: 300px;
-}
-
-@media (max-width: 768px) {
-    header.summary img {
-        display: none;
-        width: 272px;
-    }
 }
 
 .checkbox-box input:checked + label .custom-checkbox-circle {

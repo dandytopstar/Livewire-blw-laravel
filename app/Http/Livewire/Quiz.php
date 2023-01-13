@@ -127,48 +127,47 @@ class Quiz extends Component
                 'bottom_image_name' => 'bg-quizz-3.png',
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-3.png',
             ],
+
             '5' => [
                 'question_key' => 'can_sit',
-                'question' => trans('front.question_5'),
+                'question' => 'Can your baby sit without any support?',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_5_1'),
-                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'text' => 'yes',
+                        'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_5_2'),
-                        'image'  => 'front/assets/images/quiz/quiz_boy.png',
+                        'text' => 'no',
+                        'image'  => '',
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => trans('front.section_text_5'),
                 'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_5'),
+                'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => true,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'left',
                 'bottom_image_name' => 'bg-quizz-4.png',
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-4.png',
             ],
+
             '6' => [
                 'question_key' => 'can_grab',
-                'question' => trans('front.question_6'),
+                'question' => 'Can your baby grab things by himself?',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_6_1'),
+                        'text' => 'yes',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_6_2'),
+                        'text' => 'no',
                         'image'  => '',
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => trans('front.section_text_6'),
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_6'),
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
                 'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'right',
@@ -177,22 +176,20 @@ class Quiz extends Component
             ],
             '7' => [
                 'question_key' => 'can_put_things',
-                'question' => trans('front.question_7'),
+                'question' => 'Is you baby putting things in his mouth instinctively?',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_7_1'),
+                        'text' => 'yes',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_7_2'),
+                        'text' => 'no',
                         'image'  => '',
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => trans('front.section_text_7'),
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_7'),
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
                 'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'left',
@@ -202,27 +199,25 @@ class Quiz extends Component
 
             '8' => [
                 'question_key' => 'can_chew',
-                'question' => trans('front.question_8'),
+                'question' => 'Is you baby performing chewing movements with for ex. toys?',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_8_1'),
+                        'text' => 'yes',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_8_2'),
+                        'text' => 'no',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '3' => [
-                        'text' => trans('front.answer_8_3'),
+                        'text' => 'not sure',
                         'image'  => '',
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => trans('front.section_text_8'),
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_9'),
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
                 'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'right',
@@ -265,9 +260,7 @@ class Quiz extends Component
                         'selected'  => false,
                     ]
                 ],
-                'section_text' => '',
-                'section_image' => '',
-                'continue_button_text' => 'continue',
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
                 'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'left',
@@ -281,9 +274,7 @@ class Quiz extends Component
                 'min' => '1',
                 'max' => '92',
                 'range_name' => 'lbs',
-                'section_text' => '',
-                'section_image' => '',
-                'continue_button_text' => 'continue',
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
                 'has_answers' => false, 'image_before' => false, 'range_slider' => true, 'input' => true,
                 'bottom_image' => true, 'bottom_image_position' => 'left',

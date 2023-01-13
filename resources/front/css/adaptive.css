@@ -101,6 +101,7 @@
 
     header.summary img {
         display: none;
+        width: 272px;
     }
 
     header.summary img.adaptive {
@@ -705,6 +706,7 @@
     }
 
 }
+
 @media (max-width: 1400px) {
 }
 
@@ -779,7 +781,19 @@
     }
 
     .header.summary img {
-        width: 130px;
+        width: 170px;
+        height: 25px;
+        margin-top: 7px;
+    }
+
+    .graphic,
+    .program {
+        display: none;
+    }
+
+    .graphic.adaptive,
+    .program.adaptive {
+        display: block;
     }
 
 
@@ -789,4 +803,16 @@
     }
 
     }
+
+@media (max-width: 494px) {
+    .summary-header-logo {
+        justify-content: center !important;
+    }
+
+    .header.summary img {
+        width: 250px;
+        height: 36px;
+        margin-top: 7px;
+    }
+}
 

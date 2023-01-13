@@ -1112,6 +1112,21 @@ section.program {
     display: none;
 }
 
+.summary-header-logo {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+
+.graphic.adaptive,
+.program.adaptive {
+    display: none;
+}
+
+.graphic,
+.program {
+    display: block;
+}
 
 
 

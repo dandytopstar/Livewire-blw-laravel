@@ -7,20 +7,20 @@
                         <img src="{{asset('assets/logo/blw-logo-white-small.png')}}" alt="">
                     </div>
                     <div class="nav-menu">
-                        <ul class="navbar-nav d-flex">
-                            <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">How It Works</a>
-                            </li>
-                            <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">Personalized Plan</a>
-                            </li>
-                            <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#">Baby-Led Weaning</a>
-                            </li>
-                        </ul>
+{{--                        <ul class="navbar-nav d-flex">--}}
+{{--                            <li class="nav-item list-unstyled">--}}
+{{--                                <a class="nav-link font-white-400 p-0" aria-current="page" href="#">Home</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item list-unstyled">--}}
+{{--                                <a class="nav-link font-white-400 p-0" href="#">How It Works</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item list-unstyled">--}}
+{{--                                <a class="nav-link font-white-400 p-0" href="#">Personalized Plan</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item list-unstyled">--}}
+{{--                                <a class="nav-link font-white-400 p-0" href="#">Baby-Led Weaning</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
                 <div class="actions">

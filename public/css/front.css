@@ -1139,6 +1139,21 @@ section.program {
     display: none;
 }
 
+.summary-header-logo {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+
+.graphic.adaptive,
+.program.adaptive {
+    display: none;
+}
+
+.graphic,
+.program {
+    display: block;
+}
 
 
 
@@ -1676,6 +1691,7 @@ section.main-page .bg-image-absolute img{
 
     header.summary img {
         display: none;
+        width: 272px;
     }
 
     header.summary img.adaptive {
@@ -2280,6 +2296,7 @@ section.main-page .bg-image-absolute img{
     }
 
 }
+
 @media (max-width: 1400px) {
 }
 
@@ -2354,42 +2371,6 @@ section.main-page .bg-image-absolute img{
     }
 
     .header.summary img {
-        width: 130px;
-    }
-
-
-    .header.summary button {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    }
-
-
-.readmore {
-    display: none;
-}
-
-.logo-container {
-    width: 180px;
-}
-
-.logo-container img{
-    width: 100%;
-}
-
-.graphic.adaptive,
-.program.adaptive {
-    display: none;
-}
-
-.graphic,
-.program {
-    display: block;
-}
-
-@media (max-width: 576px) {
-    .header.summary img {
         width: 170px;
         height: 25px;
         margin-top: 7px;
@@ -2404,7 +2385,41 @@ section.main-page .bg-image-absolute img{
     .program.adaptive {
         display: block;
     }
+
+
+    .header.summary button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    }
+
+@media (max-width: 494px) {
+    .summary-header-logo {
+        justify-content: center !important;
+    }
+
+    .header.summary img {
+        width: 250px;
+        height: 36px;
+        margin-top: 7px;
+    }
 }
+
+
+.readmore {
+    display: none;
+}
+
+.logo-container {
+    width: 180px;
+}
+
+.logo-container img{
+    width: 100%;
+}
+
+
 
 .section.quizz-box .content-box .option.q-cols {
     background: #FFFFFF;
@@ -2476,13 +2491,6 @@ section.main-page .bg-image-absolute img{
 
 .desktop-logo {
     max-width: 300px;
-}
-
-@media (max-width: 768px) {
-    header.summary img {
-        display: none;
-        width: 272px;
-    }
 }
 
 .checkbox-box input:checked + label .custom-checkbox-circle {

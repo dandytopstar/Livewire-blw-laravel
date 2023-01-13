@@ -9,7 +9,7 @@
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">Based on your answers, your baby <span class="font-accent-40-700">ready for solid food!</span></p>
-                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your son</p>
+                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your baby</p>
                 </div>
                 <div class="notice-box d-flex w-100 justify-content-between align-items-center">
                     <img src="../../assets/icons/book.png" alt="">
@@ -91,7 +91,7 @@
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">Based on your answers, your baby <span class="font-accent-40-700">ready for solid food!</span></p>
-                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your son</p>
+                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your baby</p>
                 </div>
             </div>
             <div class="diagram-box">

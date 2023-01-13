@@ -188,17 +188,21 @@
         @endif
     @endif
 
+
+
 </div>
+
+
 
 <script>
     window.addEventListener('answer-selected', event => {
 
         if(event.detail.answers) {
-
             let questionKey = event.detail.key;
             let answers = event.detail.answers;
 
             for (let key in answers) {
+
                 let selectedAnswer = document.querySelector("#"+questionKey+"-"+key);
 
                 if(answers[key].selected) {

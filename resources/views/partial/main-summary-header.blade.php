@@ -1,11 +1,17 @@
 <header class="header summary">
     <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="summary-header-logo" style="flex-wrap: wrap;">
             <img src="{{asset('assets/logo/main-logo.png')}}" alt="" class="desktop-logo">
-            <img class="adaptive" src="{{asset('assets/logo/main-logo.png')}}" alt="">
-            <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
-                {{__('front.get_your_plan')}}
-            </a>
+            <div>
+                <img class="adaptive" src="{{asset('assets/logo/main-logo.png')}}" alt="">
+            </div>
+
+            <div>
+                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    {{__('front.get_your_plan')}}
+                </a>
+            </div>
+
         </div>
     </div>
 </header>
