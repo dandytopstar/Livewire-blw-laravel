@@ -395,7 +395,7 @@
     .plan-selection .plan:not(:last-child) {
         margin-bottom: 20px;
     }
-    
+
     .plan-selection .plan.active:before {
 
     }
