@@ -175,15 +175,15 @@
 
     @endif
 
-    @if(!empty($currentQuestion['bottom_image']) && $currentQuestion['bottom_image'])
-        @if($currentQuestion['bottom_image_position'] == 'left')
-            <img class="bg-bottom-left" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">
-        @endif
+{{--    @if(!empty($currentQuestion['bottom_image']) && $currentQuestion['bottom_image'])--}}
+{{--        @if($currentQuestion['bottom_image_position'] == 'left')--}}
+{{--            <img class="bg-bottom-left" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">--}}
+{{--        @endif--}}
 
-        @if($currentQuestion['bottom_image_position'] == 'right')
-                <img class="bg-bottom-right" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">
-        @endif
-    @endif
+{{--        @if($currentQuestion['bottom_image_position'] == 'right')--}}
+{{--                <img class="bg-bottom-right" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">--}}
+{{--        @endif--}}
+{{--    @endif--}}
 
 
 
