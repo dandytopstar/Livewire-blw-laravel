@@ -21,7 +21,7 @@
                     <div  class="your_baby_summary_left">Your baby summary</div>
                 </div>
                 <div class="col-lg-6 col-6">
-                    <div  class="your_baby_summary_right">{{$gender}}, {{$age}}, {{$weight}}</div>
+                    <div  class="your_baby_summary_right">{{$gender}}, {{$weight}}</div>
                 </div>
             </div>
         </div>

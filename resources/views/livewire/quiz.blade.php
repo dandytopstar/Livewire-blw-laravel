@@ -23,9 +23,6 @@
                         <p class="font-accent-700">{{__('front.choose_your_option')}}</p>
                         @if(!empty($currentQuestion['question']))
                             <h2 class="font-grey-32-700">{{$currentQuestion['question']}}</h2>
-                            @if($currentQuestionNum == 1)
-                                <p class="description font-grey-color-400"> {{__('front.prepared_weaning_meal')}}</p>
-                            @endif
                             @if(!empty($currentQuestion['section_text']))
                                 <p class="description font-grey-color-400">
                                     {!! $currentQuestion['section_text']!!}
@@ -135,13 +132,13 @@
                 <img src="{{asset('assets/icons/back-arrow.png')}}">
             </button>
 
-            @if(!empty($currentQuestion['bottom_image_adaptive']))
-                <img
-                        class="bg-bottom-center-adaptive"
-                        src="{{asset($currentQuestion['bottom_image_adaptive'])}}"
-                        alt="" style="max-width: 200px"
-                >
-            @endif
+{{--            @if(!empty($currentQuestion['bottom_image_adaptive']))--}}
+{{--                <img--}}
+{{--                        class="bg-bottom-center-adaptive"--}}
+{{--                        src="{{asset($currentQuestion['bottom_image_adaptive'])}}"--}}
+{{--                        alt="" style="max-width: 200px"--}}
+{{--                >--}}
+{{--            @endif--}}
 
 
         </div>

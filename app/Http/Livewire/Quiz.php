@@ -47,9 +47,9 @@ class Quiz extends Component
                         'selected'  => false,
                     ],
                 ],
-                'section_text' => trans('front.section_text_1'),
+                'section_text' => '',
                 'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_1'),
+                'continue_button_text' => '',
                 'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
                 'has_answers' => true, 'image_before' => false, 'range_slider' => false,
                 'bottom_image' => true, 'bottom_image_position' => 'left',
@@ -154,7 +154,7 @@ class Quiz extends Component
 
             '6' => [
                 'question_key' => 'can_grab',
-                'question' => 'Can your baby grab things by himself?',
+                'question' => 'Can your baby grab things by themselves?',
                 'answers' => [
                     '1' => [
                         'text' => 'yes',
@@ -176,7 +176,7 @@ class Quiz extends Component
             ],
             '7' => [
                 'question_key' => 'can_put_things',
-                'question' => 'Is you baby putting things in his mouth instinctively?',
+                'question' => 'Is your baby putting things in their mouth instinctively?',
                 'answers' => [
                     '1' => [
                         'text' => 'yes',
@@ -225,51 +225,52 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
 
+//            '9' => [
+//                'question_key' => 'foods_prefer',
+//                'question' => 'Do you prefer not to eat any of these foods?',
+//                'answers' => [
+//                    '1' => [
+//                        'text' => 'fish',
+//                        'image'  => 'assets/quiz/meal-1.png',
+//                        'selected'  => false,
+//                    ],
+//                    '2' => [
+//                        'text' => 'dairy',
+//                        'image'  => 'assets/quiz/meal-2.png',
+//                        'selected'  => false,
+//                    ],
+//                    '3' => [
+//                        'text' => 'eggs',
+//                        'image'  => 'assets/quiz/meal-3.png',
+//                        'selected'  => false,
+//                    ],
+//                    '4' => [
+//                        'text' => 'poultry',
+//                        'image'  => 'assets/quiz/meal-4.png',
+//                        'selected'  => false,
+//                    ],
+//                    '5' => [
+//                        'text' => 'beef',
+//                        'image'  => 'assets/quiz/meal-5.png',
+//                        'selected'  => false,
+//                    ],
+//                    '6' => [
+//                        'text' => 'pork',
+//                        'image'  => 'assets/quiz/meal-6.png',
+//                        'selected'  => false,
+//                    ]
+//                ],
+//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
+//                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
+//                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+//                'bottom_image' => true, 'bottom_image_position' => 'left',
+//                'bottom_image_name' => 'bg-quizz-7.png',
+//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
+//            ],
+
             '9' => [
-                'question_key' => 'foods_prefer',
-                'question' => 'Do you prefer not to eat any of these foods?',
-                'answers' => [
-                    '1' => [
-                        'text' => 'fish',
-                        'image'  => 'assets/quiz/meal-1.png',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'dairy',
-                        'image'  => 'assets/quiz/meal-2.png',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => 'eggs',
-                        'image'  => 'assets/quiz/meal-3.png',
-                        'selected'  => false,
-                    ],
-                    '4' => [
-                        'text' => 'poultry',
-                        'image'  => 'assets/quiz/meal-4.png',
-                        'selected'  => false,
-                    ],
-                    '5' => [
-                        'text' => 'beef',
-                        'image'  => 'assets/quiz/meal-5.png',
-                        'selected'  => false,
-                    ],
-                    '6' => [
-                        'text' => 'pork',
-                        'image'  => 'assets/quiz/meal-6.png',
-                        'selected'  => false,
-                    ]
-                ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-7.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
-            ],
-            '10' => [
                 'question_key' => 'weight',
-                'question' => 'What is the weight of your baby?',
+                'question' => 'What is your baby’s weight?',
                 'answers' => [],
                 'min' => '1',
                 'max' => '92',

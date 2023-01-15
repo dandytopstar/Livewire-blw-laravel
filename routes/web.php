@@ -21,8 +21,8 @@ use App\Http\Controllers\SubscriptionController;
 */
 Route::view('welcome', 'welcome');
 
-//Route::view('terms', 'terms')->name('terms');
-//Route::view('policy', 'policy')-
+Route::view('terms', 'terms')->name('terms');
+Route::view('policy', 'policy')->name('policy');
 
 //redesign
 //-----------------

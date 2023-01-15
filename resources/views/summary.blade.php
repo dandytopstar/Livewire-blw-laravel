@@ -62,8 +62,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-500">Your babys weight</p>
-                                <p class="font-grey-color-400">similar to 93% his age boys</p>
+                                <p class="font-grey-color-400">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal
@@ -141,8 +140,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-500">Your babys weight</p>
-                                <p class="font-grey-color-400">similar to 93% his age boys</p>
+                                <p class="font-grey-color-400">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal
@@ -235,7 +233,7 @@
 
                 <div class="day">
                     <div class="header font-accent-30-700 text-center">
-                        in 21 days
+                        in 92 days
                     </div>
                     <div class="description text-center">
                         <p class="font-grey-18-700">{{__('front.baby_learn_block_text_title_2')}}</p>

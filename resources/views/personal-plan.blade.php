@@ -60,11 +60,11 @@
                                             <div class="sales-box d-flex">
                                                 @if($plan->billed_price_old || $plan->billed_price)
                                                     @if($plan->billed_price_old)
-                                                        <p class="font-grey-16-500 canceled-text">USD{{$plan->billed_price_old}}</p>
+                                                        <p class="font-grey-16-500 canceled-text">USD {{$plan->billed_price_old}}</p>
                                                     @endif
 
                                                     @if($plan->billed_price)
-                                                        <p class="font-grey-color-400">USD{{$plan->billed_price}}</p>
+                                                        <p class="font-grey-color-400">USD {{$plan->billed_price}}</p>
                                                     @endif
                                                 @endif
                                             </div>
@@ -84,7 +84,7 @@
                             <label class="font-grey-color-400" for="plan-checkbox">
                                 <div class="custom-checkbox"></div>
                                 <span>
-                                By choosing a payment method you agree to the <a href="#" class="font-accent-color-400">Privacy Policy</a>
+                                By choosing a payment method you agree to the <a href="{{route('policy')}}" target="_blank" class="font-accent-color-400">Privacy Policy</a>
                             </span>
                             </label>
                         </div>
@@ -236,8 +236,8 @@
                 </a>
             </div>
             <div class="img-box">
-                <img src="../../assets/bg-images/phones.png" alt="">
-                <img class="adaptive" src="../../assets/bg-images/phones_xs.png" alt="">
+                <img src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
             </div>
         </div>
 
@@ -335,8 +335,8 @@
                 </a>
             </div>
             <div class="img-box">
-                <img src="../../assets/bg-images/phones.png" alt="">
-                <img class="adaptive" src="../../assets/bg-images/phones_xs.png" alt="">
+                <img src="{{asset('assets/bg-images/phones_2.png')}}" alt="" style="max-width: 522px">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
             </div>
         </div>
 

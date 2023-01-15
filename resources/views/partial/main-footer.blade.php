@@ -12,13 +12,10 @@
                                 <a class="nav-link font-white-400 p-0" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#how-it-works">How It Works</a>
+                                <a class="nav-link font-white-400 p-0" href="{{route('terms')}}" target="_blank">Terms</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#personal-plan">Personalized Plan</a>
-                            </li>
-                            <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="#baby-led-weaning">Baby-Led Weaning</a>
+                                <a class="nav-link font-white-400 p-0" href="{{route('policy')}}" target="_blank">Policy</a>
                             </li>
                         </ul>
                     </div>

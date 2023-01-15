@@ -187,7 +187,7 @@
         </div>
     </section>
 
-    <section class="section p-0 clients">
+    <section class="section p-0 clients mb-5">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">User Reviews</p>
@@ -201,29 +201,29 @@
         </div>
     </section>
 
-    <section class="section p-0 last-section position-relative get-in-touch">
-        <img class="position-absolute bg-image top-right" src="{{asset('assets/bg-images/bg-main-page-3.png')}}" alt="">
-        <div class="container">
-            <div class="title-box">
-                <p class="font-accent-700">Have A Questation</p>
-                <h2 class="font-grey-32-700">Get In Touch</h2>
-            </div>
-            <div class="form-container">
-                <div class="form-row font-grey-color-400 w-100 d-flex justify-content-between">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="form-row w-100 font-grey-color-400 d-flex justify-content-between">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="Company">
-                </div>
-                <div class="form-row full-width w-100 font-grey-color-400">
-                    <textarea class="" placeholder="Request Details"></textarea>
-                </div>
-            </div>
-            <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>
-        </div>
-    </section>
+{{--    <section class="section p-0 last-section position-relative get-in-touch">--}}
+{{--        <img class="position-absolute bg-image top-right" src="{{asset('assets/bg-images/bg-main-page-3.png')}}" alt="">--}}
+{{--        <div class="container">--}}
+{{--            <div class="title-box">--}}
+{{--                <p class="font-accent-700">Have A Questation</p>--}}
+{{--                <h2 class="font-grey-32-700">Get In Touch</h2>--}}
+{{--            </div>--}}
+{{--            <div class="form-container">--}}
+{{--                <div class="form-row font-grey-color-400 w-100 d-flex justify-content-between">--}}
+{{--                    <input type="text" placeholder="Name">--}}
+{{--                    <input type="text" placeholder="Email">--}}
+{{--                </div>--}}
+{{--                <div class="form-row w-100 font-grey-color-400 d-flex justify-content-between">--}}
+{{--                    <input type="text" placeholder="Phone">--}}
+{{--                    <input type="text" placeholder="Company">--}}
+{{--                </div>--}}
+{{--                <div class="form-row full-width w-100 font-grey-color-400">--}}
+{{--                    <textarea class="" placeholder="Request Details"></textarea>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     @includeIf('partial.main-footer')
 
