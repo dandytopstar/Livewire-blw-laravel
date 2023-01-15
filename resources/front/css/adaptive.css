@@ -802,7 +802,14 @@
         padding-right: 20px;
     }
 
+    .plan-selection .plan.offer:before {
+        width: 176px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 13px;
     }
+
+}
 
 @media (max-width: 494px) {
     .summary-header-logo {
