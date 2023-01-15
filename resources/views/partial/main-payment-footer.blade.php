@@ -1,4 +1,4 @@
-<footer class="fixed">
+<footer class="fixed-bottom">
     <div class="container">
         <nav class="navbar w-100 p-0 m-0">
             <div class="d-flex p-0 w-100 justify-content-between navbar-container">

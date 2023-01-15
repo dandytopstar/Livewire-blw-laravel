@@ -62,7 +62,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-color-400 pt-2">Your baby's weight</p>
+                                <p class="font-grey-color-400 pt-3">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal
@@ -140,7 +140,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-color-400 pt-2">Your baby's weight</p>
+                                <p class="font-grey-color-400 pt-3">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal
@@ -524,7 +524,7 @@
 
     </section>
 
-    <section class="mt-100 doctor-block xl last-section">
+    <section class="mt-100 doctor-block xl last-section mb-5">
         <div class="container">
             <div class="container-wrapper">
                 <div class="img-box">
@@ -543,6 +543,5 @@
         </div>
     </section>
 
-    @includeIf('partial.main-summary-footer')
-
+{{--    @includeIf('partial.main-summary-footer')--}}
 @endsection

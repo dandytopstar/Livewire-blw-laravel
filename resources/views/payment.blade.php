@@ -175,7 +175,8 @@
                 </div>
             </section>
 
-        @includeIf('partial.main-payment-footer')
+
+{{--        @includeIf('partial.main-payment-footer')--}}
     </div>
 
 @endsection

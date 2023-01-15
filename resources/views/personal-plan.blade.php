@@ -560,7 +560,7 @@
         </div>
     </section>
 
-    @includeIf('partial.main-personal-plan-footer')
+{{--    @includeIf('partial.main-personal-plan-footer')--}}
 
 @endsection
 
