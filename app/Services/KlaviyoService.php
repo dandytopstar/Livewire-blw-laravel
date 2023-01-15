@@ -33,9 +33,10 @@ class KlaviyoService
     {
         $customProperties = [
             'email' => $client->email,
-            'name' => $client->name,
             'code' => $client->code,
         ];
+
+
 
         $properties = [
             'step' => $step,

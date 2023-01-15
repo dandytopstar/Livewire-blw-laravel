@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </section>
-
+        <div class="" style="height: 25px"> </div>
 
 {{--        @includeIf('partial.main-payment-footer')--}}
     </div>

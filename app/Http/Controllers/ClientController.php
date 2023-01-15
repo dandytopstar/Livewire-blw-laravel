@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\ClientSteps;
 use App\Models\Client;
+use App\Services\KlaviyoService;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -29,6 +31,8 @@ class ClientController extends Controller
             $client->email = $email;
             $client->save();
         }
+
+        resolve(KlaviyoService::class)->sendClientData($client, ClientSteps::FINISHED_QUIZ);
 
         return response()->redirectToRoute('personal-plan', $code);
     }

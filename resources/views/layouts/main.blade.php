@@ -5,10 +5,6 @@
 
     @yield('content')
 
-    <div class="mt-3 text-white">
-        <p>Babyledweaning.me</p>
-    </div>
-
     @livewireScripts
 
     <script src="{{asset('js/app.js')}}"></script>

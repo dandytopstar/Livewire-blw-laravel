@@ -543,5 +543,7 @@
         </div>
     </section>
 
+    <div class="" style="height: 25px"> </div>
+
 {{--    @includeIf('partial.main-summary-footer')--}}
 @endsection
