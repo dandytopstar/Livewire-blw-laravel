@@ -62,7 +62,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-color-400">Your baby's weight</p>
+                                <p class="font-grey-color-400 pt-2">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal
@@ -140,7 +140,7 @@
                         <img src="../../assets/icons/weight.png" alt="">
                         <div class="d-flex w-100 align-items-center">
                             <div class="content">
-                                <p class="font-grey-color-400">Your baby's weight</p>
+                                <p class="font-grey-color-400 pt-2">Your baby's weight</p>
                             </div>
                             <div class="font-accent-18-700">
                                 Normal

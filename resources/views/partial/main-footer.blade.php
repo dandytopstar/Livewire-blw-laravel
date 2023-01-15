@@ -12,10 +12,10 @@
                                 <a class="nav-link font-white-400 p-0" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="{{route('terms')}}" target="_blank">Terms</a>
+                                <a class="nav-link font-white-400 p-0" href="{{route('terms')}}" target="_blank">Terms and Conditions</a>
                             </li>
                             <li class="nav-item list-unstyled">
-                                <a class="nav-link font-white-400 p-0" href="{{route('policy')}}" target="_blank">Policy</a>
+                                <a class="nav-link font-white-400 p-0" href="{{route('policy')}}" target="_blank">Privacy policy</a>
                             </li>
                         </ul>
                     </div>

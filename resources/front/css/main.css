@@ -499,7 +499,7 @@ footer {
 }
 
 .plan-selection .plan.active:before {
-    content:'SPECIAL OFFER - SAVE 33%';
+    content:'SPECIAL OFFER - SAVE 63%';
     display: flex;
     justify-content: center;
     align-items: center;
