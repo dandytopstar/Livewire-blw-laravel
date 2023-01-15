@@ -31,6 +31,7 @@ class ChangesSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 11.99,
             'payment_price_old' => 32.99,
+            'offer' => '63%',
         ]);
 
         PersonalPlan::query()->where('name', '1-month BLW Plan' )->update([
