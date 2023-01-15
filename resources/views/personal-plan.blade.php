@@ -47,7 +47,7 @@
                     <div class="plans-box">
 
                         @foreach($personalPlans as $key => $plan)
-                            <div class="plan personal-plan @if($key == 1) active @endif @if($plan->offer) offer @endif"
+                            <div class="plan  @if($plan->offer) offer @endif personal-plan @if($key == 1) active @endif"
                                  id="plan-id-{{$plan->id}}"
                                  data-id="{{$plan->id}}"
                             >
