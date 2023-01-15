@@ -498,7 +498,7 @@ footer {
     border: 2px solid #FF725E;
 }
 
-.plan-selection .plan.active:before {
+.plan-selection .plan.offer:before {
     content:'SPECIAL OFFER - SAVE 63%';
     display: flex;
     justify-content: center;

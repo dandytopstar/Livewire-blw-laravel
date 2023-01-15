@@ -47,7 +47,10 @@
                     <div class="plans-box">
 
                         @foreach($personalPlans as $key => $plan)
-                            <div class="plan personal-plan @if($key == 1) active @endif" id="plan-id-{{$plan->id}}" data-id="{{$plan->id}}">
+                            <div class="plan personal-plan @if($key == 1) active @endif @if($plan->offer) offer @endif"
+                                 id="plan-id-{{$plan->id}}"
+                                 data-id="{{$plan->id}}"
+                            >
                                 <div class="row-inf">
                                     <p class="title font-accent-18-700">{{$plan->name}}</p>
                                     @if($plan->payment_price_old)

@@ -100,7 +100,7 @@
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading">
-                                        <div class="accordion-button collapsed checkbox-box font-grey-16-700 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                                        <div class="accordion-button collapsed checkbox-box font-grey-16-700 p-0 stripe-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
                                             <input name="other" id="other" class="styled-checkbox" type="checkbox" value="">
                                             <label class="font-grey-16-700 d-flex w-100" for="other">
                                                 <div class="custom-checkbox circle">
@@ -262,6 +262,14 @@
         function payPalPayment() {
             const payPalForm = document.getElementById('paypal-payment-form');
         }
+
+        $('.stripe-accordion').on('click', () => {
+            setTimeout(() => {
+                document.getElementById("card-element").scrollIntoView();
+            }, 500);
+
+        })
+
     </script>
 
 @endpush

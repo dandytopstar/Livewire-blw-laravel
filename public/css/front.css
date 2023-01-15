@@ -507,8 +507,8 @@ footer {
     border: 2px solid #FF725E;
 }
 
-.plan-selection .plan.active:before {
-    content:'SPECIAL OFFER - SAVE 33%';
+.plan-selection .plan.offer:before {
+    content:'SPECIAL OFFER - SAVE 63%';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1152,6 +1152,10 @@ section.program {
 
 .graphic,
 .program {
+    display: block;
+}
+
+.summary-header-btn {
     display: block;
 }
 
@@ -2403,6 +2407,19 @@ section.main-page .bg-image-absolute img{
         width: 250px;
         height: 36px;
         margin-top: 7px;
+    }
+
+    .summary-header-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .header.summary img {
+        height: auto;
+        margin-top: 7px;
+        width: 200px;
     }
 }
 
