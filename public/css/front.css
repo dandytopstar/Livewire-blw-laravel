@@ -1990,7 +1990,7 @@ section.main-page .bg-image-absolute img{
         margin-bottom: 20px;
     }
 
-    .plan-selection .plan.active:before {
+    .plan-selection .plan.offer:before {
         width: 176px;
         height: 24px;
         font-size: 10px;
