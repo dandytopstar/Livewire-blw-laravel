@@ -18,6 +18,7 @@ class PersonalPlan extends Model
         'payment_price',
         'payment_price_old',
         'enabled',
+        'offer',
     ];
 
     public function transactions()

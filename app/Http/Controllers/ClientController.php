@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+    private KlaviyoService $klaviyoService;
+
+    public function __construct(KlaviyoService $klaviyoService)
+    {
+        $this->klaviyoService = $klaviyoService;
+    }
+
     public function registration(Request $request, $code)
     {
         $client = Client::query()->where('code', $code)->first();
@@ -32,7 +39,7 @@ class ClientController extends Controller
             $client->save();
         }
 
-        resolve(KlaviyoService::class)->sendClientData($client, ClientSteps::FINISHED_QUIZ);
+        $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_QUIZ);
 
         return response()->redirectToRoute('personal-plan', $code);
     }
