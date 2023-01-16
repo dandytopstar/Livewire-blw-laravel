@@ -36,7 +36,7 @@ class PaymentController extends Controller
         \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
 
         $intent = PaymentIntent::create([
-            'amount' => round($clientData['personalPlan']->payment_price * 100),
+            'amount' => round($clientData['personalPlan']->billed_price * 100),
             'currency' => 'usd',
             'metadata' => ['integration_check' => 'accept_a_payment'],
         ]);

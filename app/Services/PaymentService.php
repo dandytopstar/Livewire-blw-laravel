@@ -25,7 +25,7 @@ class PaymentService
         $personalPlan = PersonalPlan::query()->where('id', $paymentData['personal_plan_id'])->first();
 
         $paymentData['personal_plan_name'] = $personalPlan->name;
-        $paymentData['price'] = $personalPlan->payment_price;
+        $paymentData['price'] = $personalPlan->billed_price;
 
         return $paymentData;
     }
