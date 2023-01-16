@@ -71,12 +71,12 @@
 
                                             <div class="row-item d-flex justify-content-between flex-nowrap">
                                                 <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->billed_price}}</p>
+                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->payment_price}}</p>
                                             </div>
 
                                             <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
                                                 <p class="font-dark-opacity-500 d-block">Total</p>
-                                                <p class="font-grey-16-700 d-block">{{$personalPlan->payment_price}}</p>
+                                                <p class="font-grey-16-700 d-block">{{$personalPlan->billed_price}}</p>
                                             </div>
 
                                             <form  action="{{route('payment')}}" method="post" id="paypal-payment-form">
@@ -124,11 +124,11 @@
                                         <div class="accordion-body font-grey-color-400">
                                             <div class="row-item d-flex justify-content-between flex-nowrap">
                                                 <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->billed_price}}</p>
+                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->payment_price}}</p>
                                             </div>
                                             <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
                                                 <p class="font-dark-opacity-500 d-block">Total</p>
-                                                <p class="font-grey-16-700 d-block">{{$personalPlan->payment_price}}</p>
+                                                <p class="font-grey-16-700 d-block">{{$personalPlan->billed_price}}</p>
                                             </div>
                                             <div class="form">
                                                 <form  action="{{route('payment')}}" method="post" id="stripe-payment-form">

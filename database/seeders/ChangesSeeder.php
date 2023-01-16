@@ -16,6 +16,7 @@ class ChangesSeeder extends Seeder
     {
         PersonalPlan::query()->where('name', '3-month BLW Plan' )->update([
             'billed_period' => 'Billed every 3 months',
+            'period' => 3,
             'billed_price' => 59.97,
             'billed_price_old' => 98.97,
             'payment_period' => 'per month',
@@ -24,7 +25,7 @@ class ChangesSeeder extends Seeder
         ]);
 
         PersonalPlan::query()->where('name', '6-month BLW Plan' )->update([
-            'name' => '6-month BLW Plan',
+            'period' => 6,
             'billed_period' => 'Billed every 6 months',
             'billed_price' => 71.94,
             'billed_price_old' => 197.94,
@@ -39,6 +40,7 @@ class ChangesSeeder extends Seeder
             'payment_period' => 'per month',
             'billed_price' => 32.99,
             'payment_price' => 32.99,
+            'period' => 1,
         ]);
     }
 }

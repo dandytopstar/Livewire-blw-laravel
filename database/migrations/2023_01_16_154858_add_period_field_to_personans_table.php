@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('personal_plans', function (Blueprint $table) {
-            $table->string('offer')->after('enabled')->nullable();
+            $table->decimal('period')->after('offer')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('personal_plans', function (Blueprint $table) {
-            $table->dropColumn('offer');
+            $table->dropColumn('period');
         });
     }
 };
