@@ -24,27 +24,31 @@ class PersonalPlanSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 19.99,
             'payment_price_old' => 32.99,
+            'discount' => 39,
+            'stripe_id' => 'price_1MRZL4En9zFFy6xp9Se1YUVs',
         ]);
 
         PersonalPlan::query()->create([
             'name' => '6-month BLW Plan',
-            'period' => 6,
             'billed_period' => 'Billed every 6 months',
+            'period' => 6,
             'billed_price' => 71.94,
             'billed_price_old' => 197.94,
             'payment_period' => 'per month',
             'payment_price' => 11.99,
             'payment_price_old' => 32.99,
-            'offer' => '63%',
+            'discount' => 63,
+            'stripe_id' => 'price_1MRa0tEn9zFFy6xppyOk2TK2',
         ]);
 
         PersonalPlan::query()->create([
             'name' => '1-month BLW Plan',
             'billed_period' => 'Billed every month',
+            'period' => 1,
             'payment_period' => 'per month',
             'billed_price' => 32.99,
             'payment_price' => 32.99,
-            'period' => 1,
+            'stripe_id' => 'price_1MRa2BEn9zFFy6xpvre5QGq8',
         ]);
     }
 }

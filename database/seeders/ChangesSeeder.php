@@ -22,6 +22,8 @@ class ChangesSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 19.99,
             'payment_price_old' => 32.99,
+            'discount' => 39,
+            'stripe_id' => 'price_1MRZL4En9zFFy6xp9Se1YUVs',
         ]);
 
         PersonalPlan::query()->where('name', '6-month BLW Plan' )->update([
@@ -32,7 +34,8 @@ class ChangesSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 11.99,
             'payment_price_old' => 32.99,
-            'offer' => '63%',
+            'discount' => 63,
+            'stripe_id' => 'price_1MRa0tEn9zFFy6xppyOk2TK2',
         ]);
 
         PersonalPlan::query()->where('name', '1-month BLW Plan' )->update([
@@ -41,6 +44,7 @@ class ChangesSeeder extends Seeder
             'billed_price' => 32.99,
             'payment_price' => 32.99,
             'period' => 1,
+            'stripe_id' => 'price_1MRa2BEn9zFFy6xpvre5QGq8',
         ]);
     }
 }

@@ -47,7 +47,8 @@
                     <div class="plans-box">
 
                         @foreach($personalPlans as $key => $plan)
-                            <div class="plan  @if($plan->offer) offer @endif personal-plan @if($key == 1) active @endif"
+
+                            <div class="plan personal-plan @if($key == 1) active @endif"
                                  id="plan-id-{{$plan->id}}"
                                  data-id="{{$plan->id}}"
                             >
@@ -58,7 +59,7 @@
                                     @endif
                                 </div>
 
-                                    <div class="row-inf">
+                                <div class="row-inf">
 
                                             <div class="sales-box d-flex">
                                                 @if($plan->billed_price_old || $plan->billed_price)
@@ -79,6 +80,12 @@
                                     <p class="font-grey-500">{{$plan->billed_period}}</p>
                                     <p class="font-grey-color-400">{{$plan->payment_period}}</p>
                                 </div>
+
+                                @if($plan->discount)
+                                    <div class="discount">
+                                        SPECIAL OFFER - SAVE {{$plan->discount}}%
+                                    </div>
+                                @endif
                             </div>
                         @endforeach
 

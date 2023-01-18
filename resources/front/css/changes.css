@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 992px) {
-    .plan-selection .plan.offer:before {
+    .discount {
         font-size: 10px;
         height: 24px;
         line-height: 13px;

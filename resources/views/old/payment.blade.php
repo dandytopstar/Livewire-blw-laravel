@@ -46,7 +46,7 @@
                 <div class="container">
                     <h2 class="font-grey-32-700">Select a secure payment method</h2>
                     <div class="content-box">
-                        <div class="payment-box mb-5">
+                        <div class="payment-box">
                             <div class="accordion" id="accordionPayment">
 
                                 <div class="accordion-item">
@@ -71,19 +71,12 @@
 
                                             <div class="row-item d-flex justify-content-between flex-nowrap">
                                                 <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->payment_price}}</p>
                                             </div>
-
-                                            @if($personalPlan->discount)
-                                                <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                    <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
-                                                    <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price    }}</p>
-                                                </div>
-                                            @endif
 
                                             <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
                                                 <p class="font-dark-opacity-500 d-block">Total</p>
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price - $personalPlan->discount_price }}</p>
+                                                <p class="font-grey-16-700 d-block">{{$personalPlan->billed_price}}</p>
                                             </div>
 
                                             <form  action="{{route('payment')}}" method="post" id="paypal-payment-form">
@@ -131,21 +124,11 @@
                                         <div class="accordion-body font-grey-color-400">
                                             <div class="row-item d-flex justify-content-between flex-nowrap">
                                                 <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                <p class="font-grey-16-700 d-block">$ {{$personalPlan->payment_price}}</p>
                                             </div>
-
-                                            @if($personalPlan->discount)
-                                                <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                    <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
-                                                    <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price}}</p>
-                                                </div>
-                                            @endif
-
                                             <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
                                                 <p class="font-dark-opacity-500 d-block">Total</p>
-
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price - $personalPlan->discount_price }}</p>
-
+                                                <p class="font-grey-16-700 d-block">{{$personalPlan->billed_price}}</p>
                                             </div>
                                             <div class="form">
                                                 <form  action="{{route('payment')}}" method="post" id="stripe-payment-form">
@@ -202,76 +185,90 @@
     <script src="https://js.stripe.com/v3/"></script>
 
     <script>
-        stripePaymentSubscribe();
+        stripePayment();
 
-        function stripePaymentSubscribe() {
-            const stripe = Stripe('{{config('services.stripe.public')}}');
-            const elements = stripe.elements();
+        payPalPayment();
 
-            const style = {
-                base: {
-                    iconColor: '#00BD90',
-                    color: '#000',
-                    fontWeight: '500',
-                    fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
-                    fontSize: '16px',
-                    fontSmoothing: 'antialiased',
-                    ':-webkit-autofill': {
-                        color: '#00BD90',
-                    },
-                    '::placeholder': {
-                        color: '#00BD90',
-                    },
-                },
-                invalid: {
-                    iconColor: '#FF735C',
-                    color: '#FF735C',
-                },
+        function stripePayment() {
+            let stripe = Stripe('{{config('services.stripe.public')}}');
+
+            const appearance = {
+                theme: 'stripe'
             };
 
-            const card = elements.create('card', {style});
-            card.mount('#card-element');
+            let clientSecret = '{{$intent->client_secret}}';
 
-            const form = document.getElementById('stripe-payment-form');
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
+            const elements = stripe.elements({clientSecret, appearance});
 
-                const {token, error} = await stripe.createToken(card);
+            let cardElement = elements.create('card', {
+                style: {
+                    base: {
+                        iconColor: '#00BD90',
+                        color: '#000',
+                        fontWeight: '500',
+                        fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
+                        fontSize: '16px',
+                        fontSmoothing: 'antialiased',
+                        ':-webkit-autofill': {
+                            color: '#00BD90',
+                        },
+                        '::placeholder': {
+                            color: '#00BD90',
+                        },
+                    },
+                    invalid: {
+                        iconColor: '#FF735C',
+                        color: '#FF735C',
+                    },
+                },
+            });
 
+            cardElement.mount('#card-element');
+
+            cardElement.on('change', ({error}) => {
+                let displayError = document.getElementById('card-errors');
                 if (error) {
-                    const errorElement = document.getElementById('card-errors');
-                    errorElement.textContent = error.message;
+                    displayError.textContent = error.message;
                 } else {
-                    stripeTokenHandler(token);
+                    displayError.textContent = '';
                 }
             });
 
-            const stripeTokenHandler = (token) => {
-                const form = document.getElementById('stripe-payment-form');
-                const hiddenInput = document.createElement('input');
-                hiddenInput.setAttribute('type', 'hidden');
-                hiddenInput.setAttribute('name', 'stripeToken');
-                hiddenInput.setAttribute('value', token.id);
-                form.appendChild(hiddenInput);
+            const stripeForm = document.getElementById('stripe-payment-form');
 
-                form.submit();
-            }
-        }
-
-        stripeAutoScroll()
-
-        function stripeAutoScroll() {
-            $('.stripe-accordion').on('click', () => {
-                setTimeout(() => {
-                    document.getElementById("card-element").scrollIntoView();
-                }, 500);
-
-            })
+            stripeForm.addEventListener('click', function(ev) {
+                ev.preventDefault();
+                stripe.confirmCardPayment(clientSecret, {
+                    payment_method: {
+                        card: cardElement,
+                        billing_details: {
+                            name: '{{$client->email}}'
+                        }
+                    }
+                }).then(function(result) {
+                    if (result.error) {
+                        console.log(result.error.message);
+                    } else {
+                        if (result.paymentIntent.status === 'succeeded') {
+                            $("#stripe_payment_data").val(JSON.stringify(result));
+                            $("#stripe_payment_status").val(result.paymentIntent.status);
+                            stripeForm.submit();
+                        }
+                    }
+                });
+            });
         }
 
         function payPalPayment() {
             const payPalForm = document.getElementById('paypal-payment-form');
         }
+
+        $('.stripe-accordion').on('click', () => {
+            setTimeout(() => {
+                document.getElementById("card-element").scrollIntoView();
+            }, 500);
+
+        })
 
     </script>
 
