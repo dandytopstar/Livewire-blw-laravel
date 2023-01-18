@@ -33,15 +33,12 @@ class PaymentController extends Controller
         $clientData = $this->quizService->getBabySummary($code);
         $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
 
-        \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
-
-        $intent = PaymentIntent::create([
-            'amount' => round($clientData['personalPlan']->billed_price * 100),
-            'currency' => 'usd',
-            'metadata' => ['integration_check' => 'accept_a_payment'],
-        ]);
-
-        $clientData['intent'] = $intent;
+        if($clientData['personalPlan']->discount) {
+            $clientData['personalPlan']['discount_price'] = $this->paymentService->priceWithDiscount(
+                $clientData['personalPlan']->billed_price,
+                $clientData['personalPlan']->discount
+            );
+        }
 
         return view('payment', $clientData);
     }
@@ -54,9 +51,13 @@ class PaymentController extends Controller
 
         if($preparedData['method'] == 'stripe') {
 
-            $result = $this->paymentService->saveTransaction($preparedData);
-
             $client = Client::query()->where('id', $preparedData['client_id'])->first();
+
+            $payment = $this->paymentService->stripe($client, $preparedData);
+
+            $preparedData['status'] = $payment ? 'succeeded' : 'wrong';
+
+            $result = $this->paymentService->saveTransaction($preparedData);
 
             $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $preparedData);
 

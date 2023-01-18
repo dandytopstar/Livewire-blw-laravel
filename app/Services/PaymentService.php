@@ -3,15 +3,12 @@
 namespace App\Services;
 
 use Exception;
-use Stripe\Token;
-use Stripe\Charge;
-use Stripe\Stripe;
 use Omnipay\Omnipay;
-use App\Models\Client;
+use Ramsey\Uuid\Type\Decimal;
+use Stripe\StripeClient;
 use App\Models\Transaction;
 use App\Models\PersonalPlan;
-use App\Enums\PaymentMethods;
-use Illuminate\Http\RedirectResponse;
+
 
 class PaymentService
 {
@@ -26,8 +23,20 @@ class PaymentService
 
         $paymentData['personal_plan_name'] = $personalPlan->name;
         $paymentData['price'] = $personalPlan->billed_price;
+        $paymentData['stripe_id'] = $personalPlan->stripe_id;
+        $paymentData['paypal_id'] = $personalPlan->paypal_id;
+        $paymentData['discount'] = $personalPlan->discount;
+
+        if($personalPlan->discount) {
+            $paymentData['discount_price'] = $this->priceWithDiscount($personalPlan->billed_price, $personalPlan->discount);
+        }
 
         return $paymentData;
+    }
+
+    public function priceWithDiscount($price, $discount): float|int
+    {
+        return round($price * ($discount/100), 2);
     }
 
     public function saveTransaction(array $paymentData)
@@ -69,6 +78,28 @@ class PaymentService
         } catch (Exception $e) {
             return $e->getMessage();
         }
+    }
+
+    public function stripe($client, $data)
+    {
+        $stripe = new StripeClient(config('services.stripe.secret'));
+
+        $customer = $stripe->customers->create([
+            'name' => $client->email,
+            'email' => $client->email,
+            'source' => $data['stripeToken'],
+        ]);
+
+        $customer_id = $customer->id;
+
+        $subscription = $stripe->subscriptions->create([
+            'customer' => $customer_id,
+            'items' => [
+                ['price' => $data['stripe_id']]
+            ]
+        ]);
+
+        return $subscription->status == 'active';
     }
 
 

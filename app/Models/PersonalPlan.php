@@ -18,7 +18,9 @@ class PersonalPlan extends Model
         'payment_price',
         'payment_price_old',
         'enabled',
-        'offer',
+        'discount',
+        'stripe_id',
+        'paypal_id',
     ];
 
     public function transactions()

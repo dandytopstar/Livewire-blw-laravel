@@ -507,8 +507,7 @@ footer {
     border: 2px solid #FF725E;
 }
 
-.plan-selection .plan.offer:before {
-    content:'SPECIAL OFFER - SAVE 63%';
+.discount {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1990,7 +1989,7 @@ section.main-page .bg-image-absolute img{
         margin-bottom: 20px;
     }
 
-    .plan-selection .plan.offer:before {
+    .discount {
         width: 176px;
         height: 24px;
         font-size: 10px;
@@ -2032,7 +2031,7 @@ section.main-page .bg-image-absolute img{
     }
 
     .payment-section .content-box {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -2396,7 +2395,14 @@ section.main-page .bg-image-absolute img{
         padding-right: 20px;
     }
 
+    .plan-selection .plan.offer:before {
+        width: 176px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 13px;
     }
+
+}
 
 @media (max-width: 494px) {
     .summary-header-logo {
@@ -2524,6 +2530,16 @@ section.main-page .bg-image-absolute img{
     margin-right: 20px;
     background-color: rgba(0, 189, 144, 0.6);
 }
+
+@media (max-width: 992px) {
+    .discount {
+        font-size: 10px;
+        height: 24px;
+        line-height: 13px;
+        width: 176px;
+    }
+}
+
 
 
 

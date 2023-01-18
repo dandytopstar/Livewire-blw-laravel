@@ -396,11 +396,7 @@
         margin-bottom: 20px;
     }
 
-    .plan-selection .plan.active:before {
-
-    }
-
-    .plan-selection .plan.offer:before {
+    .discount {
         width: 176px;
         height: 24px;
         font-size: 10px;
@@ -442,7 +438,7 @@
     }
 
     .payment-section .content-box {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 

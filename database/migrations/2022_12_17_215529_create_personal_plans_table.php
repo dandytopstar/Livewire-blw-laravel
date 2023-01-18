@@ -23,6 +23,10 @@ return new class extends Migration
             $table->decimal('payment_price',9,2)->nullable();
             $table->decimal('payment_price_old',9,2)->nullable();
             $table->boolean('enabled')->default(true);
+            $table->integer('discount')->default(0);
+            $table->integer('period')->nullable();
+            $table->string('stripe_id')->nullable();
+            $table->string('paypal_id')->nullable();
             $table->timestamps();
         });
     }
