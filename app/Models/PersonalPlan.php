@@ -17,6 +17,7 @@ class PersonalPlan extends Model
         'payment_period',
         'payment_price',
         'payment_price_old',
+        'discount_price',
         'enabled',
         'discount',
         'stripe_id',

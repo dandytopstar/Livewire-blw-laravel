@@ -24,6 +24,7 @@ class PersonalPlanSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 19.99,
             'payment_price_old' => 32.99,
+            'discount_price' => 39.00,
             'discount' => 39,
             'stripe_id' => 'price_1MRZL4En9zFFy6xp9Se1YUVs',
         ]);
@@ -37,6 +38,7 @@ class PersonalPlanSeeder extends Seeder
             'payment_period' => 'per month',
             'payment_price' => 11.99,
             'payment_price_old' => 32.99,
+            'discount_price' => 126.00,
             'discount' => 63,
             'stripe_id' => 'price_1MRa0tEn9zFFy6xppyOk2TK2',
         ]);

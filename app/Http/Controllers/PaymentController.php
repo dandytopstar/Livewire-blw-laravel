@@ -33,13 +33,6 @@ class PaymentController extends Controller
         $clientData = $this->quizService->getBabySummary($code);
         $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
 
-        if($clientData['personalPlan']->discount) {
-            $clientData['personalPlan']['discount_price'] = $this->paymentService->priceWithDiscount(
-                $clientData['personalPlan']->billed_price,
-                $clientData['personalPlan']->discount
-            );
-        }
-
         return view('payment', $clientData);
     }
 

@@ -23,13 +23,11 @@ class PaymentService
 
         $paymentData['personal_plan_name'] = $personalPlan->name;
         $paymentData['price'] = $personalPlan->billed_price;
+        $paymentData['price_old'] = $personalPlan->billed_price_old;
+        $paymentData['discount_price'] = $personalPlan->discount_price;
         $paymentData['stripe_id'] = $personalPlan->stripe_id;
         $paymentData['paypal_id'] = $personalPlan->paypal_id;
         $paymentData['discount'] = $personalPlan->discount;
-
-        if($personalPlan->discount) {
-            $paymentData['discount_price'] = $this->priceWithDiscount($personalPlan->billed_price, $personalPlan->discount);
-        }
 
         return $paymentData;
     }

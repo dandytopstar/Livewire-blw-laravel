@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('payment_period')->nullable();
             $table->decimal('payment_price',9,2)->nullable();
             $table->decimal('payment_price_old',9,2)->nullable();
+            $table->decimal('discount_price',9,2)->nullable();
             $table->boolean('enabled')->default(true);
             $table->integer('discount')->default(0);
             $table->integer('period')->nullable();
