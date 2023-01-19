@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@push('custom-header')
+    <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&vault=true&intent=subscription"></script>
+@endpush
+
 @section('content')
     <div class="container-box-general">
         @includeIf('partial.main-personal-plan-header')
@@ -100,9 +104,15 @@
 
                                                 <input type="hidden" name="method" value="{{\App\Enums\PaymentMethods::PAYPAL}}">
 
-                                                <button class="btn yellow-payment-btn" type="submit">
-                                                    <img src="{{asset('assets/payment/paypal-btn.png')}}" alt="">
-                                                </button>
+                                                <input type="hidden" name="order_id" value="" id="paypal_order_id">
+
+                                                <input type="hidden" name="subscription_id" value="" id="paypal_subscription_id">
+
+{{--                                                <button class="btn yellow-payment-btn" type="submit">--}}
+{{--                                                    <img src="{{asset('assets/payment/paypal-btn.png')}}" alt="">--}}
+{{--                                                </button>--}}
+
+                                                <div id="paypal-button-container"></div>
 
                                             </form>
                                         </div>
@@ -241,6 +251,7 @@
             card.mount('#card-element');
 
             const form = document.getElementById('stripe-payment-form');
+
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
 
@@ -277,10 +288,30 @@
             })
         }
 
+        payPalPayment();
+
         function payPalPayment() {
-            const payPalForm = document.getElementById('paypal-payment-form');
+            const form = document.getElementById('paypal-payment-form');
+
+            paypal.Buttons({
+
+                createSubscription: function(data, actions) {
+                    return actions.subscription.create({
+                        'plan_id': '{{$personalPlan->paypal_id}}' // Creates the subscription
+                    });
+                },
+
+                onApprove: function(data, actions) {
+
+                    $('#paypal_order_id').val(data.orderID)
+                    $('#paypal_subscription_id').val(data.subscriptionID)
+                    form.submit();
+                }
+
+            }).render('#paypal-button-container');
         }
 
     </script>
+
 
 @endpush

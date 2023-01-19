@@ -42,9 +42,9 @@ class PaymentController extends Controller
 
         $preparedData = $this->paymentService->preparePaymentData($paymentData);
 
-        if($preparedData['method'] == 'stripe') {
+        $client = Client::query()->where('id', $preparedData['client_id'])->first();
 
-            $client = Client::query()->where('id', $preparedData['client_id'])->first();
+        if($preparedData['method'] == 'stripe') {
 
             $payment = $this->paymentService->stripe($client, $preparedData);
 
@@ -58,11 +58,10 @@ class PaymentController extends Controller
         }
 
         if($preparedData['method'] == 'paypal') {
+            $preparedData['status'] = !empty($preparedData['subscription_id']) ? 'succeeded' : 'wrong';
+            $result = $this->paymentService->saveTransaction($preparedData);
 
-            $preparedData['result'] = 'wrong';
-            $transaction = $this->paymentService->saveTransaction($preparedData);
-            $this->paymentService->payPal($preparedData, $transaction);
-
+            return redirect()->route('payment-result', [$result->id, $client->code]);
         }
 
         return back();

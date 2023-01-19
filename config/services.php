@@ -36,4 +36,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'paypal' => [
+        'base_url' => env('PAYPAL_BASE_URL'),
+        'client_id' => env('PAYPAL_CLIENT_ID'),
+        'app_secret' => env('PAYPAL_APP_SECRET'),
+        'currency' => env('PAYPAL_CURRENCY'),
+        'test_mode' => env('PAYPAL_TEST_MODE'),
+    ],
+
 ];

@@ -22,5 +22,7 @@
         gtag('config', 'G-RKTN8431TZ');
     </script>
 
+    @stack('custom-header')
+
     @livewireStyles
 </head>
