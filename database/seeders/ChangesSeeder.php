@@ -24,7 +24,7 @@ class ChangesSeeder extends Seeder
             'payment_price' => 19.99,
             'payment_price_old' => 32.99,
             'discount_price' => 39.00,
-            'discount' => 39,
+            'discount' => 0,
             'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
             'paypal_id' => 'P-2W2292030D7885326MPED4CY',
         ]);
