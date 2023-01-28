@@ -325,7 +325,7 @@ footer {
 }
 
 .accent-section {
-    background-color: rgba(0,189,144, .1);
+    background-color: #CCF2E9;
 }
 
 .section .white-shadow-box-radius-10 {
@@ -651,7 +651,7 @@ footer {
      max-width: 320px;
  }
 
- .summary-conclusion .notice-box {
+.notice-box {
      padding: 20px 30px;
      border: 1px solid var(--acent-color-green);
      background-color: rgba(0,189,144, .1);
@@ -659,17 +659,17 @@ footer {
      margin-bottom: 30px;
  }
 
-.summary-conclusion .notice-box img {
+.notice-box img {
     max-width: 43px;
     max-height: 48px;
     margin-right: 30px;
 }
 
-.summary-conclusion .notice-box p {
+.notice-box p {
     margin: 0;
 }
 
-.summary-conclusion .notice-box p:first-child {
+.notice-box p:first-child {
     margin-bottom: 10px;
 }
 

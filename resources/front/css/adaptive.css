@@ -310,10 +310,6 @@
         align-items: flex-start;
     }
 
-    .bg-bottom-right, .bg-bottom-left {
-        display: none;
-    }
-
     .carousel {
         display: none;
     }

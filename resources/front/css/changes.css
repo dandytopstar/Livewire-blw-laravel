@@ -25,13 +25,6 @@
     width: 30%;
 }
 
-@media (max-width: 1200px) {
-    .summary-conclusion.adaptive .content-box a {
-        margin: 20px auto;
-        display: block;
-    }
-}
-
 /*.line-h-22 {*/
 /*    line-height: 22px;*/
 /*}*/
@@ -99,6 +92,161 @@
     background-color: rgba(0, 189, 144, 0.6);
 }
 
+.light-green-bg {
+    background-color: #E6F9F4;
+}
+
+.payment-container-congrats {
+    max-width: 525px;
+    margin: 0 auto;
+}
+
+.payment-container-congrats img{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.payment-container-congrats h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+    color: #1C1C1C;
+}
+
+.notice-box-container {
+    background: rgba(0, 189, 144, 0.1);
+    border: 1px solid #00BD90;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 525px;
+    margin: 0 auto;
+}
+
+.notice-box-container h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 46px;
+    color: #00BD90;
+}
+
+.bg-bottom-left-payment {
+    position: absolute;
+    bottom: 105px;
+    left: 0;
+    z-index: -1;
+    display: block;
+}
+
+.payment-row {
+    /*height: 80.9vh;*/
+}
+.e-book-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-e-book {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.payment-e-book h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+    color: #1C1C1C;
+    max-width: 466px;
+}
+
+.e-book-phone-section {
+    position: relative;
+}
+
+.payment-e-book-phone{
+    max-width: 300px;
+}
+
+.e-book-description {
+    width: 250px;
+}
+
+.e-book-price span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #00BD90;
+}
+
+.e-book-check img{
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.e-boo-buy-btn{
+    max-width: 600px;
+    margin-top: 35px;
+}
+
+.e-boo-buy-btn button{
+    width: 100%;
+}
+
+.payment-e-book-phone-off {
+    display: none;
+}
+
+.e-boo-buy-btn.adaptive {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .summary-conclusion.adaptive .content-box a {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .bg-bottom-left-payment {
+        display: none;
+    }
+
+    .e-book-block {
+        display: block;
+        text-align: center;
+    }
+
+    .e-book-description{
+        text-align: start;
+        width: 85%;
+    }
+
+    .payment-e-book {
+        display: block;
+    }
+
+    .e-book-payment-off {
+        display: none;
+    }
+
+    .payment-e-book-phone-off {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20%;
+    }
+
+    .e-boo-buy-btn.adaptive {
+        display: block;
+    }
+}
+
 @media (max-width: 992px) {
     .discount {
         font-size: 10px;
@@ -106,6 +254,49 @@
         line-height: 13px;
         width: 176px;
     }
+
+    .payment-container-congrats h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .notice-box-container h2{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .e-boo-buy-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .e-boo-buy-btn button{
+        width: 340px;
+    }
+
+    .e-book-check img{
+        margin-top: 0px;
+    }
+
+    .payment-e-book-phone-off {
+        right: 10%;
+    }
+
 }
 
+@media (max-width: 767px) {
+    .bg-bottom-right, .bg-bottom-left {
+        display: none;
+    }
 
+    .payment-e-book-phone-off {
+        right: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment-e-book-phone-off {
+        right: 0;
+    }
+}
