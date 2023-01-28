@@ -45,7 +45,7 @@ class KlaviyoService
 
         $clientDat = [
             'token' => $this->publicKey,
-            'event' => 'Ordered Product',
+            'event' => $step,
             'customer_properties' => $customProperties,
             'properties'  => $properties,
         ];
