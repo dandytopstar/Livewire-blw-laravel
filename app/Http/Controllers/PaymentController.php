@@ -34,13 +34,15 @@ class PaymentController extends Controller
 
         $stripe = new StripeClient(config('services.stripe.secret'));
 
-        $paymentIntents = $stripe->paymentIntents->create(
+        $intent = $stripe->paymentIntents->create(
             [
                 'amount' => $clientData['personalPlan']->billed_price * 100,
                 'currency' => 'usd',
                 'payment_method_types' => ['card']
             ]
         );
+
+        $clientData['client_secret'] = $intent->client_secret;
 
 //        \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
 //

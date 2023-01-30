@@ -220,6 +220,8 @@
     <script src="https://js.stripe.com/v3/"></script>
 
     <script>
+        const {client_secret: clientSecret} = '{{$client_secret}}';
+
         stripePaymentSubscribe();
 
         function stripePaymentSubscribe() {
