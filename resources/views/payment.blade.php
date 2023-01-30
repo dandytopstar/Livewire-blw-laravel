@@ -226,7 +226,12 @@
 
         function stripePaymentSubscribe() {
             const stripe = Stripe('{{config('services.stripe.public')}}');
-            const elements = stripe.elements();
+
+            const appearance = {
+                theme: 'stripe'
+            };
+
+            const elements = stripe.elements({clientSecret, appearance});
 
             const style = {
                 base: {

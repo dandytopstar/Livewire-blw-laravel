@@ -34,6 +34,8 @@ class PaymentController extends Controller
 
         $stripe = new StripeClient(config('services.stripe.secret'));
 
+        dd($clientData['personalPlan']->billed_price * 100);
+
         $intent = $stripe->paymentIntents->create(
             [
                 'amount' => $clientData['personalPlan']->billed_price * 100,
@@ -44,13 +46,6 @@ class PaymentController extends Controller
 
         $clientData['client_secret'] = $intent->client_secret;
 
-//        \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
-//
-//        $intent = PaymentIntent::create([
-//            'amount' => round($clientData['personalPlan']->billed_price * 100),
-//            'currency' => 'usd',
-//            'metadata' => ['integration_check' => 'accept_a_payment'],
-//        ]);
 
         return view('payment', $clientData);
     }
