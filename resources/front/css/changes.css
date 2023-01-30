@@ -140,7 +140,7 @@
 }
 
 .payment-row {
-    /*height: 80.9vh;*/
+    height: 95vh;
 }
 .e-book-block {
     display: flex;
@@ -207,6 +207,29 @@
     display: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.white-shadow-box-radius-10-custom {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 10px 20px 2px 20px;
+    margin-bottom: 20px;
+}
+
+
+/*mobile*/
+
 @media (max-width: 1200px) {
     .summary-conclusion.adaptive .content-box a {
         margin: 20px auto;
@@ -225,6 +248,7 @@
     .e-book-description{
         text-align: start;
         width: 85%;
+        margin-top: 20px;
     }
 
     .payment-e-book {
@@ -254,6 +278,10 @@
         height: 24px;
         line-height: 13px;
         width: 176px;
+    }
+
+    .payment-row {
+        height: auto;
     }
 
     .payment-container-congrats h2{

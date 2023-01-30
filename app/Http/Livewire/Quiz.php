@@ -273,7 +273,7 @@ class Quiz extends Component
                 'question' => 'What is your baby’s weight?',
                 'answers' => [],
                 'min' => '1',
-                'max' => '92',
+                'max' => '',
                 'range_name' => 'lbs',
                 'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
                 'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,

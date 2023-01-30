@@ -14,7 +14,7 @@
             @includeIf('partial.wrong-payment')
         @endif
 
-        @includeIf('partial.main-payment-footer')
+{{--        @includeIf('partial.main-payment-footer')--}}
     </div>
 
 @endsection

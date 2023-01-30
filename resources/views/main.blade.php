@@ -187,7 +187,7 @@
         </div>
     </section>
 
-    <section class="section p-0 clients mb-5">
+    <section class="section p-0 clients mb-4">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">User Reviews</p>
@@ -201,6 +201,14 @@
         </div>
     </section>
 
+
+    <div class="container">
+        <div class="box white-shadow-box-radius-10-custom">
+            <p>
+                The information in this book is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider before beginning any nutrition program. The use of the information contained in this book is the sole choice of the reader. In no way will [company name] be held responsible for any issues that may occur due to the use of this book.
+            </p>
+        </div>
+    </div>
 {{--    <section class="section p-0 last-section position-relative get-in-touch">--}}
 {{--        <img class="position-absolute bg-image top-right" src="{{asset('assets/bg-images/bg-main-page-3.png')}}" alt="">--}}
 {{--        <div class="container">--}}
