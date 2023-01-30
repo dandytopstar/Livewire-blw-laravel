@@ -7,7 +7,7 @@
                 <p class="font-accent-700">
                     <img src="{{asset("assets/payment/payment-fail.png")}}" alt="">
                 </p>
-                <h2 class="font-accent-700 text-danger">Payment Fail!</h2>
+                <h2 class="font-accent-700 text-danger">Payment Failed!</h2>
             </div>
 
             <div class="action-box">

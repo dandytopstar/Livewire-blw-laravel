@@ -204,8 +204,9 @@
 
     <div class="container">
         <div class="box white-shadow-box-radius-10-custom">
+            <h2 class="font-grey-32-700">Disclaimer</h2>
             <p>
-                The information in this book is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider before beginning any nutrition program. The use of the information contained in this book is the sole choice of the reader. In no way will [company name] be held responsible for any issues that may occur due to the use of this book.
+                The information in this book is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider before beginning any nutrition program. The use of the information contained in this book is the sole choice of the reader. In no way will Degudegu Ltd be held responsible for any issues that may occur due to the use of this book.
             </p>
         </div>
     </div>
