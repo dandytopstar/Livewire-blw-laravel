@@ -34,8 +34,6 @@ class PaymentController extends Controller
 
         $stripe = new StripeClient(config('services.stripe.secret'));
 
-        dd($clientData['personalPlan']->billed_price * 100);
-
         $intent = $stripe->paymentIntents->create(
             [
                 'amount' => $clientData['personalPlan']->billed_price * 100,
