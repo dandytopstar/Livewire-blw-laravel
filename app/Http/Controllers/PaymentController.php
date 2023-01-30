@@ -5,13 +5,12 @@ namespace App\Http\Controllers;
 use App\Enums\ClientSteps;
 use App\Models\Client;
 use App\Models\PersonalPlan;
-use App\Models\Transaction;
 use App\Services\KlaviyoService;
 use App\Services\PaymentService;
 use App\Services\QuizService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 use Stripe\PaymentIntent;
+use Stripe\StripeClient;
 
 class PaymentController extends Controller
 {
@@ -32,6 +31,24 @@ class PaymentController extends Controller
     {
         $clientData = $this->quizService->getBabySummary($code);
         $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
+
+        $stripe = new StripeClient(config('services.stripe.secret'));
+
+        $paymentIntents = $stripe->paymentIntents->create(
+            [
+                'amount' => $clientData['personalPlan']->billed_price * 100,
+                'currency' => 'usd',
+                'payment_method_types' => ['card']
+            ]
+        );
+
+//        \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
+//
+//        $intent = PaymentIntent::create([
+//            'amount' => round($clientData['personalPlan']->billed_price * 100),
+//            'currency' => 'usd',
+//            'metadata' => ['integration_check' => 'accept_a_payment'],
+//        ]);
 
         return view('payment', $clientData);
     }
