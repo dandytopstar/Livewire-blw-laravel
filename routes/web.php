@@ -57,7 +57,7 @@ Route::get('payment-result/{id}/{code}', [PaymentController::class, 'paymentResu
 
 Route::post('payment-stripe', [PaymentController::class, 'paymentStripeResult'])->name('payment-stripe-result');
 
-Route::view('payment-stripe', 'stripe-result')->name('payment-stripe-result');
+Route::view('payment-stripe', 'stripe-result');
 
 Route::get('paypal-success/{id}', [PaymentController::class, 'payPalSuccess'])->name('paypal-success');
 

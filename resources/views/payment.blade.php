@@ -234,7 +234,7 @@
                 const {error} = await stripe.confirmPayment({
                     elements,
                     confirmParams: {
-                        return_url: "http://blw-dev.loc/payment-stripe/?code={{$code}}&plan={{$personalPlan->id}}",
+                        return_url: "{{route('payment-stripe-result')}}?code={{$code}}&plan={{$personalPlan->id}}",
                     }
                 });
 
