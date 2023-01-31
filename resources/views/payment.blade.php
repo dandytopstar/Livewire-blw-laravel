@@ -311,7 +311,7 @@
         function stripeAutoScroll() {
             $('.stripe-accordion').on('click', () => {
                 setTimeout(() => {
-                    document.getElementById("card-element").scrollIntoView();
+                    document.getElementById("payment-element").scrollIntoView();
                 }, 500);
 
             })
