@@ -20,30 +20,25 @@ class PaymentController extends Controller
 
     private QuizService $quizService;
 
+    private StripeClient $stripe;
+
     public function __construct(PaymentService $paymentService, KlaviyoService $klaviyoService, QuizService $quizService)
     {
         $this->paymentService = $paymentService;
         $this->klaviyoService = $klaviyoService;
         $this->quizService = $quizService;
+        $this->stripe = new StripeClient(config('services.stripe.secret'));
     }
 
     public function index(Request $request, $code, $personalPlan)
     {
         $clientData = $this->quizService->getBabySummary($code);
-        $clientData['personalPlan'] = PersonalPlan::query()->where('id', $personalPlan)->first();
+        $personalPlan = PersonalPlan::query()->where('id', $personalPlan)->first();
+        $clientData['personalPlan'] = $personalPlan;
 
-        $stripe = new StripeClient(config('services.stripe.secret'));
+        $subscription = $this->paymentService->getStripeSubscription($clientData['client'], $personalPlan);
 
-        $intent = $stripe->paymentIntents->create(
-            [
-                'amount' => $clientData['personalPlan']->billed_price * 100,
-                'currency' => 'usd',
-                'payment_method_types' => ['card']
-            ]
-        );
-
-        $clientData['client_secret'] = $intent->client_secret;
-
+        $clientData = array_merge($clientData, $subscription);
 
         return view('payment', $clientData);
     }
@@ -55,19 +50,6 @@ class PaymentController extends Controller
         $preparedData = $this->paymentService->preparePaymentData($paymentData);
 
         $client = Client::query()->where('id', $preparedData['client_id'])->first();
-
-        if($preparedData['method'] == 'stripe') {
-
-            $payment = $this->paymentService->stripe($client, $preparedData);
-
-            $preparedData['status'] = $payment ? 'succeeded' : 'wrong';
-
-            $result = $this->paymentService->saveTransaction($preparedData);
-
-            $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $preparedData);
-
-            return redirect()->route('payment-result', [$result->id, $client->code]);
-        }
 
         if($preparedData['method'] == 'paypal') {
             $preparedData['status'] = !empty($preparedData['subscription_id']) ? 'succeeded' : 'wrong';
@@ -122,5 +104,30 @@ class PaymentController extends Controller
         $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN, $result->toArray());
 
         return redirect()->route('payment-result', [$result->id, $result->client->code]);
+    }
+
+    public function paymentStripeResult(Request $request)
+    {
+        $code = $request->input('code');
+        $planId = $request->input('plan');
+        $status = $request->input('status');
+        $client = $this->quizService->getClientByCode($code);
+        $personalPlan = PersonalPlan::query()->where('id', $planId)->first();
+
+        $preparedData = [
+            'client_id' => $client->id,
+            'personal_plan_id' => $personalPlan->id,
+            'price' => $personalPlan->billed_price,
+            'method' => 'stripe',
+            'status' => $status,
+        ];
+
+        $result = $this->paymentService->saveTransaction($preparedData);
+
+        $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $preparedData);
+
+        $redirectLink = route('payment-result', [$result->id, $code]);
+
+        return response()->json(['redirectLink' => $redirectLink]);
     }
 }

@@ -17,3 +17,4 @@ yarn-error.log
 package-lock.json
 public/css/app.css
 public/js/app.js
+public/js/app.js.LICENSE.txt

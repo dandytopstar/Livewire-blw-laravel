@@ -166,28 +166,19 @@
 
                                             </div>
                                             <div class="form">
-                                                <form  action="{{route('payment')}}" method="post" id="stripe-payment-form">
+                                                <form  action="" method="post" id="stripe-payment-form">
 
                                                     @csrf
 
-                                                    <input type="hidden" name="personal_plan_id" value="{{$personalPlan->id}}">
-
-                                                    <input type="hidden" name="client_id" value="{{$client->id}}">
-
-                                                    <input type="hidden" name="method" value="{{\App\Enums\PaymentMethods::STRIPE}}">
-
-                                                    <input type="hidden" name="status" value="" id="stripe_payment_status">
-
-                                                    <input type="hidden" name="payment_data" value="" id="stripe_payment_data">
-
                                                     <div class="form-row font-dark-grey-500 w-100">
-                                                        <label for="name" class="d-block my-3">Payment card data</label>
-                                                        <div id="card-element"></div>
+{{--                                                        <label for="name" class="d-block my-3">Payment card data</label>--}}
+                                                        <div id="payment-element"></div>
                                                     </div>
+                                                    <div id="error-message"></div>
 
-                                                    <div id="card-errors" role="alert"></div>
-
-                                                    <button class="btn green-payment-btn font-white-16-700 text-center" type="submit">Complete secure payment</button>
+                                                    <button class="btn green-payment-btn font-white-16-700 text-center" type="submit" id="submit">
+                                                        Complete secure payment
+                                                    </button>
                                                 </form>
                                             </div>
                                         </div>
@@ -220,18 +211,48 @@
     <script src="https://js.stripe.com/v3/"></script>
 
     <script>
-        const {client_secret: clientSecret} = '{{$client_secret}}';
 
-        stripePaymentSubscribe();
+        paymentSecureSubscripe()
 
-        function stripePaymentSubscribe() {
+        function paymentSecureSubscripe() {
             const stripe = Stripe('{{config('services.stripe.public')}}');
 
-            const appearance = {
-                theme: 'stripe'
+            const options = {
+                clientSecret: '{{$clientSecret}}',
+                appearance: {theme: 'stripe'},
             };
 
-            const elements = stripe.elements({clientSecret, appearance});
+            const elements = stripe.elements(options);
+            const paymentElement = elements.create('payment');
+            paymentElement.mount('#payment-element');
+
+            const form = document.getElementById('stripe-payment-form');
+
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+
+                const {error} = await stripe.confirmPayment({
+                    elements,
+                    confirmParams: {
+                        return_url: "http://blw-dev.loc/payment-stripe/?code={{$code}}&plan={{$personalPlan->id}}",
+                    }
+                });
+
+                if (error) {
+                    const messageContainer = document.querySelector('#error-message');
+                    messageContainer.textContent = error.message;
+                } else {
+                    console.log(1111);
+                }
+            });
+        }
+
+        // stripePaymentSubscribe();
+
+        function stripePaymentSubscribe() {
+
+
+            const elements = stripe.elements(options);
 
             const style = {
                 base: {
@@ -255,6 +276,7 @@
             };
 
             const card = elements.create('card', {style});
+
             card.mount('#card-element');
 
             const form = document.getElementById('stripe-payment-form');

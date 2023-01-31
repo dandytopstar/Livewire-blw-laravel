@@ -12,7 +12,6 @@ use App\Models\PersonalPlan;
 
 class PaymentService
 {
-
     /**
      * @param array $paymentData
      * @return array
@@ -82,6 +81,10 @@ class PaymentService
     {
         $stripe = new StripeClient(config('services.stripe.secret'));
 
+//        $intent = $stripe->paymentIntents->retrieve($data['intent_id']);
+//
+//        $charges = $intent->charges->data;
+
         $customer = $stripe->customers->create([
             'name' => $client->email,
             'email' => $client->email,
@@ -94,10 +97,40 @@ class PaymentService
             'customer' => $customer_id,
             'items' => [
                 ['price' => $data['stripe_id']]
-            ]
+            ],
+            'payment_behavior' => 'default_incomplete',
+            'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
+            'expand' => ['latest_invoice.payment_intent'],
         ]);
 
+        dd($subscription->latest_invoice->payment_intent->client_secret);
+
         return $subscription->status == 'active';
+    }
+
+    public function getStripeSubscription($client, $plan)
+    {
+        $stripe = new StripeClient(config('services.stripe.secret'));
+
+        $customer = $stripe->customers->create([
+            'email' => $client->email,
+        ]);
+
+        $subscription = $stripe->subscriptions->create([
+            'customer' => $customer->id,
+            'items' => [
+                ['price' => $plan['stripe_id']]
+            ],
+            'payment_behavior' => 'default_incomplete',
+            'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
+            'expand' => ['latest_invoice.payment_intent'],
+        ]);
+
+        return [
+            'subscriptionId' => $subscription->id,
+            'clientSecret' => $subscription->latest_invoice->payment_intent->client_secret,
+            'intentId' => $subscription->latest_invoice->payment_intent->id,
+        ];
     }
 
 
