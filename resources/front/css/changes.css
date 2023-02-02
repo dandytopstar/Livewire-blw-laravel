@@ -172,6 +172,12 @@
 
 .e-book-description {
     width: 250px;
+    position: relative;
+}
+
+.e-book-price {
+    position: absolute;
+    bottom: -65px;
 }
 
 .e-book-price span {
@@ -200,7 +206,10 @@
 }
 
 .payment-e-book-phone-off {
-    display: none;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -20px;
 }
 
 .e-boo-buy-btn.adaptive {
@@ -225,6 +234,10 @@ input[type=number] {
     border-radius: 10px;
     padding: 10px 20px 2px 20px;
     margin-bottom: 20px;
+}
+
+.e-book-price.adaptive {
+    display: none;
 }
 
 
@@ -266,8 +279,31 @@ input[type=number] {
         right: 20%;
     }
 
+    .payment-e-book h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 156.4%;
+        text-align: center;
+        color: #1C1C1C;
+    }
+
+    .e-book-price {
+        display: none;
+    }
+
+    .e-boo-buy-btn {
+        display: none;
+    }
+
     .e-boo-buy-btn.adaptive {
         display: block;
+    }
+
+    .e-book-price.adaptive {
+        display: block;
+        position: initial;
+        text-align: center;
     }
     
 }
@@ -321,6 +357,10 @@ input[type=number] {
 
     .payment-e-book-phone-off {
         right: 20%;
+    }
+
+    .baby-img.adaptive {
+        display: none;
     }
 }
 

@@ -1,5 +1,6 @@
 <div class="container-fluid position-relative">
     <div class="row payment-row">
+
         <div class="h-100 d-inline-block col-sm-12 col-md-6 mb-5">
 
             <div class="payment-container-congrats arrow-left my-3 ">
@@ -35,16 +36,28 @@
 
             <div class="payment-container-congrats my-3">
                 <p class="font-grey-color-400">
-                    If you didn’t recieved an email, to send it again <br> <a href="#">click here</a>
+                    If you didn’t recieved an email, to send it again <br>
+                    <a href="#" class="text-dark">click here</a>
                 </p>
             </div>
 
+            <div class="payment-container-congrats baby-img adaptive my-3">
+                <img src="{{asset('assets/payment/big-baby.png')}}" alt="" class="img-fluid">
+            </div>
+
         </div>
+
         <div class="h-100 d-inline-block col-sm-12 col-md-6 light-green-bg p-3">
 
             <div class="payment-e-book d-flex justify-content-start mt-3">
-                <h2>Our new E-book! Check the clients review! </h2>
-                <img src="{{asset('assets/payment/40off_payment.png')}}" alt="" class="e-book-payment-off">
+                <h2>25 Foods Babies Under One Year Should Never Eat  </h2>
+{{--                <img src="{{asset('assets/payment/40off_payment.png')}}" alt="" class="e-book-payment-off">--}}
+            </div>
+
+            <div class="e-book-price adaptive">
+                <p>
+                    <span>$14.99</span>
+                </p>
             </div>
 
             <div class="e-boo-buy-btn mb-5 adaptive">
@@ -64,26 +77,26 @@
 
 
                 <div class="m-sm-2 m-md-5 e-book-description" style="">
-                    <p>This is how many parents are using our plans to feed their kids. Read their stories</p>
+{{--                    <p>This is how many parents are using our plans to feed their kids. Read their stories</p>--}}
 
-                    <div class="d-flex e-book-check my-3">
-                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">
-                        <p class="font-grey-color-400">Customized BLW meal plans for babies </p>
-                    </div>
+{{--                    <div class="d-flex e-book-check my-3">--}}
+{{--                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">--}}
+{{--                        <p class="font-grey-color-400">Customized BLW meal plans for babies </p>--}}
+{{--                    </div>--}}
 
-                    <div class="d-flex e-book-check my-3">
-                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">
-                        <p class="font-grey-color-400"> 100+ delicious and healthy recipes </p>
-                    </div>
+{{--                    <div class="d-flex e-book-check my-3">--}}
+{{--                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">--}}
+{{--                        <p class="font-grey-color-400"> 100+ delicious and healthy recipes </p>--}}
+{{--                    </div>--}}
 
-                    <div class="d-flex e-book-check my-3">
-                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">
-                        <p class="font-grey-color-400"> Professional guide to Baby-led Weaning </p>
-                    </div>
+{{--                    <div class="d-flex e-book-check my-3">--}}
+{{--                        <img src="{{asset('assets/icons/rectangle.png')}}" alt="">--}}
+{{--                        <p class="font-grey-color-400"> Professional guide to Baby-led Weaning </p>--}}
+{{--                    </div>--}}
 
                     <div class="e-book-price">
                         <p>
-                            <span>$ 3.75</span> per week
+                            <span>$14.99</span>
                         </p>
                     </div>
 
@@ -100,8 +113,9 @@
             </div>
 
         </div>
+
     </div>
-    <img class="bg-bottom-left" src="{{asset('assets/payment/baby_payment.png')}}" alt="">
+{{--    <img class="bg-bottom-left" src="{{asset('assets/payment/baby_payment.png')}}" alt="">--}}
 </div>
 
 
