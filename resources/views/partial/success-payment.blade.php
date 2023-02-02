@@ -70,7 +70,7 @@
 
             <div class="e-book-block">
                 <div class="e-book-phone-section">
-                    <img src="{{asset('assets/payment/phone_payment.png')}}" alt="" class="payment-e-book-phone">
+                    <img src="{{asset('assets/payment/phone-payment-2.png')}}" alt="" class="payment-e-book-phone">
                     <img src="{{asset('assets/payment/spacial_offer.png')}}" alt="" class="payment-e-book-phone-off">
 
                 </div>
