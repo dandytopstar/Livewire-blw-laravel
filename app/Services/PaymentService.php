@@ -48,7 +48,11 @@ class PaymentService
 
     public function getTransactionById(int $id)
     {
-        return Transaction::query()->where('id', $id)->with('client')->first();
+        return Transaction::query()
+            ->where('id', $id)
+            ->with('client')
+            ->with('personalPlan')
+            ->first();
     }
 
     public function payPal($paymentData, $transaction)

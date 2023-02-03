@@ -66,11 +66,10 @@ class PaymentController extends Controller
 
         $transaction = $this->paymentService->getTransactionById($id);
 
-        $transaction = $transaction->load('client');
-
         $clientData = $this->quizService->getBabySummary($transaction->client->code);
 
         $clientData['status'] = $transaction->status;
+        $clientData['personalPlan'] = $transaction->personalPlan;
 
         return view('payment-result', $clientData);
     }

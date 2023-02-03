@@ -27,9 +27,9 @@
                 </div>
 
                 <div>
-                    <h2>6 month Babyfood Plan</h2>
+                    <h2>{{$personalPlan->name}}</h2>
                     <p class="font-grey-color-400">
-                        It will be automatically send to your email
+                        It will be automatically sent to your email
                     </p>
                 </div>
             </div>

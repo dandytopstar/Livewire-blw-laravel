@@ -14,7 +14,7 @@
             <p class="dots">:</p>
             <div class="text-center">
                 <span id="seconds">00</span>
-                <span class="font-light-accent-700">Secunds</span>
+                <span class="font-light-accent-700">Seconds</span>
             </div>
         </div>
     </div>

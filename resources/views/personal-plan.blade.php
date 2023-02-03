@@ -246,8 +246,8 @@
                 </a>
             </div>
             <div class="img-box">
-                <img src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
+                <img src="{{asset('assets/bg-images/two-phones.png')}}" alt="">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/two-phones.png')}}" alt="">
             </div>
         </div>
 
@@ -345,8 +345,8 @@
                 </a>
             </div>
             <div class="img-box">
-                <img src="{{asset('assets/bg-images/phones_2.png')}}" alt="" style="max-width: 522px">
-                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/phones_2.png')}}" alt="">
+                <img src="{{asset('assets/bg-images/two-phones.png')}}" alt="" style="max-width: 522px">
+                <img class="adaptive img-fluid" src="{{asset('assets/bg-images/two-phones.png')}}" alt="">
             </div>
         </div>
 
