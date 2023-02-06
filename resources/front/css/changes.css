@@ -62,7 +62,8 @@
 }
 
 .first-graphic-adaptive {
-    background: url('/assets/bg-images/bg-curious-baby-adaptive.png') no-repeat !important;
+    background: url('/assets/bg-images/baby-bg-gqa.png') no-repeat !important;
+    background-size: 140px 186px !important;
     background-position: bottom 0px right 0px !important;
 }
 

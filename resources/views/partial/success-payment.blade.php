@@ -1,7 +1,7 @@
 <div class="container-fluid position-relative">
     <div class="row payment-row">
 
-        <div class="h-100 d-inline-block col-sm-12 col-md-6 mb-5">
+        <div class="d-inline-block col-sm-12 col-md-6 mb-5">
 
             <div class="payment-container-congrats arrow-left my-3 ">
                 <a href="{{route('personal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
@@ -47,7 +47,7 @@
 
         </div>
 
-        <div class="h-100 d-inline-block col-sm-12 col-md-6 light-green-bg p-3">
+        <div class="d-inline-block col-sm-12 col-md-6 light-green-bg p-3">
 
             <div class="payment-e-book d-flex justify-content-start mt-3">
                 <h2>25 Foods Babies Under One Year Should Never Eat  </h2>
