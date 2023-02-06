@@ -35,10 +35,10 @@
             </div>
 
             <div class="payment-container-congrats my-3">
-                <p class="font-grey-color-400">
-                    If you didn’t recieved an email, to send it again <br>
-                    <a href="#" class="text-dark">click here</a>
-                </p>
+{{--                <p class="font-grey-color-400">--}}
+{{--                    If you didn’t recieved an email, to send it again <br>--}}
+{{--                    <a href="#" class="text-dark">click here</a>--}}
+{{--                </p>--}}
             </div>
 
             <div class="payment-container-congrats baby-img adaptive my-3">
