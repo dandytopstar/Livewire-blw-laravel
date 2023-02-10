@@ -2,12 +2,11 @@
 
 namespace App\Services;
 
+use App\Models\PersonalPlan;
+use App\Models\Transaction;
 use Exception;
 use Omnipay\Omnipay;
-use Ramsey\Uuid\Type\Decimal;
 use Stripe\StripeClient;
-use App\Models\Transaction;
-use App\Models\PersonalPlan;
 
 
 class PaymentService
@@ -106,8 +105,6 @@ class PaymentService
             'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
             'expand' => ['latest_invoice.payment_intent'],
         ]);
-
-        dd($subscription->latest_invoice->payment_intent->client_secret);
 
         return $subscription->status == 'active';
     }
