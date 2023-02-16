@@ -56,6 +56,7 @@ class Quiz extends Component
                 'bottom_image_name' => 'bg-quizz-1.png',
                 'bottom_image_adaptive' => '',
             ],
+
             '2' => [
                 'question_key' => 'familiar_with_blw',
                 'question' => trans('front.question_2'),
@@ -85,6 +86,7 @@ class Quiz extends Component
                 'bottom_image_name' => 'bg-quizz-2.png',
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
+
             '3' => [
                 'question_key' => 'text_section',
                 'question' => trans('front.question_3'),
@@ -104,17 +106,18 @@ class Quiz extends Component
                 'bottom_image_name' => 'bg-quizz-2.png',
                 'bottom_image_adaptive' => '',
             ],
+
             '4' => [
-                'question_key' => 'age',
-                'question' => trans('front.question_4'),
+                'question_key' => 'tried_blw',
+                'question' => 'Have you ever tried Baby-Led Weaning?',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_4_1'),
+                        'text' => 'yes',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_4_2'),
+                        'text' => 'no',
                         'image'  => '',
                         'selected'  => false,
                     ]
@@ -129,6 +132,35 @@ class Quiz extends Component
             ],
 
             '5' => [
+                'question_key' => 'age',
+                'question' => 'How old is your baby?',
+                'answers' => [
+                    '1' => [
+                        'text' => 'Younger than 4 months',
+                        'image'  => '',
+                        'selected'  => false,
+                    ],
+                    '2' => [
+                        'text' => '4 to 12 months old',
+                        'image'  => '',
+                        'selected'  => false,
+                    ],
+                    '3' => [
+                        'text' => '12 months or older',
+                        'image'  => '',
+                        'selected'  => false,
+                    ]
+                ],
+                'section_image' => '',
+                'continue_button_text' => trans('front.continue_button_text_14'),
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-3.png',
+                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-3.png',
+            ],
+
+            '6' => [
                 'question_key' => 'can_sit',
                 'question' => 'Can your baby sit without any support?',
                 'answers' => [
@@ -152,7 +184,7 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-4.png',
             ],
 
-            '6' => [
+            '7' => [
                 'question_key' => 'can_grab',
                 'question' => 'Can your baby grab things by themselves?',
                 'answers' => [
@@ -174,7 +206,8 @@ class Quiz extends Component
                 'bottom_image_name' => 'bg-quizz-5.png',
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-5.png',
             ],
-            '7' => [
+
+            '8' => [
                 'question_key' => 'can_put_things',
                 'question' => 'Is your baby putting things in their mouth instinctively?',
                 'answers' => [
@@ -197,7 +230,7 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-6.png',
             ],
 
-            '8' => [
+            '9' => [
                 'question_key' => 'can_chew',
                 'question' => 'Is you baby performing chewing movements with for ex. toys?',
                 'answers' => [
@@ -225,63 +258,91 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
 
-//            '9' => [
-//                'question_key' => 'foods_prefer',
-//                'question' => 'Do you prefer not to eat any of these foods?',
-//                'answers' => [
-//                    '1' => [
-//                        'text' => 'fish',
-//                        'image'  => 'assets/quiz/meal-1.png',
-//                        'selected'  => false,
-//                    ],
-//                    '2' => [
-//                        'text' => 'dairy',
-//                        'image'  => 'assets/quiz/meal-2.png',
-//                        'selected'  => false,
-//                    ],
-//                    '3' => [
-//                        'text' => 'eggs',
-//                        'image'  => 'assets/quiz/meal-3.png',
-//                        'selected'  => false,
-//                    ],
-//                    '4' => [
-//                        'text' => 'poultry',
-//                        'image'  => 'assets/quiz/meal-4.png',
-//                        'selected'  => false,
-//                    ],
-//                    '5' => [
-//                        'text' => 'beef',
-//                        'image'  => 'assets/quiz/meal-5.png',
-//                        'selected'  => false,
-//                    ],
-//                    '6' => [
-//                        'text' => 'pork',
-//                        'image'  => 'assets/quiz/meal-6.png',
-//                        'selected'  => false,
-//                    ]
-//                ],
-//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-//                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
-//                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-//                'bottom_image' => true, 'bottom_image_position' => 'left',
-//                'bottom_image_name' => 'bg-quizz-7.png',
-//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
-//            ],
+            '10' => [
+                'question_key' => 'foods_prefer',
+                'question' => 'Do you wish to exclude any of these foods?',
+                'answers' => [
+                    '1' => [
+                        'text' => 'fish',
+                        'image'  => 'assets/quiz/meal-1.png',
+                        'selected'  => false,
+                    ],
+                    '2' => [
+                        'text' => 'dairy',
+                        'image'  => 'assets/quiz/meal-2.png',
+                        'selected'  => false,
+                    ],
+                    '3' => [
+                        'text' => 'eggs',
+                        'image'  => 'assets/quiz/meal-3.png',
+                        'selected'  => false,
+                    ],
+                    '4' => [
+                        'text' => 'poultry',
+                        'image'  => 'assets/quiz/meal-4.png',
+                        'selected'  => false,
+                    ],
+                    '5' => [
+                        'text' => 'beef',
+                        'image'  => 'assets/quiz/meal-5.png',
+                        'selected'  => false,
+                    ],
+                    '6' => [
+                        'text' => 'pork',
+                        'image'  => 'assets/quiz/meal-6.png',
+                        'selected'  => false,
+                    ]
+                ],
+                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
+                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'left',
+                'bottom_image_name' => 'bg-quizz-7.png',
+                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
+            ],
 
-            '9' => [
+            '11' => [
                 'question_key' => 'weight',
                 'question' => 'What is your baby’s weight?',
-                'answers' => [],
-                'min' => '1',
-                'max' => '',
-                'range_name' => 'lbs',
+                'answers' => [
+                    '1' => [
+                        'text' => 'less or 14.1 lbs',
+                        'image'  => '',
+                        'selected'  => false,
+                    ],
+                    '2' => [
+                        'text' => '14.2 lbs - 22.5 lbs',
+                        'image'  => '',
+                        'selected'  => false,
+                    ],
+                    '3' => [
+                        'text' => '22.6 lbs and more',
+                        'image'  => '',
+                        'selected'  => false,
+                    ]
+                ],
                 'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false, 'range_slider' => true, 'input' => true,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-1.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-5.png',
+                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+                'bottom_image' => true, 'bottom_image_position' => 'right',
+                'bottom_image_name' => 'bg-quizz-2.png',
+                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
+
+//            '9' => [
+//                'question_key' => 'weight',
+//                'question' => 'What is your baby’s weight?',
+//                'answers' => [],
+//                'min' => '1',
+//                'max' => '',
+//                'range_name' => 'lbs',
+//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
+//                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
+//                'has_answers' => false, 'image_before' => false, 'range_slider' => true, 'input' => true,
+//                'bottom_image' => true, 'bottom_image_position' => 'left',
+//                'bottom_image_name' => 'bg-quizz-1.png',
+//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-5.png',
+//            ],
         ];
 
         $this->clientRegistrationData = [

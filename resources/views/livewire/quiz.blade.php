@@ -195,6 +195,7 @@
     window.addEventListener('answer-selected', event => {
 
         if(event.detail.answers) {
+
             let questionKey = event.detail.key;
             let answers = event.detail.answers;
 
@@ -203,9 +204,9 @@
                 let selectedAnswer = document.querySelector("#"+questionKey+"-"+key);
 
                 if(answers[key].selected) {
-                    selectedAnswer.classList.add('click');
+                    selectedAnswer.classList.add('click-red');
                 } else {
-                    selectedAnswer.classList.remove('click');
+                    selectedAnswer.classList.remove('click-red');
                 }
             }
 

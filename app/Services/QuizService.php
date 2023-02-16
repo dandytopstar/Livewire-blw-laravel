@@ -17,6 +17,10 @@ class QuizService
     {
         $client = $this->clientModel::where('code', $code)->with('quizAnswers')->first();
 
+        if(!$client) {
+            abort('403');
+        }
+
         $answers = [];
 
         foreach($client->quizAnswers as $answer) {
@@ -55,7 +59,8 @@ class QuizService
 
         $gender =  trans('front.'.$gender['answers'][$gender['last_answer_number']]['answer_translation_key']);
         $age = $age['answers'][$age['last_answer_number']]['answer'];
-        $weight = $weight['result'].' lbs';
+        $weight = $weight['answers'][$weight['last_answer_number']]['answer'];
+//        $weight = $weight['result'].' lbs';
         $randomDays = $this->randomDays();
 
         return  compact('gender', 'age', 'weight', 'code', 'client', 'randomDays');

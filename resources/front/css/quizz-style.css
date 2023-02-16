@@ -126,6 +126,15 @@
     border: 2px solid var(--acent-color-green);
 }
 
+.click-red {
+    border: 2px solid var(--light-red-color);
+}
+
+.click-red img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 .section.quizz-box .content-box .option img {
     border-radius: 20px;
 }
