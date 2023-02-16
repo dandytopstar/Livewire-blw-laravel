@@ -90,7 +90,7 @@
                         @endforeach
 
                         <div class="checkbox-box">
-                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="">
+                            <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="" checked>
                             <label class="font-grey-color-400" for="plan-checkbox">
                                 <div class="custom-checkbox"></div>
                                 <span>
@@ -99,7 +99,7 @@
                             </label>
                         </div>
 
-                        <button type="button" class="btn font-white-600 btn-green-squre w-100 block" disabled id="get-your-plan">
+                        <button type="button" class="btn font-white-600 btn-green-squre w-100 block" id="get-your-plan">
                             {{__('front.get_your_plan')}}
                         </button>
                     </div>
@@ -191,10 +191,10 @@
             <h2 class="font-grey-32-700">Meet our medical consultant</h2>
             <div class="container-wrapper">
                 <div class="img-box">
-                    <img src="../../assets/bg-images/bg-image-plans-1.png" alt="">
+                    <img src="{{asset('assets/bg-images/medical-consultant.jpeg')}}" alt="" class="medical-consultant">
                 </div>
                 <div class="content-box">
-                    <p class="font-grey-16-700">Kristine Palmer</p>
+                    <p class="font-grey-16-700">Lisa Applegate</p>
                     <p class="font-grey-color-400">Baby-led weaning specialist</p>
                     <p class="font-grey-color-400" style="opacity: .5;">
                         An Expert in Baby-led weaning. Barchelor’s and a Master’s degree in Infants Nutrition and Dietetics.

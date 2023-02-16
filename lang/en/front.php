@@ -226,7 +226,7 @@ return [
     'accordion_title_3' => 'What happens after I order?',
     'accordion_text_3' => "After you place your order, our nutritionists will personalize the program using the answers you have provided in the quiz. We will send a personalized meal plan, guide, e-book and recipes to your email. ",
     'accordion_title_4' => 'How can I cancel my subscription?',
-    'accordion_text_4' => "If you decide to cancel your subscription, you can manage it from the “Manage Subscription” page on our website. You can also drop an email to lisa@babyledweaning.me",
+    'accordion_text_4' => "If you decide to cancel your subscription, drop an email to lisa@babyledweaning.me",
 
     //People stories section
     'people_stories_title' => 'People stories',
