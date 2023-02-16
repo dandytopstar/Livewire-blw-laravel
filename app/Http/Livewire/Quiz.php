@@ -306,7 +306,7 @@ class Quiz extends Component
                 'question' => 'What is your baby’s weight?',
                 'answers' => [
                     '1' => [
-                        'text' => 'less or 14.1 lbs',
+                        'text' => 'less than 14.1 lbs',
                         'image'  => '',
                         'selected'  => false,
                     ],
