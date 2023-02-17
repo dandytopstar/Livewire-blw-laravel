@@ -306,17 +306,17 @@ class Quiz extends Component
                 'question' => 'What is your baby’s weight?',
                 'answers' => [
                     '1' => [
-                        'text' => 'less than 14.1 lbs',
+                        'text' => 'less than 14 lbs',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '2' => [
-                        'text' => '14.2 lbs - 22.5 lbs',
+                        'text' => '14 lbs - 22 lbs',
                         'image'  => '',
                         'selected'  => false,
                     ],
                     '3' => [
-                        'text' => '22.6 lbs and more',
+                        'text' => '22 lbs and more',
                         'image'  => '',
                         'selected'  => false,
                     ]
@@ -358,7 +358,7 @@ class Quiz extends Component
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
         $this->registrationStepNum = $this->countQuestions + 1;
-        
+
         $this->countQuestionsDots = range(1, $this->countQuestions);
     }
 
