@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('status');
             $table->string('unit_system');
             $table->string('additional_infos')->nullable();
+            $table->string('ad_name')->nullable();
             $table->timestamps();
         });
     }

@@ -31,11 +31,13 @@ class ClientController extends Controller
     {
         $code = $request->get('code');
         $email =$request->get('email');
+        $ad_name = session('ad_name');
 
         $client = Client::query()->where('code', $code)->first();
 
         if($client && $email) {
             $client->email = $email;
+            $client->ad_name = $ad_name;
             $client->save();
         }
 

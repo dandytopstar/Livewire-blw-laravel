@@ -19,6 +19,7 @@ class Client extends Model
         'status',
         'unit_system',
         'additional_infos',
+        'ad_name',
     ];
 
     public function quizAnswers(): HasMany

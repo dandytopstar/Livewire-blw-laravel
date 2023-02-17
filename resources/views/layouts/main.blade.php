@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 @includeIf('partial.main-head')
+
+@php
+    $adName = request('ad_name');
+    if($adName){
+        session()->put('ad_name', $adName);
+    }
+@endphp
 <body>
 <!-- Google Tag Manager (noscript) -->
     <noscript>
