@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\PersonalPlan;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class PersonalPlanSeeder extends Seeder
@@ -26,7 +25,7 @@ class PersonalPlanSeeder extends Seeder
             'payment_price_old' => 32.99,
             'discount_price' => 39.00,
             'discount' => 39,
-            'stripe_id' => 'price_1MRZL4En9zFFy6xp9Se1YUVs',
+            'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
         ]);
 
         PersonalPlan::query()->create([
@@ -40,7 +39,7 @@ class PersonalPlanSeeder extends Seeder
             'payment_price_old' => 32.99,
             'discount_price' => 126.00,
             'discount' => 63,
-            'stripe_id' => 'price_1MRa0tEn9zFFy6xppyOk2TK2',
+            'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
         ]);
 
         PersonalPlan::query()->create([
@@ -50,7 +49,7 @@ class PersonalPlanSeeder extends Seeder
             'payment_period' => 'per month',
             'billed_price' => 32.99,
             'payment_price' => 32.99,
-            'stripe_id' => 'price_1MRa2BEn9zFFy6xpvre5QGq8',
+            'stripe_id' => 'price_1MRgMrLAfRRz3YR8Az0LRFIz',
         ]);
     }
 }
