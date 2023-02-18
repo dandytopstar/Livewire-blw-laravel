@@ -578,9 +578,7 @@
 
     <script>
 
-        <script>
-            fbq('track', 'Lead');
-        </script>
+        fbq('track', 'Lead');
 
         personalPlanSelection();
 
