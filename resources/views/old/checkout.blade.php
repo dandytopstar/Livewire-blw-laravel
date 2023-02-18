@@ -404,7 +404,9 @@
     @includeIf('partial.footer')
 
     <script>
-
+        fbq('track', 'InitiateCheckout', {
+            currency: 'USD',
+        });
     </script>
 
 @endsection

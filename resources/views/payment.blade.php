@@ -212,6 +212,11 @@
 
     <script>
 
+        fbq('track', 'AddToCart', {
+            value: '{{$personalPlan->billed_price}}',
+            currency: 'USD',
+        });
+
         paymentSecureSubscripe()
 
         function paymentSecureSubscripe() {

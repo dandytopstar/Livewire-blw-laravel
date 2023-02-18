@@ -17,4 +17,11 @@
 {{--        @includeIf('partial.main-payment-footer')--}}
     </div>
 
+    <script>
+        fbq('track', 'Purchase', {
+            value: '{{$personalPlan->billed_price}}',
+            currency: 'USD',
+        });
+    </script>
+
 @endsection

@@ -578,6 +578,10 @@
 
     <script>
 
+        <script>
+            fbq('track', 'Lead');
+        </script>
+
         personalPlanSelection();
 
         redMoreButton();
