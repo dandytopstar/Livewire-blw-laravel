@@ -214,7 +214,7 @@
 
     })
 
-    $('.quizz-btn').on('click', function(){
+    $jQuery('.quizz-btn').on('click', function(e){
         $(this).css('background-color','green');
     })
 </script>
