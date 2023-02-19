@@ -84,7 +84,6 @@
                         <div class="action-box">
                             @foreach($currentQuestion['answers'] as $key => $answer)
                                 <button type="button"
-                                        wire:loading.class="loading"
                                         class="btn quizz-btn font-grey-color-400 answer-btn @if($answer['selected']) active @endif"
                                         id="{{$currentQuestion['question_key'].'-'.$key}}"
                                         @if($currentQuestion['multiple'])
@@ -213,5 +212,9 @@
 
         }
 
+    })
+
+    $('.quizz-btn').on('click', function(){
+        $(this).css('background-color','green');
     })
 </script>
