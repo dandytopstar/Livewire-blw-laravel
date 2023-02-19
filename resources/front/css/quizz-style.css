@@ -165,13 +165,10 @@
     border-radius: 10px;
     padding: 13px 0;
     outline: none;
-    border-width: 0px;
 
 
 }
 
-.section.quizz-box .quizz-btn:focus,
-.section.quizz-box .quizz-btn:focus-visible,
 .section.quizz-box .quizz-btn:hover {
     border-width: 0px;
     border-color: rgba(255,255,255,0);
