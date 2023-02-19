@@ -87,9 +87,9 @@
                                         class="btn quizz-btn font-grey-color-400 answer-btn @if($answer['selected']) active @endif"
                                         id="{{$currentQuestion['question_key'].'-'.$key}}"
                                         @if($currentQuestion['multiple'])
-                                            wire:click="nextSlideMultiple({{$key}})"
+                                            wire:click.prevent="nextSlideMultiple({{$key}})"
                                         @else
-                                            wire:click="nextSlide({{$key}})"
+                                            wire:click.prevent="nextSlide({{$key}})"
                                         @endif
                                 >
                                     {{$answer['text']}}
