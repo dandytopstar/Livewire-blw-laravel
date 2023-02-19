@@ -168,8 +168,9 @@
 
 }
 
-.section.quizz-box .quizz-btn:focus {
+.quizz-btn:focus, .quizz-btn:focus-visible {
     border-width: 0px;
+    border-color: rgba(255,255,255,0);
     outline: none;
 }
 @media (hover) {
