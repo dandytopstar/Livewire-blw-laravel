@@ -165,6 +165,10 @@
     border-radius: 10px;
     padding: 13px 0;
 }
+
+.section.quizz-box .quizz-btn:focus {
+    border-width: 0px;
+}
 @media (hover) {
     .section.quizz-box .quizz-btn:hover {
         background: var(--acent-color-green);
