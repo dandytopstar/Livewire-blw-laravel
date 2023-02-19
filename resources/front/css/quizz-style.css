@@ -165,7 +165,7 @@
     padding: 13px 0;
 }
 
-.section.quizz-box .quizz-btn:hover, .section.quizz-box .quizz-btn:focus {
+.section.quizz-box .quizz-btn:hover {
     background: var(--acent-color-green);
     outline: none;
     color: white;
