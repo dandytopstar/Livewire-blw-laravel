@@ -102,7 +102,7 @@
 
                                                 <input type="hidden" name="client_id" value="{{$client->id}}">
 
-                                                <input type="hidden" name="method" value="{{\App\Enums\PaymentMethods::PAYPAL}}">
+                                                <input type="hidden" name="method" value="{{\App\Enums\PaymentMethods::PAYPAL->value}}">
 
                                                 <input type="hidden" name="order_id" value="" id="paypal_order_id">
 
@@ -236,6 +236,9 @@
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
 
+                document.querySelector('#submit').value = 'Loading...';
+
+
                 const {error} = await stripe.confirmPayment({
                     elements,
                     confirmParams: {
@@ -244,6 +247,8 @@
                 });
 
                 if (error) {
+                    document.querySelector('#submit').value = 'Submit secure payment';
+
                     const messageContainer = document.querySelector('#error-message');
                     messageContainer.textContent = error.message;
                 } else {
