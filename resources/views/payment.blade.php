@@ -236,8 +236,12 @@
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
 
-                document.querySelector('#submit').value = 'Loading...';
-
+                $('#submit').html(`
+                    Please wait...
+                    <div class="spinner-border spinner-border-sm" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                `);
 
                 const {error} = await stripe.confirmPayment({
                     elements,
@@ -247,12 +251,12 @@
                 });
 
                 if (error) {
-                    document.querySelector('#submit').value = 'Submit secure payment';
+                    document.querySelector('#submit').innerText = 'Complete secure payment';
 
                     const messageContainer = document.querySelector('#error-message');
                     messageContainer.textContent = error.message;
                 } else {
-                    console.log(1111);
+                    console.log('success');
                 }
             });
         }
