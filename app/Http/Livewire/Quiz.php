@@ -382,6 +382,8 @@ class Quiz extends Component
         if($this->currentQuestionNum !== $this->registrationStepNum && !empty($this->quizQuestions[$this->currentQuestionNum])) {
             $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
         }
+
+        $this->dispatchBrowserEvent('next-click', ['currentQuestionNum' => $this->currentQuestionNum]);
     }
 
     public function nextSlideRange()

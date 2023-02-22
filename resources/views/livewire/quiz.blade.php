@@ -189,9 +189,8 @@
 
 </div>
 
-
-
 <script>
+
     window.addEventListener('answer-selected', event => {
 
         if(event.detail.answers) {
@@ -212,9 +211,21 @@
 
         }
 
-    })
+    });
 
-    $jQuery('.quizz-btn').on('click', function(e){
-        $(this).css('background-color','green');
-    })
+    window.addEventListener('next-click', event => {
+
+        if(document.querySelector('.quizz-btn')) {
+            let elements = document.querySelectorAll(".quizz-btn")
+
+            let myFunction = function() {
+                this.style.backgroundColor = '#00bd90';
+            };
+
+            Array.from(elements).forEach(function(element) {
+                element.addEventListener('click', myFunction);
+            });
+        }
+    });
+
 </script>
