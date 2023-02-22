@@ -220,6 +220,7 @@
 
             let myFunction = function() {
                 this.style.backgroundColor = '#00bd90';
+                this.style.color = '#fff';
             };
 
             Array.from(elements).forEach(function(element) {
