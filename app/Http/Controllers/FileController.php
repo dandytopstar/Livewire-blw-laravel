@@ -34,4 +34,18 @@ class FileController extends Controller
             'content-type'=>'application/pdf',
         ]);
     }
+
+    public function showEbookPdf()
+    {
+        $link = route('show-e-book');
+
+        return view('show-pdf', compact('link'));
+    }
+
+    public function showMealPlanPdf()
+    {
+        $link = route('show-meal-plan');
+
+        return view('show-pdf', compact('link'));
+    }
 }

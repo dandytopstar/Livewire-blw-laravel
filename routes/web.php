@@ -71,9 +71,13 @@ Route::get('/asdwrgqwdqsdasdad', [FileController::class, 'getEbook']);
 
 Route::get('/weq6eqw8rqwrqwdqw', [FileController::class, 'getMealPlan']);
 
-Route::get('/asdwrgqwdqsdasdadshow', [FileController::class, 'showEbook']);
+Route::get('/asdwrgqwdqsdasdadshow', [FileController::class, 'showEbook'])->name('show-e-book');
 
-Route::get('/weq6eqw8rqwrqwdqwshow', [FileController::class, 'showMealPlan']);
+Route::get('/weq6eqw8rqwrqwdqwshow', [FileController::class, 'showMealPlan'])->name('show-meal-plan');
+
+Route::get('/weq6eqw', [FileController::class, 'showEbookPdf']);
+
+Route::get('/asdwrgq', [FileController::class, 'showMealPlanPdf']);
 
 Route::fallback(function () {
     return redirect()->route('main');
