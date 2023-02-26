@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\QuizController;
@@ -65,6 +66,10 @@ Route::get('paypal-error/{id}', [PaymentController::class, 'payPalError'])->name
 
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
+
+Route::get('/asdwrgqwdqsdasdad', [FileController::class, 'getEbook']);
+
+Route::get('/weq6eqw8rqwrqwdqw', [FileController::class, 'getMealPlan']);
 
 Route::fallback(function () {
     return redirect()->route('main');
