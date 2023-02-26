@@ -71,9 +71,9 @@ Route::get('/asdwrgqwdqsdasdad', [FileController::class, 'getEbook']);
 
 Route::get('/weq6eqw8rqwrqwdqw', [FileController::class, 'getMealPlan']);
 
-Route::get('/asdwrgqwdqsdasdadshow', [FileController::class, 'showEbook'])->name('show-e-book');
+Route::get('/e-book-pdf', [FileController::class, 'showEbook'])->name('show-e-book');
 
-Route::get('/weq6eqw8rqwrqwdqwshow', [FileController::class, 'showMealPlan'])->name('show-meal-plan');
+Route::get('/meal-plan-pdf', [FileController::class, 'showMealPlan'])->name('show-meal-plan');
 
 Route::get('/weq6eqw', [FileController::class, 'showEbookPdf']);
 
