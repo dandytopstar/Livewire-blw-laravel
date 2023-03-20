@@ -73,25 +73,27 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body font-grey-color-400">
 
-                                            <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                @if($personalPlan->discount)
-                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price_old}}</p>
-                                                @else
-                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
-                                                @endif
-                                            </div>
-
-                                            @if($personalPlan->discount)
+                                            <div class="d-none">
                                                 <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                    <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
-                                                    <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price}}</p>
+                                                    <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
+                                                    @if($personalPlan->discount)
+                                                        <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price_old}}</p>
+                                                    @else
+                                                        <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                    @endif
                                                 </div>
-                                            @endif
 
-                                            <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
-                                                <p class="font-dark-opacity-500 d-block">Total</p>
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                @if($personalPlan->discount)
+                                                    <div class="row-item d-flex justify-content-between flex-nowrap">
+                                                        <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
+                                                        <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price}}</p>
+                                                    </div>
+                                                @endif
+
+                                                <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
+                                                    <p class="font-dark-opacity-500 d-block">Total</p>
+                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                </div>
                                             </div>
 
                                             <form  action="{{route('payment')}}" method="post" id="paypal-payment-form">
@@ -143,28 +145,32 @@
                                     </h2>
                                     <div id="collapse" class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
                                         <div class="accordion-body font-grey-color-400">
-                                            <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
-                                                @if($personalPlan->discount)
-                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price_old}}</p>
-                                                @else
-                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
-                                                @endif
-                                            </div>
 
-                                            @if($personalPlan->discount)
+                                            <div class="d-none">
                                                 <div class="row-item d-flex justify-content-between flex-nowrap">
-                                                    <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
-                                                    <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price}}</p>
+                                                    <p class="font-dark-opacity-500 d-block">{{$personalPlan->name}}</p>
+                                                    @if($personalPlan->discount)
+                                                        <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price_old}}</p>
+                                                    @else
+                                                        <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                    @endif
                                                 </div>
-                                            @endif
 
-                                            <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
-                                                <p class="font-dark-opacity-500 d-block">Total</p>
+                                                @if($personalPlan->discount)
+                                                    <div class="row-item d-flex justify-content-between flex-nowrap">
+                                                        <p class="font-dark-opacity-500 d-block">Discount {{intval($personalPlan->discount)}}%</p>
+                                                        <p class="font-grey-16-700 text-danger d-block">-USD {{$personalPlan->discount_price}}</p>
+                                                    </div>
+                                                @endif
 
-                                                <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+                                                <div class="row-item d-flex justify-content-between flex-nowrap line-after position-relative">
+                                                    <p class="font-dark-opacity-500 d-block">Total</p>
 
+                                                    <p class="font-grey-16-700 d-block">USD {{$personalPlan->billed_price}}</p>
+
+                                                </div>
                                             </div>
+
                                             <div class="form">
                                                 <form  action="" method="post" id="stripe-payment-form">
 
