@@ -372,4 +372,8 @@ input[type=number] {
     .payment-e-book-phone-off {
         right: 0;
     }
+
+    .header {
+        padding: 20px 0;
+    }
 }
