@@ -387,7 +387,7 @@
             <div class="users-block">
 
                 <div class="user">
-                    <div class="img-box">
+                    <div class="img-box mx-auto">
                         <img src="{{asset('assets/avatar/avatar_lesli.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
@@ -407,7 +407,7 @@
                 </div>
 
                 <div class="user">
-                    <div class="img-box">
+                    <div class="img-box mx-auto">
                         <img src="{{asset('assets/avatar/avatar_patricia.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
@@ -427,8 +427,8 @@
                 </div>
 
                 <div class="user">
-                    <div class="img-box">
-                        <img src="{{asset('assets/avatar/avatar_kelli.jpg')}}" alt="">
+                    <div class="img-box mx-auto">
+                        <img src="{{asset('assets/avatar/avatar_kelli2.jpg')}}" alt="">
                     </div>
                     <div class="star-box d-flex">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -524,11 +524,11 @@
 
     </section>
 
-    <section class="mt-100 doctor-block xl last-section mb-5">
+    <section class="mt-100 doctor-block">
         <div class="container">
             <div class="container-wrapper">
                 <div class="img-box">
-                    <img src="../../assets/bg-images/bg-image-doctor-xl.png" alt="">
+                    <img src="{{asset('assets/bg-images/medical-consultant.jpeg')}}" alt="" class="medical-consultant">
                 </div>
                 <div class="content-box">
                     <p class="font-grey-32-700">{{__('front.our_promise_title')}}</p>

@@ -42,7 +42,7 @@
             <div class="content-wrapper">
                 <div class="plans w-100">
                     <div class="title-box">
-                        <h2 class="font-grey-24-700">Personalized Plann</h2>
+                        <h2 class="font-grey-24-700">Personalized Plan</h2>
                     </div>
                     <div class="plans-box">
 

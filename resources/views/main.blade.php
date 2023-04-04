@@ -4,6 +4,7 @@
 
     <header class="header" id="home">
         <div class="container">
+
             <nav class="navbar navbar-expand-lg fullscreen-header">
                 <div class="d-flex p-0 w-100 header-box">
                     <div class="logo-container d-flex align-items-center">
@@ -38,9 +39,14 @@
 
             <nav class="navbar navbar-expand-lg adaptive-header">
                 <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{asset('assets/logo/main-logo.png')}}" alt="" width="220px">
+                    </a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item list-unstyled list-unstyled">
@@ -57,11 +63,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="actions">
-                        <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-circle">{{__("front.start_quiz")}}</a>
-                    </div>
+
                 </div>
             </nav>
+
+
         </div>
     </header>
 

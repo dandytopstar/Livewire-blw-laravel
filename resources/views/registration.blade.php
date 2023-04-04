@@ -23,7 +23,7 @@
                                 <input type="hidden" name="code" value="{{$code}}" required>
 
                                 <button id="createClient" type="submit" class="btn font-white-600 btn-green-squre">
-                                    Register
+                                    Continue
                                 </button>
                             </div>
                         </form>
