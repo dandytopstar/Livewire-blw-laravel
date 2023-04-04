@@ -491,7 +491,7 @@
 
                         <div class="carousel-item">
                             <div class="img-box">
-                                <img src="{{asset('assets/avatar/avatar_kelli.jpg')}}" alt="">
+                                <img src="{{asset('assets/avatar/avatar_kelli2.jpg')}}" alt="">
                             </div>
                             <div class="star-box d-flex">
                                 <img src="{{asset('assets/icons/star.svg')}}" alt="">
