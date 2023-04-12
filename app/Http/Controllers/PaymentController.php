@@ -53,7 +53,14 @@ class PaymentController extends Controller
 
         if($preparedData['method'] == 'paypal') {
             $preparedData['status'] = !empty($preparedData['subscription_id']) ? 'succeeded' : 'wrong';
+
             $result = $this->paymentService->saveTransaction($preparedData);
+
+            $this->klaviyoService->sendClientData(
+                $client,
+                ClientSteps::ORDERED_PERSONAL_PLAN->value,
+                $result->toArray()
+            );
 
             return redirect()->route('payment-result', [$result->id, $client->code]);
         }
@@ -63,7 +70,6 @@ class PaymentController extends Controller
 
     public function paymentResult(Request $request, $id)
     {
-
         $transaction = $this->paymentService->getTransactionById($id);
 
         $clientData = $this->quizService->getBabySummary($transaction->client->code);
@@ -85,7 +91,11 @@ class PaymentController extends Controller
 
         $result = $this->paymentService->getTransactionById($id);
 
-        $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN, $result->toArray());
+        $this->klaviyoService->sendClientData(
+            $result->client,
+            ClientSteps::ORDERED_PERSONAL_PLAN,
+            $result->toArray()
+        );
 
         return redirect()->route('payment-result', [$result->id, $result->client->code]);
     }

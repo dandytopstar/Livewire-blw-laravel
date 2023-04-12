@@ -26,7 +26,7 @@ class TestSeeder extends Seeder
             'discount_price' => 39.00,
             'discount' => 0,
             'stripe_id' => 'price_1MRZL4En9zFFy6xp9Se1YUVs',
-            'paypal_id' => 'P-2W2292030D7885326MPED4CY',
+            'paypal_id' => 'P-94M157530X699270YMPDOZZA',
         ]);
 
         PersonalPlan::query()->where('name', '6-month BLW Plan' )->update([
@@ -41,7 +41,7 @@ class TestSeeder extends Seeder
             'discount_price' => 126.00,
             'discount' => 63,
             'stripe_id' => 'price_1MRa0tEn9zFFy6xppyOk2TK2',
-            'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+            'paypal_id' => 'P-65268280H8736405TMPEOXDA',
         ]);
 
         PersonalPlan::query()->where('name', '1-month BLW Plan' )->update([
@@ -52,7 +52,7 @@ class TestSeeder extends Seeder
             'billed_price' => 32.99,
             'payment_price' => 32.99,
             'stripe_id' => 'price_1MRa2BEn9zFFy6xpvre5QGq8',
-            'paypal_id' => 'P-2X5077790X569272TMPED2SA',
+            'paypal_id' => 'P-5LU23034JM266393MMPEOXUA',
         ]);
     }
 }
