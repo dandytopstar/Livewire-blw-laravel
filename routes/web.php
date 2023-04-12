@@ -75,9 +75,9 @@ Route::get('/e-book-pdf', [FileController::class, 'showEbook'])->name('show-e-bo
 
 Route::get('/meal-plan-pdf', [FileController::class, 'showMealPlan'])->name('show-meal-plan');
 
-Route::get('/weq6eqw', [FileController::class, 'showEbookPdf']);
+Route::get('/5qpge23personal44232dietqpfform99675', [FileController::class, 'showEbookPdf']);
 
-Route::get('/asdwrgq', [FileController::class, 'showMealPlanPdf']);
+Route::get('/6mptt4485custom8fqmealplan7761', [FileController::class, 'showMealPlanPdf']);
 
 Route::fallback(function () {
     return redirect()->route('main');
