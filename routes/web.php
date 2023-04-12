@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\ClientController;
-use App\Http\Controllers\StripeController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PersonalPlanController;
 use App\Http\Controllers\SubscriptionController;
