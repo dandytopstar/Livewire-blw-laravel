@@ -39,9 +39,9 @@ return [
     'country' => 'us',
 
     //Hero section
-    'hero_title' => 'Willing to know if your baby ir ready for baby-led weaning?',
-    'hero_subtitle' => "Find out if your baby is ready to start solids. Get a complete step-by-step guide with a personalized baby-led weaning meal plan according to your baby's age, habits, allergies, body language, and even your needs!",
-    'start_quiz' => 'Start quiz',
+    'hero_title' => 'Personalized Baby-Led Weaning Meal Plan',
+    'hero_subtitle' => "Say goodbye to weaning woes and confidently introduce solids to your 6-12 month old’s",
+    'start_quiz' => 'Take Quiz',
 
     //Processes section
     'processes_title'           => 'How It Works',

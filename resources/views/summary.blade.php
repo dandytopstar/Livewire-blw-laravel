@@ -8,10 +8,14 @@
         <div class="container">
             <div class="content-box">
                 <div class="title">
-                    <p class="font-grey-color-700">Based on your answers, your baby is <span class="font-accent-40-700">ready for solid food!</span></p>
-                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your baby</p>
+                    <p class="font-grey-color-700">
+                        <span class="font-accent-40-700">Congratulations!</span> Your Baby-Led Weaning meal plan has been designed!
+                    </p>
+                    <p class="font-grey-color-400">
+                        We've analyzed your quiz results and prepared personalized insights for your baby's weaning journey.
+                    </p>
                 </div>
-                <div class="notice-box d-flex w-100 justify-content-between align-items-center">
+                <div class="notice-box d-flex w-100 justify-content-between align-items-center mb-2">
                     <img src="../../assets/icons/book.png" alt="">
                     <div class="content">
                         <p class="font-grey-500">Facts</p>
@@ -20,102 +24,66 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="diagram-box mb-4">
+                    <div class="data-box">
+                        <div class="data d-flex w-100 align-items-center">
+                            <img src="../../assets/icons/weight.png" alt="">
+                            <div class="d-flex w-100 align-items-center">
+                                <div class="content">
+                                    <p class="font-grey-color-400 pt-3">Your baby's weight</p>
+                                </div>
+                                <div class="font-accent-18-700">
+                                    Normal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data d-flex w-100 align-items-center">
+                            <img src="../../assets/icons/face.png" alt="">
+                            <div class="d-flex w-100 align-items-center">
+                                <div class="content">
+                                    <p class="font-grey-color-400 m-0">Is baby-led weaning safe for your baby?</p>
+                                </div>
+                                <div class="font-accent-18-700">
+                                    Yes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="{{route('registration', $code)}}" class="text-decoration-none">
                     <button class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_plan')}}
                     </button>
                 </a>
             </div>
-            <div class="diagram-box">
-                <div class="diagram">
-                    <div class="days-container">
-{{--                        <div class="days-box">--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[0]}}</p>--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[1]}}</p>--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[2]}}</p>--}}
-{{--                            <p class="current font-dark-grey-700">{{$randomDays[3]}}</p>--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[4]}}</p>--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[5]}}</p>--}}
-{{--                            <p class="font-light-grey-700">{{$randomDays[6]}}</p>--}}
-{{--                        </div>--}}
 
-                        <div class="days-box">
-                            <p class="font-light-grey-700">83</p>
-                            <p class="font-light-grey-700">84</p>
-                            <p class="font-light-grey-700">85</p>
-                            <p class="current font-dark-grey-700">86</p>
-                            <p class="font-light-grey-700">87</p>
-                            <p class="font-light-grey-700">88</p>
-                            <p class="font-light-grey-700">89</p>
-                        </div>
-                    </div>
-                    <div class="img-box">
-                        <img src="../../assets/bg-images/summary_bg.png" alt="">
-                        <div class="inf-box font-grey-color-400">Your baby will eat
-                            independently in <span class="font-accent-18-700">86 days</span></div>
-                        <div class="today-box font-grey-16-700">Today</div>
-                        <div class="days-amount-box font-grey-16-700">Day 86</div>
-                    </div>
-                </div>
-                <div class="data-box">
-                    <div class="data d-flex w-100 align-items-center">
-                        <img src="../../assets/icons/weight.png" alt="">
-                        <div class="d-flex w-100 align-items-center">
-                            <div class="content">
-                                <p class="font-grey-color-400 pt-3">Your baby's weight</p>
-                            </div>
-                            <div class="font-accent-18-700">
-                                Normal
-                            </div>
-                        </div>
-                    </div>
-                    <div class="data d-flex w-100 align-items-center">
-                        <img src="../../assets/icons/face.png" alt="">
-                        <div class="d-flex w-100 align-items-center">
-                            <div class="content">
-                                <p class="font-grey-color-400 m-0">Is baby-led weaning safe for your baby?</p>
-                            </div>
-                            <div class="font-accent-18-700">
-                                Yes
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="img-box bg-image-absolute">
+                <img src="{{asset('assets/summary/iPhone13Pro-summary.png')}}"></img>
             </div>
+
         </div>
     </section>
 
     <section class="summary-conclusion adaptive">
         <div class="container">
+            <div class="img-box bg-image-absolute mb-3">
+                <img src="{{asset('assets/summary/iPhone13Pro-summary.png')}}" height="300px" >
+            </div>
+
             <div class="content-box">
                 <div class="title">
-                    <p class="font-grey-color-700">Based on your answers, your baby is <span class="font-accent-40-700">ready for solid food!</span></p>
-                    <p class="font-grey-color-400">We’ve prepared a personalized Baby-led weaning meal plan for your baby</p>
+                    <p class="font-grey-color-700">
+                        <span style="color:#00bd90;">Congratulations!</span> Your Baby-Led Weaning meal plan has been designed!
+                    </p>
+
+                    <p class="font-grey-color-400">
+                        We've analyzed your quiz results and prepared personalized insights for your baby's weaning journey.
+                    </p>
                 </div>
             </div>
-            <div class="diagram-box">
-                <div class="diagram">
-                    <div class="days-container">
-                        <div class="days-box">
-                            <p class="font-light-grey-700">83</p>
-                            <p class="font-light-grey-700">84</p>
-                            <p class="font-light-grey-700">85</p>
-                            <p class="current font-dark-grey-700">86</p>
-                            <p class="font-light-grey-700">87</p>
-                            <p class="font-light-grey-700">88</p>
-                            <p class="font-light-grey-700">89</p>
-                        </div>
-                    </div>
-                    <div class="img-box">
-                        <img src="{{asset('assets/bg-images/summary_bg.png')}}" alt="">
-                        <img class="adaptive" src="{{asset('assets/bg-images/summary_bg_xs.png')}}" alt="">
-                        <div class="inf-box font-grey-color-400">Your baby will eat
-                            independently in <span class="font-accent-18-700">86 days</span></div>
-                        <div class="today-box font-grey-16-700">Today</div>
-                        <div class="days-amount-box font-grey-16-700">Day 86</div>
-                    </div>
-                </div>
-            </div>
+
             <div class="content-box">
 
                 <a href="{{route('registration', $code)}}" class="text-decoration-none">

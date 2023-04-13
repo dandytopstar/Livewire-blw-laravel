@@ -17,8 +17,8 @@ section .description {
 
 section.main-page .bg-image-absolute {
     position: absolute;
-    top: 0;
-    right: -20%;
+    bottom: -20px;
+    right: 0;
 }
 
 section.main-page .bg-image-absolute img{

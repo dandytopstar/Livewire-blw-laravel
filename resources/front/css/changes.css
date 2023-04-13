@@ -309,7 +309,10 @@ input[type=number] {
         position: initial;
         text-align: center;
     }
-    
+
+    .securePaymentImages img{
+        max-width: 110px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -375,5 +378,9 @@ input[type=number] {
 
     .header {
         padding: 20px 0;
+    }
+
+    .securePaymentImages img{
+        max-width: 90px;
     }
 }

@@ -48,8 +48,18 @@
 
             <section class="last-section payment-section mt-5">
                 <div class="container">
-                    <h2 class="font-grey-32-700">Select a secure payment method</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between">
+                        <h2 class="font-grey-32-700">Select a secure payment method</h2>
+                        <div class="securePaymentImages">
+                            <img class="img-fluid" src="{{asset('assets/payment/3d-secure.png')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/payment/stripe-secure.png')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/payment/secure.png')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/payment/paypal-secure.png')}}" alt="">
+                        </div>
+                    </div>
+
                     <div class="content-box">
+
                         <div class="payment-box mb-5">
                             <div class="accordion" id="accordionPayment">
 
@@ -193,6 +203,7 @@
 
                             </div>
                         </div>
+
                         <div class="inf-box">
                             <div class="item d-flex align-items-center">
                                 <img src="{{asset('assets/icons/lock.png')}}" alt="">
@@ -203,6 +214,7 @@
                                 <p class="font-grey-color-400">The price is valid for the first term of your subscription. Afterwards, your subscription will be automatically renewed for the initially ordered service period and you will be charged at the standard renewal price.</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>

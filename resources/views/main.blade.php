@@ -40,7 +40,7 @@
             <nav class="navbar navbar-expand-lg adaptive-header">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('assets/logo/main-logo.png')}}" alt="" width="220px">
+                        <img src="{{asset('assets/logo/mobile-only-logo.png')}}" alt="" width="90px">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,15 +80,17 @@
                 <p class="description font-grey-color-400">
                     {{__('front.hero_subtitle')}}
                 </p>
-                <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>
+                <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre mb-20">
+                    {{__("front.start_quiz")}}
+                </a>
             </div>
             <div class="img-box bg-image-absolute">
-                <img src="{{asset('assets/bg-images/bg-main-page-1.jpg')}}"></img>
+                <img src="{{asset('assets/main/iPhone13Pro.png')}}"></img>
             </div>
         </div>
     </section>
 
-    <section class="section accent-section" id="how-it-works">
+    <section class="section accent-section mt-0" id="how-it-works">
         <div class="container">
             <div class="title-box">
                 <p class="font-accent-700">
