@@ -51,10 +51,10 @@
                     <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between">
                         <h2 class="font-grey-32-700">Select a secure payment method</h2>
                         <div class="securePaymentImages">
-                            <img class="img-fluid" src="{{asset('assets/payment/3d-secure.png')}}" alt="">
-                            <img class="img-fluid" src="{{asset('assets/payment/stripe-secure.png')}}" alt="">
-                            <img class="img-fluid" src="{{asset('assets/payment/secure.png')}}" alt="">
-                            <img class="img-fluid" src="{{asset('assets/payment/paypal-secure.png')}}" alt="">
+                            <img src="{{asset('assets/payment/3d-secure.png')}}" alt="">
+                            <img src="{{asset('assets/payment/stripe-secure.png')}}" alt="">
+                            <img src="{{asset('assets/payment/secure.png')}}" alt="">
+                            <img src="{{asset('assets/payment/paypal-secure.png')}}" alt="">
                         </div>
                     </div>
 
