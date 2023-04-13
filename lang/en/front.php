@@ -159,7 +159,6 @@ return [
     'continue_button_text_8'  => 'continue',
 
     //client registration
-    'name' => 'Name',
     'email' => 'Email',
     'age' => 'Age',
     'client_registration_title' => 'Please enter your information',
