@@ -8,7 +8,7 @@
 {{--            frameborder="0"--}}
 {{--    >--}}
 
-<iframe src="{{asset('assets/plugins/ViewerJS/')}}#{{ $link }}"
+<iframe src="../assets/plugins/ViewerJS/#{{ $link }}"
         width='100%' height='100%'
         allowfullscreen
         webkitallowfullscreen
