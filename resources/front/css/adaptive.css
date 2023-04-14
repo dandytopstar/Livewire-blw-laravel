@@ -823,7 +823,11 @@
     }
 
     .section.quizz-box .content-box .option {
-        padding: 0px;
+        padding: 8px 0px;
+    }
+
+    .section.quizz-box .content-box .option .img-box {
+        margin-bottom: 10px;
     }
 
     .section.quizz-box {

@@ -394,11 +394,12 @@ input[type=number] {
     }
 
     .securePaymentImagesMobile img{
-        max-width: 90px;
+        max-width: 100px;
+        margin: 5px;
         height: 31px;
     }
 
     .securePaymentImagesMobile{
-        display: block;
+        display: flex;
     }
 }

@@ -56,7 +56,7 @@
                             <img src="{{asset('assets/payment/secure.png')}}" alt="">
                             <img src="{{asset('assets/payment/paypal-secure.png')}}" alt="">
                         </div>
-                        <div class="securePaymentImagesMobile">
+                        <div class="securePaymentImagesMobile justify-content-center">
                             <img src="{{asset('assets/payment/3d-secure-mobile.png')}}" alt="">
                             <img src="{{asset('assets/payment/stripe-secure-mobile.png')}}" alt="">
                             <img src="{{asset('assets/payment/secure-mobile.png')}}" alt="">
