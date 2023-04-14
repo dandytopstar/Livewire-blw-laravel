@@ -2,10 +2,16 @@
 
 @section('content')
 
-    <embed
-            src="{{ $link }}"
-            style="width:100%; height:100%;"
-            frameborder="0"
-    >
+{{--    <embed--}}
+{{--            src="{{ $link }}"--}}
+{{--            style="width:100%; height:100%;"--}}
+{{--            frameborder="0"--}}
+{{--    >--}}
+
+<iframe src="{{asset('assets/plugins/ViewerJS/')}}#{{ $link }}"
+        width='100%' height='100%'
+        allowfullscreen
+        webkitallowfullscreen
+></iframe>
 
 @endsection

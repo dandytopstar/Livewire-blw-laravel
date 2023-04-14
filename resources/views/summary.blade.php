@@ -60,7 +60,7 @@
             </div>
 
             <div class="img-box bg-image-absolute">
-                <img src="{{asset('assets/summary/iPhone13Pro-summary.png')}}"></img>
+                <img src="{{asset('assets/summary/iPhone-13-Pro-1.png')}}"></img>
             </div>
 
         </div>
@@ -69,7 +69,7 @@
     <section class="summary-conclusion adaptive">
         <div class="container">
             <div class="img-box bg-image-absolute mb-3">
-                <img src="{{asset('assets/summary/iPhone13Pro-summary.png')}}" height="300px" >
+                <img src="{{asset('assets/summary/iPhone-13-Pro-1.png')}}" height="300px" >
             </div>
 
             <div class="content-box">
@@ -78,6 +78,12 @@
                         <span style="color:#00bd90;">Congratulations!</span> Your Baby-Led Weaning meal plan has been designed!
                     </p>
 
+                    <a href="{{route('registration', $code)}}" class="text-decoration-none">
+                        <button class="btn font-white-600 btn-green-squre">
+                            {{__('front.get_your_plan')}}
+                        </button>
+                    </a>
+
                     <p class="font-grey-color-400">
                         We've analyzed your quiz results and prepared personalized insights for your baby's weaning journey.
                     </p>
@@ -85,12 +91,6 @@
             </div>
 
             <div class="content-box">
-
-                <a href="{{route('registration', $code)}}" class="text-decoration-none">
-                    <button class="btn font-white-600 btn-green-squre">
-                        {{__('front.get_your_plan')}}
-                    </button>
-                </a>
 
                 <div class="notice-box d-flex w-100 justify-content-between align-items-center">
                     <img src="../../assets/icons/book.png" alt="">

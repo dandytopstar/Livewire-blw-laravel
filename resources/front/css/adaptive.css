@@ -485,7 +485,7 @@
     }
 
     section.main-page .bg-image-absolute img, .get-section .box .img-box img {
-        width: 100%;
+        width: 80%;
     }
 
     section.main-page .inf-box {
@@ -820,6 +820,14 @@
 
     .summary-header-btn {
         display: none;
+    }
+
+    .section.quizz-box .content-box .option {
+        padding: 0px;
+    }
+
+    .section.quizz-box {
+        padding: 10px;
     }
 }
 

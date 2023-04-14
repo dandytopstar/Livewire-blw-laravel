@@ -40,7 +40,7 @@
             <nav class="navbar navbar-expand-lg adaptive-header">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('assets/logo/mobile-only-logo.png')}}" alt="" width="90px">
+                        <img src="{{asset('assets/logo/logo-mobile-only.png')}}" alt="" width="90px">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,8 +84,8 @@
                     {{__("front.start_quiz")}}
                 </a>
             </div>
-            <div class="img-box bg-image-absolute">
-                <img src="{{asset('assets/main/iPhone13Pro.png')}}"></img>
+            <div class="img-box bg-image-absolute text-center">
+                <img src="{{asset('assets/main/iPhone-13-Pro.png')}}"></img>
             </div>
         </div>
     </section>
