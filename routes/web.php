@@ -66,17 +66,17 @@ Route::get('paypal-error/{id}', [PaymentController::class, 'payPalError'])->name
 Route::get('send/home-question-form', [MailController::class, 'sendHomeQuestionForm'])
     ->name('send.home-question-form');
 
-Route::get('/asdwrgqwdqsdasdad', [FileController::class, 'getEbook']);
+Route::get('/5qpge23personal44232dietqpfform99675', [FileController::class, 'getEbook']);
 
-Route::get('/weq6eqw8rqwrqwdqw', [FileController::class, 'getMealPlan']);
+Route::get('/6mptt4485custom8fqmealplan7761', [FileController::class, 'getMealPlan']);
 
 Route::get('/e-book-pdf', [FileController::class, 'showEbook'])->name('show-e-book');
 
 Route::get('/meal-plan-pdf', [FileController::class, 'showMealPlan'])->name('show-meal-plan');
 
-Route::get('/5qpge23personal44232dietqpfform99675', [FileController::class, 'showEbookPdf']);
+Route::get('/5qpge23personal44232dietqpfform99675-2', [FileController::class, 'showEbookPdf']);
 
-Route::get('/6mptt4485custom8fqmealplan7761', [FileController::class, 'showMealPlanPdf']);
+Route::get('/6mptt4485custom8fqmealplan7761-2', [FileController::class, 'showMealPlanPdf']);
 
 Route::fallback(function () {
     return redirect()->route('main');
