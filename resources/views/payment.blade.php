@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @push('custom-header')
-    <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&vault=true&intent=subscription"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&vault=true&intent=subscription&disable-funding=card"></script>
 @endpush
 
 @section('content')
