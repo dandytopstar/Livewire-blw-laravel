@@ -16,7 +16,7 @@ class FileController extends Controller
 
     public function getMealPlan()
     {
-        $file = public_path('files/meal-plan.pdf');
+        $file = public_path('files/Meal_Plan.pdf');
 
         return response()->download($file);
     }

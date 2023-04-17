@@ -488,6 +488,10 @@
         width: 80%;
     }
 
+    .mobile-img-center {
+        text-align: center !important;
+    }
+
     section.main-page .inf-box {
         max-width: 100%;
         text-align: center;

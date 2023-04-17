@@ -188,7 +188,7 @@
                     </p>
                     <a href="{{route('quiz')}}" type="button" class="btn font-white-600 btn-green-squre">{{__("front.start_quiz")}}</a>
                 </div>
-                <div class="img-box">
+                <div class="img-box mobile-img-center">
                     <img src="{{asset('assets/bg-images/bg-main-page-2.png')}}" alt="">
                 </div>
             </div>
