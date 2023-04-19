@@ -52,29 +52,44 @@
                                  id="plan-id-{{$plan->id}}"
                                  data-id="{{$plan->id}}"
                             >
-                                <div class="row-inf">
-                                    <p class="title font-accent-18-700">{{$plan->name}}</p>
-                                    @if($plan->payment_price_old)
-                                        <p class="old-price font-grey-color-400 canceled-text">${{$plan->payment_price_old}}</p>
-                                    @endif
-                                </div>
 
                                 <div class="row-inf">
+                                    <div>
+                                        <p class="title font-accent-18-700">{!! $plan->name !!}</p>
+                                    </div>
+                                    <div class="pt-4">
 
-                                            <div class="sales-box d-flex">
-                                                @if($plan->billed_price_old || $plan->billed_price)
-                                                    @if($plan->billed_price_old)
-                                                        <p class="font-grey-16-500 canceled-text">USD {{$plan->billed_price_old}}</p>
-                                                    @endif
-
-                                                    @if($plan->billed_price)
-                                                        <p class="font-grey-color-400">USD {{$plan->billed_price}}</p>
-                                                    @endif
-                                                @endif
-                                            </div>
+                                        @if($plan->payment_price_old)
+                                            <p class="old-price font-grey-color-400 canceled-text mx-auto">${{$plan->payment_price_old}}</p>
+                                        @endif
 
                                         <p class="font-accent-40-700">${{$plan->payment_price}}</p>
                                     </div>
+                                </div>
+
+{{--                                <div class="row-inf">--}}
+{{--                                    <p class="title font-accent-18-700">{{$plan->name}}</p>--}}
+{{--                                    @if($plan->payment_price_old)--}}
+{{--                                        <p class="old-price font-grey-color-400 canceled-text">${{$plan->payment_price_old}}</p>--}}
+{{--                                    @endif--}}
+{{--                                </div>--}}
+
+{{--                                <div class="row-inf">--}}
+
+{{--                                            <div class="sales-box d-flex">--}}
+{{--                                                @if($plan->billed_price_old || $plan->billed_price)--}}
+{{--                                                    @if($plan->billed_price_old)--}}
+{{--                                                        <p class="font-grey-16-500 canceled-text">USD {{$plan->billed_price_old}}</p>--}}
+{{--                                                    @endif--}}
+
+{{--                                                    @if($plan->billed_price)--}}
+{{--                                                        <p class="font-grey-color-400">USD {{$plan->billed_price}}</p>--}}
+{{--                                                    @endif--}}
+{{--                                                @endif--}}
+{{--                                            </div>--}}
+
+{{--                                        <p class="font-accent-40-700">${{$plan->payment_price}}</p>--}}
+{{--                                    </div>--}}
 
                                 <div class="row-inf">
                                     <p class="font-grey-500">{{$plan->billed_period}}</p>

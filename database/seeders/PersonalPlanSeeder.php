@@ -14,42 +14,52 @@ class PersonalPlanSeeder extends Seeder
      */
     public function run()
     {
-        PersonalPlan::query()->create([
-            'name' => '3-month BLW Plan',
-            'billed_period' => 'Billed every 3 months',
-            'period' => 3,
-            'billed_price' => 59.97,
-            'billed_price_old' => 98.97,
-            'payment_period' => 'per month',
-            'payment_price' => 19.99,
-            'payment_price_old' => 32.99,
-            'discount_price' => 39.00,
-            'discount' => 39,
-            'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
-        ]);
+        $existPersonalPlans = PersonalPlan::query()->get();
 
-        PersonalPlan::query()->create([
-            'name' => '6-month BLW Plan',
-            'billed_period' => 'Billed every 6 months',
-            'period' => 6,
-            'billed_price' => 71.94,
-            'billed_price_old' => 197.94,
-            'payment_period' => 'per month',
-            'payment_price' => 11.99,
-            'payment_price_old' => 32.99,
-            'discount_price' => 126.00,
-            'discount' => 63,
-            'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
-        ]);
+        $personalPlans = [
+            1 => [
+                'name' => '3-month <br>Baby-Led Weaning <br>Meal Plan',
+                'billed_period' => 'Billed every 3 months',
+                'period' => 3,
+                'payment_period' => 'per week',
+                'payment_price' => 4.99,
+                'payment_price_old' => 8.24,
+                'billed_price' => 59.97,
+                'billed_price_old' => 98.97,
+                'discount_price' => 39.00,
+                'discount' => 39,
+                'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
+            ],
+            2 => [
+                'name' => '6-month <br>Baby-Led Weaning <br>Meal Plan',
+                'billed_period' => 'Billed every 6 months',
+                'period' => 6,
+                'payment_period' => 'per week',
+                'payment_price' => 2.99,
+                'payment_price_old' => 8.24,
+                'billed_price' => 71.94,
+                'billed_price_old' => 197.94,
+                'discount_price' => 126.00,
+                'discount' => 63,
+                'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
+            ],
+            3 => [
+                'name' => '1-month <br>Baby-Led Weaning Meal Plan',
+                'billed_period' => 'Billed every month',
+                'period' => 1,
+                'payment_period' => 'per week',
+                'payment_price' => 8.24,
+                'billed_price' => 8.24,
+                'stripe_id' => 'price_1MRgMrLAfRRz3YR8Az0LRFIz',
+            ]
+        ];
 
-        PersonalPlan::query()->create([
-            'name' => '1-month BLW Plan',
-            'billed_period' => 'Billed every month',
-            'period' => 1,
-            'payment_period' => 'per month',
-            'billed_price' => 32.99,
-            'payment_price' => 32.99,
-            'stripe_id' => 'price_1MRgMrLAfRRz3YR8Az0LRFIz',
-        ]);
+        foreach($personalPlans as $key => $plan) {
+            if ($existPersonalPlans->where('id', $key)->first()) {
+                PersonalPlan::query()->where('id', $key)->update($plan);
+            } else {
+                PersonalPlan::query()->create($plan);
+            }
+        }
     }
 }
