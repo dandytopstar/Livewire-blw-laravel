@@ -62,7 +62,7 @@ class Quiz extends Component
                 'question' => trans('front.question_2'),
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_2_1'),
+                        'text' => 'Expert',
                         'image'  => '',
                         'selected'  => false,
                     ],
@@ -72,7 +72,7 @@ class Quiz extends Component
                         'selected'  => false,
                     ],
                     '3' => [
-                        'text' => trans('front.answer_2_3'),
+                        'text' => 'Beginner',
                         'image'  => '',
                         'selected'  => false,
                     ],
@@ -186,7 +186,7 @@ class Quiz extends Component
 
             '7' => [
                 'question_key' => 'can_grab',
-                'question' => 'Can your baby grab things by themselves?',
+                'question' => 'Is you baby performing chewing movements?',
                 'answers' => [
                     '1' => [
                         'text' => 'yes',
