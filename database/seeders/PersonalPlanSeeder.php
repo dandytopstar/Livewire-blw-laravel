@@ -29,6 +29,7 @@ class PersonalPlanSeeder extends Seeder
                 'discount_price' => 39.00,
                 'discount' => 39,
                 'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
+                'paypal_id' => 'P-2W2292030D7885326MPED4CY',
             ],
             2 => [
                 'name' => '6-month <br>Baby-Led Weaning <br>Meal Plan',
@@ -42,6 +43,7 @@ class PersonalPlanSeeder extends Seeder
                 'discount_price' => 126.00,
                 'discount' => 63,
                 'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
+                'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
             ],
             3 => [
                 'name' => '1-month <br>Baby-Led Weaning Meal Plan',
@@ -51,6 +53,7 @@ class PersonalPlanSeeder extends Seeder
                 'payment_price' => 8.24,
                 'billed_price' => 8.24,
                 'stripe_id' => 'price_1MRgMrLAfRRz3YR8Az0LRFIz',
+                'paypal_id' => 'P-2X5077790X569272TMPED2SA',
             ]
         ];
 
