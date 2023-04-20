@@ -252,6 +252,13 @@ input[type=number] {
     border-radius: 10px;
 }
 
+.plan.personal-plan .discount{
+    display: none;
+}
+
+.plan.personal-plan.active .discount{
+    display: flex;
+}
 
 /*mobile*/
 
