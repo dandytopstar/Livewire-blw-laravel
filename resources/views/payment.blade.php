@@ -150,7 +150,7 @@
                                                     Credit Card
                                                 </span>
                                                     <div class="icon d-flex align-items-center">
-                                                        <img src="{{asset('assets/payment/cardsbig.png')}}" alt="" width="130px">
+                                                        <img src="{{asset('assets/payment/cardbigwithoutshadow.png')}}" alt="" width="130px">
                                                     </div>
                                                 </div>
                                             </label>
