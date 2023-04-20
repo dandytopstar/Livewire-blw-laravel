@@ -81,7 +81,6 @@
                                                 <span>
                                                     PayPal
                                                 </span>
-{{--                                                    <div class="icon"><img src="{{asset('assets/payment/paypal_95x27.png')}}" alt=""></div>--}}
                                                     <div class="icon"><img src="{{asset('assets/payment/paypalbig.png')}}" alt="" width="100px"></div>
                                                 </div>
                                             </label>
@@ -151,7 +150,7 @@
                                                     Credit Card
                                                 </span>
                                                     <div class="icon d-flex align-items-center">
-                                                        <img src="{{asset('assets/payment/cards_118x19.png')}}" alt="">
+                                                        <img src="{{asset('assets/payment/cardsbig.png')}}" alt="" width="130px">
                                                     </div>
                                                 </div>
                                             </label>
