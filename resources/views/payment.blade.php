@@ -81,7 +81,7 @@
                                                 <span>
                                                     PayPal
                                                 </span>
-                                                    <div class="icon"><img src="{{asset('assets/payment/paypal.png')}}" alt=""></div>
+                                                    <div class="icon"><img src="{{asset('assets/payment/paypal_95x27.png')}}" alt=""></div>
                                                 </div>
                                             </label>
                                         </div>
@@ -130,7 +130,7 @@
 {{--                                                    <img src="{{asset('assets/payment/paypal-btn.png')}}" alt="">--}}
 {{--                                                </button>--}}
 
-                                                <div id="paypal-button-container"></div>
+                                                <div id="paypal-button-container" class="mt-4"></div>
 
                                             </form>
                                         </div>
@@ -150,10 +150,7 @@
                                                     Credit Card
                                                 </span>
                                                     <div class="icon d-flex align-items-center">
-                                                        <img src="{{asset('assets/payment/visa-xs.png')}}" alt="">
-                                                        <img src="{{asset('assets/payment/master-xs.png')}}" alt="">
-                                                        <img src="{{asset('assets/payment/green-xs.png')}}" alt="">
-                                                        <img src="{{asset('assets/payment/e-xs.png')}}" alt="">
+                                                        <img src="{{asset('assets/payment/cards_118x19.png')}}" alt="">
                                                     </div>
                                                 </div>
                                             </label>
