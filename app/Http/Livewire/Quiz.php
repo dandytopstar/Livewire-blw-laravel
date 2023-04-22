@@ -230,35 +230,35 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-6.png',
             ],
 
-            '9' => [
-                'question_key' => 'can_chew',
-                'question' => 'Is you baby performing chewing movements with for ex. toys?',
-                'answers' => [
-                    '1' => [
-                        'text' => 'yes',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'no',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => 'not sure',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
-                ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-2.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
-            ],
+//            '9' => [
+//                'question_key' => 'can_chew',
+//                'question' => 'Is you baby performing chewing movements with for ex. toys?',
+//                'answers' => [
+//                    '1' => [
+//                        'text' => 'yes',
+//                        'image'  => '',
+//                        'selected'  => false,
+//                    ],
+//                    '2' => [
+//                        'text' => 'no',
+//                        'image'  => '',
+//                        'selected'  => false,
+//                    ],
+//                    '3' => [
+//                        'text' => 'not sure',
+//                        'image'  => '',
+//                        'selected'  => false,
+//                    ]
+//                ],
+//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
+//                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
+//                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
+//                'bottom_image' => true, 'bottom_image_position' => 'right',
+//                'bottom_image_name' => 'bg-quizz-2.png',
+//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
+//            ],
 
-            '10' => [
+            '9' => [
                 'question_key' => 'foods_prefer',
                 'question' => 'Do you wish to exclude any of these foods?',
                 'answers' => [
@@ -301,7 +301,7 @@ class Quiz extends Component
                 'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
 
-            '11' => [
+            '10' => [
                 'question_key' => 'weight',
                 'question' => 'What is your baby’s weight?',
                 'answers' => [
