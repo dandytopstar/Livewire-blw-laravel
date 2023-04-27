@@ -33,8 +33,6 @@ class QuizController extends Controller
 
     public function summary(Request $request, $code): Factory|View|Application
     {
-        $clientData = $this->quizService->getBabySummary($code);
-
-        return view('summary', $clientData);
+        return view('summary', compact('code'));
     }
 }

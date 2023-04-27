@@ -31,6 +31,8 @@ Route::view('/', 'main')->name('main');
 
 Route::view('quiz', 'quiz')->name('quiz');
 
+Route::view('big-quiz', 'big-quiz')->name('big-quiz');
+
 Route::view('subscription', 'subscription')->name('subscription');
 
 Route::post('subscription-send', [SubscriptionController::class, 'subscriptionSend'])->name('subscription-send');
@@ -46,8 +48,6 @@ Route::get('registration/{code}', [ClientController::class, 'registration'])->na
 Route::post('create-client', [ClientController::class, 'createClient'])->name('create-client');
 
 Route::get('personal-plan/{code}', [PersonalPlanController::class, 'index'])->name('personal-plan');
-
-Route::get('checkout/{code}', [PersonalPlanController::class, 'checkout'])->name('checkout');
 
 Route::get('payment/{code}/{personalPlan}', [PaymentController::class, 'index'])->name('payment');
 

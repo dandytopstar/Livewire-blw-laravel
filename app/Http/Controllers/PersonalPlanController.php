@@ -25,16 +25,9 @@ class PersonalPlanController extends Controller
 
     public function index(Request $request, $code): Factory|View|Application
     {
-        $clientData = $this->quizService->getBabySummary($code);
         $clientData['personalPlans'] = PersonalPlan::query()->get();
+        $clientData['code'] = $code;
 
         return view('personal-plan', $clientData);
-    }
-
-    public function checkout(Request $request, $code): Factory|View|Application
-    {
-        $clientData = $this->quizService->getBabySummary($code);
-
-        return view('checkout', $clientData);
     }
 }

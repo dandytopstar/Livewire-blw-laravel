@@ -24,25 +24,31 @@ class QuizService
         $answers = [];
 
         foreach($client->quizAnswers as $answer) {
-
             $answers[$answer->question_number]['key'] = $answer['key'];
-            $answers[$answer->question_number]['question_number'] = $answer['question_number'];
-            $answers[$answer->question_number]['question_translation_key'] = 'question_'.$answer->question_number;
-
-            if(empty($answer['answer_number'])) {
-                $answers[$answer->question_number]['result'] = $answer['answer'];
-                continue;
-            }
-            $answers[$answer->question_number]['last_answer_number'] = $answer['answer_number'];
-            $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer_number'] = $answer['answer_number'];
-            $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer'] = $answer['answer'];
-            $answers[$answer->question_number]['answers'][$answer['answer_number']]['answer_translation_key'] = 'answer_'.$answer->question_number.'_'.$answer['answer_number'];
-
+            $answers[$answer->question_number]['question'] = $answer['question_text'];
+            $answers[$answer->question_number]['answers'][] = $answer['answer'];
         }
 
         $client->answers = $answers;
 
         return $client;
+    }
+
+    /**
+     * @param Client $client
+     * @return array
+     */
+    public function getClientAnswers(Client $client): array
+    {
+        $answers = [];
+
+        foreach($client->quizAnswers as $answer) {
+            $answers[$answer->question_number]['key'] = $answer['key'];
+            $answers[$answer->question_number]['question'] = $answer['question_text'];
+            $answers[$answer->question_number]['answers'][] = $answer['answer'];
+        }
+
+        return $answers;
     }
 
     public function getBabySummary($code): array
@@ -57,13 +63,12 @@ class QuizService
         $gender = $answers->where('key', 'gender')->first();
         $weight = $answers->where('key', 'weight')->first();
 
-        $gender =  trans('front.'.$gender['answers'][$gender['last_answer_number']]['answer_translation_key']);
-        $age = $age['answers'][$age['last_answer_number']]['answer'];
-        $weight = $weight['answers'][$weight['last_answer_number']]['answer'];
-//        $weight = $weight['result'].' lbs';
-        $randomDays = $this->randomDays();
+        $gender =  $gender['answers'][0];
+        $age = $age['answers'][0];
+        $weight = $weight['answers'][0];
+        $weight = $weight['answers'][0];
 
-        return  compact('gender', 'age', 'weight', 'code', 'client', 'randomDays');
+        return  compact('gender', 'age', 'weight', 'code', 'client', 'answers');
     }
 
     public function getClientByCode($code)

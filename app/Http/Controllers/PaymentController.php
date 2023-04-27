@@ -32,11 +32,14 @@ class PaymentController extends Controller
 
     public function index(Request $request, $code, $personalPlan)
     {
-        $clientData = $this->quizService->getBabySummary($code);
+        $client = Client::where('code', $code)->first();
         $personalPlan = PersonalPlan::query()->where('id', $personalPlan)->first();
-        $clientData['personalPlan'] = $personalPlan;
 
-        $subscription = $this->paymentService->getStripeSubscription($clientData['client'], $personalPlan);
+        $clientData['personalPlan'] = $personalPlan;
+        $clientData['code'] = $code;
+        $clientData['client'] = $client;
+
+        $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
 
         $clientData = array_merge($clientData, $subscription);
 

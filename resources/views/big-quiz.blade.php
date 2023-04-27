@@ -2,6 +2,6 @@
 
 @section('content')
 
-    @livewire('quiz')
+    @livewire('big-quiz')
 
 @endsection

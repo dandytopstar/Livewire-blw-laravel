@@ -36,8 +36,6 @@ class KlaviyoService
             'code' => $client->code,
         ];
 
-
-
         $properties = [
             'step' => $step,
             ...$paymentData

@@ -9,7 +9,7 @@ use App\Models\QuizAnswers;
 use Illuminate\Support\Str;
 use Livewire\Component;
 
-class Quiz extends Component
+class BigQuiz extends Component
 {
     public array $quizQuestions;
 
@@ -34,315 +34,335 @@ class Quiz extends Component
         $this->quizQuestions = [
             '1' => [
                 'question_key' => 'gender',
-                'question' => trans('front.question_1'),
+                'question' => 'Select your baby’s gender',
                 'answers' => [
                     '1' => [
-                        'text' => trans('front.answer_1_1'),
+                        'text' => 'BOY',
                         'image'  => 'assets/quiz/boy.jpg',
-                        'selected'  => false,
                     ],
                     '2' => [
-                        'text' => trans('front.answer_1_2'),
+                        'text' => 'GIRL',
                         'image'  => 'assets/quiz/girl.jpg',
-                        'selected'  => false,
                     ],
                 ],
-                'section_text' => '',
-                'section_image' => '',
-                'continue_button_text' => '',
-                'multiple' => false, 'answer_with_image' => true, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-1.png',
-                'bottom_image_adaptive' => '',
+                'answer_with_image' => true,
             ],
 
             '2' => [
-                'question_key' => 'familiar_with_blw',
-                'question' => trans('front.question_2'),
-                'answers' => [
-                    '1' => [
-                        'text' => 'Expert',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => trans('front.answer_2_2'),
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => 'Beginner',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                ],
-                'section_text' => trans('front.section_text_2'),
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_2'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-2.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
-            ],
-
-            '3' => [
-                'question_key' => 'text_section',
-                'question' => trans('front.question_3'),
-                'answers' => [
-                    '1' => [
-                        'text' => trans('front.answer_3_1'),
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
-                ],
-                'section_text' => trans('front.section_text_3'),
-                'section_image' => 'images/girl_queshions.png',
-                'continue_button_text' => trans('front.continue_button_text_3'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-                'has_answers' => false, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-2.png',
-                'bottom_image_adaptive' => '',
-            ],
-
-            '4' => [
-                'question_key' => 'tried_blw',
-                'question' => 'Have you ever tried Baby-Led Weaning?',
-                'answers' => [
-                    '1' => [
-                        'text' => 'yes',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'no',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
-                ],
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_14'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-3.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-3.png',
-            ],
-
-            '5' => [
                 'question_key' => 'age',
                 'question' => 'How old is your baby?',
                 'answers' => [
-                    '1' => [
-                        'text' => 'Younger than 4 months',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => '4 to 12 months old',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => '12 months or older',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
+                    '1' => ['text' => 'Under 6 months'],
+                    '2' => ['text' => '6-8 months'],
+                    '3' => ['text' => '8-10 months'],
                 ],
-                'section_image' => '',
-                'continue_button_text' => trans('front.continue_button_text_14'),
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-3.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-3.png',
+            ],
+
+            '3' => [
+                'question_key' => 'weight',
+                'question' => "What is your baby's current weight?",
+                'answers' => [
+                    '1' => ['text' => 'Under 10 pounds'],
+                    '2' => ['text' => '10-15 pounds'],
+                    '3' => ['text' => '15-20 pounds'],
+                    '4' => ['text' => 'Over 20 pounds'],
+                ],
+            ],
+
+            '4' => [
+                'question_key' => 'overall_health',
+                'question' => "Which of the following best describes your baby's overall health and development?",
+                'answers' => [
+                    '1' => ['text' => 'Healthy and thriving'],
+                    '2' => ['text' => 'Some health concerns'],'
+                    3' => ['text' => 'Developmental delays or concerns'],
+                ],
+            ],
+
+            '5' => [
+                'question_key' => 'current_feeding_routine',
+                'question' => "Which of the following best describes your baby's current feeding routine?",
+                'answers' => [
+                    '1' => ['text' => 'Exclusively breastfed'],
+                    '2' => ['text' => 'Exclusively formula-fed'],
+                    '3' => ['text' => 'A combination of breast milk and formula']
+                ],
             ],
 
             '6' => [
-                'question_key' => 'can_sit',
-                'question' => 'Can your baby sit without any support?',
+                'question_key' => 'breastfeed',
+                'question' => 'How long do you plan to breastfeed or provide formula to your baby?',
                 'answers' => [
-                    '1' => [
-                        'text' => 'yes',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'no',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
+                    '1' => ['text' => '6 months'],
+                    '2' => ['text' => '9 months'],
+                    '3' => ['text' => '12 months'],
+                    '4' => ['text' => 'Over 12 months'],
                 ],
-                'section_image' => '',
-                'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-4.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-4.png',
             ],
 
             '7' => [
-                'question_key' => 'can_grab',
-                'question' => 'Is you baby performing chewing movements?',
+                'question_key' => 'started_introducing_solids',
+                'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
-                    '1' => [
-                        'text' => 'yes',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'no',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
+                    '1' => ['text' => 'yes'],
+                    '2' => ['text' => 'no']
                 ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-5.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-5.png',
+                'loader' => [
+                    'show' => true,
+                    'seconds' => 3,
+                    'text' => 'We are now generating APP Profile Just For You',
+                    'file' => 'assets/quiz/animation.gif',
+                ],
             ],
 
             '8' => [
-                'question_key' => 'can_put_things',
-                'question' => 'Is your baby putting things in their mouth instinctively?',
-                'answers' => [
-                    '1' => [
-                        'text' => 'yes',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'no',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
-                ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-6.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-6.png',
+                'question' => 'What is Baby-Led Weaning?',
+                'answers' => [],
+                'text' => "Baby-led weaning (BLW) allows infants to transition to eating solid foods by feeding themselves. With BLW, you skip over the spoon-feeding stage altogether. This helps children be more independent and encourages them to be more adventurous eaters. BLW stresses the self-sufficiency of babies and encourages parents to follow their baby's cues. Parents can introduce solids when their baby indicates they are ready while continuing to supply breastmilk. Let your baby's signals guide you!",
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
             ],
 
-//            '9' => [
-//                'question_key' => 'can_chew',
-//                'question' => 'Is you baby performing chewing movements with for ex. toys?',
-//                'answers' => [
-//                    '1' => [
-//                        'text' => 'yes',
-//                        'image'  => '',
-//                        'selected'  => false,
-//                    ],
-//                    '2' => [
-//                        'text' => 'no',
-//                        'image'  => '',
-//                        'selected'  => false,
-//                    ],
-//                    '3' => [
-//                        'text' => 'not sure',
-//                        'image'  => '',
-//                        'selected'  => false,
-//                    ]
-//                ],
-//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-//                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-//                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-//                'bottom_image' => true, 'bottom_image_position' => 'right',
-//                'bottom_image_name' => 'bg-quizz-2.png',
-//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
-//            ],
-
             '9' => [
-                'question_key' => 'foods_prefer',
-                'question' => 'Do you wish to exclude any of these foods?',
+                'question_key' => 'infant_separate_meals',
+                'question' => 'Do you prefer to offer your infant separate meals or have them eat what the rest of the family is eating?',
                 'answers' => [
-                    '1' => [
-                        'text' => 'fish',
-                        'image'  => 'assets/quiz/meal-1.png',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => 'dairy',
-                        'image'  => 'assets/quiz/meal-2.png',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => 'eggs',
-                        'image'  => 'assets/quiz/meal-3.png',
-                        'selected'  => false,
-                    ],
-                    '4' => [
-                        'text' => 'poultry',
-                        'image'  => 'assets/quiz/meal-4.png',
-                        'selected'  => false,
-                    ],
-                    '5' => [
-                        'text' => 'beef',
-                        'image'  => 'assets/quiz/meal-5.png',
-                        'selected'  => false,
-                    ],
-                    '6' => [
-                        'text' => 'pork',
-                        'image'  => 'assets/quiz/meal-6.png',
-                        'selected'  => false,
-                    ]
+                    '1' => ['text' => 'Family meals'],
+                    '2' => ['text' => 'Both'],
+                    '3' => ['text' => 'Undecided'],
                 ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => true, 'answer_with_image' => true, 'continue_button' => true,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'left',
-                'bottom_image_name' => 'bg-quizz-7.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
 
             '10' => [
-                'question_key' => 'weight',
-                'question' => 'What is your baby’s weight?',
+                'question_key' => 'own_or_pre_made_baby_food',
+                'question' => 'Do you prefer to make your own baby food or buy pre-made baby food?',
                 'answers' => [
-                    '1' => [
-                        'text' => 'less than 14 lbs',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '2' => [
-                        'text' => '14 lbs - 22 lbs',
-                        'image'  => '',
-                        'selected'  => false,
-                    ],
-                    '3' => [
-                        'text' => '22 lbs and more',
-                        'image'  => '',
-                        'selected'  => false,
-                    ]
+                    '1' => ['text' => 'Make my own'],
+                    '2' => ['text' => 'Buy pre-made'],
+                    '3' => ['text' => 'Both'],
+                    '4' => ['text' => 'Undecided'],
                 ],
-                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-                'multiple' => false, 'answer_with_image' => false, 'continue_button' => false,
-                'has_answers' => true, 'image_before' => false, 'range_slider' => false,
-                'bottom_image' => true, 'bottom_image_position' => 'right',
-                'bottom_image_name' => 'bg-quizz-2.png',
-                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-2.png',
             ],
 
-//            '9' => [
-//                'question_key' => 'weight',
-//                'question' => 'What is your baby’s weight?',
-//                'answers' => [],
-//                'min' => '1',
-//                'max' => '',
-//                'range_name' => 'lbs',
-//                'section_text' => '', 'section_image' => '', 'continue_button_text' => 'continue',
-//                'multiple' => false, 'answer_with_image' => false, 'continue_button' => true,
-//                'has_answers' => false, 'image_before' => false, 'range_slider' => true, 'input' => true,
-//                'bottom_image' => true, 'bottom_image_position' => 'left',
-//                'bottom_image_name' => 'bg-quizz-1.png',
-//                'bottom_image_adaptive' => 'assets/bg-images/bg-image-adaptive-5.png',
-//            ],
+            '11' => [
+                'question_key' => 'store_and_preserve_baby_food',
+                'question' => "How do you plan to store and preserve baby's food?",
+                'answers' => [
+                    '1' => ['text' => 'Refrigerate', 'selected'  => false],
+                    '2' => ['text' => 'Freeze', 'selected'  => false],
+                    '3' => ['text' => 'Use within a day', 'selected'  => false]
+                ],
+                'multiple' => true,
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
+            ],
+
+            '12' => [
+                'question_key' => 'bulk_and_froze_for_future_use',
+                'question' => 'Are you looking for meal ideas that can be made in bulk and frozen for future use?',
+                'answers' => [
+                    '1' => ['text' => 'Yes'],
+                    '2' => ['text' => 'No'],
+                    '3' => ['text' => 'Somewhat']
+                ],
+            ],
+
+            '13' => [
+                'question_key' => 'introduce_new_foods',
+                'question' => 'How do you prefer to introduce new foods to your baby?',
+                'answers' => [
+                    '1' => ['text' => 'One food at a time'],
+                    '2' => ['text' => 'Mix multiple foods together'],
+                    '3' => ['text' => 'Undecided']
+                ],
+            ],
+
+            '14' => [
+                'question_key' => 'offer_solid_foods',
+                'question' => 'How often do you plan to offer solid foods to your baby?',
+                'answers' => [
+                    '1' => ['text' => 'Once a day'],
+                    '2' => ['text' => 'Twice a day'],
+                    '3' => ['text' => 'Three times a day'],
+                    '4' => ['text' => 'Undecided'],
+                ],
+            ],
+
+            '15' => [
+                'question_key' => 'feeding_accessories',
+                'question' => 'Which of the following feeding accessories do you plan to use?',
+                'answers' => [
+                    '1' => ['text' => 'High chair', 'selected'  => false],
+                    '2' => ['text' => 'Booster seat', 'selected'  => false],
+                    '3' => ['text' => 'Baby seat', 'selected'  => false],
+                    '4' => ['text' => 'None', 'selected'  => false],
+                ],
+                'multiple' => true,
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
+            ],
+
+            '16' => [
+                'question_key' => 'budget_friendly_meal_ideas',
+                'question' => 'Are you looking for meal ideas that are budget-friendly?',
+                'answers' => [
+                    '1' => ['text' => 'Yes'],
+                    '2' => ['text' => 'No'],
+                    '3' => ['text' => 'Somewhat'],
+                ],
+            ],
+
+            '17' => [
+                'question_key' => 'quick_and_easy_to_prepare_meal_ideas',
+                'question' => 'Are you looking for meal ideas that are quick and easy to prepare?',
+                'answers' => [
+                    '1' => ['text' => 'Yes'],
+                    '2' => ['text' => 'No'],
+                    '3' => ['text' => 'Somewhat'],
+                ],
+            ],
+
+            '18' => [
+                'question_key' => 'reactions_to_new_foods',
+                'question' => "How would you like to track your baby's food intake and reactions to new foods?",
+                'answers' => [
+                    '1' => ['text' => 'Keep a journal', 'selected'  => false],
+                    '2' => ['text' => 'Use a mobile app', 'selected'  => false],
+                    '3' => ['text' => 'Other', 'selected'  => false],
+                ],
+                'multiple' => true,
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
+            ],
+
+            '19' => [
+                'question_key' => 'purees_and_finger_foods',
+                'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
+                'answers' => [
+                    '1' => ['text' => 'No'],
+                    '2' => ['text' => 'Undecided'],
+                ],
+                'loader' => [
+                    'show' => true,
+                    'seconds' => 3,
+                    'text' => 'We Are Now Generating First Part of Your Meal Plan',
+                    'start_file' => 'assets/quiz/animation.gif',
+                    'end_file' => 'assets/quiz/animationend.png',
+                ],
+            ],
+
+            '20' => [
+                'question_key' => 'allergenic_foods',
+                'question' => 'Do you plan to introduce these allergenic foods to reduce the risk of allergies?',
+                'answers' => [
+                    '1' => [
+                        'text' => 'Peanuts',
+                        'image'  => 'assets/quiz/boy.jpg',
+                    ],
+                    '2' => [
+                        'text' => 'Sesame seeds',
+                        'image'  => 'assets/quiz/girl.jpg',
+                    ],
+                    '3' => [
+                        'text' => 'Wheat',
+                        'image'  => 'assets/quiz/boy.jpg',
+                    ],
+                    '4' => [
+                        'text' => 'Soy',
+                        'image'  => 'assets/quiz/girl.jpg',
+                    ],
+                    '5' => [
+                        'text' => 'Eggs',
+                        'image'  => 'assets/quiz/boy.jpg',
+                    ],
+                    '6' => [
+                        'text' => 'Dairy products',
+                        'image'  => 'assets/quiz/girl.jpg',
+                    ],
+                ],
+                'answer_with_image' => true,
+                'buttons' => ['NO', 'UNDECIDED', 'YES'],
+            ],
+
+            '21' => [
+                'question_key' => 'comfortable_preparing_and_cooking_meals',
+                'question' => 'How comfortable are you with preparing and cooking meals from scratch?',
+                'answers' => [
+                    '1' => ['text' => 'Very comfortable'],
+                    '2' => ['text' => 'Somewhat comfortable'],
+                    '3' => ['text' => 'Not very comfortable'],
+                    '4' => ['text' => 'Not at all comfortable'],
+                ]
+            ],
+
+            '22' => [
+                'question_key' => 'reactions_to_new_foods',
+                'question' => 'Which of the following cooking methods do you prefer?',
+                'answers' => [
+                    '1' => ['text' => 'Boiling', 'selected'  => false],
+                    '2' => ['text' => 'Steaming', 'selected'  => false],
+                    '3' => ['text' => 'Roasting', 'selected'  => false],
+                    '4' => ['text' => 'Grilling', 'selected'  => false],
+                ],
+                'multiple' => true,
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
+            ],
+
+            '23' => [
+                'question_key' => 'traditional_foods',
+                'question' => "ave you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
+                'answers' => [
+                    '1' => ['text' => 'Yes'],
+                    '2' => ['text' => 'No'],
+                    '3' => ['text' => 'Somewhat'],
+                ],
+            ],
+
+            '24' => [
+                'question_key' => 'reactions_to_new_foods',
+                'question' => "Love it or Hate It?",
+                'answers' => [
+                    '1' => [
+                        'text' => 'Plant-Based Proteins',
+                        'image'  => 'assets/quiz/boy.jpg',
+                    ],
+                    '2' => [
+                        'text' => 'High Iron Foods',
+                        'image'  => 'assets/quiz/girl.jpg',
+                    ],
+                    '3' => [
+                        'text' => 'Spices and Herbs',
+                        'image'  => 'assets/quiz/boy.jpg',
+                    ],
+                    '4' => [
+                        'text' => 'Fermented Foods',
+                        'image'  => 'assets/quiz/girl.jpg',
+                    ],
+                ],
+                'answer_with_image' => true,
+                'buttons' => ['NO', 'UNDECIDED', 'YES'],
+            ],
+
+            '25' => [
+                'question_key' => 'drinks',
+                'question' => 'Which of the following drinks would you like to offer your baby along with meals?',
+                'answers' => [
+                    '1' => ['text' => 'Water', 'selected'  => false],
+                    '2' => ['text' => 'Fruit juice', 'selected'  => false],
+                    '3' => ['text' => 'Milk', 'selected'  => false],
+                ],
+                'multiple' => true,
+                'continue_button' => true,
+                'continue_button_text' => 'continue',
+                'loader' => [
+                    'show' => true,
+                    'seconds' => 3,
+                    'text' => 'We are now generating Your Final Meal Plan and App Profile!',
+                    'start_file' => 'assets/quiz/animation.gif',
+                    'end_file' => 'assets/quiz/animationend.png',
+                ],
+            ],
         ];
 
         $this->clientRegistrationData = [
@@ -353,7 +373,7 @@ class Quiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 7;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -422,6 +442,7 @@ class Quiz extends Component
                 $this->resultAnswers[$this->currentQuestionNum] = [
                     'number' => $this->currentQuestionNum,
                     'key' => $currentAnswer['question_key'],
+                    'question_text' => $currentAnswer['question'],
                     'answers' => []
                 ];
 
@@ -435,6 +456,7 @@ class Quiz extends Component
             $this->dispatchBrowserEvent('answer-selected', [
                 'number' => $answer,
                 'key' => $currentAnswer['question_key'],
+                'question_text' => $currentAnswer['question'],
                 'answers' => $this->quizQuestions[$this->currentQuestionNum]['answers']
             ]);
 
@@ -459,6 +481,7 @@ class Quiz extends Component
             $this->resultAnswers[$this->currentQuestionNum] = [
                 'number' => $this->currentQuestionNum,
                 'key' => $currentAnswer['question_key'],
+                'question_text' => $currentAnswer['question'],
                 'answer' => $text,
                 'answer_num' => $answer_num,
             ];
@@ -511,6 +534,7 @@ class Quiz extends Component
                     'client_id' => $client->id,
                     'question_number' => $answer['number'],
                     'key' => $answer['key'],
+                    'question_text' => $answer['question_text'],
                     'answer' => $answer['answer'],
                     'answer_number' => $answer['answer_num'],
                 ];
@@ -522,6 +546,7 @@ class Quiz extends Component
                     'client_id' => $client->id,
                     'question_number' => $answer['number'],
                     'key' => $answer['key'],
+                    'question_text' => $answer['question_text'],
                 ];
 
                 foreach ($answer['answers'] as $key => $value) {
@@ -541,6 +566,6 @@ class Quiz extends Component
 
     public function render()
     {
-        return view('livewire.quiz');
+        return view('livewire.big-quiz');
     }
 }

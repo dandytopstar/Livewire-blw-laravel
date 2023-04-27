@@ -15,6 +15,7 @@ class QuizAnswers extends Model
         'question_number',
         'answer_number',
         'key',
+        'question_text',
         'answer',
     ];
 

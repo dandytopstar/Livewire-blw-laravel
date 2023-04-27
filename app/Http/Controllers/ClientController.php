@@ -5,15 +5,19 @@ namespace App\Http\Controllers;
 use App\Enums\ClientSteps;
 use App\Models\Client;
 use App\Services\KlaviyoService;
+use App\Services\QuizService;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
     private KlaviyoService $klaviyoService;
 
-    public function __construct(KlaviyoService $klaviyoService)
+    private QuizService $quizService;
+
+    public function __construct(KlaviyoService $klaviyoService, QuizService $quizService)
     {
         $this->klaviyoService = $klaviyoService;
+        $this->quizService = $quizService;
     }
 
     public function registration(Request $request, $code)
@@ -41,7 +45,7 @@ class ClientController extends Controller
             $client->save();
         }
 
-        $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_QUIZ);
+        $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_QUIZ->value);
 
         return response()->redirectToRoute('personal-plan', $code);
     }

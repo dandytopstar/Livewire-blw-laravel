@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('quiz_answers', function (Blueprint $table) {
-            //
+            $table->string('question_text')->nullable()->after('key');
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('quiz_answers', function (Blueprint $table) {
-            //
+            $table->dropColumn('question_text');
         });
     }
 };
