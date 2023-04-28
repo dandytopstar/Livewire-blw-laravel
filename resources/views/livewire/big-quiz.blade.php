@@ -9,32 +9,31 @@
         >
             <x-quiz.loader :currentQuestion="$currentQuestion" />
         </x-quiz.card-loader>
-
-    @else
-
-        <x-quiz.card
-            :countQuestionsDots="$countQuestionsDots"
-            :currentQuestionNum="$currentQuestionNum"
-            :currentQuestion="$currentQuestion"
-        >
-            @if(count($currentQuestion['answers']) == 2 && !empty($currentQuestion['answer_with_image']))
-                <x-quiz.two-images :currentQuestion="$currentQuestion" />
-            @endif
-
-            @if(empty($currentQuestion['answer_with_image']))
-                <x-quiz.button-answers :currentQuestion="$currentQuestion" />
-            @endif
-
-            @if(!empty($currentQuestion['text']))
-                <x-quiz.text :currentQuestion="$currentQuestion" />
-            @endif
-
-            @if(!empty($currentQuestion['continue_button']))
-                <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
-            @endif
-
-        </x-quiz.card>
     @endif
+
+    <x-quiz.card
+        :countQuestionsDots="$countQuestionsDots"
+        :currentQuestionNum="$currentQuestionNum"
+        :currentQuestion="$currentQuestion"
+    >
+        @if(count($currentQuestion['answers']) == 2 && !empty($currentQuestion['answer_with_image']))
+            <x-quiz.two-images :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(empty($currentQuestion['answer_with_image']))
+            <x-quiz.button-answers :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(!empty($currentQuestion['text']))
+            <x-quiz.text :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(!empty($currentQuestion['continue_button']))
+            <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
+        @endif
+
+    </x-quiz.card>
+
 </div>
 
 
@@ -100,8 +99,8 @@
 
     window.addEventListener('next-click', event => {
 
-        if(document.querySelector('.quizz-btn')) {
-            let elements = document.querySelectorAll(".quizz-btn")
+        if(document.querySelector('.quiz-btn')) {
+            let elements = document.querySelectorAll(".quiz-btn")
 
             let myFunction = function() {
                 this.style.backgroundColor = '#00bd90';
@@ -111,6 +110,19 @@
             Array.from(elements).forEach(function(element) {
                 element.addEventListener('click', myFunction);
             });
+        }
+
+        if(document.querySelector('#card-loader')) {
+            let card = document.querySelector('#card');
+            let cardLoader = document.querySelector('#card-loader');
+            let seconds = cardLoader.dataset.seconds;
+
+            card.style.display = 'none';
+
+            setTimeout(() => {
+                cardLoader.style.display = 'none';
+                card.style.display = 'block';
+            }, seconds*1000);
         }
     });
 

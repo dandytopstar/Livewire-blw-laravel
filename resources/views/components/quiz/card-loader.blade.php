@@ -3,7 +3,10 @@
     'currentQuestionNum' => 1,
     'currentQuestion' => [],
 ])
-<div class="mt-100 card mx-auto quiz-card shadow-lg p-3 mb-5 bg-body rounded">
+<div class="mt-40 mt-lg-5 card mx-auto quiz-card shadow-lg p-3 mb-5 bg-body rounded"
+     id="card-loader"
+     data-seconds="{{$currentQuestion['loader']['seconds'] ?? 0}}"
+>
 
     <div class="container tp-2 border-bottom p-3">
         <div class="row">
