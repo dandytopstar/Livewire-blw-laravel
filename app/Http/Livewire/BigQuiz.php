@@ -250,6 +250,7 @@ class BigQuiz extends Component
                 ],
                 'benefits' => [
                     'text' => 'Benefits of Baby-Led Weaning',
+                    'image' => 'assets/quiz/benefit.png',
                     'items' => [
                         'Reduces Allergies',
                         'Leads to Healthier Weight',

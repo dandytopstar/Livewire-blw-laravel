@@ -4,7 +4,7 @@
     'currentQuestion' => [],
 ])
 <div class="mt-40 mt-lg-5 card mx-auto quiz-card shadow-lg p-3 mb-5 bg-body rounded"
-     id="card-loader"
+     id="card-benefits"
      data-seconds="{{$currentQuestion['loader']['seconds'] ?? 0}}"
      style="display: none"
 >
@@ -30,11 +30,25 @@
     </div>
 
     <div class="card-body">
-        <h2 class="card-title text-center question-title mt-40">{{$currentQuestion['loader']['text']}}</h2>
+        <h2 class="card-title text-center question-title mt-40">{{$currentQuestion['benefits']['text']}}</h2>
 
-        <div class="card-text py-4">
-            {{ $slot }}
+        <div class="card-text py-4 mb-3 px-lg-4">
+            @foreach($currentQuestion['benefits']['items'] as $item)
+                <div class="benefit-item d-flex justify-content-start my-3 gap-3">
+                    <div class="">
+                        <img src="{{asset('assets/quiz/benefit.png')}}" alt="" width="22px">
+                    </div>
+                    <div style="font-weight: bold;">
+                        {{$item}}
+                    </div>
+                </div>
+
+            @endforeach
         </div>
+
+        <button type="button" class="btn w-100 btn-green-squre continue-btn next-btn">
+            next
+        </button>
     </div>
 
 </div>

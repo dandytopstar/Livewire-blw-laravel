@@ -11,6 +11,15 @@
         </x-quiz.card-loader>
     @endif
 
+    @if(!empty($currentQuestion['benefits']))
+        <x-quiz.benefits
+                :countQuestionsDots="$countQuestionsDots"
+                :currentQuestionNum="$currentQuestionNum"
+                :currentQuestion="$currentQuestion"
+        >
+        </x-quiz.benefits>
+    @endif
+
     <x-quiz.card
         :countQuestionsDots="$countQuestionsDots"
         :currentQuestionNum="$currentQuestionNum"
@@ -112,18 +121,44 @@
             });
         }
 
+        cardLoader();
+    });
+
+    function cardLoader() {
         if(document.querySelector('#card-loader')) {
             let card = document.querySelector('#card');
             let cardLoader = document.querySelector('#card-loader');
             let seconds = cardLoader.dataset.seconds;
 
             card.style.display = 'none';
+            cardLoader.style.display = 'block';
 
             setTimeout(() => {
-                cardLoader.style.display = 'none';
-                card.style.display = 'block';
+                if(document.querySelector('#card-benefits')) {
+                    cardLoader.style.display = 'none';
+                    cardBenefits();
+                } else {
+                    cardLoader.style.display = 'none';
+                    card.style.display = 'block';
+                }
             }, seconds*1000);
         }
-    });
+    }
+
+    function cardBenefits() {
+        if(document.querySelector('#card-benefits')) {
+            let card = document.querySelector('#card');
+            let cardBenefits = document.querySelector('#card-benefits');
+            let nextBtn = document.querySelector('.next-btn');
+
+            card.style.display = 'none';
+            cardBenefits.style.display = 'block';
+
+            nextBtn.addEventListener('click', () => {
+                cardBenefits.style.display = 'none';
+                card.style.display = 'block';
+            });
+        }
+    }
 
 </script>
