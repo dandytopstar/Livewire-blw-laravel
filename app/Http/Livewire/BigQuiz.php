@@ -247,8 +247,20 @@ class BigQuiz extends Component
                     'seconds' => 3,
                     'text' => 'We Are Now Generating First Part of Your Meal Plan',
                     'start_file' => 'assets/quiz/animation.gif',
-                    'end_file' => 'assets/quiz/animationend.png',
                 ],
+                'benefits' => [
+                    'text' => 'Benefits of Baby-Led Weaning',
+                    'items' => [
+                        'Reduces Allergies',
+                        'Leads to Healthier Weight',
+                        'Promotes Brain Development',
+                        'Builds baby’s confidence',
+                        'Saves Money on Purees',
+                        'Saves Time in Meal Prep',
+                        'Develops Fine Motor Skills',
+                        'Encourages Family Bonding',
+                    ]
+                ]
             ],
 
             '20' => [
