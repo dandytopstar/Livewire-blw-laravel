@@ -29,7 +29,11 @@
             <x-quiz.two-images :currentQuestion="$currentQuestion" />
         @endif
 
-        @if(empty($currentQuestion['answer_with_image']))
+        @if(!empty($currentQuestion['slider']))
+            <x-quiz.slider :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']))
             <x-quiz.button-answers :currentQuestion="$currentQuestion" />
         @endif
 

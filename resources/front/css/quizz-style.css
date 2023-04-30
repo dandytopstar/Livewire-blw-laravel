@@ -283,15 +283,17 @@
     max-width: 300px;
 }
 
-.checkbox-box input:checked + label .quiz-checkbox {
-    content: '';
-    background: url(/assets/quiz/benefit.png);
-    left: 0;
-    top: 0;
-    width: 24px;
-    background-repeat: no-repeat;
-    height: 24px;
-    background-position-x: center;
-    background-position-y: 6px;
+.btn-no {
+    background: var(--light-red-color);
+    color: #fff;
 }
 
+.btn-undecided {
+    background: var(--light-blue-color);
+    color: #fff;
+}
+
+.btn-yes {
+    background: var(--acent-color-green);
+    color: #fff;
+}

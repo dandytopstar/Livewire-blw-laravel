@@ -270,31 +270,41 @@ class BigQuiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image'  => 'assets/quiz/boy.jpg',
+                        'image'  => 'assets/quiz/slider/peanuts.png',
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'image'  => 'assets/quiz/slider/sesame_seeds.png',
                     ],
                     '3' => [
-                        'text' => 'Wheat',
-                        'image'  => 'assets/quiz/boy.jpg',
+                        'text' => 'Soy',
+                        'image'  => 'assets/quiz/slider/soy.png',
                     ],
                     '4' => [
-                        'text' => 'Soy',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'text' => 'Eggs',
+                        'image'  => 'assets/quiz/slider/eggs.png',
                     ],
                     '5' => [
-                        'text' => 'Eggs',
-                        'image'  => 'assets/quiz/boy.jpg',
-                    ],
-                    '6' => [
                         'text' => 'Dairy products',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'image'  => 'assets/quiz/slider/dairy_products.png',
                     ],
                 ],
-                'answer_with_image' => true,
-                'buttons' => ['NO', 'UNDECIDED', 'YES'],
+                'slider' => true,
+                'selectedSlider' => 1,
+                'buttons' => [
+                    '1' => [
+                        'text' => 'NO',
+                        'class' => 'btn-no',
+                    ],
+                    '2' => [
+                        'text' => 'UNDECIDED',
+                        'class' => 'btn-undecided',
+                    ],
+                    '3' => [
+                        'text' => 'YES',
+                        'class' => 'btn-yes',
+                    ]
+                ],
             ],
 
             '21' => [
@@ -334,27 +344,49 @@ class BigQuiz extends Component
 
             '24' => [
                 'question_key' => 'reactions_to_new_foods',
-                'question' => "Love it or Hate It?",
+                'question' => "Love it or Hate It? <br> Incorporating different foodsinto your infant's diet",
                 'answers' => [
                     '1' => [
-                        'text' => 'Plant-Based Proteins',
-                        'image'  => 'assets/quiz/boy.jpg',
+                        'text' => 'Whole grains',
+                        'image'  => 'assets/quiz/slider/whole_grains.png',
                     ],
                     '2' => [
-                        'text' => 'High Iron Foods',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'text' => 'Beef',
+                        'image'  => 'assets/quiz/slider/beef.png',
                     ],
                     '3' => [
-                        'text' => 'Spices and Herbs',
-                        'image'  => 'assets/quiz/boy.jpg',
+                        'text' => 'Chicken',
+                        'image'  => 'assets/quiz/slider/chicken.png',
                     ],
                     '4' => [
-                        'text' => 'Fermented Foods',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'text' => 'Fish',
+                        'image'  => 'assets/quiz/slider/fish.png',
+                    ],
+                    '5' => [
+                        'text' => 'Garlic',
+                        'image'  => 'assets/quiz/slider/garlic.png',
+                    ],
+                    '6' => [
+                        'text' => 'Ginger',
+                        'image'  => 'assets/quiz/slider/ginger.png',
                     ],
                 ],
-                'answer_with_image' => true,
-                'buttons' => ['NO', 'UNDECIDED', 'YES'],
+                'slider' => true,
+                'selectedSlider' => 1,
+                'buttons' => [
+                    '1' => [
+                        'text' => 'NO',
+                        'class' => 'btn-no',
+                    ],
+                    '2' => [
+                        'text' => 'UNDECIDED',
+                        'class' => 'btn-undecided',
+                    ],
+                    '3' => [
+                        'text' => 'YES',
+                        'class' => 'btn-yes',
+                    ]
+                ],
             ],
 
             '25' => [
@@ -386,7 +418,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 24;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -397,7 +429,6 @@ class BigQuiz extends Component
 
     public function dehydrate()
     {
-
     }
 
     public function nextSlide($answer = null)
@@ -575,6 +606,15 @@ class BigQuiz extends Component
 
 
         $this->redirect('/summary/'.$client->code);
+    }
+
+    public function setCurrentSlider(int $value)
+    {
+        $this->currentQuestion['selectedSlider'] = $value;
+
+        if($value >= count($this->currentQuestion['answers'])) {
+            $this->nextSlide(1);
+        }
     }
 
     public function render()

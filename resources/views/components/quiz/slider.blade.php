@@ -1,0 +1,32 @@
+@props([
+    'currentQuestion' => [],
+])
+
+<div class="container text-center">
+    <div class="gap-4">
+
+        @foreach($currentQuestion['answers'] as $key => $answer)
+
+            @if($currentQuestion['selectedSlider'] == $key)
+                <div>
+                    <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
+                </div>
+            @endif
+
+
+            @if($currentQuestion['selectedSlider'] == $key)
+                <div class="my-3 my-lg-5">
+                    @foreach($currentQuestion['buttons'] as $item)
+                        <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key++}})">
+                            {{$item['text']}}
+                        </button>
+                    @endforeach
+                </div>
+            @endif
+
+        @endforeach
+
+
+
+    </div>
+</div>
