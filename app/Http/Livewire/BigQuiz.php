@@ -418,7 +418,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 20;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -612,7 +612,7 @@ class BigQuiz extends Component
     {
         $this->currentQuestion['selectedSlider'] = $value;
 
-        if($value >= count($this->currentQuestion['answers'])) {
+        if($value > count($this->currentQuestion['answers'])) {
             $this->nextSlide(1);
         }
     }
