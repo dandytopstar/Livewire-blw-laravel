@@ -130,6 +130,10 @@
     border: 2px solid var(--light-red-color);
 }
 
+.click-green {
+    border: 2px solid var(--acent-color-green);
+}
+
 .click-red img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);

@@ -348,7 +348,7 @@ class BigQuiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
-                        'image'  => 'assets/quiz/slider/whole_grains.png',
+                        'image'  => 'assets/quiz/slider/whole_grains.jpg',
                     ],
                     '2' => [
                         'text' => 'Beef',
@@ -356,19 +356,19 @@ class BigQuiz extends Component
                     ],
                     '3' => [
                         'text' => 'Chicken',
-                        'image'  => 'assets/quiz/slider/chicken.png',
+                        'image'  => 'assets/quiz/slider/chicken.jpg',
                     ],
                     '4' => [
                         'text' => 'Fish',
-                        'image'  => 'assets/quiz/slider/fish.png',
+                        'image'  => 'assets/quiz/slider/fish.jpg',
                     ],
                     '5' => [
                         'text' => 'Garlic',
-                        'image'  => 'assets/quiz/slider/garlic.png',
+                        'image'  => 'assets/quiz/slider/garlic.jpg',
                     ],
                     '6' => [
                         'text' => 'Ginger',
-                        'image'  => 'assets/quiz/slider/ginger.png',
+                        'image'  => 'assets/quiz/slider/ginger.jpg',
                     ],
                 ],
                 'slider' => true,

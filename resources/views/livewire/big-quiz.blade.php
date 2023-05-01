@@ -50,42 +50,6 @@
 </div>
 
 
-
-{{--<div class="container-box position-relative">--}}
-
-{{--    <x-quiz.question-card--}}
-{{--            :countQuestionsDots="$countQuestionsDots"--}}
-{{--            :currentQuestionNum="$currentQuestionNum"--}}
-{{--            :currentQuestion="$currentQuestion"--}}
-{{--    >--}}
-{{--        @if(count($currentQuestion['answers']) == 2 && !empty($currentQuestion['answer_with_image']))--}}
-
-{{--            <x-quiz.two-images :currentQuestion="$currentQuestion" />--}}
-
-{{--        @endif--}}
-
-{{--        @if(count($currentQuestion['answers']) > 2 && !empty($currentQuestion['answer_with_image']))--}}
-
-{{--            <x-quiz.image-answers :currentQuestion="$currentQuestion" />--}}
-
-{{--        @endif--}}
-
-{{--        @if(empty($currentQuestion['answer_with_image']))--}}
-
-{{--                <x-quiz.button-answers :currentQuestion="$currentQuestion" />--}}
-
-{{--        @endif--}}
-
-{{--        @if(!empty($currentQuestion['continue_button']))--}}
-{{--            <button type="button" class="btn font-white-600 btn-green-squre" wire:click="nextSlide">--}}
-{{--                {{$currentQuestion['continue_button_text']}}--}}
-{{--            </button>--}}
-{{--        @endif--}}
-
-{{--    </x-quiz.question-card>--}}
-
-{{--</div>--}}
-
 <script>
 
     window.addEventListener('answer-selected', event => {
@@ -100,9 +64,9 @@
                 let selectedAnswer = document.querySelector("#"+questionKey+"-"+key);
 
                 if(answers[key].selected) {
-                    selectedAnswer.classList.add('click-red');
+                    selectedAnswer.classList.add('click-green');
                 } else {
-                    selectedAnswer.classList.remove('click-red');
+                    selectedAnswer.classList.remove('click-green');
                 }
             }
 

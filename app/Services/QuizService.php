@@ -59,16 +59,7 @@ class QuizService
 
         $answers = collect($client['answers']);
 
-        $age    = $answers->where('key', 'age')->first();
-        $gender = $answers->where('key', 'gender')->first();
-        $weight = $answers->where('key', 'weight')->first();
-
-        $gender =  $gender['answers'][0];
-        $age = $age['answers'][0];
-        $weight = $weight['answers'][0];
-        $weight = $weight['answers'][0];
-
-        return  compact('gender', 'age', 'weight', 'code', 'client', 'answers');
+        return  compact( 'code', 'client', 'answers');
     }
 
     public function getClientByCode($code)
