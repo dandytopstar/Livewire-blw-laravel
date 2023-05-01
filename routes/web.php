@@ -1,13 +1,13 @@
 <?php
 
-use App\Http\Controllers\FileController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MailController;
-use App\Http\Controllers\QuizController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PersonalPlanController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\SubscriptionController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ Route::post('create-client', [ClientController::class, 'createClient'])->name('c
 
 Route::get('personal-plan/{code}', [PersonalPlanController::class, 'index'])->name('personal-plan');
 
-Route::get('payment/{code}/{personalPlan}', [PaymentController::class, 'index'])->name('payment');
+Route::get('payment/{code}/{personalPlan}', [PaymentController::class, 'index'])->name('payment-plan');
 
 Route::post('payment', [PaymentController::class, 'payment'])->name('payment');
 
