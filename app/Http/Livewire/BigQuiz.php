@@ -405,8 +405,32 @@ class BigQuiz extends Component
                     'seconds' => 3,
                     'text' => 'We are now generating Your Final Meal Plan and App Profile!',
                     'start_file' => 'assets/quiz/animation.gif',
-                    'end_file' => 'assets/quiz/animationend.png',
                 ],
+            ],
+
+            '26' => [
+                'question_key' => 'end',
+                'question' => '',
+                'answers' => [
+                    '1' => [
+                        'percent' => '30',
+                        'text' => 'text 1',
+                        'image'  => 'assets/quiz/slider/chicken.jpg',
+                    ],
+                    '2' => [
+                        'percent' => '60',
+                        'text' => 'text 2',
+                        'image'  => 'assets/quiz/slider/garlic.jpg',
+                    ],
+                    '3' => [
+                        'percent' => '100',
+                        'text' => 'text 3',
+                        'image'  => 'assets/quiz/slider/fish.jpg',
+                    ]
+                ],
+                'progress_slider' => true,
+                'selectedSlider' => 1,
+                'seconds' => 3,
             ],
         ];
 

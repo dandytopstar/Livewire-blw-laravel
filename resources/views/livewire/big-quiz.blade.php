@@ -33,7 +33,11 @@
             <x-quiz.slider :currentQuestion="$currentQuestion" />
         @endif
 
-        @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']))
+        @if(!empty($currentQuestion['progress_slider']))
+            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
             <x-quiz.button-answers :currentQuestion="$currentQuestion" />
         @endif
 
@@ -90,6 +94,8 @@
         }
 
         cardLoader();
+
+        progressSlider();
     });
 
     function cardLoader() {
@@ -127,6 +133,31 @@
                 card.style.display = 'block';
             });
         }
+    }
+
+    function progressSlider() {
+        let progressSlider = document.querySelector("#progress-slider")
+        let count = progressSlider.dataset.count;
+        let seconds = progressSlider.dataset.seconds;
+
+        let slide = document.querySelector('#slide-1');
+        slide.style.display = 'block';
+        let currentSlide = 2;
+
+        let showSlides = setInterval(() => {
+            if(document.querySelector('#slide-'+currentSlide)) {
+                slide.style.display = 'none';
+                slide = document.querySelector('#slide-'+currentSlide);
+                slide.style.display = 'block';
+                currentSlide = currentSlide+1;
+            } else {
+                alert('done')
+                clearInterval(showSlides);
+                document.querySelector('#finish-quiz').click();
+            }
+
+        }, seconds*1000);
+
     }
 
 </script>
