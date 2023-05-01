@@ -5,7 +5,7 @@
 <div class="container text-center ">
     <div class="gap-4">
         @foreach($currentQuestion['answers'] as $key => $answer)
-            <button class="btn quiz-btn
+            <button class="btn btn-light quiz-btn
                         @if(!empty($answer['selected'])) active @endif
                         @if(!empty($currentQuestion['multiple'])) multiple-btn @endif
                     "
