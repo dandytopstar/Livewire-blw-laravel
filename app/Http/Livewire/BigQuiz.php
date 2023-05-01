@@ -282,7 +282,7 @@ class BigQuiz extends Component
                     ],
                     '4' => [
                         'text' => 'Eggs',
-                        'image'  => 'assets/quiz/slider/eggs.png',
+                        'image'  => 'assets/quiz/slider/eggs.jpg',
                     ],
                     '5' => [
                         'text' => 'Dairy products',
@@ -465,13 +465,18 @@ class BigQuiz extends Component
 
         $this->currentQuestionNum++;
 
-        $this->checkSlideNumber();
+        $result = $this->checkSlideNumber();
+
+        if(!$result) {
+            return false;
+        }
 
         if($this->currentQuestionNum !== $this->registrationStepNum && !empty($this->quizQuestions[$this->currentQuestionNum])) {
             $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
         }
 
         $this->dispatchBrowserEvent('next-click', ['currentQuestionNum' => $this->currentQuestionNum]);
+
     }
 
     public function nextSlideRange()
@@ -580,6 +585,8 @@ class BigQuiz extends Component
         if(!$this->currentQuestionNum) {
             $this->currentQuestionNum = 1;
         }
+
+        return true;
     }
 
     public function createClient()

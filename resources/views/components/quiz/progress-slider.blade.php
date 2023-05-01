@@ -29,7 +29,8 @@
 
         @endforeach
 
-        <buttton class="d-none" id="finish-quiz" wire:click.prevent="nextSlide({{1}})"></buttton>
-
     </div>
+
+    <buttton class="d-none" id="finish-quiz" wire:click.prevent="nextSlide({{1}})"></buttton>
 </div>
+

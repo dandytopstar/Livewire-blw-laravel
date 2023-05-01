@@ -136,27 +136,32 @@
     }
 
     function progressSlider() {
+        if(!document.querySelector("#progress-slider")){
+            return;
+        }
+
         let progressSlider = document.querySelector("#progress-slider")
         let count = progressSlider.dataset.count;
         let seconds = progressSlider.dataset.seconds;
-
         let slide = document.querySelector('#slide-1');
         slide.style.display = 'block';
         let currentSlide = 2;
+        showSlide()
 
-        let showSlides = setInterval(() => {
-            if(document.querySelector('#slide-'+currentSlide)) {
+        function showSlide() {
+            setTimeout(() => {
                 slide.style.display = 'none';
                 slide = document.querySelector('#slide-'+currentSlide);
                 slide.style.display = 'block';
                 currentSlide = currentSlide+1;
-            } else {
-                alert('done')
-                clearInterval(showSlides);
-                document.querySelector('#finish-quiz').click();
-            }
 
-        }, seconds*1000);
+                if(currentSlide > count) {
+                    document.querySelector('#finish-quiz').click();
+                } else {
+                    showSlide();
+                }
+            }, seconds*1000)
+        }
 
     }
 
