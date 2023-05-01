@@ -270,15 +270,15 @@ class BigQuiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image'  => 'assets/quiz/slider/peanuts.png',
+                        'image'  => 'assets/quiz/slider/peanuts.jpg',
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image'  => 'assets/quiz/slider/sesame_seeds.png',
+                        'image'  => 'assets/quiz/slider/sesame_seeds.jpg',
                     ],
                     '3' => [
                         'text' => 'Soy',
-                        'image'  => 'assets/quiz/slider/soy.png',
+                        'image'  => 'assets/quiz/slider/soy.jpg',
                     ],
                     '4' => [
                         'text' => 'Eggs',
@@ -286,7 +286,7 @@ class BigQuiz extends Component
                     ],
                     '5' => [
                         'text' => 'Dairy products',
-                        'image'  => 'assets/quiz/slider/dairy_products.png',
+                        'image'  => 'assets/quiz/slider/dairy_products.jpg',
                     ],
                 ],
                 'slider' => true,
@@ -352,7 +352,7 @@ class BigQuiz extends Component
                     ],
                     '2' => [
                         'text' => 'Beef',
-                        'image'  => 'assets/quiz/slider/beef.png',
+                        'image'  => 'assets/quiz/slider/beef.jpg',
                     ],
                     '3' => [
                         'text' => 'Chicken',
