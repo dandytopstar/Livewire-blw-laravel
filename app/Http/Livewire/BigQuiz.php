@@ -439,7 +439,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 23;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -490,6 +490,8 @@ class BigQuiz extends Component
         $this->checkSlideNumber();
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
+
+        $this->dispatchBrowserEvent('back-click', []);
     }
 
     public function nextSlideMultiple($answer = null)
@@ -681,6 +683,10 @@ class BigQuiz extends Component
     public function setCurrentSlider(int $value)
     {
         $this->currentQuestion['selectedSlider'] = $value;
+
+        $this->dispatchBrowserEvent('slider-selected', [
+            'selected' => $value
+        ]);
 
         if($value > count($this->currentQuestion['answers'])) {
             $this->nextSlide(1);

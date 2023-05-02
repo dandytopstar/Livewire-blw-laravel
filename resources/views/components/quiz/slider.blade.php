@@ -3,7 +3,7 @@
 ])
 
 <div class="container text-center">
-    <div class="gap-4">
+    <div class="gap-4" id="slider-component">
 
         @foreach($currentQuestion['answers'] as $key => $answer)
 
@@ -28,7 +28,32 @@
 
         @endforeach
 
-
+        <input type="hidden" id="slider-no" value="">
 
     </div>
 </div>
+
+<script>
+    window.addEventListener('slider-selected', event => {
+        sliderButtons();
+    });
+
+    function sliderButtons() {
+
+        if(document.querySelector('#slider-component')) {
+            console.log(111);
+            let no = document.querySelector('.btn-no');
+            let yes = document.querySelector('.btn-yes');
+            let undecided = document.querySelector('.btn-undecided');
+
+            no.style.background = '#FF735C';
+            no.style.color = '#fff';
+
+            yes.style.background = '#00BD90';
+            yes.style.color = '#fff';
+
+            undecided.style.background = '#5FCAD3';
+            undecided.style.color = '#fff';
+        }
+    }
+</script>

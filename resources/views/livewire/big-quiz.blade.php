@@ -78,6 +78,11 @@
 
     });
 
+    window.addEventListener('back-click', event => {
+
+    });
+
+
     window.addEventListener('next-click', event => {
 
         if(document.querySelector('.quiz-btn')) {
