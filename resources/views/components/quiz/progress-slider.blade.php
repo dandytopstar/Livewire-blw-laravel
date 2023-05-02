@@ -7,7 +7,7 @@
 
         @foreach($currentQuestion['answers'] as $key => $answer)
 
-            <div class="my-3" id="slide-{{$key}}" style="display: none">
+            <div class="my-3" style="display: none">
                 <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
                 <p class="p-2">
                     {{$answer['text']}}
