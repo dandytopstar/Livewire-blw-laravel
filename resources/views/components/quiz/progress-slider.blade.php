@@ -12,22 +12,13 @@
                 <p class="p-2">
                     {{$answer['text']}}
                 </p>
-
-                <div class="progress">
-                    <div class="progress-bar bg-success"
-                         role="progressbar"
-                         aria-label="Success example"
-                         style="width: {{$answer['percent']}}%"
-                         aria-valuenow="25"
-                         aria-valuemin="0"
-                         aria-valuemax="100"
-                    >
-                    </div>
-                </div>
-                <div class="text-center">{{$answer['percent']}}%</div>
             </div>
 
         @endforeach
+
+        <div id="myProgress">
+            <div id="myBar">10%</div>
+        </div>
 
     </div>
 

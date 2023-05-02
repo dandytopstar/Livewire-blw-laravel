@@ -240,7 +240,7 @@ class BigQuiz extends Component
                 'question_key' => 'purees_and_finger_foods',
                 'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
                 'answers' => [
-                    '1' => ['text' => 'No'],
+                    '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'Undecided'],
                 ],
                 'loader' => [
@@ -345,7 +345,7 @@ class BigQuiz extends Component
 
             '24' => [
                 'question_key' => 'reactions_to_new_foods',
-                'question' => "Love it or Hate It? <br> Incorporating different foodsinto your infant's diet",
+                'question' => "Love it or Hate It? <br> Incorporating different foods into your infant's diet",
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
@@ -411,7 +411,7 @@ class BigQuiz extends Component
 
             '26' => [
                 'question_key' => 'end',
-                'question' => '',
+                'question' => 'We are now generating Your Final Meal Plan and App Profile!',
                 'answers' => [
                     '1' => [
                         'percent' => '30',
@@ -443,7 +443,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 25;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
