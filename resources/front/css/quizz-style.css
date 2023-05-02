@@ -166,6 +166,7 @@
     padding: 13px 0;
     outline: none;
     border: none;
+    color: #000;
 }
 
 .section.quizz-box .quizz-btn:hover, .quiz-btn.single-btn:hover {

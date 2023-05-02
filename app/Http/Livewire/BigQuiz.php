@@ -196,7 +196,7 @@ class BigQuiz extends Component
                     '1' => ['text' => 'High chair', 'selected'  => false],
                     '2' => ['text' => 'Booster seat', 'selected'  => false],
                     '3' => ['text' => 'Baby seat', 'selected'  => false],
-                    '4' => ['text' => 'None', 'selected'  => false],
+                    '4' => ['text' => 'None', 'selected'  => false, 'refresh' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -241,7 +241,8 @@ class BigQuiz extends Component
                 'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
                 'answers' => [
                     '1' => ['text' => 'Yes'],
-                    '2' => ['text' => 'Undecided'],
+                    '2' => ['text' => 'No'],
+                    '3' => ['text' => 'Undecided'],
                 ],
                 'loader' => [
                     'show' => true,
@@ -401,12 +402,6 @@ class BigQuiz extends Component
                 'multiple' => true,
                 'continue_button' => true,
                 'continue_button_text' => 'continue',
-                'loader' => [
-                    'show' => true,
-                    'seconds' => 3,
-                    'text' => 'We are now generating Your Final Meal Plan and App Profile!',
-                    'start_file' => 'assets/quiz/animation.gif',
-                ],
             ],
 
             '26' => [
