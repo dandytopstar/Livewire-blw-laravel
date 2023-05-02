@@ -8,6 +8,7 @@
             <button class="quiz-btn
                         @if(!empty($answer['selected'])) click-green @endif
                         @if(!empty($currentQuestion['multiple'])) multiple-btn @endif
+                        @if(empty($currentQuestion['multiple'])) single-btn @endif
                     "
                     id="{{$currentQuestion['question_key'].'-'.$key}}"
                     @if(!empty($currentQuestion['multiple']))
