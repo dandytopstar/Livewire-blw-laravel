@@ -79,7 +79,7 @@
     });
 
     window.addEventListener('back-click', event => {
-        sliderButtons();
+
     });
 
 
@@ -101,8 +101,6 @@
         cardLoader();
 
         progressSlider();
-
-        sliderButtons();
     });
 
     window.addEventListener('slider-selected', event => {
