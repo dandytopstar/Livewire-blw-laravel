@@ -443,7 +443,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 10;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 

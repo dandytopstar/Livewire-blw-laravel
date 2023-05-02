@@ -130,10 +130,6 @@
     border: 2px solid var(--light-red-color);
 }
 
-.click-green {
-    border: 2px solid var(--acent-color-green);
-}
-
 .click-red img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -169,6 +165,7 @@
     border-radius: 10px;
     padding: 13px 0;
     outline: none;
+    border: none;
 }
 
 .section.quizz-box .quizz-btn:hover, .quiz-btn:hover {
@@ -300,4 +297,13 @@
 .btn-yes {
     background: var(--acent-color-green);
     color: #fff;
+}
+
+.click-green {
+    background: var(--acent-color-green);
+    outline: none;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 }

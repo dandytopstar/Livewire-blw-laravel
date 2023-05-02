@@ -10,6 +10,7 @@
             @if($currentQuestion['selectedSlider'] == $key)
                 <div>
                     <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
+                    <p class="text-center my-2">{{$answer['text']}}</p>
                 </div>
             @endif
 
