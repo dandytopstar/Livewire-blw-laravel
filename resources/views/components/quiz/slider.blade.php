@@ -8,7 +8,7 @@
         @foreach($currentQuestion['answers'] as $key => $answer)
 
             @if($currentQuestion['selectedSlider'] == $key)
-                <div>
+                <div id="slide-{{$key}}">
                     <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
                     <p class="text-center my-2">{{$answer['text']}}</p>
                 </div>
@@ -16,7 +16,8 @@
 
 
             @if($currentQuestion['selectedSlider'] == $key)
-                <div class="my-3 my-lg-5">
+
+                <div class="my-3 my-lg-5" id="btns-{{$key}}">
                     @foreach($currentQuestion['buttons'] as $item)
                         <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})">
                             {{$item['text']}}
