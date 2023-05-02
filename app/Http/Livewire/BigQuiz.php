@@ -71,7 +71,7 @@ class BigQuiz extends Component
 
             '4' => [
                 'question_key' => 'overall_health',
-                'question' => "Which of the following best describes your baby's overall health and development?",
+                'question' => "Your baby's overall health and development",
                 'answers' => [
                     '1' => ['text' => 'Healthy and thriving'],
                     '2' => ['text' => 'Some health concerns'],'
@@ -81,7 +81,7 @@ class BigQuiz extends Component
 
             '5' => [
                 'question_key' => 'current_feeding_routine',
-                'question' => "Which of the following best describes your baby's current feeding routine?",
+                'question' => "Your baby's current feeding routine",
                 'answers' => [
                     '1' => ['text' => 'Exclusively breastfed'],
                     '2' => ['text' => 'Exclusively formula-fed'],
@@ -118,18 +118,19 @@ class BigQuiz extends Component
             '8' => [
                 'question' => 'What is Baby-Led Weaning?',
                 'answers' => [],
-                'text' => "Baby-led weaning (BLW) allows infants to transition to eating solid foods by feeding themselves. With BLW, you skip over the spoon-feeding stage altogether. This helps children be more independent and encourages them to be more adventurous eaters. BLW stresses the self-sufficiency of babies and encourages parents to follow their baby's cues. Parents can introduce solids when their baby indicates they are ready while continuing to supply breastmilk. Let your baby's signals guide you!",
+                'text' => "Baby-led weaning is a method of introducing solid foods that involves letting babies <br> feed themselves with soft, age-appropriate foods. It promotes self-regulation of <br> appetite and fine motor skill development.",
                 'continue_button' => true,
                 'continue_button_text' => 'continue',
             ],
 
             '9' => [
                 'question_key' => 'infant_separate_meals',
-                'question' => 'Do you prefer to offer your infant separate meals or have them eat what the rest of the family is eating?',
+                'question' => 'Baby Meal Preferences',
                 'answers' => [
-                    '1' => ['text' => 'Family meals'],
-                    '2' => ['text' => 'Both'],
-                    '3' => ['text' => 'Undecided'],
+                    '1' => ['text' => 'Separate meals'],
+                    '2' => ['text' => 'Family meals'],
+                    '3' => ['text' => 'Both'],
+                    '4' => ['text' => 'Undecided'],
                 ],
             ],
 
@@ -334,7 +335,7 @@ class BigQuiz extends Component
 
             '23' => [
                 'question_key' => 'traditional_foods',
-                'question' => "ave you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
+                'question' => "Have you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
