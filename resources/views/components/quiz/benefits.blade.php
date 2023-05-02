@@ -3,7 +3,7 @@
     'currentQuestionNum' => 1,
     'currentQuestion' => [],
 ])
-<div class="mt-40 mt-lg-5 card mx-auto quiz-card shadow-lg p-lg-3 mb-5 bg-body rounded"
+<div class="mt-3 mt-lg-5 card mx-auto quiz-card shadow-lg p-lg-3 mb-5 bg-body rounded"
      id="card-benefits"
      data-seconds="{{$currentQuestion['loader']['seconds'] ?? 0}}"
      style="display: none"
@@ -30,7 +30,7 @@
     </div>
 
     <div class="card-body">
-        <h2 class="card-title text-center question-title mt-40">{{$currentQuestion['benefits']['text']}}</h2>
+        <h2 class="card-title text-center question-title mt-3 mt-lg-5">{{$currentQuestion['benefits']['text']}}</h2>
 
         <div class="card-text py-4 mb-3 px-lg-4">
             @foreach($currentQuestion['benefits']['items'] as $item)
