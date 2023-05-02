@@ -196,11 +196,12 @@ class BigQuiz extends Component
                     '1' => ['text' => 'High chair', 'selected'  => false],
                     '2' => ['text' => 'Booster seat', 'selected'  => false],
                     '3' => ['text' => 'Baby seat', 'selected'  => false],
-                    '4' => ['text' => 'None', 'selected'  => false, 'refresh' => true],
+                    '4' => ['text' => 'None', 'selected'  => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
                 'continue_button_text' => 'continue',
+                'hasDeselectAll' => true,
             ],
 
             '16' => [
@@ -438,7 +439,7 @@ class BigQuiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 14;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -497,10 +498,14 @@ class BigQuiz extends Component
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
             $text = $currentAnswer['answers'][$answer]['text'];
+            $deselectAll = empty($currentAnswer['answers'][$answer]['deselectAll']);
+            $hasDeselectAll = empty($this->quizQuestions[$this->currentQuestionNum]['hasDeselectAll']);
+            $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
+            $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
 
-            if(isset($this->resultAnswers[$this->currentQuestionNum])) {
+            if($issetAnswer) {
 
-                if(empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer])) {
+                if($isEmptyCurrentAnswer) {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
                 } else {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
@@ -522,6 +527,12 @@ class BigQuiz extends Component
 
             $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
 
+            if(!$deselectAll) {
+                $this->deselectMultipleAnswers($answer);
+            }elseif(!$hasDeselectAll) {
+                $this->deselectNoneMultipleAnswers();
+            }
+
             $this->dispatchBrowserEvent('answer-selected', [
                 'number' => $answer,
                 'key' => $currentAnswer['question_key'],
@@ -530,6 +541,38 @@ class BigQuiz extends Component
             ]);
 
         }
+    }
+
+    public function deselectMultipleAnswers($answer)
+    {
+        $question = $this->quizQuestions[$this->currentQuestionNum];
+
+        foreach ($question['answers'] as $key => $item) {
+            if($key !== $answer) {
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+            }
+
+        }
+
+        $this->resultAnswers[$this->currentQuestionNum]['answers'] = [];
+        $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = 'none';
+    }
+
+    public function deselectNoneMultipleAnswers()
+    {
+        $question = $this->quizQuestions[$this->currentQuestionNum];
+
+        $deselectKey = 0;
+
+        foreach ($question['answers'] as $key => $item) {
+            if(!empty($item['deselectAll'])) {
+                $deselectKey = $key;
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+            }
+
+        }
+
+        $this->resultAnswers[$this->currentQuestionNum]['answers'][$deselectKey] = '';
     }
 
     public function setQuestionAnswer($answer)
