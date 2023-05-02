@@ -8,7 +8,7 @@
         @foreach($currentQuestion['answers'] as $key => $answer)
 
             @if($currentQuestion['selectedSlider'] == $key)
-                <div id="slide-{{$key}}">
+                <div>
                     <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
                     <p class="text-center my-2">{{$answer['text']}}</p>
                 </div>
