@@ -109,7 +109,7 @@ class BigQuiz extends Component
                 ],
                 'loader' => [
                     'show' => true,
-                    'seconds' => 5,
+                    'seconds' => 6,
                     'text' => 'We are now generating APP Profile Just For You',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
@@ -247,7 +247,7 @@ class BigQuiz extends Component
                 ],
                 'loader' => [
                     'show' => true,
-                    'seconds' => 5,
+                    'seconds' => 6,
                     'text' => 'We Are Now Generating First Part of Your Meal Plan',
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
