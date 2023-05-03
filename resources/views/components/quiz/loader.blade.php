@@ -3,7 +3,7 @@
 ])
 
 <div class="container text-center quiz-loader">
-    <video width="320" height="240" autoplay>
+    <video width="320" height="240" autoplay playsinline>
         <source src="{{asset('assets/quiz/animation.mp4')}}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
