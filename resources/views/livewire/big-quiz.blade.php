@@ -139,15 +139,15 @@
                 document.querySelector('video').play();
             }
 
-            setTimeout(() => {
-                if(document.querySelector('#card-benefits')) {
-                    cardLoader.style.display = 'none';
-                    cardBenefits();
-                } else {
-                    cardLoader.style.display = 'none';
-                    card.style.display = 'block';
-                }
-            }, seconds);
+            // setTimeout(() => {
+            //     if(document.querySelector('#card-benefits')) {
+            //         cardLoader.style.display = 'none';
+            //         cardBenefits();
+            //     } else {
+            //         cardLoader.style.display = 'none';
+            //         card.style.display = 'block';
+            //     }
+            // }, seconds);
         }
     }
 
