@@ -25,15 +25,45 @@
             </div>
 
             <div class="img-box bg-image-absolute">
-                <img src="{{asset('assets/summary/iPhone-13-Pro-1.png')}}"></img>
+                <img src="{{asset('assets/summary/iPhone-13-Pro-1.png')}}">
             </div>
 
         </div>
     </section>
 
-    <section id="what-will-you-get big-section" class="text-center my-5 p-5">
+    <section id="what-will-you-get" class="big-section text-center my-5 p-5">
 
         <h2 class="section-title">What will you get?</h2>
+
+        <div class="container what-will-items">
+            <div class="what-will-item">
+                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="what-will-item">
+                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="what-will-item">
+                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="what-will-item">
+                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="what-will-item">
+                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="what-will-item d-flex flex-column justify-content-center text-center">
+                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
+            </div>
+
+        </div>
 
     </section>
 

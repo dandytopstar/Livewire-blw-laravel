@@ -9,3 +9,14 @@
     font-size: 32px;
     line-height: 46px;
 }
+
+.what-will-items {
+    display: flex;
+    flex-wrap: wrap;
+    /*gap: 10px;*/
+}
+
+.what-will-item {
+    width: 370px;
+    height: 309px;
+}
