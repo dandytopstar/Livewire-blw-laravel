@@ -111,7 +111,7 @@ class BigQuiz extends Component
                     'show' => true,
                     'seconds' => 3,
                     'text' => 'We are now generating APP Profile Just For You',
-                    'file' => 'assets/quiz/animation.gif',
+                    'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
 
@@ -249,7 +249,7 @@ class BigQuiz extends Component
                     'show' => true,
                     'seconds' => 3,
                     'text' => 'We Are Now Generating First Part of Your Meal Plan',
-                    'start_file' => 'assets/quiz/animation.gif',
+                    'start_file' => 'assets/quiz/animation.mp4',
                 ],
                 'benefits' => [
                     'text' => 'Benefits of Baby-Led Weaning',
