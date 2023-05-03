@@ -42,6 +42,7 @@ Route::view('subscription-email-sent', 'subscription-email-sent')->name('subscri
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
+Route::get('big-summary/{code}', [QuizController::class, 'biSummary'])->name('big-summary');
 
 Route::get('registration/{code}', [ClientController::class, 'registration'])->name('registration');
 

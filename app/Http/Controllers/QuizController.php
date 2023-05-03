@@ -35,4 +35,9 @@ class QuizController extends Controller
     {
         return view('summary', compact('code'));
     }
+
+    public function biSummary(Request $request, $code): Factory|View|Application
+    {
+        return view('big-summary', compact('code'));
+    }
 }
