@@ -135,6 +135,10 @@
             card.style.display = 'none';
             cardLoader.style.display = 'block';
 
+            if(document.querySelector('video')) {
+                document.querySelector('video').play();
+            }
+
             setTimeout(() => {
                 if(document.querySelector('#card-benefits')) {
                     cardLoader.style.display = 'none';
