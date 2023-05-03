@@ -172,37 +172,41 @@
             return;
         }
 
-        let progressSlider = document.querySelector("#progress-slider")
-        let count = progressSlider.dataset.count;
-        let seconds = progressSlider.dataset.seconds;
-        let slide = document.querySelector('#slide-1');
-        slide.style.display = 'block';
-        let currentSlide = 2;
-        showSlide()
+        // let progressSlider = document.querySelector("#progress-slider")
+        // let count = progressSlider.dataset.count;
+        // let seconds = progressSlider.dataset.seconds;
+        // let slide = document.querySelector('#slide-1');
+        // slide.style.display = 'block';
+        // let currentSlide = 2;
+        // showSlide()
+        //
+        // function showSlide() {
+        //     setTimeout(() => {
+        //         slide.style.display = 'none';
+        //         slide = document.querySelector('#slide-'+currentSlide);
+        //         slide.style.display = 'block';
+        //         currentSlide = currentSlide+1;
+        //
+        //         if(currentSlide > count) {
+        //             setTimeout(() => {
+        //                 document.querySelector('#finish-quiz').click()
+        //             }, seconds*1000)
+        //         } else {
+        //             showSlide();
+        //         }
+        //     }, seconds*1000)
+        // }
 
-        function showSlide() {
-            setTimeout(() => {
-                slide.style.display = 'none';
-                slide = document.querySelector('#slide-'+currentSlide);
-                slide.style.display = 'block';
-                currentSlide = currentSlide+1;
-
-                if(currentSlide > count) {
-                    setTimeout(() => {
-                        document.querySelector('#finish-quiz').click()
-                    }, seconds*1000)
-                } else {
-                    showSlide();
-                }
-            }, seconds*1000)
-        }
+        setTimeout(() => {
+            document.querySelector('#finish-quiz').click()
+        }, 5000)
 
         var i = 0;
         if (i == 0) {
             i = 1;
             var elem = document.getElementById("myBar");
             var width = 10;
-            var id = setInterval(frame, 70);
+            var id = setInterval(frame, 35);
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
