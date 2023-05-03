@@ -33,7 +33,7 @@
 
     <section id="what-will-you-get big-section" class="text-center my-5 p-5">
 
-        <h2>What will you get?</h2>
+        <h2 class="section-title">What will you get?</h2>
 
     </section>
 

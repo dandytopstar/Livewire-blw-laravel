@@ -147,7 +147,7 @@
                     cardLoader.style.display = 'none';
                     card.style.display = 'block';
                 }
-            }, seconds*1000);
+            }, seconds);
         }
     }
 

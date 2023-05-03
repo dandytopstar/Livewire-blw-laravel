@@ -109,7 +109,7 @@ class BigQuiz extends Component
                 ],
                 'loader' => [
                     'show' => true,
-                    'seconds' => 6,
+                    'seconds' => 5500,
                     'text' => 'We are now generating APP Profile Just For You',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
@@ -247,7 +247,7 @@ class BigQuiz extends Component
                 ],
                 'loader' => [
                     'show' => true,
-                    'seconds' => 6,
+                    'seconds' => 5500,
                     'text' => 'We Are Now Generating First Part of Your Meal Plan',
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
@@ -417,7 +417,7 @@ class BigQuiz extends Component
                     '2' => [
                         'percent' => '60',
                         'text' => 'text 2',
-                        'image'  => 'assets/quiz/slider/garlic.jpg',
+                        'image'  => 'assets/quiz/slider/final_image.jpg',
                     ],
                     '3' => [
                         'percent' => '100',
