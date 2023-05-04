@@ -36,39 +36,70 @@
         <h2 class="section-title">What will you get?</h2>
 
         <div class="container what-will-items">
+
             <div class="what-will-item">
                 <div class="ww-item-content">
                     <h3 class="item-title">Baby-Led Weaning App Access</h3>
+                    <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
                 </div>
 
                 <div class="item-number">1</div>
             </div>
+
             <div class="what-will-item">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                    <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
+                </div>
+
                 <div class="item-number">2</div>
             </div>
+
             <div class="what-will-item">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                    <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
+                </div>
+
                 <div class="item-number">3</div>
             </div>
+
             <div class="what-will-item">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                    <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
+                </div>
+
                 <div class="item-number">4</div>
             </div>
+
             <div class="what-will-item">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                    <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
+                </div>
+
                 <div class="item-number">5</div>
             </div>
-            <div class="what-will-item">
-                <div class="item-number">6</div>
+
+            <div class="ww-last">
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_1.png')}}" alt="">
+                    <h4>Progress-based Tips</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_2.png')}}" alt="">
+                    <h4>Exclusive Member Resources</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_3.png')}}" alt="">
+                    <h4>Unlimited E-Mail Support</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_4.png')}}" alt="">
+                    <h4 class="pt-0 pb-1">Personalized Baby-Led Weaning Guidebook</h4>
+                </div>
             </div>
-
-
-{{--            <div class="what-will-item d-flex flex-column justify-content-center text-center">--}}
-{{--                <div>--}}
-
-{{--                </div>--}}
-{{--                <img class="" src="{{asset('assets/summary/whatwill/f1.png')}}" alt="" width="350px">--}}
-{{--                <img class="" src="{{asset('assets/summary/whatwill/f2.png')}}" alt="" width="350px">--}}
-{{--                <img class="" src="{{asset('assets/summary/whatwill/f3.png')}}" alt="" width="350px">--}}
-{{--                <img class="" src="{{asset('assets/summary/whatwill/f4.png')}}" alt="" width="350px">--}}
-{{--            </div>--}}
 
         </div>
 
@@ -77,6 +108,19 @@
     <section id="meal-plan-features" class="big-section text-center">
 
         <h2 class="section-title">Meal Plan Features</h2>
+
+        <div class="container mp-blocks">
+            <div class="mp-first-block">
+
+            </div>
+            <div class="mp-middle-block">
+
+            </div>
+            <div class="mp-last-block">
+
+            </div>
+        </div>
+
     </section>
 
     <section class="active-users">
