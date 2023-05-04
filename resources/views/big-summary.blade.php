@@ -25,7 +25,7 @@
             </div>
 
             <div class="img-box bg-image-absolute">
-                <img src="{{asset('assets/summary/iPhone-13-Pro-1.png')}}">
+                <img src="{{asset('assets/summary/iPhone13Pro.png')}}">
             </div>
 
         </div>
@@ -35,36 +35,40 @@
 
         <h2 class="section-title">What will you get?</h2>
 
-        <div class="container what-will-items row">
-            <div class="what-will-item col-4">
-                <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
-            </div>
-
-            <div class="what-will-item col-4">
-                <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
-            </div>
-
-            <div class="what-will-item col-4">
-                <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
-            </div>
-
-            <div class="what-will-item col-4">
-                <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
-            </div>
-
-            <div class="what-will-item col-4">
-                <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
-            </div>
-
-            <div class="what-will-item d-flex flex-column justify-content-center text-center">
-                <div>
-
+        <div class="container what-will-items">
+            <div class="what-will-item">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Baby-Led Weaning App Access</h3>
                 </div>
-                <img class="" src="{{asset('assets/summary/whatwill/f1.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/whatwill/f2.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/whatwill/f3.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/whatwill/f4.png')}}" alt="" width="350px">
+
+                <div class="item-number">1</div>
             </div>
+            <div class="what-will-item">
+                <div class="item-number">2</div>
+            </div>
+            <div class="what-will-item">
+                <div class="item-number">3</div>
+            </div>
+            <div class="what-will-item">
+                <div class="item-number">4</div>
+            </div>
+            <div class="what-will-item">
+                <div class="item-number">5</div>
+            </div>
+            <div class="what-will-item">
+                <div class="item-number">6</div>
+            </div>
+
+
+{{--            <div class="what-will-item d-flex flex-column justify-content-center text-center">--}}
+{{--                <div>--}}
+
+{{--                </div>--}}
+{{--                <img class="" src="{{asset('assets/summary/whatwill/f1.png')}}" alt="" width="350px">--}}
+{{--                <img class="" src="{{asset('assets/summary/whatwill/f2.png')}}" alt="" width="350px">--}}
+{{--                <img class="" src="{{asset('assets/summary/whatwill/f3.png')}}" alt="" width="350px">--}}
+{{--                <img class="" src="{{asset('assets/summary/whatwill/f4.png')}}" alt="" width="350px">--}}
+{{--            </div>--}}
 
         </div>
 
