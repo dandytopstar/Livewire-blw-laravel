@@ -1,5 +1,5 @@
-.summary-section {
-
+.big-section {
+    margin: 50px 0;
 }
 
 .section-title {
@@ -11,12 +11,18 @@
 }
 
 .what-will-items {
-    display: flex;
-    flex-wrap: wrap;
-    /*gap: 10px;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*!*justify-items: start;*!*/
+    gap: 30px;
 }
 
 .what-will-item {
-    width: 370px;
+    width: 362px;
     height: 309px;
+}
+
+.what-will-item img{
+    /*width: 100%;*/
 }

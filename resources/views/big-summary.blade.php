@@ -35,36 +35,44 @@
 
         <h2 class="section-title">What will you get?</h2>
 
-        <div class="container what-will-items">
-            <div class="what-will-item">
-                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+        <div class="container what-will-items row">
+            <div class="what-will-item col-4">
+                <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
             </div>
 
-            <div class="what-will-item">
-                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            <div class="what-will-item col-4">
+                <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
             </div>
 
-            <div class="what-will-item">
-                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            <div class="what-will-item col-4">
+                <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
             </div>
 
-            <div class="what-will-item">
-                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            <div class="what-will-item col-4">
+                <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
             </div>
 
-            <div class="what-will-item">
-                <img src="{{asset('assets/summary/firstblock.png')}}" alt="" class="img-fluid">
+            <div class="what-will-item col-4">
+                <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
             </div>
 
             <div class="what-will-item d-flex flex-column justify-content-center text-center">
-                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
-                <img class="" src="{{asset('assets/summary/what_will_option1.png')}}" alt="" width="350px">
+                <div>
+
+                </div>
+                <img class="" src="{{asset('assets/summary/whatwill/f1.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/whatwill/f2.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/whatwill/f3.png')}}" alt="" width="350px">
+                <img class="" src="{{asset('assets/summary/whatwill/f4.png')}}" alt="" width="350px">
             </div>
 
         </div>
 
+    </section>
+
+    <section id="meal-plan-features" class="big-section text-center">
+
+        <h2 class="section-title">Meal Plan Features</h2>
     </section>
 
     <section class="active-users">
