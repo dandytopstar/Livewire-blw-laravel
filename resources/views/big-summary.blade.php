@@ -223,6 +223,61 @@
 
     </section>
 
+    <section id="even-more" class="small-section text-center">
+
+        <h2 class="section-title">And Even More</h2>
+
+        <div class="container em-blocks">
+
+            <div class="em-block">
+                <img src="{{asset('assets/summary/em/1.png')}}" alt="">
+
+                <div class="em-text">
+                    Encourages self-feeding
+                </div>
+
+            </div>
+
+            <div class="em-block">
+                <img src="{{asset('assets/summary/em/2.png')}}" alt="">
+
+                <div class="em-text">
+                    Offers nutrition education
+                </div>
+
+            </div>
+
+            <div class="em-block">
+                <img src="{{asset('assets/summary/em/3.png')}}" alt="">
+
+                <div class="em-text">
+                    Considers cultural preferences
+                </div>
+
+            </div>
+
+            <div class="em-block">
+                <img src="{{asset('assets/summary/em/4.png')}}" alt="">
+
+                <div class="em-text">
+                    Provides grocery list
+                </div>
+
+            </div>
+
+            <div class="em-block">
+                <img src="{{asset('assets/summary/em/5.png')}}" alt="">
+
+                <div class="em-text">
+                    Supports baby's development
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <section class="active-users">
         <div class="container">
             <div class="title-box">
