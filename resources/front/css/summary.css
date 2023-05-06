@@ -97,7 +97,6 @@
     align-items: flex-start;
     padding: 16px;
     gap: 14px;
-    width: 370px;
     height: 58px;
     background: linear-gradient(91.24deg, #D4F5EE 0.02%, #FFFFFF 51.97%, #E7E6FB 99.76%);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
@@ -229,4 +228,71 @@
     line-height: 24px;
     text-align: center;
     color: #1C1C1C;
+}
+
+#blw-benefits {
+    height: 867px;
+    background-color: #E6F8F4;
+    padding-top: 50px;
+}
+
+.blw-b-blocks {
+    margin: 0 auto;
+    margin-top: 105px;
+    width: 1033px;
+    position: relative;
+}
+
+.blw-b-blocks .container{
+    background: url('/assets/summary/blw/dashed_path.png') no-repeat;
+    height: 578px;
+}
+
+.blw-b-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 18px;
+    gap: 10px;
+    height: 98px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    width: fit-content;
+    position: absolute;
+}
+
+.blw-b-block.block-1 {
+    left: 7%;
+    top: -9%;
+}
+
+.blw-b-block.block-2 {
+    left: 53%;
+    top: -4%;
+}
+
+.blw-b-block.block-3 {
+    left: 80%;
+    top: 32%;
+}
+
+.blw-b-block.block-4 {
+    left: 30%;
+    top: 35%;
+}
+
+.blw-b-block .block-5 {
+
+}
+
+.blw-b-block .block-1 {
+
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
