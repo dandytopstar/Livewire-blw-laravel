@@ -15,10 +15,3 @@
         </div>
     </div>
 </header>
-
-{{--<section class="accent-section py-3 summary">--}}
-{{--    <div class="container justify-content-between d-flex">--}}
-{{--        <p class="font-accent-700 d-block">Your baby summary</p>--}}
-{{--        <p class="font-grey-16-700 d-block">{{$gender}}, {{$weight}}</p>--}}
-{{--    </div>--}}
-{{--</section>--}}
