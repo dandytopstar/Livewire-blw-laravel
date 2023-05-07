@@ -99,15 +99,6 @@
         width: 60%;
     }
 
-    header.summary img {
-        display: none;
-        width: 272px;
-    }
-
-    header.summary img.adaptive {
-        display: block;
-    }
-
     .font-light-grey-700 {
         font-size: 16px;
         line-height: 20px;
@@ -780,12 +771,6 @@
         padding: 22px 8px;
     }
 
-    .header.summary img {
-        width: 170px;
-        height: 25px;
-        margin-top: 7px;
-    }
-
     .graphic,
     .program {
         display: none;
@@ -812,15 +797,6 @@
 }
 
 @media (max-width: 494px) {
-    .summary-header-logo {
-        justify-content: center !important;
-    }
-
-    .header.summary img {
-        width: 250px;
-        height: 36px;
-        margin-top: 7px;
-    }
 
     .section.quizz-box .content-box .option {
         padding: 8px 0px;
@@ -832,15 +808,6 @@
 
     .section.quizz-box {
         padding: 10px;
-    }
-}
-
-@media (max-width: 300px) {
-
-    .header.summary img {
-        height: auto;
-        margin-top: 7px;
-        width: 200px;
     }
 }
 

@@ -331,6 +331,23 @@
 
 @media (max-width: 767px) {
 
+    header.summary img {
+        display: none;
+    }
+
+    header.summary img.adaptive {
+        display: block;
+        width: 133px;
+        height: 20px;
+    }
+
+    header.summary .btn-adaptive {
+        display: block;
+        font-size: 12px;
+        padding: 5px 21px;
+        border-radius: 5px;
+    }
+
     .what-will-items {
         justify-content: center;
     }
