@@ -2,6 +2,14 @@
     display: none;
 }
 
+.payment-green-section {
+    background-color: #E6F8F4;
+}
+
+.pp-adaptive-blocks{
+    display: none;
+}
+
 @media (max-width: 576px) {
     .payment-logo {
         display: none;
@@ -10,5 +18,13 @@
     .payment-adaptive-logo {
         display: block;
         padding: 20px;
+    }
+
+    .pp-desktop-blocks {
+        display: none;
+    }
+
+    .pp-adaptive-blocks{
+        display: block;
     }
 }
