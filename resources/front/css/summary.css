@@ -424,15 +424,9 @@
     .mp-text {
         font-size: 14px;
     }
-}
 
-@media (max-width: 802px) {
-    .mp-two-colum {
-        flex-direction: column;
-    }
-
-    .mp-middle-block {
-        margin-bottom: 20px;
+    .em-block {
+        width: 100%;
     }
 }
 
