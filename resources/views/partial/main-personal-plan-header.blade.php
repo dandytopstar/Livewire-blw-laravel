@@ -1,12 +1,6 @@
 <header class="header  py-sm-3 py-md-4">
     <div class="container ">
-        <img class="desktop-logo img-center" src="{{asset('assets/logo/main-logo.png')}}" alt="">
+        <img class="desktop-logo img-center payment-logo" src="{{asset('assets/logo/main-logo.png')}}" alt="">
+        <img class="desktop-logo img-center payment-adaptive-logo" src="{{asset('assets/payment/adaptive_logo_payment.png')}}" alt="">
     </div>
 </header>
-
-{{--<section class="accent-section py-3 summary">--}}
-{{--    <div class="container justify-content-between d-flex">--}}
-{{--        <p class="font-accent-700 d-block">Your baby summary</p>--}}
-{{--        <p class="font-grey-16-700 d-block">{{$gender}}, {{$weight}}</p>--}}
-{{--    </div>--}}
-{{--</section>--}}

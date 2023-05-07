@@ -1,0 +1,14 @@
+.payment-adaptive-logo {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .payment-logo {
+        display: none;
+    }
+
+    .payment-adaptive-logo {
+        display: block;
+        padding: 20px;
+    }
+}
