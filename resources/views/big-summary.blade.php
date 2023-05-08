@@ -344,67 +344,129 @@
 
     </section>
 
-{{--    <section id="blw-benefits" class="big-section text-center">--}}
+    <section id="blw-benefits" class="big-section text-center">
 
-{{--        <h2 class="section-title">Baby-Led Weaning Benefits</h2>--}}
+        <h2 class="section-title">Baby-Led Weaning Benefits</h2>
 
-{{--        <div class="blw-b-blocks">--}}
+        <div class="blw-b-blocks">
 
-{{--            <div class="container">--}}
-{{--                <div class="blw-b-block block-1">--}}
-{{--                    <img src="{{asset('assets/summary/blw/1.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+            <div class="container">
+                <div class="blw-b-block block-1">
+                    <img src="{{asset('assets/summary/blw/1.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-2">--}}
-{{--                    <img src="{{asset('assets/summary/blw/2.png')}}" alt="">--}}
-{{--                    <p>Leads to Healthier Weight</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-2">
+                    <img src="{{asset('assets/summary/blw/2.png')}}" alt="">
+                    <p>Leads to Healthier Weight</p>
+                </div>
 
-{{--                <div class="blw-b-block block-3">--}}
-{{--                    <img src="{{asset('assets/summary/blw/3.png')}}" alt="">--}}
-{{--                    <p>Reduces Dental Issues</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-3">
+                    <img src="{{asset('assets/summary/blw/3.png')}}" alt="">
+                    <p>Reduces Dental Issues</p>
+                </div>
 
-{{--                <div class="blw-b-block block-4">--}}
-{{--                    <img src="{{asset('assets/summary/blw/4.png')}}" alt="">--}}
-{{--                    <p>Promotes Brain Development</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-4">
+                    <img src="{{asset('assets/summary/blw/4.png')}}" alt="">
+                    <p>Promotes Brain Development</p>
+                </div>
 
-{{--                <div class="blw-b-block block-5">--}}
-{{--                    <img src="{{asset('assets/summary/blw/5.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-5">
+                    <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-6">--}}
-{{--                    <img src="{{asset('assets/summary/blw/6.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-6">
+                    <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-7">--}}
-{{--                    <img src="{{asset('assets/summary/blw/7.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-7">
+                    <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-8">--}}
-{{--                    <img src="{{asset('assets/summary/blw/8.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-8">
+                    <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-9">--}}
-{{--                    <img src="{{asset('assets/summary/blw/9.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
+                <div class="blw-b-block block-9">
+                    <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-{{--                <div class="blw-b-block block-10">--}}
-{{--                    <img src="{{asset('assets/summary/blw/10.png')}}" alt="">--}}
-{{--                    <p>Reduces Allergies</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                <div class="blw-b-block block-10">
+                    <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+            </div>
 
-{{--        </div>--}}
+        </div>
 
-{{--    </section>--}}
+    </section>
+
+    <section id="blw-benefits-adaptive" class="big-section text-center">
+
+        <h2 class="section-title">Baby-Led Weaning Benefits</h2>
+
+        <div class="blw-b-blocks">
+
+            <div class="container">
+                <div class="blw-b-block block-1">
+                    <img src="{{asset('assets/summary/blw/1.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-2">
+                    <img src="{{asset('assets/summary/blw/2.png')}}" alt="">
+                    <p>Leads to Healthier Weight</p>
+                </div>
+
+                <div class="blw-b-block block-3">
+                    <img src="{{asset('assets/summary/blw/3.png')}}" alt="">
+                    <p>Reduces Dental Issues</p>
+                </div>
+
+                <div class="blw-b-block block-4">
+                    <img src="{{asset('assets/summary/blw/4.png')}}" alt="">
+                    <p>Promotes Brain Development</p>
+                </div>
+
+                <div class="blw-b-block block-5">
+                    <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-6">
+                    <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-7">
+                    <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-8">
+                    <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-9">
+                    <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+
+                <div class="blw-b-block block-10">
+                    <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <section class="active-users">
         <div class="container">

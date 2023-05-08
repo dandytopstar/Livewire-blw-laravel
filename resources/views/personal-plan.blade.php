@@ -277,7 +277,6 @@
         </section>
     </div>
 
-
     <div class="pp-desktop-blocks">
         <section id="meal-plan-features" class="big-section text-center">
 
