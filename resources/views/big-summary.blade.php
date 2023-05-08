@@ -435,32 +435,32 @@
 
                 <div class="blw-b-block block-5">
                     <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Builds baby’s confidence</p>
                 </div>
 
                 <div class="blw-b-block block-6">
                     <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Saves Money on Purees</p>
                 </div>
 
                 <div class="blw-b-block block-7">
                     <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Saves Time in Meal Prep</p>
                 </div>
 
                 <div class="blw-b-block block-8">
                     <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Develops Fine Motor Skills</p>
                 </div>
 
                 <div class="blw-b-block block-9">
                     <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Reduces Choking Risk</p>
                 </div>
 
                 <div class="blw-b-block block-10">
                     <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Encourages Family Bonding</p>
                 </div>
             </div>
 

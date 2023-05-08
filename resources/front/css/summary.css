@@ -287,23 +287,50 @@
 }
 
 .blw-b-block.block-2 {
-    left: 53%;
+    left: 47%;
     top: -4%;
 }
 
 .blw-b-block.block-3 {
-    left: 80%;
-    top: 32%;
+    left: 79%;
+    top: 13%;
 }
 
 .blw-b-block.block-4 {
-    left: 30%;
+    left: 21%;
+    top: 19%;
+}
+
+.blw-b-block.block-5 {
+    left: -3%;
     top: 35%;
 }
 
-.blw-b-block .block-5 {
-
+.blw-b-block.block-6 {
+    left: 61%;
+    top: 35%;
 }
+
+.blw-b-block.block-7 {
+    left: 79%;
+    top: 57%;
+}
+
+.blw-b-block.block-8 {
+    left: 30%;
+    top: 60%;
+}
+
+.blw-b-block.block-9 {
+    left: 3%;
+    top: 80%;
+}
+
+.blw-b-block.block-10 {
+    left: 39%;
+    top: 90%;
+}
+
 
 #blw-benefits-adaptive {
     display: none;
@@ -327,9 +354,102 @@
     .mp-last-block {
         max-width: 398px;
     }
+
+    .mp-two-colum, .what-will-items {
+        justify-content: center;
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1092px) {
+
+    #blw-benefits {
+        display: none;
+    }
+
+    #blw-benefits-adaptive {
+        display: block;
+    }
+
+    .blw-b-blocks {
+        width: 100%;
+        height: 1129px;
+    }
+
+    .blw-b-blocks .container {
+        background: url(/assets/summary/blw/benefit_adaptive_bg.png) no-repeat;
+        width: 340px;
+        height: 1129px;
+        position: relative;
+    }
+
+    .blw-b-block {
+        width: 163px;
+        font-size: 14px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+    }
+
+    .blw-b-block img{
+        width: 26px;
+    }
+
+    .blw-b-block.block-1 {
+        left: 5%;
+        top: -5%;
+    }
+
+    .blw-b-block.block-2 {
+        left: 54%;
+        top: 2%;
+    }
+
+    .blw-b-block.block-3 {
+        left: 5%;
+        top: 12%;
+    }
+
+    .blw-b-block.block-4 {
+        left: 54%;
+        top: 22%;
+    }
+
+    .blw-b-block.block-5 {
+        left: 5%;
+        top: 32%;
+    }
+
+    .blw-b-block.block-6 {
+        left: 54%;
+        top: 42%;
+    }
+
+    .blw-b-block.block-7 {
+        left: 5%;
+        top: 52%;
+    }
+
+    .blw-b-block.block-8 {
+        left: 54%;
+        top: 62%;
+    }
+
+    .blw-b-block.block-9 {
+        left: 5%;
+        top: 72%;
+    }
+
+    .blw-b-block.block-10 {
+        left: 33%;
+        top: 85%;
+    }
+
+    .active-users {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
 
     header.summary img {
         display: none;
@@ -451,91 +571,5 @@
 
     .em-block {
         width: 100%;
-    }
-
-    #blw-benefits {
-        display: none;
-    }
-
-    #blw-benefits-adaptive {
-        display: block;
-    }
-
-    .blw-b-blocks {
-        width: 100%;
-        height: 1129px;
-    }
-
-    .blw-b-blocks .container {
-        background: url(/assets/summary/blw/benefit_adaptive_bg.png) no-repeat;
-        width: 340px;
-        height: 1129px;
-        position: relative;
-    }
-
-    .blw-b-block {
-        width: 163px;
-        font-size: 14px;
-        background: #FFFFFF;
-        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
-        border-radius: 20px;
-    }
-
-    .blw-b-block img{
-        width: 26px;
-    }
-
-    .blw-b-block.block-1 {
-        left: 5%;
-        top: -5%;
-    }
-
-    .blw-b-block.block-2 {
-        left: 54%;
-        top: 2%;
-    }
-
-    .blw-b-block.block-3 {
-        left: 5%;
-        top: 12%;
-    }
-
-    .blw-b-block.block-4 {
-        left: 54%;
-        top: 22%;
-    }
-
-    .blw-b-block.block-5 {
-        left: 5%;
-        top: 32%;
-    }
-
-    .blw-b-block.block-6 {
-        left: 54%;
-        top: 42%;
-    }
-
-    .blw-b-block.block-7 {
-        left: 5%;
-        top: 52%;
-    }
-
-    .blw-b-block.block-8 {
-        left: 54%;
-        top: 62%;
-    }
-
-    .blw-b-block.block-9 {
-        left: 5%;
-        top: 72%;
-    }
-
-    .blw-b-block.block-10 {
-        left: 33%;
-        top: 85%;
-    }
-
-    .active-users {
-        margin-top: 0;
     }
 }
