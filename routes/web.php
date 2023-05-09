@@ -31,8 +31,6 @@ Route::view('/', 'main')->name('main');
 
 Route::view('quiz', 'quiz')->name('quiz');
 
-Route::view('big-quiz', 'big-quiz')->name('big-quiz');
-
 Route::view('subscription', 'subscription')->name('subscription');
 
 Route::post('subscription-send', [SubscriptionController::class, 'subscriptionSend'])->name('subscription-send');
@@ -42,7 +40,6 @@ Route::view('subscription-email-sent', 'subscription-email-sent')->name('subscri
 Route::get('quiz-result/{code}', [QuizController::class, 'result'])->name('quiz-result');
 
 Route::get('summary/{code}', [QuizController::class, 'summary'])->name('summary');
-Route::get('big-summary/{code}', [QuizController::class, 'biSummary'])->name('big-summary');
 
 Route::get('registration/{code}', [ClientController::class, 'registration'])->name('registration');
 

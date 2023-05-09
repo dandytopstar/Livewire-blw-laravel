@@ -1,193 +1,58 @@
-<div class="container-box position-relative">
-
-    @if($currentQuestionNum !== $registrationStepNum)
-
-        <div class="section quizz-box white-shadow-box-radius-10">
-            <div class="section-wrapper">
-
-                <div class="navigation-box">
-                    <div class="dots-box">
-
-                        @foreach($countQuestionsDots as $item)
-                            <div class="dot-item @if($currentQuestionNum == $item) active @endif">
-                                <div class="dot"></div>
-                                <span class="font-grey-10-300">{{$item}}</span>
-                            </div>
-                        @endforeach
-
-                    </div>
-                </div>
-
-                <div class="content-box">
-                    <div class="title-box @if(!empty($currentQuestion['section_text'])) full-width @endif">
-                        <p class="font-accent-700">{{__('front.choose_your_option')}}</p>
-                        @if(!empty($currentQuestion['question']))
-                            <h2 class="font-grey-32-700">{{$currentQuestion['question']}}</h2>
-                            @if(!empty($currentQuestion['section_text']))
-                                <p class="description font-grey-color-400">
-                                    {!! $currentQuestion['section_text']!!}
-                                </p>
-                            @endif
-                        @endif
-                    </div>
+<div class="position-relative px-3">
 
 
-                    @if($currentQuestion['has_answers'] && count($currentQuestion['answers']) < 3 && $currentQuestion['answer_with_image'])
-
-                        <div class="action-box d-flex flex-wrap justify-content-center">
-                            <div style="width: fit-content" class="d-flex d-flex flex-wrap justify-content-center">
-                                @foreach($currentQuestion['answers'] as $key => $answer)
-                                    <div class="option @if($answer['selected']) click @endif"
-                                            id="{{$currentQuestion['question_key'].'-'.$key}}"
-                                            @if($currentQuestion['multiple'])
-                                                wire:click="nextSlideMultiple({{$key}})"
-                                            @else
-                                                wire:click="nextSlide({{$key}})"
-                                            @endif
-                                    >
-                                        <div class="img-box">
-                                            <img src="{{$answer['image']}}" alt="" width="140px">
-                                        </div>
-                                        <p class="font-accent-700">{{$answer['text']}}</p>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    @endif
-
-                    @if($currentQuestion['has_answers'] && count($currentQuestion['answers']) > 3 && $currentQuestion['answer_with_image'])
-
-                        <div class="action-box d-flex flex-column align-items-center" style="max-width: 565px">
-                            <div class="option-box d-flex flex-wrap justify-content-between mb-20">
-                                @foreach($currentQuestion['answers'] as $key => $answer)
-                                    <div class="option q-cols col-4 me-0 mb-20 @if($answer['selected']) click @endif"
-                                         id="{{$currentQuestion['question_key'].'-'.$key}}"
-                                         @if($currentQuestion['multiple'])
-                                             wire:click="nextSlideMultiple({{$key}})"
-                                         @else
-                                             wire:click="nextSlide({{$key}})"
-                                            @endif
-                                    >
-                                        <div class="img-box">
-                                            <img src="{{$answer['image']}}" alt="">
-                                        </div>
-                                        <p class="font-accent-700">{{$answer['text']}}</p>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-
-                    @endif
-
-                    @if($currentQuestion['has_answers'] && !$currentQuestion['answer_with_image'])
-
-                        <div class="action-box">
-                            @foreach($currentQuestion['answers'] as $key => $answer)
-                                <button type="button"
-                                        class="btn quizz-btn font-grey-color-400 answer-btn @if($answer['selected']) active @endif"
-                                        id="{{$currentQuestion['question_key'].'-'.$key}}"
-                                        @if($currentQuestion['multiple'])
-                                            wire:click.prevent="nextSlideMultiple({{$key}})"
-                                        @else
-                                            wire:click.prevent="nextSlide({{$key}})"
-                                        @endif
-                                >
-                                    {{$answer['text']}}
-                                </button>
-                            @endforeach
-
-                        </div>
-                    @endif
-
-                    @if(!empty($currentQuestion['input']))
-                        <div class="action-box full-width">
-                            <div class="form-container d-flex flex-column align-items-center">
-                                <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">
-                                    <input class="w-100" type="number"
-                                        min="{{$currentQuestion['min']}}"
-                                        max="{{$currentQuestion['max']}}"
-                                        step="1" value="1"
-                                        wire:model="rangeData"
-                                    >
-                                    <span class="p-3 text-dark">{{$currentQuestion['range_name']}}</span>
-
-                                </div>
-                                <button type="button" class="btn font-white-600 btn-green-squre" wire:click="nextSlide({{$rangeData}})">
-                                    {{$currentQuestion['continue_button_text']}}
-                                </button>
-                            </div>
-
-                        </div>
-                    @endif
-
-                    @if(!empty($currentQuestion['continue_button']) && empty($currentQuestion['input']))
-                        <button type="button" class="btn font-white-600 btn-green-squre" wire:click="nextSlide">
-                            {{$currentQuestion['continue_button_text']}}
-                        </button>
-                    @endif
-                </div>
-            </div>
-
-            <button type="button" class="btn exit-btn" wire:click="prevSlide">
-                <img src="{{asset('assets/icons/back-arrow.png')}}">
-            </button>
-
-{{--            @if(!empty($currentQuestion['bottom_image_adaptive']))--}}
-{{--                <img--}}
-{{--                        class="bg-bottom-center-adaptive"--}}
-{{--                        src="{{asset($currentQuestion['bottom_image_adaptive'])}}"--}}
-{{--                        alt="" style="max-width: 200px"--}}
-{{--                >--}}
-{{--            @endif--}}
-
-
-        </div>
-
-        <div class="quizz-navigation-adaptive">
-            <div class="arrow-left" wire:click="prevSlide">
-                <img src="{{asset('assets/icons/arrow.png')}}" alt="">
-            </div>
-        </div>
-    @else
-{{--        <div class="section quizz-box white-shadow-box-radius-10">--}}
-{{--            <div class="section-wrapper">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="title-box full-width">--}}
-{{--                        <p class="font-accent-700">Enter Info</p>--}}
-{{--                        <h2 class="font-grey-32-700">Please Enter Your Email</h2>--}}
-{{--                    </div>--}}
-{{--                    <div class="action-box full-width">--}}
-{{--                        <div class="form-container d-flex flex-column align-items-center">--}}
-{{--                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">--}}
-{{--                                <input class="w-100" type="email" placeholder="Email" wire:model="clientRegistrationData.email">--}}
-{{--                            </div>--}}
-{{--                            <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">--}}
-{{--                                <input class="w-100" type="text" placeholder="Name" wire:model="clientRegistrationData.name">--}}
-{{--                            </div>--}}
-{{--                            <button wire:click="createClient" type="button" class="btn font-white-600 btn-green-squre">--}}
-{{--                                Registration--}}
-{{--                            </button>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
+    @if(!empty($currentQuestion['loader']) && $currentQuestion['loader']['show'])
+        <x-quiz.card-loader
+                :countQuestionsDots="$countQuestionsDots"
+                :currentQuestionNum="$currentQuestionNum"
+                :currentQuestion="$currentQuestion"
+        >
+            <x-quiz.loader :currentQuestion="$currentQuestion" />
+        </x-quiz.card-loader>
     @endif
 
-{{--    @if(!empty($currentQuestion['bottom_image']) && $currentQuestion['bottom_image'])--}}
-{{--        @if($currentQuestion['bottom_image_position'] == 'left')--}}
-{{--            <img class="bg-bottom-left" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">--}}
-{{--        @endif--}}
+    @if(!empty($currentQuestion['benefits']))
+        <x-quiz.benefits
+                :countQuestionsDots="$countQuestionsDots"
+                :currentQuestionNum="$currentQuestionNum"
+                :currentQuestion="$currentQuestion"
+        >
+        </x-quiz.benefits>
+    @endif
 
-{{--        @if($currentQuestion['bottom_image_position'] == 'right')--}}
-{{--                <img class="bg-bottom-right" src="{{asset('assets/bg-images/'.$currentQuestion['bottom_image_name'])}}" alt="">--}}
-{{--        @endif--}}
-{{--    @endif--}}
+    <x-quiz.card
+        :countQuestionsDots="$countQuestionsDots"
+        :currentQuestionNum="$currentQuestionNum"
+        :currentQuestion="$currentQuestion"
+    >
+        @if(count($currentQuestion['answers']) == 2 && !empty($currentQuestion['answer_with_image']))
+            <x-quiz.two-images :currentQuestion="$currentQuestion" />
+        @endif
 
+        @if(!empty($currentQuestion['slider']))
+            <x-quiz.slider :currentQuestion="$currentQuestion" />
+        @endif
 
+        @if(!empty($currentQuestion['progress_slider']))
+            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
+            <x-quiz.button-answers :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(!empty($currentQuestion['text']))
+            <x-quiz.text :currentQuestion="$currentQuestion" />
+        @endif
+
+        @if(!empty($currentQuestion['continue_button']))
+            <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
+        @endif
+
+    </x-quiz.card>
 
 </div>
+
 
 <script>
 
@@ -203,9 +68,9 @@
                 let selectedAnswer = document.querySelector("#"+questionKey+"-"+key);
 
                 if(answers[key].selected) {
-                    selectedAnswer.classList.add('click-red');
+                    selectedAnswer.classList.add('click-green');
                 } else {
-                    selectedAnswer.classList.remove('click-red');
+                    selectedAnswer.classList.remove('click-green');
                 }
             }
 
@@ -213,10 +78,15 @@
 
     });
 
+    window.addEventListener('back-click', event => {
+
+    });
+
+
     window.addEventListener('next-click', event => {
 
-        if(document.querySelector('.quizz-btn')) {
-            let elements = document.querySelectorAll(".quizz-btn")
+        if(document.querySelector('.quiz-btn')) {
+            let elements = document.querySelectorAll(".quiz-btn")
 
             let myFunction = function() {
                 this.style.backgroundColor = '#00bd90';
@@ -227,6 +97,128 @@
                 element.addEventListener('click', myFunction);
             });
         }
+
+        cardLoader();
+
+        progressSlider();
     });
+
+    window.addEventListener('slider-selected', event => {
+        sliderButtons();
+    });
+
+    function sliderButtons() {
+
+        if(document.querySelector('#slider-component')) {
+            console.log(111);
+            let no = document.querySelector('.btn-no');
+            let yes = document.querySelector('.btn-yes');
+            let undecided = document.querySelector('.btn-undecided');
+
+            no.style.background = '#FF735C';
+            no.style.color = '#fff';
+
+            yes.style.background = '#00BD90';
+            yes.style.color = '#fff';
+
+            undecided.style.background = '#5FCAD3';
+            undecided.style.color = '#fff';
+        }
+    }
+
+    function cardLoader() {
+        if(document.querySelector('#card-loader')) {
+            let card = document.querySelector('#card');
+            let cardLoader = document.querySelector('#card-loader');
+            let seconds = cardLoader.dataset.seconds;
+
+            card.style.display = 'none';
+            cardLoader.style.display = 'block';
+
+            if(document.querySelector('video')) {
+                document.querySelector('video').play();
+            }
+
+            setTimeout(() => {
+                if(document.querySelector('#card-benefits')) {
+                    cardLoader.style.display = 'none';
+                    cardBenefits();
+                } else {
+                    cardLoader.style.display = 'none';
+                    card.style.display = 'block';
+                }
+            }, seconds);
+        }
+    }
+
+    function cardBenefits() {
+        if(document.querySelector('#card-benefits')) {
+            let card = document.querySelector('#card');
+            let cardBenefits = document.querySelector('#card-benefits');
+            let nextBtn = document.querySelector('.next-btn');
+
+            card.style.display = 'none';
+            cardBenefits.style.display = 'block';
+
+            nextBtn.addEventListener('click', () => {
+                cardBenefits.style.display = 'none';
+                card.style.display = 'block';
+            });
+        }
+    }
+
+    function progressSlider() {
+        if(!document.querySelector("#progress-slider")){
+            return;
+        }
+
+        // let progressSlider = document.querySelector("#progress-slider")
+        // let count = progressSlider.dataset.count;
+        // let seconds = progressSlider.dataset.seconds;
+        // let slide = document.querySelector('#slide-1');
+        // slide.style.display = 'block';
+        // let currentSlide = 2;
+        // showSlide()
+        //
+        // function showSlide() {
+        //     setTimeout(() => {
+        //         slide.style.display = 'none';
+        //         slide = document.querySelector('#slide-'+currentSlide);
+        //         slide.style.display = 'block';
+        //         currentSlide = currentSlide+1;
+        //
+        //         if(currentSlide > count) {
+        //             setTimeout(() => {
+        //                 document.querySelector('#finish-quiz').click()
+        //             }, seconds*1000)
+        //         } else {
+        //             showSlide();
+        //         }
+        //     }, seconds*1000)
+        // }
+
+        setTimeout(() => {
+            document.querySelector('#finish-quiz').click()
+        }, 5000)
+
+        var i = 0;
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 10;
+            var id = setInterval(frame, 35);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                } else {
+                    width++;
+                    elem.style.width = width + "%";
+                    elem.innerHTML = width + "%";
+                }
+            }
+        }
+
+    }
 
 </script>

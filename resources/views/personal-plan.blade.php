@@ -119,83 +119,6 @@
                         </button>
                     </div>
                 </div>
-                <div class="plan_includes w-100">
-                    <div class="title-box">
-                        <h2 class="font-grey-24-700">All plans include</h2>
-                    </div>
-                    <div class="plans-include-wrapper">
-
-                        <div class="checkbox-box check-plan">
-                            <input name="agreemnt2" id="agreemnt2" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt2">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    Customized BLW Meal plan, that renews every month
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan">
-                            <input name="agreemnt3" id="agreemnt3" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt3">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    Complete Guide to BLW
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan">
-                            <input name="agreemnt4" id="agreemnt4" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt4">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    E-Book with all the most important information
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="readmore more">
-                            <p class="m-0 font-accent-700">Read More</p>
-                            <img src="{{asset('assets/icons/back-green-arrow.png')}}" alt="" style="transform: rotate(180deg)">
-                        </div>
-
-                        <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt5" id="agreemnt5" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt5">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    30+ New Recipes every month
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt6" id="agreemnt6" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt6">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    24/7 Support
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="checkbox-box check-plan adaptive">
-                            <input name="agreemnt7" id="agreemnt7" class="styled-checkbox" type="checkbox" value="" checked disabled>
-                            <label class="font-grey-color-400" for="agreemnt7">
-                                <div class="custom-checkbox"></div>
-                                <span>
-                                    A downloadable and printable meal plan that you can access with any device
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="readmore hide">
-                            <p class="m-0 font-accent-700">Hide</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
         </div>
@@ -228,7 +151,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">1000+ Meal Ideas</h3>
                         <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
                     </div>
 
@@ -237,7 +160,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">Printable Files to track BLW progress</h3>
                         <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
                     </div>
 
@@ -246,7 +169,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">Video Tutorials</h3>
                         <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
                     </div>
 
@@ -323,7 +246,7 @@
 
                 </div>
 
-                <h2 class="mp-title-adaptive">Meal Plan Features</h2>
+                <h2 class="mp-title-adaptive">Something More</h2>
 
                 <div class="mp-two-colum">
                     <div class="mp-middle-block">
@@ -516,7 +439,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">1000+ Meal Ideas</h3>
                         <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
                     </div>
 
@@ -525,7 +448,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">Printable Files to track BLW progress</h3>
                         <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
                     </div>
 
@@ -534,7 +457,7 @@
 
                 <div class="what-will-item">
                     <div class="ww-item-content">
-                        <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                        <h3 class="item-title">Video Tutorials</h3>
                         <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
                     </div>
 
@@ -786,7 +709,7 @@
 
                 </div>
 
-                <h2 class="mp-title-adaptive">Meal Plan Features</h2>
+                <h2 class="mp-title-adaptive">Something More</h2>
 
                 <div class="mp-two-colum">
                     <div class="mp-middle-block">
