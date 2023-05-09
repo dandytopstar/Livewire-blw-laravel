@@ -385,6 +385,10 @@ input[type=number] {
     .baby-img.adaptive {
         display: none;
     }
+
+    .plan_includes {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
