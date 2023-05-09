@@ -480,14 +480,13 @@
 
     header.summary img.adaptive {
         display: block;
-        width: 133px;
-        height: 20px;
+        width: 80px;
     }
 
     header.summary .btn-adaptive {
         display: block;
         font-size: 12px;
-        padding: 5px 21px;
+        padding: 12px 21px;
         border-radius: 5px;
     }
 
@@ -616,5 +615,13 @@
 
     .what-will-item.block-5 img{
         width: 285px;
+    }
+
+    .small-section {
+        margin: 32px 0;
+    }
+
+    .section {
+        margin-top: 36px;
     }
 }

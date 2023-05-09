@@ -3,7 +3,7 @@
         <div class="summary-header-logo" style="flex-wrap: wrap;">
             <img src="{{asset('assets/logo/main-logo.png')}}" alt="" class="desktop-logo">
             <div>
-                <img class="adaptive" src="{{asset('assets/summary/adaptive_logo.png')}}" alt="">
+                <img class="adaptive" src="{{asset('assets/logo/logo-mobile-landing-only.png')}}" alt="">
             </div>
 
             <div class="summary-header-btn">
