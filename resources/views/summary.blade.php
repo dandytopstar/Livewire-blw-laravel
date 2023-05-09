@@ -64,7 +64,7 @@
 
         <div class="container what-will-items">
 
-            <div class="what-will-item">
+            <div class="what-will-item block-1">
                 <div class="ww-item-content">
                     <h3 class="item-title">Baby-Led Weaning App Access</h3>
                     <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
@@ -73,7 +73,7 @@
                 <div class="item-number">1</div>
             </div>
 
-            <div class="what-will-item">
+            <div class="what-will-item block-2">
                 <div class="ww-item-content">
                     <h3 class="item-title">Monthly Personalized Meal Plan</h3>
                     <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
@@ -82,7 +82,7 @@
                 <div class="item-number">2</div>
             </div>
 
-            <div class="what-will-item">
+            <div class="what-will-item block-3">
                 <div class="ww-item-content">
                     <h3 class="item-title">1000+ Meal Ideas</h3>
                     <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
@@ -91,7 +91,7 @@
                 <div class="item-number">3</div>
             </div>
 
-            <div class="what-will-item">
+            <div class="what-will-item block-4">
                 <div class="ww-item-content">
                     <h3 class="item-title">Printable Files to track BLW progress</h3>
                     <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
@@ -100,7 +100,7 @@
                 <div class="item-number">4</div>
             </div>
 
-            <div class="what-will-item">
+            <div class="what-will-item block-5">
                 <div class="ww-item-content">
                     <h3 class="item-title">Video Tutorials</h3>
                     <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
@@ -139,8 +139,8 @@
         <div class="container mp-blocks">
 
             <div class="mp-first-block">
-                <img class='mp-first-block-img' src="{{asset('assets/summary/mp/phone.png')}}" alt="">
-                <img class='mp-first-block-img-adaptive' src="{{asset('assets/summary/mp/phone-adaptive.png')}}" alt="">
+                <img class='mp-first-block-img' src="{{asset('assets/summary/mp/phone.jpg')}}" alt="">
+                <img class='mp-first-block-img-adaptive' src="{{asset('assets/summary/mp/phone.jpg')}}" alt="">
 
                 <div class="mp-middle-block-adaptive">
 
