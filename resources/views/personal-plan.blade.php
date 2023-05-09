@@ -582,9 +582,9 @@
             </div>
         </div>
         <div class="text-center">
-            <button type="button" class="btn font-white-600 btn-green-squre w-100 block" id="get-your-plan" style="width: auto!important;">
+            <a href="#" type="button" class="btn font-white-600 btn-green-squre w-100 block" id="get-your-plan" style="width: auto!important;">
                 Get Your Plan
-            </button>
+            </a>
         </div>
 
     </section>
@@ -958,9 +958,9 @@
             </div>
 
             <div class="text-center mt-4">
-                <button type="button" class="btn font-white-600 btn-green-squre w-100 block" id="get-your-plan" style="width: auto!important;">
+                <a href="#" type="button" class="btn font-white-600 btn-green-squre w-100 block" id="get-your-plan" style="width: auto!important;">
                     Get Your Plan
-                </button>
+                </a>
             </div>
 
         </section>
