@@ -360,6 +360,77 @@
     display: none;
 }
 
+.au-sliders {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.au-slide {
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.au-slide-image {
+    border-radius: 10px;
+}
+
+.au-slide-stars {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+}
+
+.au-slide-stars img{
+    width: 12px;
+    height: 11px;
+}
+
+.au-slide-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1C1C1C;
+    margin-bottom: 10px;
+}
+
+.au-slide-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-dot {
+    display: flex;
+    flex-direction: row;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--grey-color);
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    border: 1px solid var(--acent-color-green);
+    background: var(--acent-color-green);
+}
+
+.active-users.au-adaptive {
+    display: none;
+}
+
 @media (max-width: 1265px) {
     .mp-blocks{
         flex-direction: column;
@@ -623,5 +694,31 @@
 
     .section {
         margin-top: 36px;
+    }
+
+    .au-slider-section {
+        display: none;
+    }
+
+    .active-users.au-adaptive {
+        display: block;
+    }
+
+    .au-slide-adaptive {
+        text-align: center;
+    }
+
+    .au-slide {
+        width: 89%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px auto;
+
+    }
+
+    .au-slide-text {
+        text-align: start;
     }
 }

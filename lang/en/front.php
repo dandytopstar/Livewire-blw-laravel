@@ -259,18 +259,23 @@ return [
     'our_promise_text' => "Individuals are somewhat skeptical about new ideas as it poses a challenge, or better put, a cloud of doubt on one's existing thoughts and awareness. In this case of baby-led weaning, there's the usual fear of the babies choking or the case of the pediatricians/nutritionists not being well-informed/trained about BLW. Therefore, our coaches and nutritionists are working incessantly to offer you a suitable meal plan and personalized routine for your babies while helping them gain confidence at an early age and reach their potential through extensive practice that includes but isn’t limited to dexterity, hand-eye coordination, etc. This is not far-fetched as this process is done at the babies’ pace, whereby they are in control of what they eat and the quantity of the new meal(s) being incorporated into their diet.",
 
     'summary_user_story_author_1' => 'Patricia Allison, 34',
+    'summary_user_story_avatar_1' => 'assets/avatar/avatar_lesli.jpg',
     'summary_user_story_text_1' => "The first feeding of a child with solid food always seemed to be a scary and
                             unfamiliar stage. I didn't know where and when to start, what food to choose, or
                             how to react when a child choked or refused to eat. Fortunately for me, some
                             friends recommended this platform, and now we have been eating without
                             problems for 8 months. We have tried many different products, and our little one is
                             completely able to feed himself.",
+
     'summary_user_story_author_2' => 'Leslee Miller, 32',
+    'summary_user_story_avatar_2' => 'assets/avatar/avatar_patricia.jpg',
     'summary_user_story_text_2' => 'This is the best Baby-Led Weaning plan ever. Before the birth of my child, I read
                             several books on this topic and consulted with other mothers, but I did not get the
                             answers I wanted. However, with this personalized plan, everything was very clearly
                             shown from A to Z. Now I can say that Baby-Led Weaning is easy!',
+
     'summary_user_story_author_3' => 'Kelli Harper, 30',
+    'summary_user_story_avatar_3' => 'assets/avatar/avatar_kelli2.jpg',
     'summary_user_story_text_3' => "I have always wanted to use Baby-Led Weaning for my children, but I had absolutely
                             no knowledge. After visiting this site, I received a personalized plan, guide, and tons
                             of recipes. I couldn't imagine raising my children without this detailed plan. I am

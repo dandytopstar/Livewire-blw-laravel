@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@push('custom-header')
+
+@endpush
+
 @section('content')
 
     @includeIf('partial.main-summary-header')
@@ -468,136 +472,144 @@
 
     </section>
 
-    <section class="active-users">
+    <section id="summary-active-users" class="big-section au-slider-section">
+
+        <div class="container">
+
+            <h2 class="section-title">125 000+ active users</h2>
+            <p>
+                This is how many parents are using our plans to feed their kids. Read their stories
+            </p>
+
+            <div class="au-sliders">
+
+{{--                       slide 1--}}
+                <div class="au-slide slide-1">
+                    <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                    <div class="au-slide-stars">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                    </div>
+                    <div class="au-slide-title">
+                        {{__('front.summary_user_story_author_1')}}
+                    </div>
+                    <div class="au-slide-text">
+                        {{__('front.summary_user_story_text_1')}}
+                    </div>
+                </div>
+
+{{--                       slide 2--}}
+                <div class="au-slide slide-2">
+                    <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt="" class="au-slide-image">
+                    <div class="au-slide-stars">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                    </div>
+                    <div class="au-slide-title">
+                        {{__('front.summary_user_story_author_2')}}
+                    </div>
+                    <div class="au-slide-text">
+                        {{__('front.summary_user_story_text_2')}}
+                    </div>
+                </div>
+
+{{--                       slide 3--}}
+                <div class="au-slide slide-3">
+                    <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt="" class="au-slide-image">
+                    <div class="au-slide-stars">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                    </div>
+                    <div class="au-slide-title">
+                        {{__('front.summary_user_story_author_3')}}
+                    </div>
+                    <div class="au-slide-text">
+                        {{__('front.summary_user_story_text_3')}}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="active-users au-adaptive">
         <div class="container">
             <div class="title-box">
                 <h2 class="font-grey-32-700">125 000+ active users</h2>
                 <p class="font-grey-color-400">
-                    This is how many parents are using our plans to feed their infants. Read their stories.
+                    This is how many parents are using our plans to feed their kids. Read their stories
                 </p>
-            </div>
-
-            <div class="users-block">
-
-                <div class="user">
-                    <div class="img-box mx-auto">
-                        <img src="{{asset('assets/avatar/avatar_lesli.jpg')}}" alt="">
-                    </div>
-                    <div class="star-box d-flex">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                    </div>
-                    <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_1')}}</p>
-                        <p class="font-grey-color-400 text-center">
-                            {{__('front.summary_user_story_text_1')}}
-                        </p>
-                    </div>
-                    
-                </div>
-
-                <div class="user">
-                    <div class="img-box mx-auto">
-                        <img src="{{asset('assets/avatar/avatar_patricia.jpg')}}" alt="">
-                    </div>
-                    <div class="star-box d-flex">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                    </div>
-                    <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_2')}}</p>
-                        <p class="font-grey-color-400 text-center">
-                            {{__('front.summary_user_story_text_2')}}
-                        </p>
-                    </div>
-                    
-                </div>
-
-                <div class="user">
-                    <div class="img-box mx-auto">
-                        <img src="{{asset('assets/avatar/avatar_kelli2.jpg')}}" alt="">
-                    </div>
-                    <div class="star-box d-flex">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                    </div>
-                    <div class="comment-box">
-                        <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_3')}}</p>
-                        <p class="font-grey-color-400 text-center">
-                            {{__('front.summary_user_story_text_3')}}
-                        </p>
-                    </div>
-                    
-                </div>
             </div>
 
             <div class="clients-box">
                 <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel">
                     <div class="carousel-inner">
 
-                        <div class="carousel-item active">
-                            <div class="img-box">
-                                <img src="{{asset('assets/avatar/avatar_lesli.jpg')}}" alt="">
-                            </div>
-                            <div class="star-box d-flex">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                            </div>
-                            <div class="comment-box">
-                                <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_1')}}</p>
-                                <p class="font-grey-color-400 text-center">
+                        <div class="carousel-item au-slide-adaptive active">
+                            <div class="au-slide slide-1">
+                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <div class="au-slide-stars">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                </div>
+                                <div class="au-slide-title">
+                                    {{__('front.summary_user_story_author_1')}}
+                                </div>
+                                <div class="au-slide-text">
                                     {{__('front.summary_user_story_text_1')}}
-                                </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="carousel-item">
-                            <div class="img-box">
-                                <img src="{{asset('assets/avatar/avatar_patricia.jpg')}}" alt="">
-                            </div>
-                            <div class="star-box d-flex">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                            </div>
-                            <div class="comment-box">
-                                <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_2')}}</p>
-                                <p class="font-grey-color-400 text-center">
-                                    {{__('front.summary_user_story_text_2')}}
-                                </p>
+                        <div class="carousel-item au-slide-adaptive">
+                            <div class="au-slide slide-1">
+                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <div class="au-slide-stars">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                </div>
+                                <div class="au-slide-title">
+                                    {{__('front.summary_user_story_author_1')}}
+                                </div>
+                                <div class="au-slide-text">
+                                    {{__('front.summary_user_story_text_1')}}
+                                </div>
                             </div>
                         </div>
 
-                        <div class="carousel-item">
-                            <div class="img-box">
-                                <img src="{{asset('assets/avatar/avatar_kelli2.jpg')}}" alt="">
-                            </div>
-                            <div class="star-box d-flex">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                            </div>
-                            <div class="comment-box">
-                                <p class="font-grey-16-700 text-center">{{__('front.summary_user_story_author_3')}}</p>
-                                <p class="font-grey-color-400 text-center">
-                                    {{__('front.summary_user_story_text_3')}}
-                                </p>
+                        <div class="carousel-item au-slide-adaptive">
+                            <div class="au-slide slide-1">
+                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <div class="au-slide-stars">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
+                                </div>
+                                <div class="au-slide-title">
+                                    {{__('front.summary_user_story_author_1')}}
+                                </div>
+                                <div class="au-slide-text">
+                                    {{__('front.summary_user_story_text_1')}}
+                                </div>
                             </div>
                         </div>
 
@@ -638,5 +650,9 @@
 
     <div class="" style="height: 25px"> </div>
 
-{{--    @includeIf('partial.main-summary-footer')--}}
+
 @endsection
+
+@push('custom-scripts')
+
+@endpush
