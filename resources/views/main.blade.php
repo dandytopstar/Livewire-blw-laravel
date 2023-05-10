@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
+    <section id="what-will-you-get" class="big-section text-center my-3 my-lg-5 px-3 p-lg-5">
 
         <h2 class="section-title">What will you get?</h2>
 
