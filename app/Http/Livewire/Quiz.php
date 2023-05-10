@@ -55,6 +55,7 @@ class Quiz extends Component
                     '1' => ['text' => 'Under 6 months'],
                     '2' => ['text' => '6-8 months'],
                     '3' => ['text' => '8-10 months'],
+                    '4' => ['text' => 'Over 10 months'],
                 ],
             ],
 
@@ -399,6 +400,7 @@ class Quiz extends Component
                     '1' => ['text' => 'Water', 'selected'  => false],
                     '2' => ['text' => 'Fruit juice', 'selected'  => false],
                     '3' => ['text' => 'Milk', 'selected'  => false],
+                    '4' => ['text' => 'Undecided', 'selected'  => false],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
