@@ -596,7 +596,7 @@
 
                         <div class="carousel-item au-slide-adaptive">
                             <div class="au-slide slide-3">
-                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
