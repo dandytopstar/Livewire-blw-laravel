@@ -73,9 +73,9 @@ class Quiz extends Component
                 'question_key' => 'overall_health',
                 'question' => "Your baby's overall health and development",
                 'answers' => [
-                    '1' => ['text' => 'Healthy and thriving'],
-                    '2' => ['text' => 'Some health concerns'],'
-                    3' => ['text' => 'Developmental delays or concerns'],
+                    1 => ['text' => 'Healthy and thriving'],
+                    2 => ['text' => 'Some health concerns'],
+                    3 => ['text' => 'Developmental delays or concerns'],
                 ],
             ],
 
@@ -583,14 +583,8 @@ class Quiz extends Component
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
 
-            if(!empty($currentAnswer['range_slider'])) {
-                $text = $answer;
-                $answer_num = 0;
-                $this->rangeData = 1;
-            } else {
-                $text = $currentAnswer['answers'][$answer]['text'];
-                $answer_num = $answer;
-            }
+            $text = $currentAnswer['answers'][$answer]['text'];
+            $answer_num = $answer;
 
             $this->resultAnswers[$this->currentQuestionNum] = [
                 'number' => $this->currentQuestionNum,
@@ -600,15 +594,12 @@ class Quiz extends Component
                 'answer_num' => $answer_num,
             ];
 
-            if(!empty($currentAnswer['range_slider'])) {
-                $this->quizQuestions[$this->currentQuestionNum]['result'] = $text;
-            } else {
-                foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
-                    $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
-                }
-
-                $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
+            foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
             }
+
+            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
+
         }
     }
 
