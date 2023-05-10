@@ -576,8 +576,8 @@
                         </div>
 
                         <div class="carousel-item au-slide-adaptive">
-                            <div class="au-slide slide-1">
-                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                            <div class="au-slide slide-2">
+                                <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -586,16 +586,16 @@
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                 </div>
                                 <div class="au-slide-title">
-                                    {{__('front.summary_user_story_author_1')}}
+                                    {{__('front.summary_user_story_author_2')}}
                                 </div>
                                 <div class="au-slide-text">
-                                    {{__('front.summary_user_story_text_1')}}
+                                    {{__('front.summary_user_story_text_2')}}
                                 </div>
                             </div>
                         </div>
 
                         <div class="carousel-item au-slide-adaptive">
-                            <div class="au-slide slide-1">
+                            <div class="au-slide slide-3">
                                 <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -605,10 +605,10 @@
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                 </div>
                                 <div class="au-slide-title">
-                                    {{__('front.summary_user_story_author_1')}}
+                                    {{__('front.summary_user_story_author_3')}}
                                 </div>
                                 <div class="au-slide-text">
-                                    {{__('front.summary_user_story_text_1')}}
+                                    {{__('front.summary_user_story_text_3')}}
                                 </div>
                             </div>
                         </div>
