@@ -123,52 +123,78 @@
         </div>
     </section>
 
-    <section class="section p-0 plans" id="personal-plan">
-        <div class="container">
-            <div class="title-box">
-                <p class="font-accent-700">Personalized Plan</p>
-                <h2 class="font-grey-32-700">What Will You Get?</h2>
+    <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
+
+        <h2 class="section-title">What will you get?</h2>
+
+        <div class="container what-will-items">
+
+            <div class="what-will-item block-1">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Baby-Led Weaning App Access</h3>
+                    <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
+                </div>
+
+                <div class="item-number">1</div>
             </div>
-            <div class="items-box">
-                <div class="plan">
-                    <div class="icon-box">
-                        <img src="{{asset('assets/icons/guide.svg')}}"></img>
-                    </div>
-                    <p class="title font-accent-18-700">Guide</p>
-                    <p class="description font-grey-color-400">A step-by-step guide on how to prepare your baby for solid foods</p>
+
+            <div class="what-will-item block-2">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Monthly Personalized Meal Plan</h3>
+                    <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
                 </div>
-                <div class="plan">
-                    <div class="icon-box">
-                        <img src="{{asset('assets/icons/book.svg')}}"></img>
-                    </div>
-                    <p class="title font-accent-18-700">{{__('front.about_list_item_2_title')}}</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.about_list_item_2')}}
-                    </p>
-                </div>
-                <div class="plan">
-                    <div class="icon-box">
-                        <img src="{{asset('assets/icons/note.svg')}}"></img>
-                    </div>
-                    <p class="title font-accent-18-700">{{__('front.about_list_item_3_title')}}</p>
-                    <p class="description font-grey-color-400">
-                        {{__('front.about_list_item_3')}}
-                    </p>
-                </div>
-                <div class="plan">
-                    <div class="icon-box">
-                        <img src="{{asset('assets/icons/apple.svg')}}"></img>
-                    </div>
-                    <p class="title font-accent-18-700">45+ healthy recipes</p>
-                    <p class="description font-grey-color-400">Nutritious, delicious and healthy recipes ideal for baby-led weaning.</p>
-                </div>
-                <a href="{{route('quiz')}}" class="text-decoration-none">
-                    <button type="button" class="btn font-white-600 btn-green-squre">
-                        {{__("front.start_quiz")}}
-                    </button>
-                </a>
+
+                <div class="item-number">2</div>
             </div>
+
+            <div class="what-will-item block-3">
+                <div class="ww-item-content">
+                    <h3 class="item-title">1000+ Meal Ideas</h3>
+                    <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
+                </div>
+
+                <div class="item-number">3</div>
+            </div>
+
+            <div class="what-will-item block-4">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Printable Files to track BLW progress</h3>
+                    <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
+                </div>
+
+                <div class="item-number">4</div>
+            </div>
+
+            <div class="what-will-item block-5">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Video Tutorials</h3>
+                    <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
+                </div>
+
+                <div class="item-number">5</div>
+            </div>
+
+            <div class="ww-last">
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_1.png')}}" alt="">
+                    <h4>Progress-based Tips</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_2.png')}}" alt="">
+                    <h4>Exclusive Member Resources</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_3.png')}}" alt="">
+                    <h4>Unlimited E-Mail Support</h4>
+                </div>
+                <div class="ww-last-item">
+                    <img src="{{asset('assets/summary/whatwill/💡last_item_4.png')}}" alt="">
+                    <h4 class="pt-0 pb-1">Personalized Baby-Led Weaning Guidebook</h4>
+                </div>
+            </div>
+
         </div>
+
     </section>
 
     <section class="section get-section p-0" id="baby-led-weaning">
