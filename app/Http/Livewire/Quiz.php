@@ -400,11 +400,12 @@ class Quiz extends Component
                     '1' => ['text' => 'Water', 'selected'  => false],
                     '2' => ['text' => 'Fruit juice', 'selected'  => false],
                     '3' => ['text' => 'Milk', 'selected'  => false],
-                    '4' => ['text' => 'Undecided', 'selected'  => false],
+                    '4' => ['text' => 'Undecided', 'selected'  => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
                 'continue_button_text' => 'continue',
+                'hasDeselectAll' => true,
             ],
 
             '26' => [
