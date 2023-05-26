@@ -26,7 +26,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .font-white-600 {
     color: white;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 17px;
     font-weight: 600;
 }
@@ -209,18 +209,18 @@ body {
 }
 
 .btn-green-squre, .btn-green-squre:hover {
-    padding: 12px 43px;
+    padding: 12px 30px;
     border-radius: 10px;
     background-color: var(--acent-color-green);
     color: white;
 }
 
 .btn-white-squre, .btn-white-squre:hover {
-    padding: 12px 43px;
+    padding: 12px 30px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--light-green-color);
     max-height: 44px;
-    color: var(--acent-color-green)
+    color: black
 }
 
 .btn-green-circle, .btn-green-circle:hover {
@@ -290,7 +290,8 @@ footer .navbar-container {
 
 footer {
     background-color: var(--acent-color-green);
-    padding: 40px 0;
+    padding-top: 34px;
+    padding-bottom: 31px;
 }
 
 /* sections */
@@ -1022,6 +1023,14 @@ section .stepper-box {
     position: relative;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 .diagram-box .diagram .inf-box, .diagram-box .diagram .today-box, .diagram-box .diagram .days-amount-box {
     position: absolute;
 }
@@ -1131,6 +1140,53 @@ section.program {
     display: block;
 }
 
+.bg-light-green {
+    background-color: var(--light-green-color);
+}
+
+.h-5 {
+    height:5px;
+}
+
+.h-10 {
+    height:10px;
+}
+
+.h-15 {
+    height:15px;
+}
+
+.h-20 {
+    height:20px;
+}
+
+.h-25 {
+    height:25px;
+}
+
+.w-5 {
+    width:5px;
+}
+
+.w-10 {
+    width:10px;
+}
+
+.w-15 {
+    width:15px;
+}
+
+.w-20 {
+    width:20px;
+}
+
+.w-25 {
+    width:25px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
 
 
 
