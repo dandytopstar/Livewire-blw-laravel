@@ -76,6 +76,12 @@ Route::get('/5qpge23personal44232dietqpfform99675-2', [FileController::class, 's
 
 Route::get('/6mptt4485custom8fqmealplan7761-2', [FileController::class, 'showMealPlanPdf']);
 
+Route::prefix('book')->group(function(){
+    Route::view('/', 'book.main')->name('main');
+
+    Route::view('quiz', 'book.quiz')->name('quiz');
+});
+
 Route::fallback(function () {
     return redirect()->route('main');
 });
