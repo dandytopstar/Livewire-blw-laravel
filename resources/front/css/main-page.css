@@ -21,18 +21,24 @@ section.main-page .inf-box h1:first-child {
 
 section .description {
     margin-bottom: 40px;
-    max-width: 300px;
 }
 
-.bg-image-absolute {
+/* .bg-image-absolute {
     position: absolute;
     width: 50%;
     bottom: 0px;
     right: 0px;
-}
+} */
+
 
 section.main-page .bg-image-absolute {
-    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+section.main-page .bg-image-absolute img{
+    border-radius: 20px;
 }
 
 .box-item {
