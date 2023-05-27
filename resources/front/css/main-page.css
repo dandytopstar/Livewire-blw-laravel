@@ -23,18 +23,21 @@ section .description {
     margin-bottom: 40px;
 }
 
-/* .bg-image-absolute {
+.bg-image-slide {
     position: absolute;
     width: 50%;
     bottom: 0px;
     right: 0px;
-} */
-
+}
 
 section.main-page .bg-image-absolute {
     position: absolute;
     bottom: 30px;
     right: 0;
+}
+
+section.main-page .bg-image-slide {
+    display: none;
 }
 
 section.main-page .bg-image-absolute img{

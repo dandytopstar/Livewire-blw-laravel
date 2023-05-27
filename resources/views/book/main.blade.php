@@ -24,7 +24,7 @@
       </div>
     </nav>
     <section class="position-relative w-100 first-section main-page">
-      <div class="img-box bg-image-absolute text-center">
+      <div class="img-box bg-image-slide text-center">
         <div class="bg-scroll-mobile"></div>
       </div>
       <div class="container position-relative d-flex">
@@ -54,7 +54,7 @@
       </div>
     </section>
   </div>
-  <div class="img-box bg-image-absolute text-center">
+  <div class="img-box bg-image-slide text-center">
     <div class="bg-scroll-main"></div>
   </div>
 </header>
