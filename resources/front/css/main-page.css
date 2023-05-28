@@ -250,7 +250,8 @@ section.main-page .bg-image-absolute img{
     border-radius: 10px;
 }
 .dropdown .dropdown-content {
-    display: none;
+    width: 150px;
+    display:none;
     position: absolute;
     background-color: white;
     overflow: auto;
@@ -259,6 +260,7 @@ section.main-page .bg-image-absolute img{
     z-index: 1;
     padding: 16px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 .dropdown .dropdown-content ul {
@@ -267,11 +269,13 @@ section.main-page .bg-image-absolute img{
 }
 
 .dropdown .dropdown-content ul .dropdown-item {
+    cursor: pointer;
     margin-bottom: 5px;
     
 }
 
 .dropdown .dropdown-content ul .dropdown-item span {
+    font-size: 14px;
     margin-left: 5px;
     
 }
