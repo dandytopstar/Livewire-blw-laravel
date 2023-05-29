@@ -26,4 +26,6 @@
 
   @livewire('quiz')
 
+  @includeIf('book.partial.main-footer')
+
   @endsection

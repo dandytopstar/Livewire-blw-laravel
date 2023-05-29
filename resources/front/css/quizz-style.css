@@ -306,3 +306,7 @@
 .quiz-card .container img {
     width: 150px;
 }
+
+.puiz-body {
+    min-height: calc(100vh - 100px);
+}
