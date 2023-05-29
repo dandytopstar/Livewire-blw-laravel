@@ -1,26 +1,26 @@
-<div class="position-relative px-3">
+<div class="position-relative px-3 quiz-card">
 
 
     @if(!empty($currentQuestion['loader']) && $currentQuestion['loader']['show'])
-        <x-quiz.card-loader
+        <x-bookquiz.card-loader
                 :countQuestionsDots="$countQuestionsDots"
                 :currentQuestionNum="$currentQuestionNum"
                 :currentQuestion="$currentQuestion"
         >
-            <x-quiz.loader :currentQuestion="$currentQuestion" />
-        </x-quiz.card-loader>
+            <x-bookquiz.loader :currentQuestion="$currentQuestion" />
+        </x-bookquiz.card-loader>
     @endif
 
     @if(!empty($currentQuestion['benefits']))
-        <x-quiz.benefits
+        <x-bookquiz.benefits
                 :countQuestionsDots="$countQuestionsDots"
                 :currentQuestionNum="$currentQuestionNum"
                 :currentQuestion="$currentQuestion"
         >
-        </x-quiz.benefits>
+        </x-bookquiz.benefits>
     @endif
 
-    <x-quiz.card
+    <x-bookquiz.card
         :countQuestionsDots="$countQuestionsDots"
         :currentQuestionNum="$currentQuestionNum"
         :currentQuestion="$currentQuestion"
@@ -49,7 +49,7 @@
             <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
         @endif
 
-    </x-quiz.card>
+    </x-bookquiz.card>
 
 </div>
 
@@ -171,32 +171,6 @@
         if(!document.querySelector("#progress-slider")){
             return;
         }
-
-        // let progressSlider = document.querySelector("#progress-slider")
-        // let count = progressSlider.dataset.count;
-        // let seconds = progressSlider.dataset.seconds;
-        // let slide = document.querySelector('#slide-1');
-        // slide.style.display = 'block';
-        // let currentSlide = 2;
-        // showSlide()
-        //
-        // function showSlide() {
-        //     setTimeout(() => {
-        //         slide.style.display = 'none';
-        //         slide = document.querySelector('#slide-'+currentSlide);
-        //         slide.style.display = 'block';
-        //         currentSlide = currentSlide+1;
-        //
-        //         if(currentSlide > count) {
-        //             setTimeout(() => {
-        //                 document.querySelector('#finish-quiz').click()
-        //             }, seconds*1000)
-        //         } else {
-        //             showSlide();
-        //         }
-        //     }, seconds*1000)
-        // }
-
         setTimeout(() => {
             document.querySelector('#finish-quiz').click()
         }, 5000)

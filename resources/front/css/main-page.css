@@ -212,3 +212,106 @@ section.main-page .bg-image-absolute img{
 .carousel.adaptive {
     display: none;
 }
+
+/* for book subdomain*/
+
+section.main-page .inf-box .subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+section.main-page .inf-box h1:first-child {
+    margin: 0px !important;
+}
+
+.bg-image-slide {
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    right: 0px;
+}
+
+section.main-page .bg-image-slide {
+    display: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.dropdown > button {
+    color: white;
+    padding: 3px 7px;
+    border: 1px solid var(--light-grey-color);
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+}
+.dropdown .dropdown-content {
+    width: 150px;
+    display:none;
+    position: absolute;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+    padding: 16px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.dropdown .dropdown-content ul {
+    margin: 0;
+    padding: 0;   
+}
+
+.dropdown .dropdown-content ul .dropdown-item {
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+
+.dropdown .dropdown-content ul .dropdown-item span {
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+
+.bg-scroll-main {
+    background-image: url("/assets/main/web-slide.png");
+    background-size: cover;
+    animation: scroll-down-up 2000s linear infinite;
+    width: 100%;
+    height: calc(100vh - 110px);
+}
+
+.bg-scroll-mobile {
+    background-image: url("/assets/main/mobile-slide.png");
+    background-size: cover;
+    animation: scroll-right-left 2000s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scroll-down-up {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 10000%;
+    }
+}
+
+@keyframes scroll-right-left {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10000%, 0;
+    }
+}
+

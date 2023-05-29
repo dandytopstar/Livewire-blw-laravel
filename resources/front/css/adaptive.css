@@ -1,147 +1,323 @@
-@media (max-width: 768px) {
-    .font-white-600, .font-accent-600 {
-        font-size: 12px;
-        line-height: 14px;
+
+@media (max-width: 1400px) {
+}
+
+
+@media (max-width: 1200px) {
+    section.main-page .container, .get-section .box {
+        flex-direction: column-reverse;
+        display: flex;
     }
 
-    .font-grey-color-700 {
-        font-size: 26px;
-        line-height: 30px;
+    section.main-page .bg-image-absolute {
+        position: relative;
     }
-
+    
     section.main-page .bg-image-absolute.img-box, section.get-section .box .img-box {
         max-width: 330px;
     }
 
-    section.main-page h1 {
-        margin-bottom: 20px;
+    section.main-page .bg-image-absolute, .get-section .box .img-box {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: relative;
     }
 
-    section.main-page .description {
-        margin-bottom: 50px;
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .font-grey-color-400 {
-        font-size: 14px;
-        line-height: 20px;
+    .header ul li:not(:last-child), footer ul li:not(:last-child) {
+        margin-right: 40px;
     }
 
-    .font-accent-700 {
-        font-size: 14px;
-        line-height: 17px;
-        /*color: var(--acent-color-green);*/
-        /*font-weight: 700;*/
+    footer {
+        width: 100%;
+        bottom: 0px;
     }
 
-    .font-grey-32-700 {
-        font-size: 20px;
-        line-height: 26px;
+    .header .nav-menu, footer .nav-menu {
+        margin-left: auto;
     }
 
-    .section.first-section {
-        margin-top: 40px;
+    header > .bg-image-slide {
+        display: none;
     }
 
-    .section {
-        margin-top: 60px;
-        padding: 40px 0;
+    section.main-page .bg-image-slide {
+        position: relative;
+        display: block;
+        height: calc(100vh - 538px);
+        width: calc(100% + 60px);
+        left: -30px;
+        padding-top: 20px;
+        min-height: 200px;
+    }
+    
+    .get-section .box .img-box {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+
+    section.main-page .bg-image-absolute img,
+    .get-section .box .img-box img {
+        width: 80%;
+    }
+
+    section.main-page .bg-image-absolute {
+        display: block;
+        
+    }
+
+    .mobile-img-center {
+        text-align: center !important;
+    }
+
+    section.main-page .inf-box {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        margin-top: 30px;
     }
 
     .box-item {
-        padding: 30px 20px;
+        width: 100%;
     }
 
-    .section .title-box > h2 {
+    .box-item:not(:last-child) {
         margin-bottom: 20px;
     }
 
-    .plan {
-        flex-direction: column;
-        justify-content: center;
+    .box-container {
+        flex-wrap: wrap;
+    }
+
+    .get-section .box .title-box {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .clients-box .navigation {
+        justify-content: center !important;
+    }
+
+    .navigation .arrow-left, .navigation .arrow-right {
+        display: none;
+    }
+
+    .clients-box .clients-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section .title-box {
         text-align: center;
-        padding: 20px;
+        margin-bottom: 30px;
     }
 
-    .plan .icon-box {
-        margin-right: 0;
+    .clients .title-box h2, .clients .title-box h2 {
+        margin-bottom: 20px;
     }
 
-    .plan .title {
-        margin: 10px 0;
+    .get-in-touch img {
+        display: none;
     }
 
-    .plans button {
+    .get-in-touch .title-box {
+        text-align: center;
+    }
+
+    .get-in-touch .form-container {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .get-in-touch button {
+        margin: 0 auto;
         display: block;
+    }
+
+    .section.quizz-box .content-box .option img {
+        max-width: 100%;
+    }
+
+    .plan-selection .content-wrapper {
+        flex-direction: column;
+    }
+
+    .plan-selection .content-wrapper .plan_includes {
+        margin-bottom: 40px;
+    }
+
+    .plan-selection .content-wrapper .readmore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan-selection .content-wrapper .readmore p {
+        margin-bottom: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .plan-selection .content-wrapper .readmore img {
+        margin-left: 10px;
+    }
+
+
+    .plan-selection .plans-include-wrapper .checkbox-box.adaptive {
+        display: none;
+    }
+
+    .plan-selection .content-wrapper .plans {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .summary-conclusion {
+        display: none;
+    }
+
+    .summary-conclusion.adaptive {
+        display: flex;
+    }
+
+    .summary-conclusion.adaptive .container {
+        flex-direction: column;
+    }
+
+    .summary-conclusion.adaptive .content-box, .summary-conclusion .container .diagram-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .summary-conclusion.adaptive .title {
+        text-align: center;
+    }
+
+    .summary-conclusion.adaptive .content-box .title p:last-child {
+        max-width: 100%;
+    }
+
+    .summary-conclusion.adaptive .notice-box, .summary-conclusion .diagram-box .data {
+        width: 60% !important;
+        margin: 0 auto 20px;
+    }
+
+    .summary-conclusion.adaptive .content-box button {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .summary-conclusion.adaptive .diagram {
+        width: 100%!important;
         margin: 0 auto;
     }
 
-    .section .box {
-        padding: 30px;
+    .summary-days .days-box-container, .summary-days .benefits-box {
+        flex-direction: column;
+        margin: 0;
     }
 
-    .section .clients-item .avatar-box {
-        width: 72px;
-        height: 72px;
-        border-radius: 16px;
+    .summary-days .days-box-container .day, .summary-days .benefits-box .benefit {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .font-grey-16-700 {
-        font-size: 14px;
-        line-height: 17px;
+    .active-users .user {
+        width: 48%;
+        margin-bottom: 20px;
     }
 
-    .font-accent-40-700 {
-        font-size: 22px;
-        line-height: 27px;
+    .active-users .users-block {
+        flex-wrap: wrap;
     }
 
-    .active-users .carousel.adaptive .clients-item .user {
-        width: 60%;
+
+    footer.fixed {
+        position: static;
     }
 
-    .font-light-grey-700 {
+    .point-item-box p.name {
+        left: 0;
+    }
+
+    .font-accent-18-700, .font-white-26-700 {
         font-size: 16px;
         line-height: 20px;
     }
 
-    .font-dark-grey-700 {
-        font-size: 26px;
-        line-height: 32px;
+    .point-item {
+        width: 35px;
+        height: 35px;
     }
 
-    .diagram-box .diagram .inf-box {
-        max-width: 220px;
-        white-space: normal;
-        text-align: center;
-        padding: 10px;
+    .stepper-box .line {
+        height: 2px;
+    }
+
+    .program .container {
+        flex-direction: column-reverse;
+    }
+
+    .program .content-box {
         width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
-    .diagram-box .diagram img.adaptive {
-        display: block;
+    .graphic .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .diagram-box .diagram {
-        max-width: 340px;
+    .graphic .container .block {
+        /*max-width: 100%;*/
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
-    .diagram-box .diagram .days-container {
-        height: 26%;
-    }
-
-    .diagram-box .diagram img {
-        display: none;
-    }
-
-    .diagram-box .diagram .today-box {
-        bottom: 75px;
-    }
 }
+
+
 
 @media (max-width: 992px) {
 
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 600px);
+        width: calc(100% + 140px);
+        left:-70px;
+
+    }
     .diagram-box .diagram .days-box {
         padding: 20px;
+    }
+
+    .bg-image-absolute {
+        position: relative;
+        left:-87px;
+
     }
 
     .active-users .users-block {
@@ -227,6 +403,10 @@
         border-radius: 10px;
         margin: 20px;
         padding: 20px;
+    }
+
+    .header.book{
+        box-shadow: none;
     }
 
     header .header-box {
@@ -454,254 +634,158 @@
 
     }
 
-@media (max-width: 1200px) {
-    section.main-page .container, .get-section .box {
-        flex-direction: column-reverse;
-        display: flex;
+    @media (max-width: 768px) {
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 100px);
+        left:-50px;
     }
 
-    section.main-page .bg-image-absolute {
-        position: relative;
+        .font-white-600, .font-accent-600 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    
+        .font-grey-color-700 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    
+        section.main-page .bg-image-absolute.img-box, section.get-section .box .img-box {
+            max-width: 330px;
+        }
+    
+        section.main-page h1 {
+            margin-bottom: 20px;
+        }
+    
+        section.main-page .description {
+            margin-bottom: 50px;
+        }
+    
+        .font-grey-color-400 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    
+        .font-accent-700 {
+            font-size: 14px;
+            line-height: 17px;
+            /*color: var(--acent-color-green);*/
+            /*font-weight: 700;*/
+        }
+    
+        .font-grey-32-700 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    
+        .section.first-section {
+            margin-top: 40px;
+        }
+    
+        .section {
+            margin-top: 60px;
+            padding: 40px 0;
+        }
+    
+        .box-item {
+            padding: 30px 20px;
+        }
+    
+        .section .title-box > h2 {
+            margin-bottom: 20px;
+        }
+    
+        .plan {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .plan .icon-box {
+            margin-right: 0;
+        }
+    
+        .plan .title {
+            margin: 10px 0;
+        }
+    
+        .plans button {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .section .box {
+            padding: 30px;
+        }
+    
+        .section .clients-item .avatar-box {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+        }
+    
+        .font-grey-16-700 {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    
+        .font-accent-40-700 {
+            font-size: 22px;
+            line-height: 27px;
+        }
+    
+        .active-users .carousel.adaptive .clients-item .user {
+            width: 60%;
+        }
+    
+        .font-light-grey-700 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        .font-dark-grey-700 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    
+        .diagram-box .diagram .inf-box {
+            max-width: 220px;
+            white-space: normal;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    
+        .diagram-box .diagram img.adaptive {
+            display: block;
+        }
+    
+        .diagram-box .diagram {
+            max-width: 340px;
+        }
+    
+        .diagram-box .diagram .days-container {
+            height: 26%;
+        }
+    
+        .diagram-box .diagram img {
+            display: none;
+        }
+    
+        .diagram-box .diagram .today-box {
+            bottom: 75px;
+        }
     }
-
-    section.main-page .bg-image-absolute, .get-section .box .img-box {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        display: block;
-        top: 0;
-        right: 0;
-        left: 0;
-        position: relative;
-    }
-
-    section.main-page .bg-image-absolute img, .get-section .box .img-box img {
-        width: 80%;
-    }
-
-    .mobile-img-center {
-        text-align: center !important;
-    }
-
-    section.main-page .inf-box {
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
-        height: auto;
-        margin-top: 30px;
-    }
-
-    .box-item {
-        width: 100%;
-    }
-
-    .box-item:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .box-container {
-        flex-wrap: wrap;
-    }
-
-    .get-section .box .title-box {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 30px;
-    }
-
-    .clients-box .navigation {
-        justify-content: center !important;
-    }
-
-    .navigation .arrow-left, .navigation .arrow-right {
-        display: none;
-    }
-
-    .clients-box .clients-item {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    section .title-box {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .clients .title-box h2, .clients .title-box h2 {
-        margin-bottom: 20px;
-    }
-
-    .get-in-touch img {
-        display: none;
-    }
-
-    .get-in-touch .title-box {
-        text-align: center;
-    }
-
-    .get-in-touch .form-container {
-        max-width: 100%;
-        margin-top: 0;
-    }
-
-    .get-in-touch button {
-        margin: 0 auto;
-        display: block;
-    }
-
-    .section.quizz-box .content-box .option img {
-        max-width: 100%;
-    }
-
-    .plan-selection .content-wrapper {
-        flex-direction: column;
-    }
-
-    .plan-selection .content-wrapper .plan_includes {
-        margin-bottom: 40px;
-    }
-
-    .plan-selection .content-wrapper .readmore {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .plan-selection .content-wrapper .readmore p {
-        margin-bottom: 0;
-        display: block;
-        cursor: pointer;
-    }
-
-
-    .plan-selection .content-wrapper .readmore img {
-        margin-left: 10px;
-    }
-
-
-    .plan-selection .plans-include-wrapper .checkbox-box.adaptive {
-        display: none;
-    }
-
-    .plan-selection .content-wrapper .plans {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-
-    .summary-conclusion {
-        display: none;
-    }
-
-    .summary-conclusion.adaptive {
-        display: flex;
-    }
-
-    .summary-conclusion.adaptive .container {
-        flex-direction: column;
-    }
-
-    .summary-conclusion.adaptive .content-box, .summary-conclusion .container .diagram-box {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .summary-conclusion.adaptive .title {
-        text-align: center;
-    }
-
-    .summary-conclusion.adaptive .content-box .title p:last-child {
-        max-width: 100%;
-    }
-
-    .summary-conclusion.adaptive .notice-box, .summary-conclusion .diagram-box .data {
-        width: 60% !important;
-        margin: 0 auto 20px;
-    }
-
-    .summary-conclusion.adaptive .content-box button {
-        margin: 20px auto;
-        display: block;
-    }
-
-    .summary-conclusion.adaptive .diagram {
-        width: 100%!important;
-        margin: 0 auto;
-    }
-
-    .summary-days .days-box-container, .summary-days .benefits-box {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .summary-days .days-box-container .day, .summary-days .benefits-box .benefit {
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .active-users .user {
-        width: 48%;
-        margin-bottom: 20px;
-    }
-
-    .active-users .users-block {
-        flex-wrap: wrap;
-    }
-
-
-    footer.fixed {
-        position: static;
-    }
-
-    .point-item-box p.name {
-        left: 0;
-    }
-
-    .font-accent-18-700, .font-white-26-700 {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .point-item {
-        width: 35px;
-        height: 35px;
-    }
-
-    .stepper-box .line {
-        height: 2px;
-    }
-
-    .program .container {
-        flex-direction: column-reverse;
-    }
-
-    .program .content-box {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .graphic .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .graphic .container .block {
-        /*max-width: 100%;*/
-        text-align: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-}
-
-@media (max-width: 1400px) {
-}
 
 @media (max-width: 576px) {
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 60px);
+        left:-30px;
+    }
 
     .graphic .container .block {
         max-width: 100%;

@@ -24,7 +24,7 @@
   </div>
 </header>
 
-  @livewire('quiz')
+  @livewire('bookquiz')
 
   @includeIf('book.partial.main-footer')
 

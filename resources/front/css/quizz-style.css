@@ -306,3 +306,26 @@
 .quiz-card .container img {
     width: 150px;
 }
+
+/* for book subdomain */
+
+.puiz-body {
+    overflow: hidden;
+    min-height: calc(100vh - 211px);
+    background: rgb(226, 242, 230);
+    background: linear-gradient(
+        90deg,
+        rgba(226, 242, 230, 1) 0%,
+        rgba(196, 235, 226, 1) 50%,
+        rgba(195, 230, 222, 1) 100%
+    );
+}
+
+.card-body .quiz-loader {
+    width: 300px;
+}
+
+.quiz-bookcard {
+    top:6px;
+    max-width: 800px;
+}

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class="header relative" id="home">
+<header class="header relative book" id="home">
   <div class="container">
 
     <nav class="navbar navbar-expand-lg fullscreen-header">
