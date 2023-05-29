@@ -1,9 +1,9 @@
-<div class=" dropdown" id="langbtn" onclick="showLangMenu()">
-  <button id="dropdownhead">
-    <img src="{{asset('assets/nation/en.png')}}" class="h-15 w-30" id="selectedlang" />
+<div class=" dropdown" id="langbtn2" onclick="showLangMenu2()">
+  <button id="dropdownhead2">
+    <img src="{{asset('assets/nation/en.png')}}" class="h-15 w-30" id="selectedlang2" />
     <img src="{{asset('assets/icons/select.svg')}}" class=" m-1" />
   </button>
-  <div id="dropdownmenu" class="dropdown-content">
+  <div id="dropdownmenu2" class="dropdown-content">
     <ul>
       <li class="dropdown-item" onclick='selectLang(this)' data-lang="en">
         <img src="{{asset('assets/nation/en.png')}}" class="h-15 w-30" />
@@ -48,21 +48,19 @@
 
 @push('custom-scripts')
 <script>
-    document.querySelector('#dropdownmenu').style.display='none';
-    var showLangMenu= () => {
-        if(document.querySelector('#dropdownmenu').style.display=="none") {
-            document.querySelector('#dropdownmenu').style.display="block"
+    document.querySelector('#dropdownmenu2').style.display='none';
+    // show language select menu.
+    var showLangMenu2= () => {
+        if(document.querySelector('#dropdownmenu2').style.display=="none") {
+            document.querySelector('#dropdownmenu2').style.display="block"
         } else {
-            document.querySelector('#dropdownmenu').style.display="none"
+            document.querySelector('#dropdownmenu2').style.display="none"
         }
     }
+    // after language select, change iamge in language menu.
     var selectLang = (e)=>{
-        document.querySelector('#selectedlang').src = document.querySelector('#selectedlang').src.replace(/\w{2}.png/i,e.getAttribute('data-lang')+'.png')
-            // <?php 
-            // $lang = e.getAttribute('data-lang')
-            // session('lang'=>$lang) ?>
-        var lang = <?php  echo json_encode(session('lang'));   ?>;
-        console.log(lang)
+        document.querySelector('#selectedlang2').src = document.querySelector('#selectedlang2').src.replace(/\w{2}.png/i,e.getAttribute('data-lang')+'.png')
+        document.querySelector('#selectedlang1').src = document.querySelector('#selectedlang1').src.replace(/\w{2}.png/i,e.getAttribute('data-lang')+'.png')
     }
 </script>
 @endpush

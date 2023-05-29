@@ -302,3 +302,7 @@
     line-height: 25px; /* To center it vertically */
     color: white;
 }
+
+.quiz-card .container img {
+    width: 150px;
+}

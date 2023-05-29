@@ -10,7 +10,7 @@
         <div class="logo-container">
           <img src="{{asset('assets/logo/main-logo.png')}}" alt="" width="20px">
         </div>
-        <x-language-menu />
+        <x-lang.language-menu1 />
       </div>
     </nav>
     <nav class="navbar navbar-expand-lg adaptive-header">
@@ -19,7 +19,7 @@
           <div class="navbar-brand">
             <img src="{{asset('assets/logo/main-logo.png')}}" alt="" width="180px">
           </div>
-          <x-language-menu />
+          <x-lang.language-menu2 />
         </div>
       </div>
     </nav>

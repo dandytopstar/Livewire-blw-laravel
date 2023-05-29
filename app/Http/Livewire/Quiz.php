@@ -38,11 +38,11 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'BOY',
-                        'image'  => 'assets/quiz/boy.jpg',
+                        'image'  => asset('/assets/quiz/boy.jpg'),
                     ],
                     '2' => [
                         'text' => 'GIRL',
-                        'image'  => 'assets/quiz/girl.jpg',
+                        'image'  => asset('/assets/quiz/girl.jpg'),
                     ],
                 ],
                 'answer_with_image' => true,
@@ -274,23 +274,23 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image'  => 'assets/quiz/slider/peanuts.jpg',
+                        'image'  => asset('assets/quiz/slider/peanuts.jpg'),
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image'  => 'assets/quiz/slider/sesame_seeds.jpg',
+                        'image'  => asset('assets/quiz/slider/sesame_seeds.jpg'),
                     ],
                     '3' => [
                         'text' => 'Soy',
-                        'image'  => 'assets/quiz/slider/soy.jpg',
+                        'image'  => asset('assets/quiz/slider/soy.jpg'),
                     ],
                     '4' => [
                         'text' => 'Eggs',
-                        'image'  => 'assets/quiz/slider/eggs.jpg',
+                        'image'  => asset('assets/quiz/slider/eggs.jpg'),
                     ],
                     '5' => [
                         'text' => 'Dairy products',
-                        'image'  => 'assets/quiz/slider/dairy_products.jpg',
+                        'image'  => asset('assets/quiz/slider/dairy_products.jpg'),
                     ],
                 ],
                 'slider' => true,
@@ -352,27 +352,27 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
-                        'image'  => 'assets/quiz/slider/whole_grains.jpg',
+                        'image'  => asset('assets/quiz/slider/whole_grains.jpg'),
                     ],
                     '2' => [
                         'text' => 'Beef',
-                        'image'  => 'assets/quiz/slider/beef.jpg',
+                        'image'  => asset('assets/quiz/slider/beef.jpg'),
                     ],
                     '3' => [
                         'text' => 'Chicken',
-                        'image'  => 'assets/quiz/slider/chicken.jpg',
+                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
                     ],
                     '4' => [
                         'text' => 'Fish',
-                        'image'  => 'assets/quiz/slider/fish.jpg',
+                        'image'  => asset('assets/quiz/slider/fish.jpg'),
                     ],
                     '5' => [
                         'text' => 'Garlic',
-                        'image'  => 'assets/quiz/slider/garlic.jpg',
+                        'image'  => asset('assets/quiz/slider/garlic.jpg'),
                     ],
                     '6' => [
                         'text' => 'Ginger',
-                        'image'  => 'assets/quiz/slider/ginger.jpg',
+                        'image'  => asset('assets/quiz/slider/ginger.jpg'),
                     ],
                 ],
                 'slider' => true,
@@ -415,17 +415,17 @@ class Quiz extends Component
                     '1' => [
                         'percent' => '30',
                         'text' => 'text 1',
-                        'image'  => 'assets/quiz/slider/chicken.jpg',
+                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
                     ],
                     '2' => [
                         'percent' => '60',
                         'text' => 'text 2',
-                        'image'  => 'assets/quiz/slider/final_image.jpg',
+                        'image'  => asset('assets/quiz/slider/final_image.jpg'),
                     ],
                     '3' => [
                         'percent' => '100',
                         'text' => 'text 3',
-                        'image'  => 'assets/quiz/slider/fish.jpg',
+                        'image'  => asset('assets/quiz/slider/fish.jpg'),
                     ]
                 ],
                 'progress_slider' => true,
