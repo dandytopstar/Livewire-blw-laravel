@@ -1,43 +1,24 @@
 section.main-page .inf-box {
-    max-width: 550px;
-    height: calc(100vh - 211px);
+    max-width: 500px;
+    height: 540px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
-section.main-page .inf-box .subtitle {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-}
+
 section h1 {
     margin-bottom: 30px;
-}
-
-section.main-page .inf-box h1:first-child {
-    margin: 0px !important;
 }
 
 section .description {
     margin-bottom: 40px;
 }
 
-.bg-image-slide {
-    position: absolute;
-    width: 50%;
-    bottom: 0px;
-    right: 0px;
-}
-
 section.main-page .bg-image-absolute {
     position: absolute;
-    bottom: 30px;
+    bottom: -20px;
     right: 0;
-}
-
-section.main-page .bg-image-slide {
-    display: none;
 }
 
 section.main-page .bg-image-absolute img{
@@ -59,7 +40,7 @@ section.main-page .bg-image-absolute img{
 
 .plan {
     display: flex;
-    background: #ffffff;
+    background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -105,9 +86,8 @@ section.main-page .bg-image-absolute img{
     max-width: 930px;
 }
 
-.section .form-container input,
-.section .form-container textarea {
-    background: #ffffff;
+.section .form-container input, .section .form-container textarea {
+    background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: transparent;
@@ -144,7 +124,7 @@ section.main-page .bg-image-absolute img{
     margin-right: 30px;
 }
 
-.section .clients-item p {
+.section .clients-item p{
     margin: 0;
 }
 
@@ -171,7 +151,7 @@ section.main-page .bg-image-absolute img{
     margin-bottom: 5px;
 }
 
-.section .clients-inf .star-box img:not(:last-child) {
+.section .clients-inf .star-box img:not(:last-child){
     margin-right: 6px;
 }
 
@@ -183,8 +163,7 @@ section.main-page .bg-image-absolute img{
     padding: 20px 0;
 }
 
-.section .dot,
-.active-users .dot {
+.section .dot, .active-users .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -192,8 +171,7 @@ section.main-page .bg-image-absolute img{
     cursor: pointer;
 }
 
-.section.clients .dot:not(:last-child),
-.active-users .dot:not(:last-child) {
+.section.clients .dot:not(:last-child), .active-users .dot:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -206,8 +184,7 @@ section.main-page .bg-image-absolute img{
     transform: rotate(180deg);
 }
 
-.section .arrow-right,
-.section .arrow-left {
+.section .arrow-right,.section .arrow-left {
     cursor: pointer;
 }
 
@@ -235,82 +212,3 @@ section.main-page .bg-image-absolute img{
 .carousel.adaptive {
     display: none;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 20px;
-}
-.dropdown > button {
-    color: white;
-    padding: 3px 7px;
-    border: 1px solid var(--light-grey-color);
-    cursor: pointer;
-    background: transparent;
-    border-radius: 10px;
-}
-.dropdown .dropdown-content {
-    width: 150px;
-    display:none;
-    position: absolute;
-    background-color: white;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    right: 0;
-    z-index: 1;
-    padding: 16px;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
-.dropdown .dropdown-content ul {
-    margin: 0;
-    padding: 0;   
-}
-
-.dropdown .dropdown-content ul .dropdown-item {
-    cursor: pointer;
-    margin-bottom: 5px;
-    
-}
-
-.dropdown .dropdown-content ul .dropdown-item span {
-    font-size: 14px;
-    margin-left: 5px;
-    
-}
-
-.bg-scroll-main {
-    background-image: url("/assets/main/web-slide.png");
-    background-size: cover;
-    animation: scroll-down-up 2000s linear infinite;
-    width: 100%;
-    height: calc(100vh - 110px);
-}
-
-.bg-scroll-mobile {
-    background-image: url("/assets/main/mobile-slide.png");
-    background-size: cover;
-    animation: scroll-right-left 2000s linear infinite;
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes scroll-down-up {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 10000%;
-    }
-}
-
-@keyframes scroll-right-left {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 10000%, 0;
-    }
-}
-
