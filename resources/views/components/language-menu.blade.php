@@ -58,6 +58,14 @@
     }
     var selectLang = (e)=>{
         document.querySelector('#selectedlang').src = document.querySelector('#selectedlang').src.replace(/\w{2}.png/i,e.getAttribute('data-lang')+'.png')
+            // <?php 
+            // $lang = e.getAttribute('data-lang')
+            // session('lang'=>$lang) ?>
+        var lang = <?php  echo json_encode(session('lang'));   ?>;
+        console.log(lang)
     }
 </script>
 @endpush
+
+
+<!-- // var lang = <?php  echo json_encode(session('lang'));   ?> -->

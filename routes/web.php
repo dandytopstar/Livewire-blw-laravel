@@ -78,7 +78,6 @@ Route::get('/6mptt4485custom8fqmealplan7761-2', [FileController::class, 'showMea
 
 Route::prefix('book')->group(function(){
     Route::view('/', 'book.main')->name('main');
-
     Route::view('quiz', 'book.quiz')->name('bookquiz');
 });
 
