@@ -912,6 +912,18 @@
 
 @media (max-width: 494px) {
 
+    .card-body .quiz-loader {
+        width: 150px;
+    }
+
+    .quiz-card .container img {
+        width: 100px;
+    }
+
+    #card .card-body .d-flex {
+        flex-direction: column;
+    }
+
     section.main-page .bg-image-slide {
         height: calc(100vh - 650px);
         width: calc(100% + 20px);

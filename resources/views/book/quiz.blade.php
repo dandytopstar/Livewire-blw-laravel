@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<header class="header relative pb-0" id="home">
+<header class="header relative" id="home">
   <div class="container">
     <nav class="navbar navbar-expand-lg fullscreen-header">
       <div class="d-flex p-0 w-100 header-box align-items-center">
