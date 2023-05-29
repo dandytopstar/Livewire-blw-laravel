@@ -105,13 +105,13 @@ class Quiz extends Component
                 'question_key' => 'started_introducing_solids',
                 'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
-                    '1' => ['text' => 'yes'],
-                    '2' => ['text' => 'no']
+                    '1' => ['text' => 'YES'],
+                    '2' => ['text' => 'NO']
                 ],
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We are now generating APP Profile Just For You',
+                    'text' => 'We are now generating APP Profile Just For Your Book',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
@@ -249,7 +249,7 @@ class Quiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We Are Now Generating First Part of Your Meal Plan',
+                    'text' => 'We Are Now Generating Second Part of Your Book',
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
                 'benefits' => [
@@ -342,7 +342,7 @@ class Quiz extends Component
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
-                    '3' => ['text' => 'Somewhat'],
+                    '3' => ['text' => 'Undecided'],
                 ],
             ],
 
@@ -400,7 +400,7 @@ class Quiz extends Component
                     '1' => ['text' => 'Water', 'selected'  => false],
                     '2' => ['text' => 'Fruit juice', 'selected'  => false],
                     '3' => ['text' => 'Milk', 'selected'  => false],
-                    '4' => ['text' => 'Undecided', 'selected'  => false, 'deselectAll' => true],
+                    '4' => ['text' => 'Other', 'selected'  => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -410,7 +410,7 @@ class Quiz extends Component
 
             '26' => [
                 'question_key' => 'end',
-                'question' => 'We are now generating Your Final Meal Plan and App Profile!',
+                'question' => 'We are now generating Your Final Part of Your Book!',
                 'answers' => [
                     '1' => [
                         'percent' => '30',

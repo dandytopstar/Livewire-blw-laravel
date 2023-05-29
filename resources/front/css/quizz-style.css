@@ -235,6 +235,7 @@
 /*NEW QUIZ*/
 
 .quiz-card {
+    top:56px;
     max-width: 800px;
 }
 
@@ -308,5 +309,8 @@
 }
 
 .puiz-body {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 224px);
+    background-color: rgba(14, 149, 119, 0.25);
+
 }
+
