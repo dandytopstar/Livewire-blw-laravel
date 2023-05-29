@@ -7,7 +7,26 @@
         flex-direction: column-reverse;
         display: flex;
     }
+
+    section.main-page .bg-image-absolute {
+        position: relative;
+    }
     
+    section.main-page .bg-image-absolute.img-box, section.get-section .box .img-box {
+        max-width: 330px;
+    }
+
+    section.main-page .bg-image-absolute, .get-section .box .img-box {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+
     .container {
         padding-left: 30px;
         padding-right: 30px;
@@ -18,7 +37,6 @@
     }
 
     footer {
-        position: absolute;
         width: 100%;
         bottom: 0px;
     }
@@ -27,16 +45,20 @@
         margin-left: auto;
     }
 
-    header > .bg-image-absolute {
+    header > .bg-image-slide {
         display: none;
     }
 
-    .bg-image-absolute {
+    section.main-page .bg-image-slide {
         position: relative;
-        left:-30px;
-        margin-top: 20px;
-        height: 300px;
+        display: block;
+        height: calc(100vh - 538px);
+        width: calc(100% + 60px);
+        left: -30px;
+        padding-top: 20px;
+        min-height: 200px;
     }
+    
     .get-section .box .img-box {
         width: 100%;
         max-width: 500px;
@@ -48,7 +70,7 @@
         position: relative;
     }
 
-    .bg-image-absolute img,
+    section.main-page .bg-image-absolute img,
     .get-section .box .img-box img {
         width: 80%;
     }
@@ -282,6 +304,13 @@
 
 
 @media (max-width: 992px) {
+
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 600px);
+        width: calc(100% + 140px);
+        left:-70px;
+
+    }
     .diagram-box .diagram .days-box {
         padding: 20px;
     }
@@ -611,8 +640,13 @@
 }
 @media (max-width: 768px) {
 
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 100px);
+        left:-50px;
+    }
+
     footer {
-        position: absolute;
         width: 100%;
 
     }
@@ -630,10 +664,6 @@
     .font-accent-600 {
         font-size: 20px;
         line-height: 14px;
-    }
-
-    .bg-image-absolute {
-        height: 250px;
     }
 
     .font-grey-color-700 {
@@ -773,6 +803,12 @@
 
 @media (max-width: 576px) {
 
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 60px);
+        left:-30px;
+    }
+
     .header {
         margin: 0px;
     }
@@ -780,10 +816,6 @@
     .bg-image-absolute {
         position: relative;
         left: -67px;
-    }
-
-    .bg-image-absolute {
-        height: 200px;
     }
 
     .graphic .container .block {
@@ -880,6 +912,33 @@
 
 @media (max-width: 494px) {
 
+    .card-body .quiz-loader {
+        width: 150px;
+    }
+
+    .quiz-card .container img {
+        width: 100px;
+    }
+
+    #card .card-body .d-flex {
+        flex-direction: column;
+    }
+
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 20px);
+        left:-10px;
+    }
+    .navbar-brand, .navbar-brand img{
+        width: 150px;
+        margin: 0px;
+    }
+
+    footer .actions {
+        position: absolute;
+        right: 0;
+    }
+
     .bg-image-absolute {
         left: -11px;
     }
@@ -898,10 +957,6 @@
     .container {
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .bg-image-absolute {
-        height: 150px;
     }
 
     .section.quizz-box .content-box .option {

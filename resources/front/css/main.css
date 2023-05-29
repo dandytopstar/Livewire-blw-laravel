@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
     margin: 0;
 }
 
@@ -1182,6 +1181,10 @@ section.program {
 
 .w-25 {
     width:25px;
+}
+
+.w-30 {
+    width:30px;
 }
 
 .ml-20 {

@@ -39,6 +39,7 @@ return [
     'country' => 'us',
 
     //Hero section
+    'hero_title' => 'Personalized Baby-Led Weaning Book',
     'hero_title1' => 'Personalized',
     'hero_title2' => 'Baby-Led Weaning Book',
     'hero_subtitle' => "Introduce solids confidently with the first fully personalized Baby-Led Weaning book in the world.",

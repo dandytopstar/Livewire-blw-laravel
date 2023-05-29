@@ -1,4 +1,4 @@
-<div class="position-relative px-3">
+<div class="position-relative px-3 puiz-body">
 
 
     @if(!empty($currentQuestion['loader']) && $currentQuestion['loader']['show'])

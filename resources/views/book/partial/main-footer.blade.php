@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="actions">
-                    <a href="{{route('quiz')}}" type="button" class="btn font-accent-600 btn-white-squre">
+                    <a href="{{route('bookquiz')}}" type="button" class="btn font-accent-600 btn-white-squre">
                         {{__("front.start_quiz")}}
                     </a>
                 </div>
