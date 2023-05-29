@@ -39,14 +39,16 @@ return [
     'country' => 'us',
 
     //Hero section
-    'hero_title' => 'Personalized Baby-Led Weaning Book',
     'hero_title1' => 'Personalized',
     'hero_title2' => 'Baby-Led Weaning Book',
-    'hero_subtitle' => "Introduce solids confidently with the first fully personalized Baby-Led Weaning book in the world.",
+    'hero_booksubtitle' => "Introduce solids confidently with the first fully personalized Baby-Led Weaning book in the world.",
     'choose_baby' => "Choose your baby's gender",
     'gender_boy' => "Boy",
     'gender_girl' => "Girl",
-    'start_quiz' => 'Start Quiz',
+    'start_bookquiz' => 'Start Quiz',
+    'hero_title' => 'Personalized Baby-Led Weaning Meal Plan',
+    'hero_subtitle' => "Say goodbye to weaning woes and confidently introduce solids to your 6-12 month old’s",
+    'start_quiz' => 'Take Quiz',
 
     //Processes section
     'processes_title'           => 'How It Works',

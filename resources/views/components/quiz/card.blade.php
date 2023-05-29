@@ -17,10 +17,10 @@
                 @endif
             </div>
             <div class="col text-center">
-                <img src="{{asset('assets/logo/main-logo.png')}}" alt="">
+                <img src="{{asset('assets/logo/logo-mobile-landing-only.png')}}" alt="" width="60px">
             </div>
             <div class="col text-end question-number-counter">
-                <span class="badge rounded-pill question-number">{{$currentQuestionNum}}</span> <span>/ {{count($countQuestionsDots)}} </span>
+                <span class="badge rounded-pill question-number">{{$currentQuestionNum}}</span> / {{count($countQuestionsDots)}}
             </div>
         </div>
     </div>

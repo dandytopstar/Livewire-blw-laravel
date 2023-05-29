@@ -38,11 +38,11 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'BOY',
-                        'image'  => asset('/assets/quiz/boy.jpg'),
+                        'image'  => 'assets/quiz/boy.jpg',
                     ],
                     '2' => [
                         'text' => 'GIRL',
-                        'image'  => asset('/assets/quiz/girl.jpg'),
+                        'image'  => 'assets/quiz/girl.jpg',
                     ],
                 ],
                 'answer_with_image' => true,
@@ -105,13 +105,13 @@ class Quiz extends Component
                 'question_key' => 'started_introducing_solids',
                 'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
-                    '1' => ['text' => 'YES'],
-                    '2' => ['text' => 'NO']
+                    '1' => ['text' => 'yes'],
+                    '2' => ['text' => 'no']
                 ],
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We are now generating APP Profile Just For Your Book',
+                    'text' => 'We are now generating APP Profile Just For You',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
@@ -249,7 +249,7 @@ class Quiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We Are Now Generating Second Part of Your Book',
+                    'text' => 'We Are Now Generating First Part of Your Meal Plan',
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
                 'benefits' => [
@@ -274,23 +274,23 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image'  => asset('assets/quiz/slider/peanuts.jpg'),
+                        'image'  => 'assets/quiz/slider/peanuts.jpg',
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image'  => asset('assets/quiz/slider/sesame_seeds.jpg'),
+                        'image'  => 'assets/quiz/slider/sesame_seeds.jpg',
                     ],
                     '3' => [
                         'text' => 'Soy',
-                        'image'  => asset('assets/quiz/slider/soy.jpg'),
+                        'image'  => 'assets/quiz/slider/soy.jpg',
                     ],
                     '4' => [
                         'text' => 'Eggs',
-                        'image'  => asset('assets/quiz/slider/eggs.jpg'),
+                        'image'  => 'assets/quiz/slider/eggs.jpg',
                     ],
                     '5' => [
                         'text' => 'Dairy products',
-                        'image'  => asset('assets/quiz/slider/dairy_products.jpg'),
+                        'image'  => 'assets/quiz/slider/dairy_products.jpg',
                     ],
                 ],
                 'slider' => true,
@@ -342,7 +342,7 @@ class Quiz extends Component
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
-                    '3' => ['text' => 'Undecided'],
+                    '3' => ['text' => 'Somewhat'],
                 ],
             ],
 
@@ -352,27 +352,27 @@ class Quiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
-                        'image'  => asset('assets/quiz/slider/whole_grains.jpg'),
+                        'image'  => 'assets/quiz/slider/whole_grains.jpg',
                     ],
                     '2' => [
                         'text' => 'Beef',
-                        'image'  => asset('assets/quiz/slider/beef.jpg'),
+                        'image'  => 'assets/quiz/slider/beef.jpg',
                     ],
                     '3' => [
                         'text' => 'Chicken',
-                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
+                        'image'  => 'assets/quiz/slider/chicken.jpg',
                     ],
                     '4' => [
                         'text' => 'Fish',
-                        'image'  => asset('assets/quiz/slider/fish.jpg'),
+                        'image'  => 'assets/quiz/slider/fish.jpg',
                     ],
                     '5' => [
                         'text' => 'Garlic',
-                        'image'  => asset('assets/quiz/slider/garlic.jpg'),
+                        'image'  => 'assets/quiz/slider/garlic.jpg',
                     ],
                     '6' => [
                         'text' => 'Ginger',
-                        'image'  => asset('assets/quiz/slider/ginger.jpg'),
+                        'image'  => 'assets/quiz/slider/ginger.jpg',
                     ],
                 ],
                 'slider' => true,
@@ -400,7 +400,7 @@ class Quiz extends Component
                     '1' => ['text' => 'Water', 'selected'  => false],
                     '2' => ['text' => 'Fruit juice', 'selected'  => false],
                     '3' => ['text' => 'Milk', 'selected'  => false],
-                    '4' => ['text' => 'Other', 'selected'  => false, 'deselectAll' => true],
+                    '4' => ['text' => 'Undecided', 'selected'  => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -410,22 +410,22 @@ class Quiz extends Component
 
             '26' => [
                 'question_key' => 'end',
-                'question' => 'We are now generating Your Final Part of Your Book!',
+                'question' => 'We are now generating Your Final Meal Plan and App Profile!',
                 'answers' => [
                     '1' => [
                         'percent' => '30',
                         'text' => 'text 1',
-                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
+                        'image'  => 'assets/quiz/slider/chicken.jpg',
                     ],
                     '2' => [
                         'percent' => '60',
                         'text' => 'text 2',
-                        'image'  => asset('assets/quiz/slider/final_image.jpg'),
+                        'image'  => 'assets/quiz/slider/final_image.jpg',
                     ],
                     '3' => [
                         'percent' => '100',
                         'text' => 'text 3',
-                        'image'  => asset('assets/quiz/slider/fish.jpg'),
+                        'image'  => 'assets/quiz/slider/fish.jpg',
                     ]
                 ],
                 'progress_slider' => true,
