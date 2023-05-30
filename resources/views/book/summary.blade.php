@@ -6,14 +6,14 @@
 
 @section('content')
 
-    @includeIf('partial.main-summary-header')
+    @includeIf('book.partial.main-summary-header')
 
     <section class="summary-conclusion">
         <div class="container d-flex">
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">
-                        <span class="font-accent-40-700">Congratulations!</span> Your Baby-Led Weaning meal plan has been designed!
+                        <span class="font-accent-40-700">Congratulations!</span> You Have Created Your Personalized BLW Book!
                     </p>
                     <p class="font-grey-color-400">
                         By analyzing your quiz results, we've crafted personalized meal plans and products to support your baby-led weaning journey.
@@ -23,7 +23,7 @@
 
                 <a href="{{route('registration', $code)}}" class="text-decoration-none">
                     <button class="btn font-white-600 btn-green-squre">
-                        {{__('front.get_your_plan')}}
+                        {{__('front.get_your_book')}}
                     </button>
                 </a>
             </div>
@@ -64,18 +64,9 @@
 
     <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
 
-        <h2 class="section-title">What will you get?</h2>
+        <h2 class="section-title">What's inside the book?</h2>
 
         <div class="container what-will-items">
-
-            <div class="what-will-item block-1">
-                <div class="ww-item-content">
-                    <h3 class="item-title">Baby-Led Weaning App Access</h3>
-                    <img src="{{asset('assets/summary/whatwill/1.png')}}" alt="">
-                </div>
-
-                <div class="item-number">1</div>
-            </div>
 
             <div class="what-will-item block-2">
                 <div class="ww-item-content">
@@ -83,25 +74,42 @@
                     <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
                 </div>
 
-                <div class="item-number">2</div>
+                <div class="item-number">1</div>
             </div>
 
             <div class="what-will-item block-3">
                 <div class="ww-item-content">
                     <h3 class="item-title">1000+ Meal Ideas</h3>
-                    <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
+                    <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
                 </div>
 
+                <div class="item-number">2</div>
+            </div>
+
+            <div class="what-will-item block-2">
+                <div class="ww-item-content">
+                    <h3 class="item-title">Personalized Baby-Led Weaning Book Paperback</h3>
+                    <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
+                </div>
                 <div class="item-number">3</div>
             </div>
+            
+
+            
+        </div>
+
+    </section>
+
+    <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
+        <h2 class="section-title">What Else Will You Get?</h2>
+
+        <div class="container what-will-items justify-content-evenly">       
 
             <div class="what-will-item block-4">
                 <div class="ww-item-content">
                     <h3 class="item-title">Printable Files to track BLW progress</h3>
                     <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
                 </div>
-
-                <div class="item-number">4</div>
             </div>
 
             <div class="what-will-item block-5">
@@ -109,29 +117,7 @@
                     <h3 class="item-title">Video Tutorials</h3>
                     <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
                 </div>
-
-                <div class="item-number">5</div>
             </div>
-
-            <div class="ww-last">
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_1.png')}}" alt="">
-                    <h4>Progress-based Tips</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_2.png')}}" alt="">
-                    <h4>Exclusive Member Resources</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_3.png')}}" alt="">
-                    <h4>Unlimited E-Mail Support</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_4.png')}}" alt="">
-                    <h4 class="pt-0 pb-1">Personalized Baby-Led Weaning Guidebook</h4>
-                </div>
-            </div>
-
         </div>
 
     </section>
@@ -152,10 +138,24 @@
                         <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
                         <div>Customized to baby's needs</div>
                     </div>
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div>Includes finger foods</div>
+                    </div>
 
                     <div class="mp-middle-adaptive-item">
                         <img src="{{asset('assets/summary/mp/2.png')}}" alt="">
                         <div>Easy-to-follow recipes</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div>Includes family-friendly meals</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div>Promotes balanced meals</div>
                     </div>
 
                     <div class="mp-middle-adaptive-item">
@@ -164,8 +164,13 @@
                     </div>
 
                     <div class="mp-middle-adaptive-item">
-                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
-                        <div>Includes family-friendly meals</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div>Offers mealtime structure</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div>Incorporates diffreent textures</div>
                     </div>
 
                     <div class="mp-middle-adaptive-item">
@@ -174,18 +179,31 @@
                     </div>
 
                     <div class="mp-middle-adaptive-item">
-                        <img src="{{asset('assets/summary/mp/6.png')}}" alt="">
-                        <div>Includes finger foods</div>
+                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
+                        <div>Provides age-appropriate foods</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
+                        <div>Seasonal meal prep tips</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
+                        <div>Helps pervent choking</div>
+                    </div>
+
+                    <div class="mp-middle-adaptive-item">
+                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
+                        <div>Encourages healthy snacking</div>
                     </div>
                 </div>
 
             </div>
 
-            <h2 class="mp-title-adaptive">Something More</h2>
-
             <div class="mp-two-colum">
                 <div class="mp-middle-block">
-
+                    
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
                         <div class="mp-text">Customized to baby's needs</div>
@@ -193,44 +211,38 @@
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/2.png')}}" alt="">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">includes finger foods</div>
+                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
+                    </div>
+
+                    <div class="mp-block-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
                         <div class="mp-text">Easy-to-follow recipes</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/3.png')}}" alt="">
-                        <div class="mp-text">Variety of nutrient-dense foods</div>
-                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
-                    </div>
-
-                    <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
                         <div class="mp-text">Includes family-friendly meals</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/5.png')}}" alt="">
-                        <div class="mp-text">Adaptable for allergies</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Promotes balanced meals</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/6.png')}}" alt="">
-                        <div class="mp-text">Includes finger foods</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Variety of nutrient-dense foods</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/7.png')}}" alt="">
-                        <div class="mp-text">Offers mealtime structure</div>
-                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
-                    </div>
-
-                    <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/8.png')}}" alt="">
-                        <div class="mp-text">Provides age-appropriate foods</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">offers mealtime structure</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
@@ -246,13 +258,13 @@
 
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/10.png')}}" alt="">
-                        <div class="mp-text">Introduces new foods gradually</div>
+                        <div class="mp-text">Adaptable for allergies</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/11.png')}}" alt="">
-                        <div class="mp-text">Promotes balanced meals</div>
+                        <div class="mp-text">Provides age-appropriate foods</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
@@ -279,13 +291,6 @@
                         <div class="mp-text">Encourages healthy snacking</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
-
-                    <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/16.png')}}" alt="">
-                        <div class="mp-text">Encourages self-feeding</div>
-                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
-                    </div>
-
                 </div>
             </div>
 
@@ -377,32 +382,32 @@
 
                 <div class="blw-b-block block-5">
                     <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Builds baby's confidence</p>
                 </div>
 
                 <div class="blw-b-block block-6">
                     <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Saves Money on Purees</p>
                 </div>
 
                 <div class="blw-b-block block-7">
                     <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Saves Time in Meal Prep</p>
                 </div>
 
                 <div class="blw-b-block block-8">
                     <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Develops Fine Motor Skills</p>
                 </div>
 
                 <div class="blw-b-block block-9">
                     <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Reduces Choking Risk</p>
                 </div>
 
                 <div class="blw-b-block block-10">
                     <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
-                    <p>Reduces Allergies</p>
+                    <p>Encourages Family Bonding</p>
                 </div>
             </div>
 
