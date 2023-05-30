@@ -3,7 +3,7 @@
 ])
 
 <div class="container text-center ">
-    <div class="d-flex justify-content-center gap-4">
+    <div class="d-flex justify-content-center gap-4 boy-girl">
         @foreach($currentQuestion['answers'] as $key => $answer)
             <div class="pointer @if(!empty($answer['selected'])) click @endif shadow-sm px-1 pt-1 mb-3 bg-body rounded-3"
                  id="{{$currentQuestion['question_key'].'-'.$key}}"
