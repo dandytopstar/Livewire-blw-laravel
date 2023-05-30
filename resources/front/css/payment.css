@@ -10,6 +10,10 @@
     display: none;
 }
 
+.accordion-item:not(:first-of-type) {
+    border-top: 0px !important;
+}
+
 @media (max-width: 576px) {
     .payment-logo {
         display: none;
