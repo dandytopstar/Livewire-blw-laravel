@@ -281,6 +281,10 @@ section.main-page .bg-image-slide {
     
 }
 
+.book-section {
+    min-height:calc(100vh - 226px)
+}
+
 .bg-scroll-main {
     background-image: url("/assets/main/web-slide.png");
     background-size: cover;

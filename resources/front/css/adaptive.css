@@ -1,10 +1,9 @@
-
 @media (max-width: 1400px) {
 }
 
-
 @media (max-width: 1200px) {
-    section.main-page .container, .get-section .box {
+    section.main-page .container,
+    .get-section .box {
         flex-direction: column-reverse;
         display: flex;
     }
@@ -12,12 +11,14 @@
     section.main-page .bg-image-absolute {
         position: relative;
     }
-    
-    section.main-page .bg-image-absolute.img-box, section.get-section .box .img-box {
+
+    section.main-page .bg-image-absolute.img-box,
+    section.get-section .box .img-box {
         max-width: 330px;
     }
 
-    section.main-page .bg-image-absolute, .get-section .box .img-box {
+    section.main-page .bg-image-absolute,
+    .get-section .box .img-box {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
@@ -33,7 +34,8 @@
         padding-right: 30px;
     }
 
-    .header ul li:not(:last-child), footer ul li:not(:last-child) {
+    .header ul li:not(:last-child),
+    footer ul li:not(:last-child) {
         margin-right: 40px;
     }
 
@@ -42,7 +44,8 @@
         bottom: 0px;
     }
 
-    .header .nav-menu, footer .nav-menu {
+    .header .nav-menu,
+    footer .nav-menu {
         margin-left: auto;
     }
 
@@ -59,7 +62,7 @@
         padding-top: 20px;
         min-height: 200px;
     }
-    
+
     .get-section .box .img-box {
         width: 100%;
         max-width: 500px;
@@ -78,7 +81,6 @@
 
     section.main-page .bg-image-absolute {
         display: block;
-        
     }
 
     .mobile-img-center {
@@ -115,7 +117,8 @@
         justify-content: center !important;
     }
 
-    .navigation .arrow-left, .navigation .arrow-right {
+    .navigation .arrow-left,
+    .navigation .arrow-right {
         display: none;
     }
 
@@ -129,7 +132,8 @@
         margin-bottom: 30px;
     }
 
-    .clients .title-box h2, .clients .title-box h2 {
+    .clients .title-box h2,
+    .clients .title-box h2 {
         margin-bottom: 20px;
     }
 
@@ -175,11 +179,9 @@
         cursor: pointer;
     }
 
-
     .plan-selection .content-wrapper .readmore img {
         margin-left: 10px;
     }
-
 
     .plan-selection .plans-include-wrapper .checkbox-box.adaptive {
         display: none;
@@ -202,7 +204,8 @@
         flex-direction: column;
     }
 
-    .summary-conclusion.adaptive .content-box, .summary-conclusion .container .diagram-box {
+    .summary-conclusion.adaptive .content-box,
+    .summary-conclusion .container .diagram-box {
         max-width: 100%;
         width: 100%;
     }
@@ -215,7 +218,8 @@
         max-width: 100%;
     }
 
-    .summary-conclusion.adaptive .notice-box, .summary-conclusion .diagram-box .data {
+    .summary-conclusion.adaptive .notice-box,
+    .summary-conclusion .diagram-box .data {
         width: 60% !important;
         margin: 0 auto 20px;
     }
@@ -226,16 +230,18 @@
     }
 
     .summary-conclusion.adaptive .diagram {
-        width: 100%!important;
+        width: 100% !important;
         margin: 0 auto;
     }
 
-    .summary-days .days-box-container, .summary-days .benefits-box {
+    .summary-days .days-box-container,
+    .summary-days .benefits-box {
         flex-direction: column;
         margin: 0;
     }
 
-    .summary-days .days-box-container .day, .summary-days .benefits-box .benefit {
+    .summary-days .days-box-container .day,
+    .summary-days .benefits-box .benefit {
         margin-bottom: 20px;
         width: 100%;
         max-width: 100%;
@@ -250,7 +256,6 @@
         flex-wrap: wrap;
     }
 
-
     footer.fixed {
         position: static;
     }
@@ -259,7 +264,8 @@
         left: 0;
     }
 
-    .font-accent-18-700, .font-white-26-700 {
+    .font-accent-18-700,
+    .font-white-26-700 {
         font-size: 16px;
         line-height: 20px;
     }
@@ -297,18 +303,13 @@
         align-items: center;
         margin-bottom: 20px;
     }
-
 }
 
-
-
 @media (max-width: 992px) {
-
     section.main-page .bg-image-slide {
         height: calc(100vh - 600px);
         width: calc(100% + 140px);
-        left:-70px;
-
+        left: -70px;
     }
     .diagram-box .diagram .days-box {
         padding: 20px;
@@ -316,8 +317,7 @@
 
     .bg-image-absolute {
         position: relative;
-        left:-87px;
-
+        left: -87px;
     }
 
     .active-users .users-block {
@@ -344,7 +344,6 @@
         min-width: 100%;
     }
 
-
     .quizz-navigation-adaptive {
         display: flex;
         margin-top: 20px;
@@ -370,7 +369,7 @@
         align-items: center;
     }
 
-    .close-button.adaptive img{
+    .close-button.adaptive img {
         margin-right: 10px;
     }
 
@@ -379,7 +378,8 @@
         flex-direction: column;
     }
 
-    .btn-green-squre, .btn-white-squre {
+    .btn-green-squre,
+    .btn-white-squre {
         padding: 12px 30px;
     }
 
@@ -398,14 +398,14 @@
     }
 
     .header {
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         margin: 20px;
         padding: 20px;
     }
 
-    .header.book{
+    .header.book {
         box-shadow: none;
     }
 
@@ -414,14 +414,15 @@
     }
 
     header .adaptive-header .navbar-toggler {
-        border: none!important;
+        border: none !important;
     }
 
-    header .logo-container{
-        display: none!important;
+    header .logo-container {
+        display: none !important;
     }
 
-    .header .adaptive-header .navbar-toggler, .header .adaptive-header .navbar-toggler span {
+    .header .adaptive-header .navbar-toggler,
+    .header .adaptive-header .navbar-toggler span {
         outline: none;
         box-shadow: none;
     }
@@ -502,7 +503,8 @@
         margin-right: 0;
     }
 
-    .section.clients .dot:not(:last-child), .active-users .dot:not(:last-child) {
+    .section.clients .dot:not(:last-child),
+    .active-users .dot:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -534,7 +536,7 @@
 
     .plans-box button.w-100 {
         margin-top: 20px;
-        width: auto!important;
+        width: auto !important;
     }
 
     .plan-selection {
@@ -570,12 +572,13 @@
         line-height: 13px;
     }
 
-    .plan-selection .plan .row-inf:not(:last-child), .plan-selection .plan .row-inf:not(:last-child) {
+    .plan-selection .plan .row-inf:not(:last-child),
+    .plan-selection .plan .row-inf:not(:last-child) {
         margin-bottom: 5px;
     }
 
     .doctor-block {
-        margin-top: 30px!important;
+        margin-top: 30px !important;
     }
 
     .doctor-block h2 {
@@ -600,7 +603,8 @@
         margin-top: 20px;
     }
 
-    .section.last-section, .last-section {
+    .section.last-section,
+    .last-section {
         margin-bottom: 60px;
     }
 
@@ -631,160 +635,161 @@
     .program .img-box img {
         display: none;
     }
+}
 
-    }
-
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     section.main-page .bg-image-slide {
         height: calc(100vh - 650px);
-        width: calc(100% + 100px);
-        left:-50px;
+        width: calc(100% + 140px);
+        left: -70px;
     }
 
-        .font-white-600, .font-accent-600 {
-            font-size: 12px;
-            line-height: 14px;
-        }
-    
-        .font-grey-color-700 {
-            font-size: 26px;
-            line-height: 30px;
-        }
-    
-        section.main-page .bg-image-absolute.img-box, section.get-section .box .img-box {
-            max-width: 330px;
-        }
-    
-        section.main-page h1 {
-            margin-bottom: 20px;
-        }
-    
-        section.main-page .description {
-            margin-bottom: 50px;
-        }
-    
-        .font-grey-color-400 {
-            font-size: 14px;
-            line-height: 20px;
-        }
-    
-        .font-accent-700 {
-            font-size: 14px;
-            line-height: 17px;
-            /*color: var(--acent-color-green);*/
-            /*font-weight: 700;*/
-        }
-    
-        .font-grey-32-700 {
-            font-size: 20px;
-            line-height: 26px;
-        }
-    
-        .section.first-section {
-            margin-top: 40px;
-        }
-    
-        .section {
-            margin-top: 60px;
-            padding: 40px 0;
-        }
-    
-        .box-item {
-            padding: 30px 20px;
-        }
-    
-        .section .title-box > h2 {
-            margin-bottom: 20px;
-        }
-    
-        .plan {
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-    
-        .plan .icon-box {
-            margin-right: 0;
-        }
-    
-        .plan .title {
-            margin: 10px 0;
-        }
-    
-        .plans button {
-            display: block;
-            margin: 0 auto;
-        }
-    
-        .section .box {
-            padding: 30px;
-        }
-    
-        .section .clients-item .avatar-box {
-            width: 72px;
-            height: 72px;
-            border-radius: 16px;
-        }
-    
-        .font-grey-16-700 {
-            font-size: 14px;
-            line-height: 17px;
-        }
-    
-        .font-accent-40-700 {
-            font-size: 22px;
-            line-height: 27px;
-        }
-    
-        .active-users .carousel.adaptive .clients-item .user {
-            width: 60%;
-        }
-    
-        .font-light-grey-700 {
-            font-size: 16px;
-            line-height: 20px;
-        }
-    
-        .font-dark-grey-700 {
-            font-size: 26px;
-            line-height: 32px;
-        }
-    
-        .diagram-box .diagram .inf-box {
-            max-width: 220px;
-            white-space: normal;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-        }
-    
-        .diagram-box .diagram img.adaptive {
-            display: block;
-        }
-    
-        .diagram-box .diagram {
-            max-width: 340px;
-        }
-    
-        .diagram-box .diagram .days-container {
-            height: 26%;
-        }
-    
-        .diagram-box .diagram img {
-            display: none;
-        }
-    
-        .diagram-box .diagram .today-box {
-            bottom: 75px;
-        }
+    .font-white-600,
+    .font-accent-600 {
+        font-size: 12px;
+        line-height: 14px;
     }
+
+    .font-grey-color-700 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    section.main-page .bg-image-absolute.img-box,
+    section.get-section .box .img-box {
+        max-width: 330px;
+    }
+
+    section.main-page h1 {
+        margin-bottom: 20px;
+    }
+
+    section.main-page .description {
+        margin-bottom: 50px;
+    }
+
+    .font-grey-color-400 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .font-accent-700 {
+        font-size: 14px;
+        line-height: 17px;
+        /*color: var(--acent-color-green);*/
+        /*font-weight: 700;*/
+    }
+
+    .font-grey-32-700 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .section.first-section {
+        margin-top: 40px;
+    }
+
+    .section {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+
+    .box-item {
+        padding: 30px 20px;
+    }
+
+    .section .title-box > h2 {
+        margin-bottom: 20px;
+    }
+
+    .plan {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .plan .icon-box {
+        margin-right: 0;
+    }
+
+    .plan .title {
+        margin: 10px 0;
+    }
+
+    .plans button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section .box {
+        padding: 30px;
+    }
+
+    .section .clients-item .avatar-box {
+        width: 72px;
+        height: 72px;
+        border-radius: 16px;
+    }
+
+    .font-grey-16-700 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .font-accent-40-700 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .active-users .carousel.adaptive .clients-item .user {
+        width: 60%;
+    }
+
+    .font-light-grey-700 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .font-dark-grey-700 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .diagram-box .diagram .inf-box {
+        max-width: 220px;
+        white-space: normal;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .diagram-box .diagram img.adaptive {
+        display: block;
+    }
+
+    .diagram-box .diagram {
+        max-width: 340px;
+    }
+
+    .diagram-box .diagram .days-container {
+        height: 26%;
+    }
+
+    .diagram-box .diagram img {
+        display: none;
+    }
+
+    .diagram-box .diagram .today-box {
+        bottom: 75px;
+    }
+}
 
 @media (max-width: 576px) {
     section.main-page .bg-image-slide {
         height: calc(100vh - 650px);
-        width: calc(100% + 60px);
-        left:-30px;
+        width: calc(100% + 100px);
+        left: -50px;
     }
 
     .graphic .container .block {
@@ -798,7 +803,6 @@
     .graphic .container img.adaptive {
         display: block;
     }
-
 
     .options-body {
         flex-direction: column;
@@ -842,7 +846,9 @@
         padding: 17px;
     }
 
-    .active-users .carousel.adaptive .clients-item .user, .summary-conclusion.adaptive .notice-box, .summary-conclusion .diagram-box .data {
+    .active-users .carousel.adaptive .clients-item .user,
+    .summary-conclusion.adaptive .notice-box,
+    .summary-conclusion .diagram-box .data {
         width: 100% !important;
     }
 
@@ -865,7 +871,6 @@
         display: block;
     }
 
-
     .header.summary button {
         padding-left: 20px;
         padding-right: 20px;
@@ -877,10 +882,55 @@
         font-size: 10px;
         line-height: 13px;
     }
-
 }
 
 @media (max-width: 494px) {
+    .quiz-card .card-body .quiz-loader {
+        width: 150px;
+    }
+    .quiz-card .container img {
+        width: 130px;
+    }
+    .quiz-card .card-body .d-flex {
+        flex-direction: column;
+    }
+    section.main-page .bg-image-slide {
+        height: calc(100vh - 650px);
+        width: calc(100% + 10px);
+        left: -10px;
+    }
+    .book .navbar-brand,
+    .book .navbar-brand img {
+        width: 130px;
+        margin: 0px;
+    }
+    .book .container {
+        padding: 0px;
+    }
+
+    footer .actions {
+        position: absolute;
+        right: 0;
+    }
+    .actions a,
+    .actions a:hover {
+        font-size: 12px;
+        padding: 6px 11px;
+        width: 120px;
+    }
+    .header.book {
+        margin: 0px;
+    }
+    .quiz-card .row > * {
+        padding: 0px;
+    }
+    .quiz-card .row .quiz-arrow {
+        font-size: 18px;
+    }
+
+    .quiz-card .row .question-number-counter {
+        font-size: 16px;
+    }
 
     .section.quizz-box .content-box .option {
         padding: 8px 0px;
@@ -894,4 +944,3 @@
         padding: 10px;
     }
 }
-

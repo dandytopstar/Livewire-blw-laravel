@@ -1,4 +1,4 @@
-<div class="position-relative px-3 quiz-card">
+<div class="position-relative px-3 quiz-body">
 
 
     @if(!empty($currentQuestion['loader']) && $currentQuestion['loader']['show'])

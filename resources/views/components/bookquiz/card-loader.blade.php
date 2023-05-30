@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col pl-4 quiz-arrow">
                 @if($currentQuestionNum == 1)
-                    <a href="{{route('main')}}">
+                    <a href="{{route('bookmain')}}">
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 @else

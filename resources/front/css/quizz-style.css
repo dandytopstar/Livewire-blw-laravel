@@ -309,9 +309,9 @@
 
 /* for book subdomain */
 
-.puiz-body {
+.quiz-body {
     overflow: hidden;
-    min-height: calc(100vh - 211px);
+    min-height: calc(100vh - 226px);
     background: rgb(226, 242, 230);
     background: linear-gradient(
         90deg,

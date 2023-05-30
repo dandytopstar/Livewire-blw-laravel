@@ -23,7 +23,7 @@
         </div>
       </div>
     </nav>
-    <section class="position-relative w-100 first-section main-page">
+    <section class="position-relative w-100 first-section main-page book-section">
       <div class="img-box bg-image-slide text-center">
         <div class="bg-scroll-mobile"></div>
       </div>
@@ -42,10 +42,10 @@
             {{__('front.choose_baby')}}
           </p>
           <div class="d-flex">
-            <a href="{{route('quiz')}}" type="button" class="btn font-grey-16-700 btn-green-squre mb-20">
+            <a href="{{route('bookquiz')}}" type="button" class="btn font-grey-16-700 btn-green-squre mb-20">
               {{__("front.gender_boy")}}
             </a>
-            <a href="{{route('quiz')}}" type="button"
+            <a href="{{route('bookquiz')}}" type="button"
               class="btn font-grey-16-700 btn-white-squre mb-20 ml-20 bg-light-green">
               {{__("front.gender_girl")}}
             </a>
