@@ -64,7 +64,7 @@
 
     <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
 
-        <h2 class="section-title">What's insite the book?</h2>
+        <h2 class="section-title">What's inside the book?</h2>
 
         <div class="container what-will-items">
 
@@ -80,7 +80,7 @@
             <div class="what-will-item block-3">
                 <div class="ww-item-content">
                     <h3 class="item-title">1000+ Meal Ideas</h3>
-                    <img src="{{asset('assets/summary/whatwill/3.png')}}" alt="">
+                    <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
                 </div>
 
                 <div class="item-number">2</div>
@@ -89,11 +89,21 @@
             <div class="what-will-item block-2">
                 <div class="ww-item-content">
                     <h3 class="item-title">Personalized Baby-Led Weaning Book Paperback</h3>
-                    <img src="{{asset('assets/summary/whatwill/2.png')}}" alt="">
+                    <img src="{{asset('assets/summary/whatwill/4.png')}}" alt="">
                 </div>
-
                 <div class="item-number">3</div>
             </div>
+            
+
+            
+        </div>
+
+    </section>
+
+    <section id="what-will-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5">
+        <h2 class="section-title">What Else Will You Get?</h2>
+
+        <div class="container what-will-items justify-content-evenly">       
 
             <div class="what-will-item block-4">
                 <div class="ww-item-content">
@@ -108,26 +118,6 @@
                     <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
                 </div>
             </div>
-
-            <div class="ww-last">
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_1.png')}}" alt="">
-                    <h4>Progress-based Tips</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_2.png')}}" alt="">
-                    <h4>Exclusive Member Resources</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_3.png')}}" alt="">
-                    <h4>Unlimited E-Mail Support</h4>
-                </div>
-                <div class="ww-last-item">
-                    <img src="{{asset('assets/summary/whatwill/💡last_item_4.png')}}" alt="">
-                    <h4 class="pt-0 pb-1">Personalized Baby-Led Weaning Guidebook</h4>
-                </div>
-            </div>
-
         </div>
 
     </section>
@@ -211,38 +201,48 @@
 
             </div>
 
-            <h2 class="mp-title-adaptive">And Even More</h2>
-
             <div class="mp-two-colum">
                 <div class="mp-middle-block">
+                    
+                    <div class="mp-block-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Customized to baby's needs</div>
+                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
+                    </div>
 
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
-                        <div class="mp-text">Encourages self-feeding</div>
+                        <div class="mp-text">includes finger foods</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/2.png')}}" alt="">
-                        <div class="mp-text">Offers nutrition education</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Easy-to-follow recipes</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/3.png')}}" alt="">
-                        <div class="mp-text">Considers cultural perferences</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Includes family-friendly meals</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/4.png')}}" alt="">
-                        <div class="mp-text">Provides grocery list</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Promotes balanced meals</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/5.png')}}" alt="">
-                        <div class="mp-text">Supports baby's development</div>
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">Variety of nutrient-dense foods</div>
+                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
+                    </div>
+
+                    <div class="mp-block-item">
+                        <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
+                        <div class="mp-text">offers mealtime structure</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
@@ -258,13 +258,13 @@
 
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/10.png')}}" alt="">
-                        <div class="mp-text">Introduces new foods gradually</div>
+                        <div class="mp-text">Adaptable for allergies</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/11.png')}}" alt="">
-                        <div class="mp-text">Promotes balanced meals</div>
+                        <div class="mp-text">Provides age-appropriate foods</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
 
@@ -291,13 +291,6 @@
                         <div class="mp-text">Encourages healthy snacking</div>
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
-
-                    <div class="mp-block-item">
-                        <img src="{{asset('assets/summary/mp/16.png')}}" alt="">
-                        <div class="mp-text">Encourages self-feeding</div>
-                        <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
-                    </div>
-
                 </div>
             </div>
 
