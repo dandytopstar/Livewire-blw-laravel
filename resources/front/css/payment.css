@@ -11,7 +11,11 @@
 }
 
 .accordion-item:not(:first-of-type) {
-    border-top: 0px !important;
+    border-top: 1px solid var(--bs-accordion-border-color)!important;
+}
+
+.payment-box .accordion .accordion-item .accordion-header > div {
+    background-color: transparent;
 }
 
 @media (max-width: 576px) {
