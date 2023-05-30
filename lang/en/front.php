@@ -11,6 +11,7 @@ return [
     'hello' => 'Hello',
     'go_to_summary_page' => 'Go to Summary Page',
     'get_your_plan' => 'Get Your Plan',
+    'get_your_book' => "Get Your Book",
     'back_to_main_screen' => 'Back to Main Screen',
 
     //Top Menu

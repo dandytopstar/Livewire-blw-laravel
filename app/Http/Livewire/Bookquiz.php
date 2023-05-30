@@ -672,7 +672,7 @@ class Bookquiz extends Component
         }
 
 
-        $this->redirect('/summary/'.$client->code);
+        $this->redirect('/book/summary/'.$client->code);
     }
 
     public function setCurrentSlider(int $value)
