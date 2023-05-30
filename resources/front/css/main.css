@@ -1149,6 +1149,76 @@ section.program {
     position: absolute;
 }
 
+.bg-light-green {
+    background-color: var(--light-green-color);
+}
 
+.h-5 {
+    height:5px;
+}
+
+.h-10 {
+    height:10px;
+}
+
+.h-15 {
+    height:15px;
+}
+
+.h-20 {
+    height:20px;
+}
+
+.h-25 {
+    height:25px;
+}
+
+.w-5 {
+    width:5px;
+}
+
+.w-10 {
+    width:10px;
+}
+
+.w-15 {
+    width:15px;
+}
+
+.w-20 {
+    width:20px;
+}
+
+.w-25 {
+    width:25px;
+}
+
+.w-30 {
+    width:30px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.text-align-left {
+    text-align: left !important;
+}
+
+.btn-gender-unsel {
+    padding: 12px 30px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--light-green-color);
+    color: black;
+}
+
+.btn-gender-unsel:hover, .btn-gender-sel {
+    padding: 12px 30px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--acent-color-green);
+    color: white;
+}
 
 

@@ -324,3 +324,7 @@
     top:6px;
     max-width: 800px;
 }
+
+.quiz-body .quiz-card .container .row img {
+    width: 200px;
+}
