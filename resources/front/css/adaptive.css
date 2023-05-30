@@ -8,6 +8,14 @@
         display: flex;
     }
 
+    section.main-page.book-section .container {
+        align-items: center;
+    }
+
+    section.main-page.book-section .inf-box {
+        height: calc(100vh / 2);
+    }
+
     section.main-page .bg-image-absolute {
         position: relative;
     }
