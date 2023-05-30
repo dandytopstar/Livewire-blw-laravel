@@ -267,7 +267,7 @@
 }
 
 .quiz-loader img{
-    max-width: 300px;
+    width: 300px;
 }
 
 .btn-no {
@@ -302,11 +302,6 @@
     line-height: 25px; /* To center it vertically */
     color: white;
 }
-
-.quiz-card .container img {
-    width: 150px;
-}
-
 /* for book subdomain */
 
 .quiz-body {

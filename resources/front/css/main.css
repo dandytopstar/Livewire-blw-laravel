@@ -883,7 +883,7 @@ section .stepper-box {
 }
 
 .payment-box .accordion-item {
-    background: #FFFFFF;
+    background: transparent;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 30px;
@@ -898,7 +898,7 @@ section .stepper-box {
 }
 
 .payment-box .accordion-button:not(.collapsed) {
-    background-color: white;
+    background-color: transparent;
     box-shadow: none;
 }
 
