@@ -426,7 +426,7 @@ class Bookquiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 19;
+        $this->currentQuestionNum = 1;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
