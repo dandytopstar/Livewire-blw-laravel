@@ -1207,6 +1207,8 @@ section.program {
 .border-top-1 {
     box-shadow: 0px -10px 20px 1px rgb(195, 230, 222);
      border-top: 1px solid rgb(195, 230, 222);
+     flex-direction: column;
+     align-items: center;
 }
 
 

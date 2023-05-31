@@ -23,15 +23,17 @@
         @foreach($currentQuestion['answers'] as $key => $answer)
             @if($currentQuestion['selectedSlider'] == $key)
 
-                <div class="sel-answers border-top-1 relative pt-5" id="btns-{{$key}}">
+                <div class="sel-answers border-top-1 relative pt-5 d-flex" id="btns-{{$key}}">
                         <p class="text-center selected-slide-image absolute">{{$answer['text']}}</p>
+                        <div>
                     @foreach($currentQuestion['buttons'] as $item)
+                    
                         @if($item['class'] == "btn-no")
-                        <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})" onclick="yesAnimation()">
+                        <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})" onclick="noAnimation()">
                             {{$item['text']}}
                         </button>
                         @elseif ($item['class'] == "btn-yes")
-                        <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})" onclick="noAnimation()">
+                        <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})" onclick="yesAnimation()">
                             {{$item['text']}}
                         </button>
                         @else
@@ -40,6 +42,7 @@
                         </button>
                         @endif
                     @endforeach
+                    <div>
                 </div>
             @endif
 
@@ -56,16 +59,16 @@
         $( ".selected-slide-image" ).fadeOut( "slow");
 
     };
-    let noAnimation = ()=>{
+    let yesAnimation = ()=>{
         console.log("sss");
         $( ".selected-slide-image" ).animate({
-            left:"400px",
+            right:"-400px",
             opacity:"0"
         });
     };
-    let yesAnimation = ()=>{
+    let noAnimation = ()=>{
         $( ".selected-slide-image" ).animate({
-            right:"400px",
+            left:"-400px",
             opacity:"0"
         });
     };

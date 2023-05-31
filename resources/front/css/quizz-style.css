@@ -421,7 +421,6 @@
 
 .sel-answers .selected-slide-image {
     top:10px;
-    left:45%;
 }
 @media (max-width: 576px) {
     .slide-view {

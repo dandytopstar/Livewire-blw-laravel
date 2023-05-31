@@ -217,7 +217,7 @@
 
         if(document.querySelector('.quizz-btn')) {
             let elements = document.querySelectorAll(".quizz-btn")
-
+            console.log("next-click");
             let myFunction = function() {
                 this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
