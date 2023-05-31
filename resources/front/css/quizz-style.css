@@ -328,3 +328,138 @@
 .quiz-body .quiz-card .container .row img {
     width: 200px;
 }
+.quiz-body .img-fluid {
+    width: 230px;
+}
+
+.slide-view {
+    height: 260px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-view .slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+    background-position: 50%!important;
+    position: absolute;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    z-index: 10;
+}
+
+.slide-view .slide-image:nth-child(2) {
+    right: -35px;
+    transform: scale(.9);
+    z-index: 9;
+    opacity: 0.9;
+}
+
+.slide-view .slide-image:nth-child(2) p {
+    display: none;
+}
+
+.slide-view .slide-image:nth-child(3) {
+    right: -65px;
+    transform: scale(.8);
+    z-index: 8;
+    opacity: 0.8;
+}
+
+.slide-view .slide-image:nth-child(3) p {
+    display: none;
+}
+
+.slide-view .slide-image:nth-child(4) {
+    right: -95px;
+    transform: scale(.7);
+    z-index: 7;
+    opacity: 0.7;
+}
+
+.slide-view .slide-image:nth-child(4) p {
+    display: none;
+}
+
+.slide-view .slide-image:nth-child(5) {
+    right: -125px;
+    transform: scale(.6);
+    z-index: 6;
+    opacity: 0.6;
+}
+
+.slide-view .slide-image:nth-child(5) p {
+    display: none;
+}
+
+.slide-view .slide-image:nth-child(6) {
+    right: -155px;
+    transform: scale(.5);
+    z-index: 5;
+    opacity: 0.5;
+}
+
+.slide-view .slide-image:nth-child(6) p {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .slide-view {
+        height: 250px;
+    }
+    .quiz-body .img-fluid {
+        width: 200px;
+    }
+    .slide-view .slide-image:nth-child(2) {
+        right: -20px;
+    }
+    
+    .slide-view .slide-image:nth-child(3) {
+        right: -40px;
+    }
+    
+    .slide-view .slide-image:nth-child(4) {
+        right: -60px;
+    }
+    .slide-view .slide-image:nth-child(5) {
+        right: -80px;
+    }
+    
+    .slide-view .slide-image:nth-child(6) {
+        right: -100px;
+    }
+    
+}
+
+@media (max-width: 494px) {
+
+    .slide-view {
+        height: 200px;
+    }
+    .quiz-body .img-fluid {
+        width: 150px !important;
+    }
+    .slide-view .slide-image:nth-child(2) {
+        right: -15px;
+    }
+    
+    .slide-view .slide-image:nth-child(3) {
+        right: -30px;
+    }
+    
+    .slide-view .slide-image:nth-child(4) {
+        right: -45px;
+    }
+    .slide-view .slide-image:nth-child(5) {
+        right: -60px;
+    }
+    
+    .slide-view .slide-image:nth-child(6) {
+        right: -75px;
+    }
+
+}

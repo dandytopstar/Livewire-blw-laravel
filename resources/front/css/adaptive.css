@@ -3,6 +3,11 @@
 
 @media (max-width: 1200px) {
 
+    .book .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
     .book-section .container {
         display: block !important;
     }
@@ -42,10 +47,10 @@
         position: relative;
     }
 
-    /* .quiz-body .container {
+    .quiz-body > .container {
         padding-left: 30px;
         padding-right: 30px;
-    } */
+    }
 
     .header ul li:not(:last-child),
     footer ul li:not(:last-child) {

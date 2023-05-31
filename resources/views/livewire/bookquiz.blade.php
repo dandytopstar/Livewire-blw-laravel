@@ -30,7 +30,7 @@
         @endif
 
         @if(!empty($currentQuestion['slider']))
-            <x-quiz.slider :currentQuestion="$currentQuestion" />
+            <x-bookquiz.slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['progress_slider']))
@@ -87,7 +87,6 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-
             let myFunction = function() {
                 this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
@@ -110,7 +109,6 @@
     function sliderButtons() {
 
         if(document.querySelector('#slider-component')) {
-            console.log(111);
             let no = document.querySelector('.btn-no');
             let yes = document.querySelector('.btn-yes');
             let undecided = document.querySelector('.btn-undecided');

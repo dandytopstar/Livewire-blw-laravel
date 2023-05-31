@@ -661,6 +661,7 @@ class Bookquiz extends Component
 
     public function setCurrentSlider(int $value)
     {
+        sleep(1);
         $this->currentQuestion['selectedSlider'] = $value;
 
         $this->dispatchBrowserEvent('slider-selected', [
