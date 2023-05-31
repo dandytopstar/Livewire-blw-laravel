@@ -134,9 +134,9 @@ class Bookquiz extends Component
                 'question_key' => 'store_and_preserve_baby_food',
                 'question' => "How do you plan to store and preserve baby's food?",
                 'answers' => [
-                    '1' => ['text' => 'Refrigerate', 'selected'  => false],
-                    '2' => ['text' => 'Freeze', 'selected'  => false],
-                    '3' => ['text' => 'Use within a day', 'selected'  => false]
+                    '1' => ['text' => 'Refrigerate', 'selected' => false],
+                    '2' => ['text' => 'Freeze', 'selected' => false],
+                    '3' => ['text' => 'Use within a day', 'selected' => false]
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -178,10 +178,10 @@ class Bookquiz extends Component
                 'question_key' => 'feeding_accessories',
                 'question' => 'Which of the following feeding accessories do you plan to use?',
                 'answers' => [
-                    '1' => ['text' => 'High chair', 'selected'  => false],
-                    '2' => ['text' => 'Booster seat', 'selected'  => false],
-                    '3' => ['text' => 'Baby seat', 'selected'  => false],
-                    '4' => ['text' => 'None', 'selected'  => false, 'deselectAll' => true],
+                    '1' => ['text' => 'High chair', 'selected' => false],
+                    '2' => ['text' => 'Booster seat', 'selected' => false],
+                    '3' => ['text' => 'Baby seat', 'selected' => false],
+                    '4' => ['text' => 'None', 'selected' => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -213,9 +213,9 @@ class Bookquiz extends Component
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "How would you like to track your baby's food intake and reactions to new foods?",
                 'answers' => [
-                    '1' => ['text' => 'Keep a journal', 'selected'  => false],
-                    '2' => ['text' => 'Use a mobile app', 'selected'  => false],
-                    '3' => ['text' => 'Other', 'selected'  => false],
+                    '1' => ['text' => 'Keep a journal', 'selected' => false],
+                    '2' => ['text' => 'Use a mobile app', 'selected' => false],
+                    '3' => ['text' => 'Other', 'selected' => false],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -258,23 +258,23 @@ class Bookquiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image'  => asset('assets/quiz/slider/peanuts.jpg'),
+                        'image' => asset('assets/quiz/slider/peanuts.jpg'),
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image'  => asset('assets/quiz/slider/sesame_seeds.jpg'),
+                        'image' => asset('assets/quiz/slider/sesame_seeds.jpg'),
                     ],
                     '3' => [
                         'text' => 'Soy',
-                        'image'  => asset('assets/quiz/slider/soy.jpg'),
+                        'image' => asset('assets/quiz/slider/soy.jpg'),
                     ],
                     '4' => [
                         'text' => 'Eggs',
-                        'image'  => asset('assets/quiz/slider/eggs.jpg'),
+                        'image' => asset('assets/quiz/slider/eggs.jpg'),
                     ],
                     '5' => [
                         'text' => 'Dairy products',
-                        'image'  => asset('assets/quiz/slider/dairy_products.jpg'),
+                        'image' => asset('assets/quiz/slider/dairy_products.jpg'),
                     ],
                 ],
                 'slider' => true,
@@ -310,10 +310,10 @@ class Bookquiz extends Component
                 'question_key' => 'reactions_to_new_foods',
                 'question' => 'Which of the following cooking methods do you prefer?',
                 'answers' => [
-                    '1' => ['text' => 'Boiling', 'selected'  => false],
-                    '2' => ['text' => 'Steaming', 'selected'  => false],
-                    '3' => ['text' => 'Roasting', 'selected'  => false],
-                    '4' => ['text' => 'Grilling', 'selected'  => false],
+                    '1' => ['text' => 'Boiling', 'selected' => false],
+                    '2' => ['text' => 'Steaming', 'selected' => false],
+                    '3' => ['text' => 'Roasting', 'selected' => false],
+                    '4' => ['text' => 'Grilling', 'selected' => false],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -336,27 +336,27 @@ class Bookquiz extends Component
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
-                        'image'  => asset('assets/quiz/slider/whole_grains.jpg'),
+                        'image' => asset('assets/quiz/slider/whole_grains.jpg'),
                     ],
                     '2' => [
                         'text' => 'Beef',
-                        'image'  => asset('assets/quiz/slider/beef.jpg'),
+                        'image' => asset('assets/quiz/slider/beef.jpg'),
                     ],
                     '3' => [
                         'text' => 'Chicken',
-                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
+                        'image' => asset('assets/quiz/slider/chicken.jpg'),
                     ],
                     '4' => [
                         'text' => 'Fish',
-                        'image'  => asset('assets/quiz/slider/fish.jpg'),
+                        'image' => asset('assets/quiz/slider/fish.jpg'),
                     ],
                     '5' => [
                         'text' => 'Garlic',
-                        'image'  => asset('assets/quiz/slider/garlic.jpg'),
+                        'image' => asset('assets/quiz/slider/garlic.jpg'),
                     ],
                     '6' => [
                         'text' => 'Ginger',
-                        'image'  => asset('assets/quiz/slider/ginger.jpg'),
+                        'image' => asset('assets/quiz/slider/ginger.jpg'),
                     ],
                 ],
                 'slider' => true,
@@ -381,10 +381,10 @@ class Bookquiz extends Component
                 'question_key' => 'drinks',
                 'question' => 'Which of the following drinks would you like to offer your baby along with meals?',
                 'answers' => [
-                    '1' => ['text' => 'Water', 'selected'  => false],
-                    '2' => ['text' => 'Fruit juice', 'selected'  => false],
-                    '3' => ['text' => 'Milk', 'selected'  => false],
-                    '4' => ['text' => 'Other', 'selected'  => false, 'deselectAll' => true],
+                    '1' => ['text' => 'Water', 'selected' => false],
+                    '2' => ['text' => 'Fruit juice', 'selected' => false],
+                    '3' => ['text' => 'Milk', 'selected' => false],
+                    '4' => ['text' => 'Other', 'selected' => false, 'deselectAll' => true],
                 ],
                 'multiple' => true,
                 'continue_button' => true,
@@ -399,17 +399,17 @@ class Bookquiz extends Component
                     '1' => [
                         'percent' => '30',
                         'text' => 'text 1',
-                        'image'  => asset('assets/quiz/slider/chicken.jpg'),
+                        'image' => asset('assets/quiz/slider/chicken.jpg'),
                     ],
                     '2' => [
                         'percent' => '60',
                         'text' => 'text 2',
-                        'image'  => asset('assets/quiz/slider/final_image.jpg'),
+                        'image' => asset('assets/quiz/slider/final_image.jpg'),
                     ],
                     '3' => [
                         'percent' => '100',
                         'text' => 'text 3',
-                        'image'  => asset('assets/quiz/slider/fish.jpg'),
+                        'image' => asset('assets/quiz/slider/fish.jpg'),
                     ]
                 ],
                 'progress_slider' => true,
@@ -426,7 +426,7 @@ class Bookquiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 18;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -442,7 +442,8 @@ class Bookquiz extends Component
 
     public function nextSlide($answer = null)
     {
-        if($this->currentQuestionNum == $this->registrationStepNum) {
+        sleep(1);
+        if ($this->currentQuestionNum == $this->registrationStepNum) {
             return false;
         }
 
@@ -452,11 +453,11 @@ class Bookquiz extends Component
 
         $result = $this->checkSlideNumber();
 
-        if(!$result) {
+        if (!$result) {
             return false;
         }
 
-        if($this->currentQuestionNum !== $this->registrationStepNum && !empty($this->quizQuestions[$this->currentQuestionNum])) {
+        if ($this->currentQuestionNum !== $this->registrationStepNum && !empty($this->quizQuestions[$this->currentQuestionNum])) {
             $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
         }
 
@@ -466,7 +467,7 @@ class Bookquiz extends Component
 
     public function nextSlideRange()
     {
-        if($this->currentQuestionNum == $this->registrationStepNum) {
+        if ($this->currentQuestionNum == $this->registrationStepNum) {
             return false;
         }
     }
@@ -484,7 +485,7 @@ class Bookquiz extends Component
 
     public function nextSlideMultiple($answer = null)
     {
-        if($answer) {
+        if ($answer) {
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
             $text = $currentAnswer['answers'][$answer]['text'];
@@ -493,9 +494,9 @@ class Bookquiz extends Component
             $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
             $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
 
-            if($issetAnswer) {
+            if ($issetAnswer) {
 
-                if($isEmptyCurrentAnswer) {
+                if ($isEmptyCurrentAnswer) {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
                 } else {
                     $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
@@ -513,13 +514,13 @@ class Bookquiz extends Component
                 $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
             }
 
-            $checkSelected =$this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
+            $checkSelected = $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
 
             $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
 
-            if(!$deselectAll) {
+            if (!$deselectAll) {
                 $this->deselectMultipleAnswers($answer);
-            }elseif(!$hasDeselectAll) {
+            } elseif (!$hasDeselectAll) {
                 $this->deselectNoneMultipleAnswers();
             }
 
@@ -538,7 +539,7 @@ class Bookquiz extends Component
         $question = $this->quizQuestions[$this->currentQuestionNum];
 
         foreach ($question['answers'] as $key => $item) {
-            if($key !== $answer) {
+            if ($key !== $answer) {
                 $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
             }
 
@@ -555,7 +556,7 @@ class Bookquiz extends Component
         $deselectKey = 0;
 
         foreach ($question['answers'] as $key => $item) {
-            if(!empty($item['deselectAll'])) {
+            if (!empty($item['deselectAll'])) {
                 $deselectKey = $key;
                 $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
             }
@@ -567,7 +568,7 @@ class Bookquiz extends Component
 
     public function setQuestionAnswer($answer)
     {
-        if($answer) {
+        if ($answer) {
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -593,16 +594,16 @@ class Bookquiz extends Component
 
     public function checkSlideNumber()
     {
-        if($this->currentQuestionNum == $this->registrationStepNum) {
+        if ($this->currentQuestionNum == $this->registrationStepNum) {
             $this->createClient();
             return false;
         }
 
-        if($this->currentQuestionNum > $this->countQuestions) {
+        if ($this->currentQuestionNum > $this->countQuestions) {
             $this->currentQuestionNum = $this->countQuestions;
         }
 
-        if(!$this->currentQuestionNum) {
+        if (!$this->currentQuestionNum) {
             $this->currentQuestionNum = 1;
         }
 
@@ -624,7 +625,7 @@ class Bookquiz extends Component
 
         foreach ($this->resultAnswers as $answer) {
 
-            if(empty($answer['answers'])) {
+            if (empty($answer['answers'])) {
                 $data = [
                     'client_id' => $client->id,
                     'question_number' => $answer['number'],
@@ -645,7 +646,7 @@ class Bookquiz extends Component
                 ];
 
                 foreach ($answer['answers'] as $key => $value) {
-                    if($value) {
+                    if ($value) {
                         $data['answer'] = $value;
                         $data['answer_number'] = $key;
 
@@ -656,19 +657,20 @@ class Bookquiz extends Component
         }
 
 
-        $this->redirect('/book/summary/'.$client->code);
+        $this->redirect('/book/summary/' . $client->code);
     }
 
     public function setCurrentSlider(int $value)
     {
-        sleep(1);
+        // sleep(1);
         $this->currentQuestion['selectedSlider'] = $value;
 
         $this->dispatchBrowserEvent('slider-selected', [
-            'selected' => $value
+            'selected' => $value,
+            // "total" => count($this->currentQuestion['answers']),
         ]);
 
-        if($value > count($this->currentQuestion['answers'])) {
+        if ($value > count($this->currentQuestion['answers'])) {
             $this->nextSlide(1);
         }
     }

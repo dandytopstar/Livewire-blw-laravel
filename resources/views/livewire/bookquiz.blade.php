@@ -38,7 +38,7 @@
         @endif
 
         @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
-            <x-quiz.button-answers :currentQuestion="$currentQuestion" />
+            <x-bookquiz.button-answers :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['text']))
@@ -46,7 +46,7 @@
         @endif
 
         @if(!empty($currentQuestion['continue_button']))
-            <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
+            <x-bookquiz.continue-btn :currentQuestion="$currentQuestion" />
         @endif
 
     </x-bookquiz.card>
@@ -87,7 +87,7 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-            let myFunction = function() {
+            let myFunction = ()=> {
                 this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
             };
@@ -159,8 +159,14 @@
             cardBenefits.style.display = 'block';
 
             nextBtn.addEventListener('click', () => {
-                cardBenefits.style.display = 'none';
-                card.style.display = 'block';
+                console.log("card-bemefit")
+
+                $('.benefits-body').animate({
+                    opacity:"0",
+                },1000, ()=>{
+                    cardBenefits.style.display = 'none';
+                    card.style.display = 'block';
+                })
             });
         }
     }

@@ -361,7 +361,7 @@
     right: -35px;
     transform: scale(.9);
     z-index: 9;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .slide-view .slide-image:nth-child(2) p {
@@ -372,7 +372,7 @@
     right: -65px;
     transform: scale(.8);
     z-index: 8;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .slide-view .slide-image:nth-child(3) p {
@@ -383,7 +383,7 @@
     right: -95px;
     transform: scale(.7);
     z-index: 7;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .slide-view .slide-image:nth-child(4) p {
@@ -394,7 +394,7 @@
     right: -125px;
     transform: scale(.6);
     z-index: 6;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .slide-view .slide-image:nth-child(5) p {
@@ -405,7 +405,7 @@
     right: -155px;
     transform: scale(.5);
     z-index: 5;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .slide-view .slide-image:nth-child(6) p {
