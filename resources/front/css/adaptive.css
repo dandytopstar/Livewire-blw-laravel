@@ -329,6 +329,9 @@
         width: calc(100% + 140px);
         left: -70px;
     }
+    .quiz-body {
+        height: calc(100vh - 120px);
+    }
     .diagram-box .diagram .days-box {
         padding: 20px;
     }
@@ -802,7 +805,10 @@
 }
 
 @media (max-width: 576px) {
-    
+
+    .quiz-body {
+        height: calc(100vh - 90px);
+    }
     .quiz-body .quiz-card .container .row img {
         width: 130px;
     }
@@ -906,6 +912,11 @@
 }
 
 @media (max-width: 494px) {
+
+    .quiz-body {
+        height: calc(100vh - 50px);
+    }
+
     .sel-answers {
         display: grid;
         grid-gap: 5px;

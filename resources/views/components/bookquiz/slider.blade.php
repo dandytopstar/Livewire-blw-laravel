@@ -9,20 +9,22 @@
                 @if($currentQuestion['selectedSlider'] == $key)
                     <div class="slide-image selected-slide-image">
                         <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
-                        <p class="text-center my-2">{{$answer['text']}}</p>
+                        
                     </div>
+                    
                 @elseif($currentQuestion['selectedSlider'] < $key)
                     <div class="slide-image {{'slide-image'.$key-$currentQuestion['selectedSlider']}}">
                         <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
-                        <p class="text-center my-2">{{$answer['text']}}</p>
                     </div>
                 @endif
             @endforeach
+
         </div>
         @foreach($currentQuestion['answers'] as $key => $answer)
             @if($currentQuestion['selectedSlider'] == $key)
 
-                <div class="my-3 my-lg-5 sel-answers" id="btns-{{$key}}">
+                <div class="sel-answers border-top-1 relative pt-5" id="btns-{{$key}}">
+                        <p class="text-center selected-slide-image absolute">{{$answer['text']}}</p>
                     @foreach($currentQuestion['buttons'] as $item)
                         @if($item['class'] == "btn-no")
                         <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})" onclick="yesAnimation()">
@@ -55,6 +57,7 @@
 
     };
     let noAnimation = ()=>{
+        console.log("sss");
         $( ".selected-slide-image" ).animate({
             left:"400px",
             opacity:"0"

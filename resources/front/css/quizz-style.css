@@ -306,7 +306,7 @@
 
 .quiz-body {
     overflow: hidden;
-    min-height: calc(100vh - 226px);
+    height: calc(100vh - 102px);
     background: rgb(226, 242, 230);
     background: linear-gradient(
         90deg,
@@ -332,8 +332,13 @@
     width: 230px;
 }
 
+.sel-answers {
+    padding-bottom: 10px;
+
+}
+
 .slide-view {
-    height: 260px;
+    height: 300px;
     width: 100%;
     margin: 20px auto;
     position: relative;
@@ -407,6 +412,17 @@
     display: none;
 }
 
+.quiz-body .card-body {
+    padding: 0;
+}
+.card-main > .container {
+    padding: 0;
+}
+
+.sel-answers .selected-slide-image {
+    top:10px;
+    left:45%;
+}
 @media (max-width: 576px) {
     .slide-view {
         height: 250px;
