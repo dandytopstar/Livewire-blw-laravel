@@ -27,29 +27,21 @@
       <div class="img-box bg-image-slide text-center">
         <div class="bg-scroll-mobile"></div>
       </div>
-      <div class="container position-relative d-flex">
-        <div class="inf-box">
-          <h1 class="font-grey-color-700">
+      <div class="container position-relative">
+        <div class="inf-box text-align-left">
+          <h1 class="font-grey-color-700 w-100">
             {{__('front.hero_title1')}}
           </h1>
-          <h1 class="font-grey-color-700">
+          <h1 class="font-grey-color-700 w-100">
             {{__('front.hero_title2')}}
           </h1>
-          <p class="description font-grey-color-400">
+          <p class="description font-grey-color-400 w-100">
             {{__('front.hero_subtitle')}}
           </p>
-          <p class="subtitle">
+          <p class="subtitle w-100">
             {{__('front.choose_baby')}}
           </p>
-          <div class="d-flex">
-            <a href="{{route('bookquiz')}}" type="button" class="btn font-grey-16-700 btn-green-squre mb-20">
-              {{__("front.gender_boy")}}
-            </a>
-            <a href="{{route('bookquiz')}}" type="button"
-              class="btn font-grey-16-700 btn-white-squre mb-20 ml-20 bg-light-green">
-              {{__("front.gender_girl")}}
-            </a>
-          </div>
+          <x-book.gender-buttons/>
         </div>
       </div>
     </section>

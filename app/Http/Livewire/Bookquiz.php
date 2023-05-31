@@ -33,22 +33,6 @@ class Bookquiz extends Component
     {
         $this->quizQuestions = [
             '1' => [
-                'question_key' => 'gender',
-                'question' => 'Select your baby’s gender',
-                'answers' => [
-                    '1' => [
-                        'text' => 'BOY',
-                        'image'  => asset('/assets/quiz/boy.jpg'),
-                    ],
-                    '2' => [
-                        'text' => 'GIRL',
-                        'image'  => asset('/assets/quiz/girl.jpg'),
-                    ],
-                ],
-                'answer_with_image' => true,
-            ],
-
-            '2' => [
                 'question_key' => 'age',
                 'question' => 'How old is your baby?',
                 'answers' => [
@@ -59,7 +43,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '3' => [
+            '2' => [
                 'question_key' => 'weight',
                 'question' => "What is your baby's current weight?",
                 'answers' => [
@@ -70,7 +54,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '4' => [
+            '3' => [
                 'question_key' => 'overall_health',
                 'question' => "Your baby's overall health and development",
                 'answers' => [
@@ -80,7 +64,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '5' => [
+            '4' => [
                 'question_key' => 'current_feeding_routine',
                 'question' => "Your baby's current feeding routine",
                 'answers' => [
@@ -90,7 +74,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '6' => [
+            '5' => [
                 'question_key' => 'breastfeed',
                 'question' => 'How long do you plan to breastfeed or provide formula to your baby?',
                 'answers' => [
@@ -101,7 +85,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '7' => [
+            '6' => [
                 'question_key' => 'started_introducing_solids',
                 'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
@@ -116,7 +100,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '8' => [
+            '7' => [
                 'question' => 'What is Baby-Led Weaning?',
                 'answers' => [],
                 'text' => "Baby-led weaning is a method of introducing solid foods that involves letting babies <br> feed themselves with soft, age-appropriate foods. It promotes self-regulation of <br> appetite and fine motor skill development.",
@@ -124,7 +108,7 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '9' => [
+            '8' => [
                 'question_key' => 'infant_separate_meals',
                 'question' => 'Baby Meal Preferences',
                 'answers' => [
@@ -135,7 +119,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '10' => [
+            '9' => [
                 'question_key' => 'own_or_pre_made_baby_food',
                 'question' => 'Do you prefer to make your own baby food or buy pre-made baby food?',
                 'answers' => [
@@ -146,7 +130,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '11' => [
+            '10' => [
                 'question_key' => 'store_and_preserve_baby_food',
                 'question' => "How do you plan to store and preserve baby's food?",
                 'answers' => [
@@ -159,7 +143,7 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '12' => [
+            '11' => [
                 'question_key' => 'bulk_and_froze_for_future_use',
                 'question' => 'Are you looking for meal ideas that can be made in bulk and frozen for future use?',
                 'answers' => [
@@ -169,7 +153,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '13' => [
+            '12' => [
                 'question_key' => 'introduce_new_foods',
                 'question' => 'How do you prefer to introduce new foods to your baby?',
                 'answers' => [
@@ -179,7 +163,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '14' => [
+            '13' => [
                 'question_key' => 'offer_solid_foods',
                 'question' => 'How often do you plan to offer solid foods to your baby?',
                 'answers' => [
@@ -190,7 +174,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '15' => [
+            '14' => [
                 'question_key' => 'feeding_accessories',
                 'question' => 'Which of the following feeding accessories do you plan to use?',
                 'answers' => [
@@ -205,7 +189,7 @@ class Bookquiz extends Component
                 'hasDeselectAll' => true,
             ],
 
-            '16' => [
+            '15' => [
                 'question_key' => 'budget_friendly_meal_ideas',
                 'question' => 'Are you looking for meal ideas that are budget-friendly?',
                 'answers' => [
@@ -215,7 +199,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '17' => [
+            '16' => [
                 'question_key' => 'quick_and_easy_to_prepare_meal_ideas',
                 'question' => 'Are you looking for meal ideas that are quick and easy to prepare?',
                 'answers' => [
@@ -225,7 +209,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '18' => [
+            '17' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "How would you like to track your baby's food intake and reactions to new foods?",
                 'answers' => [
@@ -238,7 +222,7 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '19' => [
+            '18' => [
                 'question_key' => 'purees_and_finger_foods',
                 'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
                 'answers' => [
@@ -268,7 +252,7 @@ class Bookquiz extends Component
                 ]
             ],
 
-            '20' => [
+            '19' => [
                 'question_key' => 'allergenic_foods',
                 'question' => 'Do you plan to introduce these allergenic foods to reduce the risk of allergies?',
                 'answers' => [
@@ -311,7 +295,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '21' => [
+            '20' => [
                 'question_key' => 'comfortable_preparing_and_cooking_meals',
                 'question' => 'How comfortable are you with preparing and cooking meals from scratch?',
                 'answers' => [
@@ -322,7 +306,7 @@ class Bookquiz extends Component
                 ]
             ],
 
-            '22' => [
+            '21' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => 'Which of the following cooking methods do you prefer?',
                 'answers' => [
@@ -336,7 +320,7 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '23' => [
+            '22' => [
                 'question_key' => 'traditional_foods',
                 'question' => "Have you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
                 'answers' => [
@@ -346,7 +330,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '24' => [
+            '23' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "Love it or Hate It? <br> Incorporating different foods into your infant's diet",
                 'answers' => [
@@ -393,7 +377,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '25' => [
+            '24' => [
                 'question_key' => 'drinks',
                 'question' => 'Which of the following drinks would you like to offer your baby along with meals?',
                 'answers' => [
@@ -408,7 +392,7 @@ class Bookquiz extends Component
                 'hasDeselectAll' => true,
             ],
 
-            '26' => [
+            '25' => [
                 'question_key' => 'end',
                 'question' => 'We are now generating Your Final Part of Your Book!',
                 'answers' => [

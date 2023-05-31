@@ -17,7 +17,7 @@
 
             @if($currentQuestion['selectedSlider'] == $key)
 
-                <div class="my-3 my-lg-5" id="btns-{{$key}}">
+                <div class="my-3 my-lg-5 sel-answers" id="btns-{{$key}}">
                     @foreach($currentQuestion['buttons'] as $item)
                         <button class="btn {{$item['class']}} " wire:click.prevent="setCurrentSlider({{$key+1}})">
                             {{$item['text']}}
