@@ -54,20 +54,20 @@
 
 <script>
         window.undecidedAnimation = () =>{
-            $( ".selected-slide-image" ).fadeOut( "slow");
+            $( ".selected-slide-image" ).fadeOut(300);
         };
 
         window.yesAnimation=()=> {
             $( ".selected-slide-image" ).animate({
                 right:"-400px",
                 opacity:"0",
-            });
+            },300);
         };
 
         window.noAnimation=()=> {
             $(".selected-slide-image").animate({
                 left:"-400px",
                 opacity:"0",
-            });
+            },300);
         };
 </script>

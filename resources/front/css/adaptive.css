@@ -917,7 +917,7 @@
         height: calc(100vh - 50px);
     }
 
-    .sel-answers {
+    .sel-answer {
         display: grid;
         grid-gap: 5px;
     }

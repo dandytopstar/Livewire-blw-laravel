@@ -34,7 +34,7 @@
         @endif
 
         @if(!empty($currentQuestion['progress_slider']))
-            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
+            <x-bookquiz.progress-slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
@@ -177,7 +177,7 @@
         }
         setTimeout(() => {
             document.querySelector('#finish-quiz').click()
-        }, 5000)
+        }, 3500)
 
         var i = 0;
         if (i == 0) {
@@ -192,7 +192,7 @@
                 } else {
                     width++;
                     elem.style.width = width + "%";
-                    elem.innerHTML = width + "%";
+                    document.querySelector('#progressNum').innerHTML = width + "%";
                 }
             }
         }

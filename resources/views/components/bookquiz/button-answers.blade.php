@@ -17,13 +17,12 @@
                     @else
                         wire:click.prevent="nextSlide({{$key}})"
                     @endif
-                    @if(empty($currentQuestion['multiple']))
-                     onclick="nextAnimation()" 
-                    @endif
 
                     type="button"
 
-                    
+                    @if(empty($currentQuestion['multiple']))
+                    onclick="nextAnimation()" 
+                    @endif
             >
                 {{$answer['text']}}
             </button>
@@ -37,7 +36,7 @@
     window.nextAnimation=()=>{
         $(".card-body").animate({
             opacity:"0",
-        },1000)
+        },300)
     }
 </script>
 

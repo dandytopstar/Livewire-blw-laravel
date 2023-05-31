@@ -8,8 +8,9 @@
             <img src="{{asset('assets/quiz/slider/final_image.jpg')}}" alt="" class="img-fluid">
         </div>
 
-        <div id="myProgress">
-            <div id="myBar">100%</div>
+        <div id="myProgress relative">
+            <div id="myBar"></div>
+            <p id="progressNum" class="absolute" style="bottom:0"></p>
         </div>
 
     </div>
