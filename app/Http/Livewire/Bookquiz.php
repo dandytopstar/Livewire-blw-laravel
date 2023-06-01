@@ -95,7 +95,7 @@ class Bookquiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We are now generating APP Profile Just For Your Book',
+                    'text' => 'We are now generating First Part of Your Book',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
@@ -394,7 +394,7 @@ class Bookquiz extends Component
 
             '25' => [
                 'question_key' => 'end',
-                'question' => 'We are now generating Your Final Part of Your Book!',
+                'question' => 'We are now generating Final Part of Your Book!',
                 'answers' => [
                     '1' => [
                         'percent' => '30',
@@ -426,7 +426,7 @@ class Bookquiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 23 ;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -662,7 +662,7 @@ class Bookquiz extends Component
 
     public function setCurrentSlider(int $value)
     {
-         usleep(400000);
+         usleep(300000);
         $this->currentQuestion['selectedSlider'] = $value;
 
         $this->dispatchBrowserEvent('slider-selected', [

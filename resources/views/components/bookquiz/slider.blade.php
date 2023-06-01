@@ -12,7 +12,7 @@
                     </div>
                     
                 @elseif($currentQuestion['selectedSlider'] < $key)
-                    <div class="slide-image {{'slide-image'.$key-$currentQuestion['selectedSlider']}}">
+                    <div class="slide-image .unselected-slide-image {{'slide-image'.$key-$currentQuestion['selectedSlider']}}">
                         <img src="{{asset($answer['image'])}}" alt="" class="img-fluid">
                     </div>
                 @endif
@@ -54,20 +54,23 @@
 
 <script>
         window.undecidedAnimation = () =>{
-            $( ".selected-slide-image" ).fadeOut(300);
+            $( ".selected-slide-image" ).fadeOut(400);
         };
 
         window.yesAnimation=()=> {
             $( ".selected-slide-image" ).animate({
                 right:"-400px",
                 opacity:"0",
-            },300);
+            },400);
         };
 
         window.noAnimation=()=> {
             $(".selected-slide-image").animate({
                 left:"-400px",
                 opacity:"0",
-            },300);
+            },400);
         };
+        let vibrateAnimation = ()=>{
+            
+        }
 </script>

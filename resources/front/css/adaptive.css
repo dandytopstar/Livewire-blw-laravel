@@ -936,6 +936,15 @@
     .quiz-body .quiz-card .container img {
         width: 180px;
     }
+
+    .quiz-body .quiz-card .container .row img {
+        width: 100px;
+    }
+
+    .quiz-body .quiz-card .container .quiz-arrow {
+        font-size: 17px;
+        margin-left: 15px;
+    }
     .quiz-card .card-body .boy-girl {
         flex-direction: column;
     }
@@ -966,14 +975,13 @@
     .header.book {
         margin: 0px;
     }
-    .book .quiz-card .row > * {
+    .book .quiz-body .row > * {
         padding: 0px;
     }
-    .book .quiz-card .row .quiz-arrow {
-        font-size: 18px;
-    }
 
+    
     .quiz-body .quiz-card .row .question-number-counter {
+        margin-right: 15px;
         font-size: 14px;
     }
 

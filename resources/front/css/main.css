@@ -1222,14 +1222,16 @@ section.program {
     border-radius: 10px;
     background-color: var(--light-green-color);
     color: black;
+    text-decoration: none;
 }
 
-.btn-gender-unsel:hover, .btn-gender-sel {
+.btn-gender-unsel:hover, .btn-gender-sel ,.btn-gender-unsel:active {
     padding: 12px 30px;
     border: 0;
     border-radius: 10px;
     background-color: var(--acent-color-green);
     color: white;
+    text-decoration: none;
 }
 
 .circle-background {

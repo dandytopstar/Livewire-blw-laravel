@@ -256,6 +256,20 @@
     color: var(--acent-color-green);
 }
 
+.quiz-body .card-title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.quiz-body .quiz-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.benefits-body.card-body .card-title {
+    margin-bottom: 0px;
+}
+
 .quiz-btn.active {
     border: 2px solid var(--acent-color-green);
 }
@@ -470,13 +484,20 @@
 }
 
 #progressNum {
+    position: absolute;
     display: block;
     width: 100%;
-    color: var(--heavy-green);
+    color: black;
+    margin-bottom: 30px;
+    bottom: 0;
 }
 
 .sel-answers .selected-slide-image {
     top: 10px;
+}
+
+.quiz-body #myBar {
+    margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
