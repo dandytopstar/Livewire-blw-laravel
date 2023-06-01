@@ -288,5 +288,21 @@ return [
                             no knowledge. After visiting this site, I received a personalized plan, guide, and tons
                             of recipes. I couldn't imagine raising my children without this detailed plan. I am
                             extremely grateful for such a wonderful service.",
+    'summary_book_story_author_1' => 'Helen Moris, 27',
+    'summary_book_story_avatar_1' => 'assets/avatar/avatar_1.png',
+    'summary_book_story_text_1' => "The best food for my bay for this time. It made my life easier and I am really gratefull for this! Recomend for everyone!",
+    
+    'summary_book_story_author_2' => 'Jane Cooper, 24',
+    'summary_book_story_avatar_2' => 'assets/avatar/avatar_2.png',
+    'summary_book_story_text_2' => 'The best food for my bay for this time. It made my life easier and I am really gratefull for this! Recomend for everyone!',
+    
+    'summary_book_story_author_3' => 'Robert Fox, 23',
+    'summary_book_story_avatar_3' => 'assets/avatar/avatar_3.png',
+    'summary_book_story_text_3' => "The best food for my bay for this time. It made my life easier and I am really gratefull for this! Recomend for everyone!",
+
+    'summary_book_story_author_4' => 'Robert Fox, 23',
+    'summary_book_story_avatar_4' => 'assets/avatar/avatar_4.png',
+    'summary_book_story_text_4' => "The best food for my bay for this time. It made my life easier and I am really gratefull for this! Recomend for everyone!",
+                        
 
 ];

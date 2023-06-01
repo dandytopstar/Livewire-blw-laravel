@@ -1232,4 +1232,8 @@ section.program {
     color: white;
 }
 
+.circle-background {
+    background-color: var(--background-circle-green);
+    border-radius: 50%;
+}
 
