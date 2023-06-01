@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="card-body">
+    <div class="card-body benefits-body">
         <h2 class="card-title text-center question-title mt-3 mt-lg-5">{{$currentQuestion['benefits']['text']}}</h2>
 
         <div class="card-text py-4 mb-3 px-lg-4">
@@ -52,3 +52,4 @@
     </div>
 
 </div>
+

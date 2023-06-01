@@ -30,15 +30,15 @@
         @endif
 
         @if(!empty($currentQuestion['slider']))
-            <x-quiz.slider :currentQuestion="$currentQuestion" />
+            <x-bookquiz.slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['progress_slider']))
-            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
+            <x-bookquiz.progress-slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
-            <x-quiz.button-answers :currentQuestion="$currentQuestion" />
+            <x-bookquiz.button-answers :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['text']))
@@ -46,7 +46,7 @@
         @endif
 
         @if(!empty($currentQuestion['continue_button']))
-            <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
+            <x-bookquiz.continue-btn :currentQuestion="$currentQuestion" />
         @endif
 
     </x-bookquiz.card>
@@ -87,8 +87,7 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-
-            let myFunction = function() {
+            let myFunction = ()=> {
                 this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
             };
@@ -110,7 +109,6 @@
     function sliderButtons() {
 
         if(document.querySelector('#slider-component')) {
-            console.log(111);
             let no = document.querySelector('.btn-no');
             let yes = document.querySelector('.btn-yes');
             let undecided = document.querySelector('.btn-undecided');
@@ -161,8 +159,14 @@
             cardBenefits.style.display = 'block';
 
             nextBtn.addEventListener('click', () => {
-                cardBenefits.style.display = 'none';
-                card.style.display = 'block';
+                console.log("card-bemefit")
+
+                $('.benefits-body').animate({
+                    opacity:"0",
+                },1000, ()=>{
+                    cardBenefits.style.display = 'none';
+                    card.style.display = 'block';
+                })
             });
         }
     }
@@ -173,7 +177,7 @@
         }
         setTimeout(() => {
             document.querySelector('#finish-quiz').click()
-        }, 5000)
+        }, 3500)
 
         var i = 0;
         if (i == 0) {
@@ -188,7 +192,7 @@
                 } else {
                     width++;
                     elem.style.width = width + "%";
-                    elem.innerHTML = width + "%";
+                    document.querySelector('#progressNum').innerHTML = width + "%";
                 }
             }
         }
