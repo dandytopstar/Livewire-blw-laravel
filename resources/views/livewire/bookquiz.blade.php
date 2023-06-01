@@ -188,6 +188,7 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
+                    document.querySelector('#progressNum').innerHTML = "100%";
                     i = 0;
                 } else {
                     width++;

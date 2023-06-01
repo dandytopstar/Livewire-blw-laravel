@@ -470,10 +470,9 @@
 }
 
 #progressNum {
-    margin: 0;
-    bottom: 0;
     display: block;
     width: 100%;
+    color: var(--heavy-green);
 }
 
 .sel-answers .selected-slide-image {

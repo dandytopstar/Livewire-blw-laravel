@@ -10,7 +10,7 @@
 
         <div id="myProgress relative">
             <div id="myBar"></div>
-            <p id="progressNum" class="absolute" style="bottom:0"></p>
+            <p id="progressNum" class="mb-20" style="bottom:0"></p>
         </div>
 
     </div>
