@@ -1,9 +1,9 @@
-<header class="header summary">
+<header class="header summary book-summary-header">
     <div class="container">
         <div class="summary-header-logo" style="flex-wrap: wrap;">
             <img src="{{asset('assets/logo/main-logo.png')}}" alt="" class="desktop-logo">
             <div>
-                <img class="adaptive" src="{{asset('assets/logo/logo-mobile-landing-only.png')}}" alt="">
+                <img class="adaptive" src="{{asset('assets/logo/main-logo.png')}}" alt="">
             </div>
 
             <div class="summary-header-btn">

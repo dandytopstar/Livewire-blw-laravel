@@ -463,11 +463,11 @@
     width: 440px;
 }
 
-.book-benefit .blw-b-block.block-7 {
+.book-benefit-normal .blw-b-block.block-7 {
     left: 74% !important;
 }
 
-.book-benefit .blw-b-block.block-10 {
+.book-benefit-normal .blw-b-block.block-10 {
     left: 32% !important;
 }
 
@@ -479,7 +479,38 @@
     width: 650px;
     max-width: 650px;
 }
+
+.meal-book .mp-two-colum .mp-book-block {
+    display: none;
+}
+
+.book-sub-title{
+    display: none;
+}
+
+.book-summary-header .summary-header-logo {
+    align-items: center;
+}
+#blw-benefits-adaptive.book-benefits {
+    background-color: #E6F8F4;
+ }
+
+.meal-book .mp-something-more .mp-book-block .mp-block-item img:last-child {
+    margin-left: auto;
+}
+
 @media (max-width: 1265px) {
+    #blw-benefits-adaptive.book-benefits {
+        padding-top: 20px;
+     }
+
+    .circle-background {
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
     .mp-blocks{
         flex-direction: column;
         align-items: unset;
@@ -503,6 +534,10 @@
 }
 
 @media (max-width: 1092px) {
+
+    .what-else {
+        margin-top: 20px !important;
+    }
 
     #blw-benefits {
         display: none;
@@ -592,6 +627,93 @@
 }
 
 @media (max-width: 768px) {
+    .book-summary {
+        margin-top: 20px;
+    }
+    .book-summary .container .bg-image-absolute {
+        width: 320px;
+    }
+
+    .book-summary .container .bg-image-absolute img {
+        width: 320px;
+    }
+
+
+    .book-mp .left-img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .book-mp .left-img img {
+        width: 340px;
+        height: 350px;
+    }
+
+    .consult .img-box {
+        width: 350px;
+    }
+    
+    .consult .img-box img {
+        width: 350px;
+    }
+
+    .what-else {
+        margin-top: 20px !important;
+    }
+
+    .meal-book .section-title.book-sub-title {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .book-sub-title{
+        display: block;
+    }
+
+    .book-summary-header.summary img.adaptive {
+        display: block;
+        width: 145px;
+    }
+
+    .meal-book .mp-two-colum .mp-last-block  {
+        display: none;
+    }
+
+    .meal-book .section-title {
+        display: none;
+    }
+
+    .book-summary-header .summary-header-logo {
+        align-items: center;
+    }
+
+    .meal-book .mp-two-colum .mp-book-block {
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 6px;
+        margin: 0 20px;
+    }
+
+    .meal-book .mp-two-colum .mp-book-block .mp-block-item img {
+        margin-left: 0px;
+    }
+
+    .meal-book .mp-two-colum .mp-book-block .mp-block-item{
+        box-shadow: none;
+    }
+
+    .meal-book .mp-something-more .mp-book-block  .mp-block-item{
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .meal-book .mp-first-block-img {
+        display: block;
+    }
 
     header.summary img {
         display: none;
@@ -768,5 +890,83 @@
 
     .au-slide-text {
         text-align: start;
+    }
+}
+
+@media (max-width: 375px) {
+    .book-summary-header.summary img.adaptive {
+        display: block;
+        width: 100px;
+    }
+    .book-summary-header .summary-header-btn a{
+        font-size: 10px;
+        padding: 3px 4px;
+    }
+
+    .book-summary .container .bg-image-absolute {
+        width: 250px;
+    }
+    .book-summary .container .bg-image-absolute img {
+        width: 250px;
+    }
+    .what-will .what-will-items .whatwill-block .ww-item-content{
+        width: 226px;
+        height: 248.62px;
+        left: calc(50% - 225px/2);
+    }
+    .what-will .what-will-items .whatwill-block img {
+        width: 207px !important;
+        height: 158px !important;
+    }
+    .what-will .what-will-items .whatwill-block .ww-item-content .item-title{
+        width: 100%;
+    }
+    .what-else .what-will-item.block-4 .ww-item-content img {
+        width: 220px;
+    }
+    .what-else .what-will-item .item-title {
+        width: 230px;
+    }
+    .book-mp .left-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .book-mp .left-img img {
+        width: 250px;
+        height: 260px;
+    }
+    .book-mp .mp-block-item .mp-text {
+        font-size: 12px;
+    }
+
+    .even-more .em-text {
+        font-size: 13px;
+    }
+
+    .book-benefits .blw-b-blocks .container {
+        background-size: contain;
+        width: 200px;
+        height: 560px;
+    }
+    .book-benefits .blw-b-blocks{
+        height: 580px;
+    }
+    .book-benefits .blw-b-block {
+        width: 96px;
+        font-size: 10px;
+        padding: 0px 7px;
+        height: 76px;
+    }
+    .active-book .au-slide-image {
+        width: 160px;
+    }
+    .consult .img-box {
+        width: 250px;
+    }
+    
+    .consult .img-box img {
+        width: 250px;
+        max-width: 250px;
     }
 }
