@@ -54,14 +54,8 @@
 
     <script>
 
-        let slideAnimation=()=> { anime({
-        targets: '.slide-view .slide-image img',
-        translateX: 10,
-        delay: function(el, i) { return i * 100; },
-        })}
         var undecidedAnimation = ()=>{
             $( ".selected-slide-image" ).fadeOut( "slow");
-            slideAnimation()
         };
 
         let yesAnimation=()=> {
@@ -69,13 +63,11 @@
                 right:"-=400px",
                 opacity:"0"
             });
-            slideAnimation()
         };
         let noAnimation=()=> {
             $( ".selected-slide-image" ).animate({
                 left:"-=400px",
                 opacity:"0"
             },300)
-            slideAnimation()
         }
     </script>
