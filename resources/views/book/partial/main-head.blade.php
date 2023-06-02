@@ -22,6 +22,7 @@
     <!-- End Google Tag Manager -->
 
     <!-- Hotjar Tracking Code for my site -->
+    <script src="{{asset('js/anime.min.js')}}"></script>
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};

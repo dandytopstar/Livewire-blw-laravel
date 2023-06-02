@@ -1,10 +1,10 @@
 <div class="d-flex w-100">
-  <button class="font-grey-16-700 btn-gender-unsel mb-20" id='g_boy' onclick="selectGender(this)">
+  <a href="{{route('bookquiz')}}" type="button" class="font-grey-16-700 btn-gender-unsel mb-20" id='g_boy' onclick="selectGender(this)">
     {{__("front.gender_boy")}}
-  </button>
-  <button class="font-grey-16-700 btn-gender-unsel mb-20 ml-20" id='g_girl' onclick="selectGender(this)">
+  </a>
+  <a  href="{{route('bookquiz')}}" type="button" class="font-grey-16-700 btn-gender-unsel mb-20 ml-20" id='g_girl' onclick="selectGender(this)">
     {{__("front.gender_girl")}}
-  </button>
+   </a>
 </div>
 
 @push('custom-scripts')

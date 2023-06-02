@@ -431,6 +431,54 @@
     display: none;
 }
 
+.dot-line {
+    position: absolute;
+    top: -120px;
+    left: calc(-181px + 55%);
+    height: 600px;
+    z-index: -1;
+}
+.whatwill-block img {
+    width: 250px !important;
+    height:208px !important;
+}
+.what-else {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+.summary-readmore, .summary-readmore:hover, .summary-readmore:active  {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    color: var(--acent-color-green);
+}
+.mp-blocks .left-img {
+    width: 400px;
+}
+.mp-blocks .left-img img:first-child {
+    width: 440px;
+}
+
+.book-benefit .blw-b-block.block-7 {
+    left: 74% !important;
+}
+
+.book-benefit .blw-b-block.block-10 {
+    left: 32% !important;
+}
+
+.consult .img-box {
+    width: 650px;
+}
+
+.consult .img-box img {
+    width: 650px;
+    max-width: 650px;
+}
 @media (max-width: 1265px) {
     .mp-blocks{
         flex-direction: column;
