@@ -8,14 +8,13 @@
     </button>
 </div>
 
-@push('custom-scripts')
+
+
 <script>
-    var nextAnimation=()=>{
+    window.nextAnimation=function () {
         $(".card-body").animate({
             opacity:"0",
         },300)
     }
 </script>
 
-    
-@endpush

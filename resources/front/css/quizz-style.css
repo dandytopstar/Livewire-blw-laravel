@@ -425,7 +425,7 @@
     right: -35px;
     transform: scale(0.9);
     z-index: 9;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .slide-view .slide-image:nth-child(2) p {
