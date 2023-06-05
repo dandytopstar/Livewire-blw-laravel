@@ -434,8 +434,8 @@
 .dot-line {
     position: absolute;
     top: -120px;
-    left: calc(-181px + 55%);
-    height: 600px;
+    left: calc(-230px + 55%);
+    height: 640px;
     z-index: -1;
 }
 .whatwill-block img {
@@ -511,7 +511,7 @@
         margin-bottom: 30px;
     }
     .dot-line {
-        height: 580px;
+        height: 630px;
     }
     
     .mp-blocks{
@@ -537,6 +537,9 @@
 }
 
 @media (max-width: 1092px) {
+    .meal-book .mp-blocks .left-img {
+
+    }
 
     .what-else {
         margin-top: 20px !important;
@@ -911,6 +914,7 @@
     }
     .book-summary .container .bg-image-absolute img {
         width: 250px;
+        height: 250px;
     }
     .what-will .what-will-items .whatwill-block .ww-item-content{
         width: 226px;

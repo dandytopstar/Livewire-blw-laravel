@@ -21,7 +21,7 @@
                     type="button"
 
                     @if(empty($currentQuestion['multiple']))
-                    onclick="nextAnimation()" 
+                    onclick="nextAnimation()"
                     @endif
             >
                 {{$answer['text']}}
@@ -36,8 +36,9 @@
     window.nextAnimation=()=>{
         $(".card-body").animate({
             opacity:"0",
-        },300)
+        },100)
     }
+
 </script>
 
     

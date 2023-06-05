@@ -290,6 +290,11 @@ section.main-page .bg-image-slide {
     min-height:calc(100vh - 226px)
 }
 
+.plan-img {
+    width: 90px;
+    margin-right: 50px;
+}
+
 .bg-scroll-main {
     background-image: url("/assets/main/web-slide.png");
     background-size: cover;

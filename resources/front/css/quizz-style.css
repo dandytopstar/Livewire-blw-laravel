@@ -499,6 +499,13 @@
 .quiz-body #myBar {
     margin-bottom: 30px;
 }
+.quiz-body .card-main .gap-4 .quiz-btn:last-child {
+    margin-bottom: 60px;
+}
+
+.quiz-body .card-main .continue-btn {
+    margin-bottom: 30px;
+}
 
 @media (max-width: 576px) {
     .slide-view {

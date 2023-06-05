@@ -45,10 +45,10 @@
 
           @foreach($personalPlans as $key => $plan)
 
-          <div class="plan personal-plan @if($key == 1) active @endif" id="plan-id-{{$plan->id}}"
+          <div class="plan personal-plan d-flex @if($key == 1) active @endif" id="plan-id-{{$plan->id}}"
             data-id="{{$plan->id}}">
-
-            <div class="row-inf">
+            <img src="{{asset('assets/icons/plan-icon.png')}}" width="200px"  class="plan-img"/>
+             <div class="row-inf">
               <div>
                 <p class="title font-accent-18-700 text-start">{!! $plan->name !!}</p>
               </div>
@@ -804,7 +804,7 @@
         <p class="font-grey-color-400">
           {{__('front.our_promise_text')}}
         </p>
-        <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+        <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
           {{__('front.get_your_plan')}}
         </a>
       </div>
