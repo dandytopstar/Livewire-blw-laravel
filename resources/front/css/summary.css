@@ -506,9 +506,12 @@
 
     .circle-background {
         margin: auto;
-        width: 400px;
-        height: 400px;
+        width: 600px;
+        height: 500px;
         margin-bottom: 30px;
+    }
+    .dot-line {
+        height: 580px;
     }
     
     .mp-blocks{

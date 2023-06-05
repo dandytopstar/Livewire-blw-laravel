@@ -49,4 +49,15 @@ class ClientController extends Controller
 
         return response()->redirectToRoute('personal-plan', $code);
     }
+
+    public function bookRegistration(Request $request, $code)
+    {
+        $client = Client::query()->where('code', $code)->first();
+
+        if(!empty($client->email)) {
+            return response()->redirectToRoute('bookpersonal-plan', $code);
+        }
+
+        return view('book.registration', compact('code'));
+    }
 }

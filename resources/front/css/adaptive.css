@@ -3,6 +3,10 @@
 
 @media (max-width: 1200px) {
 
+    .plan-img-box {
+        display: none;
+    }
+
     .book .container {
         padding-right: 30px;
         padding-left: 30px;

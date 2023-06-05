@@ -18,6 +18,36 @@
     background-color: transparent;
 }
 
+.book-plan .container .content-wrapper .plan_includes{
+    width: 30%;
+}
+
+.plan-img-box {
+    width: 228px;
+    height: 344px;
+}
+.plan-check-box {
+    width: 50%;
+    margin: auto;
+}
+.plan-check-box .checkbox-box {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.book-plan .payment-icons {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.book-plan .icon-boxs {
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+ align-items: center;
+}
 @media (max-width: 576px) {
     .payment-logo {
         display: none;

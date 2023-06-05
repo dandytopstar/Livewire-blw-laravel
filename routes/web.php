@@ -80,6 +80,9 @@ Route::prefix('book')->group(function(){
     Route::view('/', 'book.main')->name('bookmain');
     Route::view('quiz', 'book.quiz')->name('bookquiz');
     Route::view('summary/{code}', 'book.summary')->name('booksummary');
+    Route::get('personal-plan/{code}', [PersonalPlanController::class, 'bookindex'])->name('bookpersonal-plan');
+    Route::get('registration/{code}', [ClientController::class, 'bookRegistration'])->name('bookregistration');
+
 });
 
 Route::fallback(function () {

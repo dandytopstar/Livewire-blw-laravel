@@ -54,17 +54,17 @@
 
     <script>
 
-        var undecidedAnimation = ()=>{
+        window.undecidedAnimation = ()=>{
             $( ".selected-slide-image" ).fadeOut( "slow");
         };
 
-        let yesAnimation=()=> {
+        window.yesAnimation=()=> {
             $( ".selected-slide-image" ).animate({
                 right:"-=400px",
                 opacity:"0"
-            });
+            }),300
         };
-        let noAnimation=()=> {
+        window.noAnimation=()=> {
             $( ".selected-slide-image" ).animate({
                 left:"-=400px",
                 opacity:"0"
