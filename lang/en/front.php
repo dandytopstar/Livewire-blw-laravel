@@ -13,6 +13,7 @@ return [
     'get_your_plan' => 'Get Your Plan',
     'get_your_book' => "Get Your Book",
     'back_to_main_screen' => 'Back to Main Screen',
+    "get_my_book" =>"Get My Book",
 
     //Top Menu
     'faq' => 'FAQ',
@@ -281,7 +282,6 @@ return [
                             several books on this topic and consulted with other mothers, but I did not get the
                             answers I wanted. However, with this personalized plan, everything was very clearly
                             shown from A to Z. Now I can say that Baby-Led Weaning is easy!',
-
     'summary_user_story_author_3' => 'Kelli Harper, 30',
     'summary_user_story_avatar_3' => 'assets/avatar/avatar_kelli2.jpg',
     'summary_user_story_text_3' => "I have always wanted to use Baby-Led Weaning for my children, but I had absolutely
@@ -304,5 +304,15 @@ return [
     'summary_book_story_avatar_4' => 'assets/avatar/avatar_4.png',
     'summary_book_story_text_4' => "The best food for my bay for this time. It made my life easier and I am really gratefull for this! Recomend for everyone!",
                         
+    // book payment personalized plan
+    "Personalized_BLW_Book_Paperback"=> "Personalized BLW Book Paperback",
+    "Personalized_BLW_Book_Paperback_content"=> "The E-Book is included in the price",
+    "Personalized_BLW_Book_Paperback_price_past"=> "95.24",
+    "Personalized_BLW_Book_Paperback_price_now"=> "82",
+    "E_Book"=> "E-Book",
+    "E_Book_content"=> "Price without assistant app or paperback book",
+    "E_Book_past"=> "55.24",
+    "E_Book_now"=> "31",
+    
 
 ];

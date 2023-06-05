@@ -87,7 +87,7 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-            let myFunction = ()=> {
+            let myFunction = function () {
                 this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
             };
@@ -159,8 +159,6 @@
             cardBenefits.style.display = 'block';
 
             nextBtn.addEventListener('click', () => {
-                console.log("card-bemefit")
-
                 $('.benefits-body').animate({
                     opacity:"0",
                 },1000, ()=>{

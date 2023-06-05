@@ -7,7 +7,7 @@
             </div>
 
             <div class="summary-header-btn">
-                <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre btn-adaptive">
+                <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre btn-adaptive">
                     {{__('front.get_your_plan')}}
                 </a>
             </div>

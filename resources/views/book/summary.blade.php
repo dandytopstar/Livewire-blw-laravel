@@ -21,7 +21,7 @@
 
                 </div>
 
-                <a href="{{route('registration', $code)}}" class="text-decoration-none">
+                <a href="{{route('bookregistration', $code)}}" class="text-decoration-none">
                     <button class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_book')}}
                     </button>

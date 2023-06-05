@@ -30,4 +30,12 @@ class PersonalPlanController extends Controller
 
         return view('personal-plan', $clientData);
     }
+
+    public function bookindex(Request $request, $code): Factory|View|Application
+    {
+        $clientData['personalPlans'] = PersonalPlan::query()->get();
+        $clientData['code'] = $code;
+
+        return view('book.personal-plan', $clientData);
+    }
 }
