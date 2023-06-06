@@ -29,7 +29,7 @@
             </div>
 
             <div class="img-box bg-image-absolute ">
-                <img src="{{asset('assets/summary/brief_1.png')}}"  height="600px">
+                <img src="{{asset('assets/book/summary/book-first-img.jpg')}}"  height="600px">
                 <img src="{{asset('assets/summary/dot-line.svg')}}" class="dot-line" alt="dot_line">
             </div>
 
@@ -40,7 +40,7 @@
     <section class="summary-conclusion adaptive book-summary">
         <div class="container">
             <div class="img-box bg-image-absolute mb-3">
-                <img src="{{asset('assets/summary/brief_1.png')}}" height="300px" >
+                <img src="{{asset('assets/book/summary/book-first-img.jpg')}}" height="300px" >
             </div>
 
             <div class="content-box">
