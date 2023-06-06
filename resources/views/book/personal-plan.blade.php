@@ -6,7 +6,7 @@
 
 <x-count-down-timer />
 
-<section class="stepper">
+<section class="stepper  book-stepper">
   <div class="container">
     <div class="stepper-box">
       <div class="point-item-box">
@@ -47,9 +47,10 @@
 
           <div class="plan personal-plan d-flex @if($key == 1) active @endif" id="plan-id-{{$plan->id}}"
             data-id="{{$plan->id}}">
-            <img src="{{asset('assets/icons/plan-icon.png')}}" width="120px"  />
+            <img src="{{asset('assets/icons/plan-icon.png')}}" width="120px" class="book-plan-logo" />
             <div class="w-100">
             <div class="row-inf">
+              <img src="{{asset('assets/icons/plan-icon.png')}}" width="80px" class= "book-plan-logo-adaptive" />
               <div>
                 <p class="title font-accent-18-700 text-start">{!! $plan->name !!}</p>
               </div>
@@ -82,12 +83,11 @@
       </div>
       <div class="plan_includes">
         <div class="title-box">
-          <!-- <img src="{{asset('assets/icons/plan-icon.png')}}" width="200px"  /> -->
           <img src="{{asset('assets/payment/p-plan.png')}}" width="250px"  />
         </div>
       </div>    
     </div>
-    <div class="w-50 m-auto">
+    <div class="m-auto book-checkbox">
           <div class="checkbox-box mt-md-5 mb-md-4">
             <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="" checked>
             <label class="font-grey-color-400" for="plan-checkbox">

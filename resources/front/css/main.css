@@ -1254,3 +1254,6 @@ section.program {
     width: 400px;
     height: 400px;
 }
+.book-plan-logo-adaptive {
+    display: none;
+}

@@ -311,6 +311,10 @@ section.main-page .bg-image-slide {
     height: 100%;
 }
 
+.book-plan .book-checkbox {
+    width: 50%;
+}
+
 @keyframes scroll-down-up {
     0% {
         background-position: 0 0;

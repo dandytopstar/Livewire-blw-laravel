@@ -665,6 +665,17 @@
 }
 
 @media (max-width: 768px) {
+
+    .book-plan-logo-adaptive {
+        display: block;
+    }
+    .book-plan-logo {
+        display: none;
+    }
+    
+    .book-plan .checkbox-box {
+        margin-bottom: 20px;
+    }
     section.main-page .bg-image-slide {
         height: calc(100vh - 650px);
         width: calc(100% + 140px);
@@ -813,6 +824,27 @@
 }
 
 @media (max-width: 576px) {
+
+    .book-plan-logo-adaptive {
+        width: 50px;
+    }
+
+    .book-plan .content-wrapper .plans-box .personal-plan .title {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .book-plan .book-checkbox {
+        width: 80%;
+    }
+
+    .payment-adaptive-logo.book-plan {
+        width: 200px;
+    }
+
+    .book-plan .payment-icons {
+        width: 80% !important;
+    }
 
     .quiz-body {
         height: calc(100vh - 90px);
