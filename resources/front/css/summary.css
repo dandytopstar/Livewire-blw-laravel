@@ -91,7 +91,7 @@
 }
 
 .what-will-item.block-2 img {
-    width: 324px;
+    width: 255px;
 }
 
 .what-will-item.block-3 img {
@@ -454,6 +454,12 @@
     width: 250px !important;
     height: 208px !important;
 }
+
+.whatwill-block-1 img {
+    width: 242px;
+    height: 157px;
+}
+
 .what-else {
     padding-top: 0 !important;
     margin-top: 0 !important;
