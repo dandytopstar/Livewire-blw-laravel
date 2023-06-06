@@ -13,7 +13,7 @@
                         <h2 class="font-grey-32-700">Please Enter Your Email</h2>
                     </div>
                     <div class="action-box full-width">
-                        <form action="{{route('create-client')}}" method="post">
+                        <form action="{{route('bookcreate-client')}}" method="post">
                             @csrf
                             <div class="form-container d-flex flex-column align-items-center">
                                 <div class="form-row font-grey-color-400 w-100 d-flex justify-content-center">

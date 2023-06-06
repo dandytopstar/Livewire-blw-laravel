@@ -88,8 +88,14 @@
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
             let myFunction = function () {
-                this.style.backgroundColor = '#00bd90';
+                if(this.style.backgroundColor == "rgb(0, 189, 144)" ){
+                    this.style.backgroundColor = "#fff"
+                    this.style.color = "#000"
+                } else {
+                    this.style.backgroundColor = '#00bd90';
                 this.style.color = '#fff';
+                }
+                
             };
 
             Array.from(elements).forEach(function(element) {
@@ -161,7 +167,7 @@
             nextBtn.addEventListener('click', () => {
                 $('.benefits-body').animate({
                     opacity:"0",
-                },1000, ()=>{
+                },100, ()=>{
                     cardBenefits.style.display = 'none';
                     card.style.display = 'block';
                 })

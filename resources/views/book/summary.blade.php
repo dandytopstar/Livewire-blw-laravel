@@ -13,10 +13,10 @@
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">
-                        <span class="font-accent-40-700">Congratulations!</span> You Have Created Your Personalized BLW Book!
+                        <span class="font-accent-40-700">Congratulations!</span> You Have Created Your personalized BLW Book!
                     </p>
                     <p class="font-grey-color-400">
-                        By analyzing your quiz results, we've crafted personalized meal plans and products to support your baby-led weaning journey.
+                        By analyzing your quiz results, we've crafted personalized book and other products to support your baby-led weaning journey.
                     </p>
 
                 </div>
@@ -28,8 +28,8 @@
                 </a>
             </div>
 
-            <div class="img-box bg-image-absolute circle-background">
-                <img src="{{asset('assets/summary/brief_1.png')}}">
+            <div class="img-box bg-image-absolute ">
+                <img src="{{asset('assets/summary/brief_1.png')}}"  height="600px">
                 <img src="{{asset('assets/summary/dot-line.svg')}}" class="dot-line" alt="dot_line">
             </div>
 
@@ -46,17 +46,17 @@
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">
-                        <span style="color:#00bd90;">Congratulations!</span> Your Baby-Led Weaning meal plan has been designed!
+                        <span style="color:#00bd90;">Congratulations!</span> You Have Created Your personalized BLW Book!
                     </p>
 
-                    <a href="{{route('registration', $code)}}" class="text-decoration-none">
+                    <a href="{{route('bookregistration', $code)}}" class="text-decoration-none">
                         <button class="btn font-white-600 btn-green-squre">
                             {{__('front.get_your_plan')}}
                         </button>
                     </a>
 
                     <p class="font-grey-color-400">
-                        By analyzing your quiz results, we've crafted personalized meal plans and products to support your baby-led weaning journey.
+                        By analyzing your quiz results, we've crafted personalized book and products to support your baby-led weaning journey.
                     </p>
                 </div>
             </div>
@@ -744,7 +744,7 @@
                     <p class="font-grey-color-400">
                         {{__('front.our_promise_text')}}
                     </p>
-                    <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>

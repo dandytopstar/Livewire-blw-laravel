@@ -14,7 +14,7 @@
     window.nextAnimation=function () {
         $(".card-body").animate({
             opacity:"0",
-        },300)
+        },100)
     }
 </script>
 
