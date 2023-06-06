@@ -53,6 +53,7 @@
 
 </div>
 
+@push('custom-scripts')
 
 <script>
 
@@ -87,17 +88,16 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-            let myFunction = function () {
+            var myFunction = function () {
+                console.log("click")
                 if(this.style.backgroundColor == "rgb(0, 189, 144)" ){
                     this.style.backgroundColor = "#fff"
                     this.style.color = "#000"
                 } else {
                     this.style.backgroundColor = '#00bd90';
                     this.style.color = '#fff';
-                }
-                
+                }                
             };
-
             Array.from(elements).forEach(function(element) {
                 element.addEventListener('click', myFunction);
             });
@@ -205,3 +205,6 @@
     }
 
 </script>
+
+    
+@endpush
