@@ -60,4 +60,23 @@ class ClientController extends Controller
 
         return view('book.registration', compact('code'));
     }
+
+    public function bookcreateClient(Request $request)
+    {
+        $code = $request->get('code');
+        $email =$request->get('email');
+        $ad_name = session('ad_name');
+
+        $client = Client::query()->where('code', $code)->first();
+
+        if($client && $email) {
+            $client->email = $email;
+            $client->ad_name = $ad_name;
+            $client->save();
+        }
+
+        $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_QUIZ->value);
+
+        return response()->redirectToRoute('bookpersonal-plan', $code);
+    }
 }

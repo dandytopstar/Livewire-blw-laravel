@@ -49,7 +49,7 @@
                         <span style="color:#00bd90;">Congratulations!</span> You Have Created Your personalized BLW Book!
                     </p>
 
-                    <a href="{{route('registration', $code)}}" class="text-decoration-none">
+                    <a href="{{route('bookregistration', $code)}}" class="text-decoration-none">
                         <button class="btn font-white-600 btn-green-squre">
                             {{__('front.get_your_plan')}}
                         </button>
@@ -744,7 +744,7 @@
                     <p class="font-grey-color-400">
                         {{__('front.our_promise_text')}}
                     </p>
-                    <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+                    <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
                         {{__('front.get_your_plan')}}
                     </a>
                 </div>

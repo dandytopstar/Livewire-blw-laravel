@@ -3,6 +3,10 @@
 
 @media (max-width: 1200px) {
 
+    .book-plan .plan_includes {
+        display:none;
+    }
+
     .plan-img-box {
         display: none;
     }

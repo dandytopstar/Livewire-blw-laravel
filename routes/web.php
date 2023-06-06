@@ -82,7 +82,7 @@ Route::prefix('book')->group(function(){
     Route::view('summary/{code}', 'book.summary')->name('booksummary');
     Route::get('personal-plan/{code}', [PersonalPlanController::class, 'bookindex'])->name('bookpersonal-plan');
     Route::get('registration/{code}', [ClientController::class, 'bookRegistration'])->name('bookregistration');
-    Route::post('create-client', [ClientController::class, 'createClient'])->name('bookcreate-client');
+    Route::post('create-client', [ClientController::class, 'bookcreateClient'])->name('bookcreate-client');
 
 });
 

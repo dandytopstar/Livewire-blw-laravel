@@ -47,8 +47,9 @@
 
           <div class="plan personal-plan d-flex @if($key == 1) active @endif" id="plan-id-{{$plan->id}}"
             data-id="{{$plan->id}}">
-            <img src="{{asset('assets/icons/plan-icon.png')}}" width="200px"  class="plan-img"/>
-             <div class="row-inf">
+            <img src="{{asset('assets/icons/plan-icon.png')}}" width="120px"  />
+            <div class="w-100">
+            <div class="row-inf">
               <div>
                 <p class="title font-accent-18-700 text-start">{!! $plan->name !!}</p>
               </div>
@@ -65,7 +66,7 @@
               <p class="font-grey-500">{{$plan->billed_period}}</p>
               <p class="font-grey-color-400">{{$plan->payment_period}}</p>
             </div>
-
+            </div>
             @if($plan->discount)
             <div class="discount">
               SPECIAL OFFER - SAVE {{$plan->discount}}%
@@ -81,12 +82,13 @@
       </div>
       <div class="plan_includes">
         <div class="title-box">
-        <img src="{{asset('assets/payment/p-plan.png')}}" class="plan-img-box" alt="">
+          <!-- <img src="{{asset('assets/icons/plan-icon.png')}}" width="200px"  /> -->
+          <img src="{{asset('assets/payment/p-plan.png')}}" width="250px"  />
         </div>
       </div>    
     </div>
-    <div class = "plan-check-box">
-          <div class="checkbox-box">
+    <div class="w-50 m-auto">
+          <div class="checkbox-box mt-md-5 mb-md-4">
             <input name="agreemnt1" id="plan-checkbox" class="styled-checkbox" type="checkbox" value="" checked>
             <label class="font-grey-color-400" for="plan-checkbox">
               <div class="custom-checkbox"></div>
@@ -101,7 +103,7 @@
             {{__('front.get_my_book')}}
           </button>
     </div>
-      <div class = "payment-icons d-flex">
+    <div class = "payment-icons d-flex">
         <div class="w-100 icon-boxs">
           <div><img src="{{asset('assets/payment/p-carshipping.png')}}" alt=""> <p>Free<br> shipping</p></div>
           <div><img src="{{asset('assets/payment/p-LockKey.png')}}" alt=""> <p>Secure<br> transaction</p></div>
@@ -112,10 +114,6 @@
           <div><img src="{{asset('assets/payment/p-Maestro.png')}}" alt=""></div>
           <div><img src="{{asset('assets/payment/p-PayPal.png')}}" alt=""></div>
         </div>
-        <div>
-
-        </div>
-            
       </div>
   </div>
 </section>
@@ -804,7 +802,7 @@
         <p class="font-grey-color-400">
           {{__('front.our_promise_text')}}
         </p>
-        <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+        <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
           {{__('front.get_your_plan')}}
         </a>
       </div>
