@@ -178,11 +178,11 @@
 
 </section>
 
-<section id="meal-plan-features" class="big-section text-center meal-book">
+<section id="meal-plan-features" class="big-section text-center meal-book book-personal-plan-mp">
 
   <h2 class="section-title">Meal Plan Features</h2>
 
-  <div class="container mp-blocks book-mp">
+  <div class="container mp-blocks book-mp ">
 
     <div class="mp-first-block circle-background left-img">
       <img class='mp-first-block-img' src="{{asset('assets/summary/mp/mp1.png')}}" alt="">
@@ -322,6 +322,7 @@
       </div>
 
     </div>
+    <div class="w-100 book-personal-plan">
     <div>
       <h2 class="book-sub-title  section-title">Something more</h2>
     </div>
@@ -385,12 +386,12 @@
 
       </div>
     </div>
-
+    </div>
   </div>
 
 </section>
 
-<section id="even-more" class="small-section text-center even-more">
+<section id="even-more" class="small-section text-center even-more book-even-more">
 
   <h2 class="section-title">And Even More</h2>
 
@@ -445,365 +446,89 @@
 
 </section>
 
-<section id="blw-benefits" class="big-section text-center book-benefit-normal">
+<section id="blw-benefits-adaptive" class="big-section text-center book-benefits personal-plan-benefit">
 
-  <h2 class="section-title">Baby-Led Weaning Benefits</h2>
+        <h2 class="section-title">Baby-Led Weaning Benefits</h2>
 
-  <div class="blw-b-blocks">
+        <div class="blw-b-blocks">
 
-    <div class="container">
-      <div class="blw-b-block block-1">
-        <img src="{{asset('assets/summary/blw/1.png')}}" alt="">
-        <p>Reduces Allergies</p>
-      </div>
+            <div class="container">
+                <div class="blw-b-block block-1">
+                    <img src="{{asset('assets/summary/blw/1.png')}}" alt="">
+                    <p>Reduces Allergies</p>
+                </div>
 
-      <div class="blw-b-block block-2">
-        <img src="{{asset('assets/summary/blw/2.png')}}" alt="">
-        <p>Leads to Healthier Weight</p>
-      </div>
+                <div class="blw-b-block block-2">
+                    <img src="{{asset('assets/summary/blw/2.png')}}" alt="">
+                    <p>Leads to Healthier Weight</p>
+                </div>
 
-      <div class="blw-b-block block-3">
-        <img src="{{asset('assets/summary/blw/3.png')}}" alt="">
-        <p>Reduces Dental Issues</p>
-      </div>
+                <div class="blw-b-block block-3">
+                    <img src="{{asset('assets/summary/blw/3.png')}}" alt="">
+                    <p>Reduces Dental Issues</p>
+                </div>
 
-      <div class="blw-b-block block-4">
-        <img src="{{asset('assets/summary/blw/4.png')}}" alt="">
-        <p>Promotes Brain Development</p>
-      </div>
+                <div class="blw-b-block block-4">
+                    <img src="{{asset('assets/summary/blw/4.png')}}" alt="">
+                    <p>Promotes Brain Development</p>
+                </div>
 
-      <div class="blw-b-block block-5">
-        <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
-        <p>Builds baby's confidence</p>
-      </div>
+                <div class="blw-b-block block-5">
+                    <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
+                    <p>Builds baby’s confidence</p>
+                </div>
 
-      <div class="blw-b-block block-6">
-        <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
-        <p>Saves Money on Purees</p>
-      </div>
+                <div class="blw-b-block block-6">
+                    <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
+                    <p>Saves Money on Purees</p>
+                </div>
 
-      <div class="blw-b-block block-7">
-        <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
-        <p>Saves Time in Meal Prep</p>
-      </div>
+                <div class="blw-b-block block-7">
+                    <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
+                    <p>Saves Time in Meal Prep</p>
+                </div>
 
-      <div class="blw-b-block block-8">
-        <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
-        <p>Develops Fine Motor Skills</p>
-      </div>
+                <div class="blw-b-block block-8">
+                    <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
+                    <p>Develops Fine Motor Skills</p>
+                </div>
 
-      <div class="blw-b-block block-9">
-        <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
-        <p>Reduces Choking Risk</p>
-      </div>
+                <div class="blw-b-block block-9">
+                    <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
+                    <p>Reduces Choking Risk</p>
+                </div>
 
-      <div class="blw-b-block block-10">
-        <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
-        <p>Encourages Family Bonding</p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="blw-benefits-adaptive" class="big-section text-center book-benefits">
-
-  <h2 class="section-title">Baby-Led Weaning Benefits</h2>
-
-  <div class="blw-b-blocks">
-
-    <div class="container">
-      <div class="blw-b-block block-1">
-        <img src="{{asset('assets/summary/blw/1.png')}}" alt="">
-        <p>Reduces Allergies</p>
-      </div>
-
-      <div class="blw-b-block block-2">
-        <img src="{{asset('assets/summary/blw/2.png')}}" alt="">
-        <p>Leads to Healthier Weight</p>
-      </div>
-
-      <div class="blw-b-block block-3">
-        <img src="{{asset('assets/summary/blw/3.png')}}" alt="">
-        <p>Reduces Dental Issues</p>
-      </div>
-
-      <div class="blw-b-block block-4">
-        <img src="{{asset('assets/summary/blw/4.png')}}" alt="">
-        <p>Promotes Brain Development</p>
-      </div>
-
-      <div class="blw-b-block block-5">
-        <img src="{{asset('assets/summary/blw/5.png')}}" alt="">
-        <p>Builds baby’s confidence</p>
-      </div>
-
-      <div class="blw-b-block block-6">
-        <img src="{{asset('assets/summary/blw/6.png')}}" alt="">
-        <p>Saves Money on Purees</p>
-      </div>
-
-      <div class="blw-b-block block-7">
-        <img src="{{asset('assets/summary/blw/7.png')}}" alt="">
-        <p>Saves Time in Meal Prep</p>
-      </div>
-
-      <div class="blw-b-block block-8">
-        <img src="{{asset('assets/summary/blw/8.png')}}" alt="">
-        <p>Develops Fine Motor Skills</p>
-      </div>
-
-      <div class="blw-b-block block-9">
-        <img src="{{asset('assets/summary/blw/9.png')}}" alt="">
-        <p>Reduces Choking Risk</p>
-      </div>
-
-      <div class="blw-b-block block-10">
-        <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
-        <p>Encourages Family Bonding</p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="summary-active-users" class="big-section au-slider-section">
-
-  <div class="container">
-
-    <h2 class="section-title">125 000+ active users</h2>
-    <p>
-      This is how many parents are using our plans to feed their kids. Read their stories
-    </p>
-
-    <div class="au-sliders">
-
-      {{--                       slide 1--}}
-      <div class="au-slide slide-1">
-        <img src="{{asset(__('front.summary_book_story_avatar_1'))}}" alt="" class="au-slide-image">
-        <div class="au-slide-stars">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-        </div>
-        <div class="au-slide-title">
-          {{__('front.summary_book_story_author_1')}}
-        </div>
-        <div class="au-slide-text">
-          {{__('front.summary_book_story_text_1')}}
-        </div>
-        <a href="" class="summary-readmore w-100">
-          Read more
-        </a>
-      </div>
-
-      {{--                       slide 2--}}
-      <div class="au-slide slide-2">
-        <img src="{{asset(__('front.summary_book_story_avatar_2'))}}" alt="" class="au-slide-image">
-        <div class="au-slide-stars">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-        </div>
-        <div class="au-slide-title">
-          {{__('front.summary_book_story_author_2')}}
-        </div>
-        <div class="au-slide-text">
-          {{__('front.summary_book_story_text_2')}}
-        </div>
-        <a href="" class="summary-readmore w-100">
-          Read more
-        </a>
-      </div>
-
-      {{--                       slide 3--}}
-      <div class="au-slide slide-3">
-        <img src="{{asset(__('front.summary_book_story_avatar_3'))}}" alt="" class="au-slide-image">
-        <div class="au-slide-stars">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-        </div>
-        <div class="au-slide-title">
-          {{__('front.summary_book_story_author_3')}}
-        </div>
-        <div class="au-slide-text">
-          {{__('front.summary_book_story_text_3')}}
-        </div>
-        <a href="" class="summary-readmore w-100">
-          Read more
-        </a>
-      </div>
-      {{--                       slide 2--}}
-      <div class="au-slide slide-4">
-        <img src="{{asset(__('front.summary_book_story_avatar_4'))}}" alt="" class="au-slide-image">
-        <div class="au-slide-stars">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-          <img src="{{asset('assets/icons/star.svg')}}" alt="">
-        </div>
-        <div class="au-slide-title">
-          {{__('front.summary_book_story_author_4')}}
-        </div>
-        <div class="au-slide-text">
-          {{__('front.summary_book_story_text_4')}}
-        </div>
-        <a href="" class="summary-readmore w-100">
-          Read more
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="active-users au-adaptive active-book">
-  <div class="container">
-    <div class="title-box">
-      <h2 class="font-grey-32-700">150 000+ active users</h2>
-      <p class="font-grey-color-400">
-        This is how many parents are using our plans to feed their kids. Read their stories
-      </p>
-    </div>
-
-    <div class="clients-box">
-      <div id="carouselAdaptive" class="carousel slide adaptive" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-          <div class="carousel-item au-slide-adaptive active">
-            <div class="au-slide slide-1">
-              <img src="{{asset(__('front.summary_book_story_avatar_1'))}}" alt="" class="au-slide-image">
-              <div class="au-slide-stars">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-              </div>
-              <div class="au-slide-title">
-                {{__('front.summary_book_story_author_1')}}
-              </div>
-              <div class="au-slide-text">
-                {{__('front.summary_book_story_text_1')}}
-              </div>
-              <a href="" class="summary-readmore w-100">
-                Read more
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-item au-slide-adaptive">
-            <div class="au-slide slide-2">
-              <img src="{{asset(__('front.summary_book_story_avatar_2'))}}" alt="" class="au-slide-image">
-              <div class="au-slide-stars">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-              </div>
-              <div class="au-slide-title">
-                {{__('front.summary_book_story_author_2')}}
-              </div>
-              <div class="au-slide-text">
-                {{__('front.summary_book_story_text_2')}}
-              </div>
-              <a href="" class="summary-readmore w-100">
-                Read more
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-item au-slide-adaptive">
-            <div class="au-slide slide-3">
-              <img src="{{asset(__('front.summary_book_story_avatar_3'))}}" alt="" class="au-slide-image">
-              <div class="au-slide-stars">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-              </div>
-              <div class="au-slide-title">
-                {{__('front.summary_book_story_author_3')}}
-              </div>
-              <div class="au-slide-text">
-                {{__('front.summary_book_story_text_3')}}
-              </div>
-              <a href="" class="summary-readmore w-100">
-                Read more
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-item au-slide-adaptive">
-            <div class="au-slide slide-4">
-              <img src="{{asset(__('front.summary_book_story_avatar_4'))}}" alt="" class="au-slide-image">
-              <div class="au-slide-stars">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                <img src="{{asset('assets/icons/star.svg')}}" alt="">
-              </div>
-              <div class="au-slide-title">
-                {{__('front.summary_book_story_author_4')}}
-              </div>
-              <div class="au-slide-text">
-                {{__('front.summary_book_story_text_4')}}
-              </div>
-              <a href="" class="summary-readmore w-100">
-                Read more
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="carousel-navigation">
-          <div class="carousel-indicators dots-box d-flex align-items-center">
-            <div class="dot active" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="0"
-              aria-current="true" aria-label="Slide 1"></div>
-            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2">
-            </div>
-            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3">
-            </div>
-            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4">
+                <div class="blw-b-block block-10">
+                    <img src="{{asset('assets/summary/blw/10.png')}}" alt="">
+                    <p>Encourages Family Bonding</p>
+                </div>
             </div>
 
-          </div>
         </div>
-      </div>
-    </div>
 
-  </div>
+    </section>
 
-</section>
 
 <section class="mt-100 doctor-block consult">
+  
   <div class="container">
+  <p class="font-grey-32-700 book-consult-header">Meet our medical consultant</p>
     <div class="container-wrapper">
       <div class="img-box">
-        <img src="{{asset('assets/bg-images/consult_1.png')}}" alt="" class="medical-consultant">
+        <img src="{{asset('assets/bg-images/consult_2.png')}}" alt="" class="medical-consultant">
       </div>
       <div class="content-box">
-        <p class="font-grey-32-700">{{__('front.our_promise_title')}}</p>
+      <p class="font-grey-32-700 book-consult-header-adaptive">Meet our medical consultant</p>
+        <p class="font-grey-16-700">Kristine Swone</p>
+        <p>Diabetes Educator</p>
         <p class="font-grey-color-400">
-          {{__('front.our_promise_text')}}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus tellus ullamcorper id urna mauris egestas praesent consectetur. Curabitur quis id nunc leo adipiscing semper sodales enim mi. Odio faucibus a lectus et feugiat cursus. Vestibulum at molestie a, id odio consectetur erat interdum.
         </p>
-        <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
+        <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre book-consult-header">
           {{__('front.get_your_plan')}}
+        </a>
+        <a href="{{route('registration', $code)}}" type="button" class="btn font-white-600 btn-green-squre book-consult-header-adaptive">
+          Sign up for  a consultation
         </a>
       </div>
     </div>
