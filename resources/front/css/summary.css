@@ -2,6 +2,14 @@
     margin: 50px 0;
 }
 
+.book-consult-header {
+    display: block;
+}
+
+.book-consult-header-adaptive {
+    display: none;
+}
+
 .section-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -544,7 +552,43 @@
 }
 
 @media (max-width: 1092px) {
-    .meal-book .mp-blocks .left-img {
+    .book-consult-header {
+        display: none;
+    }
+
+    .book-consult-header-adaptive {
+        display: block;
+    }
+
+    .personal-plan-benefit {
+        background-color: white !important;
+    }
+
+    .book-personal-plan .mp-book-block {
+        gap: 20px !important;
+    }
+
+    .book-mp {
+        padding: 0;
+    }
+    .book-personal-plan-mp {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .book-personal-plan {
+        background-color: #e6f8f4;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .book-even-more {
+        background-color: #e6f8f4;
+        margin: 0 !important;
+        padding-top: 82px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
     }
 
     .what-else {

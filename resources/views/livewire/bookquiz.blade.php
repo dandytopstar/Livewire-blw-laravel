@@ -93,7 +93,7 @@
                     this.style.color = "#000"
                 } else {
                     this.style.backgroundColor = '#00bd90';
-                this.style.color = '#fff';
+                    this.style.color = '#fff';
                 }
                 
             };
