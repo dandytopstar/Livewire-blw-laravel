@@ -824,6 +824,9 @@
 }
 
 @media (max-width: 576px) {
+    .book-summary .container .content-box .title .font-grey-color-400 {
+        display: none;
+    }
 
     .book-plan-logo-adaptive {
         width: 50px;

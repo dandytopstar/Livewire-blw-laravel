@@ -488,8 +488,11 @@ class Bookquiz extends Component
         if ($answer) {
 
             $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
+            $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
+            $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
             $text = $currentAnswer['answers'][$answer]['text'];
             $deselectAll = empty($currentAnswer['answers'][$answer]['deselectAll']);
+
             $hasDeselectAll = empty($this->quizQuestions[$this->currentQuestionNum]['hasDeselectAll']);
             $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
             $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
@@ -509,6 +512,7 @@ class Bookquiz extends Component
                     'key' => $currentAnswer['question_key'],
                     'question_text' => $currentAnswer['question'],
                     'answers' => []
+
                 ];
 
                 $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
@@ -520,7 +524,9 @@ class Bookquiz extends Component
 
             if (!$deselectAll) {
                 $this->deselectMultipleAnswers($answer);
+
             } elseif (!$hasDeselectAll) {
+                //var_dump($checkSelected)
                 $this->deselectNoneMultipleAnswers();
             }
 
