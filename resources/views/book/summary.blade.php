@@ -30,7 +30,6 @@
 
             <div class="img-box bg-image-absolute ">
                 <img src="{{asset('assets/book/summary/book-first-img.jpg')}}"  height="600px">
-                <img src="{{asset('assets/summary/dot-line.svg')}}" class="dot-line" alt="dot_line">
             </div>
 
         </div>
@@ -526,9 +525,9 @@
 
             <div class="au-sliders">
 
-{{--                       slide 1--}}
+                {{--                       slide 1--}}
                 <div class="au-slide slide-1">
-                    <img src="{{asset(__('front.summary_book_story_avatar_1'))}}" alt="" class="au-slide-image">
+                    <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
                     <div class="au-slide-stars">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -537,19 +536,16 @@
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="au-slide-title">
-                        {{__('front.summary_book_story_author_1')}}
+                        {{__('front.summary_user_story_author_1')}}
                     </div>
                     <div class="au-slide-text">
-                        {{__('front.summary_book_story_text_1')}}
+                        {{__('front.summary_user_story_text_1')}}
                     </div>
-                    <a href="" class= "summary-readmore w-100">
-                        Read more
-                    </a>
                 </div>
 
-{{--                       slide 2--}}
+                {{--                       slide 2--}}
                 <div class="au-slide slide-2">
-                    <img src="{{asset(__('front.summary_book_story_avatar_2'))}}" alt="" class="au-slide-image">
+                    <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt="" class="au-slide-image">
                     <div class="au-slide-stars">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -558,19 +554,16 @@
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="au-slide-title">
-                        {{__('front.summary_book_story_author_2')}}
+                        {{__('front.summary_user_story_author_2')}}
                     </div>
                     <div class="au-slide-text">
-                        {{__('front.summary_book_story_text_2')}}
+                        {{__('front.summary_user_story_text_2')}}
                     </div>
-                    <a href="" class= "summary-readmore w-100">
-                        Read more
-                    </a>
                 </div>
 
-{{--                       slide 3--}}
+                {{--                       slide 3--}}
                 <div class="au-slide slide-3">
-                    <img src="{{asset(__('front.summary_book_story_avatar_3'))}}" alt="" class="au-slide-image">
+                    <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt="" class="au-slide-image">
                     <div class="au-slide-stars">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -579,34 +572,11 @@
                         <img src="{{asset('assets/icons/star.svg')}}" alt="">
                     </div>
                     <div class="au-slide-title">
-                        {{__('front.summary_book_story_author_3')}}
+                        {{__('front.summary_user_story_author_3')}}
                     </div>
                     <div class="au-slide-text">
-                        {{__('front.summary_book_story_text_3')}}
+                        {{__('front.summary_user_story_text_3')}}
                     </div>
-                    <a href="" class= "summary-readmore w-100">
-                        Read more
-                    </a>
-                </div>
-{{--                       slide 2--}}
-                <div class="au-slide slide-4">
-                    <img src="{{asset(__('front.summary_book_story_avatar_4'))}}" alt="" class="au-slide-image">
-                    <div class="au-slide-stars">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                        <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                    </div>
-                    <div class="au-slide-title">
-                        {{__('front.summary_book_story_author_4')}}
-                    </div>
-                    <div class="au-slide-text">
-                        {{__('front.summary_book_story_text_4')}}
-                    </div>
-                    <a href="" class= "summary-readmore w-100">
-                        Read more
-                    </a>
                 </div>
 
             </div>
@@ -615,10 +585,10 @@
 
     </section>
 
-    <section class="active-users au-adaptive active-book">
+    <section class="active-users au-adaptive">
         <div class="container">
             <div class="title-box">
-                <h2 class="font-grey-32-700">150 000+ active users</h2>
+                <h2 class="font-grey-32-700">125 000+ active users</h2>
                 <p class="font-grey-color-400">
                     This is how many parents are using our plans to feed their kids. Read their stories
                 </p>
@@ -630,7 +600,7 @@
 
                         <div class="carousel-item au-slide-adaptive active">
                             <div class="au-slide slide-1">
-                                <img src="{{asset(__('front.summary_book_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -639,20 +609,17 @@
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                 </div>
                                 <div class="au-slide-title">
-                                    {{__('front.summary_book_story_author_1')}}
+                                    {{__('front.summary_user_story_author_1')}}
                                 </div>
                                 <div class="au-slide-text">
-                                    {{__('front.summary_book_story_text_1')}}
+                                    {{__('front.summary_user_story_text_1')}}
                                 </div>
-                                <a href="" class= "summary-readmore w-100">
-                                    Read more
-                                </a>
                             </div>
                         </div>
 
                         <div class="carousel-item au-slide-adaptive">
                             <div class="au-slide slide-2">
-                                <img src="{{asset(__('front.summary_book_story_avatar_2'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -661,20 +628,17 @@
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                 </div>
                                 <div class="au-slide-title">
-                                    {{__('front.summary_book_story_author_2')}}
+                                    {{__('front.summary_user_story_author_2')}}
                                 </div>
                                 <div class="au-slide-text">
-                                    {{__('front.summary_book_story_text_2')}}
+                                    {{__('front.summary_user_story_text_2')}}
                                 </div>
-                                <a href="" class= "summary-readmore w-100">
-                                    Read more
-                                </a>
                             </div>
                         </div>
 
                         <div class="carousel-item au-slide-adaptive">
                             <div class="au-slide slide-3">
-                                <img src="{{asset(__('front.summary_book_story_avatar_3'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt="" class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -683,36 +647,11 @@
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                 </div>
                                 <div class="au-slide-title">
-                                    {{__('front.summary_book_story_author_3')}}
+                                    {{__('front.summary_user_story_author_3')}}
                                 </div>
                                 <div class="au-slide-text">
-                                    {{__('front.summary_book_story_text_3')}}
+                                    {{__('front.summary_user_story_text_3')}}
                                 </div>
-                                <a href="" class= "summary-readmore w-100">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item au-slide-adaptive">
-                            <div class="au-slide slide-4">
-                                <img src="{{asset(__('front.summary_book_story_avatar_4'))}}" alt="" class="au-slide-image">
-                                <div class="au-slide-stars">
-                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                    <img src="{{asset('assets/icons/star.svg')}}" alt="">
-                                </div>
-                                <div class="au-slide-title">
-                                    {{__('front.summary_book_story_author_4')}}
-                                </div>
-                                <div class="au-slide-text">
-                                    {{__('front.summary_book_story_text_4')}}
-                                </div>
-                                <a href="" class= "summary-readmore w-100">
-                                    Read more
-                                </a>
                             </div>
                         </div>
 
@@ -722,7 +661,6 @@
                             <div class="dot active" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
                             <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="3" aria-label="Slide 4"></div>
 
                         </div>
                     </div>
@@ -733,11 +671,11 @@
 
     </section>
 
-    <section class="mt-100 doctor-block consult">
+    <section class="mt-100 doctor-block">
         <div class="container">
             <div class="container-wrapper">
                 <div class="img-box">
-                    <img src="{{asset('assets/bg-images/consult_1.png')}}" alt="" class="medical-consultant">
+                    <img src="{{asset('assets/bg-images/medical-consultant.jpeg')}}" alt="" class="medical-consultant">
                 </div>
                 <div class="content-box">
                     <p class="font-grey-32-700">{{__('front.our_promise_title')}}</p>
@@ -753,8 +691,6 @@
     </section>
 
     <div class="" style="height: 25px"> </div>
-
-    @includeIf('book.partial.main-footer')
 
 @endsection
 
