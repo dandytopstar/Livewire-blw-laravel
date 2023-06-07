@@ -69,7 +69,7 @@
 
         <div class="container what-will-items">
 
-            <div class="what-will-item block-2 whatwill-block-1">
+            <div class="what-will-item block-2 whatwill-block-1 whatwill-block">
                 <div class="ww-item-content">
                     <h3 class="item-title">Monthly Personalized Meal Plan</h3>
                     <img src="{{asset('assets/book/summary/blw/1.png')}}" alt="">

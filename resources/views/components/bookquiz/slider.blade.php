@@ -2,9 +2,9 @@
     'currentQuestion' => [],
 ])
 
-<div class="container text-center">
+<div class="container text-center" >
     <div class="gap-4" id="slider-component">
-        <div class="slide-view">
+        <div class="slide-view " wire:ignore>
             @foreach($currentQuestion['answers'] as $key => $answer)
                 @if($currentQuestion['selectedSlider'] == $key)
                     <div class="slide-image selected-slide-image">
@@ -53,21 +53,75 @@
 </div>
 
     <script>
+        var nowImage =0;
+       let moveAnimation = function () {
+            let i= nowImage
+            let moveSlide = setInterval(() => {
+                if(i>5){ clearInterval(moveSlide) }
+                $( ".slide-image"+i ).animate({
+                right:"+=20px",
+                opacity:"+=0.15",
+                scale:"+=0.1"
+            },200,"swing")
+                i++
+            }, 300);
+        }
 
         window.undecidedAnimation = ()=>{
-            $( ".selected-slide-image" ).fadeOut(200);
+            switch(nowImage){
+                case 0:
+                    $( ".selected-slide-image" ).fadeOut(200);
+                    break;
+                default:
+                    $( ".slide-image"+nowImage ).fadeOut(200);
+                    $( ".selected-slide-image" ).fadeOut(200);
+            }
+            nowImage++;
+            moveAnimation()
+            
         };
 
         window.yesAnimation=()=> {
-            $( ".selected-slide-image" ).animate({
-                right:"-=400px",
-                opacity:"0"
-            },200)
+            switch(nowImage){
+                case 0:
+                    $( ".selected-slide-image" ).animate({
+                        right:"-=400px",
+                        opacity:"0"
+                    },200)
+                    break;
+                default:
+                    $( ".slide-image"+nowImage ).animate({
+                        right:"-=400px",
+                        opacity:"0"
+                    },200)
+                    $( ".selected-slide-image" ).animate({
+                        right:"-=400px",
+                        opacity:"0"
+                    },200)
+            }
+            nowImage++;
+            moveAnimation()
         };
         window.noAnimation=()=> {
-            $( ".selected-slide-image" ).animate({
-                left:"-=400px",
-                opacity:"0"
-            },200)
+            switch(nowImage){
+                case 0:
+                    $( ".selected-slide-image" ).animate({
+                        left:"-=400px",
+                        opacity:"0"
+                    },200)
+                    break;
+                default:
+                    $( ".slide-image"+nowImage ).animate({
+                        left:"-=400px",
+                        opacity:"0"
+                    },200)
+                    $( ".selected-slide-image" ).animate({
+                        left:"-=400px",
+                        opacity:"0"
+                    },200)
+                    break;
+            }
+            nowImage++;
+            moveAnimation()
         }
     </script>
