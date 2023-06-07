@@ -87,8 +87,8 @@ class PersonalPlanSeeder extends Seeder
         ];
 
         foreach($personalPlans as $key => $plan) {
-            if ($existPersonalPlans->where('id', $key)->first()) {
-                PersonalPlan::query()->where('id', $key)->update($plan);
+            if ($existPersonalPlans->where('hash', $plan['hash'])->first()) {
+                PersonalPlan::query()->where('hash', $plan['hash'])->update($plan);
             } else {
                 PersonalPlan::query()->create($plan);
             }

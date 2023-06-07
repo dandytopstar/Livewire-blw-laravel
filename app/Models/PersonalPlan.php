@@ -11,8 +11,8 @@ class PersonalPlan extends Model
 
     protected $fillable = [
         'name',
-        'type',
         'hash',
+        'type',
         'billed_period',
         'billed_price',
         'billed_price_old',
