@@ -54,14 +54,25 @@
 
     <script>
         var nowImage =0;
+        let  moveRight=""
+        let  moveOpacity="+=0.15"
+        let  moveScale = "+=.1"
        let moveAnimation = function () {
+        if(window.innerWidth>576){
+            moveRight="+=30px"
+            
+        } else if(window.innerWidth>494){
+            moveRight = "+=20px"
+        } else {
+            moveRight = "+=15px"
+        }
             let i= nowImage
             let moveSlide = setInterval(() => {
                 if(i>5){ clearInterval(moveSlide) }
                 $( ".slide-image"+i ).animate({
-                right:"+=20px",
-                opacity:"+=0.15",
-                scale:"+=0.1"
+                right:moveRight,
+                opacity:moveOpacity,
+                scale:moveScale,
             },300,"swing")
                 i++
             }, 100);
