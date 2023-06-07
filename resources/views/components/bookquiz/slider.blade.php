@@ -56,7 +56,7 @@
         var nowImage =0;
         let  moveRight=""
         let  moveOpacity="+=0.15"
-        let  moveScale = "+=.1"
+        let  moveScale = "+=0.1"
        let moveAnimation = function () {
         if(window.innerWidth>576){
             moveRight="+=30px"
@@ -73,7 +73,7 @@
                 right:moveRight,
                 opacity:moveOpacity,
                 scale:moveScale,
-            },300,"swing")
+            },300)
                 i++
             }, 100);
         }
