@@ -426,7 +426,7 @@ class Bookquiz extends Component
 
         $this->countQuestions = count($this->quizQuestions);
 
-        $this->currentQuestionNum = 1;
+        $this->currentQuestionNum = 19;
 
         $this->currentQuestion = $this->quizQuestions[$this->currentQuestionNum];
 
@@ -668,7 +668,6 @@ class Bookquiz extends Component
 
     public function setCurrentSlider(int $value)
     {
-         usleep(200000);
         $this->currentQuestion['selectedSlider'] = $value;
 
         $this->dispatchBrowserEvent('slider-selected', [

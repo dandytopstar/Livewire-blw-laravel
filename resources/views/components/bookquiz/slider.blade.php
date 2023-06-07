@@ -53,7 +53,7 @@
 </div>
 
     <script>
-        var nowImage =0;
+        var  nowImage =0;
         let  moveRight=""
         let  moveOpacity="+=0.15"
         let  moveScale = "+=0.1"
@@ -73,7 +73,7 @@
                 right:moveRight,
                 opacity:moveOpacity,
                 scale:moveScale,
-            },300)
+            },500)
                 i++
             }, 100);
         }
@@ -98,17 +98,17 @@
                     $( ".selected-slide-image" ).animate({
                         right:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
                     break;
                 default:
                     $( ".slide-image"+nowImage ).animate({
                         right:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
                     $( ".selected-slide-image" ).animate({
                         right:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
             }
             nowImage++;
             moveAnimation()
@@ -119,17 +119,17 @@
                     $( ".selected-slide-image" ).animate({
                         left:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
                     break;
                 default:
                     $( ".slide-image"+nowImage ).animate({
                         left:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
                     $( ".selected-slide-image" ).animate({
                         left:"-=400px",
                         opacity:"0"
-                    },200)
+                    },300)
                     break;
             }
             nowImage++;
