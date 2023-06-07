@@ -326,7 +326,7 @@
     <div>
       <h2 class="book-sub-title  section-title">Something more</h2>
     </div>
-    <div class="mp-two-colum mp-something-more">
+    <div class="mp-two-colum mp-something-more-plan">
 
 
       <div class="mp-book-block">
