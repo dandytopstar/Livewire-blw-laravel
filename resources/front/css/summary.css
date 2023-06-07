@@ -2,6 +2,21 @@
     margin: 50px 0;
 }
 
+
+.block-2.whatwill-block img {
+    width: 246px !important;
+    height: 172px !important; 
+}
+
+.block-3.whatwill-block img {
+    width: 256px !important;
+    height: 203px !important ; 
+}
+.block-4.whatwill-block img {
+    width: 246px !important;
+    height: 182px !important;
+
+}
 .book-consult-header {
     display: block;
 }
@@ -689,6 +704,73 @@
 }
 
 @media (max-width: 768px) {
+    .mp-something-more .mp-block-item {
+        padding: 10px;
+    }
+    .what-will .what-will-items {
+        gap: 10px;
+    }
+
+    .even-more .em-blocks {
+        gap: 10px;
+    }
+
+    .what-will .what-will-items .whatwill-block {
+        width: 340px;
+        height: 240px;
+    }
+    
+    .block-2.whatwill-block h3 { 
+        padding-top: 30px;
+    }
+
+    .block-2.whatwill-block img {
+        position: absolute;
+        width: 254px !important;
+        height: 143px !important;
+        right: 18px;
+        top: 80px;
+    }
+    .block-2.whatwill-block .n1 {
+        top: 31.6%;
+        left: -4.78%;
+    }
+
+    .block-3.whatwill-block h3 { 
+        padding-top: 30px;
+    }
+
+    .block-3.whatwill-block img {
+        position: absolute;
+        width: 205px !important;
+        height: 167px !important;
+        right: 34px;
+        top: 60px;
+    }
+    .block-3.whatwill-block .n1 {
+        top: 31.6%;
+        left: 5%;
+    }
+    .block-4.whatwill-block h3 { 
+        padding-top: 20px;
+    }
+
+    .block-4.whatwill-block img {
+        position: absolute;
+        width: 231px !important;
+        height: 149px !important;
+        right: 34px;
+        top: 65px;
+    }
+    .block-4.whatwill-block .n1 {
+        top: 31.6%;
+        left: 5%;
+    }
+
+
+    .what-will-item {
+        width: 340px;
+    }
     .book-summary {
         margin-top: 20px;
     }
@@ -794,10 +876,6 @@
 
     .what-will-items {
         justify-content: center;
-    }
-
-    .what-will-item {
-        width: 100%;
     }
 
     .ww-last {
@@ -954,6 +1032,8 @@
 }
 
 @media (max-width: 375px) {
+
+
     .book-stepper .point-item-box {
         font-size: 12px;
     }
@@ -979,21 +1059,6 @@
         height: 250px;
     }
 
-    .what-will .what-will-items .whatwill-block .ww-item-content {
-        width: 226px;
-        height: 248.62px;
-        left: calc(50% - 225px / 2);
-    }
-    .what-will .what-will-items .whatwill-block img {
-        width: 207px !important;
-        height: 158px !important;
-    }
-    .what-will .what-will-items .whatwill-block .ww-item-content .item-title {
-        width: 100%;
-    }
-    .what-else .what-will-item.block-4 .ww-item-content img {
-        width: 220px;
-    }
     .what-else .what-will-item .item-title {
         width: 230px;
     }

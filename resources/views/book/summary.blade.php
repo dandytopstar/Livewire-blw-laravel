@@ -69,13 +69,13 @@
 
         <div class="container what-will-items">
 
-            <div class="what-will-item block-2 whatwill-block-1">
+            <div class="what-will-item block-2 whatwill-block-1 whatwill-block">
                 <div class="ww-item-content">
                     <h3 class="item-title">Monthly Personalized Meal Plan</h3>
                     <img src="{{asset('assets/book/summary/blw/1.png')}}" alt="">
                 </div>
 
-                <div class="item-number">1</div>
+                <div class="item-number n1">1</div>
             </div>
 
             <div class="what-will-item block-3 whatwill-block">
@@ -84,15 +84,15 @@
                     <img src="{{asset('assets/summary/whatwill/book2.png')}}" alt="">
                 </div>
 
-                <div class="item-number">2</div>
+                <div class="item-number n1">2</div>
             </div>
 
-            <div class="what-will-item block-2 whatwill-block">
+            <div class="what-will-item block-4 whatwill-block">
                 <div class="ww-item-content">
                     <h3 class="item-title">Personalized Baby-Led Weaning Book Paperback</h3>
                     <img src="{{asset('assets/summary/whatwill/book3.png')}}" alt="">
                 </div>
-                <div class="item-number">3</div>
+                <div class="item-number n1">3</div>
             </div>
             
 
