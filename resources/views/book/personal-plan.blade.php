@@ -51,7 +51,7 @@
             <div class="w-100">
             <div class="row-inf">
               <img src="{{asset('assets/icons/plan-icon.png')}}" width="80px" class= "book-plan-logo-adaptive" />
-              <div>
+              <div class="plan-name">
                 <p class="title font-accent-18-700 text-start">{!! $plan->name !!}</p>
               </div>
               <div class="pt-4">
@@ -326,7 +326,7 @@
     <div>
       <h2 class="book-sub-title  section-title">Something more</h2>
     </div>
-    <div class="mp-two-colum mp-something-more">
+    <div class="mp-two-colum mp-something-more-plan">
 
 
       <div class="mp-book-block">
@@ -537,7 +537,6 @@
 
 <div class="" style="height: 25px"> </div>
 
-@includeIf('book.partial.main-footer')
 @endsection
 
 @push('custom-scripts')

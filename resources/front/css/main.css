@@ -1257,3 +1257,23 @@ section.program {
 .book-plan-logo-adaptive {
     display: none;
 }
+
+.mp-something-more {
+    margin: 20px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px;
+}
+
+.mp-something-more .mp-book-block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.book-mp > .mp-two-colum {
+    width: 100%;
+}
+.mp-something-more-plan {
+    padding: 20px;
+}
