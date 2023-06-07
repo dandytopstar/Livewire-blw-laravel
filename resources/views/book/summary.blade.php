@@ -671,24 +671,6 @@
 
     </section>
 
-    <section class="mt-100 doctor-block">
-        <div class="container">
-            <div class="container-wrapper">
-                <div class="img-box">
-                    <img src="{{asset('assets/bg-images/medical-consultant.jpeg')}}" alt="" class="medical-consultant">
-                </div>
-                <div class="content-box">
-                    <p class="font-grey-32-700">{{__('front.our_promise_title')}}</p>
-                    <p class="font-grey-color-400">
-                        {{__('front.our_promise_text')}}
-                    </p>
-                    <a href="{{route('bookregistration', $code)}}" type="button" class="btn font-white-600 btn-green-squre">
-                        {{__('front.get_your_plan')}}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div class="" style="height: 25px"> </div>
 

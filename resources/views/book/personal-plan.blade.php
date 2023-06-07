@@ -537,7 +537,6 @@
 
 <div class="" style="height: 25px"> </div>
 
-@includeIf('book.partial.main-footer')
 @endsection
 
 @push('custom-scripts')
