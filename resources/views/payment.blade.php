@@ -10,9 +10,17 @@
 
         <div class="container mt-3">
             <div class="arrow-left">
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
                 <a href="{{route('personal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
                     <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
                 </a>
+                @endif
+
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::BOOK_PAYMENT->value)
+                    <a href="{{route('bookpersonal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
+                        <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
+                    </a>
+                @endif
             </div>
         </div>
 
@@ -221,146 +229,148 @@
 
     <script>
 
-        fbq('track', 'AddToCart', {
-            value: '{{$personalPlan->billed_price}}',
-            currency: 'USD',
-        });
+        @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
+            fbq('track', 'AddToCart', {
+                value: '{{$personalPlan->billed_price}}',
+                currency: 'USD',
+            });
 
-        paymentSecureSubscripe()
+            paymentSecureSubscribe()
 
-        function paymentSecureSubscripe() {
-            const stripe = Stripe('{{config('services.stripe.public')}}');
+            function paymentSecureSubscribe() {
+                const stripe = Stripe('{{config('services.stripe.public')}}');
 
-            const options = {
-                clientSecret: '{{$clientSecret}}',
-                appearance: {theme: 'stripe'},
-            };
+                const options = {
+                    clientSecret: '{{$clientSecret}}',
+                    appearance: {theme: 'stripe'},
+                };
 
-            const elements = stripe.elements(options);
-            const paymentElement = elements.create('payment');
-            paymentElement.mount('#payment-element');
+                const elements = stripe.elements(options);
+                const paymentElement = elements.create('payment');
+                paymentElement.mount('#payment-element');
 
-            const form = document.getElementById('stripe-payment-form');
+                const form = document.getElementById('stripe-payment-form');
 
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
+                form.addEventListener('submit', async (event) => {
+                    event.preventDefault();
 
-                $('#submit').html(`
-                    Please wait...
-                    <div class="spinner-border spinner-border-sm" role="status">
-                      <span class="visually-hidden">Loading...</span>
-                    </div>
-                `);
+                    $('#submit').html(`
+                        Please wait...
+                        <div class="spinner-border spinner-border-sm" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                    `);
 
-                const {error} = await stripe.confirmPayment({
-                    elements,
-                    confirmParams: {
-                        return_url: "{{route('payment-stripe-result')}}?code={{$code}}&plan={{$personalPlan->id}}",
+                    const {error} = await stripe.confirmPayment({
+                        elements,
+                        confirmParams: {
+                            return_url: "{{route('payment-stripe-result')}}?code={{$code}}&plan={{$personalPlan->id}}",
+                        }
+                    });
+
+                    if (error) {
+                        document.querySelector('#submit').innerText = 'Complete secure payment';
+
+                        const messageContainer = document.querySelector('#error-message');
+                        messageContainer.textContent = error.message;
+                    } else {
+                        console.log('success');
                     }
                 });
+            }
 
-                if (error) {
-                    document.querySelector('#submit').innerText = 'Complete secure payment';
+            stripeAutoScroll()
 
-                    const messageContainer = document.querySelector('#error-message');
-                    messageContainer.textContent = error.message;
-                } else {
-                    console.log('success');
-                }
-            });
-        }
+            function stripeAutoScroll() {
+                $('.stripe-accordion').on('click', () => {
+                    setTimeout(() => {
+                        document.getElementById("payment-element").scrollIntoView();
+                    }, 500);
+
+                })
+            }
+
+            payPalPayment();
+
+            function payPalPayment() {
+                const form = document.getElementById('paypal-payment-form');
+
+                paypal.Buttons({
+
+                    createSubscription: function(data, actions) {
+                        return actions.subscription.create({
+                            'plan_id': '{{$personalPlan->paypal_id}}' // Creates the subscription
+                        });
+                    },
+
+                    onApprove: function(data, actions) {
+                        $('#paypal_order_id').val(data.orderID)
+                        $('#paypal_subscription_id').val(data.subscriptionID)
+                        form.submit();
+                    }
+
+                }).render('#paypal-button-container');
+            }
+        @endif
 
         // stripePaymentSubscribe();
 
-        function stripePaymentSubscribe() {
-
-
-            const elements = stripe.elements(options);
-
-            const style = {
-                base: {
-                    iconColor: '#00BD90',
-                    color: '#000',
-                    fontWeight: '500',
-                    fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
-                    fontSize: '16px',
-                    fontSmoothing: 'antialiased',
-                    ':-webkit-autofill': {
-                        color: '#00BD90',
-                    },
-                    '::placeholder': {
-                        color: '#00BD90',
-                    },
-                },
-                invalid: {
-                    iconColor: '#FF735C',
-                    color: '#FF735C',
-                },
-            };
-
-            const card = elements.create('card', {style});
-
-            card.mount('#card-element');
-
-            const form = document.getElementById('stripe-payment-form');
-
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
-
-                const {token, error} = await stripe.createToken(card);
-
-                if (error) {
-                    const errorElement = document.getElementById('card-errors');
-                    errorElement.textContent = error.message;
-                } else {
-                    stripeTokenHandler(token);
-                }
-            });
-
-            const stripeTokenHandler = (token) => {
-                const form = document.getElementById('stripe-payment-form');
-                const hiddenInput = document.createElement('input');
-                hiddenInput.setAttribute('type', 'hidden');
-                hiddenInput.setAttribute('name', 'stripeToken');
-                hiddenInput.setAttribute('value', token.id);
-                form.appendChild(hiddenInput);
-
-                form.submit();
-            }
-        }
-
-        stripeAutoScroll()
-
-        function stripeAutoScroll() {
-            $('.stripe-accordion').on('click', () => {
-                setTimeout(() => {
-                    document.getElementById("payment-element").scrollIntoView();
-                }, 500);
-
-            })
-        }
-
-        payPalPayment();
-
-        function payPalPayment() {
-            const form = document.getElementById('paypal-payment-form');
-
-            paypal.Buttons({
-
-                createSubscription: function(data, actions) {
-                    return actions.subscription.create({
-                        'plan_id': '{{$personalPlan->paypal_id}}' // Creates the subscription
-                    });
-                },
-
-                onApprove: function(data, actions) {
-                    $('#paypal_order_id').val(data.orderID)
-                    $('#paypal_subscription_id').val(data.subscriptionID)
-                    form.submit();
-                }
-
-            }).render('#paypal-button-container');
-        }
+        // function stripePaymentSubscribe() {
+        //
+        //
+        //     const elements = stripe.elements(options);
+        //
+        //     const style = {
+        //         base: {
+        //             iconColor: '#00BD90',
+        //             color: '#000',
+        //             fontWeight: '500',
+        //             fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
+        //             fontSize: '16px',
+        //             fontSmoothing: 'antialiased',
+        //             ':-webkit-autofill': {
+        //                 color: '#00BD90',
+        //             },
+        //             '::placeholder': {
+        //                 color: '#00BD90',
+        //             },
+        //         },
+        //         invalid: {
+        //             iconColor: '#FF735C',
+        //             color: '#FF735C',
+        //         },
+        //     };
+        //
+        //     const card = elements.create('card', {style});
+        //
+        //     card.mount('#card-element');
+        //
+        //     const form = document.getElementById('stripe-payment-form');
+        //
+        //     form.addEventListener('submit', async (event) => {
+        //         event.preventDefault();
+        //
+        //         const {token, error} = await stripe.createToken(card);
+        //
+        //         if (error) {
+        //             const errorElement = document.getElementById('card-errors');
+        //             errorElement.textContent = error.message;
+        //         } else {
+        //             stripeTokenHandler(token);
+        //         }
+        //     });
+        //
+        //     const stripeTokenHandler = (token) => {
+        //         const form = document.getElementById('stripe-payment-form');
+        //         const hiddenInput = document.createElement('input');
+        //         hiddenInput.setAttribute('type', 'hidden');
+        //         hiddenInput.setAttribute('name', 'stripeToken');
+        //         hiddenInput.setAttribute('value', token.id);
+        //         form.appendChild(hiddenInput);
+        //
+        //         form.submit();
+        //     }
+        // }
 
     </script>
 

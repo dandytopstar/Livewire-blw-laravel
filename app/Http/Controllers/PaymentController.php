@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\ClientSteps;
+use App\Enums\PersonalPlanTypesEnum;
 use App\Models\Client;
 use App\Models\PersonalPlan;
 use App\Services\KlaviyoService;
@@ -39,9 +40,10 @@ class PaymentController extends Controller
         $clientData['code'] = $code;
         $clientData['client'] = $client;
 
-        $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
-
-        $clientData = array_merge($clientData, $subscription);
+        if($personalPlan->type == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
+            $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
+            $clientData = array_merge($clientData, $subscription);
+        }
 
         return view('payment', $clientData);
     }
