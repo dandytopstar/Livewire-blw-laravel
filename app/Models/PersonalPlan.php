@@ -5,11 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-/**
- * @property $name string
- * @property $type string
- * @property $uuid string
- */
 class PersonalPlan extends Model
 {
     use HasFactory;
@@ -17,7 +12,7 @@ class PersonalPlan extends Model
     protected $fillable = [
         'name',
         'type',
-        'uuid',
+        'hash',
         'billed_period',
         'billed_price',
         'billed_price_old',

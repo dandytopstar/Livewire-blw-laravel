@@ -20,7 +20,7 @@ class PersonalPlanSeeder extends Seeder
         $personalPlans = [
             1 => [
                 'name' => '3-month <br>Baby-Led Weaning <br>Meal Plan',
-                'uuid' => '6b2ead64-8474-4fde-b974-094be7fe0c31',
+                'hash' => '6b2ead64-8474-4fde-b974-094be7fe0c31',
                 'billed_period' => 'Billed every 3 months',
                 'period' => 3,
                 'payment_period' => 'per week',
@@ -36,7 +36,7 @@ class PersonalPlanSeeder extends Seeder
             ],
             2 => [
                 'name' => '6-month <br>Baby-Led Weaning <br>Meal Plan',
-                'uuid' => 'b25beaf1-f634-4040-a0bd-ff6310918515',
+                'hash' => 'b25beaf1-f634-4040-a0bd-ff6310918515',
                 'billed_period' => 'Billed every 6 months',
                 'period' => 6,
                 'payment_period' => 'per week',
@@ -52,7 +52,7 @@ class PersonalPlanSeeder extends Seeder
             ],
             3 => [
                 'name' => '1-month <br>Baby-Led Weaning Meal Plan',
-                'uuid' => '3c8d55dd-b9cd-4ef9-af9b-940649cc2698',
+                'hash' => '3c8d55dd-b9cd-4ef9-af9b-940649cc2698',
                 'billed_period' => 'Billed every month',
                 'period' => 1,
                 'payment_period' => 'per week',
@@ -64,7 +64,7 @@ class PersonalPlanSeeder extends Seeder
             ],
             4 => [
                 'name' => 'Personalized BLW Book Paperback',
-                'uuid' => '98856f86-c20c-4347-bfd2-560c47182f90',
+                'hash' => '98856f86-c20c-4347-bfd2-560c47182f90',
                 'billed_period' => 'Paperback and E-Book',
                 'payment_price' => 82,
                 'payment_price_old' => 95.94,
@@ -74,7 +74,7 @@ class PersonalPlanSeeder extends Seeder
             ],
             5 => [
                 'name' => 'Personalized BLW E-Book',
-                'uuid' => 'f775ad68-4b22-48b9-876c-7c852d438161',
+                'hash' => 'f775ad68-4b22-48b9-876c-7c852d438161',
                 'billed_period' => 'Downloadable Digital Book',
                 'payment_price' => 31,
                 'payment_price_old' => 55.24,

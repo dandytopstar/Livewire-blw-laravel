@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('personal_plans', function (Blueprint $table) {
-            $table->uuid()->after('id');
+            $table->string('hash')->after('id');
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('personal_plans', function (Blueprint $table) {
-            $table->dropColumn('uuid');
+            $table->dropColumn('hash');
         });
     }
 };
