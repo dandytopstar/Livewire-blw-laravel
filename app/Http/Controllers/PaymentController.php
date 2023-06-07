@@ -45,6 +45,11 @@ class PaymentController extends Controller
             $clientData = array_merge($clientData, $subscription);
         }
 
+        if($personalPlan->type == PersonalPlanTypesEnum::BOOK_PAYMENT->value) {
+            $subscription = $this->paymentService->getStripePayment($client, $personalPlan);
+            $clientData = array_merge($clientData, $subscription);
+        }
+
         return view('payment', $clientData);
     }
 
@@ -73,7 +78,7 @@ class PaymentController extends Controller
         return back();
     }
 
-    public function paymentResult(Request $request, $id)
+    public function paymentResult(Request $request, $id, $code)
     {
         $transaction = $this->paymentService->getTransactionById($id);
 
@@ -81,6 +86,7 @@ class PaymentController extends Controller
 
         $clientData['status'] = $transaction->status;
         $clientData['personalPlan'] = $transaction->personalPlan;
+        $clientData['code'] = $transaction->client->code;
 
         return view('payment-result', $clientData);
     }
@@ -96,9 +102,19 @@ class PaymentController extends Controller
 
         $result = $this->paymentService->getTransactionById($id);
 
+        $step = '';
+
+        if(PersonalPlanTypesEnum::BOOK_PAYMENT == $result->personalPlan->type) {
+            $step = ClientSteps::ORDERED_BOOK->value;
+        }
+
+        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING == $result->personalPlan->type) {
+            $step = ClientSteps::ORDERED_PERSONAL_PLAN->value;
+        }
+
         $this->klaviyoService->sendClientData(
             $result->client,
-            ClientSteps::ORDERED_PERSONAL_PLAN,
+            $step,
             $result->toArray()
         );
 
@@ -115,7 +131,7 @@ class PaymentController extends Controller
 
         $result = $this->paymentService->getTransactionById($id);
 
-        $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN, $result->toArray());
+        $this->klaviyoService->sendClientData($result->client, ClientSteps::ORDERED_PERSONAL_PLAN->value, $result->toArray());
 
         return redirect()->route('payment-result', [$result->id, $result->client->code]);
     }
@@ -138,7 +154,17 @@ class PaymentController extends Controller
 
         $result = $this->paymentService->saveTransaction($preparedData);
 
-        $this->klaviyoService->sendClientData($client, ClientSteps::ORDERED_PERSONAL_PLAN, $preparedData);
+        $step = '';
+
+        if(PersonalPlanTypesEnum::BOOK_PAYMENT == $personalPlan->type) {
+            $step = ClientSteps::ORDERED_BOOK->value;
+        }
+
+        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING == $personalPlan->type) {
+            $step = ClientSteps::ORDERED_PERSONAL_PLAN->value;
+        }
+
+        $this->klaviyoService->sendClientData($client, $step, $preparedData);
 
         $redirectLink = route('payment-result', [$result->id, $code]);
 

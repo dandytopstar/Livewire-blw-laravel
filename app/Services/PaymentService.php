@@ -134,5 +134,22 @@ class PaymentService
         ];
     }
 
+    public function getStripePayment($client, $plan)
+    {
+        $stripe = new StripeClient(config('services.stripe.secret'));
+
+        $paymentIntent = $stripe->paymentIntents->create([
+            'amount' => $plan['payment_price']*100,
+            'currency' => 'usd',
+            'automatic_payment_methods' => [
+                'enabled' => true,
+            ],
+        ]);
+
+        return [
+            'clientSecret' => $paymentIntent->client_secret,
+        ];
+    }
+
 
 }

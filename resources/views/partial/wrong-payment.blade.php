@@ -11,9 +11,17 @@
             </div>
 
             <div class="action-box">
-                <a href="{{route('personal-plan', $code)}}" type="button" class="btn quizz-btn bg-danger">
-                    Back to Plans
-                </a>
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
+                    <a href="{{route('personal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
+                        <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
+                    </a>
+                @endif
+
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::BOOK_PAYMENT->value)
+                    <a href="{{route('bookpersonal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
+                        <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
+                    </a>
+                @endif
             </div>
 
         </div>

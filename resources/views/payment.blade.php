@@ -229,11 +229,12 @@
 
     <script>
 
-        @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
             fbq('track', 'AddToCart', {
                 value: '{{$personalPlan->billed_price}}',
                 currency: 'USD',
             });
+
+            console.log(11);
 
             paymentSecureSubscribe()
 
@@ -311,7 +312,6 @@
 
                 }).render('#paypal-button-container');
             }
-        @endif
 
         // stripePaymentSubscribe();
 
