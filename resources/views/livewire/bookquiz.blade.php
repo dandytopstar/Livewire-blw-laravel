@@ -89,7 +89,6 @@
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
             var myFunction = function () {
-                console.log("click")
                 if(this.style.backgroundColor == "rgb(0, 189, 144)" ){
                     this.style.backgroundColor = "#fff"
                     this.style.color = "#000"

@@ -110,7 +110,6 @@
     function sliderButtons() {
 
         if(document.querySelector('#slider-component')) {
-            console.log(111);
             let no = document.querySelector('.btn-no');
             let yes = document.querySelector('.btn-yes');
             let undecided = document.querySelector('.btn-undecided');

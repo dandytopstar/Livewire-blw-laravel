@@ -62,9 +62,9 @@
                 right:"+=20px",
                 opacity:"+=0.15",
                 scale:"+=0.1"
-            },200,"swing")
+            },300,"swing")
                 i++
-            }, 300);
+            }, 100);
         }
 
         window.undecidedAnimation = ()=>{

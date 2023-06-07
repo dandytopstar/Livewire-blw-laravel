@@ -354,8 +354,6 @@
                 },
 
                 onApprove: function(data, actions) {
-
-                    console.log(111);
                     $('#paypal_order_id').val(data.orderID)
                     $('#paypal_subscription_id').val(data.subscriptionID)
                     form.submit();

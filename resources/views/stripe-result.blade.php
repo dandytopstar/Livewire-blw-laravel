@@ -65,7 +65,6 @@
             })
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log('Success:', data);
                     if(data.redirectLink) {
                         window.location.href = data.redirectLink;
                     } else {
