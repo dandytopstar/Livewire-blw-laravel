@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Enums\PersonalPlanTypesEnum;
 use App\Models\PersonalPlan;
 use Illuminate\Database\Seeder;
 
@@ -30,6 +31,7 @@ class PersonalPlanSeeder extends Seeder
                 'discount' => 39,
                 'stripe_id' => 'price_1MRgOKLAfRRz3YR8WmToXHzU',
                 'paypal_id' => 'P-2W2292030D7885326MPED4CY',
+                'type' => PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value,
             ],
             2 => [
                 'name' => '6-month <br>Baby-Led Weaning <br>Meal Plan',
@@ -44,6 +46,7 @@ class PersonalPlanSeeder extends Seeder
                 'discount' => 63,
                 'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
                 'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+                'type' => PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value,
             ],
             3 => [
                 'name' => '1-month <br>Baby-Led Weaning Meal Plan',
@@ -54,7 +57,28 @@ class PersonalPlanSeeder extends Seeder
                 'billed_price' => 8.24,
                 'stripe_id' => 'price_1MRgMrLAfRRz3YR8Az0LRFIz',
                 'paypal_id' => 'P-2X5077790X569272TMPED2SA',
-            ]
+                'type' => PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value,
+            ],
+            4 => [
+                'name' => 'Personalized BLW Book Paperback',
+                'billed_period' => 'The E-Book is included in the price',
+                'payment_price' => 82,
+                'payment_price_old' => 95.94,
+                'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
+                'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+                'type' => PersonalPlanTypesEnum::BOOK_PAYMENT->value,
+            ],
+            5 => [
+                'name' => 'E-Book',
+                'billed_period' => 'Price without assistant app or paperback book',
+                'payment_price' => 31,
+                'payment_price_old' => 55.24,
+                'discount' => 33,
+                'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
+                'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+                'type' => PersonalPlanTypesEnum::BOOK_PAYMENT->value,
+            ],
+
         ];
 
         foreach($personalPlans as $key => $plan) {

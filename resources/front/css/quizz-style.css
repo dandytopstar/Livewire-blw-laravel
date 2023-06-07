@@ -559,4 +559,8 @@
     .slide-view .slide-image:nth-child(6) {
         right: -75px;
     }
+
+    .card-body .card-title {
+        margin-bottom: 15px;
+    }
 }

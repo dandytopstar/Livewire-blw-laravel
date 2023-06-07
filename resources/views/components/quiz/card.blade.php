@@ -26,9 +26,9 @@
     </div>
 
     <div class="card-body">
-        <h2 class="card-title text-center question-title mt-3 mt-lg-5">{!! $currentQuestion['question'] !!}</h2>
+        <h2 class="card-title text-center question-title mt-md-3 mt-lg-5">{!! $currentQuestion['question'] !!}</h2>
 
-        <div class="card-text py-4">
+        <div class="card-text py-md-4">
             {{ $slot }}
         </div>
     </div>
