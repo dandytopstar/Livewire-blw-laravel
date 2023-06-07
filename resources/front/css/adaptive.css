@@ -666,6 +666,16 @@
 
 @media (max-width: 768px) {
 
+    .plans .plans-box .personal-plan .row-inf {
+        justify-content: normal;
+    }
+    .plans .plans-box .personal-plan  .row-inf > .plan-name{
+        margin-right:auto;
+    }
+    .plans .plans-box .personal-plan  .row-inf > div.pt-4{
+        margin-right:0;
+    }
+
     .book-plan-logo-adaptive {
         display: block;
     }

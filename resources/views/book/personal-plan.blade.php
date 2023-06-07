@@ -51,7 +51,7 @@
             <div class="w-100">
             <div class="row-inf">
               <img src="{{asset('assets/icons/plan-icon.png')}}" width="80px" class= "book-plan-logo-adaptive" />
-              <div>
+              <div class="plan-name">
                 <p class="title font-accent-18-700 text-start">{!! $plan->name !!}</p>
               </div>
               <div class="pt-4">
