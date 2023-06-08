@@ -665,6 +665,9 @@
 }
 
 @media (max-width: 768px) {
+    .book-mp > .mp-something-more{
+        display: block;
+    }
 
     .plans .plans-box .personal-plan .row-inf {
         justify-content: normal;
@@ -678,6 +681,7 @@
 
     .book-plan-logo-adaptive {
         display: block;
+        padding-right: 20px;
     }
     .book-plan-logo {
         display: none;
@@ -724,8 +728,6 @@
     .font-accent-700 {
         font-size: 14px;
         line-height: 17px;
-        /*color: var(--acent-color-green);*/
-        /*font-weight: 700;*/
     }
 
     .font-grey-32-700 {
