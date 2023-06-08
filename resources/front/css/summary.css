@@ -198,7 +198,7 @@
 }
 
 .mp-first-block-img {
-    width: 311px;
+    width: 450px;
 }
 
 .mp-middle-block-adaptive {
@@ -864,6 +864,12 @@
 
     .meal-book .mp-first-block-img {
         display: block;
+        width: 287px;
+    }
+
+    .book-mp .mp-first-block {
+        width: unset;
+        height: unset;
     }
 
     header.summary img {

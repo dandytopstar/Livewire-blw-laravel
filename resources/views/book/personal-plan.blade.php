@@ -182,7 +182,7 @@
         <div class="container mp-blocks book-mp ">
 
             <div class="mp-first-block circle-background left-img">
-                <img class='mp-first-block-img' src="{{asset('assets/summary/mp/mp1.png')}}" alt="">
+                <img class='mp-first-block-img' src="{{asset('assets/book/summary/mpf/books_features.jpg')}}" alt="">
             </div>
 
             <div>

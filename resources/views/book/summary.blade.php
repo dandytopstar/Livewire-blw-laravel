@@ -13,10 +13,12 @@
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">
-                        <span class="font-accent-40-700">Congratulations!</span> You Have Created Your personalized BLW Book!
+                        <span class="font-accent-40-700">Congratulations!</span> You Have Created Your personalized BLW
+                        Book!
                     </p>
                     <p class="font-grey-color-400">
-                        By analyzing your quiz results, we've crafted personalized book and other products to support your baby-led weaning journey.
+                        By analyzing your quiz results, we've crafted personalized book and other products to support
+                        your baby-led weaning journey.
                     </p>
 
                 </div>
@@ -29,23 +31,24 @@
             </div>
 
             <div class="img-box bg-image-absolute ">
-                <img src="{{asset('assets/book/summary/book-first-img.jpg')}}"  height="600px">
+                <img src="{{asset('assets/book/summary/main.jpg')}}" height="600px">
             </div>
 
         </div>
-        
+
     </section>
 
     <section class="summary-conclusion adaptive book-summary">
         <div class="container">
             <div class="img-box bg-image-absolute mb-3">
-                <img src="{{asset('assets/book/summary/book-first-img.jpg')}}" height="300px" >
+                <img src="{{asset('assets/book/summary/main.jpg')}}" height="300px">
             </div>
 
             <div class="content-box">
                 <div class="title">
                     <p class="font-grey-color-700">
-                        <span style="color:#00bd90;">Congratulations!</span> You Have Created Your personalized BLW Book!
+                        <span style="color:#00bd90;">Congratulations!</span> You Have Created Your personalized BLW
+                        Book!
                     </p>
 
                     <a href="{{route('bookregistration', $code)}}" class="text-decoration-none">
@@ -55,7 +58,8 @@
                     </a>
 
                     <p class="font-grey-color-400">
-                        By analyzing your quiz results, we've crafted personalized book and products to support your baby-led weaning journey.
+                        By analyzing your quiz results, we've crafted personalized book and products to support your
+                        baby-led weaning journey.
                     </p>
                 </div>
             </div>
@@ -89,14 +93,13 @@
 
             <div class="what-will-item block-4 whatwill-block">
                 <div class="ww-item-content">
-                    <h3 class="item-title">Personalized Baby-Led Weaning Book Paperback</h3>
-                    <img src="{{asset('assets/summary/whatwill/book3.png')}}" alt="">
+                    <h3 class="item-title">300 Pages of Guides And Vital Tips</h3>
+                    <img src="{{asset('assets/book/summary/blw/3.png')}}" alt="">
                 </div>
                 <div class="item-number n1">3</div>
             </div>
-            
 
-            
+
         </div>
 
     </section>
@@ -104,7 +107,7 @@
     <section id="what-else-you-get" class="big-section text-center my-0 my-lg-5 px-3 p-lg-5 what-else">
         <h2 class="section-title">What Else Will You Get?</h2>
 
-        <div class="container what-will-items justify-content-evenly">       
+        <div class="container what-will-items justify-content-evenly">
 
             <div class="what-will-item block-4">
                 <div class="ww-item-content">
@@ -129,8 +132,8 @@
 
         <div class="container mp-blocks book-mp">
 
-            <div class="mp-first-block circle-background left-img">
-                <img class='mp-first-block-img' src="{{asset('assets/summary/mp/mp1.png')}}" alt="">
+            <div class="mp-first-block">
+                <img class='mp-first-block-img' src="{{asset('assets/book/summary/mpf/books_features.jpg')}}" alt="">
             </div>
 
             <div>
@@ -139,7 +142,7 @@
 
             <div class="mp-two-colum">
                 <div class="mp-middle-block">
-                    
+
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/1.png')}}" alt="">
                         <div class="mp-text">Customized to baby's needs</div>
@@ -228,8 +231,7 @@
                         <img class="" src="{{asset('assets/summary/mp/mpcheck.png')}}" alt="">
                     </div>
                 </div>
-                
-                
+
 
                 <div class="mp-book-block">
                     <div class="mp-block-item">
@@ -257,21 +259,21 @@
                         <img src="{{asset('assets/summary/mp/5.png')}}" alt="">
                         <div class="mp-text">Adaptable for allergies</div>
                     </div>
-                    
+
                     <div class="mp-block-item">
                         <img src="{{asset('assets/summary/mp/6.png')}}" alt="">
                         <div class="mp-text">includes finger foods</div>
                     </div>
-                    
-                    
+
+
                 </div>
 
             </div>
-            <div >
-                    <h2 class="book-sub-title  section-title">Something more</h2>
+            <div>
+                <h2 class="book-sub-title  section-title">Something more</h2>
             </div>
             <div class="mp-something-more">
-                
+
 
                 <div class="mp-book-block">
                     <div class="mp-block-item">
@@ -600,7 +602,8 @@
 
                         <div class="carousel-item au-slide-adaptive active">
                             <div class="au-slide slide-1">
-                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_1'))}}" alt=""
+                                     class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -619,7 +622,8 @@
 
                         <div class="carousel-item au-slide-adaptive">
                             <div class="au-slide slide-2">
-                                <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_2'))}}" alt=""
+                                     class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -638,7 +642,8 @@
 
                         <div class="carousel-item au-slide-adaptive">
                             <div class="au-slide slide-3">
-                                <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt="" class="au-slide-image">
+                                <img src="{{asset(__('front.summary_user_story_avatar_3'))}}" alt=""
+                                     class="au-slide-image">
                                 <div class="au-slide-stars">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
                                     <img src="{{asset('assets/icons/star.svg')}}" alt="">
@@ -658,9 +663,12 @@
                     </div>
                     <div class="carousel-navigation">
                         <div class="carousel-indicators dots-box d-flex align-items-center">
-                            <div class="dot active" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1" aria-label="Slide 2"></div>
-                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2" aria-label="Slide 3"></div>
+                            <div class="dot active" type="button" data-bs-target="#carouselAdaptive"
+                                 data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
+                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="1"
+                                 aria-label="Slide 2"></div>
+                            <div class="dot" type="button" data-bs-target="#carouselAdaptive" data-bs-slide-to="2"
+                                 aria-label="Slide 3"></div>
 
                         </div>
                     </div>
@@ -672,7 +680,7 @@
     </section>
 
 
-    <div class="" style="height: 25px"> </div>
+    <div class="" style="height: 25px"></div>
 
 @endsection
 
