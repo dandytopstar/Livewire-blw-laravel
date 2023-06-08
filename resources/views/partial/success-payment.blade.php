@@ -4,9 +4,17 @@
         <div class="d-inline-block col-sm-12 col-md-6 mb-5">
 
             <div class="payment-container-congrats arrow-left my-3 ">
-                <a href="{{route('personal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
-                    <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
-                </a>
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
+                    <a href="{{route('personal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
+                        <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
+                    </a>
+                @endif
+
+                @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::BOOK_PAYMENT->value)
+                    <a href="{{route('bookpersonal-plan', $code)}}" type="button" class="font-accent-700 text-decoration-none">
+                        <img src="{{asset('assets/icons/green-arrow-back.png')}}" alt=""> Back to Plans
+                    </a>
+                @endif
             </div>
 
             <div class="payment-container-congrats d-flex my-3">
