@@ -245,6 +245,12 @@
 }
 
 .book-mp > .mp-two-colum .mp-block-item img:last-of-type {
+    margin-left: auto;
+}
+.book-mp > .mp-two-colum .mp-book-block .mp-block-item img:last-of-type {
+    margin-left: 0;
+}
+.meal-book > .mp-two-colum .mp-book-block .mp-block-item img:last-of-type {
     margin-left: 0;
 }
 .mp-title-adaptive {

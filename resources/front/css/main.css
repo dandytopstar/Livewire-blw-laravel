@@ -1270,6 +1270,9 @@ section.program {
     gap: 20px;
     flex-direction: column;
 }
+.book-mp > .mp-something-more{
+    display: none;
+}
 
 .book-mp > .mp-two-colum {
     width: 100%;
