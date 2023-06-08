@@ -83,7 +83,7 @@
       </div>
       <div class="plan_includes">
         <div class="title-box">
-          <img src="{{asset('assets/payment/p-plan.png')}}" width="250px"  />
+          <img src="{{asset('assets/payment/P-plan.png')}}" width="250px"  />
         </div>
       </div>    
     </div>
