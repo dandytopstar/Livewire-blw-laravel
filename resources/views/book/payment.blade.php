@@ -20,7 +20,7 @@
 
         <section class="stepper">
             <div class="container">
-                <div class="stepper-box">
+                <div class="stepper-box mx-md-3">
                     <div class="point-item-box">
                         <div class="point-item">
                             <p class="font-white-26-700">1</p>
