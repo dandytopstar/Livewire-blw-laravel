@@ -746,10 +746,10 @@
 
     .block-2.whatwill-block img {
         position: absolute;
-        width: 250px !important;
-        height: 143px !important;
+        width: 260px !important;
+        height: 160px !important;
         right: 17px;
-        top: 80px;
+        top: 70px;
     }
     .block-2.whatwill-block .n1 {
         top: 31.6%;
@@ -777,10 +777,10 @@
 
     .block-4.whatwill-block img {
         position: absolute;
-        width: 240px !important;
-        height: 140px !important;
-        right: 17px;
-        top: 70px;
+        width: 250px !important;
+        height: 150px !important;
+        right: 10px;
+        top: 60px;
     }
     .block-4.whatwill-block .n1 {
         top: 31.6%;

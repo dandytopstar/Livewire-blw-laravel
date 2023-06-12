@@ -507,6 +507,10 @@
     margin-bottom: 30px;
 }
 
+.quiz-card .card-body .boy-girl {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
     .slide-view {
         height: 250px;

@@ -33,7 +33,8 @@ class ClientController extends Controller
 
     public function createClient(Request $request)
     {
-        $code = $request->get('code');
+        try {
+            $code = $request->get('code');
         $email =$request->get('email');
         $ad_name = session('ad_name');
 
@@ -46,6 +47,10 @@ class ClientController extends Controller
         }
 
         $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_QUIZ->value);
+        } catch(\Exception $th){
+            
+        }
+        
 
         return response()->redirectToRoute('personal-plan', $code);
     }

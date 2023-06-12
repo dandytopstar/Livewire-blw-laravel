@@ -990,7 +990,7 @@
         width: 225px;
     }
     .quiz-body .quiz-card .container img {
-        width: 180px;
+        width: 100px;
     }
 
     .quiz-body .quiz-card .container .row img {
@@ -1002,7 +1002,8 @@
         margin-left: 15px;
     }
     .quiz-card .card-body .boy-girl {
-        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     section.main-page .bg-image-slide {
         height: calc(100vh - 650px);

@@ -31,7 +31,7 @@
     </div>
 </div>
 
-@push('custom-scripts')
+
 
 <script>
     window.nextAnimation=()=>{
@@ -41,5 +41,4 @@
     }
 </script>
 
-    
-@endpush
+
