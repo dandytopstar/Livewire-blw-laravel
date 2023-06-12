@@ -2,6 +2,7 @@
     'countQuestionsDots' => [],
     'currentQuestionNum' => 1,
     'currentQuestion' => [],
+    'backLink' => route('bookmain'),
 ])
 <div class="mt-3 mt-lg-5 card mx-auto quiz-card shadow-lg p-lg-3 mb-5 bg-body rounded"
      id="card-loader"
@@ -13,7 +14,7 @@
         <div class="row">
             <div class="col pl-4 quiz-arrow">
                 @if($currentQuestionNum == 1)
-                    <a href="{{route('bookmain')}}">
+                    <a href="{{$backLink}}">
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 @else

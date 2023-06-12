@@ -12,7 +12,8 @@
                     "
                     id="{{$currentQuestion['question_key'].'-'.$key}}"
                     @if(!empty($currentQuestion['multiple']))
-                        
+                        wire:click="nextSlideMultiple({{$key}})"
+                        data-multiple="1"
                     @else
                         wire:click.prevent="nextSlide({{$key}})"
                     @endif
@@ -31,13 +32,13 @@
 </div>
 
 @push('custom-scripts')
+
 <script>
     window.nextAnimation=()=>{
         $(".card-body").animate({
             opacity:"0",
         },100)
     }
-
 </script>
 
     

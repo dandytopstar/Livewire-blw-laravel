@@ -1,46 +1,44 @@
-<div class="position-relative px-3 quiz-body">
+<div class="position-relative px-3">
 
 
     @if(!empty($currentQuestion['loader']) && $currentQuestion['loader']['show'])
-        <x-bookquiz.card-loader
+        <x-quiz.card-loader
                 :countQuestionsDots="$countQuestionsDots"
                 :currentQuestionNum="$currentQuestionNum"
                 :currentQuestion="$currentQuestion"
-                :backLink="route('main')"
         >
-            <x-bookquiz.loader :currentQuestion="$currentQuestion" />
-        </x-bookquiz.card-loader>
+            <x-quiz.loader :currentQuestion="$currentQuestion" />
+        </x-quiz.card-loader>
     @endif
 
     @if(!empty($currentQuestion['benefits']))
-        <x-bookquiz.benefits
+        <x-quiz.benefits
                 :countQuestionsDots="$countQuestionsDots"
                 :currentQuestionNum="$currentQuestionNum"
                 :currentQuestion="$currentQuestion"
         >
-        </x-bookquiz.benefits>
+        </x-quiz.benefits>
     @endif
 
-    <x-bookquiz.card
+    <x-quiz.card
         :countQuestionsDots="$countQuestionsDots"
         :currentQuestionNum="$currentQuestionNum"
         :currentQuestion="$currentQuestion"
-        :backLink="route('main')"
     >
         @if(count($currentQuestion['answers']) == 2 && !empty($currentQuestion['answer_with_image']))
             <x-quiz.two-images :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['slider']))
-            <x-bookquiz.slider :currentQuestion="$currentQuestion" />
+            <x-quiz.slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['progress_slider']))
-            <x-bookquiz.progress-slider :currentQuestion="$currentQuestion" />
+            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))
-            <x-bookquiz.button-answers :currentQuestion="$currentQuestion" />
+            <x-quiz.button-answers :currentQuestion="$currentQuestion" />
         @endif
 
         @if(!empty($currentQuestion['text']))
@@ -48,14 +46,13 @@
         @endif
 
         @if(!empty($currentQuestion['continue_button']))
-            <x-bookquiz.continue-btn :currentQuestion="$currentQuestion" />
+            <x-quiz.continue-btn :currentQuestion="$currentQuestion" />
         @endif
 
-    </x-bookquiz.card>
+    </x-quiz.card>
 
 </div>
 
-@push('custom-scripts')
 
 <script>
 
@@ -90,15 +87,12 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
-            var myFunction = function () {
-                if(this.style.backgroundColor == "rgb(0, 189, 144)" ){
-                    this.style.backgroundColor = "#fff"
-                    this.style.color = "#000"
-                } else {
-                    this.style.backgroundColor = '#00bd90';
-                    this.style.color = '#fff';
-                }                
+
+            let myFunction = function() {
+                this.style.backgroundColor = '#00bd90';
+                this.style.color = '#fff';
             };
+
             Array.from(elements).forEach(function(element) {
                 element.addEventListener('click', myFunction);
             });
@@ -166,12 +160,8 @@
             cardBenefits.style.display = 'block';
 
             nextBtn.addEventListener('click', () => {
-                $('.benefits-body').animate({
-                    opacity:"0",
-                },100, ()=>{
-                    cardBenefits.style.display = 'none';
-                    card.style.display = 'block';
-                })
+                cardBenefits.style.display = 'none';
+                card.style.display = 'block';
             });
         }
     }
@@ -180,9 +170,35 @@
         if(!document.querySelector("#progress-slider")){
             return;
         }
+
+        // let progressSlider = document.querySelector("#progress-slider")
+        // let count = progressSlider.dataset.count;
+        // let seconds = progressSlider.dataset.seconds;
+        // let slide = document.querySelector('#slide-1');
+        // slide.style.display = 'block';
+        // let currentSlide = 2;
+        // showSlide()
+        //
+        // function showSlide() {
+        //     setTimeout(() => {
+        //         slide.style.display = 'none';
+        //         slide = document.querySelector('#slide-'+currentSlide);
+        //         slide.style.display = 'block';
+        //         currentSlide = currentSlide+1;
+        //
+        //         if(currentSlide > count) {
+        //             setTimeout(() => {
+        //                 document.querySelector('#finish-quiz').click()
+        //             }, seconds*1000)
+        //         } else {
+        //             showSlide();
+        //         }
+        //     }, seconds*1000)
+        // }
+
         setTimeout(() => {
             document.querySelector('#finish-quiz').click()
-        }, 3500)
+        }, 5000)
 
         var i = 0;
         if (i == 0) {
@@ -193,12 +209,11 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    document.querySelector('#progressNum').innerHTML = "100%";
                     i = 0;
                 } else {
                     width++;
                     elem.style.width = width + "%";
-                    document.querySelector('#progressNum').innerHTML = width + "%";
+                    elem.innerHTML = width + "%";
                 }
             }
         }
@@ -206,6 +221,3 @@
     }
 
 </script>
-
-    
-@endpush
