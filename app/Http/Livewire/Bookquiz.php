@@ -574,27 +574,30 @@ class Bookquiz extends Component
 
     public function setQuestionAnswer($answer)
     {
-        if ($answer) {
+        try {
+            if ($answer) {
 
-            $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
+                $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
 
-            $text = $currentAnswer['answers'][$answer]['text'];
-            $answer_num = $answer;
+                $text = $currentAnswer['answers'][$answer]['text'];
+                $answer_num = $answer;
 
-            $this->resultAnswers[$this->currentQuestionNum] = [
-                'number' => $this->currentQuestionNum,
-                'key' => $currentAnswer['question_key'],
-                'question_text' => $currentAnswer['question'],
-                'answer' => $text,
-                'answer_num' => $answer_num,
-            ];
+                $this->resultAnswers[$this->currentQuestionNum] = [
+                    'number' => $this->currentQuestionNum,
+                    'key' => $currentAnswer['question_key'],
+                    'question_text' => $currentAnswer['question'],
+                    'answer' => $text,
+                    'answer_num' => $answer_num,
+                ];
 
-            foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
-                $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+                foreach ($this->quizQuestions[$this->currentQuestionNum]['answers'] as $key => $item) {
+                    $this->quizQuestions[$this->currentQuestionNum]['answers'][$key]['selected'] = false;
+                }
+
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
+
             }
-
-            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = true;
-
+        } catch (\Throwable $th) {
         }
     }
 

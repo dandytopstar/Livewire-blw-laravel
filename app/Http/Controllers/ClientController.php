@@ -63,19 +63,23 @@ class ClientController extends Controller
 
     public function bookCreateClient(Request $request)
     {
+        
         $code = $request->get('code');
         $email =$request->get('email');
         $ad_name = session('ad_name');
 
         $client = Client::query()->where('code', $code)->first();
-
-        if($client && $email) {
-            $client->email = $email;
-            $client->ad_name = $ad_name;
-            $client->save();
-        }
-
-        $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_BOOK_QUIZ->value);
+        try {
+            if($client && $email) {
+                $client->email = $email;
+                $client->ad_name = $ad_name;
+                $client->save();
+            }
+    
+            $this->klaviyoService->sendClientData($client, ClientSteps::FINISHED_BOOK_QUIZ->value);
+        } catch (\Throwable $th) {
+            
+        }    
 
         return response()->redirectToRoute('bookpersonal-plan', $code);
     }

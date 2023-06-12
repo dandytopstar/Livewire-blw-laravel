@@ -1253,6 +1253,7 @@ section.program {
 .book-mp .mp-first-block {
     width: 400px;
     height: 400px;
+    margin: auto;
 }
 .book-plan-logo-adaptive {
     display: none;
