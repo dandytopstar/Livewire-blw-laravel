@@ -7,6 +7,7 @@ use App\Models\Transaction;
 use Exception;
 use Omnipay\Omnipay;
 use Stripe\StripeClient;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
 
 
 class PaymentService
@@ -52,32 +53,6 @@ class PaymentService
             ->with('client')
             ->with('personalPlan')
             ->first();
-    }
-
-    public function payPal($paymentData, $transaction)
-    {
-        $gateway = Omnipay::create('PayPal_Rest');
-        $gateway->setClientId(env('PAYPAL_CLIENT_ID'));
-        $gateway->setSecret(env('PAYPAL_APP_SECRET'));
-        $gateway->setTestMode(env('PAYPAL_TEST_MODE'));
-
-        try {
-            $response = $gateway->purchase([
-                'amount' => $paymentData['price'],
-                'currency' => env('PAYPAL_CURRENCY'),
-                'returnUrl' => route('paypal-success',$transaction->id),
-                'cancelUrl' => route('paypal-error',$transaction->id),
-            ])->send();
-
-            if($response->isRedirect()) {
-                $response->redirect();
-            } else {
-                return $response->getMessage();
-            }
-
-        } catch (Exception $e) {
-            return $e->getMessage();
-        }
     }
 
     public function stripe($client, $data)
@@ -151,5 +126,82 @@ class PaymentService
         ];
     }
 
+    public function payPal($paymentData, $transaction)
+    {
+        $gateway = Omnipay::create('PayPal_Rest');
+        $gateway->setClientId(env('PAYPAL_CLIENT_ID'));
+        $gateway->setSecret(env('PAYPAL_APP_SECRET'));
+        $gateway->setTestMode(env('PAYPAL_TEST_MODE'));
+
+        try {
+            $response = $gateway->purchase([
+                'amount' => $paymentData['price'],
+                'currency' => env('PAYPAL_CURRENCY'),
+                'returnUrl' => route('paypal-success',$transaction->id),
+                'cancelUrl' => route('paypal-error',$transaction->id),
+            ])->send();
+
+            if($response->isRedirect()) {
+                $response->redirect();
+            } else {
+                return $response->getMessage();
+            }
+
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+    }
+
+    public function payPalGenerateAccessToken()
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => env('PAYPAL_BASE_URL')."/v1/oauth2/token",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_USERPWD => env('PAYPAL_CLIENT_ID').":".env('PAYPAL_APP_SECRET'),
+            CURLOPT_POSTFIELDS => "grant_type=client_credentials",
+            CURLOPT_HTTPHEADER => array(
+                "Accept: application/json",
+                "Accept-Language: en_US"
+            ),
+        ));
+
+        $result= curl_exec($curl);
+
+        $array=json_decode($result, true);
+        $token=$array['access_token'];
+
+
+        dd($token);
+    }
+
+    public function payPalHandlePayment($personalPlan)
+    {
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $paypalToken = $provider->getAccessToken();
+        $response = $provider->createOrder([
+            "intent" => "CAPTURE",
+            "application_context" => [
+                "return_url" => route('success.payment'),
+                "cancel_url" => route('cancel.payment'),
+            ],
+            "purchase_units" => [
+                0 => [
+                    "amount" => [
+                        "currency_code" => "USD",
+                        "value" => $personalPlan->payment_price
+                    ]
+                ]
+            ]
+        ]);
+
+        return $response;
+    }
 
 }
