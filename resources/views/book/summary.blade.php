@@ -93,7 +93,7 @@
 
             <div class="what-will-item block-4 whatwill-block">
                 <div class="ww-item-content">
-                    <h3 class="item-title">300 Pages of Guides And Vital Tips</h3>
+                    <h3 class="item-title">300+ Pages of Guides And Vital Tips</h3>
                     <img src="{{asset('assets/book/summary/blw/3.png')}}" alt="">
                 </div>
                 <div class="item-number n1">3</div>
@@ -120,8 +120,14 @@
                 <div class="ww-item-content">
                     <h3 class="item-title">Video Tutorials</h3>
                     <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
+
                 </div>
             </div>
+            <a href="{{route('bookregistration', $code)}}" class="text-decoration-none get-plan-button">
+                        <button class="btn font-white-600 btn-green-squre">
+                            {{__('front.get_your_plan')}}
+                        </button>
+            </a>
         </div>
 
     </section>
@@ -676,6 +682,11 @@
             </div>
 
         </div>
+        <a href="{{route('bookregistration', $code)}}" class="text-decoration-none get-plan-button plan-selection">
+                        <button class="btn font-white-600 btn-green-squre">
+                            {{__('front.get_your_plan')}}
+                        </button>
+        </a>
 
     </section>
 

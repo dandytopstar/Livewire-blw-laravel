@@ -542,6 +542,11 @@
     margin-left: auto;
 }
 
+.get-plan-button{
+    width: 100%;
+    display: none;
+}
+
 @media (max-width: 1265px) {
     #blw-benefits-adaptive.book-benefits {
         padding-top: 20px;
@@ -712,6 +717,13 @@
 }
 
 @media (max-width: 768px) {
+
+    .what-will .what-will-items .block-4.whatwill-block h3 {
+        padding-top: 30px;
+    }
+    .get-plan-button{
+        display: block;
+    }
     .mp-something-more .mp-block-item {
         padding: 10px;
     }
@@ -1066,10 +1078,10 @@
     }
 
     .book-summary .container .bg-image-absolute {
-        width: 250px;
+        width: 270px;
     }
     .book-summary .container .bg-image-absolute img {
-        width: 250px;
+        width: 270px;
         height: 250px;
     }
 
