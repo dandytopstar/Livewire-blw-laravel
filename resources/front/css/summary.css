@@ -746,9 +746,9 @@
 
     .block-2.whatwill-block img {
         position: absolute;
-        width: 254px !important;
+        width: 240px !important;
         height: 143px !important;
-        right: 18px;
+        right: 22px;
         top: 80px;
     }
     .block-2.whatwill-block .n1 {
@@ -795,11 +795,11 @@
         margin-top: 20px;
     }
     .book-summary .container .bg-image-absolute {
-        width: 320px;
+        width: 350px;
     }
 
     .book-summary .container .bg-image-absolute img {
-        width: 320px;
+        width: 350px;
     }
 
     .book-mp .left-img {
@@ -1078,10 +1078,10 @@
     }
 
     .book-summary .container .bg-image-absolute {
-        width: 270px;
+        width: 280px;
     }
     .book-summary .container .bg-image-absolute img {
-        width: 270px;
+        width: 280px;
         height: 250px;
     }
 

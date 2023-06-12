@@ -1280,3 +1280,11 @@ section.program {
 .mp-something-more-plan {
     padding: 20px;
 }
+.m-20 {
+    margin:20px;
+}
+
+.mx-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}

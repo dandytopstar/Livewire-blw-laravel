@@ -31,7 +31,7 @@
             </div>
 
             <div class="img-box bg-image-absolute ">
-                <img src="{{asset('assets/book/summary/main.jpg')}}" height="600px">
+                <img src="{{asset('assets/book/summary/book-first-img.jpg')}}" height="600px">
             </div>
 
         </div>
@@ -132,7 +132,7 @@
 
     </section>
 
-    <section id="meal-plan-features" class="big-section text-center meal-book">
+    <section id="meal-plan-features" class="text-center meal-book m-20">
 
         <h2 class="section-title">Meal Plan Features</h2>
 
