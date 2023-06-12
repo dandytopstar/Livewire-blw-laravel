@@ -170,4 +170,26 @@ class PaymentController extends Controller
 
         return response()->json(['redirectLink' => $redirectLink]);
     }
+
+    public function payPalHandlePayment(Request $request)
+    {
+        $personalPlan = PersonalPlan::query()->where('id', $request->input('personal_plan_id'))->first();
+
+        $response = $this->paymentService->payPalHandlePayment($personalPlan);
+
+        if (isset($response['id']) && $response['id'] != null) {
+            foreach ($response['links'] as $links) {
+                if ($links['rel'] == 'approve') {
+                    return redirect()->away($links['href']);
+                }
+            }
+            return redirect()
+                ->route('cancel.payment')
+                ->with('error', 'Something went wrong.');
+        } else {
+            return redirect()
+                ->route('create.payment')
+                ->with('error', $response['message'] ?? 'Something went wrong.');
+        }
+    }
 }

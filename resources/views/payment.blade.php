@@ -108,7 +108,7 @@
                                             </div>
                                         </div>
 
-                                        <form  action="{{route('payment')}}" method="post" id="paypal-payment-form">
+                                        <form  action="{{route('payment')}}" method="get" id="paypal-payment-form">
 
                                             @csrf
 
@@ -122,9 +122,9 @@
 
                                             <input type="hidden" name="subscription_id" value="" id="paypal_subscription_id">
 
-{{--                                                <button class="btn yellow-payment-btn" type="submit">--}}
-{{--                                                    <img src="{{asset('assets/payment/paypal-btn.png')}}" alt="">--}}
-{{--                                                </button>--}}
+                                            <button class="btn yellow-payment-btn" type="submit" style="display: none">
+                                                <img src="{{asset('assets/payment/paypal-btn.png')}}" alt="">
+                                            </button>
 
                                             <div id="paypal-button-container" class="mt-4"></div>
 
@@ -289,7 +289,16 @@
                 })
             }
 
-            payPalSubscription();
+            @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
+                payPalSubscription();
+                console.log(11);
+            @endif
+
+            @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::BOOK_PAYMENT->value)
+            console.log(22);
+                payPalPayment()
+            @endif
+
 
             function payPalSubscription() {
                 const form = document.getElementById('paypal-payment-form');
@@ -314,112 +323,10 @@
             function payPalPayment() {
                 const form = document.getElementById('paypal-payment-form');
 
-                paypal.Buttons({
-                    // Order is created on the server and the order id is returned
-                    createOrder() {
-                        return fetch("/my-server/create-paypal-order", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            // use the "body" param to optionally pass additional order information
-                            // like product skus and quantities
-                            body: JSON.stringify({
-                                cart: [
-                                    {
-                                        sku: "YOUR_PRODUCT_STOCK_KEEPING_UNIT",
-                                        quantity: "YOUR_PRODUCT_QUANTITY",
-                                    },
-                                ],
-                            }),
-                        })
-                            .then((response) => response.json())
-                            .then((order) => order.id);
-                    },
-                    // Finalize the transaction on the server after payer approval
-                    onApprove(data) {
-                        return fetch("/my-server/capture-paypal-order", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify({
-                                orderID: data.orderID
-                            })
-                        })
-                            .then((response) => response.json())
-                            .then((orderData) => {
-                                // Successful capture! For dev/demo purposes:
-                                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                                const transaction = orderData.purchase_units[0].payments.captures[0];
-                                alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
-                                // When ready to go live, remove the alert and show a success message within this page. For example:
-                                // const element = document.getElementById('paypal-button-container');
-                                // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                                // Or go to another URL:  window.location.href = 'thank_you.html';
-                            });
-                    }
-                }).render('#paypal-button-container');
+                document.querySelector('.btn.yellow-payment-btn').style.display = 'block'
+
+                form.action = "{{route('paypal-handle')}}"
             }
-
-        // stripePaymentSubscribe();
-
-        // function stripePaymentSubscribe() {
-        //
-        //
-        //     const elements = stripe.elements(options);
-        //
-        //     const style = {
-        //         base: {
-        //             iconColor: '#00BD90',
-        //             color: '#000',
-        //             fontWeight: '500',
-        //             fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
-        //             fontSize: '16px',
-        //             fontSmoothing: 'antialiased',
-        //             ':-webkit-autofill': {
-        //                 color: '#00BD90',
-        //             },
-        //             '::placeholder': {
-        //                 color: '#00BD90',
-        //             },
-        //         },
-        //         invalid: {
-        //             iconColor: '#FF735C',
-        //             color: '#FF735C',
-        //         },
-        //     };
-        //
-        //     const card = elements.create('card', {style});
-        //
-        //     card.mount('#card-element');
-        //
-        //     const form = document.getElementById('stripe-payment-form');
-        //
-        //     form.addEventListener('submit', async (event) => {
-        //         event.preventDefault();
-        //
-        //         const {token, error} = await stripe.createToken(card);
-        //
-        //         if (error) {
-        //             const errorElement = document.getElementById('card-errors');
-        //             errorElement.textContent = error.message;
-        //         } else {
-        //             stripeTokenHandler(token);
-        //         }
-        //     });
-        //
-        //     const stripeTokenHandler = (token) => {
-        //         const form = document.getElementById('stripe-payment-form');
-        //         const hiddenInput = document.createElement('input');
-        //         hiddenInput.setAttribute('type', 'hidden');
-        //         hiddenInput.setAttribute('name', 'stripeToken');
-        //         hiddenInput.setAttribute('value', token.id);
-        //         form.appendChild(hiddenInput);
-        //
-        //         form.submit();
-        //     }
-        // }
 
     </script>
 

@@ -51,7 +51,7 @@ class PersonalPlanSeeder extends Seeder
                 'type' => PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value,
             ],
             3 => [
-                'name' => '1-month <br>Baby-Led Weaning Meal Plan',
+                'name' => '1-month <br>Baby-Led Weaning <br>Meal Plan',
                 'hash' => '3c8d55dd-b9cd-4ef9-af9b-940649cc2698',
                 'billed_period' => 'Billed every month',
                 'period' => 1,

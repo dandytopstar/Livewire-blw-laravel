@@ -57,6 +57,8 @@ Route::post('payment-stripe', [PaymentController::class, 'paymentStripeResult'])
 
 Route::view('payment-stripe', 'stripe-result');
 
+Route::get('paypal-handle', [PaymentController::class, 'payPalHandlePayment'])->name('paypal-handle');
+
 Route::get('paypal-success/{id}', [PaymentController::class, 'payPalSuccess'])->name('paypal-success');
 
 Route::get('paypal-error/{id}', [PaymentController::class, 'payPalError'])->name('paypal-error');
