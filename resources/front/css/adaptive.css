@@ -669,9 +669,10 @@
         display: block;
     }
 
-    .plans .plans-box .personal-plan .row-inf {
-        justify-content: normal;
-    }
+    /*.plans .plans-box .personal-plan .row-inf {*/
+    /*    justify-content: normal;*/
+    /*}*/
+
     .plans .plans-box .personal-plan  .row-inf > .plan-name{
         margin-right:auto;
     }
