@@ -542,6 +542,11 @@
     margin-left: auto;
 }
 
+.get-plan-button{
+    width: 100%;
+    display: none;
+}
+
 @media (max-width: 1265px) {
     #blw-benefits-adaptive.book-benefits {
         padding-top: 20px;
@@ -712,6 +717,13 @@
 }
 
 @media (max-width: 768px) {
+
+    .what-will .what-will-items .block-4.whatwill-block h3 {
+        padding-top: 30px;
+    }
+    .get-plan-button{
+        display: block;
+    }
     .mp-something-more .mp-block-item {
         padding: 10px;
     }
@@ -734,9 +746,9 @@
 
     .block-2.whatwill-block img {
         position: absolute;
-        width: 254px !important;
+        width: 250px !important;
         height: 143px !important;
-        right: 18px;
+        right: 17px;
         top: 80px;
     }
     .block-2.whatwill-block .n1 {
@@ -765,10 +777,10 @@
 
     .block-4.whatwill-block img {
         position: absolute;
-        width: 231px !important;
-        height: 149px !important;
-        right: 34px;
-        top: 65px;
+        width: 240px !important;
+        height: 140px !important;
+        right: 17px;
+        top: 70px;
     }
     .block-4.whatwill-block .n1 {
         top: 31.6%;
@@ -783,11 +795,11 @@
         margin-top: 20px;
     }
     .book-summary .container .bg-image-absolute {
-        width: 320px;
+        width: 350px;
     }
 
     .book-summary .container .bg-image-absolute img {
-        width: 320px;
+        width: 350px;
     }
 
     .book-mp .left-img {
@@ -1066,10 +1078,10 @@
     }
 
     .book-summary .container .bg-image-absolute {
-        width: 250px;
+        width: 300px;
     }
     .book-summary .container .bg-image-absolute img {
-        width: 250px;
+        width: 300px;
         height: 250px;
     }
 

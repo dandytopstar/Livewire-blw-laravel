@@ -145,7 +145,7 @@
 
             <div class="what-will-item block-4 whatwill-block">
                 <div class="ww-item-content">
-                    <h3 class="item-title">300 Pages of Guides And Vital Tips</h3>
+                    <h3 class="item-title">300+ Pages of Guides And Vital Tips</h3>
                     <img src="{{asset('assets/book/summary/blw/3.png')}}" alt="">
                 </div>
                 <div class="item-number n1">3</div>
@@ -174,7 +174,6 @@
                     <img src="{{asset('assets/summary/whatwill/5.png')}}" alt="">
                 </div>
             </div>
-        </div>
 
     </section>
 
