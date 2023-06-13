@@ -40,15 +40,16 @@ class PaymentController extends Controller
         $clientData['personalPlan'] = $personalPlan;
         $clientData['code'] = $code;
         $clientData['client'] = $client;
+        $personalPlanType = $personalPlan->type;
 
-        Log::info($personalPlan->type);
+        Log::info($personalPlanType);
 
-        if($personalPlan->type == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
+        if($personalPlanType == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
             $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
             $clientData = array_merge($clientData, $subscription);
         }
 
-        if($personalPlan->type == PersonalPlanTypesEnum::BOOK_PAYMENT->value) {
+        if($personalPlanType == PersonalPlanTypesEnum::BOOK_PAYMENT->value) {
             $subscription = $this->paymentService->getStripePayment($client, $personalPlan);
             $clientData = array_merge($clientData, $subscription);
         }
