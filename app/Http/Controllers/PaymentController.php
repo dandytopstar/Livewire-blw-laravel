@@ -41,6 +41,8 @@ class PaymentController extends Controller
         $clientData['code'] = $code;
         $clientData['client'] = $client;
 
+        Log::info($personalPlan->type);
+
         if($personalPlan->type == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
             $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
             $clientData = array_merge($clientData, $subscription);
