@@ -201,9 +201,8 @@ class PaymentController extends Controller
         $transaction = $this->paymentService->saveTransaction($preparedData);
 
         $response = $this->paymentService->payPalHandlePayment($personalPlan, $transaction);
-
+        dd($response);
         if (isset($response['id']) && $response['id'] != null) {
-            dd($response['links']);
             foreach ($response['links'] as $links) {
                 if ($links['rel'] == 'approve') {
                     return redirect()->away($links['href']);
