@@ -1289,3 +1289,7 @@ section.program {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.book-section > .btn-gender {
+    display: none !important;
+}

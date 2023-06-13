@@ -1,4 +1,4 @@
-<div class="d-flex w-100">
+<div class="d-flex w-100 btn-gender">
   <a href="{{route('bookquiz')}}" type="button" class="font-grey-16-700 btn-gender-unsel mb-20" id='g_boy' onclick="selectGender(this)">
     {{__("front.gender_boy")}}
   </a>

@@ -44,6 +44,7 @@
           <x-book.gender-buttons/>
         </div>
       </div>
+      <x-book.gender-buttons/>
     </section>
   </div>
   <div class="img-box bg-image-slide text-center">

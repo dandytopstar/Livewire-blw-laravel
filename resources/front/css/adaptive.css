@@ -974,6 +974,37 @@
         height: calc(100vh - 50px);
     }
 
+    .book-section {
+        min-height: 0px;
+    }
+
+    .book-section > .btn-gender {
+        display: flex !important;
+        justify-content: space-evenly;
+        text-align: center;   
+    }
+
+    .book-section > .btn-gender #g_boy {
+        background-color: #30AEC4;
+        color: white;
+        border-radius: 20px;
+        width: 40%;
+    }
+
+    .book-section > .btn-gender #g_girl {
+        background-color: #FD7778;
+        color: white;
+        border-radius: 20px;
+        width: 40%;
+    }
+
+    .book-section .inf-box > .btn-gender {
+        display: none !important;
+    }
+
+    section.main-page.book-section .inf-box {
+        height: min-content;
+    }
     .sel-answer {
         display: grid;
         grid-gap: 5px;

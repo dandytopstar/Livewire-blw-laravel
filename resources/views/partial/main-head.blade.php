@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no/>
     <meta name="description" content="Babyledweaning.me"/>
     <meta name="facebook-domain-verification" content="fid1wv8i1tvae0axzhm0bkh0v41tu2" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
