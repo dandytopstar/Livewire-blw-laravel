@@ -12,7 +12,8 @@ section h1 {
 }
 
 section .description {
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 section.main-page .bg-image-absolute {

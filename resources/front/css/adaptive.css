@@ -718,7 +718,8 @@
     }
 
     section.main-page .description {
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .font-grey-color-400 {
