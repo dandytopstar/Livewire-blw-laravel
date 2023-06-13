@@ -12,8 +12,7 @@
                     "
                     id="{{$currentQuestion['question_key'].'-'.$key}}"
                     @if(!empty($currentQuestion['multiple']))
-                        wire:click="nextSlideMultiple({{$key}})"
-                        data-multiple="1"
+
                     @else
                         wire:click.prevent="nextSlide({{$key}})"
                     @endif

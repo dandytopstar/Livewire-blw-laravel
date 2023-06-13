@@ -485,57 +485,61 @@ class Bookquiz extends Component
 
     public function nextSlideMultiple($answer = null)
     {
-        if ($answer) {
+        try {
+            if ($answer) {
 
-            $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
-            $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
-            $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
-            $text = $currentAnswer['answers'][$answer]['text'];
-            $deselectAll = empty($currentAnswer['answers'][$answer]['deselectAll']);
+                $currentAnswer = $this->quizQuestions[$this->currentQuestionNum];
+                $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
+                $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
+                $text = $currentAnswer['answers'][$answer]['text'];
+                $deselectAll = empty($currentAnswer['answers'][$answer]['deselectAll']);
 
-            $hasDeselectAll = empty($this->quizQuestions[$this->currentQuestionNum]['hasDeselectAll']);
-            $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
-            $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
+                $hasDeselectAll = empty($this->quizQuestions[$this->currentQuestionNum]['hasDeselectAll']);
+                $issetAnswer = isset($this->resultAnswers[$this->currentQuestionNum]);
+                $isEmptyCurrentAnswer = empty($this->resultAnswers[$this->currentQuestionNum]['answers'][$answer]);
 
-            if ($issetAnswer) {
+                if ($issetAnswer) {
 
-                if ($isEmptyCurrentAnswer) {
-                    $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
+                    if ($isEmptyCurrentAnswer) {
+                        $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
+                    } else {
+                        $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
+                    }
+
                 } else {
-                    $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = '';
+
+                    $this->resultAnswers[$this->currentQuestionNum] = [
+                        'number' => $this->currentQuestionNum,
+                        'key' => $currentAnswer['question_key'],
+                        'question_text' => $currentAnswer['question'],
+                        'answers' => []
+
+                    ];
+
+                    $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
                 }
 
-            } else {
+                $checkSelected = $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
 
-                $this->resultAnswers[$this->currentQuestionNum] = [
-                    'number' => $this->currentQuestionNum,
+                $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
+
+                if (!$deselectAll) {
+                    $this->deselectMultipleAnswers($answer);
+
+                } elseif (!$hasDeselectAll) {
+                    //var_dump($checkSelected)
+                    $this->deselectNoneMultipleAnswers();
+                }
+
+                $this->dispatchBrowserEvent('answer-selected', [
+                    'number' => $answer,
                     'key' => $currentAnswer['question_key'],
                     'question_text' => $currentAnswer['question'],
-                    'answers' => []
+                    'answers' => $this->quizQuestions[$this->currentQuestionNum]['answers']
+                ]);
 
-                ];
-
-                $this->resultAnswers[$this->currentQuestionNum]['answers'][$answer] = $text;
             }
-
-            $checkSelected = $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'];
-
-            $this->quizQuestions[$this->currentQuestionNum]['answers'][$answer]['selected'] = !$checkSelected;
-
-            if (!$deselectAll) {
-                $this->deselectMultipleAnswers($answer);
-
-            } elseif (!$hasDeselectAll) {
-                //var_dump($checkSelected)
-                $this->deselectNoneMultipleAnswers();
-            }
-
-            $this->dispatchBrowserEvent('answer-selected', [
-                'number' => $answer,
-                'key' => $currentAnswer['question_key'],
-                'question_text' => $currentAnswer['question'],
-                'answers' => $this->quizQuestions[$this->currentQuestionNum]['answers']
-            ]);
+        } catch (\Exception $tr) {
 
         }
     }
