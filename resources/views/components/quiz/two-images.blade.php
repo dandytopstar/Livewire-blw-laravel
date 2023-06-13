@@ -8,6 +8,7 @@
             <div class="pointer @if(!empty($answer['selected'])) click @endif shadow-sm px-1 pt-1 mb-3 bg-body rounded-3"
                  id="{{$currentQuestion['question_key'].'-'.$key}}"
                  wire:click="nextSlide({{$key}})"
+                 onclick="nextAnimation()"
             >
                 <img src="{{$answer['image']}}" alt="" width="130px" class="mb-2">
 
@@ -17,3 +18,13 @@
 
     </div>
 </div>
+
+
+
+<script>
+    window.nextAnimation=()=>{
+        $(".card-body").animate({
+            opacity:"0",
+        },100)
+    }
+</script>

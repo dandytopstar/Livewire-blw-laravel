@@ -48,8 +48,8 @@ return [
     'gender_boy' => "Boy",
     'gender_girl' => "Girl",
     'start_bookquiz' => 'Start Quiz',
-    'hero_title' => 'Personalized Baby-Led Weaning Meal Plan',
-    'hero_subtitle' => "Say goodbye to weaning woes and confidently introduce solids to your 6-12 month old’s",
+    'hero_title' => 'Say Goodbye to Endless Jars and Purees',
+    'hero_subtitle' => "Get a customized Baby-Led Weaning meal plan and enjoy a stress-free weaning adventure",
     'start_quiz' => 'Take Quiz',
 
     //Processes section

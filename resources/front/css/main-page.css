@@ -17,11 +17,12 @@ section .description {
 
 section.main-page .bg-image-absolute {
     position: absolute;
-    bottom: -20px;
+    bottom: 20px;
     right: 0;
 }
 
 section.main-page .bg-image-absolute img{
+    width: 80%;
     border-radius: 20px;
 }
 
