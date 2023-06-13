@@ -291,14 +291,11 @@
 
             @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value)
                 payPalSubscription();
-                console.log(11);
             @endif
 
             @if($personalPlan->type == \App\Enums\PersonalPlanTypesEnum::BOOK_PAYMENT->value)
-            console.log(22);
                 payPalPayment()
             @endif
-
 
             function payPalSubscription() {
                 const form = document.getElementById('paypal-payment-form');

@@ -915,12 +915,12 @@ section .stepper-box {
 .payment-box .yellow-payment-btn {
     width: 100%;
     background: #FFC339;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .payment-section .inf-box .item:first-child {
