@@ -205,13 +205,9 @@ class PaymentController extends Controller
                     return redirect()->away($links['href']);
                 }
             }
-            return redirect()
-                ->route('cancel.payment')
-                ->with('error', 'Something went wrong.');
+            return back();
         } else {
-            return redirect()
-                ->route('create.payment')
-                ->with('error', $response['message'] ?? 'Something went wrong.');
+            return back();
         }
     }
 }
