@@ -24,9 +24,11 @@
     <!-- disable zoom in or out on ipon -->
 
       <script type="text/javascript">
-        document.addEventListener('touchmove', function (event) {
-        if (event.scale !== 1) { event.preventDefault(); }
-        }, { passive: false });
+         if (navigator.userAgent.match(/iPhone/i)){
+            document.addEventListener('touchmove', function (event) {
+                if (event.scale !== 1) { event.preventDefault(); }
+            }, { passive: false });
+        }
         </script>
     <!--End  disable zoom in or out on ipon -->
     <!-- Hotjar Tracking Code for my site -->
