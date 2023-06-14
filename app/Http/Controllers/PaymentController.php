@@ -10,6 +10,7 @@ use App\Services\KlaviyoService;
 use App\Services\PaymentService;
 use App\Services\QuizService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Stripe\PaymentIntent;
 use Stripe\StripeClient;
 
@@ -39,13 +40,16 @@ class PaymentController extends Controller
         $clientData['personalPlan'] = $personalPlan;
         $clientData['code'] = $code;
         $clientData['client'] = $client;
+        $personalPlanType = $personalPlan->type;
 
-        if($personalPlan->type == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
+        Log::info($personalPlanType);
+
+        if($personalPlanType == PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value) {
             $subscription = $this->paymentService->getStripeSubscription($client, $personalPlan);
             $clientData = array_merge($clientData, $subscription);
         }
 
-        if($personalPlan->type == PersonalPlanTypesEnum::BOOK_PAYMENT->value) {
+        if($personalPlanType == PersonalPlanTypesEnum::BOOK_PAYMENT->value) {
             $subscription = $this->paymentService->getStripePayment($client, $personalPlan);
             $clientData = array_merge($clientData, $subscription);
         }
@@ -94,21 +98,28 @@ class PaymentController extends Controller
     public function payPalSuccess(Request $request, $id)
     {
         $payPalResult = $request->all();
+        $token  = $request['token'];
+        $response = $this->paymentService->payPalCheckPaymentStatus($token);
+        $status = 'wrong';
+
+        if (isset($response['status']) && $response['status'] == 'COMPLETED') {
+            $status = 'succeeded';
+        }
 
         $this->paymentService->updateTransaction($id, [
-            'status' => 'succeeded',
-            'payment_data' => $payPalResult
+            'status' => $status,
+            'payment_data' => [...$response, ...$payPalResult],
         ]);
 
         $result = $this->paymentService->getTransactionById($id);
 
         $step = '';
 
-        if(PersonalPlanTypesEnum::BOOK_PAYMENT == $result->personalPlan->type) {
+        if(PersonalPlanTypesEnum::BOOK_PAYMENT->value == $result->personalPlan->type) {
             $step = ClientSteps::ORDERED_BOOK->value;
         }
 
-        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING == $result->personalPlan->type) {
+        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value == $result->personalPlan->type) {
             $step = ClientSteps::ORDERED_PERSONAL_PLAN->value;
         }
 
@@ -152,15 +163,19 @@ class PaymentController extends Controller
             'status' => $status,
         ];
 
+        if(PersonalPlanTypesEnum::BOOK_PAYMENT->value == $personalPlan->type) {
+            $preparedData['price'] = $personalPlan->payment_price;
+        }
+
         $result = $this->paymentService->saveTransaction($preparedData);
 
         $step = '';
 
-        if(PersonalPlanTypesEnum::BOOK_PAYMENT == $personalPlan->type) {
+        if(PersonalPlanTypesEnum::BOOK_PAYMENT->value == $personalPlan->type) {
             $step = ClientSteps::ORDERED_BOOK->value;
         }
 
-        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING == $personalPlan->type) {
+        if(PersonalPlanTypesEnum::STANDARD_SUBSCRIBING->value == $personalPlan->type) {
             $step = ClientSteps::ORDERED_PERSONAL_PLAN->value;
         }
 
@@ -175,21 +190,26 @@ class PaymentController extends Controller
     {
         $personalPlan = PersonalPlan::query()->where('id', $request->input('personal_plan_id'))->first();
 
-        $response = $this->paymentService->payPalHandlePayment($personalPlan);
+        $preparedData = [
+            'client_id' =>$request->input('client_id'),
+            'personal_plan_id' => $personalPlan->id,
+            'price' => $personalPlan->payment_price,
+            'method' => 'stripe',
+            'status' => 'wrong',
+        ];
 
+        $transaction = $this->paymentService->saveTransaction($preparedData);
+
+        $response = $this->paymentService->payPalHandlePayment($personalPlan, $transaction);
         if (isset($response['id']) && $response['id'] != null) {
             foreach ($response['links'] as $links) {
                 if ($links['rel'] == 'approve') {
                     return redirect()->away($links['href']);
                 }
             }
-            return redirect()
-                ->route('cancel.payment')
-                ->with('error', 'Something went wrong.');
+            return back();
         } else {
-            return redirect()
-                ->route('create.payment')
-                ->with('error', $response['message'] ?? 'Something went wrong.');
+            return back();
         }
     }
 }

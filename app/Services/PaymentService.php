@@ -180,7 +180,7 @@ class PaymentService
         dd($token);
     }
 
-    public function payPalHandlePayment($personalPlan)
+    public function payPalHandlePayment($personalPlan, $transaction)
     {
         $provider = new PayPalClient;
         $provider->setApiCredentials(config('paypal'));
@@ -188,8 +188,8 @@ class PaymentService
         $response = $provider->createOrder([
             "intent" => "CAPTURE",
             "application_context" => [
-                "return_url" => route('success.payment'),
-                "cancel_url" => route('cancel.payment'),
+                "return_url" => route('paypal-success', ['id' => $transaction->id]),
+                "cancel_url" => route('paypal-error', ['id' => $transaction->id]),
             ],
             "purchase_units" => [
                 0 => [
@@ -202,6 +202,14 @@ class PaymentService
         ]);
 
         return $response;
+    }
+
+    public function payPalCheckPaymentStatus($token)
+    {
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $provider->getAccessToken();
+        return $provider->capturePaymentOrder($token);
     }
 
 }
