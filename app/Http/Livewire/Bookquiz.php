@@ -74,7 +74,7 @@ class Bookquiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We are now generating APP Profile Just For You',
+                    'text' => "We're now generating first part of your book!",
                     'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
@@ -191,7 +191,7 @@ class Bookquiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We Are Now Generating First Part of Your Meal Plan',
+                    'text' => "We're now generating second part of your book!",
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
                 'benefits' => [
@@ -325,7 +325,7 @@ class Bookquiz extends Component
 
             '19' => [
                 'question_key' => 'end',
-                'question' => 'We are now generating Your Final Meal Plan and App Profile!',
+                'question' => "We're now generating third part of your book!",
                 'answers' => [
                     '1' => [
                         'percent' => '30',
