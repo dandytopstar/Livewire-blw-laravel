@@ -6,9 +6,10 @@
     <div class="gap-4">
         @foreach($currentQuestion['answers'] as $key => $answer)
             <button class="quiz-btn
-                        @if(!empty($answer['selected'])) click-green @endif
+                        @if(!empty($answer['selected'])) click-green selected-quiz-btn @else unlected-quiz-btn @endif 
                         @if(!empty($currentQuestion['multiple'])) multiple-btn @endif
                         @if(empty($currentQuestion['multiple'])) single-btn @endif
+                        @if(!empty($answer['deselectAll'])) deselectAll-btn @endif
                     "
                     id="{{$currentQuestion['question_key'].'-'.$key}}"
                     @if(!empty($currentQuestion['multiple']))

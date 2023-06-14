@@ -511,6 +511,15 @@
     margin-bottom: 30px;
 }
 
+.selected-quiz-btn {
+    color: #fff;
+    background-color: #00bd90;
+}
+
+.unlected-quiz-btn {
+    color:#000;
+    background-color: #fff;
+}
 @media (max-width: 576px) {
     .slide-view {
         height: 250px;

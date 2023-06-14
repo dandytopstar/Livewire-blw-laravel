@@ -81,6 +81,37 @@
 
     window.addEventListener('back-click', event => {
 
+        if(document.querySelector('.quiz-btn')) {
+            let elements = document.querySelectorAll(".quiz-btn")
+            let deselectAll = document.querySelector('.deselectAll-btn');
+            var myFunction = function () {
+                if(this.className.indexOf('selected-quiz-btn')>0){
+                    this.classList.remove("selected-quiz-btn");
+                    this.classList.add('unlected-quiz-btn')
+                } else {
+                    $(this).addClass("selected-quiz-btn");
+                    $(this).removeClass('unlected-quiz-btn')
+                }    
+                if(deselectAll){
+                    if(this.className.indexOf('deselectAll-btn')>0){
+                        Array.from(elements).map(function(element) {
+                            if(element.className.indexOf('deselectAll-btn')<0){
+                            element.classList.add("unlected-quiz-btn")
+                            element.classList.remove("selected-quiz-btn")
+                        }   
+                        });
+                    } else {
+                        
+                        deselectAll.classList.add('unlected-quiz-btn')
+                        deselectAll.classList.remove('selected-quiz-btn')
+                    }   
+                };
+            }
+            Array.from(elements).forEach(function(element) {
+                element.addEventListener('click', myFunction);
+            });
+        }
+
     });
 
 
@@ -88,15 +119,30 @@
 
         if(document.querySelector('.quiz-btn')) {
             let elements = document.querySelectorAll(".quiz-btn")
+            let deselectAll = document.querySelector('.deselectAll-btn');
             var myFunction = function () {
-                if(this.style.backgroundColor == "rgb(0, 189, 144)" ){
-                    this.style.backgroundColor = "#fff"
-                    this.style.color = "#000"
+                if(this.className.indexOf('selected-quiz-btn')>0){
+                    this.classList.remove("selected-quiz-btn");
+                    this.classList.add('unlected-quiz-btn')
                 } else {
-                    this.style.backgroundColor = '#00bd90';
-                    this.style.color = '#fff';
-                }                
-            };
+                    $(this).addClass("selected-quiz-btn");
+                    $(this).removeClass('unlected-quiz-btn')
+                }    
+                if(deselectAll){
+                    if(this.className.indexOf('deselectAll-btn')>0){
+                        Array.from(elements).map(function(element) {
+                            if(element.className.indexOf('deselectAll-btn')<0){
+                            element.classList.add("unlected-quiz-btn")
+                            element.classList.remove("selected-quiz-btn")
+                        }   
+                        });
+                    } else {
+                        
+                        deselectAll.classList.add('unlected-quiz-btn')
+                        deselectAll.classList.remove('selected-quiz-btn')
+                    }   
+                };
+            }
             Array.from(elements).forEach(function(element) {
                 element.addEventListener('click', myFunction);
             });
