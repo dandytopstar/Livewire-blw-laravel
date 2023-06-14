@@ -56,7 +56,7 @@ class Bookquiz extends Component
 
             '3' => [
                 'question_key' => 'overall_health',
-                'question' => "Your baby's overall health and development",
+                'question' => "Your baby's overall health and development?",
                 'answers' => [
                     1 => ['text' => 'Healthy and thriving'],
                     2 => ['text' => 'Some health concerns'],
@@ -65,27 +65,6 @@ class Bookquiz extends Component
             ],
 
             '4' => [
-                'question_key' => 'current_feeding_routine',
-                'question' => "Your baby's current feeding routine",
-                'answers' => [
-                    '1' => ['text' => 'Exclusively breastfed'],
-                    '2' => ['text' => 'Exclusively formula-fed'],
-                    '3' => ['text' => 'A combination of breast milk and formula']
-                ],
-            ],
-
-            '5' => [
-                'question_key' => 'breastfeed',
-                'question' => 'How long do you plan to breastfeed or provide formula to your baby?',
-                'answers' => [
-                    '1' => ['text' => '6 months'],
-                    '2' => ['text' => '9 months'],
-                    '3' => ['text' => '12 months'],
-                    '4' => ['text' => 'Over 12 months'],
-                ],
-            ],
-
-            '6' => [
                 'question_key' => 'started_introducing_solids',
                 'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
@@ -95,22 +74,15 @@ class Bookquiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We are now generating First Part of Your Book',
+                    'text' => 'We are now generating APP Profile Just For You',
                     'file' => 'assets/quiz/animation.mp4',
                 ],
             ],
 
-            '7' => [
-                'question' => 'What is Baby-Led Weaning?',
-                'answers' => [],
-                'text' => "Baby-led weaning is a method of introducing solid foods that involves letting babies <br> feed themselves with soft, age-appropriate foods. It promotes self-regulation of <br> appetite and fine motor skill development.",
-                'continue_button' => true,
-                'continue_button_text' => 'continue',
-            ],
 
-            '8' => [
+            '5' => [
                 'question_key' => 'infant_separate_meals',
-                'question' => 'Baby Meal Preferences',
+                'question' => 'Baby-Led Weaning Preferences',
                 'answers' => [
                     '1' => ['text' => 'Separate meals'],
                     '2' => ['text' => 'Family meals'],
@@ -119,9 +91,9 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '9' => [
+            '6' => [
                 'question_key' => 'own_or_pre_made_baby_food',
-                'question' => 'Do you prefer to make your own baby food or buy pre-made baby food?',
+                'question' => 'Your preferred method for preparing BLW food?',
                 'answers' => [
                     '1' => ['text' => 'Make my own'],
                     '2' => ['text' => 'Buy pre-made'],
@@ -130,9 +102,9 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '10' => [
+            '7' => [
                 'question_key' => 'store_and_preserve_baby_food',
-                'question' => "How do you plan to store and preserve baby's food?",
+                'question' => "How would you like to store and preserve baby's food?",
                 'answers' => [
                     '1' => ['text' => 'Refrigerate', 'selected' => false],
                     '2' => ['text' => 'Freeze', 'selected' => false],
@@ -143,9 +115,9 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '11' => [
+            '8' => [
                 'question_key' => 'bulk_and_froze_for_future_use',
-                'question' => 'Are you looking for meal ideas that can be made in bulk and frozen for future use?',
+                'question' => 'Seeking freezer-friendly bulk meal ideas?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -153,19 +125,9 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '12' => [
-                'question_key' => 'introduce_new_foods',
-                'question' => 'How do you prefer to introduce new foods to your baby?',
-                'answers' => [
-                    '1' => ['text' => 'One food at a time'],
-                    '2' => ['text' => 'Mix multiple foods together'],
-                    '3' => ['text' => 'Undecided']
-                ],
-            ],
-
-            '13' => [
+            '9' => [
                 'question_key' => 'offer_solid_foods',
-                'question' => 'How often do you plan to offer solid foods to your baby?',
+                'question' => 'How often would you like to offer solid foods to your baby?',
                 'answers' => [
                     '1' => ['text' => 'Once a day'],
                     '2' => ['text' => 'Twice a day'],
@@ -174,7 +136,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '14' => [
+            '10' => [
                 'question_key' => 'feeding_accessories',
                 'question' => 'Which of the following feeding accessories do you plan to use?',
                 'answers' => [
@@ -189,9 +151,9 @@ class Bookquiz extends Component
                 'hasDeselectAll' => true,
             ],
 
-            '15' => [
+            '11' => [
                 'question_key' => 'budget_friendly_meal_ideas',
-                'question' => 'Are you looking for meal ideas that are budget-friendly?',
+                'question' => 'Looking for meal ideas that are budget-friendly?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -199,9 +161,9 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '16' => [
+            '12' => [
                 'question_key' => 'quick_and_easy_to_prepare_meal_ideas',
-                'question' => 'Are you looking for meal ideas that are quick and easy to prepare?',
+                'question' => 'Looking for meal ideas that are quick and easy to prepare?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -209,7 +171,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '17' => [
+            '13' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "How would you like to track your baby's food intake and reactions to new foods?",
                 'answers' => [
@@ -222,9 +184,9 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '18' => [
+            '14' => [
                 'question_key' => 'purees_and_finger_foods',
-                'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
+                'question' => "Interested in incorporating both purees and finger foods into your infant's diet?",
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -233,7 +195,7 @@ class Bookquiz extends Component
                 'loader' => [
                     'show' => true,
                     'seconds' => 5500,
-                    'text' => 'We Are Now Generating Second Part of Your Book',
+                    'text' => 'We Are Now Generating First Part of Your Meal Plan',
                     'start_file' => 'assets/quiz/animation.mp4',
                 ],
                 'benefits' => [
@@ -245,36 +207,34 @@ class Bookquiz extends Component
                         'Promotes Brain Development',
                         'Builds baby’s confidence',
                         'Saves Money on Purees',
-                        'Saves Time in Meal Prep',
                         'Develops Fine Motor Skills',
-                        'Encourages Family Bonding',
                     ]
                 ]
             ],
 
-            '19' => [
+            '15' => [
                 'question_key' => 'allergenic_foods',
-                'question' => 'Do you plan to introduce these allergenic foods to reduce the risk of allergies?',
+                'question' => 'Would you like to introduce these foods?',
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
-                        'image' => asset('assets/quiz/slider/peanuts.jpg'),
+                        'image' => 'assets/quiz/slider/peanuts.jpg',
                     ],
                     '2' => [
                         'text' => 'Sesame seeds',
-                        'image' => asset('assets/quiz/slider/sesame_seeds.jpg'),
+                        'image' => 'assets/quiz/slider/sesame_seeds.jpg',
                     ],
                     '3' => [
                         'text' => 'Soy',
-                        'image' => asset('assets/quiz/slider/soy.jpg'),
+                        'image' => 'assets/quiz/slider/soy.jpg',
                     ],
                     '4' => [
                         'text' => 'Eggs',
-                        'image' => asset('assets/quiz/slider/eggs.jpg'),
+                        'image' => 'assets/quiz/slider/eggs.jpg',
                     ],
                     '5' => [
                         'text' => 'Dairy products',
-                        'image' => asset('assets/quiz/slider/dairy_products.jpg'),
+                        'image' => 'assets/quiz/slider/dairy_products.jpg',
                     ],
                 ],
                 'slider' => true,
@@ -295,7 +255,7 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '20' => [
+            '16' => [
                 'question_key' => 'comfortable_preparing_and_cooking_meals',
                 'question' => 'How comfortable are you with preparing and cooking meals from scratch?',
                 'answers' => [
@@ -306,7 +266,7 @@ class Bookquiz extends Component
                 ]
             ],
 
-            '21' => [
+            '17' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => 'Which of the following cooking methods do you prefer?',
                 'answers' => [
@@ -320,43 +280,33 @@ class Bookquiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '22' => [
-                'question_key' => 'traditional_foods',
-                'question' => "Have you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
-                'answers' => [
-                    '1' => ['text' => 'Yes'],
-                    '2' => ['text' => 'No'],
-                    '3' => ['text' => 'Undecided'],
-                ],
-            ],
-
-            '23' => [
+            '18' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "Love it or Hate It? <br> Incorporating different foods into your infant's diet",
                 'answers' => [
                     '1' => [
                         'text' => 'Whole grains',
-                        'image' => asset('assets/quiz/slider/whole_grains.jpg'),
+                        'image' => 'assets/quiz/slider/whole_grains.jpg',
                     ],
                     '2' => [
                         'text' => 'Beef',
-                        'image' => asset('assets/quiz/slider/beef.jpg'),
+                        'image' => 'assets/quiz/slider/beef.jpg',
                     ],
                     '3' => [
                         'text' => 'Chicken',
-                        'image' => asset('assets/quiz/slider/chicken.jpg'),
+                        'image' => 'assets/quiz/slider/chicken.jpg',
                     ],
                     '4' => [
                         'text' => 'Fish',
-                        'image' => asset('assets/quiz/slider/fish.jpg'),
+                        'image' => 'assets/quiz/slider/fish.jpg',
                     ],
                     '5' => [
                         'text' => 'Garlic',
-                        'image' => asset('assets/quiz/slider/garlic.jpg'),
+                        'image' => 'assets/quiz/slider/garlic.jpg',
                     ],
                     '6' => [
                         'text' => 'Ginger',
-                        'image' => asset('assets/quiz/slider/ginger.jpg'),
+                        'image' => 'assets/quiz/slider/ginger.jpg',
                     ],
                 ],
                 'slider' => true,
@@ -377,39 +327,24 @@ class Bookquiz extends Component
                 ],
             ],
 
-            '24' => [
-                'question_key' => 'drinks',
-                'question' => 'Which of the following drinks would you like to offer your baby along with meals?',
-                'answers' => [
-                    '1' => ['text' => 'Water', 'selected' => false],
-                    '2' => ['text' => 'Fruit juice', 'selected' => false],
-                    '3' => ['text' => 'Milk', 'selected' => false],
-                    '4' => ['text' => 'Other', 'selected' => false, 'deselectAll' => true],
-                ],
-                'multiple' => true,
-                'continue_button' => true,
-                'continue_button_text' => 'continue',
-                'hasDeselectAll' => true,
-            ],
-
-            '25' => [
+            '19' => [
                 'question_key' => 'end',
-                'question' => 'We are now generating Final Part of Your Book!',
+                'question' => 'We are now generating Your Final Meal Plan and App Profile!',
                 'answers' => [
                     '1' => [
                         'percent' => '30',
                         'text' => 'text 1',
-                        'image' => asset('assets/quiz/slider/chicken.jpg'),
+                        'image' => 'assets/quiz/slider/chicken.jpg',
                     ],
                     '2' => [
                         'percent' => '60',
                         'text' => 'text 2',
-                        'image' => asset('assets/quiz/slider/final_image.jpg'),
+                        'image' => 'assets/quiz/slider/final_image.jpg',
                     ],
                     '3' => [
                         'percent' => '100',
                         'text' => 'text 3',
-                        'image' => asset('assets/quiz/slider/fish.jpg'),
+                        'image' => 'assets/quiz/slider/fish.jpg',
                     ]
                 ],
                 'progress_slider' => true,

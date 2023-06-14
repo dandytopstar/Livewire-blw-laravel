@@ -72,7 +72,7 @@ class Quiz extends Component
 
             '4' => [
                 'question_key' => 'overall_health',
-                'question' => "Your baby's overall health and development",
+                'question' => "Your baby's overall health and development?",
                 'answers' => [
                     1 => ['text' => 'Healthy and thriving'],
                     2 => ['text' => 'Some health concerns'],
@@ -81,32 +81,11 @@ class Quiz extends Component
             ],
 
             '5' => [
-                'question_key' => 'current_feeding_routine',
-                'question' => "Your baby's current feeding routine",
-                'answers' => [
-                    '1' => ['text' => 'Exclusively breastfed'],
-                    '2' => ['text' => 'Exclusively formula-fed'],
-                    '3' => ['text' => 'A combination of breast milk and formula']
-                ],
-            ],
-
-            '6' => [
-                'question_key' => 'breastfeed',
-                'question' => 'How long do you plan to breastfeed or provide formula to your baby?',
-                'answers' => [
-                    '1' => ['text' => '6 months'],
-                    '2' => ['text' => '9 months'],
-                    '3' => ['text' => '12 months'],
-                    '4' => ['text' => 'Over 12 months'],
-                ],
-            ],
-
-            '7' => [
                 'question_key' => 'started_introducing_solids',
                 'question' => 'Have you started introducing solids to your infant yet?',
                 'answers' => [
-                    '1' => ['text' => 'yes'],
-                    '2' => ['text' => 'no']
+                    '1' => ['text' => 'YES'],
+                    '2' => ['text' => 'NO']
                 ],
                 'loader' => [
                     'show' => true,
@@ -116,17 +95,10 @@ class Quiz extends Component
                 ],
             ],
 
-            '8' => [
-                'question' => 'What is Baby-Led Weaning?',
-                'answers' => [],
-                'text' => "Baby-led weaning is a method of introducing solid foods that involves letting babies <br> feed themselves with soft, age-appropriate foods. It promotes self-regulation of <br> appetite and fine motor skill development.",
-                'continue_button' => true,
-                'continue_button_text' => 'continue',
-            ],
 
-            '9' => [
+            '6' => [
                 'question_key' => 'infant_separate_meals',
-                'question' => 'Baby Meal Preferences',
+                'question' => 'Baby-Led Weaning Preferences',
                 'answers' => [
                     '1' => ['text' => 'Separate meals'],
                     '2' => ['text' => 'Family meals'],
@@ -135,9 +107,9 @@ class Quiz extends Component
                 ],
             ],
 
-            '10' => [
+            '7' => [
                 'question_key' => 'own_or_pre_made_baby_food',
-                'question' => 'Do you prefer to make your own baby food or buy pre-made baby food?',
+                'question' => 'Your preferred method for preparing BLW food?',
                 'answers' => [
                     '1' => ['text' => 'Make my own'],
                     '2' => ['text' => 'Buy pre-made'],
@@ -146,9 +118,9 @@ class Quiz extends Component
                 ],
             ],
 
-            '11' => [
+            '8' => [
                 'question_key' => 'store_and_preserve_baby_food',
-                'question' => "How do you plan to store and preserve baby's food?",
+                'question' => "How would you like to store and preserve baby's food?",
                 'answers' => [
                     '1' => ['text' => 'Refrigerate', 'selected' => false],
                     '2' => ['text' => 'Freeze', 'selected' => false],
@@ -159,9 +131,9 @@ class Quiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '12' => [
+            '9' => [
                 'question_key' => 'bulk_and_froze_for_future_use',
-                'question' => 'Are you looking for meal ideas that can be made in bulk and frozen for future use?',
+                'question' => 'Seeking freezer-friendly bulk meal ideas?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -169,19 +141,9 @@ class Quiz extends Component
                 ],
             ],
 
-            '13' => [
-                'question_key' => 'introduce_new_foods',
-                'question' => 'How do you prefer to introduce new foods to your baby?',
-                'answers' => [
-                    '1' => ['text' => 'One food at a time'],
-                    '2' => ['text' => 'Mix multiple foods together'],
-                    '3' => ['text' => 'Undecided']
-                ],
-            ],
-
-            '14' => [
+            '10' => [
                 'question_key' => 'offer_solid_foods',
-                'question' => 'How often do you plan to offer solid foods to your baby?',
+                'question' => 'How often would you like to offer solid foods to your baby?',
                 'answers' => [
                     '1' => ['text' => 'Once a day'],
                     '2' => ['text' => 'Twice a day'],
@@ -190,7 +152,7 @@ class Quiz extends Component
                 ],
             ],
 
-            '15' => [
+            '11' => [
                 'question_key' => 'feeding_accessories',
                 'question' => 'Which of the following feeding accessories do you plan to use?',
                 'answers' => [
@@ -205,9 +167,9 @@ class Quiz extends Component
                 'hasDeselectAll' => true,
             ],
 
-            '16' => [
+            '12' => [
                 'question_key' => 'budget_friendly_meal_ideas',
-                'question' => 'Are you looking for meal ideas that are budget-friendly?',
+                'question' => 'Looking for meal ideas that are budget-friendly?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -215,9 +177,9 @@ class Quiz extends Component
                 ],
             ],
 
-            '17' => [
+            '13' => [
                 'question_key' => 'quick_and_easy_to_prepare_meal_ideas',
-                'question' => 'Are you looking for meal ideas that are quick and easy to prepare?',
+                'question' => 'Looking for meal ideas that are quick and easy to prepare?',
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -225,7 +187,7 @@ class Quiz extends Component
                 ],
             ],
 
-            '18' => [
+            '14' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "How would you like to track your baby's food intake and reactions to new foods?",
                 'answers' => [
@@ -238,9 +200,9 @@ class Quiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '19' => [
+            '15' => [
                 'question_key' => 'purees_and_finger_foods',
-                'question' => "Are you interested in incorporating both purees and finger foods into your infant's diet?",
+                'question' => "Interested in incorporating both purees and finger foods into your infant's diet?",
                 'answers' => [
                     '1' => ['text' => 'Yes'],
                     '2' => ['text' => 'No'],
@@ -261,16 +223,14 @@ class Quiz extends Component
                         'Promotes Brain Development',
                         'Builds baby’s confidence',
                         'Saves Money on Purees',
-                        'Saves Time in Meal Prep',
                         'Develops Fine Motor Skills',
-                        'Encourages Family Bonding',
                     ]
                 ]
             ],
 
-            '20' => [
+            '16' => [
                 'question_key' => 'allergenic_foods',
-                'question' => 'Do you plan to introduce these allergenic foods to reduce the risk of allergies?',
+                'question' => 'Would you like to introduce these foods?',
                 'answers' => [
                     '1' => [
                         'text' => 'Peanuts',
@@ -311,7 +271,7 @@ class Quiz extends Component
                 ],
             ],
 
-            '21' => [
+            '17' => [
                 'question_key' => 'comfortable_preparing_and_cooking_meals',
                 'question' => 'How comfortable are you with preparing and cooking meals from scratch?',
                 'answers' => [
@@ -322,7 +282,7 @@ class Quiz extends Component
                 ]
             ],
 
-            '22' => [
+            '18' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => 'Which of the following cooking methods do you prefer?',
                 'answers' => [
@@ -336,17 +296,7 @@ class Quiz extends Component
                 'continue_button_text' => 'continue',
             ],
 
-            '23' => [
-                'question_key' => 'traditional_foods',
-                'question' => "Have you considered any cultural or traditional foods that you would like to introduce to your infant's diet?",
-                'answers' => [
-                    '1' => ['text' => 'Yes'],
-                    '2' => ['text' => 'No'],
-                    '3' => ['text' => 'Somewhat'],
-                ],
-            ],
-
-            '24' => [
+            '19' => [
                 'question_key' => 'reactions_to_new_foods',
                 'question' => "Love it or Hate It? <br> Incorporating different foods into your infant's diet",
                 'answers' => [
@@ -393,22 +343,7 @@ class Quiz extends Component
                 ],
             ],
 
-            '25' => [
-                'question_key' => 'drinks',
-                'question' => 'Which of the following drinks would you like to offer your baby along with meals?',
-                'answers' => [
-                    '1' => ['text' => 'Water', 'selected' => false],
-                    '2' => ['text' => 'Fruit juice', 'selected' => false],
-                    '3' => ['text' => 'Milk', 'selected' => false],
-                    '4' => ['text' => 'Undecided', 'selected' => false, 'deselectAll' => true],
-                ],
-                'multiple' => true,
-                'continue_button' => true,
-                'continue_button_text' => 'continue',
-                'hasDeselectAll' => true,
-            ],
-
-            '26' => [
+            '20' => [
                 'question_key' => 'end',
                 'question' => 'We are now generating Your Final Meal Plan and App Profile!',
                 'answers' => [

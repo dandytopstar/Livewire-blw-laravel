@@ -547,6 +547,12 @@
     display: none;
 }
 
+.summary-conclusion .container > .bg-image-absolute img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+}
+
 @media (max-width: 1265px) {
     #blw-benefits-adaptive.book-benefits {
         padding-top: 20px;
