@@ -36,7 +36,7 @@
         @endif
 
         @if(!empty($currentQuestion['progress_slider']))
-            <x-bookquiz.progress-slider :currentQuestion="$currentQuestion" />
+            <x-quiz.progress-slider :currentQuestion="$currentQuestion" />
         @endif
 
         @if(empty($currentQuestion['answer_with_image']) && empty($currentQuestion['slider']) && empty($currentQuestion['progress_slider']))

@@ -173,15 +173,11 @@ class Bookquiz extends Component
 
             '13' => [
                 'question_key' => 'reactions_to_new_foods',
-                'question' => "How would you like to track your baby's food intake and reactions to new foods?",
+                'question' => "Would you like to track your baby's food intake and reactions to new foods?",
                 'answers' => [
-                    '1' => ['text' => 'Keep a journal', 'selected' => false],
-                    '2' => ['text' => 'Use a mobile app', 'selected' => false],
-                    '3' => ['text' => 'Other', 'selected' => false],
+                    '1' => ['text' => 'Yes', 'selected' => false],
+                    '2' => ['text' => 'No', 'selected' => false],
                 ],
-                'multiple' => true,
-                'continue_button' => true,
-                'continue_button_text' => 'continue',
             ],
 
             '14' => [

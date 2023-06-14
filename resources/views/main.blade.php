@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="img-box bg-image-absolute text-center">
-                <img src="{{asset('assets/main/iPhone-13-Pro.png')}}"></img>
+                <img src="{{asset('assets/main/main.jpg')}}" class='main-logo'></img>
             </div>
         </div>
     </section>

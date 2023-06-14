@@ -335,4 +335,6 @@ section.main-page .bg-image-slide {
     }
 }
 
-
+.main-page .position-relative > .img-box .main-logo {
+    width: 50%;
+}
