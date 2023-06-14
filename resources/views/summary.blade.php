@@ -28,7 +28,7 @@
                 </a>
             </div>
 
-            <div class="img-box bg-image-absolute">
+            <div class="img-box bg-image-absolute main-logo">
                 <img src="{{asset('assets/summary/iPhone13Pro.png')}}">
             </div>
 

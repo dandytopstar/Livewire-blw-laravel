@@ -547,7 +547,7 @@
     display: none;
 }
 
-.summary-conclusion .container.d-flex > .bg-image-absolute img {
+.summary-conclusion .container.d-flex > .bg-image-absolute.main-logo img {
     width: 60%;
     display: block;
     margin: auto;
