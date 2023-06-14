@@ -68,8 +68,8 @@ class TestSeeder extends Seeder
                 'billed_period' => 'Paperback and E-Book',
                 'payment_price' => 82,
                 'payment_price_old' => 95.94,
-                'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
-                'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+                'stripe_id' => '',
+                'paypal_id' => '',
                 'type' => PersonalPlanTypesEnum::BOOK_PAYMENT->value,
             ],
             5 => [
@@ -79,8 +79,8 @@ class TestSeeder extends Seeder
                 'payment_price' => 31,
                 'payment_price_old' => 55.24,
                 'discount' => 33,
-                'stripe_id' => 'price_1MRgPMLAfRRz3YR8WVPWkzbl',
-                'paypal_id' => 'P-4BW9740053177383UMPED5HQ',
+                'stripe_id' => '',
+                'paypal_id' => '',
                 'type' => PersonalPlanTypesEnum::BOOK_PAYMENT->value,
             ],
         ];
